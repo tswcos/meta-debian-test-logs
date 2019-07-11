@@ -1,0 +1,104 @@
+WARNING: Host distribution "debian-10" has not been validated with this version of the build system; you may possibly experience unexpected failures. It is recommended that you use a tested distribution.
+Loading cache...done.
+Loaded 1440 entries from dependency cache.
+NOTE: Resolving any missing task queue dependencies
+
+Build Configuration:
+BB_VERSION           = "1.42.0"
+BUILD_SYS            = "x86_64-linux"
+NATIVELSBSTRING      = "universal"
+TARGET_SYS           = "x86_64-deby-linux"
+MACHINE              = "qemux86-64"
+DISTRO               = "deby"
+DISTRO_VERSION       = "10.0"
+TUNE_FEATURES        = "m64 core2"
+TARGET_FPU           = ""
+meta                 
+meta-poky            = "warrior:51223035e66c5b27799b15a0f8ebe75d24d3971b"
+meta-debian          = "warrior-trungdt:47b755ebe41c5afc0ea94d75b55c4f0efd8983fe"
+
+Initialising tasks...done.
+Sstate summary: Wanted 125 Found 6 Missed 119 Current 67 (4% match, 38% complete)
+NOTE: Executing SetScene Tasks
+NOTE: Executing RunQueue Tasks
+NOTE: Running task 255 of 889 (virtual:nativesdk:/home/deby/poky/meta-debian/recipes-debian/glibc/glibc_debian.bb:do_debian_patch)
+NOTE: Running task 516 of 889 (virtual:nativesdk:/home/deby/poky/meta-debian/recipes-debian/gmp/gmp_debian.bb:do_debian_patch)
+NOTE: Running task 524 of 889 (virtual:nativesdk:/home/deby/poky/meta-debian/recipes-debian/zlib/zlib_debian.bb:do_debian_patch)
+NOTE: Running task 551 of 889 (virtual:nativesdk:/home/deby/poky/meta-debian/recipes-debian/ncurses/ncurses_debian.bb:do_debian_patch)
+NOTE: Running task 554 of 889 (virtual:nativesdk:/home/deby/poky/meta-debian/recipes-debian/bzip2/bzip2_debian.bb:do_debian_patch)
+NOTE: Running task 566 of 889 (/home/deby/poky/meta-debian/recipes-debian/libtool/nativesdk-libtool_debian.bb:do_debian_patch)
+NOTE: Running task 585 of 889 (virtual:nativesdk:/home/deby/poky/meta-debian/recipes-debian/gettext/gettext_debian.bb:do_debian_patch)
+NOTE: Running task 588 of 889 (virtual:nativesdk:/home/deby/poky/meta-debian/recipes-debian/openssl/openssl_debian.bb:do_debian_patch)
+NOTE: Running task 598 of 889 (virtual:nativesdk:/home/deby/poky/meta-debian/recipes-debian/readline/readline_debian.bb:do_debian_patch)
+NOTE: Running noexec task 621 of 889 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-cross-canadian_debian.bb:do_fetch)
+NOTE: Running task 642 of 889 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-cross-canadian_debian.bb:do_populate_lic)
+NOTE: recipe nativesdk-libtool-2.4.6-r0: task do_debian_patch: Started
+ERROR: nativesdk-libtool-2.4.6-r0 do_debian_patch: unknown quilt patches already applied
+ERROR: nativesdk-libtool-2.4.6-r0 do_debian_patch: Function failed: do_debian_patch (log file is located at /home/deby/build/tmp/work/x86_64-nativesdk-debysdk-linux/nativesdk-libtool/2.4.6-r0/temp/log.do_debian_patch.26237)
+ERROR: Logfile of failure stored in: /home/deby/build/tmp/work/x86_64-nativesdk-debysdk-linux/nativesdk-libtool/2.4.6-r0/temp/log.do_debian_patch.26237
+NOTE: recipe nativesdk-libtool-2.4.6-r0: task do_debian_patch: Failed
+ERROR: Task (/home/deby/poky/meta-debian/recipes-debian/libtool/nativesdk-libtool_debian.bb:do_debian_patch) failed with exit code '1'
+NOTE: recipe nativesdk-zlib-1.2.11-r0: task do_debian_patch: Started
+NOTE: recipe nativesdk-gettext-0.19.8.1-r0: task do_debian_patch: Started
+NOTE: recipe nativesdk-ncurses-6.1+20181013-r0: task do_debian_patch: Started
+ERROR: nativesdk-zlib-1.2.11-r0 do_debian_patch: unknown quilt patches already applied
+ERROR: nativesdk-zlib-1.2.11-r0 do_debian_patch: Function failed: do_debian_patch (log file is located at /home/deby/build/tmp/work/x86_64-nativesdk-debysdk-linux/nativesdk-zlib/1.2.11-r0/temp/log.do_debian_patch.26234)
+ERROR: Logfile of failure stored in: /home/deby/build/tmp/work/x86_64-nativesdk-debysdk-linux/nativesdk-zlib/1.2.11-r0/temp/log.do_debian_patch.26234
+NOTE: recipe nativesdk-zlib-1.2.11-r0: task do_debian_patch: Failed
+ERROR: Task (virtual:nativesdk:/home/deby/poky/meta-debian/recipes-debian/zlib/zlib_debian.bb:do_debian_patch) failed with exit code '1'
+NOTE: recipe gcc-cross-canadian-x86-64-8.3.0-r0: task do_populate_lic: Started
+ERROR: nativesdk-gettext-0.19.8.1-r0 do_debian_patch: unknown quilt patches already applied
+ERROR: nativesdk-gettext-0.19.8.1-r0 do_debian_patch: Function failed: do_debian_patch (log file is located at /home/deby/build/tmp/work/x86_64-nativesdk-debysdk-linux/nativesdk-gettext/0.19.8.1-r0/temp/log.do_debian_patch.26238)
+ERROR: nativesdk-ncurses-6.1+20181013-r0 do_debian_patch: unknown quilt patches already applied
+ERROR: nativesdk-ncurses-6.1+20181013-r0 do_debian_patch: Function failed: do_debian_patch (log file is located at /home/deby/build/tmp/work/x86_64-nativesdk-debysdk-linux/nativesdk-ncurses/6.1+20181013-r0/temp/log.do_debian_patch.26235)
+ERROR: Logfile of failure stored in: /home/deby/build/tmp/work/x86_64-nativesdk-debysdk-linux/nativesdk-gettext/0.19.8.1-r0/temp/log.do_debian_patch.26238
+NOTE: recipe nativesdk-gettext-0.19.8.1-r0: task do_debian_patch: Failed
+ERROR: Logfile of failure stored in: /home/deby/build/tmp/work/x86_64-nativesdk-debysdk-linux/nativesdk-ncurses/6.1+20181013-r0/temp/log.do_debian_patch.26235
+NOTE: recipe nativesdk-ncurses-6.1+20181013-r0: task do_debian_patch: Failed
+ERROR: Task (virtual:nativesdk:/home/deby/poky/meta-debian/recipes-debian/gettext/gettext_debian.bb:do_debian_patch) failed with exit code '1'
+ERROR: Task (virtual:nativesdk:/home/deby/poky/meta-debian/recipes-debian/ncurses/ncurses_debian.bb:do_debian_patch) failed with exit code '1'
+NOTE: recipe nativesdk-glibc-2.28-r0: task do_debian_patch: Started
+NOTE: recipe nativesdk-gmp-6.1.2-r0: task do_debian_patch: Started
+NOTE: recipe nativesdk-openssl-1.1.1c-r0: task do_debian_patch: Started
+ERROR: nativesdk-glibc-2.28-r0 do_debian_patch: unknown quilt patches already applied
+ERROR: nativesdk-glibc-2.28-r0 do_debian_patch: Function failed: do_debian_patch (log file is located at /home/deby/build/tmp/work/x86_64-nativesdk-debysdk-linux/nativesdk-glibc/2.28-r0/temp/log.do_debian_patch.26232)
+ERROR: Logfile of failure stored in: /home/deby/build/tmp/work/x86_64-nativesdk-debysdk-linux/nativesdk-glibc/2.28-r0/temp/log.do_debian_patch.26232
+NOTE: recipe nativesdk-glibc-2.28-r0: task do_debian_patch: Failed
+ERROR: Task (virtual:nativesdk:/home/deby/poky/meta-debian/recipes-debian/glibc/glibc_debian.bb:do_debian_patch) failed with exit code '1'
+ERROR: nativesdk-gmp-6.1.2-r0 do_debian_patch: unknown quilt patches already applied
+ERROR: nativesdk-gmp-6.1.2-r0 do_debian_patch: Function failed: do_debian_patch (log file is located at /home/deby/build/tmp/work/x86_64-nativesdk-debysdk-linux/nativesdk-gmp/6.1.2-r0/temp/log.do_debian_patch.26233)
+ERROR: Logfile of failure stored in: /home/deby/build/tmp/work/x86_64-nativesdk-debysdk-linux/nativesdk-gmp/6.1.2-r0/temp/log.do_debian_patch.26233
+NOTE: recipe nativesdk-gmp-6.1.2-r0: task do_debian_patch: Failed
+NOTE: recipe nativesdk-readline-7.0-r0: task do_debian_patch: Started
+ERROR: Task (virtual:nativesdk:/home/deby/poky/meta-debian/recipes-debian/gmp/gmp_debian.bb:do_debian_patch) failed with exit code '1'
+NOTE: recipe nativesdk-bzip2-1.0.6-r0: task do_debian_patch: Started
+ERROR: nativesdk-openssl-1.1.1c-r0 do_debian_patch: unknown quilt patches already applied
+ERROR: nativesdk-openssl-1.1.1c-r0 do_debian_patch: Function failed: do_debian_patch (log file is located at /home/deby/build/tmp/work/x86_64-nativesdk-debysdk-linux/nativesdk-openssl/1.1.1c-r0/temp/log.do_debian_patch.26239)
+NOTE: recipe gcc-cross-canadian-x86-64-8.3.0-r0: task do_populate_lic: Succeeded
+ERROR: Logfile of failure stored in: /home/deby/build/tmp/work/x86_64-nativesdk-debysdk-linux/nativesdk-openssl/1.1.1c-r0/temp/log.do_debian_patch.26239
+NOTE: recipe nativesdk-openssl-1.1.1c-r0: task do_debian_patch: Failed
+ERROR: Task (virtual:nativesdk:/home/deby/poky/meta-debian/recipes-debian/openssl/openssl_debian.bb:do_debian_patch) failed with exit code '1'
+ERROR: nativesdk-bzip2-1.0.6-r0 do_debian_patch: unknown quilt patches already applied
+ERROR: nativesdk-bzip2-1.0.6-r0 do_debian_patch: Function failed: do_debian_patch (log file is located at /home/deby/build/tmp/work/x86_64-nativesdk-debysdk-linux/nativesdk-bzip2/1.0.6-r0/temp/log.do_debian_patch.26236)
+ERROR: nativesdk-readline-7.0-r0 do_debian_patch: unknown quilt patches already applied
+ERROR: nativesdk-readline-7.0-r0 do_debian_patch: Function failed: do_debian_patch (log file is located at /home/deby/build/tmp/work/x86_64-nativesdk-debysdk-linux/nativesdk-readline/7.0-r0/temp/log.do_debian_patch.26240)
+ERROR: Logfile of failure stored in: /home/deby/build/tmp/work/x86_64-nativesdk-debysdk-linux/nativesdk-bzip2/1.0.6-r0/temp/log.do_debian_patch.26236
+NOTE: recipe nativesdk-bzip2-1.0.6-r0: task do_debian_patch: Failed
+ERROR: Logfile of failure stored in: /home/deby/build/tmp/work/x86_64-nativesdk-debysdk-linux/nativesdk-readline/7.0-r0/temp/log.do_debian_patch.26240
+NOTE: recipe nativesdk-readline-7.0-r0: task do_debian_patch: Failed
+ERROR: Task (virtual:nativesdk:/home/deby/poky/meta-debian/recipes-debian/bzip2/bzip2_debian.bb:do_debian_patch) failed with exit code '1'
+ERROR: Task (virtual:nativesdk:/home/deby/poky/meta-debian/recipes-debian/readline/readline_debian.bb:do_debian_patch) failed with exit code '1'
+NOTE: Tasks Summary: Attempted 642 tasks of which 631 didn't need to be rerun and 9 failed.
+
+Summary: 9 tasks failed:
+  /home/deby/poky/meta-debian/recipes-debian/libtool/nativesdk-libtool_debian.bb:do_debian_patch
+  virtual:nativesdk:/home/deby/poky/meta-debian/recipes-debian/zlib/zlib_debian.bb:do_debian_patch
+  virtual:nativesdk:/home/deby/poky/meta-debian/recipes-debian/gettext/gettext_debian.bb:do_debian_patch
+  virtual:nativesdk:/home/deby/poky/meta-debian/recipes-debian/ncurses/ncurses_debian.bb:do_debian_patch
+  virtual:nativesdk:/home/deby/poky/meta-debian/recipes-debian/glibc/glibc_debian.bb:do_debian_patch
+  virtual:nativesdk:/home/deby/poky/meta-debian/recipes-debian/gmp/gmp_debian.bb:do_debian_patch
+  virtual:nativesdk:/home/deby/poky/meta-debian/recipes-debian/openssl/openssl_debian.bb:do_debian_patch
+  virtual:nativesdk:/home/deby/poky/meta-debian/recipes-debian/bzip2/bzip2_debian.bb:do_debian_patch
+  virtual:nativesdk:/home/deby/poky/meta-debian/recipes-debian/readline/readline_debian.bb:do_debian_patch
+Summary: There was 1 WARNING message shown.
+Summary: There were 18 ERROR messages shown, returning a non-zero exit code.

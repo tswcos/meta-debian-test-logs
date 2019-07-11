@@ -1,0 +1,42 @@
+WARNING: Host distribution "debian-10" has not been validated with this version of the build system; you may possibly experience unexpected failures. It is recommended that you use a tested distribution.
+Loading cache...done.
+Loaded 1440 entries from dependency cache.
+NOTE: Resolving any missing task queue dependencies
+
+Build Configuration:
+BB_VERSION           = "1.42.0"
+BUILD_SYS            = "x86_64-linux"
+NATIVELSBSTRING      = "universal"
+TARGET_SYS           = "i586-deby-linux"
+MACHINE              = "qemux86"
+DISTRO               = "deby-tiny"
+DISTRO_VERSION       = "10.0"
+TUNE_FEATURES        = "m32 i586"
+TARGET_FPU           = ""
+meta                 
+meta-poky            = "warrior:51223035e66c5b27799b15a0f8ebe75d24d3971b"
+meta-debian          = "warrior-trungdt:47b755ebe41c5afc0ea94d75b55c4f0efd8983fe"
+
+Initialising tasks...done.
+Sstate summary: Wanted 5 Found 3 Missed 2 Current 122 (60% match, 98% complete)
+NOTE: Executing SetScene Tasks
+NOTE: Executing RunQueue Tasks
+NOTE: Running task 647 of 678 (virtual:cross:/home/deby/poky/meta-debian/recipes-debian/u-boot/u-boot-fw-utils_debian.bb:do_debian_unpack_extra)
+NOTE: Running task 651 of 678 (virtual:cross:/home/deby/poky/meta-debian/recipes-debian/u-boot/u-boot-fw-utils_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe u-boot-fw-utils-cross-2019.01-r0: task do_debian_unpack_extra: Started
+NOTE: recipe u-boot-fw-utils-cross-2019.01-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe u-boot-fw-utils-cross-2019.01-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 671 of 678 (virtual:cross:/home/deby/poky/meta-debian/recipes-debian/u-boot/u-boot-fw-utils_debian.bb:do_debian_patch)
+NOTE: recipe u-boot-fw-utils-cross-2019.01-r0: task do_debian_patch: Started
+ERROR: u-boot-fw-utils-cross-2019.01-r0 do_debian_patch: unknown quilt patches already applied
+ERROR: u-boot-fw-utils-cross-2019.01-r0 do_debian_patch: Function failed: do_debian_patch (log file is located at /home/deby/build/tmp/work/x86_64-linux/u-boot-fw-utils-cross/2019.01-r0/temp/log.do_debian_patch.24361)
+ERROR: Logfile of failure stored in: /home/deby/build/tmp/work/x86_64-linux/u-boot-fw-utils-cross/2019.01-r0/temp/log.do_debian_patch.24361
+NOTE: recipe u-boot-fw-utils-cross-2019.01-r0: task do_debian_patch: Failed
+ERROR: Task (virtual:cross:/home/deby/poky/meta-debian/recipes-debian/u-boot/u-boot-fw-utils_debian.bb:do_debian_patch) failed with exit code '1'
+NOTE: recipe u-boot-fw-utils-cross-2019.01-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Tasks Summary: Attempted 671 tasks of which 668 didn't need to be rerun and 1 failed.
+
+Summary: 1 task failed:
+  virtual:cross:/home/deby/poky/meta-debian/recipes-debian/u-boot/u-boot-fw-utils_debian.bb:do_debian_patch
+Summary: There was 1 WARNING message shown.
+Summary: There were 2 ERROR messages shown, returning a non-zero exit code.

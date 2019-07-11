@@ -1,0 +1,214 @@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the RSA key sent by the remote host is
+SHA256:uANUjmCZYWCZ/cbFmJ/deirepGNAD16Q/TlpKkygUTo.
+Please contact your system administrator.
+Add correct host key in /home/deby/.ssh/known_hosts to get rid of this message.
+Offending RSA key in /home/deby/.ssh/known_hosts:1
+  remove with:
+  ssh-keygen -f "/home/deby/.ssh/known_hosts" -R "[127.0.0.1]:2222"
+Password authentication is disabled to avoid man-in-the-middle attacks.
+Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
+Makefile
+bin
+compat
+quilt
+run-ptest
+test
+test.sh
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the RSA key sent by the remote host is
+SHA256:uANUjmCZYWCZ/cbFmJ/deirepGNAD16Q/TlpKkygUTo.
+Please contact your system administrator.
+Add correct host key in /home/deby/.ssh/known_hosts to get rid of this message.
+Offending RSA key in /home/deby/.ssh/known_hosts:1
+  remove with:
+  ssh-keygen -f "/home/deby/.ssh/known_hosts" -R "[127.0.0.1]:2222"
+Password authentication is disabled to avoid man-in-the-middle attacks.
+Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
+[add-filename-check.test]
+6 commands (6 passed, 0 failed)
+PASS: add-filename-check.test
+[altered-series.test]
+12 commands (12 passed, 0 failed)
+PASS: altered-series.test
+[annotate.test]
+31 commands (31 passed, 0 failed)
+PASS: annotate.test
+[applied.test]
+15 commands (15 passed, 0 failed)
+PASS: applied.test
+[auto-refresh.test]
+14 commands (14 passed, 0 failed)
+PASS: auto-refresh.test
+[backup-files.test]
+119 commands (119 passed, 0 failed)
+PASS: backup-files.test
+[colon-in-patch-name.test]
+23 commands (23 passed, 0 failed)
+PASS: colon-in-patch-name.test
+[comments.test]
+11 commands (11 passed, 0 failed)
+PASS: comments.test
+[conflicts.test]
+39 commands (39 passed, 0 failed)
+PASS: conflicts.test
+[create-delete.test]
+19 commands (19 passed, 0 failed)
+PASS: create-delete.test
+[dir-a-b.test]
+11 commands (11 passed, 0 failed)
+PASS: dir-a-b.test
+[dotglob.test]
+7 commands (7 passed, 0 failed)
+PASS: dotglob.test
+[duplicate-patch-in-series.test]
+9 commands (9 passed, 0 failed)
+PASS: duplicate-patch-in-series.test
+[edit.test]
+31 commands (31 passed, 0 failed)
+PASS: edit.test
+[empty-files.test]
+40 commands (40 passed, 0 failed)
+PASS: empty-files.test
+[empty.test]
+10 commands (10 passed, 0 failed)
+PASS: empty.test
+[example1.test]
+30 commands (30 passed, 0 failed)
+PASS: example1.test
+[failbackup.test]
+10 commands (10 passed, 0 failed)
+PASS: failbackup.test
+[faildiff.test]
+15 commands (15 passed, 0 failed)
+PASS: faildiff.test
+[failpop.test]
+13 commands (13 passed, 0 failed)
+PASS: failpop.test
+[fold.test]
+11 commands (11 passed, 0 failed)
+PASS: fold.test
+[formats.test]
+13 commands (13 passed, 0 failed)
+PASS: formats.test
+[half-applies.test]
+18 commands (18 passed, 0 failed)
+PASS: half-applies.test
+[hard-linked-patch.test]
+15 commands (15 passed, 0 failed)
+PASS: hard-linked-patch.test
+[header.test]
+15 commands (15 passed, 0 failed)
+PASS: header.test
+[import.test]
+83 commands (83 passed, 0 failed)
+PASS: import.test
+[import2.test]
+40 commands (40 passed, 0 failed)
+PASS: import2.test
+[merge.test]
+11 commands (11 passed, 0 failed)
+PASS: merge.test
+[missing.test]
+6 commands (6 passed, 0 failed)
+PASS: missing.test
+[new-nosubdir.test]
+4 commands (4 passed, 0 failed)
+PASS: new-nosubdir.test
+[new.test]
+9 commands (9 passed, 0 failed)
+PASS: new.test
+[no-file-to-patch.test]
+5 commands (5 passed, 0 failed)
+PASS: no-file-to-patch.test
+[nolink.test]
+28 commands (28 passed, 0 failed)
+PASS: nolink.test
+[null-bug.test]
+9 commands (9 passed, 0 failed)
+PASS: null-bug.test
+[one.test]
+45 commands (45 passed, 0 failed)
+PASS: one.test
+[patch-wrapper.test]
+38 commands (38 passed, 0 failed)
+PASS: patch-wrapper.test
+[perms.test]
+21 commands (21 passed, 0 failed)
+PASS: perms.test
+[project-settings.test]
+10 commands (10 passed, 0 failed)
+PASS: project-settings.test
+[push_timeskew.test]
+31 commands (31 passed, 0 failed)
+PASS: push_timeskew.test
+[refresh-z.test]
+10 commands (10 passed, 0 failed)
+PASS: refresh-z.test
+[refresh.test]
+12 commands (12 passed, 0 failed)
+PASS: refresh.test
+[refresh_patch_order.test]
+20 commands (20 passed, 0 failed)
+PASS: refresh_patch_order.test
+[remember-locations.test]
+13 commands (13 passed, 0 failed)
+PASS: remember-locations.test
+[remove-trailing-ws.test]
+44 commands (44 passed, 0 failed)
+PASS: remove-trailing-ws.test
+[rename.test]
+18 commands (18 passed, 0 failed)
+PASS: rename.test
+[restrict-patch-names.test]
+19 commands (19 passed, 0 failed)
+PASS: restrict-patch-names.test
+[revert.test]
+27 commands (27 passed, 0 failed)
+PASS: revert.test
+[setup.test]
+64 commands (64 passed, 0 failed)
+PASS: setup.test
+[snapshot.test]
+15 commands (15 passed, 0 failed)
+PASS: snapshot.test
+[snapshot2.test]
+16 commands (16 passed, 0 failed)
+PASS: snapshot2.test
+[sort.test]
+25 commands (25 passed, 0 failed)
+PASS: sort.test
+[space-in-filenames.test]
+33 commands (33 passed, 0 failed)
+PASS: space-in-filenames.test
+[subdir.test]
+18 commands (18 passed, 0 failed)
+PASS: subdir.test
+[symlink.test]
+49 commands (49 passed, 0 failed)
+PASS: symlink.test
+[tester.test]
+10 commands (10 passed, 0 failed)
+PASS: tester.test
+[three.test]
+66 commands (66 passed, 0 failed)
+PASS: three.test
+[timestamps.test]
+12 commands (12 passed, 0 failed)
+PASS: timestamps.test
+[trailing-ws.test]
+21 commands (21 passed, 0 failed)
+PASS: trailing-ws.test
+[two.test]
+57 commands (57 passed, 0 failed)
+PASS: two.test

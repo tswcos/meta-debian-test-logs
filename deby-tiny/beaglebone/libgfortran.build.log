@@ -1,0 +1,10 @@
+WARNING: Host distribution "debian-10" has not been validated with this version of the build system; you may possibly experience unexpected failures. It is recommended that you use a tested distribution.
+Loading cache...done.
+Loaded 1674 entries from dependency cache.
+WARNING: No bb files matched BBFILE_PATTERN_dti '^/home/deby/poky/meta-debian/tests/../../meta-debian/bsp/meta-ti/'
+ERROR: Nothing PROVIDES 'libgfortran'
+libgfortran was skipped: libgfortran needs fortran support to be enabled in the compiler
+libgfortran was skipped: libgfortran needs fortran support to be enabled in the compiler
+
+Summary: There were 2 WARNING messages shown.
+Summary: There was 1 ERROR message shown, returning a non-zero exit code.

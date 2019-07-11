@@ -1,0 +1,48 @@
+WARNING: Host distribution "debian-10" has not been validated with this version of the build system; you may possibly experience unexpected failures. It is recommended that you use a tested distribution.
+Loading cache...done.
+Loaded 1440 entries from dependency cache.
+NOTE: Resolving any missing task queue dependencies
+
+Build Configuration:
+BB_VERSION           = "1.42.0"
+BUILD_SYS            = "x86_64-linux"
+NATIVELSBSTRING      = "universal"
+TARGET_SYS           = "powerpc-deby-linux"
+MACHINE              = "qemuppc"
+DISTRO               = "deby-tiny"
+DISTRO_VERSION       = "10.0"
+TUNE_FEATURES        = "m32 fpu-hard ppc7400 altivec"
+TARGET_FPU           = ""
+meta                 
+meta-poky            = "warrior:51223035e66c5b27799b15a0f8ebe75d24d3971b"
+meta-debian          = "warrior-trungdt:47b755ebe41c5afc0ea94d75b55c4f0efd8983fe"
+
+Initialising tasks...done.
+Sstate summary: Wanted 9 Found 9 Missed 0 Current 101 (100% match, 100% complete)
+NOTE: Executing SetScene Tasks
+NOTE: Running setscene task 102 of 110 (/home/deby/poky/meta-debian/recipes-debian/rdma-core/rdma-core_debian.bb:do_populate_sysroot_setscene)
+NOTE: Running setscene task 103 of 110 (/home/deby/poky/meta-debian/recipes-debian/rdma-core/rdma-core_debian.bb:do_package_qa_setscene)
+NOTE: Running setscene task 104 of 110 (/home/deby/poky/meta-debian/recipes-debian/rdma-core/rdma-core_debian.bb:do_package_write_deb_setscene)
+NOTE: Running setscene task 105 of 110 (/home/deby/poky/meta/recipes-support/libnl/libnl_3.4.0.bb:do_package_write_deb_setscene)
+NOTE: recipe libnl-1_3.4.0-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe rdma-core-22.1-r0: task do_package_qa_setscene: Started
+NOTE: recipe rdma-core-22.1-r0: task do_populate_sysroot_setscene: Started
+NOTE: recipe rdma-core-22.1-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe rdma-core-22.1-r0: task do_package_qa_setscene: Succeeded
+NOTE: recipe rdma-core-22.1-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 107 of 110 (/home/deby/poky/meta-debian/recipes-debian/rdma-core/rdma-core_debian.bb:do_packagedata_setscene)
+NOTE: recipe libnl-1_3.4.0-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 108 of 110 (/home/deby/poky/meta/recipes-support/libnl/libnl_3.4.0.bb:do_packagedata_setscene)
+NOTE: recipe rdma-core-22.1-r0: task do_packagedata_setscene: Started
+NOTE: recipe libnl-1_3.4.0-r0: task do_packagedata_setscene: Started
+NOTE: recipe rdma-core-22.1-r0: task do_populate_sysroot_setscene: Succeeded
+NOTE: Running setscene task 109 of 110 (/home/deby/poky/meta/recipes-support/libnl/libnl_3.4.0.bb:do_populate_sysroot_setscene)
+NOTE: recipe libnl-1_3.4.0-r0: task do_populate_sysroot_setscene: Started
+NOTE: recipe rdma-core-22.1-r0: task do_packagedata_setscene: Succeeded
+NOTE: recipe libnl-1_3.4.0-r0: task do_packagedata_setscene: Succeeded
+NOTE: recipe libnl-1_3.4.0-r0: task do_populate_sysroot_setscene: Succeeded
+NOTE: Executing RunQueue Tasks
+NOTE: Running noexec task 650 of 650 (/home/deby/poky/meta-debian/recipes-debian/rdma-core/rdma-core_debian.bb:do_build)
+NOTE: Tasks Summary: Attempted 650 tasks of which 649 didn't need to be rerun and all succeeded.
+
+Summary: There was 1 WARNING message shown.

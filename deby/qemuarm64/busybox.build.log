@@ -1,0 +1,562 @@
+WARNING: Host distribution "debian-10" has not been validated with this version of the build system; you may possibly experience unexpected failures. It is recommended that you use a tested distribution.
+Loading cache...done.
+Loaded 1440 entries from dependency cache.
+Removing 1 recipes from the aarch64 sysroot...done.
+Removing 2 recipes from the qemuarm64 sysroot...done.
+NOTE: Resolving any missing task queue dependencies
+
+Build Configuration:
+BB_VERSION           = "1.42.0"
+BUILD_SYS            = "x86_64-linux"
+NATIVELSBSTRING      = "universal"
+TARGET_SYS           = "aarch64-deby-linux"
+MACHINE              = "qemuarm64"
+DISTRO               = "deby"
+DISTRO_VERSION       = "10.0"
+TUNE_FEATURES        = "aarch64 armv8a crc"
+TARGET_FPU           = ""
+meta                 
+meta-poky            = "warrior:51223035e66c5b27799b15a0f8ebe75d24d3971b"
+meta-debian          = "warrior-trungdt:47b755ebe41c5afc0ea94d75b55c4f0efd8983fe"
+
+Initialising tasks...done.
+Sstate summary: Wanted 220 Found 219 Missed 1 Current 172 (99% match, 99% complete)
+NOTE: Executing SetScene Tasks
+NOTE: Running setscene task 173 of 392 (/home/deby/poky/meta-debian/recipes-debian/busybox/busybox_debian.bb:do_populate_sysroot_setscene)
+NOTE: Running setscene task 174 of 392 (/home/deby/poky/meta-debian/recipes-debian/busybox/busybox_debian.bb:do_package_qa_setscene)
+NOTE: Running setscene task 175 of 392 (/home/deby/poky/meta-debian/recipes-debian/busybox/busybox_debian.bb:do_package_write_deb_setscene)
+NOTE: Running setscene task 176 of 392 (/home/deby/poky/meta-debian/recipes-debian/busybox/busybox_debian.bb:do_populate_lic_setscene)
+NOTE: Running setscene task 177 of 392 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-runtime_debian.bb:do_package_write_deb_setscene)
+NOTE: Running setscene task 178 of 392 (/home/deby/poky/meta/recipes-core/libxcrypt/libxcrypt.bb:do_package_write_deb_setscene)
+NOTE: Running setscene task 179 of 392 (/home/deby/poky/meta/recipes-devtools/opkg-utils/opkg-utils_0.4.0.bb:do_package_write_deb_setscene)
+NOTE: Running setscene task 180 of 392 (/home/deby/poky/meta-debian/recipes-debian/glibc/glibc_debian.bb:do_package_write_deb_setscene)
+NOTE: Running setscene task 181 of 392 (/home/deby/poky/meta/recipes-devtools/python/python3_3.7.2.bb:do_package_write_deb_setscene)
+NOTE: Running setscene task 182 of 392 (/home/deby/poky/meta-debian/recipes-debian/perl/perl_debian.bb:do_package_write_deb_setscene)
+NOTE: Running setscene task 183 of 392 (/home/deby/poky/meta-debian/recipes-debian/gcc/libgcc_debian.bb:do_package_write_deb_setscene)
+NOTE: Running setscene task 184 of 392 (/home/deby/poky/meta-debian/recipes-debian/libtool/libtool-cross_debian.bb:do_package_write_deb_setscene)
+NOTE: Running setscene task 185 of 392 (/home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb:do_package_write_deb_setscene)
+NOTE: Running setscene task 186 of 392 (/home/deby/poky/meta-debian/recipes-debian/ncurses/ncurses_debian.bb:do_package_write_deb_setscene)
+NOTE: Running setscene task 187 of 392 (/home/deby/poky/meta/recipes-extended/xz/xz_5.2.4.bb:do_package_write_deb_setscene)
+NOTE: Running setscene task 188 of 392 (/home/deby/poky/meta-debian/recipes-debian/zlib/zlib_debian.bb:do_package_write_deb_setscene)
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_patch, the basehash value changed from 794aba43c93b827ab8dad47165be6be0d8f92f251bd262635c22313e23128daa to ad76c34176c05413e9fb00995196d5015fc81c93587134874abe5c331acef982. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_populate_sysroot, the basehash value changed from 2e4dc7b6b48187aee33b8bb419c42da1f20a801d4f648cc07024f0dafb119116 to 2ea4052a4244ba6488e96928a52bc979977bf82d44ef7527088e63c468d98c1b. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_fetch, the basehash value changed from b620eac0fae73e0df82e6b6781635aa9e224831670575af75328ee2bba5f373b to 180fd178ee7c6318a87b561b33796bca27ce8331b06402ad1a3756cc717a6903. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_configure, the basehash value changed from 24a1aa70340faf5d0559f5f5c25df83a33339b064c601fa41de74e845831d8f5 to 952b835cf441f72424d80c5bdfec130d3bc2c69cc0e286dad4eda8101e5fb7e5. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_compile, the basehash value changed from ca9cdc48ef3a81abce6553ad84b2bebd2e31576b46390bac2d2d1174ae4ed2fc to ea8147624c7b40427ff6fe42830ff8b09757ba68efa3fb425ea5a217f2666e4e. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_install, the basehash value changed from 2422ef8528c52c7ac46a82b5a3d8d777260c0df1f0e70c8bf82ec15f02d81090 to 772b96e073102d917eb5a8d3c7a4919bb7c2f2f7acad1b999659dd25fcbb3ccf. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_package, the basehash value changed from ce6b7142dd12a39ae9043e5ef18d407ea8302882cd98b79229cbb54edae8626d to 60427f83c05adb79d5790b6a7ec66c9fd3aebf1391ff9f00e1129a744b1f0fb8. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_packagedata, the basehash value changed from 69732875306abecdabfe20e644badb22fb144a81bb1abc7d4a3d31533d897a4a to 36dd68813de8371bdeedaf523277867f4960468059216b409414713c43d1c32d. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_package_write_deb, the basehash value changed from 34eb07143181baf3911ccfd6b33a41c4c8d001567321232e16606d3dafee40ca to 9efbdf860fcc2b4a7d86058a0dd93000813bab43bb848691b116ff2a010be035. The metadata is not deterministic and this needs to be fixed.
+NOTE: recipe libxcrypt-4.4.2-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe linux-libc-headers-base-gitAUTOINC+2951eded01-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe perl-5.28.1-r1: task do_package_write_deb_setscene: Started
+NOTE: recipe linux-libc-headers-base-gitAUTOINC+2951eded01-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 189 of 392 (/home/deby/poky/meta-debian/recipes-debian/bzip2/bzip2_debian.bb:do_package_write_deb_setscene)
+NOTE: recipe opkg-utils-0.4.0-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe xz-5.2.4-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe busybox-1.30.1-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe libtool-cross-2.4.6-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe busybox-1.30.1-r0: task do_package_qa_setscene: Started
+NOTE: recipe busybox-1.30.1-r0: task do_populate_lic_setscene: Started
+NOTE: recipe busybox-1.30.1-r0: task do_populate_sysroot_setscene: Started
+NOTE: recipe ncurses-6.1+20181013-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe python3-3.7.2-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe gcc-runtime-8.3.0-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe zlib-1.2.11-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe bzip2-1.0.6-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe libgcc-8.3.0-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe glibc-2.28-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe busybox-1.30.1-r0: task do_package_qa_setscene: Succeeded
+NOTE: Running setscene task 190 of 392 (/home/deby/poky/meta/recipes-extended/libnsl/libnsl2_git.bb:do_package_write_deb_setscene)
+NOTE: recipe libtool-cross-2.4.6-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 191 of 392 (/home/deby/poky/meta-debian/recipes-debian/openssl/openssl_debian.bb:do_package_write_deb_setscene)
+NOTE: recipe openssl-1.1.1c-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe busybox-1.30.1-r0: task do_populate_lic_setscene: Succeeded
+NOTE: Running setscene task 192 of 392 (/home/deby/poky/meta/recipes-support/gdbm/gdbm_1.18.1.bb:do_package_write_deb_setscene)
+NOTE: recipe opkg-utils-0.4.0-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 193 of 392 (/home/deby/poky/meta/recipes-support/sqlite/sqlite3_3.27.2.bb:do_package_write_deb_setscene)
+NOTE: recipe libnsl2-1.2.0+gitAUTOINC+37c5ffe303-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe busybox-1.30.1-r0: task do_populate_sysroot_setscene: Succeeded
+NOTE: Running setscene task 194 of 392 (/home/deby/poky/meta/recipes-core/util-linux/util-linux_2.32.1.bb:do_package_write_deb_setscene)
+NOTE: recipe util-linux-2.32.1-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe busybox-1.30.1-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 195 of 392 (/home/deby/poky/meta-debian/recipes-debian/busybox/busybox_debian.bb:do_packagedata_setscene)
+NOTE: recipe libxcrypt-4.4.2-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 196 of 392 (/home/deby/poky/meta/recipes-support/libffi/libffi_3.2.1.bb:do_package_write_deb_setscene)
+NOTE: recipe busybox-1.30.1-r0: task do_packagedata_setscene: Started
+NOTE: recipe gdbm-1.18.1-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe sqlite3-3_3.27.2-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe libgcc-8.3.0-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 197 of 392 (/home/deby/poky/meta-debian/recipes-debian/readline/readline_debian.bb:do_package_write_deb_setscene)
+NOTE: recipe libffi-3.2.1-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe readline-7.0-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe xz-5.2.4-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 198 of 392 (/home/deby/poky/meta/recipes-extended/libtirpc/libtirpc_1.0.3.bb:do_package_write_deb_setscene)
+NOTE: recipe zlib-1.2.11-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: recipe bzip2-1.0.6-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 199 of 392 (/home/deby/poky/meta-debian/recipes-debian/glibc/glibc-locale_debian.bb:do_package_write_deb_setscene)
+NOTE: Running setscene task 200 of 392 (/home/deby/poky/meta-debian/recipes-debian/make/make_debian.bb:do_package_write_deb_setscene)
+NOTE: recipe libtirpc-1.0.3-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe glibc-locale-2.28-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe make-4.2.1-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe ncurses-6.1+20181013-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 201 of 392 (/home/deby/poky/meta/recipes-extended/bash/bash_4.4.18.bb:do_package_write_deb_setscene)
+NOTE: recipe bash-4.4.18-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe libnsl2-1.2.0+gitAUTOINC+37c5ffe303-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 202 of 392 (/home/deby/poky/meta/recipes-extended/diffutils/diffutils_3.7.bb:do_package_write_deb_setscene)
+NOTE: recipe diffutils-3.7-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe busybox-1.30.1-r0: task do_packagedata_setscene: Succeeded
+NOTE: Running setscene task 204 of 392 (/home/deby/poky/meta/recipes-kernel/kmod/kmod_git.bb:do_populate_sysroot_setscene)
+NOTE: recipe libffi-3.2.1-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 205 of 392 (/home/deby/poky/meta/recipes-kernel/kmod/kmod_git.bb:do_package_write_deb_setscene)
+NOTE: recipe readline-7.0-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 206 of 392 (/home/deby/poky/meta-debian/recipes-debian/bc/bc_debian.bb:do_package_write_deb_setscene)
+NOTE: recipe libtirpc-1.0.3-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 207 of 392 (/home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb:do_package_write_deb_setscene)
+NOTE: recipe gdbm-1.18.1-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: recipe make-4.2.1-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 208 of 392 (/home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb:do_deploy_setscene)
+NOTE: Running setscene task 209 of 392 (/home/deby/poky/meta-debian/recipes-debian/procps/procps_debian.bb:do_package_write_deb_setscene)
+NOTE: recipe kmod-26-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe kmod-26-r0: task do_populate_sysroot_setscene: Started
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_patch, the basehash value changed from 794aba43c93b827ab8dad47165be6be0d8f92f251bd262635c22313e23128daa to ad76c34176c05413e9fb00995196d5015fc81c93587134874abe5c331acef982. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_populate_sysroot, the basehash value changed from be869e59339f587ba9b01faa847252721e4fc97a6678e52ae3fb3cb334f07f98 to 4b90741311ebcb8240c5f71cb7f1d1e85f322b584938fe09765bf6f7e08ea830. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_fetch, the basehash value changed from e7d746c70926dcc04fa84f1cef27f469595a9fca21523ed62a69aa647c6ab643 to 7e6b3e50d8414a012842532653be06d355fde0374f22b4866c8c7bdf4eceac8c. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_configure, the basehash value changed from d653696c2319be02c002dbcf181bbcc4f9f7b2d28c53863032905acc09111ff5 to 8b3603413139ceb6f828384f635b07e7c74683d666f4add61665fe26677c72b8. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_compile, the basehash value changed from 1a397f5109ca4b79b49a53e43624256f539cfc6ead812751f9f84c29f70534a4 to 9e124331a26094bdbee85aaa3f29ec348c043b4459ab7b1efe222eae98a86ccf. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_install, the basehash value changed from 0addcf000039738cdc46f6afdf25282cfa56d0ff4561c28797a9796c47ef8c01 to 71ee95df3b57cd205f150603069b21e19523601de28d1ac6f00a9ec974071084. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_package, the basehash value changed from 8963693988736e0d4cb0af320446fc397837b18841b01c5ce71db7acdcd87082 to 00cf7d0ab79c6ab3b57e1fb6c59156e653c63f187c9caf74f0223e5e5bf13b19. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_packagedata, the basehash value changed from f10212c2521a8816d78a0c3b091a7b761ed9dc2fba3051e117d1ea7f38ebf869 to f041237f1c626a0e4f421628d0c791bfb9e1c62a7b149e5fac7cbd92a11fb69e. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_package_write_deb, the basehash value changed from d0924c228d58debd0b96c29c83e68db9784973d11494b1a7703ea0bdf32ea0ec to 5c2b29df40ed732915ad57765f1c5e94e184351a5ee34fadb66285a4e78d6c67. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_bundle_initramfs, the basehash value changed from e999da9319eed1eab8f0e442393ec81e254757256f83c7de5a7fccd76236385c to 1408b3010d154ca108451d0b344c6962b8f64a854afee41deb700f413e84f315. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_compile_kernelmodules, the basehash value changed from 1f5286b6be1e72ee9ed2907660551a0a05fa7e35606589ea3fd924942c50317b to ca2c1d0643d105f9e62f620cb1df39570a634dfd6b74724a32b7c8365cfd981c. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_shared_workdir, the basehash value changed from 17a7d709030012dd675ff2bbc2aa3da1954714bd7bfda9c3e70fb0ba11cd35a3 to 1a835efd377a850d73856dcd3e97e00abeb874f89d2689059e6c3c3feda66c95. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_kernel_link_images, the basehash value changed from 46f3b8ff21d6324cb0d5b095fd0ef1fad7be3679565544a7d6c78924b8c9b3e4 to e49d05ce42bca9d16a46b41e9dd8ddd71acdf13742cdce8aea7992ce3fff1461. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_strip, the basehash value changed from d43727d8b0112a13ec3b7123305a05cdcdcb32d55b35dda4770a6f726761e417 to 5bc1dd0bd58485c04c13178462a222dd3db689da1b1b6642184bb5a786375a44. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_sizecheck, the basehash value changed from ddfa25aa383742d5361dc7ec4d1850efcae1abebf1755ef31f72af67fb478a11 to 8ba94ff3fcc469d9f0aadce954fbe1ddffbbb3e517e44e593b9e778fecb9dd08. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_deploy, the basehash value changed from 8162f282ad3f5f233179f1ecb63e2242fafd1dcb014a4c86f54b2733441a64ab to 991d4374acee6d1ca0d6d37ec0587276eac777fb257698328528712f018ecae4. The metadata is not deterministic and this needs to be fixed.
+NOTE: recipe linux-base-gitAUTOINC+2951eded01-r0: task do_deploy_setscene: Started
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_patch, the basehash value changed from 794aba43c93b827ab8dad47165be6be0d8f92f251bd262635c22313e23128daa to ad76c34176c05413e9fb00995196d5015fc81c93587134874abe5c331acef982. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_populate_sysroot, the basehash value changed from be869e59339f587ba9b01faa847252721e4fc97a6678e52ae3fb3cb334f07f98 to 4b90741311ebcb8240c5f71cb7f1d1e85f322b584938fe09765bf6f7e08ea830. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_fetch, the basehash value changed from e7d746c70926dcc04fa84f1cef27f469595a9fca21523ed62a69aa647c6ab643 to 7e6b3e50d8414a012842532653be06d355fde0374f22b4866c8c7bdf4eceac8c. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_configure, the basehash value changed from d653696c2319be02c002dbcf181bbcc4f9f7b2d28c53863032905acc09111ff5 to 8b3603413139ceb6f828384f635b07e7c74683d666f4add61665fe26677c72b8. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_compile, the basehash value changed from 1a397f5109ca4b79b49a53e43624256f539cfc6ead812751f9f84c29f70534a4 to 9e124331a26094bdbee85aaa3f29ec348c043b4459ab7b1efe222eae98a86ccf. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_install, the basehash value changed from 0addcf000039738cdc46f6afdf25282cfa56d0ff4561c28797a9796c47ef8c01 to 71ee95df3b57cd205f150603069b21e19523601de28d1ac6f00a9ec974071084. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_package, the basehash value changed from 8963693988736e0d4cb0af320446fc397837b18841b01c5ce71db7acdcd87082 to 00cf7d0ab79c6ab3b57e1fb6c59156e653c63f187c9caf74f0223e5e5bf13b19. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_packagedata, the basehash value changed from f10212c2521a8816d78a0c3b091a7b761ed9dc2fba3051e117d1ea7f38ebf869 to f041237f1c626a0e4f421628d0c791bfb9e1c62a7b149e5fac7cbd92a11fb69e. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_package_write_deb, the basehash value changed from d0924c228d58debd0b96c29c83e68db9784973d11494b1a7703ea0bdf32ea0ec to 5c2b29df40ed732915ad57765f1c5e94e184351a5ee34fadb66285a4e78d6c67. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_bundle_initramfs, the basehash value changed from e999da9319eed1eab8f0e442393ec81e254757256f83c7de5a7fccd76236385c to 1408b3010d154ca108451d0b344c6962b8f64a854afee41deb700f413e84f315. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_compile_kernelmodules, the basehash value changed from 1f5286b6be1e72ee9ed2907660551a0a05fa7e35606589ea3fd924942c50317b to ca2c1d0643d105f9e62f620cb1df39570a634dfd6b74724a32b7c8365cfd981c. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_shared_workdir, the basehash value changed from 17a7d709030012dd675ff2bbc2aa3da1954714bd7bfda9c3e70fb0ba11cd35a3 to 1a835efd377a850d73856dcd3e97e00abeb874f89d2689059e6c3c3feda66c95. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_kernel_link_images, the basehash value changed from 46f3b8ff21d6324cb0d5b095fd0ef1fad7be3679565544a7d6c78924b8c9b3e4 to e49d05ce42bca9d16a46b41e9dd8ddd71acdf13742cdce8aea7992ce3fff1461. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_strip, the basehash value changed from d43727d8b0112a13ec3b7123305a05cdcdcb32d55b35dda4770a6f726761e417 to 5bc1dd0bd58485c04c13178462a222dd3db689da1b1b6642184bb5a786375a44. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_sizecheck, the basehash value changed from ddfa25aa383742d5361dc7ec4d1850efcae1abebf1755ef31f72af67fb478a11 to 8ba94ff3fcc469d9f0aadce954fbe1ddffbbb3e517e44e593b9e778fecb9dd08. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_deploy, the basehash value changed from 8162f282ad3f5f233179f1ecb63e2242fafd1dcb014a4c86f54b2733441a64ab to 991d4374acee6d1ca0d6d37ec0587276eac777fb257698328528712f018ecae4. The metadata is not deterministic and this needs to be fixed.
+NOTE: recipe linux-base-gitAUTOINC+2951eded01-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe sqlite3-3_3.27.2-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 210 of 392 (/home/deby/poky/meta/recipes-support/bash-completion/bash-completion_2.8.bb:do_package_write_deb_setscene)
+NOTE: recipe gcc-runtime-8.3.0-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 212 of 392 (/home/deby/poky/meta/recipes-devtools/e2fsprogs/e2fsprogs_1.44.5.bb:do_package_write_deb_setscene)
+NOTE: recipe bash-4.4.18-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 213 of 392 (/home/deby/poky/meta-debian/recipes-debian/glib-2.0/glib-2.0_debian.bb:do_package_write_deb_setscene)
+NOTE: recipe linux-base-gitAUTOINC+2951eded01-r0: task do_deploy_setscene: Succeeded
+NOTE: Running setscene task 214 of 392 (/home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb:do_populate_sysroot_setscene)
+NOTE: recipe linux-base-gitAUTOINC+2951eded01-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 215 of 392 (/home/deby/poky/meta-debian/recipes-debian/libxml/libxml2_debian.bb:do_package_write_deb_setscene)
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_patch, the basehash value changed from 794aba43c93b827ab8dad47165be6be0d8f92f251bd262635c22313e23128daa to ad76c34176c05413e9fb00995196d5015fc81c93587134874abe5c331acef982. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_populate_sysroot, the basehash value changed from be869e59339f587ba9b01faa847252721e4fc97a6678e52ae3fb3cb334f07f98 to 4b90741311ebcb8240c5f71cb7f1d1e85f322b584938fe09765bf6f7e08ea830. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_fetch, the basehash value changed from e7d746c70926dcc04fa84f1cef27f469595a9fca21523ed62a69aa647c6ab643 to 7e6b3e50d8414a012842532653be06d355fde0374f22b4866c8c7bdf4eceac8c. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_configure, the basehash value changed from d653696c2319be02c002dbcf181bbcc4f9f7b2d28c53863032905acc09111ff5 to 8b3603413139ceb6f828384f635b07e7c74683d666f4add61665fe26677c72b8. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_compile, the basehash value changed from 1a397f5109ca4b79b49a53e43624256f539cfc6ead812751f9f84c29f70534a4 to 9e124331a26094bdbee85aaa3f29ec348c043b4459ab7b1efe222eae98a86ccf. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_install, the basehash value changed from 0addcf000039738cdc46f6afdf25282cfa56d0ff4561c28797a9796c47ef8c01 to 71ee95df3b57cd205f150603069b21e19523601de28d1ac6f00a9ec974071084. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_package, the basehash value changed from 8963693988736e0d4cb0af320446fc397837b18841b01c5ce71db7acdcd87082 to 00cf7d0ab79c6ab3b57e1fb6c59156e653c63f187c9caf74f0223e5e5bf13b19. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_packagedata, the basehash value changed from f10212c2521a8816d78a0c3b091a7b761ed9dc2fba3051e117d1ea7f38ebf869 to f041237f1c626a0e4f421628d0c791bfb9e1c62a7b149e5fac7cbd92a11fb69e. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_package_write_deb, the basehash value changed from d0924c228d58debd0b96c29c83e68db9784973d11494b1a7703ea0bdf32ea0ec to 5c2b29df40ed732915ad57765f1c5e94e184351a5ee34fadb66285a4e78d6c67. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_bundle_initramfs, the basehash value changed from e999da9319eed1eab8f0e442393ec81e254757256f83c7de5a7fccd76236385c to 1408b3010d154ca108451d0b344c6962b8f64a854afee41deb700f413e84f315. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_compile_kernelmodules, the basehash value changed from 1f5286b6be1e72ee9ed2907660551a0a05fa7e35606589ea3fd924942c50317b to ca2c1d0643d105f9e62f620cb1df39570a634dfd6b74724a32b7c8365cfd981c. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_shared_workdir, the basehash value changed from 17a7d709030012dd675ff2bbc2aa3da1954714bd7bfda9c3e70fb0ba11cd35a3 to 1a835efd377a850d73856dcd3e97e00abeb874f89d2689059e6c3c3feda66c95. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_kernel_link_images, the basehash value changed from 46f3b8ff21d6324cb0d5b095fd0ef1fad7be3679565544a7d6c78924b8c9b3e4 to e49d05ce42bca9d16a46b41e9dd8ddd71acdf13742cdce8aea7992ce3fff1461. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_strip, the basehash value changed from d43727d8b0112a13ec3b7123305a05cdcdcb32d55b35dda4770a6f726761e417 to 5bc1dd0bd58485c04c13178462a222dd3db689da1b1b6642184bb5a786375a44. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_sizecheck, the basehash value changed from ddfa25aa383742d5361dc7ec4d1850efcae1abebf1755ef31f72af67fb478a11 to 8ba94ff3fcc469d9f0aadce954fbe1ddffbbb3e517e44e593b9e778fecb9dd08. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_deploy, the basehash value changed from 8162f282ad3f5f233179f1ecb63e2242fafd1dcb014a4c86f54b2733441a64ab to 991d4374acee6d1ca0d6d37ec0587276eac777fb257698328528712f018ecae4. The metadata is not deterministic and this needs to be fixed.
+NOTE: recipe linux-base-gitAUTOINC+2951eded01-r0: task do_populate_sysroot_setscene: Started
+NOTE: recipe linux-base-gitAUTOINC+2951eded01-r0: task do_populate_sysroot_setscene: Succeeded
+NOTE: Running setscene task 217 of 392 (/home/deby/poky/meta-debian/recipes-debian/gmp/gmp_debian.bb:do_package_write_deb_setscene)
+NOTE: recipe bc-1.07.1-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe util-linux-2.32.1-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: recipe procps-3.3.15-r0: task do_package_write_deb_setscene: Started
+NOTE: Running setscene task 218 of 392 (/home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb:do_packagedata_setscene)
+NOTE: recipe e2fsprogs-1.44.5-r0: task do_package_write_deb_setscene: Started
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_patch, the basehash value changed from 794aba43c93b827ab8dad47165be6be0d8f92f251bd262635c22313e23128daa to ad76c34176c05413e9fb00995196d5015fc81c93587134874abe5c331acef982. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_populate_sysroot, the basehash value changed from be869e59339f587ba9b01faa847252721e4fc97a6678e52ae3fb3cb334f07f98 to 4b90741311ebcb8240c5f71cb7f1d1e85f322b584938fe09765bf6f7e08ea830. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_fetch, the basehash value changed from e7d746c70926dcc04fa84f1cef27f469595a9fca21523ed62a69aa647c6ab643 to 7e6b3e50d8414a012842532653be06d355fde0374f22b4866c8c7bdf4eceac8c. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_configure, the basehash value changed from d653696c2319be02c002dbcf181bbcc4f9f7b2d28c53863032905acc09111ff5 to 8b3603413139ceb6f828384f635b07e7c74683d666f4add61665fe26677c72b8. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_compile, the basehash value changed from 1a397f5109ca4b79b49a53e43624256f539cfc6ead812751f9f84c29f70534a4 to 9e124331a26094bdbee85aaa3f29ec348c043b4459ab7b1efe222eae98a86ccf. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_install, the basehash value changed from 0addcf000039738cdc46f6afdf25282cfa56d0ff4561c28797a9796c47ef8c01 to 71ee95df3b57cd205f150603069b21e19523601de28d1ac6f00a9ec974071084. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_package, the basehash value changed from 8963693988736e0d4cb0af320446fc397837b18841b01c5ce71db7acdcd87082 to 00cf7d0ab79c6ab3b57e1fb6c59156e653c63f187c9caf74f0223e5e5bf13b19. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_packagedata, the basehash value changed from f10212c2521a8816d78a0c3b091a7b761ed9dc2fba3051e117d1ea7f38ebf869 to f041237f1c626a0e4f421628d0c791bfb9e1c62a7b149e5fac7cbd92a11fb69e. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_package_write_deb, the basehash value changed from d0924c228d58debd0b96c29c83e68db9784973d11494b1a7703ea0bdf32ea0ec to 5c2b29df40ed732915ad57765f1c5e94e184351a5ee34fadb66285a4e78d6c67. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_bundle_initramfs, the basehash value changed from e999da9319eed1eab8f0e442393ec81e254757256f83c7de5a7fccd76236385c to 1408b3010d154ca108451d0b344c6962b8f64a854afee41deb700f413e84f315. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_compile_kernelmodules, the basehash value changed from 1f5286b6be1e72ee9ed2907660551a0a05fa7e35606589ea3fd924942c50317b to ca2c1d0643d105f9e62f620cb1df39570a634dfd6b74724a32b7c8365cfd981c. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_shared_workdir, the basehash value changed from 17a7d709030012dd675ff2bbc2aa3da1954714bd7bfda9c3e70fb0ba11cd35a3 to 1a835efd377a850d73856dcd3e97e00abeb874f89d2689059e6c3c3feda66c95. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_kernel_link_images, the basehash value changed from 46f3b8ff21d6324cb0d5b095fd0ef1fad7be3679565544a7d6c78924b8c9b3e4 to e49d05ce42bca9d16a46b41e9dd8ddd71acdf13742cdce8aea7992ce3fff1461. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_strip, the basehash value changed from d43727d8b0112a13ec3b7123305a05cdcdcb32d55b35dda4770a6f726761e417 to 5bc1dd0bd58485c04c13178462a222dd3db689da1b1b6642184bb5a786375a44. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_sizecheck, the basehash value changed from ddfa25aa383742d5361dc7ec4d1850efcae1abebf1755ef31f72af67fb478a11 to 8ba94ff3fcc469d9f0aadce954fbe1ddffbbb3e517e44e593b9e778fecb9dd08. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_deploy, the basehash value changed from 8162f282ad3f5f233179f1ecb63e2242fafd1dcb014a4c86f54b2733441a64ab to 991d4374acee6d1ca0d6d37ec0587276eac777fb257698328528712f018ecae4. The metadata is not deterministic and this needs to be fixed.
+NOTE: recipe linux-base-gitAUTOINC+2951eded01-r0: task do_packagedata_setscene: Started
+NOTE: recipe diffutils-3.7-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 219 of 392 (/home/deby/poky/meta/recipes-support/attr/attr_2.4.47.bb:do_package_write_deb_setscene)
+NOTE: recipe bash-completion-2.8-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe gmp-6.1.2-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe glib-2.0-2.58.3-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe libxml2-2.9.4-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe linux-base-gitAUTOINC+2951eded01-r0: task do_packagedata_setscene: Succeeded
+NOTE: Running setscene task 222 of 392 (/home/deby/poky/meta/recipes-support/libpcre/libpcre_8.43.bb:do_package_write_deb_setscene)
+NOTE: recipe attr-2.4.47-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe glibc-2.28-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: recipe kmod-26-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 224 of 392 (/home/deby/poky/meta/recipes-support/lzo/lzo_2.10.bb:do_package_write_deb_setscene)
+NOTE: recipe kmod-26-r0: task do_populate_sysroot_setscene: Succeeded
+NOTE: Running setscene task 225 of 392 (/home/deby/poky/meta/recipes-kernel/kmod/kmod_git.bb:do_packagedata_setscene)
+NOTE: Running setscene task 226 of 392 (/home/deby/poky/meta/recipes-core/base-files/base-files_3.0.14.bb:do_package_write_deb_setscene)
+NOTE: recipe kmod-26-r0: task do_packagedata_setscene: Started
+NOTE: recipe base-files-3.0.14-r89: task do_package_write_deb_setscene: Started
+NOTE: recipe python3-3.7.2-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 227 of 392 (/home/deby/poky/meta/recipes-support/ca-certificates/ca-certificates_20190110.bb:do_packagedata_setscene)
+NOTE: recipe lzo-2.10-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe bash-completion-2.8-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 228 of 392 (/home/deby/poky/meta-debian/recipes-debian/dbus/dbus_debian.bb:do_package_write_deb_setscene)
+NOTE: recipe libpcre-8.43-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe dbus-1.12.16-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe ca-certificates-20190110-r0: task do_packagedata_setscene: Started
+NOTE: recipe procps-3.3.15-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: recipe bc-1.07.1-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 229 of 392 (/home/deby/poky/meta/recipes-support/shared-mime-info/shared-mime-info_1.10.bb:do_package_write_deb_setscene)
+NOTE: Running setscene task 230 of 392 (/home/deby/poky/meta-debian/recipes-debian/bc/bc_debian.bb:do_packagedata_setscene)
+NOTE: recipe gmp-6.1.2-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 231 of 392 (/home/deby/poky/meta-debian/recipes-debian/gmp/gmp_debian.bb:do_packagedata_setscene)
+NOTE: recipe bc-1.07.1-r0: task do_packagedata_setscene: Started
+NOTE: recipe base-files-3.0.14-r89: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 232 of 392 (/home/deby/poky/meta/recipes-extended/shadow/shadow_4.6.bb:do_package_write_deb_setscene)
+NOTE: recipe gmp-6.1.2-r0: task do_packagedata_setscene: Started
+NOTE: recipe attr-2.4.47-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 233 of 392 (/home/deby/poky/meta-debian/recipes-debian/libtool/libtool_debian.bb:do_populate_sysroot_setscene)
+NOTE: recipe libpcre-8.43-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 234 of 392 (/home/deby/poky/meta-debian/recipes-debian/make/make_debian.bb:do_packagedata_setscene)
+NOTE: recipe libxml2-2.9.4-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 235 of 392 (/home/deby/poky/meta-debian/recipes-debian/libtool/libtool_debian.bb:do_package_write_deb_setscene)
+NOTE: recipe shadow-4.6-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe make-4.2.1-r0: task do_packagedata_setscene: Started
+NOTE: recipe shared-mime-info-1.10-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe lzo-2.10-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 236 of 392 (/home/deby/poky/meta/recipes-support/lzo/lzo_2.10.bb:do_packagedata_setscene)
+NOTE: recipe e2fsprogs-1.44.5-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 237 of 392 (/home/deby/poky/meta/recipes-extended/diffutils/diffutils_3.7.bb:do_packagedata_setscene)
+NOTE: recipe lzo-2.10-r0: task do_packagedata_setscene: Started
+NOTE: recipe diffutils-3.7-r0: task do_packagedata_setscene: Started
+NOTE: recipe libtool-2.4.6-r0: task do_populate_sysroot_setscene: Started
+NOTE: recipe libtool-2.4.6-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe dbus-1.12.16-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 238 of 392 (/home/deby/poky/meta-debian/recipes-debian/procps/procps_debian.bb:do_packagedata_setscene)
+NOTE: recipe procps-3.3.15-r0: task do_packagedata_setscene: Started
+NOTE: recipe kmod-26-r0: task do_packagedata_setscene: Succeeded
+NOTE: Running setscene task 240 of 392 (/home/deby/poky/meta/recipes-devtools/e2fsprogs/e2fsprogs_1.44.5.bb:do_packagedata_setscene)
+NOTE: recipe e2fsprogs-1.44.5-r0: task do_packagedata_setscene: Started
+NOTE: recipe openssl-1.1.1c-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 241 of 392 (/home/deby/poky/meta/recipes-core/base-passwd/base-passwd_3.5.29.bb:do_populate_sysroot_setscene)
+NOTE: recipe glib-2.0-2.58.3-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 242 of 392 (/home/deby/poky/meta/recipes-core/base-passwd/base-passwd_3.5.29.bb:do_package_write_deb_setscene)
+NOTE: recipe shared-mime-info-1.10-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 243 of 392 (/home/deby/poky/meta/recipes-support/shared-mime-info/shared-mime-info_1.10.bb:do_packagedata_setscene)
+NOTE: recipe shared-mime-info-1.10-r0: task do_packagedata_setscene: Started
+NOTE: recipe base-passwd-3.5.29-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe base-passwd-3.5.29-r0: task do_populate_sysroot_setscene: Started
+NOTE: recipe libtool-2.4.6-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 244 of 392 (/home/deby/poky/meta/recipes-extended/bash/bash_4.4.18.bb:do_packagedata_setscene)
+NOTE: recipe bash-4.4.18-r0: task do_packagedata_setscene: Started
+NOTE: recipe gmp-6.1.2-r0: task do_packagedata_setscene: Succeeded
+NOTE: Running setscene task 246 of 392 (/home/deby/poky/meta-debian/recipes-debian/libtool/libtool_debian.bb:do_packagedata_setscene)
+NOTE: recipe libtool-2.4.6-r0: task do_packagedata_setscene: Started
+NOTE: recipe base-passwd-3.5.29-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 247 of 392 (/home/deby/poky/meta/recipes-extended/shadow/shadow-sysroot_4.6.bb:do_populate_sysroot_setscene)
+NOTE: recipe shadow-sysroot-4.6-r3: task do_populate_sysroot_setscene: Started
+NOTE: recipe shadow-4.6-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 248 of 392 (/home/deby/poky/meta/recipes-extended/shadow/shadow-sysroot_4.6.bb:do_package_write_deb_setscene)
+NOTE: recipe libtool-2.4.6-r0: task do_populate_sysroot_setscene: Succeeded
+NOTE: Running setscene task 249 of 392 (/home/deby/poky/meta/recipes-graphics/xorg-lib/libx11_1.6.7.bb:do_package_write_deb_setscene)
+NOTE: recipe shadow-sysroot-4.6-r3: task do_package_write_deb_setscene: Started
+NOTE: recipe libx11-1_1.6.7-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe perl-5.28.1-r1: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 250 of 392 (/home/deby/poky/meta-debian/recipes-debian/perl/perl_debian.bb:do_packagedata_setscene)
+NOTE: recipe perl-5.28.1-r1: task do_packagedata_setscene: Started
+NOTE: recipe procps-3.3.15-r0: task do_packagedata_setscene: Succeeded
+NOTE: Running setscene task 252 of 392 (/home/deby/poky/meta/recipes-graphics/xorg-lib/libsm_1.2.3.bb:do_package_write_deb_setscene)
+NOTE: recipe bc-1.07.1-r0: task do_packagedata_setscene: Succeeded
+NOTE: Running setscene task 254 of 392 (/home/deby/poky/meta-debian/recipes-debian/expat/expat_debian.bb:do_package_write_deb_setscene)
+NOTE: recipe shadow-sysroot-4.6-r3: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 255 of 392 (/home/deby/poky/meta/recipes-extended/shadow/shadow-securetty_4.6.bb:do_package_write_deb_setscene)
+NOTE: recipe libsm-1_1.2.3-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe libsm-1_1.2.3-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 256 of 392 (/home/deby/poky/meta/recipes-graphics/xorg-lib/libxcb_1.13.1.bb:do_package_write_deb_setscene)
+NOTE: recipe libxcb-1.13.1-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe expat-2.2.6-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe libx11-1_1.6.7-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 257 of 392 (/home/deby/poky/meta/recipes-graphics/xorg-lib/xtrans_1.3.5.bb:do_package_write_deb_setscene)
+NOTE: recipe base-passwd-3.5.29-r0: task do_populate_sysroot_setscene: Succeeded
+NOTE: Running setscene task 258 of 392 (/home/deby/poky/meta/recipes-graphics/xorg-lib/libice_1.0.9.bb:do_package_write_deb_setscene)
+NOTE: recipe libice-1_1.0.9-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe libice-1_1.0.9-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: recipe libxcb-1.13.1-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 259 of 392 (/home/deby/poky/meta/recipes-graphics/xorg-lib/libxau_1.0.9.bb:do_package_write_deb_setscene)
+NOTE: recipe libxau-1_1.0.9-r0: task do_package_write_deb_setscene: Started
+NOTE: Running setscene task 260 of 392 (/home/deby/poky/meta/recipes-graphics/xorg-lib/libxdmcp_1.1.2.bb:do_package_write_deb_setscene)
+NOTE: recipe libxdmcp-1_1.1.2-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe libxau-1_1.0.9-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: recipe shadow-securetty-4.6-r3: task do_package_write_deb_setscene: Started
+NOTE: recipe xtrans-1_1.3.5-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe libxdmcp-1_1.1.2-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: recipe xtrans-1_1.3.5-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: recipe shadow-sysroot-4.6-r3: task do_populate_sysroot_setscene: Succeeded
+NOTE: recipe expat-2.2.6-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: recipe shadow-securetty-4.6-r3: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 261 of 392 (/home/deby/poky/meta/recipes-extended/shadow/shadow-securetty_4.6.bb:do_packagedata_setscene)
+NOTE: recipe shadow-securetty-4.6-r3: task do_packagedata_setscene: Started
+NOTE: recipe make-4.2.1-r0: task do_packagedata_setscene: Succeeded
+NOTE: recipe ca-certificates-20190110-r0: task do_packagedata_setscene: Succeeded
+NOTE: recipe lzo-2.10-r0: task do_packagedata_setscene: Succeeded
+NOTE: recipe bash-4.4.18-r0: task do_packagedata_setscene: Succeeded
+NOTE: recipe diffutils-3.7-r0: task do_packagedata_setscene: Succeeded
+NOTE: recipe shared-mime-info-1.10-r0: task do_packagedata_setscene: Succeeded
+NOTE: Running setscene task 269 of 392 (/home/deby/poky/meta-debian/recipes-debian/glib-2.0/glib-2.0_debian.bb:do_populate_sysroot_setscene)
+NOTE: Running setscene task 270 of 392 (/home/deby/poky/meta-debian/recipes-debian/glib-2.0/glib-2.0_debian.bb:do_packagedata_setscene)
+NOTE: Running setscene task 272 of 392 (/home/deby/poky/meta-debian/recipes-debian/libxml/libxml2_debian.bb:do_packagedata_setscene)
+NOTE: recipe libtool-2.4.6-r0: task do_packagedata_setscene: Succeeded
+NOTE: recipe libxml2-2.9.4-r0: task do_packagedata_setscene: Started
+NOTE: recipe glib-2.0-2.58.3-r0: task do_packagedata_setscene: Started
+NOTE: recipe glib-2.0-2.58.3-r0: task do_populate_sysroot_setscene: Started
+NOTE: recipe e2fsprogs-1.44.5-r0: task do_packagedata_setscene: Succeeded
+NOTE: recipe libxml2-2.9.4-r0: task do_packagedata_setscene: Succeeded
+NOTE: Running setscene task 278 of 392 (/home/deby/poky/meta/recipes-devtools/python/python3_3.7.2.bb:do_packagedata_setscene)
+NOTE: recipe perl-5.28.1-r1: task do_packagedata_setscene: Succeeded
+NOTE: recipe shadow-securetty-4.6-r3: task do_packagedata_setscene: Succeeded
+NOTE: recipe python3-3.7.2-r0: task do_packagedata_setscene: Started
+NOTE: recipe glib-2.0-2.58.3-r0: task do_populate_sysroot_setscene: Succeeded
+NOTE: recipe python3-3.7.2-r0: task do_packagedata_setscene: Succeeded
+NOTE: Running setscene task 283 of 392 (/home/deby/poky/meta/recipes-extended/xz/xz_5.2.4.bb:do_packagedata_setscene)
+NOTE: Running setscene task 284 of 392 (/home/deby/poky/meta/recipes-extended/libnsl/libnsl2_git.bb:do_populate_sysroot_setscene)
+NOTE: Running setscene task 285 of 392 (/home/deby/poky/meta/recipes-extended/libnsl/libnsl2_git.bb:do_packagedata_setscene)
+NOTE: Running setscene task 287 of 392 (/home/deby/poky/meta-debian/recipes-debian/openssl/openssl_debian.bb:do_packagedata_setscene)
+NOTE: Running setscene task 289 of 392 (/home/deby/poky/meta/recipes-support/gdbm/gdbm_1.18.1.bb:do_packagedata_setscene)
+NOTE: Running setscene task 291 of 392 (/home/deby/poky/meta/recipes-support/sqlite/sqlite3_3.27.2.bb:do_packagedata_setscene)
+NOTE: Running setscene task 293 of 392 (/home/deby/poky/meta-debian/recipes-debian/readline/readline_debian.bb:do_packagedata_setscene)
+NOTE: recipe openssl-1.1.1c-r0: task do_packagedata_setscene: Started
+NOTE: recipe libnsl2-1.2.0+gitAUTOINC+37c5ffe303-r0: task do_populate_sysroot_setscene: Started
+NOTE: recipe sqlite3-3_3.27.2-r0: task do_packagedata_setscene: Started
+NOTE: recipe libnsl2-1.2.0+gitAUTOINC+37c5ffe303-r0: task do_packagedata_setscene: Started
+NOTE: recipe xz-5.2.4-r0: task do_packagedata_setscene: Started
+NOTE: recipe readline-7.0-r0: task do_packagedata_setscene: Started
+NOTE: recipe gdbm-1.18.1-r0: task do_packagedata_setscene: Started
+NOTE: recipe libnsl2-1.2.0+gitAUTOINC+37c5ffe303-r0: task do_populate_sysroot_setscene: Succeeded
+NOTE: recipe glib-2.0-2.58.3-r0: task do_packagedata_setscene: Succeeded
+NOTE: Running setscene task 295 of 392 (/home/deby/poky/meta/recipes-core/util-linux/util-linux_2.32.1.bb:do_populate_sysroot_setscene)
+NOTE: Running setscene task 296 of 392 (/home/deby/poky/meta/recipes-core/util-linux/util-linux_2.32.1.bb:do_packagedata_setscene)
+NOTE: Running setscene task 297 of 392 (/home/deby/poky/meta/recipes-support/libffi/libffi_3.2.1.bb:do_populate_sysroot_setscene)
+NOTE: Running setscene task 298 of 392 (/home/deby/poky/meta/recipes-support/libffi/libffi_3.2.1.bb:do_packagedata_setscene)
+NOTE: Running setscene task 299 of 392 (/home/deby/poky/meta/recipes-support/libpcre/libpcre_8.43.bb:do_populate_sysroot_setscene)
+NOTE: Running setscene task 300 of 392 (/home/deby/poky/meta/recipes-support/libpcre/libpcre_8.43.bb:do_packagedata_setscene)
+NOTE: recipe libnsl2-1.2.0+gitAUTOINC+37c5ffe303-r0: task do_packagedata_setscene: Succeeded
+NOTE: Running setscene task 301 of 392 (/home/deby/poky/meta-debian/recipes-debian/dbus/dbus_debian.bb:do_populate_sysroot_setscene)
+NOTE: Running setscene task 302 of 392 (/home/deby/poky/meta-debian/recipes-debian/dbus/dbus_debian.bb:do_packagedata_setscene)
+NOTE: recipe readline-7.0-r0: task do_packagedata_setscene: Succeeded
+NOTE: recipe sqlite3-3_3.27.2-r0: task do_packagedata_setscene: Succeeded
+NOTE: recipe libffi-3.2.1-r0: task do_populate_sysroot_setscene: Started
+NOTE: recipe libffi-3.2.1-r0: task do_packagedata_setscene: Started
+NOTE: recipe libpcre-8.43-r0: task do_populate_sysroot_setscene: Started
+NOTE: recipe util-linux-2.32.1-r0: task do_packagedata_setscene: Started
+NOTE: recipe dbus-1.12.16-r0: task do_packagedata_setscene: Started
+NOTE: recipe util-linux-2.32.1-r0: task do_populate_sysroot_setscene: Started
+NOTE: recipe dbus-1.12.16-r0: task do_populate_sysroot_setscene: Started
+NOTE: Running setscene task 306 of 392 (/home/deby/poky/meta/recipes-extended/libtirpc/libtirpc_1.0.3.bb:do_populate_sysroot_setscene)
+NOTE: Running setscene task 307 of 392 (/home/deby/poky/meta/recipes-extended/libtirpc/libtirpc_1.0.3.bb:do_packagedata_setscene)
+NOTE: recipe libtirpc-1.0.3-r0: task do_packagedata_setscene: Started
+NOTE: recipe libtirpc-1.0.3-r0: task do_populate_sysroot_setscene: Started
+NOTE: recipe xz-5.2.4-r0: task do_packagedata_setscene: Succeeded
+NOTE: recipe libpcre-8.43-r0: task do_packagedata_setscene: Started
+NOTE: recipe libffi-3.2.1-r0: task do_packagedata_setscene: Succeeded
+NOTE: recipe libffi-3.2.1-r0: task do_populate_sysroot_setscene: Succeeded
+NOTE: recipe glibc-locale-2.28-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 310 of 392 (/home/deby/poky/meta-debian/recipes-debian/glibc/glibc-locale_debian.bb:do_packagedata_setscene)
+NOTE: recipe glibc-locale-2.28-r0: task do_packagedata_setscene: Started
+NOTE: recipe libtirpc-1.0.3-r0: task do_populate_sysroot_setscene: Succeeded
+NOTE: recipe libpcre-8.43-r0: task do_populate_sysroot_setscene: Succeeded
+NOTE: recipe util-linux-2.32.1-r0: task do_populate_sysroot_setscene: Succeeded
+NOTE: recipe dbus-1.12.16-r0: task do_populate_sysroot_setscene: Succeeded
+NOTE: recipe libpcre-8.43-r0: task do_packagedata_setscene: Succeeded
+NOTE: Running setscene task 312 of 392 (/home/deby/poky/meta-debian/recipes-debian/bzip2/bzip2_debian.bb:do_populate_sysroot_setscene)
+NOTE: Running setscene task 313 of 392 (/home/deby/poky/meta-debian/recipes-debian/bzip2/bzip2_debian.bb:do_packagedata_setscene)
+NOTE: recipe util-linux-2.32.1-r0: task do_packagedata_setscene: Succeeded
+NOTE: Running setscene task 315 of 392 (/home/deby/poky/meta-debian/recipes-debian/ncurses/ncurses_debian.bb:do_populate_sysroot_setscene)
+NOTE: Running setscene task 316 of 392 (/home/deby/poky/meta-debian/recipes-debian/ncurses/ncurses_debian.bb:do_packagedata_setscene)
+NOTE: Running setscene task 317 of 392 (/home/deby/poky/meta-debian/recipes-debian/zlib/zlib_debian.bb:do_populate_sysroot_setscene)
+NOTE: Running setscene task 318 of 392 (/home/deby/poky/meta-debian/recipes-debian/zlib/zlib_debian.bb:do_packagedata_setscene)
+NOTE: Running setscene task 319 of 392 (/home/deby/poky/meta/recipes-support/bash-completion/bash-completion_2.8.bb:do_populate_sysroot_setscene)
+NOTE: Running setscene task 320 of 392 (/home/deby/poky/meta/recipes-support/bash-completion/bash-completion_2.8.bb:do_packagedata_setscene)
+NOTE: recipe gdbm-1.18.1-r0: task do_packagedata_setscene: Succeeded
+NOTE: recipe dbus-1.12.16-r0: task do_packagedata_setscene: Succeeded
+NOTE: Running setscene task 323 of 392 (/home/deby/poky/meta/recipes-core/base-files/base-files_3.0.14.bb:do_populate_sysroot_setscene)
+NOTE: Running setscene task 324 of 392 (/home/deby/poky/meta/recipes-core/base-files/base-files_3.0.14.bb:do_packagedata_setscene)
+NOTE: Running setscene task 325 of 392 (/home/deby/poky/meta/recipes-extended/shadow/shadow_4.6.bb:do_populate_sysroot_setscene)
+NOTE: Running setscene task 326 of 392 (/home/deby/poky/meta/recipes-extended/shadow/shadow_4.6.bb:do_packagedata_setscene)
+NOTE: Running setscene task 327 of 392 (/home/deby/poky/meta/recipes-core/base-passwd/base-passwd_3.5.29.bb:do_packagedata_setscene)
+NOTE: recipe openssl-1.1.1c-r0: task do_packagedata_setscene: Succeeded
+NOTE: Running setscene task 329 of 392 (/home/deby/poky/meta/recipes-extended/shadow/shadow-sysroot_4.6.bb:do_packagedata_setscene)
+NOTE: recipe bzip2-1.0.6-r0: task do_packagedata_setscene: Started
+NOTE: recipe zlib-1.2.11-r0: task do_populate_sysroot_setscene: Started
+NOTE: recipe libtirpc-1.0.3-r0: task do_packagedata_setscene: Succeeded
+NOTE: Running setscene task 331 of 392 (/home/deby/poky/meta/recipes-graphics/xorg-lib/libx11_1.6.7.bb:do_populate_sysroot_setscene)
+NOTE: recipe bash-completion-2.8-r0: task do_packagedata_setscene: Started
+NOTE: recipe ncurses-6.1+20181013-r0: task do_populate_sysroot_setscene: Started
+NOTE: recipe ncurses-6.1+20181013-r0: task do_packagedata_setscene: Started
+NOTE: recipe bzip2-1.0.6-r0: task do_populate_sysroot_setscene: Started
+NOTE: recipe base-files-3.0.14-r89: task do_populate_sysroot_setscene: Started
+NOTE: recipe base-files-3.0.14-r89: task do_packagedata_setscene: Started
+NOTE: recipe base-passwd-3.5.29-r0: task do_packagedata_setscene: Started
+NOTE: recipe bash-completion-2.8-r0: task do_populate_sysroot_setscene: Started
+NOTE: recipe shadow-4.6-r0: task do_packagedata_setscene: Started
+NOTE: recipe shadow-4.6-r0: task do_populate_sysroot_setscene: Started
+NOTE: recipe shadow-sysroot-4.6-r3: task do_packagedata_setscene: Started
+NOTE: recipe libx11-1_1.6.7-r0: task do_populate_sysroot_setscene: Started
+NOTE: recipe zlib-1.2.11-r0: task do_packagedata_setscene: Started
+NOTE: recipe bzip2-1.0.6-r0: task do_populate_sysroot_setscene: Succeeded
+NOTE: Running setscene task 332 of 392 (/home/deby/poky/meta/recipes-graphics/xorg-lib/libx11_1.6.7.bb:do_packagedata_setscene)
+NOTE: recipe libx11-1_1.6.7-r0: task do_packagedata_setscene: Started
+NOTE: recipe base-files-3.0.14-r89: task do_populate_sysroot_setscene: Succeeded
+NOTE: Running setscene task 333 of 392 (/home/deby/poky/meta/recipes-graphics/xorg-lib/libsm_1.2.3.bb:do_populate_sysroot_setscene)
+NOTE: recipe zlib-1.2.11-r0: task do_populate_sysroot_setscene: Succeeded
+NOTE: recipe shadow-4.6-r0: task do_populate_sysroot_setscene: Succeeded
+NOTE: Running setscene task 334 of 392 (/home/deby/poky/meta/recipes-graphics/xorg-lib/libsm_1.2.3.bb:do_packagedata_setscene)
+NOTE: Running setscene task 335 of 392 (/home/deby/poky/meta-debian/recipes-debian/expat/expat_debian.bb:do_populate_sysroot_setscene)
+NOTE: recipe libx11-1_1.6.7-r0: task do_populate_sysroot_setscene: Succeeded
+NOTE: Running setscene task 336 of 392 (/home/deby/poky/meta-debian/recipes-debian/expat/expat_debian.bb:do_packagedata_setscene)
+NOTE: recipe libsm-1_1.2.3-r0: task do_populate_sysroot_setscene: Started
+NOTE: recipe libx11-1_1.6.7-r0: task do_packagedata_setscene: Succeeded
+NOTE: Running setscene task 338 of 392 (/home/deby/poky/meta/recipes-devtools/autoconf-archive/autoconf-archive_2018.03.13.bb:do_packagedata_setscene)
+NOTE: recipe expat-2.2.6-r0: task do_populate_sysroot_setscene: Started
+NOTE: recipe shadow-sysroot-4.6-r3: task do_packagedata_setscene: Succeeded
+NOTE: Running setscene task 340 of 392 (/home/deby/poky/meta/recipes-graphics/xorg-lib/libxcb_1.13.1.bb:do_populate_sysroot_setscene)
+NOTE: recipe bzip2-1.0.6-r0: task do_packagedata_setscene: Succeeded
+NOTE: Running setscene task 342 of 392 (/home/deby/poky/meta/recipes-graphics/xorg-lib/libxcb_1.13.1.bb:do_packagedata_setscene)
+NOTE: recipe libsm-1_1.2.3-r0: task do_packagedata_setscene: Started
+NOTE: recipe bash-completion-2.8-r0: task do_packagedata_setscene: Succeeded
+NOTE: recipe expat-2.2.6-r0: task do_packagedata_setscene: Started
+NOTE: recipe libxcb-1.13.1-r0: task do_populate_sysroot_setscene: Started
+NOTE: recipe libxcb-1.13.1-r0: task do_packagedata_setscene: Started
+NOTE: recipe libsm-1_1.2.3-r0: task do_populate_sysroot_setscene: Succeeded
+NOTE: recipe autoconf-archive-2018.03.13-r0: task do_packagedata_setscene: Started
+NOTE: recipe libxcb-1.13.1-r0: task do_populate_sysroot_setscene: Succeeded
+NOTE: recipe base-passwd-3.5.29-r0: task do_packagedata_setscene: Succeeded
+NOTE: recipe ncurses-6.1+20181013-r0: task do_packagedata_setscene: Succeeded
+NOTE: recipe libsm-1_1.2.3-r0: task do_packagedata_setscene: Succeeded
+NOTE: Running setscene task 347 of 392 (/home/deby/poky/meta/recipes-graphics/xorg-lib/libice_1.0.9.bb:do_populate_sysroot_setscene)
+NOTE: Running setscene task 348 of 392 (/home/deby/poky/meta/recipes-graphics/xorg-lib/libice_1.0.9.bb:do_packagedata_setscene)
+NOTE: recipe libice-1_1.0.9-r0: task do_packagedata_setscene: Started
+NOTE: recipe libice-1_1.0.9-r0: task do_populate_sysroot_setscene: Started
+NOTE: recipe bash-completion-2.8-r0: task do_populate_sysroot_setscene: Succeeded
+NOTE: recipe expat-2.2.6-r0: task do_populate_sysroot_setscene: Succeeded
+NOTE: recipe libxcb-1.13.1-r0: task do_packagedata_setscene: Succeeded
+NOTE: Running setscene task 350 of 392 (/home/deby/poky/meta/recipes-graphics/xorg-lib/libxau_1.0.9.bb:do_populate_sysroot_setscene)
+NOTE: Running setscene task 351 of 392 (/home/deby/poky/meta/recipes-graphics/xorg-lib/libxau_1.0.9.bb:do_packagedata_setscene)
+NOTE: Running setscene task 352 of 392 (/home/deby/poky/meta/recipes-graphics/xorg-lib/libxdmcp_1.1.2.bb:do_populate_sysroot_setscene)
+NOTE: Running setscene task 353 of 392 (/home/deby/poky/meta/recipes-graphics/xorg-lib/libxdmcp_1.1.2.bb:do_packagedata_setscene)
+NOTE: recipe libice-1_1.0.9-r0: task do_packagedata_setscene: Succeeded
+NOTE: Running setscene task 355 of 392 (/home/deby/poky/meta/recipes-graphics/xorg-lib/xtrans_1.3.5.bb:do_packagedata_setscene)
+NOTE: recipe shadow-4.6-r0: task do_packagedata_setscene: Succeeded
+NOTE: Running setscene task 357 of 392 (/home/deby/poky/meta/recipes-core/libxcrypt/libxcrypt.bb:do_populate_sysroot_setscene)
+NOTE: Running setscene task 358 of 392 (/home/deby/poky/meta/recipes-core/libxcrypt/libxcrypt.bb:do_packagedata_setscene)
+NOTE: Running setscene task 359 of 392 (/home/deby/poky/meta/recipes-support/attr/attr_2.4.47.bb:do_populate_sysroot_setscene)
+NOTE: Running setscene task 360 of 392 (/home/deby/poky/meta/recipes-support/attr/attr_2.4.47.bb:do_packagedata_setscene)
+NOTE: recipe libxau-1_1.0.9-r0: task do_populate_sysroot_setscene: Started
+NOTE: recipe libxdmcp-1_1.1.2-r0: task do_packagedata_setscene: Started
+NOTE: recipe libxdmcp-1_1.1.2-r0: task do_populate_sysroot_setscene: Started
+NOTE: recipe libxau-1_1.0.9-r0: task do_packagedata_setscene: Started
+NOTE: recipe xtrans-1_1.3.5-r0: task do_packagedata_setscene: Started
+NOTE: recipe libxcrypt-4.4.2-r0: task do_packagedata_setscene: Started
+NOTE: recipe libxcrypt-4.4.2-r0: task do_populate_sysroot_setscene: Started
+NOTE: recipe attr-2.4.47-r0: task do_populate_sysroot_setscene: Started
+NOTE: recipe attr-2.4.47-r0: task do_packagedata_setscene: Started
+NOTE: recipe libice-1_1.0.9-r0: task do_populate_sysroot_setscene: Succeeded
+NOTE: Running setscene task 361 of 392 (/home/deby/poky/meta/recipes-graphics/xorg-lib/xtrans_1.3.5.bb:do_populate_sysroot_setscene)
+NOTE: recipe libxau-1_1.0.9-r0: task do_populate_sysroot_setscene: Succeeded
+NOTE: recipe libxdmcp-1_1.1.2-r0: task do_populate_sysroot_setscene: Succeeded
+NOTE: recipe xtrans-1_1.3.5-r0: task do_populate_sysroot_setscene: Started
+NOTE: recipe xtrans-1_1.3.5-r0: task do_populate_sysroot_setscene: Succeeded
+NOTE: recipe libxcrypt-4.4.2-r0: task do_populate_sysroot_setscene: Succeeded
+NOTE: recipe attr-2.4.47-r0: task do_populate_sysroot_setscene: Succeeded
+NOTE: recipe libxau-1_1.0.9-r0: task do_packagedata_setscene: Succeeded
+NOTE: recipe autoconf-archive-2018.03.13-r0: task do_packagedata_setscene: Succeeded
+NOTE: recipe expat-2.2.6-r0: task do_packagedata_setscene: Succeeded
+NOTE: recipe base-files-3.0.14-r89: task do_packagedata_setscene: Succeeded
+NOTE: recipe zlib-1.2.11-r0: task do_packagedata_setscene: Succeeded
+NOTE: recipe libxdmcp-1_1.1.2-r0: task do_packagedata_setscene: Succeeded
+NOTE: recipe xtrans-1_1.3.5-r0: task do_packagedata_setscene: Succeeded
+NOTE: recipe libxcrypt-4.4.2-r0: task do_packagedata_setscene: Succeeded
+NOTE: recipe attr-2.4.47-r0: task do_packagedata_setscene: Succeeded
+NOTE: Running setscene task 371 of 392 (/home/deby/poky/meta/recipes-devtools/opkg-utils/opkg-utils_0.4.0.bb:do_packagedata_setscene)
+NOTE: Running setscene task 372 of 392 (/home/deby/poky/meta-debian/recipes-debian/libtool/libtool-cross_debian.bb:do_packagedata_setscene)
+NOTE: recipe opkg-utils-0.4.0-r0: task do_packagedata_setscene: Started
+NOTE: recipe libtool-cross-2.4.6-r0: task do_packagedata_setscene: Started
+NOTE: recipe ncurses-6.1+20181013-r0: task do_populate_sysroot_setscene: Succeeded
+NOTE: Running setscene task 373 of 392 (/home/deby/poky/meta/recipes-devtools/opkg-utils/opkg-utils_0.4.0.bb:do_populate_sysroot_setscene)
+NOTE: recipe opkg-utils-0.4.0-r0: task do_populate_sysroot_setscene: Started
+NOTE: recipe opkg-utils-0.4.0-r0: task do_packagedata_setscene: Succeeded
+NOTE: Running setscene task 376 of 392 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-runtime_debian.bb:do_packagedata_setscene)
+NOTE: recipe libtool-cross-2.4.6-r0: task do_packagedata_setscene: Succeeded
+NOTE: recipe gcc-runtime-8.3.0-r0: task do_packagedata_setscene: Started
+NOTE: recipe opkg-utils-0.4.0-r0: task do_populate_sysroot_setscene: Succeeded
+NOTE: Running setscene task 378 of 392 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-runtime_debian.bb:do_populate_sysroot_setscene)
+NOTE: recipe gcc-runtime-8.3.0-r0: task do_populate_sysroot_setscene: Started
+NOTE: recipe gcc-runtime-8.3.0-r0: task do_packagedata_setscene: Succeeded
+NOTE: Running setscene task 380 of 392 (/home/deby/poky/meta-debian/recipes-debian/gcc/libgcc_debian.bb:do_packagedata_setscene)
+NOTE: recipe libgcc-8.3.0-r0: task do_packagedata_setscene: Started
+NOTE: recipe libgcc-8.3.0-r0: task do_packagedata_setscene: Succeeded
+NOTE: Running setscene task 382 of 392 (/home/deby/poky/meta-debian/recipes-debian/glibc/glibc_debian.bb:do_packagedata_setscene)
+NOTE: recipe glibc-2.28-r0: task do_packagedata_setscene: Started
+NOTE: recipe glibc-2.28-r0: task do_packagedata_setscene: Succeeded
+NOTE: Running setscene task 384 of 392 (/home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb:do_packagedata_setscene)
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_patch, the basehash value changed from 794aba43c93b827ab8dad47165be6be0d8f92f251bd262635c22313e23128daa to ad76c34176c05413e9fb00995196d5015fc81c93587134874abe5c331acef982. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_populate_sysroot, the basehash value changed from 2e4dc7b6b48187aee33b8bb419c42da1f20a801d4f648cc07024f0dafb119116 to 2ea4052a4244ba6488e96928a52bc979977bf82d44ef7527088e63c468d98c1b. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_fetch, the basehash value changed from b620eac0fae73e0df82e6b6781635aa9e224831670575af75328ee2bba5f373b to 180fd178ee7c6318a87b561b33796bca27ce8331b06402ad1a3756cc717a6903. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_configure, the basehash value changed from 24a1aa70340faf5d0559f5f5c25df83a33339b064c601fa41de74e845831d8f5 to 952b835cf441f72424d80c5bdfec130d3bc2c69cc0e286dad4eda8101e5fb7e5. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_compile, the basehash value changed from ca9cdc48ef3a81abce6553ad84b2bebd2e31576b46390bac2d2d1174ae4ed2fc to ea8147624c7b40427ff6fe42830ff8b09757ba68efa3fb425ea5a217f2666e4e. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_install, the basehash value changed from 2422ef8528c52c7ac46a82b5a3d8d777260c0df1f0e70c8bf82ec15f02d81090 to 772b96e073102d917eb5a8d3c7a4919bb7c2f2f7acad1b999659dd25fcbb3ccf. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_package, the basehash value changed from ce6b7142dd12a39ae9043e5ef18d407ea8302882cd98b79229cbb54edae8626d to 60427f83c05adb79d5790b6a7ec66c9fd3aebf1391ff9f00e1129a744b1f0fb8. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_packagedata, the basehash value changed from 69732875306abecdabfe20e644badb22fb144a81bb1abc7d4a3d31533d897a4a to 36dd68813de8371bdeedaf523277867f4960468059216b409414713c43d1c32d. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_package_write_deb, the basehash value changed from 34eb07143181baf3911ccfd6b33a41c4c8d001567321232e16606d3dafee40ca to 9efbdf860fcc2b4a7d86058a0dd93000813bab43bb848691b116ff2a010be035. The metadata is not deterministic and this needs to be fixed.
+NOTE: recipe linux-libc-headers-base-gitAUTOINC+2951eded01-r0: task do_packagedata_setscene: Started
+NOTE: recipe linux-libc-headers-base-gitAUTOINC+2951eded01-r0: task do_packagedata_setscene: Succeeded
+NOTE: recipe gcc-runtime-8.3.0-r0: task do_populate_sysroot_setscene: Succeeded
+NOTE: Running setscene task 386 of 392 (/home/deby/poky/meta-debian/recipes-debian/gcc/libgcc_debian.bb:do_populate_sysroot_setscene)
+NOTE: recipe libgcc-8.3.0-r0: task do_populate_sysroot_setscene: Started
+NOTE: recipe libgcc-8.3.0-r0: task do_populate_sysroot_setscene: Succeeded
+NOTE: Running setscene task 387 of 392 (/home/deby/poky/meta-debian/recipes-debian/glibc/glibc_debian.bb:do_populate_sysroot_setscene)
+NOTE: recipe glibc-2.28-r0: task do_populate_sysroot_setscene: Started
+NOTE: recipe glibc-locale-2.28-r0: task do_packagedata_setscene: Succeeded
+NOTE: recipe glibc-2.28-r0: task do_populate_sysroot_setscene: Succeeded
+NOTE: Running setscene task 392 of 392 (/home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb:do_populate_sysroot_setscene)
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_patch, the basehash value changed from 794aba43c93b827ab8dad47165be6be0d8f92f251bd262635c22313e23128daa to ad76c34176c05413e9fb00995196d5015fc81c93587134874abe5c331acef982. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_populate_sysroot, the basehash value changed from 2e4dc7b6b48187aee33b8bb419c42da1f20a801d4f648cc07024f0dafb119116 to 2ea4052a4244ba6488e96928a52bc979977bf82d44ef7527088e63c468d98c1b. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_fetch, the basehash value changed from b620eac0fae73e0df82e6b6781635aa9e224831670575af75328ee2bba5f373b to 180fd178ee7c6318a87b561b33796bca27ce8331b06402ad1a3756cc717a6903. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_configure, the basehash value changed from 24a1aa70340faf5d0559f5f5c25df83a33339b064c601fa41de74e845831d8f5 to 952b835cf441f72424d80c5bdfec130d3bc2c69cc0e286dad4eda8101e5fb7e5. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_compile, the basehash value changed from ca9cdc48ef3a81abce6553ad84b2bebd2e31576b46390bac2d2d1174ae4ed2fc to ea8147624c7b40427ff6fe42830ff8b09757ba68efa3fb425ea5a217f2666e4e. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_install, the basehash value changed from 2422ef8528c52c7ac46a82b5a3d8d777260c0df1f0e70c8bf82ec15f02d81090 to 772b96e073102d917eb5a8d3c7a4919bb7c2f2f7acad1b999659dd25fcbb3ccf. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_package, the basehash value changed from ce6b7142dd12a39ae9043e5ef18d407ea8302882cd98b79229cbb54edae8626d to 60427f83c05adb79d5790b6a7ec66c9fd3aebf1391ff9f00e1129a744b1f0fb8. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_packagedata, the basehash value changed from 69732875306abecdabfe20e644badb22fb144a81bb1abc7d4a3d31533d897a4a to 36dd68813de8371bdeedaf523277867f4960468059216b409414713c43d1c32d. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_package_write_deb, the basehash value changed from 34eb07143181baf3911ccfd6b33a41c4c8d001567321232e16606d3dafee40ca to 9efbdf860fcc2b4a7d86058a0dd93000813bab43bb848691b116ff2a010be035. The metadata is not deterministic and this needs to be fixed.
+NOTE: recipe linux-libc-headers-base-gitAUTOINC+2951eded01-r0: task do_populate_sysroot_setscene: Started
+NOTE: recipe linux-libc-headers-base-gitAUTOINC+2951eded01-r0: task do_populate_sysroot_setscene: Succeeded
+NOTE: Executing RunQueue Tasks
+NOTE: Running noexec task 1669 of 1669 (/home/deby/poky/meta-debian/recipes-debian/busybox/busybox_debian.bb:do_build)
+NOTE: Tasks Summary: Attempted 1669 tasks of which 1668 didn't need to be rerun and all succeeded.
+
+Summary: There was 1 WARNING message shown.
+Summary: There were 91 ERROR messages shown, returning a non-zero exit code.

@@ -1,0 +1,10 @@
+WARNING: Host distribution "debian-10" has not been validated with this version of the build system; you may possibly experience unexpected failures. It is recommended that you use a tested distribution.
+Loading cache...done.
+Loaded 1440 entries from dependency cache.
+Removing 1 recipes from the x86_64_linux sysroot...done.
+ERROR: Nothing PROVIDES 'gcc-sanitizers'
+gcc-sanitizers was skipped: incompatible with host mips-deby-linux (not in COMPATIBLE_HOST)
+gcc-sanitizers was skipped: incompatible with host mips-deby-linux (not in COMPATIBLE_HOST)
+
+Summary: There was 1 WARNING message shown.
+Summary: There was 1 ERROR message shown, returning a non-zero exit code.

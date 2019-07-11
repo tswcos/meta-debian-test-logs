@@ -1,0 +1,52 @@
+WARNING: Host distribution "debian-10" has not been validated with this version of the build system; you may possibly experience unexpected failures. It is recommended that you use a tested distribution.
+Loading cache...done.
+Loaded 1440 entries from dependency cache.
+NOTE: Resolving any missing task queue dependencies
+
+Build Configuration:
+BB_VERSION           = "1.42.0"
+BUILD_SYS            = "x86_64-linux"
+NATIVELSBSTRING      = "universal"
+TARGET_SYS           = "aarch64-deby-linux"
+MACHINE              = "qemuarm64"
+DISTRO               = "deby-tiny"
+DISTRO_VERSION       = "10.0"
+TUNE_FEATURES        = "aarch64 armv8a crc"
+TARGET_FPU           = ""
+meta                 
+meta-poky            = "warrior:51223035e66c5b27799b15a0f8ebe75d24d3971b"
+meta-debian          = "warrior-trungdt:47b755ebe41c5afc0ea94d75b55c4f0efd8983fe"
+
+Initialising tasks...done.
+Sstate summary: Wanted 28 Found 1 Missed 27 Current 59 (3% match, 68% complete)
+NOTE: Executing SetScene Tasks
+NOTE: Executing RunQueue Tasks
+NOTE: Running task 258 of 567 (virtual:nativesdk:/home/deby/poky/meta-debian/recipes-debian/glibc/glibc_debian.bb:do_debian_patch)
+NOTE: Running task 475 of 567 (virtual:nativesdk:/home/deby/poky/meta-debian/recipes-debian/expat/expat_debian.bb:do_debian_patch)
+NOTE: Running task 487 of 567 (virtual:nativesdk:/home/deby/poky/meta-debian/recipes-debian/dbus/dbus_debian.bb:do_debian_patch)
+NOTE: recipe nativesdk-dbus-1.12.16-r0: task do_debian_patch: Started
+NOTE: recipe nativesdk-expat-2.2.6-r0: task do_debian_patch: Started
+NOTE: recipe nativesdk-glibc-2.28-r0: task do_debian_patch: Started
+ERROR: nativesdk-dbus-1.12.16-r0 do_debian_patch: unknown quilt patches already applied
+ERROR: nativesdk-dbus-1.12.16-r0 do_debian_patch: Function failed: do_debian_patch (log file is located at /home/deby/build/tmp/work/x86_64-nativesdk-debysdk-linux/nativesdk-dbus/1.12.16-r0/temp/log.do_debian_patch.26067)
+ERROR: Logfile of failure stored in: /home/deby/build/tmp/work/x86_64-nativesdk-debysdk-linux/nativesdk-dbus/1.12.16-r0/temp/log.do_debian_patch.26067
+NOTE: recipe nativesdk-dbus-1.12.16-r0: task do_debian_patch: Failed
+ERROR: nativesdk-expat-2.2.6-r0 do_debian_patch: unknown quilt patches already applied
+ERROR: nativesdk-expat-2.2.6-r0 do_debian_patch: Function failed: do_debian_patch (log file is located at /home/deby/build/tmp/work/x86_64-nativesdk-debysdk-linux/nativesdk-expat/2.2.6-r0/temp/log.do_debian_patch.26066)
+ERROR: Logfile of failure stored in: /home/deby/build/tmp/work/x86_64-nativesdk-debysdk-linux/nativesdk-expat/2.2.6-r0/temp/log.do_debian_patch.26066
+NOTE: recipe nativesdk-expat-2.2.6-r0: task do_debian_patch: Failed
+ERROR: Task (virtual:nativesdk:/home/deby/poky/meta-debian/recipes-debian/dbus/dbus_debian.bb:do_debian_patch) failed with exit code '1'
+ERROR: Task (virtual:nativesdk:/home/deby/poky/meta-debian/recipes-debian/expat/expat_debian.bb:do_debian_patch) failed with exit code '1'
+ERROR: nativesdk-glibc-2.28-r0 do_debian_patch: unknown quilt patches already applied
+ERROR: nativesdk-glibc-2.28-r0 do_debian_patch: Function failed: do_debian_patch (log file is located at /home/deby/build/tmp/work/x86_64-nativesdk-debysdk-linux/nativesdk-glibc/2.28-r0/temp/log.do_debian_patch.26065)
+ERROR: Logfile of failure stored in: /home/deby/build/tmp/work/x86_64-nativesdk-debysdk-linux/nativesdk-glibc/2.28-r0/temp/log.do_debian_patch.26065
+NOTE: recipe nativesdk-glibc-2.28-r0: task do_debian_patch: Failed
+ERROR: Task (virtual:nativesdk:/home/deby/poky/meta-debian/recipes-debian/glibc/glibc_debian.bb:do_debian_patch) failed with exit code '1'
+NOTE: Tasks Summary: Attempted 510 tasks of which 507 didn't need to be rerun and 3 failed.
+
+Summary: 3 tasks failed:
+  virtual:nativesdk:/home/deby/poky/meta-debian/recipes-debian/dbus/dbus_debian.bb:do_debian_patch
+  virtual:nativesdk:/home/deby/poky/meta-debian/recipes-debian/expat/expat_debian.bb:do_debian_patch
+  virtual:nativesdk:/home/deby/poky/meta-debian/recipes-debian/glibc/glibc_debian.bb:do_debian_patch
+Summary: There was 1 WARNING message shown.
+Summary: There were 6 ERROR messages shown, returning a non-zero exit code.

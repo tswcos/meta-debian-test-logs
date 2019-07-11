@@ -1,0 +1,25 @@
+config
+run-ptest
+tests
+make: Entering directory '/usr/lib/kbd/ptest/tests'
+make[1]: Entering directory '/usr/lib/kbd/ptest/tests'
+PASS: libkeymap-init
+PASS: libkeymap-kmap
+PASS: libkeymap-keys
+PASS: libkeymap-parse
+PASS: libkeymap-charset
+PASS: dumpkeys-fulltable
+PASS: alt-is-meta
+============================================================================
+Testsuite summary for kbd 2.0.4
+============================================================================
+# TOTAL: 7
+# PASS:  7
+# SKIP:  0
+# XFAIL: 0
+# FAIL:  0
+# XPASS: 0
+# ERROR: 0
+============================================================================
+make[1]: Leaving directory '/usr/lib/kbd/ptest/tests'
+make: Leaving directory '/usr/lib/kbd/ptest/tests'

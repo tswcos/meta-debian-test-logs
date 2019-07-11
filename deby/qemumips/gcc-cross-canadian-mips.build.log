@@ -1,0 +1,212 @@
+WARNING: Host distribution "debian-10" has not been validated with this version of the build system; you may possibly experience unexpected failures. It is recommended that you use a tested distribution.
+Loading cache...done.
+Loaded 1440 entries from dependency cache.
+NOTE: Resolving any missing task queue dependencies
+
+Build Configuration:
+BB_VERSION           = "1.42.0"
+BUILD_SYS            = "x86_64-linux"
+NATIVELSBSTRING      = "universal"
+TARGET_SYS           = "mips-deby-linux"
+MACHINE              = "qemumips"
+DISTRO               = "deby"
+DISTRO_VERSION       = "10.0"
+TUNE_FEATURES        = "o32 bigendian fpu-hard mips32r2"
+TARGET_FPU           = ""
+meta                 
+meta-poky            = "warrior:51223035e66c5b27799b15a0f8ebe75d24d3971b"
+meta-debian          = "warrior-trungdt:47b755ebe41c5afc0ea94d75b55c4f0efd8983fe"
+
+Initialising tasks...done.
+Sstate summary: Wanted 60 Found 50 Missed 10 Current 132 (83% match, 94% complete)
+NOTE: Executing SetScene Tasks
+NOTE: Running setscene task 140 of 192 (virtual:nativesdk:/home/deby/poky/meta-debian/recipes-debian/libmpc/libmpc_debian.bb:do_populate_sysroot_setscene)
+NOTE: Running setscene task 141 of 192 (virtual:nativesdk:/home/deby/poky/meta-debian/recipes-debian/libmpc/libmpc_debian.bb:do_package_write_deb_setscene)
+NOTE: Running setscene task 154 of 192 (virtual:nativesdk:/home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb:do_package_write_deb_setscene)
+NOTE: Running setscene task 156 of 192 (/home/deby/poky/meta-debian/recipes-debian/libtool/nativesdk-libtool_debian.bb:do_populate_sysroot_setscene)
+NOTE: Running setscene task 157 of 192 (/home/deby/poky/meta-debian/recipes-debian/libtool/nativesdk-libtool_debian.bb:do_package_write_deb_setscene)
+NOTE: Running setscene task 160 of 192 (/home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb:do_populate_sysroot_setscene)
+NOTE: Running setscene task 161 of 192 (/home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb:do_package_write_deb_setscene)
+NOTE: Running setscene task 182 of 192 (virtual:nativesdk:/home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb:do_populate_sysroot_setscene)
+NOTE: recipe nativesdk-libtool-2.4.6-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe nativesdk-libtool-2.4.6-r0: task do_populate_sysroot_setscene: Started
+NOTE: recipe nativesdk-libmpc-1.1.0-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe nativesdk-libmpc-1.1.0-r0: task do_populate_sysroot_setscene: Started
+NOTE: recipe nativesdk-libtool-2.4.6-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 185 of 192 (/home/deby/poky/meta-debian/recipes-debian/libtool/nativesdk-libtool_debian.bb:do_packagedata_setscene)
+NOTE: recipe nativesdk-libtool-2.4.6-r0: task do_populate_sysroot_setscene: Succeeded
+NOTE: recipe nativesdk-libtool-2.4.6-r0: task do_packagedata_setscene: Started
+NOTE: recipe nativesdk-libmpc-1.1.0-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 186 of 192 (virtual:nativesdk:/home/deby/poky/meta-debian/recipes-debian/libmpc/libmpc_debian.bb:do_packagedata_setscene)
+NOTE: recipe nativesdk-libmpc-1.1.0-r0: task do_populate_sysroot_setscene: Succeeded
+NOTE: recipe nativesdk-libtool-2.4.6-r0: task do_packagedata_setscene: Succeeded
+NOTE: recipe nativesdk-libmpc-1.1.0-r0: task do_packagedata_setscene: Started
+NOTE: recipe nativesdk-libmpc-1.1.0-r0: task do_packagedata_setscene: Succeeded
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_patch, the basehash value changed from 794aba43c93b827ab8dad47165be6be0d8f92f251bd262635c22313e23128daa to ad76c34176c05413e9fb00995196d5015fc81c93587134874abe5c331acef982. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_populate_sysroot, the basehash value changed from 200562396159664cf6a42475b97f810338c4576ddb88e6c3cbe3850d9c89730d to 620643e07d55b504e7dc216bd4a1d8bf07c4ffc5bf08b44aea761ddf78038285. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_fetch, the basehash value changed from 5244d744bc71cb99083f3cea9838c2708f7af4208333fb02a8c2f61841c24933 to fcffecba15f047c95455f477a03c0e9d97fee02f6f76a0c862d49b2d33a69bdd. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_configure, the basehash value changed from cdd27d9bf38aa46d53cc94a02b5853fada0165fe04f11f4025255f4074d6c4cb to 5063a45ad3fd8a984b6d0b90dedbe0d55ec022e5b3d1f0258e1012442cbe37a0. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_compile, the basehash value changed from 17b8773b16e89f8e98ef283826a53ca5efb2dff38e51ffeca3598d23e5af9dc0 to 1b2db8f3c133b37dbcec90ce058bc9c52861a08fad3c3a34dac3eb7f013e8e0b. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_install, the basehash value changed from d4ac2419d45c0023d1ee718a8edea57dfddccf152580f522fad57190a9bec121 to a63951a58c8ff551eee07805f3f1d0ff0ee1ac66d4718a0b11cf2354ddabe923. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_package, the basehash value changed from 8100d816d5c883c14a019e01e5d1e1328c11b002fc72679639fe14437e7ba158 to f6185877a785f580615e856b3c1824cee83ab7761d1dfa9b71e45e5b0ab510cc. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_packagedata, the basehash value changed from dea47b85056fcb5685ad368c0f7dddaa5f08afb7007df237764bdd22a8886058 to 8472d99801451c12f50d7927d85a379e9489a8eddb8249a7a0f957a4b1e64d12. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_package_write_deb, the basehash value changed from 116fd3c1d9ae606c6722e9186d6c1b77564d4eb7c915198c9f89ce9d500ad72d to a4b232c196e2b8690117a37b76f520a2aaa37ab3ca552d5d8e34557e0030f4f4. The metadata is not deterministic and this needs to be fixed.
+NOTE: recipe linux-libc-headers-base-gitAUTOINC+2951eded01-r0: task do_populate_sysroot_setscene: Started
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_patch, the basehash value changed from 794aba43c93b827ab8dad47165be6be0d8f92f251bd262635c22313e23128daa to ad76c34176c05413e9fb00995196d5015fc81c93587134874abe5c331acef982. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_populate_sysroot, the basehash value changed from 200562396159664cf6a42475b97f810338c4576ddb88e6c3cbe3850d9c89730d to 620643e07d55b504e7dc216bd4a1d8bf07c4ffc5bf08b44aea761ddf78038285. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_fetch, the basehash value changed from 5244d744bc71cb99083f3cea9838c2708f7af4208333fb02a8c2f61841c24933 to fcffecba15f047c95455f477a03c0e9d97fee02f6f76a0c862d49b2d33a69bdd. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_configure, the basehash value changed from cdd27d9bf38aa46d53cc94a02b5853fada0165fe04f11f4025255f4074d6c4cb to 5063a45ad3fd8a984b6d0b90dedbe0d55ec022e5b3d1f0258e1012442cbe37a0. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_compile, the basehash value changed from 17b8773b16e89f8e98ef283826a53ca5efb2dff38e51ffeca3598d23e5af9dc0 to 1b2db8f3c133b37dbcec90ce058bc9c52861a08fad3c3a34dac3eb7f013e8e0b. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_install, the basehash value changed from d4ac2419d45c0023d1ee718a8edea57dfddccf152580f522fad57190a9bec121 to a63951a58c8ff551eee07805f3f1d0ff0ee1ac66d4718a0b11cf2354ddabe923. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_package, the basehash value changed from 8100d816d5c883c14a019e01e5d1e1328c11b002fc72679639fe14437e7ba158 to f6185877a785f580615e856b3c1824cee83ab7761d1dfa9b71e45e5b0ab510cc. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_packagedata, the basehash value changed from dea47b85056fcb5685ad368c0f7dddaa5f08afb7007df237764bdd22a8886058 to 8472d99801451c12f50d7927d85a379e9489a8eddb8249a7a0f957a4b1e64d12. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_package_write_deb, the basehash value changed from 116fd3c1d9ae606c6722e9186d6c1b77564d4eb7c915198c9f89ce9d500ad72d to a4b232c196e2b8690117a37b76f520a2aaa37ab3ca552d5d8e34557e0030f4f4. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_patch, the basehash value changed from 794aba43c93b827ab8dad47165be6be0d8f92f251bd262635c22313e23128daa to ad76c34176c05413e9fb00995196d5015fc81c93587134874abe5c331acef982. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_populate_sysroot, the basehash value changed from 200562396159664cf6a42475b97f810338c4576ddb88e6c3cbe3850d9c89730d to 620643e07d55b504e7dc216bd4a1d8bf07c4ffc5bf08b44aea761ddf78038285. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_fetch, the basehash value changed from 5244d744bc71cb99083f3cea9838c2708f7af4208333fb02a8c2f61841c24933 to fcffecba15f047c95455f477a03c0e9d97fee02f6f76a0c862d49b2d33a69bdd. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_configure, the basehash value changed from cdd27d9bf38aa46d53cc94a02b5853fada0165fe04f11f4025255f4074d6c4cb to 5063a45ad3fd8a984b6d0b90dedbe0d55ec022e5b3d1f0258e1012442cbe37a0. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_compile, the basehash value changed from 17b8773b16e89f8e98ef283826a53ca5efb2dff38e51ffeca3598d23e5af9dc0 to 1b2db8f3c133b37dbcec90ce058bc9c52861a08fad3c3a34dac3eb7f013e8e0b. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_install, the basehash value changed from d4ac2419d45c0023d1ee718a8edea57dfddccf152580f522fad57190a9bec121 to a63951a58c8ff551eee07805f3f1d0ff0ee1ac66d4718a0b11cf2354ddabe923. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_package, the basehash value changed from 8100d816d5c883c14a019e01e5d1e1328c11b002fc72679639fe14437e7ba158 to f6185877a785f580615e856b3c1824cee83ab7761d1dfa9b71e45e5b0ab510cc. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_packagedata, the basehash value changed from dea47b85056fcb5685ad368c0f7dddaa5f08afb7007df237764bdd22a8886058 to 8472d99801451c12f50d7927d85a379e9489a8eddb8249a7a0f957a4b1e64d12. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_package_write_deb, the basehash value changed from 116fd3c1d9ae606c6722e9186d6c1b77564d4eb7c915198c9f89ce9d500ad72d to a4b232c196e2b8690117a37b76f520a2aaa37ab3ca552d5d8e34557e0030f4f4. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_patch, the basehash value changed from 794aba43c93b827ab8dad47165be6be0d8f92f251bd262635c22313e23128daa to ad76c34176c05413e9fb00995196d5015fc81c93587134874abe5c331acef982. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_populate_sysroot, the basehash value changed from 200562396159664cf6a42475b97f810338c4576ddb88e6c3cbe3850d9c89730d to 620643e07d55b504e7dc216bd4a1d8bf07c4ffc5bf08b44aea761ddf78038285. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_fetch, the basehash value changed from 5244d744bc71cb99083f3cea9838c2708f7af4208333fb02a8c2f61841c24933 to fcffecba15f047c95455f477a03c0e9d97fee02f6f76a0c862d49b2d33a69bdd. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_configure, the basehash value changed from cdd27d9bf38aa46d53cc94a02b5853fada0165fe04f11f4025255f4074d6c4cb to 5063a45ad3fd8a984b6d0b90dedbe0d55ec022e5b3d1f0258e1012442cbe37a0. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_compile, the basehash value changed from 17b8773b16e89f8e98ef283826a53ca5efb2dff38e51ffeca3598d23e5af9dc0 to 1b2db8f3c133b37dbcec90ce058bc9c52861a08fad3c3a34dac3eb7f013e8e0b. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_install, the basehash value changed from d4ac2419d45c0023d1ee718a8edea57dfddccf152580f522fad57190a9bec121 to a63951a58c8ff551eee07805f3f1d0ff0ee1ac66d4718a0b11cf2354ddabe923. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_package, the basehash value changed from 8100d816d5c883c14a019e01e5d1e1328c11b002fc72679639fe14437e7ba158 to f6185877a785f580615e856b3c1824cee83ab7761d1dfa9b71e45e5b0ab510cc. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_packagedata, the basehash value changed from dea47b85056fcb5685ad368c0f7dddaa5f08afb7007df237764bdd22a8886058 to 8472d99801451c12f50d7927d85a379e9489a8eddb8249a7a0f957a4b1e64d12. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_package_write_deb, the basehash value changed from 116fd3c1d9ae606c6722e9186d6c1b77564d4eb7c915198c9f89ce9d500ad72d to a4b232c196e2b8690117a37b76f520a2aaa37ab3ca552d5d8e34557e0030f4f4. The metadata is not deterministic and this needs to be fixed.
+NOTE: recipe linux-libc-headers-base-gitAUTOINC+2951eded01-r0: task do_package_write_deb_setscene: Started
+ERROR: When reparsing virtual:nativesdk:/home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_patch, the basehash value changed from d94c30ef99c51ec424895f37527f06233c86c1ca782b8302e1d9180efc0827de to 6967cad02d22d60574956cb98d8a3c9c572fca4873c109944bb91d8af50a76bf. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing virtual:nativesdk:/home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_populate_sysroot, the basehash value changed from 05215a8fdbb1b27c3800d5d6dd15847af4ecd052d4e1aa0f225cd4586ec0550e to 1bbf4b1966517ff51aa9f7d13f15b2cce6ad134428e7b66c2c2251b798232018. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing virtual:nativesdk:/home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_fetch, the basehash value changed from e062003d8d13431a2576e6c38afd766af0587ccd7ec3895c02f2331841a15c60 to 5b3b4fe4934a69b1b8ddf39ccf01c20d438fc48655381b7698cfa116d02950fd. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing virtual:nativesdk:/home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_configure, the basehash value changed from 6ac9fef4ffbd7f292acf3aa69d2f967d239caa674056ea3e21bc459393524d8b to ea06a543ffbd6a2d34b91a86a2bf7a5200f380934fd146e8437fccc5243efcb0. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing virtual:nativesdk:/home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_compile, the basehash value changed from 8e49906e80daadd5cec4d8780d779d1a83183a365232cbb6ca3279858a139027 to 57f613db97be30dc11175f4707fe8110b29649b0c57a6b739f6195f7ef5b9d4d. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing virtual:nativesdk:/home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_install, the basehash value changed from e83caea21ca4188d4d3128b7e1d44eb9e2e07dafb7d06e7413af33bffa5f91ea to 197cb6992af62e56a8fab88620a003cf50bf2076a0f0e9fb2fdc98cd7ca6d0a0. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing virtual:nativesdk:/home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_package, the basehash value changed from 1ecfe605ac35bc5d4ea96c1763760fef54acf15b3928a8f74165421a65000e6d to a1d56c5232cc01d073e9cb5845f4d313e9fd3e5b65276121dc1a57f6c7ec4a57. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing virtual:nativesdk:/home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_packagedata, the basehash value changed from 899f45256f2fb11e25221f40cad8e190e566616982b509a181790cdf4dc394da to a7f1b8d721ce0b77b8a417720a0b76b1ac67703186f1ef185abf5206d4420e29. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing virtual:nativesdk:/home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_package_write_deb, the basehash value changed from 39617882624937c2b6b4daecf57c78fc2ca1733b2f268e43cc89f47977de8432 to f42e7dbc5b9b7ed16214cf6746c7179d943e7ae977b20bbd3940c5fc121764d2. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing virtual:nativesdk:/home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_patch, the basehash value changed from d94c30ef99c51ec424895f37527f06233c86c1ca782b8302e1d9180efc0827de to 6967cad02d22d60574956cb98d8a3c9c572fca4873c109944bb91d8af50a76bf. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing virtual:nativesdk:/home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_populate_sysroot, the basehash value changed from 05215a8fdbb1b27c3800d5d6dd15847af4ecd052d4e1aa0f225cd4586ec0550e to 1bbf4b1966517ff51aa9f7d13f15b2cce6ad134428e7b66c2c2251b798232018. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing virtual:nativesdk:/home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_fetch, the basehash value changed from e062003d8d13431a2576e6c38afd766af0587ccd7ec3895c02f2331841a15c60 to 5b3b4fe4934a69b1b8ddf39ccf01c20d438fc48655381b7698cfa116d02950fd. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing virtual:nativesdk:/home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_configure, the basehash value changed from 6ac9fef4ffbd7f292acf3aa69d2f967d239caa674056ea3e21bc459393524d8b to ea06a543ffbd6a2d34b91a86a2bf7a5200f380934fd146e8437fccc5243efcb0. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing virtual:nativesdk:/home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_compile, the basehash value changed from 8e49906e80daadd5cec4d8780d779d1a83183a365232cbb6ca3279858a139027 to 57f613db97be30dc11175f4707fe8110b29649b0c57a6b739f6195f7ef5b9d4d. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing virtual:nativesdk:/home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_install, the basehash value changed from e83caea21ca4188d4d3128b7e1d44eb9e2e07dafb7d06e7413af33bffa5f91ea to 197cb6992af62e56a8fab88620a003cf50bf2076a0f0e9fb2fdc98cd7ca6d0a0. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing virtual:nativesdk:/home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_package, the basehash value changed from 1ecfe605ac35bc5d4ea96c1763760fef54acf15b3928a8f74165421a65000e6d to a1d56c5232cc01d073e9cb5845f4d313e9fd3e5b65276121dc1a57f6c7ec4a57. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing virtual:nativesdk:/home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_packagedata, the basehash value changed from 899f45256f2fb11e25221f40cad8e190e566616982b509a181790cdf4dc394da to a7f1b8d721ce0b77b8a417720a0b76b1ac67703186f1ef185abf5206d4420e29. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing virtual:nativesdk:/home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_package_write_deb, the basehash value changed from 39617882624937c2b6b4daecf57c78fc2ca1733b2f268e43cc89f47977de8432 to f42e7dbc5b9b7ed16214cf6746c7179d943e7ae977b20bbd3940c5fc121764d2. The metadata is not deterministic and this needs to be fixed.
+NOTE: recipe linux-libc-headers-base-gitAUTOINC+2951eded01-r0: task do_populate_sysroot_setscene: Succeeded
+NOTE: recipe nativesdk-linux-libc-headers-base-gitAUTOINC+2951eded01-r0: task do_populate_sysroot_setscene: Started
+NOTE: recipe nativesdk-linux-libc-headers-base-gitAUTOINC+2951eded01-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe linux-libc-headers-base-gitAUTOINC+2951eded01-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 189 of 192 (/home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb:do_packagedata_setscene)
+NOTE: recipe nativesdk-linux-libc-headers-base-gitAUTOINC+2951eded01-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 190 of 192 (virtual:nativesdk:/home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb:do_packagedata_setscene)
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_patch, the basehash value changed from 794aba43c93b827ab8dad47165be6be0d8f92f251bd262635c22313e23128daa to ad76c34176c05413e9fb00995196d5015fc81c93587134874abe5c331acef982. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_populate_sysroot, the basehash value changed from 200562396159664cf6a42475b97f810338c4576ddb88e6c3cbe3850d9c89730d to 620643e07d55b504e7dc216bd4a1d8bf07c4ffc5bf08b44aea761ddf78038285. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_fetch, the basehash value changed from 5244d744bc71cb99083f3cea9838c2708f7af4208333fb02a8c2f61841c24933 to fcffecba15f047c95455f477a03c0e9d97fee02f6f76a0c862d49b2d33a69bdd. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_configure, the basehash value changed from cdd27d9bf38aa46d53cc94a02b5853fada0165fe04f11f4025255f4074d6c4cb to 5063a45ad3fd8a984b6d0b90dedbe0d55ec022e5b3d1f0258e1012442cbe37a0. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_compile, the basehash value changed from 17b8773b16e89f8e98ef283826a53ca5efb2dff38e51ffeca3598d23e5af9dc0 to 1b2db8f3c133b37dbcec90ce058bc9c52861a08fad3c3a34dac3eb7f013e8e0b. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_install, the basehash value changed from d4ac2419d45c0023d1ee718a8edea57dfddccf152580f522fad57190a9bec121 to a63951a58c8ff551eee07805f3f1d0ff0ee1ac66d4718a0b11cf2354ddabe923. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_package, the basehash value changed from 8100d816d5c883c14a019e01e5d1e1328c11b002fc72679639fe14437e7ba158 to f6185877a785f580615e856b3c1824cee83ab7761d1dfa9b71e45e5b0ab510cc. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_packagedata, the basehash value changed from dea47b85056fcb5685ad368c0f7dddaa5f08afb7007df237764bdd22a8886058 to 8472d99801451c12f50d7927d85a379e9489a8eddb8249a7a0f957a4b1e64d12. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_package_write_deb, the basehash value changed from 116fd3c1d9ae606c6722e9186d6c1b77564d4eb7c915198c9f89ce9d500ad72d to a4b232c196e2b8690117a37b76f520a2aaa37ab3ca552d5d8e34557e0030f4f4. The metadata is not deterministic and this needs to be fixed.
+NOTE: recipe linux-libc-headers-base-gitAUTOINC+2951eded01-r0: task do_packagedata_setscene: Started
+NOTE: recipe nativesdk-linux-libc-headers-base-gitAUTOINC+2951eded01-r0: task do_populate_sysroot_setscene: Succeeded
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_patch, the basehash value changed from 794aba43c93b827ab8dad47165be6be0d8f92f251bd262635c22313e23128daa to ad76c34176c05413e9fb00995196d5015fc81c93587134874abe5c331acef982. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_populate_sysroot, the basehash value changed from 200562396159664cf6a42475b97f810338c4576ddb88e6c3cbe3850d9c89730d to 620643e07d55b504e7dc216bd4a1d8bf07c4ffc5bf08b44aea761ddf78038285. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_fetch, the basehash value changed from 5244d744bc71cb99083f3cea9838c2708f7af4208333fb02a8c2f61841c24933 to fcffecba15f047c95455f477a03c0e9d97fee02f6f76a0c862d49b2d33a69bdd. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_configure, the basehash value changed from cdd27d9bf38aa46d53cc94a02b5853fada0165fe04f11f4025255f4074d6c4cb to 5063a45ad3fd8a984b6d0b90dedbe0d55ec022e5b3d1f0258e1012442cbe37a0. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_compile, the basehash value changed from 17b8773b16e89f8e98ef283826a53ca5efb2dff38e51ffeca3598d23e5af9dc0 to 1b2db8f3c133b37dbcec90ce058bc9c52861a08fad3c3a34dac3eb7f013e8e0b. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_install, the basehash value changed from d4ac2419d45c0023d1ee718a8edea57dfddccf152580f522fad57190a9bec121 to a63951a58c8ff551eee07805f3f1d0ff0ee1ac66d4718a0b11cf2354ddabe923. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_package, the basehash value changed from 8100d816d5c883c14a019e01e5d1e1328c11b002fc72679639fe14437e7ba158 to f6185877a785f580615e856b3c1824cee83ab7761d1dfa9b71e45e5b0ab510cc. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_packagedata, the basehash value changed from dea47b85056fcb5685ad368c0f7dddaa5f08afb7007df237764bdd22a8886058 to 8472d99801451c12f50d7927d85a379e9489a8eddb8249a7a0f957a4b1e64d12. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_package_write_deb, the basehash value changed from 116fd3c1d9ae606c6722e9186d6c1b77564d4eb7c915198c9f89ce9d500ad72d to a4b232c196e2b8690117a37b76f520a2aaa37ab3ca552d5d8e34557e0030f4f4. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing virtual:nativesdk:/home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_patch, the basehash value changed from d94c30ef99c51ec424895f37527f06233c86c1ca782b8302e1d9180efc0827de to 6967cad02d22d60574956cb98d8a3c9c572fca4873c109944bb91d8af50a76bf. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing virtual:nativesdk:/home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_populate_sysroot, the basehash value changed from 05215a8fdbb1b27c3800d5d6dd15847af4ecd052d4e1aa0f225cd4586ec0550e to 1bbf4b1966517ff51aa9f7d13f15b2cce6ad134428e7b66c2c2251b798232018. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing virtual:nativesdk:/home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_fetch, the basehash value changed from e062003d8d13431a2576e6c38afd766af0587ccd7ec3895c02f2331841a15c60 to 5b3b4fe4934a69b1b8ddf39ccf01c20d438fc48655381b7698cfa116d02950fd. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing virtual:nativesdk:/home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_configure, the basehash value changed from 6ac9fef4ffbd7f292acf3aa69d2f967d239caa674056ea3e21bc459393524d8b to ea06a543ffbd6a2d34b91a86a2bf7a5200f380934fd146e8437fccc5243efcb0. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing virtual:nativesdk:/home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_compile, the basehash value changed from 8e49906e80daadd5cec4d8780d779d1a83183a365232cbb6ca3279858a139027 to 57f613db97be30dc11175f4707fe8110b29649b0c57a6b739f6195f7ef5b9d4d. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing virtual:nativesdk:/home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_install, the basehash value changed from e83caea21ca4188d4d3128b7e1d44eb9e2e07dafb7d06e7413af33bffa5f91ea to 197cb6992af62e56a8fab88620a003cf50bf2076a0f0e9fb2fdc98cd7ca6d0a0. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing virtual:nativesdk:/home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_package, the basehash value changed from 1ecfe605ac35bc5d4ea96c1763760fef54acf15b3928a8f74165421a65000e6d to a1d56c5232cc01d073e9cb5845f4d313e9fd3e5b65276121dc1a57f6c7ec4a57. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing virtual:nativesdk:/home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_packagedata, the basehash value changed from 899f45256f2fb11e25221f40cad8e190e566616982b509a181790cdf4dc394da to a7f1b8d721ce0b77b8a417720a0b76b1ac67703186f1ef185abf5206d4420e29. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing virtual:nativesdk:/home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb.do_package_write_deb, the basehash value changed from 39617882624937c2b6b4daecf57c78fc2ca1733b2f268e43cc89f47977de8432 to f42e7dbc5b9b7ed16214cf6746c7179d943e7ae977b20bbd3940c5fc121764d2. The metadata is not deterministic and this needs to be fixed.
+NOTE: recipe linux-libc-headers-base-gitAUTOINC+2951eded01-r0: task do_packagedata_setscene: Succeeded
+NOTE: recipe nativesdk-linux-libc-headers-base-gitAUTOINC+2951eded01-r0: task do_packagedata_setscene: Started
+NOTE: recipe nativesdk-linux-libc-headers-base-gitAUTOINC+2951eded01-r0: task do_packagedata_setscene: Succeeded
+NOTE: Executing RunQueue Tasks
+NOTE: Running task 148 of 889 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-source_debian.bb:do_debian_unpack_extra)
+NOTE: Running noexec task 594 of 889 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-cross-canadian_debian.bb:do_fetch)
+NOTE: Running task 613 of 889 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-cross-canadian_debian.bb:do_populate_lic)
+NOTE: recipe gcc-source-8.3.0-8.3.0-r0: task do_debian_unpack_extra: Started
+NOTE: recipe gcc-cross-canadian-mips-8.3.0-r0: task do_populate_lic: Started
+NOTE: recipe gcc-source-8.3.0-8.3.0-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 614 of 889 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-source_debian.bb:do_debian_patch)
+NOTE: recipe gcc-source-8.3.0-8.3.0-r0: task do_debian_patch: Started
+NOTE: recipe gcc-cross-canadian-mips-8.3.0-r0: task do_populate_lic: Succeeded
+NOTE: recipe gcc-source-8.3.0-8.3.0-r0: task do_debian_patch: Succeeded
+NOTE: Running task 615 of 889 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-source_debian.bb:do_patch)
+NOTE: recipe gcc-source-8.3.0-8.3.0-r0: task do_patch: Started
+NOTE: recipe gcc-source-8.3.0-8.3.0-r0: task do_patch: Succeeded
+NOTE: Running task 616 of 889 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-source_debian.bb:do_preconfigure)
+NOTE: recipe gcc-source-8.3.0-8.3.0-r0: task do_preconfigure: Started
+NOTE: recipe gcc-source-8.3.0-8.3.0-r0: task do_preconfigure: Succeeded
+NOTE: Running task 729 of 889 (virtual:nativesdk:/home/deby/poky/meta/recipes-devtools/elfutils/elfutils_0.176.bb:do_prepare_recipe_sysroot)
+NOTE: recipe nativesdk-elfutils-0.176-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe nativesdk-elfutils-0.176-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 873 of 889 (virtual:nativesdk:/home/deby/poky/meta/recipes-devtools/elfutils/elfutils_0.176.bb:do_configure)
+NOTE: recipe nativesdk-elfutils-0.176-r0: task do_configure: Started
+NOTE: recipe nativesdk-elfutils-0.176-r0: task do_configure: Succeeded
+NOTE: Running task 874 of 889 (virtual:nativesdk:/home/deby/poky/meta/recipes-devtools/elfutils/elfutils_0.176.bb:do_compile)
+NOTE: recipe nativesdk-elfutils-0.176-r0: task do_compile: Started
+NOTE: recipe nativesdk-elfutils-0.176-r0: task do_compile: Succeeded
+NOTE: Running task 875 of 889 (virtual:nativesdk:/home/deby/poky/meta/recipes-devtools/elfutils/elfutils_0.176.bb:do_install)
+NOTE: recipe nativesdk-elfutils-0.176-r0: task do_install: Started
+NOTE: recipe nativesdk-elfutils-0.176-r0: task do_install: Succeeded
+NOTE: Running task 876 of 889 (virtual:nativesdk:/home/deby/poky/meta/recipes-devtools/elfutils/elfutils_0.176.bb:do_package)
+NOTE: Running task 877 of 889 (virtual:nativesdk:/home/deby/poky/meta/recipes-devtools/elfutils/elfutils_0.176.bb:do_populate_sysroot)
+NOTE: recipe nativesdk-elfutils-0.176-r0: task do_package: Started
+NOTE: recipe nativesdk-elfutils-0.176-r0: task do_populate_sysroot: Started
+NOTE: recipe nativesdk-elfutils-0.176-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 878 of 889 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-cross-canadian_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe gcc-cross-canadian-mips-8.3.0-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe gcc-cross-canadian-mips-8.3.0-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 879 of 889 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-cross-canadian_debian.bb:do_configure)
+NOTE: recipe gcc-cross-canadian-mips-8.3.0-r0: task do_configure: Started
+NOTE: recipe nativesdk-elfutils-0.176-r0: task do_package: Succeeded
+NOTE: Running task 880 of 889 (virtual:nativesdk:/home/deby/poky/meta/recipes-devtools/elfutils/elfutils_0.176.bb:do_packagedata)
+NOTE: recipe nativesdk-elfutils-0.176-r0: task do_packagedata: Started
+NOTE: recipe nativesdk-elfutils-0.176-r0: task do_packagedata: Succeeded
+NOTE: Running task 881 of 889 (virtual:nativesdk:/home/deby/poky/meta/recipes-devtools/elfutils/elfutils_0.176.bb:do_package_write_deb)
+NOTE: recipe nativesdk-elfutils-0.176-r0: task do_package_write_deb: Started
+NOTE: recipe gcc-cross-canadian-mips-8.3.0-r0: task do_configure: Succeeded
+NOTE: Running task 882 of 889 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-cross-canadian_debian.bb:do_compile)
+NOTE: recipe gcc-cross-canadian-mips-8.3.0-r0: task do_compile: Started
+NOTE: recipe nativesdk-elfutils-0.176-r0: task do_package_write_deb: Succeeded
+NOTE: recipe gcc-cross-canadian-mips-8.3.0-r0: task do_compile: Succeeded
+NOTE: Running task 883 of 889 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-cross-canadian_debian.bb:do_install)
+NOTE: recipe gcc-cross-canadian-mips-8.3.0-r0: task do_install: Started
+NOTE: recipe gcc-cross-canadian-mips-8.3.0-r0: task do_install: Succeeded
+NOTE: Running task 884 of 889 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-cross-canadian_debian.bb:do_package)
+NOTE: Running task 885 of 889 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-cross-canadian_debian.bb:do_populate_sysroot)
+NOTE: recipe gcc-cross-canadian-mips-8.3.0-r0: task do_populate_sysroot: Started
+NOTE: recipe gcc-cross-canadian-mips-8.3.0-r0: task do_package: Started
+NOTE: recipe gcc-cross-canadian-mips-8.3.0-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe gcc-cross-canadian-mips-8.3.0-r0: task do_package: Succeeded
+NOTE: Running task 886 of 889 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-cross-canadian_debian.bb:do_packagedata)
+NOTE: recipe gcc-cross-canadian-mips-8.3.0-r0: task do_packagedata: Started
+NOTE: recipe gcc-cross-canadian-mips-8.3.0-r0: task do_packagedata: Succeeded
+NOTE: Running task 887 of 889 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-cross-canadian_debian.bb:do_package_write_deb)
+NOTE: Running task 888 of 889 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-cross-canadian_debian.bb:do_package_qa)
+NOTE: recipe gcc-cross-canadian-mips-8.3.0-r0: task do_package_write_deb: Started
+NOTE: recipe gcc-cross-canadian-mips-8.3.0-r0: task do_package_qa: Started
+NOTE: recipe gcc-cross-canadian-mips-8.3.0-r0: task do_package_qa: Succeeded
+NOTE: recipe gcc-cross-canadian-mips-8.3.0-r0: task do_package_write_deb: Succeeded
+NOTE: Running noexec task 889 of 889 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-cross-canadian_debian.bb:do_build)
+NOTE: Tasks Summary: Attempted 889 tasks of which 865 didn't need to be rerun and all succeeded.
+
+Summary: There was 1 WARNING message shown.
+Summary: There were 81 ERROR messages shown, returning a non-zero exit code.

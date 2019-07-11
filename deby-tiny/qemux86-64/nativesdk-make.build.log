@@ -1,0 +1,162 @@
+WARNING: Host distribution "debian-10" has not been validated with this version of the build system; you may possibly experience unexpected failures. It is recommended that you use a tested distribution.
+Loading cache...done.
+Loaded 1440 entries from dependency cache.
+NOTE: Resolving any missing task queue dependencies
+
+Build Configuration:
+BB_VERSION           = "1.42.0"
+BUILD_SYS            = "x86_64-linux"
+NATIVELSBSTRING      = "universal"
+TARGET_SYS           = "x86_64-deby-linux"
+MACHINE              = "qemux86-64"
+DISTRO               = "deby-tiny"
+DISTRO_VERSION       = "10.0"
+TUNE_FEATURES        = "m64 core2"
+TARGET_FPU           = ""
+meta                 
+meta-poky            = "warrior:51223035e66c5b27799b15a0f8ebe75d24d3971b"
+meta-debian          = "warrior-trungdt:47b755ebe41c5afc0ea94d75b55c4f0efd8983fe"
+
+Initialising tasks...done.
+Sstate summary: Wanted 20 Found 1 Missed 19 Current 57 (5% match, 75% complete)
+NOTE: Executing SetScene Tasks
+NOTE: Executing RunQueue Tasks
+NOTE: Running task 258 of 527 (virtual:nativesdk:/home/deby/poky/meta-debian/recipes-debian/glibc/glibc_debian.bb:do_debian_patch)
+NOTE: Running task 471 of 527 (virtual:nativesdk:/home/deby/poky/meta-debian/recipes-debian/make/make_debian.bb:do_debian_unpack_extra)
+NOTE: recipe nativesdk-make-4.2.1-r0: task do_debian_unpack_extra: Started
+NOTE: recipe nativesdk-glibc-2.28-r0: task do_debian_patch: Started
+ERROR: nativesdk-make-4.2.1-r0 do_debian_unpack_extra: Function failed: do_debian_unpack_extra (log file is located at /home/deby/build/tmp/work/x86_64-nativesdk-debysdk-linux/nativesdk-make/4.2.1-r0/temp/log.do_debian_unpack_extra.2318)
+ERROR: Logfile of failure stored in: /home/deby/build/tmp/work/x86_64-nativesdk-debysdk-linux/nativesdk-make/4.2.1-r0/temp/log.do_debian_unpack_extra.2318
+Log data follows:
+| DEBUG: SITE files ['endian-little', 'common-linux', 'common-glibc', 'bit-64', 'x86_64-linux', 'common']
+| DEBUG: Executing shell function do_debian_unpack_extra
+| patching file Makefile.am
+| Reversed (or previously applied) patch detected!  Assume -R? [n]
+| Apply anyway? [n]
+| Skipping patch.
+| 2 out of 2 hunks ignored -- saving rejects to file Makefile.am.rej
+| patching file arscan.c
+| Reversed (or previously applied) patch detected!  Assume -R? [n]
+| Apply anyway? [n]
+| Skipping patch.
+| 15 out of 15 hunks ignored -- saving rejects to file arscan.c.rej
+| patching file configure.ac
+| Reversed (or previously applied) patch detected!  Assume -R? [n]
+| Apply anyway? [n]
+| Skipping patch.
+| 2 out of 2 hunks ignored -- saving rejects to file configure.ac.rej
+| patching file debian/Explanations
+| patching file debian/NEWS.Debian
+| patching file debian/README.Debian-Source
+| patching file debian/changelog
+| patching file debian/clean
+| patching file debian/compat
+| patching file debian/control
+| patching file debian/copyright
+| patching file debian/make-first-existing-target
+| patching file debian/make-first-existing-target.1
+| patching file debian/make-guile.docs
+| patching file debian/make-guile.install
+| patching file debian/make-guile.manpages
+| patching file debian/make.docs
+| patching file debian/make.install
+| patching file debian/make.manpages
+| patching file debian/rules
+| patching file debian/source/format
+| patching file debian/upstream/signing-key.asc
+| patching file debian/watch
+| patching file dir.c
+| Reversed (or previously applied) patch detected!  Assume -R? [n]
+| Apply anyway? [n]
+| Skipping patch.
+| 1 out of 1 hunk ignored -- saving rejects to file dir.c.rej
+| patching file function.c
+| Reversed (or previously applied) patch detected!  Assume -R? [n]
+| Apply anyway? [n]
+| Skipping patch.
+| 1 out of 1 hunk ignored -- saving rejects to file function.c.rej
+| patching file job.c
+| Reversed (or previously applied) patch detected!  Assume -R? [n]
+| Apply anyway? [n]
+| Skipping patch.
+| 4 out of 4 hunks ignored -- saving rejects to file job.c.rej
+| patching file job.h
+| Reversed (or previously applied) patch detected!  Assume -R? [n]
+| Apply anyway? [n]
+| Skipping patch.
+| 1 out of 1 hunk ignored -- saving rejects to file job.h.rej
+| patching file main.c
+| Reversed (or previously applied) patch detected!  Assume -R? [n]
+| Apply anyway? [n]
+| Skipping patch.
+| 9 out of 9 hunks ignored -- saving rejects to file main.c.rej
+| patching file make.1
+| Reversed (or previously applied) patch detected!  Assume -R? [n]
+| Apply anyway? [n]
+| Skipping patch.
+| 2 out of 2 hunks ignored -- saving rejects to file make.1.rej
+| patching file makeint.h
+| Reversed (or previously applied) patch detected!  Assume -R? [n]
+| Apply anyway? [n]
+| Skipping patch.
+| 1 out of 1 hunk ignored -- saving rejects to file makeint.h.rej
+| patching file output.c
+| Reversed (or previously applied) patch detected!  Assume -R? [n]
+| Apply anyway? [n]
+| Skipping patch.
+| 7 out of 7 hunks ignored -- saving rejects to file output.c.rej
+| patching file posixos.c
+| Hunk #1 succeeded at 329 (offset 270 lines).
+| Hunk #2 succeeded at 411 with fuzz 2 (offset 315 lines).
+| Hunk #3 succeeded at 494 with fuzz 2 (offset 360 lines).
+| Hunk #4 FAILED at 185.
+| Hunk #5 FAILED at 263.
+| Hunk #6 FAILED at 283.
+| 3 out of 6 hunks FAILED -- saving rejects to file posixos.c.rej
+| patching file read.c
+| Reversed (or previously applied) patch detected!  Assume -R? [n]
+| Apply anyway? [n]
+| Skipping patch.
+| 1 out of 1 hunk ignored -- saving rejects to file read.c.rej
+| patching file remake.c
+| Reversed (or previously applied) patch detected!  Assume -R? [n]
+| Apply anyway? [n]
+| Skipping patch.
+| 4 out of 4 hunks ignored -- saving rejects to file remake.c.rej
+| patching file remote-cstms.c
+| Reversed (or previously applied) patch detected!  Assume -R? [n]
+| Apply anyway? [n]
+| Skipping patch.
+| 1 out of 1 hunk ignored -- saving rejects to file remote-cstms.c.rej
+| patching file tests/jhelp.pl
+| patching file tests/scripts/features/jobserver
+| Reversed (or previously applied) patch detected!  Assume -R? [n]
+| Apply anyway? [n]
+| Skipping patch.
+| 3 out of 3 hunks ignored -- saving rejects to file tests/scripts/features/jobserver.rej
+| patching file tests/scripts/features/output-sync
+| Reversed (or previously applied) patch detected!  Assume -R? [n]
+| Apply anyway? [n]
+| Skipping patch.
+| 6 out of 6 hunks ignored -- saving rejects to file tests/scripts/features/output-sync.rej
+| patching file tests/scripts/features/parallelism
+| Reversed (or previously applied) patch detected!  Assume -R? [n]
+| Apply anyway? [n]
+| Skipping patch.
+| 8 out of 8 hunks ignored -- saving rejects to file tests/scripts/features/parallelism.rej
+| WARNING: exit code 1 from a shell command.
+| ERROR: Function failed: do_debian_unpack_extra (log file is located at /home/deby/build/tmp/work/x86_64-nativesdk-debysdk-linux/nativesdk-make/4.2.1-r0/temp/log.do_debian_unpack_extra.2318)
+NOTE: recipe nativesdk-make-4.2.1-r0: task do_debian_unpack_extra: Failed
+ERROR: Task (virtual:nativesdk:/home/deby/poky/meta-debian/recipes-debian/make/make_debian.bb:do_debian_unpack_extra) failed with exit code '1'
+ERROR: nativesdk-glibc-2.28-r0 do_debian_patch: unknown quilt patches already applied
+ERROR: nativesdk-glibc-2.28-r0 do_debian_patch: Function failed: do_debian_patch (log file is located at /home/deby/build/tmp/work/x86_64-nativesdk-debysdk-linux/nativesdk-glibc/2.28-r0/temp/log.do_debian_patch.2317)
+ERROR: Logfile of failure stored in: /home/deby/build/tmp/work/x86_64-nativesdk-debysdk-linux/nativesdk-glibc/2.28-r0/temp/log.do_debian_patch.2317
+NOTE: recipe nativesdk-glibc-2.28-r0: task do_debian_patch: Failed
+ERROR: Task (virtual:nativesdk:/home/deby/poky/meta-debian/recipes-debian/glibc/glibc_debian.bb:do_debian_patch) failed with exit code '1'
+NOTE: Tasks Summary: Attempted 486 tasks of which 484 didn't need to be rerun and 2 failed.
+
+Summary: 2 tasks failed:
+  virtual:nativesdk:/home/deby/poky/meta-debian/recipes-debian/make/make_debian.bb:do_debian_unpack_extra
+  virtual:nativesdk:/home/deby/poky/meta-debian/recipes-debian/glibc/glibc_debian.bb:do_debian_patch
+Summary: There was 1 WARNING message shown.
+Summary: There were 3 ERROR messages shown, returning a non-zero exit code.

@@ -1,0 +1,11 @@
+examplesh
+run-ptest
+zlib version 1.2.11 = 0x12b0, compile flags = 0x55
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+after inflateSync(): hello, hello!
+inflate with dictionary: hello, hello!
+PASS: zlib

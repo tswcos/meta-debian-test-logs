@@ -1,0 +1,54 @@
+WARNING: Host distribution "debian-10" has not been validated with this version of the build system; you may possibly experience unexpected failures. It is recommended that you use a tested distribution.
+Loading cache...done.
+Loaded 1440 entries from dependency cache.
+NOTE: Resolving any missing task queue dependencies
+
+Build Configuration:
+BB_VERSION           = "1.42.0"
+BUILD_SYS            = "x86_64-linux"
+NATIVELSBSTRING      = "universal"
+TARGET_SYS           = "x86_64-deby-linux"
+MACHINE              = "qemux86-64"
+DISTRO               = "deby"
+DISTRO_VERSION       = "10.0"
+TUNE_FEATURES        = "m64 core2"
+TARGET_FPU           = ""
+meta                 
+meta-poky            = "warrior:51223035e66c5b27799b15a0f8ebe75d24d3971b"
+meta-debian          = "warrior-trungdt:47b755ebe41c5afc0ea94d75b55c4f0efd8983fe"
+
+Initialising tasks...done.
+Sstate summary: Wanted 77 Found 76 Missed 1 Current 315 (98% match, 99% complete)
+NOTE: Executing SetScene Tasks
+NOTE: Running setscene task 316 of 392 (/home/deby/poky/meta-debian/recipes-debian/u-boot/u-boot-fw-utils_debian.bb:do_populate_sysroot_setscene)
+NOTE: Running setscene task 317 of 392 (/home/deby/poky/meta-debian/recipes-debian/u-boot/u-boot-fw-utils_debian.bb:do_package_qa_setscene)
+NOTE: Running setscene task 318 of 392 (/home/deby/poky/meta-debian/recipes-debian/u-boot/u-boot-fw-utils_debian.bb:do_package_write_deb_setscene)
+NOTE: Running setscene task 319 of 392 (/home/deby/poky/meta/recipes-devtools/mtd/mtd-utils_git.bb:do_package_write_deb_setscene)
+NOTE: recipe u-boot-fw-utils-2019.01-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe mtd-utils-2.0.2+AUTOINC+bc63d36e39-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe u-boot-fw-utils-2019.01-r0: task do_populate_sysroot_setscene: Started
+NOTE: recipe u-boot-fw-utils-2019.01-r0: task do_package_qa_setscene: Started
+NOTE: recipe u-boot-fw-utils-2019.01-r0: task do_package_qa_setscene: Succeeded
+NOTE: recipe u-boot-fw-utils-2019.01-r0: task do_populate_sysroot_setscene: Succeeded
+NOTE: recipe u-boot-fw-utils-2019.01-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 385 of 392 (/home/deby/poky/meta-debian/recipes-debian/u-boot/u-boot-fw-utils_debian.bb:do_packagedata_setscene)
+NOTE: recipe mtd-utils-2.0.2+AUTOINC+bc63d36e39-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: recipe u-boot-fw-utils-2019.01-r0: task do_packagedata_setscene: Started
+NOTE: recipe u-boot-fw-utils-2019.01-r0: task do_packagedata_setscene: Succeeded
+NOTE: Running setscene task 387 of 392 (/home/deby/poky/meta/recipes-devtools/mtd/mtd-utils_git.bb:do_populate_sysroot_setscene)
+NOTE: Running setscene task 388 of 392 (/home/deby/poky/meta/recipes-devtools/mtd/mtd-utils_git.bb:do_packagedata_setscene)
+NOTE: recipe mtd-utils-2.0.2+AUTOINC+bc63d36e39-r0: task do_populate_sysroot_setscene: Started
+NOTE: recipe mtd-utils-2.0.2+AUTOINC+bc63d36e39-r0: task do_packagedata_setscene: Started
+NOTE: recipe mtd-utils-2.0.2+AUTOINC+bc63d36e39-r0: task do_packagedata_setscene: Succeeded
+NOTE: recipe mtd-utils-2.0.2+AUTOINC+bc63d36e39-r0: task do_populate_sysroot_setscene: Succeeded
+NOTE: Running setscene task 390 of 392 (/home/deby/poky/meta/recipes-support/lzo/lzo_2.10.bb:do_populate_sysroot_setscene)
+NOTE: Running setscene task 391 of 392 (/home/deby/poky/meta/recipes-devtools/e2fsprogs/e2fsprogs_1.44.5.bb:do_populate_sysroot_setscene)
+NOTE: recipe lzo-2.10-r0: task do_populate_sysroot_setscene: Started
+NOTE: recipe e2fsprogs-1.44.5-r0: task do_populate_sysroot_setscene: Started
+NOTE: recipe lzo-2.10-r0: task do_populate_sysroot_setscene: Succeeded
+NOTE: recipe e2fsprogs-1.44.5-r0: task do_populate_sysroot_setscene: Succeeded
+NOTE: Executing RunQueue Tasks
+NOTE: Running noexec task 1659 of 1659 (/home/deby/poky/meta-debian/recipes-debian/u-boot/u-boot-fw-utils_debian.bb:do_build)
+NOTE: Tasks Summary: Attempted 1659 tasks of which 1658 didn't need to be rerun and all succeeded.
+
+Summary: There was 1 WARNING message shown.

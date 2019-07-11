@@ -1,0 +1,51 @@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the RSA key sent by the remote host is
+SHA256:tn7xiXdPisD0Yi4nqXrMDQ6atAlq2aSYSY7DmvR7dxE.
+Please contact your system administrator.
+Add correct host key in /home/deby/.ssh/known_hosts to get rid of this message.
+Offending RSA key in /home/deby/.ssh/known_hosts:1
+  remove with:
+  ssh-keygen -f "/home/deby/.ssh/known_hosts" -R "[127.0.0.1]:2222"
+Password authentication is disabled to avoid man-in-the-middle attacks.
+Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
+Makefile
+bzip2
+run-ptest
+sample1.bz2
+sample1.ref
+sample2.bz2
+sample2.ref
+sample3.bz2
+sample3.ref
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the RSA key sent by the remote host is
+SHA256:tn7xiXdPisD0Yi4nqXrMDQ6atAlq2aSYSY7DmvR7dxE.
+Please contact your system administrator.
+Add correct host key in /home/deby/.ssh/known_hosts to get rid of this message.
+Offending RSA key in /home/deby/.ssh/known_hosts:1
+  remove with:
+  ssh-keygen -f "/home/deby/.ssh/known_hosts" -R "[127.0.0.1]:2222"
+Password authentication is disabled to avoid man-in-the-middle attacks.
+Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
+./bzip2 -1  < sample1.ref > sample1.rb2
+./bzip2 -2  < sample2.ref > sample2.rb2
+./bzip2 -3  < sample3.ref > sample3.rb2
+./bzip2 -d  < sample1.bz2 > sample1.tst
+./bzip2 -d  < sample2.bz2 > sample2.tst
+./bzip2 -ds < sample3.bz2 > sample3.tst
+PASS: sample1 compress
+PASS: sample2 compress
+PASS: sample3 compress
+PASS: sample1 decompress
+PASS: sample2 decompress
+PASS: sample3 decompress

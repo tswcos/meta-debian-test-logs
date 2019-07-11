@@ -1,0 +1,44 @@
+WARNING: Host distribution "debian-10" has not been validated with this version of the build system; you may possibly experience unexpected failures. It is recommended that you use a tested distribution.
+Loading cache...done.
+Loaded 1440 entries from dependency cache.
+NOTE: Resolving any missing task queue dependencies
+
+Build Configuration:
+BB_VERSION           = "1.42.0"
+BUILD_SYS            = "x86_64-linux"
+NATIVELSBSTRING      = "universal"
+TARGET_SYS           = "powerpc-deby-linux"
+MACHINE              = "qemuppc"
+DISTRO               = "deby-tiny"
+DISTRO_VERSION       = "10.0"
+TUNE_FEATURES        = "m32 fpu-hard ppc7400 altivec"
+TARGET_FPU           = ""
+meta                 
+meta-poky            = "warrior:51223035e66c5b27799b15a0f8ebe75d24d3971b"
+meta-debian          = "warrior-trungdt:47b755ebe41c5afc0ea94d75b55c4f0efd8983fe"
+
+Initialising tasks...done.
+Sstate summary: Wanted 20 Found 1 Missed 19 Current 57 (5% match, 75% complete)
+NOTE: Executing SetScene Tasks
+NOTE: Executing RunQueue Tasks
+NOTE: Running task 258 of 527 (virtual:nativesdk:/home/deby/poky/meta-debian/recipes-debian/glibc/glibc_debian.bb:do_debian_patch)
+NOTE: Running task 472 of 527 (virtual:nativesdk:/home/deby/poky/meta-debian/recipes-debian/openssl/openssl_debian.bb:do_debian_patch)
+NOTE: recipe nativesdk-openssl-1.1.1c-r0: task do_debian_patch: Started
+NOTE: recipe nativesdk-glibc-2.28-r0: task do_debian_patch: Started
+ERROR: nativesdk-openssl-1.1.1c-r0 do_debian_patch: unknown quilt patches already applied
+ERROR: nativesdk-openssl-1.1.1c-r0 do_debian_patch: Function failed: do_debian_patch (log file is located at /home/deby/build/tmp/work/x86_64-nativesdk-debysdk-linux/nativesdk-openssl/1.1.1c-r0/temp/log.do_debian_patch.6175)
+ERROR: Logfile of failure stored in: /home/deby/build/tmp/work/x86_64-nativesdk-debysdk-linux/nativesdk-openssl/1.1.1c-r0/temp/log.do_debian_patch.6175
+NOTE: recipe nativesdk-openssl-1.1.1c-r0: task do_debian_patch: Failed
+ERROR: Task (virtual:nativesdk:/home/deby/poky/meta-debian/recipes-debian/openssl/openssl_debian.bb:do_debian_patch) failed with exit code '1'
+ERROR: nativesdk-glibc-2.28-r0 do_debian_patch: unknown quilt patches already applied
+ERROR: nativesdk-glibc-2.28-r0 do_debian_patch: Function failed: do_debian_patch (log file is located at /home/deby/build/tmp/work/x86_64-nativesdk-debysdk-linux/nativesdk-glibc/2.28-r0/temp/log.do_debian_patch.6174)
+ERROR: Logfile of failure stored in: /home/deby/build/tmp/work/x86_64-nativesdk-debysdk-linux/nativesdk-glibc/2.28-r0/temp/log.do_debian_patch.6174
+NOTE: recipe nativesdk-glibc-2.28-r0: task do_debian_patch: Failed
+ERROR: Task (virtual:nativesdk:/home/deby/poky/meta-debian/recipes-debian/glibc/glibc_debian.bb:do_debian_patch) failed with exit code '1'
+NOTE: Tasks Summary: Attempted 487 tasks of which 485 didn't need to be rerun and 2 failed.
+
+Summary: 2 tasks failed:
+  virtual:nativesdk:/home/deby/poky/meta-debian/recipes-debian/openssl/openssl_debian.bb:do_debian_patch
+  virtual:nativesdk:/home/deby/poky/meta-debian/recipes-debian/glibc/glibc_debian.bb:do_debian_patch
+Summary: There was 1 WARNING message shown.
+Summary: There were 4 ERROR messages shown, returning a non-zero exit code.

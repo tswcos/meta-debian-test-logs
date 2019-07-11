@@ -1,0 +1,21 @@
+Makefile
+bzip2
+run-ptest
+sample1.bz2
+sample1.ref
+sample2.bz2
+sample2.ref
+sample3.bz2
+sample3.ref
+./bzip2 -1  < sample1.ref > sample1.rb2
+./bzip2 -2  < sample2.ref > sample2.rb2
+./bzip2 -3  < sample3.ref > sample3.rb2
+./bzip2 -d  < sample1.bz2 > sample1.tst
+./bzip2 -d  < sample2.bz2 > sample2.tst
+./bzip2 -ds < sample3.bz2 > sample3.tst
+PASS: sample1 compress
+PASS: sample2 compress
+PASS: sample3 compress
+PASS: sample1 decompress
+PASS: sample2 decompress
+PASS: sample3 decompress

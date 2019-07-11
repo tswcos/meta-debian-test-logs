@@ -1,0 +1,30 @@
+WARNING: Host distribution "debian-10" has not been validated with this version of the build system; you may possibly experience unexpected failures. It is recommended that you use a tested distribution.
+Loading cache...done.
+Loaded 1440 entries from dependency cache.
+NOTE: Resolving any missing task queue dependencies
+
+Build Configuration:
+BB_VERSION           = "1.42.0"
+BUILD_SYS            = "x86_64-linux"
+NATIVELSBSTRING      = "universal"
+TARGET_SYS           = "x86_64-deby-linux"
+MACHINE              = "qemux86-64"
+DISTRO               = "deby-tiny"
+DISTRO_VERSION       = "10.0"
+TUNE_FEATURES        = "m64 core2"
+TARGET_FPU           = ""
+meta                 
+meta-poky            = "warrior:51223035e66c5b27799b15a0f8ebe75d24d3971b"
+meta-debian          = "warrior-trungdt:47b755ebe41c5afc0ea94d75b55c4f0efd8983fe"
+
+Initialising tasks...done.
+Sstate summary: Wanted 1 Found 1 Missed 0 Current 71 (100% match, 100% complete)
+NOTE: Executing SetScene Tasks
+NOTE: Running setscene task 72 of 72 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-runtime_debian.bb:do_package_qa_setscene)
+NOTE: recipe gcc-runtime-8.3.0-r0: task do_package_qa_setscene: Started
+NOTE: recipe gcc-runtime-8.3.0-r0: task do_package_qa_setscene: Succeeded
+NOTE: Executing RunQueue Tasks
+NOTE: Running noexec task 506 of 506 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-runtime_debian.bb:do_build)
+NOTE: Tasks Summary: Attempted 506 tasks of which 505 didn't need to be rerun and all succeeded.
+
+Summary: There was 1 WARNING message shown.

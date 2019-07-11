@@ -1,0 +1,447 @@
+WARNING: Host distribution "debian-10" has not been validated with this version of the build system; you may possibly experience unexpected failures. It is recommended that you use a tested distribution.
+Loading cache...done.
+Loaded 1440 entries from dependency cache.
+NOTE: Resolving any missing task queue dependencies
+
+Build Configuration:
+BB_VERSION           = "1.42.0"
+BUILD_SYS            = "x86_64-linux"
+NATIVELSBSTRING      = "universal"
+TARGET_SYS           = "powerpc-deby-linux"
+MACHINE              = "qemuppc"
+DISTRO               = "deby"
+DISTRO_VERSION       = "10.0"
+TUNE_FEATURES        = "m32 fpu-hard ppc7400 altivec"
+TARGET_FPU           = ""
+meta                 
+meta-poky            = "warrior:51223035e66c5b27799b15a0f8ebe75d24d3971b"
+meta-debian          = "warrior-trungdt:47b755ebe41c5afc0ea94d75b55c4f0efd8983fe"
+
+Initialising tasks...done.
+Sstate summary: Wanted 211 Found 211 Missed 0 Current 181 (100% match, 100% complete)
+NOTE: Executing SetScene Tasks
+NOTE: Running setscene task 182 of 392 (/home/deby/poky/meta-debian/recipes-debian/busybox/busybox_debian.bb:do_populate_sysroot_setscene)
+NOTE: Running setscene task 183 of 392 (/home/deby/poky/meta-debian/recipes-debian/busybox/busybox_debian.bb:do_package_qa_setscene)
+NOTE: Running setscene task 184 of 392 (/home/deby/poky/meta-debian/recipes-debian/busybox/busybox_debian.bb:do_package_write_deb_setscene)
+NOTE: Running setscene task 185 of 392 (/home/deby/poky/meta-debian/recipes-debian/busybox/busybox_debian.bb:do_populate_lic_setscene)
+NOTE: Running setscene task 186 of 392 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-runtime_debian.bb:do_package_write_deb_setscene)
+NOTE: Running setscene task 187 of 392 (/home/deby/poky/meta-debian/recipes-debian/glibc/glibc_debian.bb:do_package_write_deb_setscene)
+NOTE: Running setscene task 188 of 392 (/home/deby/poky/meta/recipes-devtools/opkg-utils/opkg-utils_0.4.0.bb:do_package_write_deb_setscene)
+NOTE: Running setscene task 189 of 392 (/home/deby/poky/meta/recipes-core/libxcrypt/libxcrypt.bb:do_package_write_deb_setscene)
+NOTE: Running setscene task 190 of 392 (/home/deby/poky/meta/recipes-devtools/python/python3_3.7.2.bb:do_package_write_deb_setscene)
+NOTE: Running setscene task 191 of 392 (/home/deby/poky/meta-debian/recipes-debian/perl/perl_debian.bb:do_package_write_deb_setscene)
+NOTE: Running setscene task 193 of 392 (/home/deby/poky/meta-debian/recipes-debian/gcc/libgcc_debian.bb:do_package_write_deb_setscene)
+NOTE: Running setscene task 194 of 392 (/home/deby/poky/meta-debian/recipes-debian/libtool/libtool-cross_debian.bb:do_package_write_deb_setscene)
+NOTE: Running setscene task 195 of 392 (/home/deby/poky/meta/recipes-extended/xz/xz_5.2.4.bb:do_package_write_deb_setscene)
+NOTE: Running setscene task 196 of 392 (/home/deby/poky/meta-debian/recipes-debian/ncurses/ncurses_debian.bb:do_package_write_deb_setscene)
+NOTE: Running setscene task 197 of 392 (/home/deby/poky/meta-debian/recipes-debian/bzip2/bzip2_debian.bb:do_package_write_deb_setscene)
+NOTE: Running setscene task 198 of 392 (/home/deby/poky/meta-debian/recipes-debian/zlib/zlib_debian.bb:do_package_write_deb_setscene)
+NOTE: recipe opkg-utils-0.4.0-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe perl-5.28.1-r1: task do_package_write_deb_setscene: Started
+NOTE: recipe zlib-1.2.11-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe glibc-2.28-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe libxcrypt-4.4.2-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe xz-5.2.4-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe libtool-cross-2.4.6-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe bzip2-1.0.6-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe python3-3.7.2-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe libgcc-8.3.0-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe ncurses-6.1+20181013-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe gcc-runtime-8.3.0-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe busybox-1.30.1-r0: task do_populate_sysroot_setscene: Started
+NOTE: recipe busybox-1.30.1-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe busybox-1.30.1-r0: task do_package_qa_setscene: Started
+NOTE: recipe busybox-1.30.1-r0: task do_populate_lic_setscene: Started
+NOTE: recipe libtool-cross-2.4.6-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 199 of 392 (/home/deby/poky/meta/recipes-extended/libnsl/libnsl2_git.bb:do_package_write_deb_setscene)
+NOTE: recipe libnsl2-1.2.0+gitAUTOINC+37c5ffe303-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe busybox-1.30.1-r0: task do_package_qa_setscene: Succeeded
+NOTE: Running setscene task 200 of 392 (/home/deby/poky/meta-debian/recipes-debian/readline/readline_debian.bb:do_package_write_deb_setscene)
+NOTE: recipe busybox-1.30.1-r0: task do_populate_sysroot_setscene: Succeeded
+NOTE: Running setscene task 201 of 392 (/home/deby/poky/meta/recipes-extended/libtirpc/libtirpc_1.0.3.bb:do_package_write_deb_setscene)
+NOTE: recipe readline-7.0-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe busybox-1.30.1-r0: task do_populate_lic_setscene: Succeeded
+NOTE: Running setscene task 202 of 392 (/home/deby/poky/meta-debian/recipes-debian/openssl/openssl_debian.bb:do_package_write_deb_setscene)
+NOTE: recipe zlib-1.2.11-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: recipe libtirpc-1.0.3-r0: task do_package_write_deb_setscene: Started
+NOTE: Running setscene task 203 of 392 (/home/deby/poky/meta/recipes-support/sqlite/sqlite3_3.27.2.bb:do_package_write_deb_setscene)
+NOTE: recipe opkg-utils-0.4.0-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 204 of 392 (/home/deby/poky/meta/recipes-support/gdbm/gdbm_1.18.1.bb:do_package_write_deb_setscene)
+NOTE: recipe openssl-1.1.1c-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe sqlite3-3_3.27.2-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe bzip2-1.0.6-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 205 of 392 (/home/deby/poky/meta/recipes-core/util-linux/util-linux_2.32.1.bb:do_package_write_deb_setscene)
+NOTE: recipe ncurses-6.1+20181013-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 206 of 392 (/home/deby/poky/meta/recipes-support/libffi/libffi_3.2.1.bb:do_package_write_deb_setscene)
+NOTE: recipe xz-5.2.4-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: recipe libnsl2-1.2.0+gitAUTOINC+37c5ffe303-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 207 of 392 (/home/deby/poky/meta-debian/recipes-debian/glibc/glibc-locale_debian.bb:do_package_write_deb_setscene)
+NOTE: Running setscene task 208 of 392 (/home/deby/poky/meta-debian/recipes-debian/make/make_debian.bb:do_package_write_deb_setscene)
+NOTE: recipe busybox-1.30.1-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 209 of 392 (/home/deby/poky/meta-debian/recipes-debian/busybox/busybox_debian.bb:do_packagedata_setscene)
+NOTE: recipe libgcc-8.3.0-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 210 of 392 (/home/deby/poky/meta/recipes-extended/bash/bash_4.4.18.bb:do_package_write_deb_setscene)
+NOTE: recipe busybox-1.30.1-r0: task do_packagedata_setscene: Started
+NOTE: recipe gdbm-1.18.1-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe gcc-runtime-8.3.0-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 211 of 392 (/home/deby/poky/meta/recipes-extended/diffutils/diffutils_3.7.bb:do_package_write_deb_setscene)
+NOTE: recipe libxcrypt-4.4.2-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 212 of 392 (/home/deby/poky/meta/recipes-support/bash-completion/bash-completion_2.8.bb:do_package_write_deb_setscene)
+NOTE: recipe diffutils-3.7-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe util-linux-2.32.1-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe bash-4.4.18-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe libffi-3.2.1-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe glibc-locale-2.28-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe bash-completion-2.8-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe make-4.2.1-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe readline-7.0-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 213 of 392 (/home/deby/poky/meta-debian/recipes-debian/bc/bc_debian.bb:do_package_write_deb_setscene)
+NOTE: recipe libtirpc-1.0.3-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 214 of 392 (/home/deby/poky/meta/recipes-kernel/kmod/kmod_git.bb:do_populate_sysroot_setscene)
+NOTE: recipe kmod-26-r0: task do_populate_sysroot_setscene: Started
+NOTE: recipe glibc-2.28-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 215 of 392 (/home/deby/poky/meta/recipes-kernel/kmod/kmod_git.bb:do_package_write_deb_setscene)
+NOTE: recipe kmod-26-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe bc-1.07.1-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe busybox-1.30.1-r0: task do_packagedata_setscene: Succeeded
+NOTE: Running setscene task 218 of 392 (/home/deby/poky/meta/recipes-devtools/e2fsprogs/e2fsprogs_1.44.5.bb:do_package_write_deb_setscene)
+NOTE: recipe libffi-3.2.1-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 219 of 392 (/home/deby/poky/meta-debian/recipes-debian/procps/procps_debian.bb:do_package_write_deb_setscene)
+NOTE: recipe gdbm-1.18.1-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 220 of 392 (/home/deby/poky/meta-debian/recipes-debian/glib-2.0/glib-2.0_debian.bb:do_package_write_deb_setscene)
+NOTE: recipe diffutils-3.7-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 221 of 392 (/home/deby/poky/meta-debian/recipes-debian/libxml/libxml2_debian.bb:do_package_write_deb_setscene)
+NOTE: recipe make-4.2.1-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 222 of 392 (/home/deby/poky/meta/recipes-support/attr/attr_2.4.47.bb:do_package_write_deb_setscene)
+NOTE: recipe e2fsprogs-1.44.5-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe bash-completion-2.8-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 224 of 392 (/home/deby/poky/meta-debian/recipes-debian/gmp/gmp_debian.bb:do_package_write_deb_setscene)
+NOTE: recipe kmod-26-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 226 of 392 (/home/deby/poky/meta/recipes-support/lzo/lzo_2.10.bb:do_package_write_deb_setscene)
+NOTE: recipe util-linux-2.32.1-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 227 of 392 (/home/deby/poky/meta/recipes-kernel/kmod/kmod_git.bb:do_packagedata_setscene)
+NOTE: recipe bash-4.4.18-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: recipe gmp-6.1.2-r0: task do_package_write_deb_setscene: Started
+NOTE: Running setscene task 228 of 392 (/home/deby/poky/meta/recipes-support/libpcre/libpcre_8.43.bb:do_package_write_deb_setscene)
+NOTE: recipe lzo-2.10-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe kmod-26-r0: task do_packagedata_setscene: Started
+NOTE: recipe libxml2-2.9.4-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe procps-3.3.15-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe kmod-26-r0: task do_populate_sysroot_setscene: Succeeded
+NOTE: Running setscene task 229 of 392 (/home/deby/poky/meta/recipes-core/base-files/base-files_3.0.14.bb:do_package_write_deb_setscene)
+NOTE: recipe libpcre-8.43-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe attr-2.4.47-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe glib-2.0-2.58.3-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe base-files-3.0.14-r89: task do_package_write_deb_setscene: Started
+NOTE: recipe kmod-26-r0: task do_packagedata_setscene: Succeeded
+NOTE: Running setscene task 231 of 392 (/home/deby/poky/meta-debian/recipes-debian/dbus/dbus_debian.bb:do_package_write_deb_setscene)
+NOTE: recipe bc-1.07.1-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 232 of 392 (/home/deby/poky/meta-debian/recipes-debian/bc/bc_debian.bb:do_packagedata_setscene)
+NOTE: recipe dbus-1.12.16-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe bc-1.07.1-r0: task do_packagedata_setscene: Started
+NOTE: recipe sqlite3-3_3.27.2-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 233 of 392 (/home/deby/poky/meta/recipes-support/shared-mime-info/shared-mime-info_1.10.bb:do_package_write_deb_setscene)
+NOTE: recipe base-files-3.0.14-r89: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 234 of 392 (/home/deby/poky/meta/recipes-extended/shadow/shadow_4.6.bb:do_package_write_deb_setscene)
+NOTE: recipe shadow-4.6-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe shared-mime-info-1.10-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe bc-1.07.1-r0: task do_packagedata_setscene: Succeeded
+NOTE: Running setscene task 236 of 392 (/home/deby/poky/meta-debian/recipes-debian/libtool/libtool_debian.bb:do_populate_sysroot_setscene)
+NOTE: recipe libtool-2.4.6-r0: task do_populate_sysroot_setscene: Started
+NOTE: recipe gmp-6.1.2-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: recipe libpcre-8.43-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: recipe procps-3.3.15-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 237 of 392 (/home/deby/poky/meta-debian/recipes-debian/gmp/gmp_debian.bb:do_packagedata_setscene)
+NOTE: Running setscene task 238 of 392 (/home/deby/poky/meta-debian/recipes-debian/libtool/libtool_debian.bb:do_package_write_deb_setscene)
+NOTE: recipe lzo-2.10-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: recipe dbus-1.12.16-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 239 of 392 (/home/deby/poky/meta/recipes-core/base-passwd/base-passwd_3.5.29.bb:do_populate_sysroot_setscene)
+NOTE: Running setscene task 240 of 392 (/home/deby/poky/meta/recipes-support/lzo/lzo_2.10.bb:do_packagedata_setscene)
+NOTE: Running setscene task 241 of 392 (/home/deby/poky/meta/recipes-core/base-passwd/base-passwd_3.5.29.bb:do_package_write_deb_setscene)
+NOTE: recipe attr-2.4.47-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 242 of 392 (/home/deby/poky/meta-debian/recipes-debian/make/make_debian.bb:do_packagedata_setscene)
+NOTE: recipe libxml2-2.9.4-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 243 of 392 (/home/deby/poky/meta/recipes-extended/shadow/shadow-sysroot_4.6.bb:do_populate_sysroot_setscene)
+NOTE: recipe lzo-2.10-r0: task do_packagedata_setscene: Started
+NOTE: recipe gmp-6.1.2-r0: task do_packagedata_setscene: Started
+NOTE: recipe libtool-2.4.6-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe make-4.2.1-r0: task do_packagedata_setscene: Started
+NOTE: recipe shadow-sysroot-4.6-r3: task do_populate_sysroot_setscene: Started
+NOTE: recipe base-passwd-3.5.29-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe python3-3.7.2-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 244 of 392 (/home/deby/poky/meta/recipes-support/ca-certificates/ca-certificates_20190110.bb:do_packagedata_setscene)
+NOTE: recipe base-passwd-3.5.29-r0: task do_populate_sysroot_setscene: Started
+NOTE: recipe ca-certificates-20190110-r0: task do_packagedata_setscene: Started
+NOTE: recipe e2fsprogs-1.44.5-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 245 of 392 (/home/deby/poky/meta/recipes-extended/diffutils/diffutils_3.7.bb:do_packagedata_setscene)
+NOTE: recipe perl-5.28.1-r1: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 246 of 392 (/home/deby/poky/meta/recipes-devtools/e2fsprogs/e2fsprogs_1.44.5.bb:do_packagedata_setscene)
+NOTE: recipe diffutils-3.7-r0: task do_packagedata_setscene: Started
+NOTE: recipe shadow-4.6-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 247 of 392 (/home/deby/poky/meta-debian/recipes-debian/procps/procps_debian.bb:do_packagedata_setscene)
+NOTE: recipe e2fsprogs-1.44.5-r0: task do_packagedata_setscene: Started
+NOTE: recipe glib-2.0-2.58.3-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: recipe procps-3.3.15-r0: task do_packagedata_setscene: Started
+NOTE: Running setscene task 248 of 392 (/home/deby/poky/meta/recipes-extended/shadow/shadow-sysroot_4.6.bb:do_package_write_deb_setscene)
+NOTE: recipe shadow-sysroot-4.6-r3: task do_populate_sysroot_setscene: Succeeded
+NOTE: Running setscene task 249 of 392 (/home/deby/poky/meta/recipes-graphics/xorg-lib/libx11_1.6.7.bb:do_package_write_deb_setscene)
+NOTE: recipe shadow-sysroot-4.6-r3: task do_package_write_deb_setscene: Started
+NOTE: recipe libx11-1_1.6.7-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe base-passwd-3.5.29-r0: task do_populate_sysroot_setscene: Succeeded
+NOTE: recipe base-passwd-3.5.29-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 250 of 392 (/home/deby/poky/meta-debian/recipes-debian/expat/expat_debian.bb:do_package_write_deb_setscene)
+NOTE: Running setscene task 251 of 392 (/home/deby/poky/meta/recipes-graphics/xorg-lib/libsm_1.2.3.bb:do_package_write_deb_setscene)
+NOTE: recipe shadow-sysroot-4.6-r3: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 252 of 392 (/home/deby/poky/meta/recipes-extended/shadow/shadow-securetty_4.6.bb:do_package_write_deb_setscene)
+NOTE: recipe libsm-1_1.2.3-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe expat-2.2.6-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe shared-mime-info-1.10-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 253 of 392 (/home/deby/poky/meta/recipes-support/shared-mime-info/shared-mime-info_1.10.bb:do_packagedata_setscene)
+NOTE: recipe shared-mime-info-1.10-r0: task do_packagedata_setscene: Started
+NOTE: recipe shadow-securetty-4.6-r3: task do_package_write_deb_setscene: Started
+NOTE: recipe libx11-1_1.6.7-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 254 of 392 (/home/deby/poky/meta/recipes-graphics/xorg-lib/xtrans_1.3.5.bb:do_package_write_deb_setscene)
+NOTE: recipe libsm-1_1.2.3-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 255 of 392 (/home/deby/poky/meta/recipes-graphics/xorg-lib/libxcb_1.13.1.bb:do_package_write_deb_setscene)
+NOTE: recipe libtool-2.4.6-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: recipe lzo-2.10-r0: task do_packagedata_setscene: Succeeded
+NOTE: Running setscene task 256 of 392 (/home/deby/poky/meta-debian/recipes-debian/libtool/libtool_debian.bb:do_packagedata_setscene)
+NOTE: Running setscene task 258 of 392 (/home/deby/poky/meta/recipes-graphics/xorg-lib/libice_1.0.9.bb:do_package_write_deb_setscene)
+NOTE: recipe xtrans-1_1.3.5-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe libice-1_1.0.9-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe libtool-2.4.6-r0: task do_packagedata_setscene: Started
+NOTE: recipe libxcb-1.13.1-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe libtool-2.4.6-r0: task do_populate_sysroot_setscene: Succeeded
+NOTE: Running setscene task 259 of 392 (/home/deby/poky/meta/recipes-graphics/xorg-lib/libxau_1.0.9.bb:do_package_write_deb_setscene)
+NOTE: recipe openssl-1.1.1c-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 260 of 392 (/home/deby/poky/meta-debian/recipes-debian/perl/perl_debian.bb:do_packagedata_setscene)
+NOTE: recipe expat-2.2.6-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 261 of 392 (/home/deby/poky/meta/recipes-extended/bash/bash_4.4.18.bb:do_packagedata_setscene)
+NOTE: recipe bash-4.4.18-r0: task do_packagedata_setscene: Started
+NOTE: recipe libxau-1_1.0.9-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe libice-1_1.0.9-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 262 of 392 (/home/deby/poky/meta/recipes-graphics/xorg-lib/libxdmcp_1.1.2.bb:do_package_write_deb_setscene)
+NOTE: recipe perl-5.28.1-r1: task do_packagedata_setscene: Started
+NOTE: recipe xtrans-1_1.3.5-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: recipe libxcb-1.13.1-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: recipe shadow-securetty-4.6-r3: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 263 of 392 (/home/deby/poky/meta/recipes-extended/shadow/shadow-securetty_4.6.bb:do_packagedata_setscene)
+NOTE: recipe libxdmcp-1_1.1.2-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe make-4.2.1-r0: task do_packagedata_setscene: Succeeded
+NOTE: recipe ca-certificates-20190110-r0: task do_packagedata_setscene: Succeeded
+NOTE: recipe libxau-1_1.0.9-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: recipe shadow-securetty-4.6-r3: task do_packagedata_setscene: Started
+NOTE: recipe libxdmcp-1_1.1.2-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: recipe shared-mime-info-1.10-r0: task do_packagedata_setscene: Succeeded
+NOTE: Running setscene task 267 of 392 (/home/deby/poky/meta-debian/recipes-debian/glib-2.0/glib-2.0_debian.bb:do_populate_sysroot_setscene)
+NOTE: Running setscene task 268 of 392 (/home/deby/poky/meta-debian/recipes-debian/glib-2.0/glib-2.0_debian.bb:do_packagedata_setscene)
+NOTE: Running setscene task 270 of 392 (/home/deby/poky/meta-debian/recipes-debian/libxml/libxml2_debian.bb:do_packagedata_setscene)
+NOTE: recipe libxml2-2.9.4-r0: task do_packagedata_setscene: Started
+NOTE: recipe glib-2.0-2.58.3-r0: task do_packagedata_setscene: Started
+NOTE: recipe glib-2.0-2.58.3-r0: task do_populate_sysroot_setscene: Started
+NOTE: recipe diffutils-3.7-r0: task do_packagedata_setscene: Succeeded
+NOTE: recipe glib-2.0-2.58.3-r0: task do_populate_sysroot_setscene: Succeeded
+NOTE: recipe shadow-securetty-4.6-r3: task do_packagedata_setscene: Succeeded
+NOTE: recipe bash-4.4.18-r0: task do_packagedata_setscene: Succeeded
+NOTE: recipe e2fsprogs-1.44.5-r0: task do_packagedata_setscene: Succeeded
+NOTE: recipe procps-3.3.15-r0: task do_packagedata_setscene: Succeeded
+NOTE: recipe glibc-locale-2.28-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 278 of 392 (/home/deby/poky/meta-debian/recipes-debian/glibc/glibc-locale_debian.bb:do_packagedata_setscene)
+NOTE: recipe glib-2.0-2.58.3-r0: task do_packagedata_setscene: Succeeded
+NOTE: Running setscene task 280 of 392 (/home/deby/poky/meta/recipes-support/libpcre/libpcre_8.43.bb:do_populate_sysroot_setscene)
+NOTE: Running setscene task 281 of 392 (/home/deby/poky/meta/recipes-support/libpcre/libpcre_8.43.bb:do_packagedata_setscene)
+NOTE: Running setscene task 282 of 392 (/home/deby/poky/meta-debian/recipes-debian/dbus/dbus_debian.bb:do_populate_sysroot_setscene)
+NOTE: Running setscene task 283 of 392 (/home/deby/poky/meta-debian/recipes-debian/dbus/dbus_debian.bb:do_packagedata_setscene)
+NOTE: recipe gmp-6.1.2-r0: task do_packagedata_setscene: Succeeded
+NOTE: recipe libtool-2.4.6-r0: task do_packagedata_setscene: Succeeded
+NOTE: recipe glibc-locale-2.28-r0: task do_packagedata_setscene: Started
+NOTE: recipe libxml2-2.9.4-r0: task do_packagedata_setscene: Succeeded
+NOTE: Running setscene task 288 of 392 (/home/deby/poky/meta/recipes-devtools/python/python3_3.7.2.bb:do_packagedata_setscene)
+NOTE: recipe dbus-1.12.16-r0: task do_packagedata_setscene: Started
+NOTE: recipe dbus-1.12.16-r0: task do_populate_sysroot_setscene: Started
+NOTE: recipe libpcre-8.43-r0: task do_populate_sysroot_setscene: Started
+NOTE: recipe libpcre-8.43-r0: task do_packagedata_setscene: Started
+NOTE: recipe python3-3.7.2-r0: task do_packagedata_setscene: Started
+NOTE: recipe libpcre-8.43-r0: task do_populate_sysroot_setscene: Succeeded
+NOTE: recipe dbus-1.12.16-r0: task do_populate_sysroot_setscene: Succeeded
+NOTE: recipe libpcre-8.43-r0: task do_packagedata_setscene: Succeeded
+NOTE: recipe perl-5.28.1-r1: task do_packagedata_setscene: Succeeded
+NOTE: recipe python3-3.7.2-r0: task do_packagedata_setscene: Succeeded
+NOTE: Running setscene task 293 of 392 (/home/deby/poky/meta/recipes-extended/xz/xz_5.2.4.bb:do_packagedata_setscene)
+NOTE: Running setscene task 294 of 392 (/home/deby/poky/meta-debian/recipes-debian/bzip2/bzip2_debian.bb:do_populate_sysroot_setscene)
+NOTE: Running setscene task 295 of 392 (/home/deby/poky/meta-debian/recipes-debian/bzip2/bzip2_debian.bb:do_packagedata_setscene)
+NOTE: Running setscene task 296 of 392 (/home/deby/poky/meta/recipes-extended/libnsl/libnsl2_git.bb:do_populate_sysroot_setscene)
+NOTE: Running setscene task 297 of 392 (/home/deby/poky/meta/recipes-extended/libnsl/libnsl2_git.bb:do_packagedata_setscene)
+NOTE: Running setscene task 299 of 392 (/home/deby/poky/meta-debian/recipes-debian/readline/readline_debian.bb:do_packagedata_setscene)
+NOTE: Running setscene task 301 of 392 (/home/deby/poky/meta-debian/recipes-debian/openssl/openssl_debian.bb:do_packagedata_setscene)
+NOTE: Running setscene task 303 of 392 (/home/deby/poky/meta/recipes-support/sqlite/sqlite3_3.27.2.bb:do_packagedata_setscene)
+NOTE: Running setscene task 305 of 392 (/home/deby/poky/meta/recipes-support/gdbm/gdbm_1.18.1.bb:do_packagedata_setscene)
+NOTE: Running setscene task 306 of 392 (/home/deby/poky/meta/recipes-core/util-linux/util-linux_2.32.1.bb:do_populate_sysroot_setscene)
+NOTE: Running setscene task 307 of 392 (/home/deby/poky/meta/recipes-core/util-linux/util-linux_2.32.1.bb:do_packagedata_setscene)
+NOTE: Running setscene task 308 of 392 (/home/deby/poky/meta/recipes-support/libffi/libffi_3.2.1.bb:do_populate_sysroot_setscene)
+NOTE: Running setscene task 309 of 392 (/home/deby/poky/meta/recipes-support/libffi/libffi_3.2.1.bb:do_packagedata_setscene)
+NOTE: recipe dbus-1.12.16-r0: task do_packagedata_setscene: Succeeded
+NOTE: Running setscene task 311 of 392 (/home/deby/poky/meta/recipes-core/base-files/base-files_3.0.14.bb:do_populate_sysroot_setscene)
+NOTE: Running setscene task 312 of 392 (/home/deby/poky/meta/recipes-core/base-files/base-files_3.0.14.bb:do_packagedata_setscene)
+NOTE: recipe libnsl2-1.2.0+gitAUTOINC+37c5ffe303-r0: task do_populate_sysroot_setscene: Started
+NOTE: recipe sqlite3-3_3.27.2-r0: task do_packagedata_setscene: Started
+NOTE: recipe openssl-1.1.1c-r0: task do_packagedata_setscene: Started
+NOTE: recipe xz-5.2.4-r0: task do_packagedata_setscene: Started
+NOTE: recipe readline-7.0-r0: task do_packagedata_setscene: Started
+NOTE: recipe libffi-3.2.1-r0: task do_packagedata_setscene: Started
+NOTE: recipe libffi-3.2.1-r0: task do_populate_sysroot_setscene: Started
+NOTE: recipe gdbm-1.18.1-r0: task do_packagedata_setscene: Started
+NOTE: recipe bzip2-1.0.6-r0: task do_populate_sysroot_setscene: Started
+NOTE: recipe bzip2-1.0.6-r0: task do_packagedata_setscene: Started
+NOTE: recipe util-linux-2.32.1-r0: task do_populate_sysroot_setscene: Started
+NOTE: recipe libnsl2-1.2.0+gitAUTOINC+37c5ffe303-r0: task do_packagedata_setscene: Started
+NOTE: recipe base-files-3.0.14-r89: task do_populate_sysroot_setscene: Started
+NOTE: recipe base-files-3.0.14-r89: task do_packagedata_setscene: Started
+NOTE: recipe util-linux-2.32.1-r0: task do_packagedata_setscene: Started
+NOTE: recipe bzip2-1.0.6-r0: task do_populate_sysroot_setscene: Succeeded
+NOTE: Running setscene task 313 of 392 (/home/deby/poky/meta/recipes-extended/shadow/shadow_4.6.bb:do_populate_sysroot_setscene)
+NOTE: recipe shadow-4.6-r0: task do_populate_sysroot_setscene: Started
+NOTE: recipe libnsl2-1.2.0+gitAUTOINC+37c5ffe303-r0: task do_populate_sysroot_setscene: Succeeded
+NOTE: Running setscene task 314 of 392 (/home/deby/poky/meta/recipes-extended/shadow/shadow_4.6.bb:do_packagedata_setscene)
+NOTE: recipe shadow-4.6-r0: task do_packagedata_setscene: Started
+NOTE: recipe libffi-3.2.1-r0: task do_populate_sysroot_setscene: Succeeded
+NOTE: Running setscene task 315 of 392 (/home/deby/poky/meta/recipes-core/base-passwd/base-passwd_3.5.29.bb:do_packagedata_setscene)
+NOTE: recipe base-passwd-3.5.29-r0: task do_packagedata_setscene: Started
+NOTE: recipe shadow-4.6-r0: task do_populate_sysroot_setscene: Succeeded
+NOTE: Running setscene task 316 of 392 (/home/deby/poky/meta/recipes-extended/shadow/shadow-sysroot_4.6.bb:do_packagedata_setscene)
+NOTE: recipe shadow-sysroot-4.6-r3: task do_packagedata_setscene: Started
+NOTE: recipe util-linux-2.32.1-r0: task do_populate_sysroot_setscene: Succeeded
+NOTE: Running setscene task 317 of 392 (/home/deby/poky/meta/recipes-devtools/autoconf-archive/autoconf-archive_2018.03.13.bb:do_packagedata_setscene)
+NOTE: recipe base-files-3.0.14-r89: task do_populate_sysroot_setscene: Succeeded
+NOTE: Running setscene task 318 of 392 (/home/deby/poky/meta/recipes-graphics/xorg-lib/libx11_1.6.7.bb:do_populate_sysroot_setscene)
+NOTE: recipe autoconf-archive-2018.03.13-r0: task do_packagedata_setscene: Started
+NOTE: recipe libx11-1_1.6.7-r0: task do_populate_sysroot_setscene: Started
+NOTE: recipe libx11-1_1.6.7-r0: task do_populate_sysroot_setscene: Succeeded
+NOTE: Running setscene task 319 of 392 (/home/deby/poky/meta/recipes-graphics/xorg-lib/libx11_1.6.7.bb:do_packagedata_setscene)
+NOTE: recipe libx11-1_1.6.7-r0: task do_packagedata_setscene: Started
+NOTE: recipe shadow-4.6-r0: task do_packagedata_setscene: Succeeded
+NOTE: Running setscene task 321 of 392 (/home/deby/poky/meta/recipes-support/attr/attr_2.4.47.bb:do_populate_sysroot_setscene)
+NOTE: recipe base-passwd-3.5.29-r0: task do_packagedata_setscene: Succeeded
+NOTE: Running setscene task 322 of 392 (/home/deby/poky/meta/recipes-support/attr/attr_2.4.47.bb:do_packagedata_setscene)
+NOTE: recipe bzip2-1.0.6-r0: task do_packagedata_setscene: Succeeded
+NOTE: Running setscene task 325 of 392 (/home/deby/poky/meta-debian/recipes-debian/expat/expat_debian.bb:do_populate_sysroot_setscene)
+NOTE: recipe gdbm-1.18.1-r0: task do_packagedata_setscene: Succeeded
+NOTE: Running setscene task 327 of 392 (/home/deby/poky/meta-debian/recipes-debian/expat/expat_debian.bb:do_packagedata_setscene)
+NOTE: recipe attr-2.4.47-r0: task do_populate_sysroot_setscene: Started
+NOTE: recipe attr-2.4.47-r0: task do_packagedata_setscene: Started
+NOTE: recipe expat-2.2.6-r0: task do_populate_sysroot_setscene: Started
+NOTE: recipe expat-2.2.6-r0: task do_packagedata_setscene: Started
+NOTE: recipe sqlite3-3_3.27.2-r0: task do_packagedata_setscene: Succeeded
+NOTE: Running setscene task 329 of 392 (/home/deby/poky/meta/recipes-graphics/xorg-lib/libsm_1.2.3.bb:do_populate_sysroot_setscene)
+NOTE: recipe libffi-3.2.1-r0: task do_packagedata_setscene: Succeeded
+NOTE: Running setscene task 331 of 392 (/home/deby/poky/meta/recipes-graphics/xorg-lib/libsm_1.2.3.bb:do_packagedata_setscene)
+NOTE: recipe libx11-1_1.6.7-r0: task do_packagedata_setscene: Succeeded
+NOTE: Running setscene task 333 of 392 (/home/deby/poky/meta/recipes-graphics/xorg-lib/libxcb_1.13.1.bb:do_populate_sysroot_setscene)
+NOTE: recipe readline-7.0-r0: task do_packagedata_setscene: Succeeded
+NOTE: Running setscene task 335 of 392 (/home/deby/poky/meta/recipes-graphics/xorg-lib/libxcb_1.13.1.bb:do_packagedata_setscene)
+NOTE: recipe shadow-sysroot-4.6-r3: task do_packagedata_setscene: Succeeded
+NOTE: recipe openssl-1.1.1c-r0: task do_packagedata_setscene: Succeeded
+NOTE: recipe libnsl2-1.2.0+gitAUTOINC+37c5ffe303-r0: task do_packagedata_setscene: Succeeded
+NOTE: Running setscene task 339 of 392 (/home/deby/poky/meta/recipes-extended/libtirpc/libtirpc_1.0.3.bb:do_populate_sysroot_setscene)
+NOTE: Running setscene task 340 of 392 (/home/deby/poky/meta/recipes-extended/libtirpc/libtirpc_1.0.3.bb:do_packagedata_setscene)
+NOTE: recipe libsm-1_1.2.3-r0: task do_populate_sysroot_setscene: Started
+NOTE: recipe libsm-1_1.2.3-r0: task do_packagedata_setscene: Started
+NOTE: recipe libxcb-1.13.1-r0: task do_populate_sysroot_setscene: Started
+NOTE: recipe libxcb-1.13.1-r0: task do_packagedata_setscene: Started
+NOTE: recipe libtirpc-1.0.3-r0: task do_packagedata_setscene: Started
+NOTE: recipe libtirpc-1.0.3-r0: task do_populate_sysroot_setscene: Started
+NOTE: recipe autoconf-archive-2018.03.13-r0: task do_packagedata_setscene: Succeeded
+NOTE: recipe libsm-1_1.2.3-r0: task do_populate_sysroot_setscene: Succeeded
+NOTE: recipe attr-2.4.47-r0: task do_populate_sysroot_setscene: Succeeded
+NOTE: recipe libsm-1_1.2.3-r0: task do_packagedata_setscene: Succeeded
+NOTE: Running setscene task 343 of 392 (/home/deby/poky/meta/recipes-graphics/xorg-lib/libice_1.0.9.bb:do_populate_sysroot_setscene)
+NOTE: Running setscene task 344 of 392 (/home/deby/poky/meta/recipes-graphics/xorg-lib/libice_1.0.9.bb:do_packagedata_setscene)
+NOTE: recipe libice-1_1.0.9-r0: task do_packagedata_setscene: Started
+NOTE: recipe libice-1_1.0.9-r0: task do_populate_sysroot_setscene: Started
+NOTE: recipe expat-2.2.6-r0: task do_populate_sysroot_setscene: Succeeded
+NOTE: recipe libtirpc-1.0.3-r0: task do_populate_sysroot_setscene: Succeeded
+NOTE: recipe libice-1_1.0.9-r0: task do_populate_sysroot_setscene: Succeeded
+NOTE: recipe libxcb-1.13.1-r0: task do_populate_sysroot_setscene: Succeeded
+NOTE: recipe libxcb-1.13.1-r0: task do_packagedata_setscene: Succeeded
+NOTE: Running setscene task 346 of 392 (/home/deby/poky/meta/recipes-graphics/xorg-lib/libxau_1.0.9.bb:do_populate_sysroot_setscene)
+NOTE: Running setscene task 347 of 392 (/home/deby/poky/meta/recipes-graphics/xorg-lib/libxau_1.0.9.bb:do_packagedata_setscene)
+NOTE: Running setscene task 348 of 392 (/home/deby/poky/meta/recipes-graphics/xorg-lib/libxdmcp_1.1.2.bb:do_populate_sysroot_setscene)
+NOTE: Running setscene task 349 of 392 (/home/deby/poky/meta/recipes-graphics/xorg-lib/libxdmcp_1.1.2.bb:do_packagedata_setscene)
+NOTE: recipe attr-2.4.47-r0: task do_packagedata_setscene: Succeeded
+NOTE: recipe libice-1_1.0.9-r0: task do_packagedata_setscene: Succeeded
+NOTE: Running setscene task 352 of 392 (/home/deby/poky/meta/recipes-graphics/xorg-lib/xtrans_1.3.5.bb:do_populate_sysroot_setscene)
+NOTE: Running setscene task 353 of 392 (/home/deby/poky/meta/recipes-graphics/xorg-lib/xtrans_1.3.5.bb:do_packagedata_setscene)
+NOTE: recipe xz-5.2.4-r0: task do_packagedata_setscene: Succeeded
+NOTE: recipe util-linux-2.32.1-r0: task do_packagedata_setscene: Succeeded
+NOTE: Running setscene task 356 of 392 (/home/deby/poky/meta/recipes-core/libxcrypt/libxcrypt.bb:do_populate_sysroot_setscene)
+NOTE: Running setscene task 357 of 392 (/home/deby/poky/meta/recipes-core/libxcrypt/libxcrypt.bb:do_packagedata_setscene)
+NOTE: Running setscene task 358 of 392 (/home/deby/poky/meta-debian/recipes-debian/ncurses/ncurses_debian.bb:do_populate_sysroot_setscene)
+NOTE: Running setscene task 359 of 392 (/home/deby/poky/meta-debian/recipes-debian/ncurses/ncurses_debian.bb:do_packagedata_setscene)
+NOTE: Running setscene task 360 of 392 (/home/deby/poky/meta-debian/recipes-debian/zlib/zlib_debian.bb:do_populate_sysroot_setscene)
+NOTE: Running setscene task 361 of 392 (/home/deby/poky/meta-debian/recipes-debian/zlib/zlib_debian.bb:do_packagedata_setscene)
+NOTE: recipe base-files-3.0.14-r89: task do_packagedata_setscene: Succeeded
+NOTE: recipe libxau-1_1.0.9-r0: task do_populate_sysroot_setscene: Started
+NOTE: Running setscene task 362 of 392 (/home/deby/poky/meta/recipes-support/bash-completion/bash-completion_2.8.bb:do_populate_sysroot_setscene)
+NOTE: recipe libxdmcp-1_1.1.2-r0: task do_populate_sysroot_setscene: Started
+NOTE: recipe libxau-1_1.0.9-r0: task do_packagedata_setscene: Started
+NOTE: recipe libxdmcp-1_1.1.2-r0: task do_packagedata_setscene: Started
+NOTE: recipe libtirpc-1.0.3-r0: task do_packagedata_setscene: Succeeded
+NOTE: Running setscene task 364 of 392 (/home/deby/poky/meta/recipes-support/bash-completion/bash-completion_2.8.bb:do_packagedata_setscene)
+NOTE: recipe xtrans-1_1.3.5-r0: task do_packagedata_setscene: Started
+NOTE: recipe xtrans-1_1.3.5-r0: task do_populate_sysroot_setscene: Started
+NOTE: recipe libxcrypt-4.4.2-r0: task do_populate_sysroot_setscene: Started
+NOTE: recipe zlib-1.2.11-r0: task do_packagedata_setscene: Started
+NOTE: recipe libxcrypt-4.4.2-r0: task do_packagedata_setscene: Started
+NOTE: recipe bash-completion-2.8-r0: task do_packagedata_setscene: Started
+NOTE: recipe zlib-1.2.11-r0: task do_populate_sysroot_setscene: Started
+NOTE: recipe ncurses-6.1+20181013-r0: task do_packagedata_setscene: Started
+NOTE: recipe ncurses-6.1+20181013-r0: task do_populate_sysroot_setscene: Started
+NOTE: recipe bash-completion-2.8-r0: task do_populate_sysroot_setscene: Started
+NOTE: recipe expat-2.2.6-r0: task do_packagedata_setscene: Succeeded
+NOTE: recipe libxau-1_1.0.9-r0: task do_packagedata_setscene: Succeeded
+NOTE: recipe libxdmcp-1_1.1.2-r0: task do_populate_sysroot_setscene: Succeeded
+NOTE: recipe xtrans-1_1.3.5-r0: task do_populate_sysroot_setscene: Succeeded
+NOTE: recipe libxau-1_1.0.9-r0: task do_populate_sysroot_setscene: Succeeded
+NOTE: recipe libxcrypt-4.4.2-r0: task do_populate_sysroot_setscene: Succeeded
+NOTE: recipe xtrans-1_1.3.5-r0: task do_packagedata_setscene: Succeeded
+NOTE: recipe zlib-1.2.11-r0: task do_packagedata_setscene: Succeeded
+NOTE: recipe bash-completion-2.8-r0: task do_packagedata_setscene: Succeeded
+NOTE: recipe libxcrypt-4.4.2-r0: task do_packagedata_setscene: Succeeded
+NOTE: recipe libxdmcp-1_1.1.2-r0: task do_packagedata_setscene: Succeeded
+NOTE: recipe zlib-1.2.11-r0: task do_populate_sysroot_setscene: Succeeded
+NOTE: recipe ncurses-6.1+20181013-r0: task do_packagedata_setscene: Succeeded
+NOTE: Running setscene task 374 of 392 (/home/deby/poky/meta/recipes-devtools/opkg-utils/opkg-utils_0.4.0.bb:do_packagedata_setscene)
+NOTE: Running setscene task 375 of 392 (/home/deby/poky/meta-debian/recipes-debian/libtool/libtool-cross_debian.bb:do_packagedata_setscene)
+NOTE: recipe opkg-utils-0.4.0-r0: task do_packagedata_setscene: Started
+NOTE: recipe libtool-cross-2.4.6-r0: task do_packagedata_setscene: Started
+NOTE: recipe libtool-cross-2.4.6-r0: task do_packagedata_setscene: Succeeded
+NOTE: recipe opkg-utils-0.4.0-r0: task do_packagedata_setscene: Succeeded
+NOTE: Running setscene task 378 of 392 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-runtime_debian.bb:do_packagedata_setscene)
+NOTE: recipe gcc-runtime-8.3.0-r0: task do_packagedata_setscene: Started
+NOTE: recipe bash-completion-2.8-r0: task do_populate_sysroot_setscene: Succeeded
+NOTE: recipe gcc-runtime-8.3.0-r0: task do_packagedata_setscene: Succeeded
+NOTE: Running setscene task 380 of 392 (/home/deby/poky/meta-debian/recipes-debian/gcc/libgcc_debian.bb:do_packagedata_setscene)
+NOTE: recipe libgcc-8.3.0-r0: task do_packagedata_setscene: Started
+NOTE: recipe ncurses-6.1+20181013-r0: task do_populate_sysroot_setscene: Succeeded
+NOTE: Running setscene task 381 of 392 (/home/deby/poky/meta/recipes-devtools/opkg-utils/opkg-utils_0.4.0.bb:do_populate_sysroot_setscene)
+NOTE: recipe libgcc-8.3.0-r0: task do_packagedata_setscene: Succeeded
+NOTE: Running setscene task 384 of 392 (/home/deby/poky/meta-debian/recipes-debian/glibc/glibc_debian.bb:do_packagedata_setscene)
+NOTE: recipe opkg-utils-0.4.0-r0: task do_populate_sysroot_setscene: Started
+NOTE: recipe glibc-2.28-r0: task do_packagedata_setscene: Started
+NOTE: recipe opkg-utils-0.4.0-r0: task do_populate_sysroot_setscene: Succeeded
+NOTE: Running setscene task 385 of 392 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-runtime_debian.bb:do_populate_sysroot_setscene)
+NOTE: recipe gcc-runtime-8.3.0-r0: task do_populate_sysroot_setscene: Started
+NOTE: recipe glibc-2.28-r0: task do_packagedata_setscene: Succeeded
+NOTE: recipe glibc-locale-2.28-r0: task do_packagedata_setscene: Succeeded
+NOTE: recipe gcc-runtime-8.3.0-r0: task do_populate_sysroot_setscene: Succeeded
+NOTE: Running setscene task 388 of 392 (/home/deby/poky/meta-debian/recipes-debian/gcc/libgcc_debian.bb:do_populate_sysroot_setscene)
+NOTE: recipe libgcc-8.3.0-r0: task do_populate_sysroot_setscene: Started
+NOTE: recipe libgcc-8.3.0-r0: task do_populate_sysroot_setscene: Succeeded
+NOTE: Running setscene task 389 of 392 (/home/deby/poky/meta-debian/recipes-debian/glibc/glibc_debian.bb:do_populate_sysroot_setscene)
+NOTE: recipe glibc-2.28-r0: task do_populate_sysroot_setscene: Started
+NOTE: recipe glibc-2.28-r0: task do_populate_sysroot_setscene: Succeeded
+NOTE: Executing RunQueue Tasks
+NOTE: Running noexec task 1669 of 1669 (/home/deby/poky/meta-debian/recipes-debian/busybox/busybox_debian.bb:do_build)
+NOTE: Tasks Summary: Attempted 1669 tasks of which 1668 didn't need to be rerun and all succeeded.
+
+Summary: There was 1 WARNING message shown.

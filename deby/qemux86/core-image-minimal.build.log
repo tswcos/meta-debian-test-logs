@@ -1,0 +1,118 @@
+WARNING: Host distribution "debian" has not been validated with this version of the build system; you may possibly experience unexpected failures. It is recommended that you use a tested distribution.
+Loading cache...done.
+Loaded 1441 entries from dependency cache.
+NOTE: Resolving any missing task queue dependencies
+
+Build Configuration:
+BB_VERSION           = "1.42.0"
+BUILD_SYS            = "x86_64-linux"
+NATIVELSBSTRING      = "universal"
+TARGET_SYS           = "i586-deby-linux"
+MACHINE              = "qemux86"
+DISTRO               = "deby"
+DISTRO_VERSION       = "10.0"
+TUNE_FEATURES        = "m32 i586"
+TARGET_FPU           = ""
+meta                 
+meta-poky            = "warrior:38d5c8ea98cfa49825c473eba8984c12edf062be"
+meta-debian          = "warrior-trungdt:5ed699a32911bc2b03c53affc795b83f19c3a495"
+
+Initialising tasks...done.
+Sstate summary: Wanted 71 Found 69 Missed 2 Current 671 (97% match, 99% complete)
+NOTE: Executing SetScene Tasks
+NOTE: Running setscene task 690 of 744 (/home/deby/poky/meta/recipes-core/sysvinit/sysvinit_2.88dsf.bb:do_populate_sysroot_setscene)
+NOTE: Running setscene task 691 of 744 (/home/deby/poky/meta/recipes-core/sysvinit/sysvinit_2.88dsf.bb:do_package_qa_setscene)
+NOTE: Running setscene task 692 of 744 (/home/deby/poky/meta/recipes-core/sysvinit/sysvinit_2.88dsf.bb:do_package_write_deb_setscene)
+NOTE: Running setscene task 693 of 744 (/home/deby/poky/meta/recipes-core/sysvinit/sysvinit_2.88dsf.bb:do_populate_lic_setscene)
+NOTE: Running setscene task 717 of 744 (/home/deby/poky/meta/recipes-graphics/xorg-lib/libx11_1.6.7.bb:do_package_qa_setscene)
+NOTE: Running setscene task 718 of 744 (/home/deby/poky/meta/recipes-graphics/xorg-lib/libx11_1.6.7.bb:do_populate_lic_setscene)
+NOTE: Running setscene task 719 of 744 (/home/deby/poky/meta/recipes-graphics/xorg-lib/libsm_1.2.3.bb:do_package_qa_setscene)
+NOTE: Running setscene task 720 of 744 (/home/deby/poky/meta/recipes-graphics/xorg-lib/libsm_1.2.3.bb:do_populate_lic_setscene)
+NOTE: Running setscene task 726 of 744 (/home/deby/poky/meta/recipes-graphics/xorg-lib/xtrans_1.3.5.bb:do_package_qa_setscene)
+NOTE: Running setscene task 727 of 744 (/home/deby/poky/meta/recipes-graphics/xorg-lib/xtrans_1.3.5.bb:do_populate_lic_setscene)
+NOTE: Running setscene task 728 of 744 (/home/deby/poky/meta/recipes-graphics/xorg-lib/libxcb_1.13.1.bb:do_package_qa_setscene)
+NOTE: Running setscene task 729 of 744 (/home/deby/poky/meta/recipes-graphics/xorg-lib/libxcb_1.13.1.bb:do_populate_lic_setscene)
+NOTE: Running setscene task 730 of 744 (/home/deby/poky/meta/recipes-graphics/xorg-lib/libice_1.0.9.bb:do_package_qa_setscene)
+NOTE: Running setscene task 731 of 744 (/home/deby/poky/meta/recipes-graphics/xorg-lib/libice_1.0.9.bb:do_populate_lic_setscene)
+NOTE: Running setscene task 732 of 744 (/home/deby/poky/meta/recipes-graphics/xorg-lib/libxau_1.0.9.bb:do_package_qa_setscene)
+NOTE: Running setscene task 733 of 744 (/home/deby/poky/meta/recipes-graphics/xorg-lib/libxau_1.0.9.bb:do_populate_lic_setscene)
+NOTE: recipe sysvinit-2.88dsf-r14: task do_populate_sysroot_setscene: Started
+NOTE: recipe sysvinit-2.88dsf-r14: task do_package_write_deb_setscene: Started
+NOTE: recipe libsm-1_1.2.3-r0: task do_populate_lic_setscene: Started
+NOTE: recipe libsm-1_1.2.3-r0: task do_package_qa_setscene: Started
+NOTE: recipe libx11-1_1.6.7-r0: task do_populate_lic_setscene: Started
+NOTE: recipe sysvinit-2.88dsf-r14: task do_populate_lic_setscene: Started
+NOTE: recipe libx11-1_1.6.7-r0: task do_package_qa_setscene: Started
+NOTE: recipe xtrans-1_1.3.5-r0: task do_package_qa_setscene: Started
+NOTE: recipe xtrans-1_1.3.5-r0: task do_populate_lic_setscene: Started
+NOTE: recipe sysvinit-2.88dsf-r14: task do_package_qa_setscene: Started
+NOTE: recipe libxau-1_1.0.9-r0: task do_package_qa_setscene: Started
+NOTE: recipe libxcb-1.13.1-r0: task do_package_qa_setscene: Started
+NOTE: recipe libice-1_1.0.9-r0: task do_populate_lic_setscene: Started
+NOTE: recipe libxcb-1.13.1-r0: task do_populate_lic_setscene: Started
+NOTE: recipe libice-1_1.0.9-r0: task do_package_qa_setscene: Started
+NOTE: recipe libxau-1_1.0.9-r0: task do_populate_lic_setscene: Started
+NOTE: recipe libx11-1_1.6.7-r0: task do_package_qa_setscene: Succeeded
+NOTE: Running setscene task 735 of 744 (/home/deby/poky/meta/recipes-graphics/xorg-lib/libxdmcp_1.1.2.bb:do_package_qa_setscene)
+NOTE: recipe sysvinit-2.88dsf-r14: task do_populate_sysroot_setscene: Succeeded
+NOTE: Running setscene task 736 of 744 (/home/deby/poky/meta/recipes-graphics/xorg-lib/libxdmcp_1.1.2.bb:do_populate_lic_setscene)
+NOTE: recipe sysvinit-2.88dsf-r14: task do_package_write_deb_setscene: Succeeded
+NOTE: recipe xtrans-1_1.3.5-r0: task do_package_qa_setscene: Succeeded
+NOTE: recipe sysvinit-2.88dsf-r14: task do_package_qa_setscene: Succeeded
+NOTE: Running setscene task 738 of 744 (/home/deby/poky/meta/recipes-core/sysvinit/sysvinit_2.88dsf.bb:do_packagedata_setscene)
+NOTE: recipe libsm-1_1.2.3-r0: task do_package_qa_setscene: Succeeded
+NOTE: recipe libxcb-1.13.1-r0: task do_package_qa_setscene: Succeeded
+NOTE: recipe libxau-1_1.0.9-r0: task do_package_qa_setscene: Succeeded
+NOTE: recipe sysvinit-2.88dsf-r14: task do_packagedata_setscene: Started
+NOTE: recipe libxdmcp-1_1.1.2-r0: task do_package_qa_setscene: Started
+NOTE: recipe libxdmcp-1_1.1.2-r0: task do_populate_lic_setscene: Started
+NOTE: recipe libice-1_1.0.9-r0: task do_package_qa_setscene: Succeeded
+NOTE: recipe libxdmcp-1_1.1.2-r0: task do_package_qa_setscene: Succeeded
+NOTE: recipe sysvinit-2.88dsf-r14: task do_packagedata_setscene: Succeeded
+NOTE: recipe libsm-1_1.2.3-r0: task do_populate_lic_setscene: Succeeded
+NOTE: recipe libxau-1_1.0.9-r0: task do_populate_lic_setscene: Succeeded
+NOTE: recipe xtrans-1_1.3.5-r0: task do_populate_lic_setscene: Succeeded
+NOTE: recipe sysvinit-2.88dsf-r14: task do_populate_lic_setscene: Succeeded
+NOTE: recipe libxdmcp-1_1.1.2-r0: task do_populate_lic_setscene: Succeeded
+NOTE: recipe libx11-1_1.6.7-r0: task do_populate_lic_setscene: Succeeded
+NOTE: recipe libxcb-1.13.1-r0: task do_populate_lic_setscene: Succeeded
+NOTE: recipe libice-1_1.0.9-r0: task do_populate_lic_setscene: Succeeded
+NOTE: Executing RunQueue Tasks
+NOTE: Running task 2112 of 2386 (/home/deby/poky/meta/recipes-core/images/core-image-minimal.bb:do_rootfs)
+NOTE: Running noexec task 2195 of 2386 (/home/deby/poky/meta/recipes-graphics/xorg-lib/libxdmcp_1.1.2.bb:do_build)
+NOTE: Running noexec task 2196 of 2386 (/home/deby/poky/meta/recipes-graphics/xorg-lib/libxau_1.0.9.bb:do_build)
+NOTE: Running noexec task 2197 of 2386 (/home/deby/poky/meta/recipes-graphics/xorg-lib/libice_1.0.9.bb:do_build)
+NOTE: Running noexec task 2198 of 2386 (/home/deby/poky/meta/recipes-graphics/xorg-lib/libxcb_1.13.1.bb:do_build)
+NOTE: Running noexec task 2200 of 2386 (/home/deby/poky/meta/recipes-graphics/xorg-lib/xtrans_1.3.5.bb:do_build)
+NOTE: Running noexec task 2208 of 2386 (/home/deby/poky/meta/recipes-support/ca-certificates/ca-certificates_20190110.bb:do_build)
+NOTE: Running noexec task 2210 of 2386 (/home/deby/poky/meta/recipes-graphics/xorg-lib/libsm_1.2.3.bb:do_build)
+NOTE: Running noexec task 2211 of 2386 (/home/deby/poky/meta/recipes-graphics/xorg-lib/libx11_1.6.7.bb:do_build)
+NOTE: Running noexec task 2284 of 2386 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-source_debian.bb:do_build)
+NOTE: Running noexec task 2301 of 2386 (/home/deby/poky/meta/recipes-core/sysvinit/sysvinit_2.88dsf.bb:do_build)
+NOTE: recipe core-image-minimal-1.0-r0: task do_rootfs: Started
+NOTE: recipe core-image-minimal-1.0-r0: task do_rootfs: Succeeded
+NOTE: Running task 2379 of 2386 (/home/deby/poky/meta/recipes-core/images/core-image-minimal.bb:do_image_qa)
+NOTE: Running task 2380 of 2386 (/home/deby/poky/meta/recipes-core/images/core-image-minimal.bb:do_write_qemuboot_conf)
+NOTE: recipe core-image-minimal-1.0-r0: task do_image_qa: Started
+NOTE: recipe core-image-minimal-1.0-r0: task do_image_qa: Succeeded
+NOTE: recipe core-image-minimal-1.0-r0: task do_write_qemuboot_conf: Started
+NOTE: recipe core-image-minimal-1.0-r0: task do_write_qemuboot_conf: Succeeded
+NOTE: Running task 2381 of 2386 (/home/deby/poky/meta/recipes-core/images/core-image-minimal.bb:do_image)
+NOTE: recipe core-image-minimal-1.0-r0: task do_image: Started
+NOTE: recipe core-image-minimal-1.0-r0: task do_image: Succeeded
+NOTE: Running task 2382 of 2386 (/home/deby/poky/meta/recipes-core/images/core-image-minimal.bb:do_image_ext4)
+NOTE: Running task 2383 of 2386 (/home/deby/poky/meta/recipes-core/images/core-image-minimal.bb:do_image_tar)
+NOTE: recipe core-image-minimal-1.0-r0: task do_image_ext4: Started
+NOTE: recipe core-image-minimal-1.0-r0: task do_image_tar: Started
+NOTE: recipe core-image-minimal-1.0-r0: task do_image_ext4: Succeeded
+NOTE: recipe core-image-minimal-1.0-r0: task do_image_tar: Succeeded
+NOTE: Running task 2384 of 2386 (/home/deby/poky/meta/recipes-core/images/core-image-minimal.bb:do_image_complete)
+NOTE: recipe core-image-minimal-1.0-r0: task do_image_complete: Started
+NOTE: recipe core-image-minimal-1.0-r0: task do_image_complete: Succeeded
+NOTE: Running task 2385 of 2386 (/home/deby/poky/meta/recipes-core/images/core-image-minimal.bb:do_populate_lic_deploy)
+NOTE: recipe core-image-minimal-1.0-r0: task do_populate_lic_deploy: Started
+NOTE: recipe core-image-minimal-1.0-r0: task do_populate_lic_deploy: Succeeded
+NOTE: Running noexec task 2386 of 2386 (/home/deby/poky/meta/recipes-core/images/core-image-minimal.bb:do_build)
+NOTE: Tasks Summary: Attempted 2386 tasks of which 2367 didn't need to be rerun and all succeeded.
+
+Summary: There was 1 WARNING message shown.

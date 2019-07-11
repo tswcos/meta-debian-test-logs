@@ -1,0 +1,66 @@
+WARNING: Host distribution "debian-10" has not been validated with this version of the build system; you may possibly experience unexpected failures. It is recommended that you use a tested distribution.
+Loading cache...done.
+Loaded 1440 entries from dependency cache.
+NOTE: Resolving any missing task queue dependencies
+
+Build Configuration:
+BB_VERSION           = "1.42.0"
+BUILD_SYS            = "x86_64-linux"
+NATIVELSBSTRING      = "universal"
+TARGET_SYS           = "x86_64-deby-linux"
+MACHINE              = "qemux86-64"
+DISTRO               = "deby"
+DISTRO_VERSION       = "10.0"
+TUNE_FEATURES        = "m64 core2"
+TARGET_FPU           = ""
+meta                 
+meta-poky            = "warrior:51223035e66c5b27799b15a0f8ebe75d24d3971b"
+meta-debian          = "warrior-trungdt:47b755ebe41c5afc0ea94d75b55c4f0efd8983fe"
+
+Initialising tasks...done.
+Sstate summary: Wanted 35 Found 1 Missed 34 Current 57 (2% match, 63% complete)
+NOTE: Executing SetScene Tasks
+NOTE: Executing RunQueue Tasks
+NOTE: Running task 149 of 578 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-source_debian.bb:do_debian_patch)
+NOTE: Running task 244 of 578 (virtual:nativesdk:/home/deby/poky/meta-debian/recipes-debian/glibc/glibc_debian.bb:do_debian_patch)
+NOTE: Running task 458 of 578 (/home/deby/poky/meta-debian/recipes-debian/binutils/binutils-cross-canadian_debian.bb:do_fetch)
+NOTE: Running task 465 of 578 (virtual:nativesdk:/home/deby/poky/meta-debian/recipes-debian/gettext/gettext_debian.bb:do_debian_patch)
+NOTE: Running task 467 of 578 (virtual:nativesdk:/home/deby/poky/meta-debian/recipes-debian/zlib/zlib_debian.bb:do_debian_patch)
+NOTE: Running task 485 of 578 (virtual:nativesdk:/home/deby/poky/meta-debian/recipes-debian/m4/m4_debian.bb:do_debian_patch)
+NOTE: recipe gcc-source-8.3.0-8.3.0-r0: task do_debian_patch: Started
+NOTE: recipe nativesdk-m4-1.4.18-r0: task do_debian_patch: Started
+NOTE: recipe binutils-cross-canadian-x86-64-2.31.1-r0: task do_fetch: Started
+ERROR: nativesdk-m4-1.4.18-r0 do_debian_patch: unknown quilt patches already applied
+ERROR: nativesdk-m4-1.4.18-r0 do_debian_patch: Function failed: do_debian_patch (log file is located at /home/deby/build/tmp/work/x86_64-nativesdk-debysdk-linux/nativesdk-m4/1.4.18-r0/temp/log.do_debian_patch.17746)
+NOTE: recipe nativesdk-glibc-2.28-r0: task do_debian_patch: Started
+ERROR: Logfile of failure stored in: /home/deby/build/tmp/work/x86_64-nativesdk-debysdk-linux/nativesdk-m4/1.4.18-r0/temp/log.do_debian_patch.17746
+NOTE: recipe nativesdk-m4-1.4.18-r0: task do_debian_patch: Failed
+ERROR: Task (virtual:nativesdk:/home/deby/poky/meta-debian/recipes-debian/m4/m4_debian.bb:do_debian_patch) failed with exit code '1'
+ERROR: nativesdk-glibc-2.28-r0 do_debian_patch: unknown quilt patches already applied
+ERROR: nativesdk-glibc-2.28-r0 do_debian_patch: Function failed: do_debian_patch (log file is located at /home/deby/build/tmp/work/x86_64-nativesdk-debysdk-linux/nativesdk-glibc/2.28-r0/temp/log.do_debian_patch.17742)
+ERROR: Logfile of failure stored in: /home/deby/build/tmp/work/x86_64-nativesdk-debysdk-linux/nativesdk-glibc/2.28-r0/temp/log.do_debian_patch.17742
+NOTE: recipe nativesdk-glibc-2.28-r0: task do_debian_patch: Failed
+ERROR: Task (virtual:nativesdk:/home/deby/poky/meta-debian/recipes-debian/glibc/glibc_debian.bb:do_debian_patch) failed with exit code '1'
+NOTE: recipe nativesdk-gettext-0.19.8.1-r0: task do_debian_patch: Started
+NOTE: recipe nativesdk-zlib-1.2.11-r0: task do_debian_patch: Started
+NOTE: recipe binutils-cross-canadian-x86-64-2.31.1-r0: task do_fetch: Succeeded
+ERROR: nativesdk-zlib-1.2.11-r0 do_debian_patch: unknown quilt patches already applied
+ERROR: nativesdk-zlib-1.2.11-r0 do_debian_patch: Function failed: do_debian_patch (log file is located at /home/deby/build/tmp/work/x86_64-nativesdk-debysdk-linux/nativesdk-zlib/1.2.11-r0/temp/log.do_debian_patch.17745)
+ERROR: Logfile of failure stored in: /home/deby/build/tmp/work/x86_64-nativesdk-debysdk-linux/nativesdk-zlib/1.2.11-r0/temp/log.do_debian_patch.17745
+NOTE: recipe nativesdk-zlib-1.2.11-r0: task do_debian_patch: Failed
+ERROR: Task (virtual:nativesdk:/home/deby/poky/meta-debian/recipes-debian/zlib/zlib_debian.bb:do_debian_patch) failed with exit code '1'
+ERROR: nativesdk-gettext-0.19.8.1-r0 do_debian_patch: unknown quilt patches already applied
+ERROR: nativesdk-gettext-0.19.8.1-r0 do_debian_patch: Function failed: do_debian_patch (log file is located at /home/deby/build/tmp/work/x86_64-nativesdk-debysdk-linux/nativesdk-gettext/0.19.8.1-r0/temp/log.do_debian_patch.17744)
+ERROR: Logfile of failure stored in: /home/deby/build/tmp/work/x86_64-nativesdk-debysdk-linux/nativesdk-gettext/0.19.8.1-r0/temp/log.do_debian_patch.17744
+NOTE: recipe nativesdk-gettext-0.19.8.1-r0: task do_debian_patch: Failed
+ERROR: Task (virtual:nativesdk:/home/deby/poky/meta-debian/recipes-debian/gettext/gettext_debian.bb:do_debian_patch) failed with exit code '1'
+NOTE: recipe gcc-source-8.3.0-8.3.0-r0: task do_debian_patch: Succeeded
+NOTE: Tasks Summary: Attempted 486 tasks of which 480 didn't need to be rerun and 4 failed.
+
+Summary: 4 tasks failed:
+  virtual:nativesdk:/home/deby/poky/meta-debian/recipes-debian/m4/m4_debian.bb:do_debian_patch
+  virtual:nativesdk:/home/deby/poky/meta-debian/recipes-debian/glibc/glibc_debian.bb:do_debian_patch
+  virtual:nativesdk:/home/deby/poky/meta-debian/recipes-debian/zlib/zlib_debian.bb:do_debian_patch
+  virtual:nativesdk:/home/deby/poky/meta-debian/recipes-debian/gettext/gettext_debian.bb:do_debian_patch
+Summary: There was 1 WARNING message shown.
+Summary: There were 8 ERROR messages shown, returning a non-zero exit code.

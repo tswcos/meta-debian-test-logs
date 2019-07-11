@@ -1,0 +1,60 @@
+WARNING: Host distribution "debian-10" has not been validated with this version of the build system; you may possibly experience unexpected failures. It is recommended that you use a tested distribution.
+Loading cache...done.
+Loaded 1440 entries from dependency cache.
+NOTE: Resolving any missing task queue dependencies
+
+Build Configuration:
+BB_VERSION           = "1.42.0"
+BUILD_SYS            = "x86_64-linux"
+NATIVELSBSTRING      = "universal"
+TARGET_SYS           = "powerpc-deby-linux"
+MACHINE              = "qemuppc"
+DISTRO               = "deby"
+DISTRO_VERSION       = "10.0"
+TUNE_FEATURES        = "m32 fpu-hard ppc7400 altivec"
+TARGET_FPU           = ""
+meta                 
+meta-poky            = "warrior:51223035e66c5b27799b15a0f8ebe75d24d3971b"
+meta-debian          = "warrior-trungdt:47b755ebe41c5afc0ea94d75b55c4f0efd8983fe"
+
+Initialising tasks...done.
+Sstate summary: Wanted 2 Found 0 Missed 2 Current 25 (0% match, 92% complete)
+NOTE: Executing SetScene Tasks
+NOTE: Executing RunQueue Tasks
+NOTE: Running task 94 of 230 (/home/deby/poky/meta-debian/recipes-debian/gdb/gdb-cross_debian.bb:do_fetch)
+NOTE: recipe gdb-cross-powerpc-8.2.1-r0: task do_fetch: Started
+NOTE: recipe gdb-cross-powerpc-8.2.1-r0: task do_fetch: Succeeded
+NOTE: Running task 220 of 230 (/home/deby/poky/meta-debian/recipes-debian/gdb/gdb-cross_debian.bb:do_unpack)
+NOTE: Running task 221 of 230 (/home/deby/poky/meta-debian/recipes-debian/gdb/gdb-cross_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe gdb-cross-powerpc-8.2.1-r0: task do_unpack: Started
+NOTE: recipe gdb-cross-powerpc-8.2.1-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe gdb-cross-powerpc-8.2.1-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: recipe gdb-cross-powerpc-8.2.1-r0: task do_unpack: Succeeded
+NOTE: Running task 222 of 230 (/home/deby/poky/meta-debian/recipes-debian/gdb/gdb-cross_debian.bb:do_debian_unpack_extra)
+NOTE: recipe gdb-cross-powerpc-8.2.1-r0: task do_debian_unpack_extra: Started
+NOTE: recipe gdb-cross-powerpc-8.2.1-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 223 of 230 (/home/deby/poky/meta-debian/recipes-debian/gdb/gdb-cross_debian.bb:do_debian_patch)
+NOTE: recipe gdb-cross-powerpc-8.2.1-r0: task do_debian_patch: Started
+NOTE: recipe gdb-cross-powerpc-8.2.1-r0: task do_debian_patch: Succeeded
+NOTE: Running task 224 of 230 (/home/deby/poky/meta-debian/recipes-debian/gdb/gdb-cross_debian.bb:do_patch)
+NOTE: recipe gdb-cross-powerpc-8.2.1-r0: task do_patch: Started
+NOTE: recipe gdb-cross-powerpc-8.2.1-r0: task do_patch: Succeeded
+NOTE: Running task 225 of 230 (/home/deby/poky/meta-debian/recipes-debian/gdb/gdb-cross_debian.bb:do_configure)
+NOTE: Running task 226 of 230 (/home/deby/poky/meta-debian/recipes-debian/gdb/gdb-cross_debian.bb:do_populate_lic)
+NOTE: recipe gdb-cross-powerpc-8.2.1-r0: task do_populate_lic: Started
+NOTE: recipe gdb-cross-powerpc-8.2.1-r0: task do_configure: Started
+NOTE: recipe gdb-cross-powerpc-8.2.1-r0: task do_populate_lic: Succeeded
+NOTE: recipe gdb-cross-powerpc-8.2.1-r0: task do_configure: Succeeded
+NOTE: Running task 227 of 230 (/home/deby/poky/meta-debian/recipes-debian/gdb/gdb-cross_debian.bb:do_compile)
+NOTE: recipe gdb-cross-powerpc-8.2.1-r0: task do_compile: Started
+NOTE: recipe gdb-cross-powerpc-8.2.1-r0: task do_compile: Succeeded
+NOTE: Running task 228 of 230 (/home/deby/poky/meta-debian/recipes-debian/gdb/gdb-cross_debian.bb:do_install)
+NOTE: recipe gdb-cross-powerpc-8.2.1-r0: task do_install: Started
+NOTE: recipe gdb-cross-powerpc-8.2.1-r0: task do_install: Succeeded
+NOTE: Running task 229 of 230 (/home/deby/poky/meta-debian/recipes-debian/gdb/gdb-cross_debian.bb:do_populate_sysroot)
+NOTE: recipe gdb-cross-powerpc-8.2.1-r0: task do_populate_sysroot: Started
+NOTE: recipe gdb-cross-powerpc-8.2.1-r0: task do_populate_sysroot: Succeeded
+NOTE: Running noexec task 230 of 230 (/home/deby/poky/meta-debian/recipes-debian/gdb/gdb-cross_debian.bb:do_build)
+NOTE: Tasks Summary: Attempted 230 tasks of which 218 didn't need to be rerun and all succeeded.
+
+Summary: There was 1 WARNING message shown.
