@@ -1,0 +1,145 @@
+Loading cache...done.
+Loaded 1723 entries from dependency cache.
+NOTE: Resolving any missing task queue dependencies
+
+Build Configuration:
+BB_VERSION           = "1.42.0"
+BUILD_SYS            = "x86_64-linux"
+NATIVELSBSTRING      = "universal"
+TARGET_SYS           = "i586-deby-linux"
+MACHINE              = "qemux86"
+DISTRO               = "deby-tiny"
+DISTRO_VERSION       = "10.0"
+TUNE_FEATURES        = "m32 i586"
+TARGET_FPU           = ""
+meta                 
+meta-poky            = "warrior:79a850a10a4b88a6d20d607b322542f947874323"
+meta-debian          = "warrior:79407869d1e56b8c7cb9ac0a9a48a4923ffa202b"
+
+Initialising tasks...done.
+Sstate summary: Wanted 21 Found 0 Missed 21 Current 163 (0% match, 88% complete)
+NOTE: Executing SetScene Tasks
+NOTE: Executing RunQueue Tasks
+NOTE: Running task 732 of 946 (/home/deby/poky/meta/recipes-extended/shadow/shadow-sysroot_4.6.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 748 of 946 (/home/deby/poky/meta/recipes-support/libjitterentropy/libjitterentropy_2.1.2.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 750 of 946 (/home/deby/poky/meta-debian/recipes-debian/sysfsutils/sysfsutils_debian.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 811 of 946 (/home/deby/poky/meta-debian/recipes-debian/base-files/base-files_debian.bb:do_populate_sysroot)
+NOTE: recipe shadow-sysroot-4.6-r3: task do_prepare_recipe_sysroot: Started
+NOTE: recipe libjitterentropy-2.1.2-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe sysfsutils-2.1.0-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe base-files-10.3+deb10u1-r0: task do_populate_sysroot: Started
+NOTE: recipe sysfsutils-2.1.0-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 909 of 946 (/home/deby/poky/meta-debian/recipes-debian/sysfsutils/sysfsutils_debian.bb:do_configure)
+NOTE: recipe base-files-10.3+deb10u1-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe sysfsutils-2.1.0-r0: task do_configure: Started
+NOTE: recipe shadow-sysroot-4.6-r3: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 910 of 946 (/home/deby/poky/meta/recipes-extended/shadow/shadow-sysroot_4.6.bb:do_configure)
+NOTE: recipe libjitterentropy-2.1.2-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running noexec task 911 of 946 (/home/deby/poky/meta/recipes-support/libjitterentropy/libjitterentropy_2.1.2.bb:do_configure)
+NOTE: Running task 912 of 946 (/home/deby/poky/meta/recipes-support/libjitterentropy/libjitterentropy_2.1.2.bb:do_compile)
+NOTE: recipe shadow-sysroot-4.6-r3: task do_configure: Started
+NOTE: recipe libjitterentropy-2.1.2-r0: task do_compile: Started
+NOTE: recipe shadow-sysroot-4.6-r3: task do_configure: Succeeded
+NOTE: Running task 913 of 946 (/home/deby/poky/meta/recipes-extended/shadow/shadow-sysroot_4.6.bb:do_compile)
+NOTE: recipe libjitterentropy-2.1.2-r0: task do_compile: Succeeded
+NOTE: Running task 914 of 946 (/home/deby/poky/meta/recipes-support/libjitterentropy/libjitterentropy_2.1.2.bb:do_install)
+NOTE: recipe shadow-sysroot-4.6-r3: task do_compile: Started
+NOTE: recipe shadow-sysroot-4.6-r3: task do_compile: Succeeded
+NOTE: Running task 915 of 946 (/home/deby/poky/meta/recipes-extended/shadow/shadow-sysroot_4.6.bb:do_install)
+NOTE: recipe shadow-sysroot-4.6-r3: task do_install: Started
+NOTE: recipe libjitterentropy-2.1.2-r0: task do_install: Started
+NOTE: recipe shadow-sysroot-4.6-r3: task do_install: Succeeded
+NOTE: Running task 916 of 946 (/home/deby/poky/meta/recipes-extended/shadow/shadow-sysroot_4.6.bb:do_package)
+NOTE: Running task 917 of 946 (/home/deby/poky/meta/recipes-extended/shadow/shadow-sysroot_4.6.bb:do_populate_sysroot)
+NOTE: recipe shadow-sysroot-4.6-r3: task do_package: Started
+NOTE: recipe shadow-sysroot-4.6-r3: task do_populate_sysroot: Started
+NOTE: recipe libjitterentropy-2.1.2-r0: task do_install: Succeeded
+NOTE: Running task 918 of 946 (/home/deby/poky/meta/recipes-support/libjitterentropy/libjitterentropy_2.1.2.bb:do_package)
+NOTE: Running task 919 of 946 (/home/deby/poky/meta/recipes-support/libjitterentropy/libjitterentropy_2.1.2.bb:do_populate_sysroot)
+NOTE: recipe libjitterentropy-2.1.2-r0: task do_package: Started
+NOTE: recipe libjitterentropy-2.1.2-r0: task do_populate_sysroot: Started
+NOTE: recipe shadow-sysroot-4.6-r3: task do_populate_sysroot: Succeeded
+NOTE: Running task 920 of 946 (/home/deby/poky/meta-debian/recipes-debian/openssh/openssh_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe shadow-sysroot-4.6-r3: task do_package: Succeeded
+NOTE: Running task 921 of 946 (/home/deby/poky/meta/recipes-extended/shadow/shadow-sysroot_4.6.bb:do_packagedata)
+NOTE: recipe shadow-sysroot-4.6-r3: task do_packagedata: Started
+NOTE: recipe openssh-7.9p1-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe shadow-sysroot-4.6-r3: task do_packagedata: Succeeded
+NOTE: Running task 922 of 946 (/home/deby/poky/meta/recipes-extended/shadow/shadow-sysroot_4.6.bb:do_package_write_deb)
+NOTE: recipe shadow-sysroot-4.6-r3: task do_package_write_deb: Started
+NOTE: recipe shadow-sysroot-4.6-r3: task do_package_write_deb: Succeeded
+NOTE: recipe openssh-7.9p1-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 923 of 946 (/home/deby/poky/meta-debian/recipes-debian/openssh/openssh_debian.bb:do_configure)
+NOTE: recipe openssh-7.9p1-r0: task do_configure: Started
+NOTE: recipe libjitterentropy-2.1.2-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe libjitterentropy-2.1.2-r0: task do_package: Succeeded
+NOTE: Running task 924 of 946 (/home/deby/poky/meta/recipes-support/libjitterentropy/libjitterentropy_2.1.2.bb:do_packagedata)
+NOTE: recipe libjitterentropy-2.1.2-r0: task do_packagedata: Started
+NOTE: recipe libjitterentropy-2.1.2-r0: task do_packagedata: Succeeded
+NOTE: Running task 925 of 946 (/home/deby/poky/meta/recipes-support/libjitterentropy/libjitterentropy_2.1.2.bb:do_package_write_deb)
+NOTE: recipe libjitterentropy-2.1.2-r0: task do_package_write_deb: Started
+NOTE: recipe libjitterentropy-2.1.2-r0: task do_package_write_deb: Succeeded
+NOTE: recipe sysfsutils-2.1.0-r0: task do_configure: Succeeded
+NOTE: Running task 926 of 946 (/home/deby/poky/meta-debian/recipes-debian/sysfsutils/sysfsutils_debian.bb:do_compile)
+NOTE: recipe sysfsutils-2.1.0-r0: task do_compile: Started
+NOTE: recipe sysfsutils-2.1.0-r0: task do_compile: Succeeded
+NOTE: Running task 927 of 946 (/home/deby/poky/meta-debian/recipes-debian/sysfsutils/sysfsutils_debian.bb:do_install)
+NOTE: recipe sysfsutils-2.1.0-r0: task do_install: Started
+NOTE: recipe sysfsutils-2.1.0-r0: task do_install: Succeeded
+NOTE: Running task 928 of 946 (/home/deby/poky/meta-debian/recipes-debian/sysfsutils/sysfsutils_debian.bb:do_package)
+NOTE: Running task 929 of 946 (/home/deby/poky/meta-debian/recipes-debian/sysfsutils/sysfsutils_debian.bb:do_populate_sysroot)
+NOTE: recipe sysfsutils-2.1.0-r0: task do_package: Started
+NOTE: recipe sysfsutils-2.1.0-r0: task do_populate_sysroot: Started
+NOTE: recipe sysfsutils-2.1.0-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 930 of 946 (/home/deby/poky/meta/recipes-support/rng-tools/rng-tools_6.6.bb:do_prepare_recipe_sysroot)
+NOTE: recipe rng-tools-6.6-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe sysfsutils-2.1.0-r0: task do_package: Succeeded
+NOTE: Running task 931 of 946 (/home/deby/poky/meta-debian/recipes-debian/sysfsutils/sysfsutils_debian.bb:do_packagedata)
+NOTE: recipe sysfsutils-2.1.0-r0: task do_packagedata: Started
+NOTE: recipe sysfsutils-2.1.0-r0: task do_packagedata: Succeeded
+NOTE: Running task 932 of 946 (/home/deby/poky/meta-debian/recipes-debian/sysfsutils/sysfsutils_debian.bb:do_package_write_deb)
+NOTE: recipe rng-tools-6.6-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 933 of 946 (/home/deby/poky/meta/recipes-support/rng-tools/rng-tools_6.6.bb:do_configure)
+NOTE: recipe sysfsutils-2.1.0-r0: task do_package_write_deb: Started
+NOTE: recipe rng-tools-6.6-r0: task do_configure: Started
+NOTE: recipe sysfsutils-2.1.0-r0: task do_package_write_deb: Succeeded
+NOTE: recipe rng-tools-6.6-r0: task do_configure: Succeeded
+NOTE: Running task 934 of 946 (/home/deby/poky/meta/recipes-support/rng-tools/rng-tools_6.6.bb:do_compile)
+NOTE: recipe rng-tools-6.6-r0: task do_compile: Started
+NOTE: recipe rng-tools-6.6-r0: task do_compile: Succeeded
+NOTE: Running task 935 of 946 (/home/deby/poky/meta/recipes-support/rng-tools/rng-tools_6.6.bb:do_install)
+NOTE: recipe rng-tools-6.6-r0: task do_install: Started
+NOTE: recipe rng-tools-6.6-r0: task do_install: Succeeded
+NOTE: Running task 936 of 946 (/home/deby/poky/meta/recipes-support/rng-tools/rng-tools_6.6.bb:do_package)
+NOTE: recipe rng-tools-6.6-r0: task do_package: Started
+NOTE: recipe rng-tools-6.6-r0: task do_package: Succeeded
+NOTE: Running task 937 of 946 (/home/deby/poky/meta/recipes-support/rng-tools/rng-tools_6.6.bb:do_packagedata)
+NOTE: recipe rng-tools-6.6-r0: task do_packagedata: Started
+NOTE: recipe rng-tools-6.6-r0: task do_packagedata: Succeeded
+NOTE: Running task 938 of 946 (/home/deby/poky/meta/recipes-support/rng-tools/rng-tools_6.6.bb:do_package_write_deb)
+NOTE: recipe rng-tools-6.6-r0: task do_package_write_deb: Started
+NOTE: recipe rng-tools-6.6-r0: task do_package_write_deb: Succeeded
+NOTE: recipe openssh-7.9p1-r0: task do_configure: Succeeded
+NOTE: Running task 939 of 946 (/home/deby/poky/meta-debian/recipes-debian/openssh/openssh_debian.bb:do_compile)
+NOTE: recipe openssh-7.9p1-r0: task do_compile: Started
+NOTE: recipe openssh-7.9p1-r0: task do_compile: Succeeded
+NOTE: Running task 940 of 946 (/home/deby/poky/meta-debian/recipes-debian/openssh/openssh_debian.bb:do_install)
+NOTE: recipe openssh-7.9p1-r0: task do_install: Started
+NOTE: recipe openssh-7.9p1-r0: task do_install: Succeeded
+NOTE: Running task 941 of 946 (/home/deby/poky/meta-debian/recipes-debian/openssh/openssh_debian.bb:do_package)
+NOTE: Running task 942 of 946 (/home/deby/poky/meta-debian/recipes-debian/openssh/openssh_debian.bb:do_populate_sysroot)
+NOTE: recipe openssh-7.9p1-r0: task do_populate_sysroot: Started
+NOTE: recipe openssh-7.9p1-r0: task do_package: Started
+NOTE: recipe openssh-7.9p1-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe openssh-7.9p1-r0: task do_package: Succeeded
+NOTE: Running task 943 of 946 (/home/deby/poky/meta-debian/recipes-debian/openssh/openssh_debian.bb:do_packagedata)
+NOTE: recipe openssh-7.9p1-r0: task do_packagedata: Started
+NOTE: recipe openssh-7.9p1-r0: task do_packagedata: Succeeded
+NOTE: Running task 944 of 946 (/home/deby/poky/meta-debian/recipes-debian/openssh/openssh_debian.bb:do_package_write_deb)
+NOTE: Running task 945 of 946 (/home/deby/poky/meta-debian/recipes-debian/openssh/openssh_debian.bb:do_package_qa)
+NOTE: recipe openssh-7.9p1-r0: task do_package_qa: Started
+NOTE: recipe openssh-7.9p1-r0: task do_package_write_deb: Started
+NOTE: recipe openssh-7.9p1-r0: task do_package_qa: Succeeded
+NOTE: recipe openssh-7.9p1-r0: task do_package_write_deb: Succeeded
+NOTE: Running noexec task 946 of 946 (/home/deby/poky/meta-debian/recipes-debian/openssh/openssh_debian.bb:do_build)
+NOTE: Tasks Summary: Attempted 946 tasks of which 904 didn't need to be rerun and all succeeded.

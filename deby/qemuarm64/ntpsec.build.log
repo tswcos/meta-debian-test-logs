@@ -1,0 +1,73 @@
+Loading cache...done.
+Loaded 1723 entries from dependency cache.
+NOTE: Resolving any missing task queue dependencies
+
+Build Configuration:
+BB_VERSION           = "1.42.0"
+BUILD_SYS            = "x86_64-linux"
+NATIVELSBSTRING      = "universal"
+TARGET_SYS           = "aarch64-deby-linux"
+MACHINE              = "qemuarm64"
+DISTRO               = "deby"
+DISTRO_VERSION       = "10.0"
+TUNE_FEATURES        = "aarch64 armv8a crc"
+TARGET_FPU           = ""
+meta                 
+meta-poky            = "warrior:79a850a10a4b88a6d20d607b322542f947874323"
+meta-debian          = "warrior:79407869d1e56b8c7cb9ac0a9a48a4923ffa202b"
+
+Initialising tasks...done.
+Sstate summary: Wanted 6 Found 0 Missed 6 Current 427 (0% match, 98% complete)
+NOTE: Executing SetScene Tasks
+NOTE: Executing RunQueue Tasks
+NOTE: Running task 1344 of 1994 (/home/deby/poky/meta-debian/recipes-debian/ntpsec/ntpsec_debian.bb:do_fetch)
+NOTE: recipe ntpsec-1.1.3-r0: task do_fetch: Started
+NOTE: recipe ntpsec-1.1.3-r0: task do_fetch: Succeeded
+NOTE: Running task 1980 of 1994 (/home/deby/poky/meta-debian/recipes-debian/ntpsec/ntpsec_debian.bb:do_unpack)
+NOTE: Running task 1981 of 1994 (/home/deby/poky/meta-debian/recipes-debian/ntpsec/ntpsec_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe ntpsec-1.1.3-r0: task do_unpack: Started
+NOTE: recipe ntpsec-1.1.3-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe ntpsec-1.1.3-r0: task do_unpack: Succeeded
+NOTE: Running task 1982 of 1994 (/home/deby/poky/meta-debian/recipes-debian/ntpsec/ntpsec_debian.bb:do_debian_unpack_extra)
+NOTE: recipe ntpsec-1.1.3-r0: task do_debian_unpack_extra: Started
+NOTE: recipe ntpsec-1.1.3-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 1983 of 1994 (/home/deby/poky/meta-debian/recipes-debian/ntpsec/ntpsec_debian.bb:do_debian_patch)
+NOTE: recipe ntpsec-1.1.3-r0: task do_debian_patch: Started
+NOTE: recipe ntpsec-1.1.3-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: recipe ntpsec-1.1.3-r0: task do_debian_patch: Succeeded
+NOTE: Running task 1984 of 1994 (/home/deby/poky/meta-debian/recipes-debian/ntpsec/ntpsec_debian.bb:do_patch)
+NOTE: recipe ntpsec-1.1.3-r0: task do_patch: Started
+NOTE: recipe ntpsec-1.1.3-r0: task do_patch: Succeeded
+NOTE: Running task 1985 of 1994 (/home/deby/poky/meta-debian/recipes-debian/ntpsec/ntpsec_debian.bb:do_configure)
+NOTE: Running task 1986 of 1994 (/home/deby/poky/meta-debian/recipes-debian/ntpsec/ntpsec_debian.bb:do_populate_lic)
+NOTE: recipe ntpsec-1.1.3-r0: task do_configure: Started
+NOTE: recipe ntpsec-1.1.3-r0: task do_populate_lic: Started
+NOTE: recipe ntpsec-1.1.3-r0: task do_populate_lic: Succeeded
+NOTE: recipe ntpsec-1.1.3-r0: task do_configure: Succeeded
+NOTE: Running task 1987 of 1994 (/home/deby/poky/meta-debian/recipes-debian/ntpsec/ntpsec_debian.bb:do_compile)
+NOTE: recipe ntpsec-1.1.3-r0: task do_compile: Started
+ERROR: ntpsec-1.1.3-r0 do_compile: Function failed: do_compile (log file is located at /home/deby/build/tmp/work/aarch64-deby-linux/ntpsec/1.1.3-r0/temp/log.do_compile.17136)
+ERROR: Logfile of failure stored in: /home/deby/build/tmp/work/aarch64-deby-linux/ntpsec/1.1.3-r0/temp/log.do_compile.17136
+Log data follows:
+| DEBUG: Executing shell function do_compile
+| --- building host ---
+| Waf: Entering directory `/home/deby/build/tmp/work/aarch64-deby-linux/ntpsec/1.1.3-r0/ntpsec-1.1.3+dfsg1/build/host'
+| [1/2] Processing ntpd/ntp_parser.y
+| [2/2] Compiling build/host/ntpd/ntp_parser.tab.c
+| [3/4] Compiling ntpd/keyword-gen.c
+| [4/4] Linking build/host/ntpd/keyword-gen
+| [5/5] Compiling build/host/ntpd/ntp_parser.tab.h
+| /bin/sh: 1: /home/deby/build/tmp/work/aarch64-deby-linux/ntpsec/1.1.3-r0/ntpsec-1.1.3+dfsg1/build/host/ntpd/keyword-gen: Exec format error
+| 
+| Waf: Leaving directory `/home/deby/build/tmp/work/aarch64-deby-linux/ntpsec/1.1.3-r0/ntpsec-1.1.3+dfsg1/build/host'
+| Build failed
+|  -> task in 'ntp_keyword.h' failed with exit status 2 (run with -v to display more information)
+| WARNING: exit code 1 from a shell command.
+| ERROR: Function failed: do_compile (log file is located at /home/deby/build/tmp/work/aarch64-deby-linux/ntpsec/1.1.3-r0/temp/log.do_compile.17136)
+NOTE: recipe ntpsec-1.1.3-r0: task do_compile: Failed
+ERROR: Task (/home/deby/poky/meta-debian/recipes-debian/ntpsec/ntpsec_debian.bb:do_compile) failed with exit code '1'
+NOTE: Tasks Summary: Attempted 1987 tasks of which 1978 didn't need to be rerun and 1 failed.
+
+Summary: 1 task failed:
+  /home/deby/poky/meta-debian/recipes-debian/ntpsec/ntpsec_debian.bb:do_compile
+Summary: There was 1 ERROR message shown, returning a non-zero exit code.

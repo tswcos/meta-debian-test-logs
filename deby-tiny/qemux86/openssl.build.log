@@ -1,6 +1,5 @@
-WARNING: Host distribution "debian-10" has not been validated with this version of the build system; you may possibly experience unexpected failures. It is recommended that you use a tested distribution.
 Loading cache...done.
-Loaded 1440 entries from dependency cache.
+Loaded 1723 entries from dependency cache.
 NOTE: Resolving any missing task queue dependencies
 
 Build Configuration:
@@ -14,20 +13,15 @@ DISTRO_VERSION       = "10.0"
 TUNE_FEATURES        = "m32 i586"
 TARGET_FPU           = ""
 meta                 
-meta-poky            = "warrior:51223035e66c5b27799b15a0f8ebe75d24d3971b"
-meta-debian          = "warrior-trungdt:47b755ebe41c5afc0ea94d75b55c4f0efd8983fe"
+meta-poky            = "warrior:79a850a10a4b88a6d20d607b322542f947874323"
+meta-debian          = "warrior:79407869d1e56b8c7cb9ac0a9a48a4923ffa202b"
 
 Initialising tasks...done.
-Sstate summary: Wanted 3 Found 3 Missed 0 Current 73 (100% match, 100% complete)
+Sstate summary: Wanted 1 Found 0 Missed 1 Current 76 (0% match, 98% complete)
 NOTE: Executing SetScene Tasks
-NOTE: Running setscene task 74 of 76 (/home/deby/poky/meta-debian/recipes-debian/openssl/openssl_debian.bb:do_populate_sysroot_setscene)
-NOTE: Running setscene task 75 of 76 (/home/deby/poky/meta-debian/recipes-debian/openssl/openssl_debian.bb:do_package_qa_setscene)
-NOTE: recipe openssl-1.1.1c-r0: task do_package_qa_setscene: Started
-NOTE: recipe openssl-1.1.1c-r0: task do_populate_sysroot_setscene: Started
-NOTE: recipe openssl-1.1.1c-r0: task do_package_qa_setscene: Succeeded
-NOTE: recipe openssl-1.1.1c-r0: task do_populate_sysroot_setscene: Succeeded
 NOTE: Executing RunQueue Tasks
-NOTE: Running noexec task 519 of 519 (/home/deby/poky/meta-debian/recipes-debian/openssl/openssl_debian.bb:do_build)
-NOTE: Tasks Summary: Attempted 519 tasks of which 518 didn't need to be rerun and all succeeded.
-
-Summary: There was 1 WARNING message shown.
+NOTE: Running task 574 of 576 (/home/deby/poky/meta-debian/recipes-debian/openssl/openssl_debian.bb:do_package_qa)
+NOTE: recipe openssl-1.1.1c-r0: task do_package_qa: Started
+NOTE: recipe openssl-1.1.1c-r0: task do_package_qa: Succeeded
+NOTE: Running noexec task 576 of 576 (/home/deby/poky/meta-debian/recipes-debian/openssl/openssl_debian.bb:do_build)
+NOTE: Tasks Summary: Attempted 576 tasks of which 574 didn't need to be rerun and all succeeded.

@@ -1,0 +1,11 @@
+Loading cache...done.
+Loaded 1958 entries from dependency cache.
+WARNING: No bb files matched BBFILE_PATTERN_dti '^/home/deby/poky/meta-debian/tests/../../meta-debian/bsp/meta-ti/'
+NOTE: Resolving any missing task queue dependencies
+ERROR: Nothing PROVIDES 'libtss2-tcti-mssim' (but /home/deby/poky/meta-debian/recipes-debian/tpm2-abrmd/tpm2-abrmd_debian.bb DEPENDS on or otherwise requires it). Close matches:
+  tpm2-tss RPROVIDES libtss2-tcti-mssim
+ERROR: Required build target 'tpm2-abrmd' has no buildable providers.
+Missing or unbuildable dependency chain was: ['tpm2-abrmd', 'libtss2-tcti-mssim']
+
+Summary: There was 1 WARNING message shown.
+Summary: There were 2 ERROR messages shown, returning a non-zero exit code.

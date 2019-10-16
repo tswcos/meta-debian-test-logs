@@ -1,0 +1,51 @@
+Loading cache...done.
+Loaded 1723 entries from dependency cache.
+NOTE: Resolving any missing task queue dependencies
+
+Build Configuration:
+BB_VERSION           = "1.42.0"
+BUILD_SYS            = "x86_64-linux"
+NATIVELSBSTRING      = "universal"
+TARGET_SYS           = "i586-deby-linux"
+MACHINE              = "qemux86"
+DISTRO               = "deby"
+DISTRO_VERSION       = "10.0"
+TUNE_FEATURES        = "m32 i586"
+TARGET_FPU           = ""
+meta                 
+meta-poky            = "warrior:79a850a10a4b88a6d20d607b322542f947874323"
+meta-debian          = "warrior:79407869d1e56b8c7cb9ac0a9a48a4923ffa202b"
+
+Initialising tasks...done.
+Sstate summary: Wanted 5 Found 0 Missed 5 Current 421 (0% match, 98% complete)
+NOTE: Executing SetScene Tasks
+NOTE: Executing RunQueue Tasks
+NOTE: Running task 1622 of 1961 (/home/deby/poky/meta-debian/recipes-debian/adduser/adduser_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe adduser-3.118-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe adduser-3.118-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 1953 of 1961 (/home/deby/poky/meta-debian/recipes-debian/adduser/adduser_debian.bb:do_configure)
+NOTE: recipe adduser-3.118-r0: task do_configure: Started
+NOTE: recipe adduser-3.118-r0: task do_configure: Succeeded
+NOTE: Running task 1954 of 1961 (/home/deby/poky/meta-debian/recipes-debian/adduser/adduser_debian.bb:do_compile)
+NOTE: recipe adduser-3.118-r0: task do_compile: Started
+NOTE: recipe adduser-3.118-r0: task do_compile: Succeeded
+NOTE: Running task 1955 of 1961 (/home/deby/poky/meta-debian/recipes-debian/adduser/adduser_debian.bb:do_install)
+NOTE: recipe adduser-3.118-r0: task do_install: Started
+NOTE: recipe adduser-3.118-r0: task do_install: Succeeded
+NOTE: Running task 1956 of 1961 (/home/deby/poky/meta-debian/recipes-debian/adduser/adduser_debian.bb:do_package)
+NOTE: Running task 1957 of 1961 (/home/deby/poky/meta-debian/recipes-debian/adduser/adduser_debian.bb:do_populate_sysroot)
+NOTE: recipe adduser-3.118-r0: task do_package: Started
+NOTE: recipe adduser-3.118-r0: task do_populate_sysroot: Started
+NOTE: recipe adduser-3.118-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe adduser-3.118-r0: task do_package: Succeeded
+NOTE: Running task 1958 of 1961 (/home/deby/poky/meta-debian/recipes-debian/adduser/adduser_debian.bb:do_packagedata)
+NOTE: recipe adduser-3.118-r0: task do_packagedata: Started
+NOTE: recipe adduser-3.118-r0: task do_packagedata: Succeeded
+NOTE: Running task 1959 of 1961 (/home/deby/poky/meta-debian/recipes-debian/adduser/adduser_debian.bb:do_package_write_deb)
+NOTE: Running task 1960 of 1961 (/home/deby/poky/meta-debian/recipes-debian/adduser/adduser_debian.bb:do_package_qa)
+NOTE: recipe adduser-3.118-r0: task do_package_write_deb: Started
+NOTE: recipe adduser-3.118-r0: task do_package_qa: Started
+NOTE: recipe adduser-3.118-r0: task do_package_qa: Succeeded
+NOTE: recipe adduser-3.118-r0: task do_package_write_deb: Succeeded
+NOTE: Running noexec task 1961 of 1961 (/home/deby/poky/meta-debian/recipes-debian/adduser/adduser_debian.bb:do_build)
+NOTE: Tasks Summary: Attempted 1961 tasks of which 1951 didn't need to be rerun and all succeeded.

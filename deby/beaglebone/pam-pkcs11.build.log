@@ -1,0 +1,7 @@
+Loading cache...done.
+Loaded 1958 entries from dependency cache.
+WARNING: No bb files matched BBFILE_PATTERN_dti '^/home/deby/poky/meta-debian/tests/../../meta-debian/bsp/meta-ti/'
+ERROR: Nothing PROVIDES 'pam-pkcs11'
+
+Summary: There was 1 WARNING message shown.
+Summary: There was 1 ERROR message shown, returning a non-zero exit code.

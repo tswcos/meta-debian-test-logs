@@ -1,0 +1,5 @@
+Loading cache...done.
+ERROR: Nothing PROVIDES 'pam-pkcs11'
+Loaded 1723 entries from dependency cache.
+
+Summary: There was 1 ERROR message shown, returning a non-zero exit code.

@@ -1,0 +1,380 @@
+Loading cache...done.
+Loaded 1758 entries from dependency cache.
+WARNING: No bb files matched BBFILE_PATTERN_debian-raspberrypi '^/home/deby/poky/meta-debian/tests/../../meta-debian/bsp/meta-raspberrypi/'
+NOTE: Resolving any missing task queue dependencies
+
+Build Configuration:
+BB_VERSION           = "1.42.0"
+BUILD_SYS            = "x86_64-linux"
+NATIVELSBSTRING      = "universal"
+TARGET_SYS           = "arm-deby-linux-gnueabi"
+MACHINE              = "raspberrypi3"
+DISTRO               = "deby-tiny"
+DISTRO_VERSION       = "10.0"
+TUNE_FEATURES        = "arm vfp cortexa7 neon vfpv4 thumb callconvention-hard"
+TARGET_FPU           = "hard"
+meta                 
+meta-poky            = "warrior:79a850a10a4b88a6d20d607b322542f947874323"
+meta-debian          = "warrior:79407869d1e56b8c7cb9ac0a9a48a4923ffa202b"
+meta-raspberrypi     = "warrior:0750d5d2bc9596f35d5d61bb0ff657be4b02bfdc"
+meta-raspberrypi     = "warrior:79407869d1e56b8c7cb9ac0a9a48a4923ffa202b"
+
+Initialising tasks...done.
+Sstate summary: Wanted 37 Found 0 Missed 37 Current 179 (0% match, 82% complete)
+NOTE: Executing SetScene Tasks
+NOTE: Executing RunQueue Tasks
+NOTE: Running task 702 of 1050 (/home/deby/poky/meta-debian/recipes-debian/librsync/librsync_debian.bb:do_fetch)
+NOTE: Running task 779 of 1050 (/home/deby/poky/meta/recipes-support/libassuan/libassuan_2.5.3.bb:do_fetch)
+NOTE: Running task 803 of 1050 (/home/deby/poky/meta-debian/recipes-debian/duplicity/duplicity_debian.bb:do_fetch)
+NOTE: Running task 823 of 1050 (/home/deby/poky/meta/recipes-support/libksba/libksba_1.3.5.bb:do_fetch)
+NOTE: Running task 824 of 1050 (/home/deby/poky/meta/recipes-support/npth/npth_1.6.bb:do_fetch)
+NOTE: Running task 829 of 1050 (/home/deby/poky/meta-debian/recipes-debian/python/python-six_debian.bb:do_fetch)
+NOTE: Running task 830 of 1050 (/home/deby/poky/meta-debian/recipes-debian/python/python-monotonic_debian.bb:do_fetch)
+NOTE: Running task 855 of 1050 (/home/deby/poky/meta-debian/recipes-debian/python/python-fasteners_debian.bb:do_fetch)
+NOTE: Running task 883 of 1050 (/home/deby/poky/meta/recipes-support/gnupg/gnupg_2.2.13.bb:do_fetch)
+NOTE: Running task 888 of 1050 (/home/deby/poky/meta/recipes-support/pinentry/pinentry_1.1.0.bb:do_fetch)
+NOTE: recipe librsync-0.9.7-r0: task do_fetch: Started
+NOTE: recipe npth-1.6-r0: task do_fetch: Started
+NOTE: recipe libassuan-2.5.3-r0: task do_fetch: Started
+NOTE: recipe libksba-1.3.5-r0: task do_fetch: Started
+NOTE: recipe pinentry-1.1.0-r0: task do_fetch: Started
+NOTE: recipe gnupg-2.2.13-r0: task do_fetch: Started
+NOTE: recipe duplicity-0.7.18.2-r0: task do_fetch: Started
+NOTE: recipe python-six-1.12.0-r0: task do_fetch: Started
+NOTE: recipe python-monotonic-1.1-r0: task do_fetch: Started
+NOTE: recipe python-fasteners-0.12.0-r0: task do_fetch: Started
+NOTE: recipe librsync-0.9.7-r0: task do_fetch: Succeeded
+NOTE: recipe npth-1.6-r0: task do_fetch: Succeeded
+NOTE: Running task 943 of 1050 (/home/deby/poky/meta-debian/recipes-debian/librsync/librsync_debian.bb:do_unpack)
+NOTE: Running task 944 of 1050 (/home/deby/poky/meta-debian/recipes-debian/librsync/librsync_debian.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 945 of 1050 (/home/deby/poky/meta/recipes-support/npth/npth_1.6.bb:do_unpack)
+NOTE: Running task 946 of 1050 (/home/deby/poky/meta/recipes-support/npth/npth_1.6.bb:do_prepare_recipe_sysroot)
+NOTE: recipe libassuan-2.5.3-r0: task do_fetch: Succeeded
+NOTE: Running task 947 of 1050 (/home/deby/poky/meta/recipes-support/libassuan/libassuan_2.5.3.bb:do_unpack)
+NOTE: Running task 948 of 1050 (/home/deby/poky/meta/recipes-support/libassuan/libassuan_2.5.3.bb:do_prepare_recipe_sysroot)
+NOTE: recipe gnupg-2.2.13-r0: task do_fetch: Succeeded
+NOTE: Running task 949 of 1050 (/home/deby/poky/meta/recipes-support/gnupg/gnupg_2.2.13.bb:do_unpack)
+NOTE: recipe python-six-1.12.0-r0: task do_fetch: Succeeded
+NOTE: Running task 950 of 1050 (/home/deby/poky/meta-debian/recipes-debian/python/python-six_debian.bb:do_unpack)
+NOTE: Running task 951 of 1050 (/home/deby/poky/meta-debian/recipes-debian/python/python-six_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe duplicity-0.7.18.2-r0: task do_fetch: Succeeded
+NOTE: recipe libksba-1.3.5-r0: task do_fetch: Succeeded
+NOTE: Running task 952 of 1050 (/home/deby/poky/meta-debian/recipes-debian/duplicity/duplicity_debian.bb:do_unpack)
+NOTE: Running task 953 of 1050 (/home/deby/poky/meta/recipes-support/libksba/libksba_1.3.5.bb:do_unpack)
+NOTE: Running task 954 of 1050 (/home/deby/poky/meta/recipes-support/libksba/libksba_1.3.5.bb:do_prepare_recipe_sysroot)
+NOTE: recipe librsync-0.9.7-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe python-monotonic-1.1-r0: task do_fetch: Succeeded
+NOTE: Running task 955 of 1050 (/home/deby/poky/meta-debian/recipes-debian/python/python-monotonic_debian.bb:do_unpack)
+NOTE: Running task 956 of 1050 (/home/deby/poky/meta-debian/recipes-debian/python/python-monotonic_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe npth-1.6-r0: task do_unpack: Started
+NOTE: recipe librsync-0.9.7-r0: task do_unpack: Started
+NOTE: recipe npth-1.6-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe pinentry-1.1.0-r0: task do_fetch: Succeeded
+NOTE: recipe python-fasteners-0.12.0-r0: task do_fetch: Succeeded
+NOTE: Running task 957 of 1050 (/home/deby/poky/meta-debian/recipes-debian/python/python-fasteners_debian.bb:do_unpack)
+NOTE: Running task 958 of 1050 (/home/deby/poky/meta-debian/recipes-debian/python/python-fasteners_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe libassuan-2.5.3-r0: task do_unpack: Started
+NOTE: recipe gnupg-2.2.13-r0: task do_unpack: Started
+NOTE: recipe python-six-1.12.0-r0: task do_unpack: Started
+NOTE: recipe libassuan-2.5.3-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe duplicity-0.7.18.2-r0: task do_unpack: Started
+NOTE: recipe python-six-1.12.0-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe python-monotonic-1.1-r0: task do_unpack: Started
+NOTE: recipe python-fasteners-0.12.0-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe libksba-1.3.5-r0: task do_unpack: Started
+NOTE: recipe libksba-1.3.5-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe python-monotonic-1.1-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe python-fasteners-0.12.0-r0: task do_unpack: Started
+NOTE: recipe npth-1.6-r0: task do_unpack: Succeeded
+NOTE: Running task 959 of 1050 (/home/deby/poky/meta/recipes-support/npth/npth_1.6.bb:do_patch)
+NOTE: recipe librsync-0.9.7-r0: task do_unpack: Succeeded
+NOTE: Running task 960 of 1050 (/home/deby/poky/meta-debian/recipes-debian/librsync/librsync_debian.bb:do_debian_unpack_extra)
+NOTE: recipe python-monotonic-1.1-r0: task do_unpack: Succeeded
+NOTE: Running task 961 of 1050 (/home/deby/poky/meta-debian/recipes-debian/python/python-monotonic_debian.bb:do_debian_unpack_extra)
+NOTE: recipe python-six-1.12.0-r0: task do_unpack: Succeeded
+NOTE: Running task 962 of 1050 (/home/deby/poky/meta-debian/recipes-debian/python/python-six_debian.bb:do_debian_unpack_extra)
+NOTE: recipe npth-1.6-r0: task do_patch: Started
+NOTE: recipe python-monotonic-1.1-r0: task do_debian_unpack_extra: Started
+NOTE: recipe librsync-0.9.7-r0: task do_debian_unpack_extra: Started
+NOTE: recipe python-six-1.12.0-r0: task do_debian_unpack_extra: Started
+NOTE: recipe python-fasteners-0.12.0-r0: task do_unpack: Succeeded
+NOTE: Running task 963 of 1050 (/home/deby/poky/meta-debian/recipes-debian/python/python-fasteners_debian.bb:do_debian_unpack_extra)
+NOTE: recipe libksba-1.3.5-r0: task do_unpack: Succeeded
+NOTE: Running task 964 of 1050 (/home/deby/poky/meta/recipes-support/libksba/libksba_1.3.5.bb:do_patch)
+NOTE: recipe python-monotonic-1.1-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 965 of 1050 (/home/deby/poky/meta-debian/recipes-debian/python/python-monotonic_debian.bb:do_debian_patch)
+NOTE: recipe duplicity-0.7.18.2-r0: task do_unpack: Succeeded
+NOTE: recipe librsync-0.9.7-r0: task do_debian_unpack_extra: Succeeded
+NOTE: recipe python-six-1.12.0-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 966 of 1050 (/home/deby/poky/meta-debian/recipes-debian/librsync/librsync_debian.bb:do_debian_patch)
+NOTE: recipe libassuan-2.5.3-r0: task do_unpack: Succeeded
+NOTE: Running task 967 of 1050 (/home/deby/poky/meta-debian/recipes-debian/duplicity/duplicity_debian.bb:do_debian_unpack_extra)
+NOTE: recipe python-fasteners-0.12.0-r0: task do_debian_unpack_extra: Started
+NOTE: Running task 968 of 1050 (/home/deby/poky/meta-debian/recipes-debian/python/python-six_debian.bb:do_debian_patch)
+NOTE: Running task 969 of 1050 (/home/deby/poky/meta/recipes-support/libassuan/libassuan_2.5.3.bb:do_patch)
+NOTE: recipe libksba-1.3.5-r0: task do_patch: Started
+NOTE: recipe duplicity-0.7.18.2-r0: task do_debian_unpack_extra: Started
+NOTE: recipe python-six-1.12.0-r0: task do_debian_patch: Started
+NOTE: recipe libassuan-2.5.3-r0: task do_patch: Started
+NOTE: recipe librsync-0.9.7-r0: task do_debian_patch: Started
+NOTE: recipe python-monotonic-1.1-r0: task do_debian_patch: Started
+NOTE: recipe python-fasteners-0.12.0-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 970 of 1050 (/home/deby/poky/meta-debian/recipes-debian/python/python-fasteners_debian.bb:do_debian_patch)
+NOTE: recipe duplicity-0.7.18.2-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 971 of 1050 (/home/deby/poky/meta-debian/recipes-debian/duplicity/duplicity_debian.bb:do_debian_patch)
+NOTE: recipe python-fasteners-0.12.0-r0: task do_debian_patch: Started
+NOTE: recipe duplicity-0.7.18.2-r0: task do_debian_patch: Started
+NOTE: recipe gnupg-2.2.13-r0: task do_unpack: Succeeded
+NOTE: Running task 972 of 1050 (/home/deby/poky/meta/recipes-support/gnupg/gnupg_2.2.13.bb:do_patch)
+NOTE: recipe gnupg-2.2.13-r0: task do_patch: Started
+NOTE: recipe duplicity-0.7.18.2-r0: task do_debian_patch: Succeeded
+NOTE: Running task 973 of 1050 (/home/deby/poky/meta-debian/recipes-debian/duplicity/duplicity_debian.bb:do_patch)
+NOTE: recipe duplicity-0.7.18.2-r0: task do_patch: Started
+NOTE: recipe duplicity-0.7.18.2-r0: task do_patch: Succeeded
+NOTE: Running task 974 of 1050 (/home/deby/poky/meta/recipes-support/pinentry/pinentry_1.1.0.bb:do_unpack)
+NOTE: recipe libassuan-2.5.3-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 975 of 1050 (/home/deby/poky/meta-debian/recipes-debian/duplicity/duplicity_debian.bb:do_populate_lic)
+NOTE: recipe pinentry-1.1.0-r0: task do_unpack: Started
+NOTE: recipe gnupg-2.2.13-r0: task do_patch: Succeeded
+NOTE: recipe duplicity-0.7.18.2-r0: task do_populate_lic: Started
+NOTE: recipe librsync-0.9.7-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: recipe libksba-1.3.5-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: recipe libassuan-2.5.3-r0: task do_patch: Succeeded
+NOTE: Running task 976 of 1050 (/home/deby/poky/meta/recipes-support/libassuan/libassuan_2.5.3.bb:do_configure)
+NOTE: recipe libksba-1.3.5-r0: task do_patch: Succeeded
+NOTE: Running task 977 of 1050 (/home/deby/poky/meta/recipes-support/libksba/libksba_1.3.5.bb:do_configure)
+NOTE: recipe npth-1.6-r0: task do_patch: Succeeded
+NOTE: recipe npth-1.6-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 978 of 1050 (/home/deby/poky/meta/recipes-support/npth/npth_1.6.bb:do_configure)
+NOTE: recipe librsync-0.9.7-r0: task do_debian_patch: Succeeded
+NOTE: recipe libassuan-2.5.3-r0: task do_configure: Started
+NOTE: Running task 979 of 1050 (/home/deby/poky/meta-debian/recipes-debian/librsync/librsync_debian.bb:do_patch)
+NOTE: recipe pinentry-1.1.0-r0: task do_unpack: Succeeded
+NOTE: Running task 980 of 1050 (/home/deby/poky/meta/recipes-support/pinentry/pinentry_1.1.0.bb:do_patch)
+NOTE: recipe duplicity-0.7.18.2-r0: task do_populate_lic: Succeeded
+NOTE: recipe librsync-0.9.7-r0: task do_patch: Started
+NOTE: recipe pinentry-1.1.0-r0: task do_patch: Started
+NOTE: recipe libksba-1.3.5-r0: task do_configure: Started
+NOTE: recipe npth-1.6-r0: task do_configure: Started
+NOTE: recipe librsync-0.9.7-r0: task do_patch: Succeeded
+NOTE: Running task 981 of 1050 (/home/deby/poky/meta-debian/recipes-debian/librsync/librsync_debian.bb:do_configure)
+NOTE: recipe librsync-0.9.7-r0: task do_configure: Started
+NOTE: recipe pinentry-1.1.0-r0: task do_patch: Succeeded
+NOTE: recipe python-fasteners-0.12.0-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: recipe python-six-1.12.0-r0: task do_debian_patch: Succeeded
+NOTE: Running task 982 of 1050 (/home/deby/poky/meta-debian/recipes-debian/python/python-six_debian.bb:do_patch)
+NOTE: recipe python-monotonic-1.1-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: recipe python-monotonic-1.1-r0: task do_debian_patch: Succeeded
+NOTE: Running task 983 of 1050 (/home/deby/poky/meta-debian/recipes-debian/python/python-monotonic_debian.bb:do_patch)
+NOTE: recipe python-six-1.12.0-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: recipe python-fasteners-0.12.0-r0: task do_debian_patch: Succeeded
+NOTE: Running task 984 of 1050 (/home/deby/poky/meta-debian/recipes-debian/python/python-fasteners_debian.bb:do_patch)
+NOTE: recipe python-six-1.12.0-r0: task do_patch: Started
+NOTE: recipe python-monotonic-1.1-r0: task do_patch: Started
+NOTE: recipe python-six-1.12.0-r0: task do_patch: Succeeded
+NOTE: Running task 985 of 1050 (/home/deby/poky/meta-debian/recipes-debian/python/python-six_debian.bb:do_configure)
+NOTE: recipe python-fasteners-0.12.0-r0: task do_patch: Started
+NOTE: recipe python-six-1.12.0-r0: task do_configure: Started
+NOTE: recipe python-fasteners-0.12.0-r0: task do_patch: Succeeded
+NOTE: Running task 986 of 1050 (/home/deby/poky/meta-debian/recipes-debian/python/python-fasteners_debian.bb:do_configure)
+NOTE: recipe python-monotonic-1.1-r0: task do_patch: Succeeded
+NOTE: Running task 987 of 1050 (/home/deby/poky/meta-debian/recipes-debian/python/python-monotonic_debian.bb:do_configure)
+NOTE: recipe python-monotonic-1.1-r0: task do_configure: Started
+NOTE: recipe python-fasteners-0.12.0-r0: task do_configure: Started
+NOTE: recipe python-fasteners-0.12.0-r0: task do_configure: Succeeded
+NOTE: Running task 988 of 1050 (/home/deby/poky/meta-debian/recipes-debian/python/python-fasteners_debian.bb:do_compile)
+NOTE: recipe python-six-1.12.0-r0: task do_configure: Succeeded
+NOTE: Running task 989 of 1050 (/home/deby/poky/meta-debian/recipes-debian/python/python-six_debian.bb:do_compile)
+NOTE: recipe python-fasteners-0.12.0-r0: task do_compile: Started
+NOTE: recipe python-monotonic-1.1-r0: task do_configure: Succeeded
+NOTE: Running task 990 of 1050 (/home/deby/poky/meta-debian/recipes-debian/python/python-monotonic_debian.bb:do_compile)
+NOTE: recipe python-six-1.12.0-r0: task do_compile: Started
+NOTE: recipe python-monotonic-1.1-r0: task do_compile: Started
+NOTE: recipe python-monotonic-1.1-r0: task do_compile: Succeeded
+NOTE: Running task 991 of 1050 (/home/deby/poky/meta-debian/recipes-debian/python/python-monotonic_debian.bb:do_install)
+NOTE: recipe python-fasteners-0.12.0-r0: task do_compile: Succeeded
+NOTE: recipe python-six-1.12.0-r0: task do_compile: Succeeded
+NOTE: Running task 992 of 1050 (/home/deby/poky/meta-debian/recipes-debian/python/python-six_debian.bb:do_install)
+NOTE: Running task 993 of 1050 (/home/deby/poky/meta-debian/recipes-debian/python/python-fasteners_debian.bb:do_install)
+NOTE: recipe python-monotonic-1.1-r0: task do_install: Started
+NOTE: recipe python-six-1.12.0-r0: task do_install: Started
+NOTE: recipe python-fasteners-0.12.0-r0: task do_install: Started
+NOTE: recipe python-fasteners-0.12.0-r0: task do_install: Succeeded
+NOTE: Running task 994 of 1050 (/home/deby/poky/meta-debian/recipes-debian/python/python-fasteners_debian.bb:do_package)
+NOTE: recipe python-monotonic-1.1-r0: task do_install: Succeeded
+NOTE: Running task 995 of 1050 (/home/deby/poky/meta-debian/recipes-debian/python/python-monotonic_debian.bb:do_package)
+NOTE: recipe python-six-1.12.0-r0: task do_install: Succeeded
+NOTE: Running task 996 of 1050 (/home/deby/poky/meta-debian/recipes-debian/python/python-six_debian.bb:do_package)
+NOTE: recipe python-monotonic-1.1-r0: task do_package: Started
+NOTE: recipe python-fasteners-0.12.0-r0: task do_package: Started
+NOTE: recipe python-six-1.12.0-r0: task do_package: Started
+NOTE: recipe libksba-1.3.5-r0: task do_configure: Succeeded
+NOTE: Running task 997 of 1050 (/home/deby/poky/meta/recipes-support/libksba/libksba_1.3.5.bb:do_compile)
+NOTE: recipe libksba-1.3.5-r0: task do_compile: Started
+NOTE: recipe python-six-1.12.0-r0: task do_package: Succeeded
+NOTE: Running task 998 of 1050 (/home/deby/poky/meta-debian/recipes-debian/python/python-six_debian.bb:do_packagedata)
+NOTE: recipe python-six-1.12.0-r0: task do_packagedata: Started
+NOTE: recipe python-fasteners-0.12.0-r0: task do_package: Succeeded
+NOTE: Running task 999 of 1050 (/home/deby/poky/meta-debian/recipes-debian/python/python-fasteners_debian.bb:do_packagedata)
+NOTE: recipe python-fasteners-0.12.0-r0: task do_packagedata: Started
+NOTE: recipe python-monotonic-1.1-r0: task do_package: Succeeded
+NOTE: Running task 1000 of 1050 (/home/deby/poky/meta-debian/recipes-debian/python/python-monotonic_debian.bb:do_packagedata)
+NOTE: recipe python-monotonic-1.1-r0: task do_packagedata: Started
+NOTE: recipe python-six-1.12.0-r0: task do_packagedata: Succeeded
+NOTE: Running task 1001 of 1050 (/home/deby/poky/meta-debian/recipes-debian/python/python-six_debian.bb:do_package_write_deb)
+NOTE: recipe python-fasteners-0.12.0-r0: task do_packagedata: Succeeded
+NOTE: recipe python-monotonic-1.1-r0: task do_packagedata: Succeeded
+NOTE: Running task 1002 of 1050 (/home/deby/poky/meta-debian/recipes-debian/python/python-fasteners_debian.bb:do_package_write_deb)
+NOTE: recipe python-six-1.12.0-r0: task do_package_write_deb: Started
+NOTE: Running task 1003 of 1050 (/home/deby/poky/meta-debian/recipes-debian/python/python-monotonic_debian.bb:do_package_write_deb)
+NOTE: recipe python-fasteners-0.12.0-r0: task do_package_write_deb: Started
+NOTE: recipe python-monotonic-1.1-r0: task do_package_write_deb: Started
+NOTE: recipe python-six-1.12.0-r0: task do_package_write_deb: Succeeded
+NOTE: recipe python-fasteners-0.12.0-r0: task do_package_write_deb: Succeeded
+NOTE: recipe python-monotonic-1.1-r0: task do_package_write_deb: Succeeded
+NOTE: recipe libksba-1.3.5-r0: task do_compile: Succeeded
+NOTE: Running task 1004 of 1050 (/home/deby/poky/meta/recipes-support/libksba/libksba_1.3.5.bb:do_install)
+NOTE: recipe npth-1.6-r0: task do_configure: Succeeded
+NOTE: Running task 1005 of 1050 (/home/deby/poky/meta/recipes-support/npth/npth_1.6.bb:do_compile)
+NOTE: recipe libksba-1.3.5-r0: task do_install: Started
+NOTE: recipe npth-1.6-r0: task do_compile: Started
+NOTE: recipe libksba-1.3.5-r0: task do_install: Succeeded
+NOTE: Running task 1006 of 1050 (/home/deby/poky/meta/recipes-support/libksba/libksba_1.3.5.bb:do_package)
+NOTE: Running task 1007 of 1050 (/home/deby/poky/meta/recipes-support/libksba/libksba_1.3.5.bb:do_populate_sysroot)
+NOTE: recipe libksba-1.3.5-r0: task do_populate_sysroot: Started
+NOTE: recipe libksba-1.3.5-r0: task do_package: Started
+NOTE: recipe libksba-1.3.5-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe npth-1.6-r0: task do_compile: Succeeded
+NOTE: Running task 1008 of 1050 (/home/deby/poky/meta/recipes-support/npth/npth_1.6.bb:do_install)
+NOTE: recipe npth-1.6-r0: task do_install: Started
+NOTE: recipe npth-1.6-r0: task do_install: Succeeded
+NOTE: Running task 1009 of 1050 (/home/deby/poky/meta/recipes-support/npth/npth_1.6.bb:do_package)
+NOTE: Running task 1010 of 1050 (/home/deby/poky/meta/recipes-support/npth/npth_1.6.bb:do_populate_sysroot)
+NOTE: recipe npth-1.6-r0: task do_populate_sysroot: Started
+NOTE: recipe npth-1.6-r0: task do_package: Started
+NOTE: recipe npth-1.6-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe libassuan-2.5.3-r0: task do_configure: Succeeded
+NOTE: Running task 1011 of 1050 (/home/deby/poky/meta/recipes-support/libassuan/libassuan_2.5.3.bb:do_compile)
+NOTE: recipe libassuan-2.5.3-r0: task do_compile: Started
+NOTE: recipe librsync-0.9.7-r0: task do_configure: Succeeded
+NOTE: Running task 1012 of 1050 (/home/deby/poky/meta-debian/recipes-debian/librsync/librsync_debian.bb:do_compile)
+NOTE: recipe librsync-0.9.7-r0: task do_compile: Started
+NOTE: recipe librsync-0.9.7-r0: task do_compile: Succeeded
+NOTE: Running task 1013 of 1050 (/home/deby/poky/meta-debian/recipes-debian/librsync/librsync_debian.bb:do_install)
+NOTE: recipe librsync-0.9.7-r0: task do_install: Started
+NOTE: recipe libassuan-2.5.3-r0: task do_compile: Succeeded
+NOTE: Running task 1014 of 1050 (/home/deby/poky/meta/recipes-support/libassuan/libassuan_2.5.3.bb:do_install)
+NOTE: recipe libassuan-2.5.3-r0: task do_install: Started
+NOTE: recipe librsync-0.9.7-r0: task do_install: Succeeded
+NOTE: Running task 1015 of 1050 (/home/deby/poky/meta-debian/recipes-debian/librsync/librsync_debian.bb:do_package)
+NOTE: Running task 1016 of 1050 (/home/deby/poky/meta-debian/recipes-debian/librsync/librsync_debian.bb:do_populate_sysroot)
+NOTE: recipe librsync-0.9.7-r0: task do_populate_sysroot: Started
+NOTE: recipe librsync-0.9.7-r0: task do_package: Started
+NOTE: recipe librsync-0.9.7-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 1017 of 1050 (/home/deby/poky/meta-debian/recipes-debian/duplicity/duplicity_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe duplicity-0.7.18.2-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe libassuan-2.5.3-r0: task do_install: Succeeded
+NOTE: Running task 1018 of 1050 (/home/deby/poky/meta/recipes-support/libassuan/libassuan_2.5.3.bb:do_package)
+NOTE: Running task 1019 of 1050 (/home/deby/poky/meta/recipes-support/libassuan/libassuan_2.5.3.bb:do_populate_sysroot)
+NOTE: recipe libassuan-2.5.3-r0: task do_populate_sysroot: Started
+NOTE: recipe libassuan-2.5.3-r0: task do_package: Started
+NOTE: recipe libassuan-2.5.3-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 1020 of 1050 (/home/deby/poky/meta/recipes-support/gnupg/gnupg_2.2.13.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 1021 of 1050 (/home/deby/poky/meta/recipes-support/pinentry/pinentry_1.1.0.bb:do_prepare_recipe_sysroot)
+NOTE: recipe pinentry-1.1.0-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe gnupg-2.2.13-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe duplicity-0.7.18.2-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 1022 of 1050 (/home/deby/poky/meta-debian/recipes-debian/duplicity/duplicity_debian.bb:do_configure)
+NOTE: recipe duplicity-0.7.18.2-r0: task do_configure: Started
+NOTE: recipe duplicity-0.7.18.2-r0: task do_configure: Succeeded
+NOTE: Running task 1023 of 1050 (/home/deby/poky/meta-debian/recipes-debian/duplicity/duplicity_debian.bb:do_compile)
+NOTE: recipe duplicity-0.7.18.2-r0: task do_compile: Started
+NOTE: recipe pinentry-1.1.0-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 1024 of 1050 (/home/deby/poky/meta/recipes-support/pinentry/pinentry_1.1.0.bb:do_configure)
+NOTE: recipe pinentry-1.1.0-r0: task do_configure: Started
+NOTE: recipe npth-1.6-r0: task do_package: Succeeded
+NOTE: Running task 1025 of 1050 (/home/deby/poky/meta/recipes-support/npth/npth_1.6.bb:do_packagedata)
+NOTE: recipe gnupg-2.2.13-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 1026 of 1050 (/home/deby/poky/meta/recipes-support/gnupg/gnupg_2.2.13.bb:do_configure)
+NOTE: recipe npth-1.6-r0: task do_packagedata: Started
+NOTE: recipe gnupg-2.2.13-r0: task do_configure: Started
+NOTE: recipe npth-1.6-r0: task do_packagedata: Succeeded
+NOTE: Running task 1027 of 1050 (/home/deby/poky/meta/recipes-support/npth/npth_1.6.bb:do_package_write_deb)
+NOTE: recipe npth-1.6-r0: task do_package_write_deb: Started
+NOTE: recipe duplicity-0.7.18.2-r0: task do_compile: Succeeded
+NOTE: Running task 1028 of 1050 (/home/deby/poky/meta-debian/recipes-debian/duplicity/duplicity_debian.bb:do_install)
+NOTE: recipe libksba-1.3.5-r0: task do_package: Succeeded
+NOTE: Running task 1029 of 1050 (/home/deby/poky/meta/recipes-support/libksba/libksba_1.3.5.bb:do_packagedata)
+NOTE: recipe duplicity-0.7.18.2-r0: task do_install: Started
+NOTE: recipe libksba-1.3.5-r0: task do_packagedata: Started
+NOTE: recipe libksba-1.3.5-r0: task do_packagedata: Succeeded
+NOTE: Running task 1030 of 1050 (/home/deby/poky/meta/recipes-support/libksba/libksba_1.3.5.bb:do_package_write_deb)
+NOTE: recipe npth-1.6-r0: task do_package_write_deb: Succeeded
+NOTE: recipe libksba-1.3.5-r0: task do_package_write_deb: Started
+NOTE: recipe libksba-1.3.5-r0: task do_package_write_deb: Succeeded
+NOTE: recipe duplicity-0.7.18.2-r0: task do_install: Succeeded
+NOTE: Running task 1031 of 1050 (/home/deby/poky/meta-debian/recipes-debian/duplicity/duplicity_debian.bb:do_populate_sysroot)
+NOTE: recipe duplicity-0.7.18.2-r0: task do_populate_sysroot: Started
+NOTE: recipe librsync-0.9.7-r0: task do_package: Succeeded
+NOTE: Running task 1032 of 1050 (/home/deby/poky/meta-debian/recipes-debian/librsync/librsync_debian.bb:do_packagedata)
+NOTE: recipe libassuan-2.5.3-r0: task do_package: Succeeded
+NOTE: Running task 1033 of 1050 (/home/deby/poky/meta/recipes-support/libassuan/libassuan_2.5.3.bb:do_packagedata)
+NOTE: recipe librsync-0.9.7-r0: task do_packagedata: Started
+NOTE: recipe libassuan-2.5.3-r0: task do_packagedata: Started
+NOTE: recipe duplicity-0.7.18.2-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe librsync-0.9.7-r0: task do_packagedata: Succeeded
+NOTE: Running task 1034 of 1050 (/home/deby/poky/meta-debian/recipes-debian/duplicity/duplicity_debian.bb:do_package)
+NOTE: Running task 1035 of 1050 (/home/deby/poky/meta-debian/recipes-debian/librsync/librsync_debian.bb:do_package_write_deb)
+NOTE: recipe libassuan-2.5.3-r0: task do_packagedata: Succeeded
+NOTE: recipe duplicity-0.7.18.2-r0: task do_package: Started
+NOTE: Running task 1036 of 1050 (/home/deby/poky/meta/recipes-support/libassuan/libassuan_2.5.3.bb:do_package_write_deb)
+NOTE: recipe librsync-0.9.7-r0: task do_package_write_deb: Started
+NOTE: recipe libassuan-2.5.3-r0: task do_package_write_deb: Started
+NOTE: recipe librsync-0.9.7-r0: task do_package_write_deb: Succeeded
+NOTE: recipe libassuan-2.5.3-r0: task do_package_write_deb: Succeeded
+NOTE: recipe duplicity-0.7.18.2-r0: task do_package: Succeeded
+NOTE: Running task 1037 of 1050 (/home/deby/poky/meta-debian/recipes-debian/duplicity/duplicity_debian.bb:do_packagedata)
+NOTE: recipe duplicity-0.7.18.2-r0: task do_packagedata: Started
+NOTE: recipe duplicity-0.7.18.2-r0: task do_packagedata: Succeeded
+NOTE: recipe pinentry-1.1.0-r0: task do_configure: Succeeded
+NOTE: Running task 1038 of 1050 (/home/deby/poky/meta/recipes-support/pinentry/pinentry_1.1.0.bb:do_compile)
+NOTE: recipe pinentry-1.1.0-r0: task do_compile: Started
+NOTE: recipe pinentry-1.1.0-r0: task do_compile: Succeeded
+NOTE: Running task 1039 of 1050 (/home/deby/poky/meta/recipes-support/pinentry/pinentry_1.1.0.bb:do_install)
+NOTE: recipe pinentry-1.1.0-r0: task do_install: Started
+NOTE: recipe pinentry-1.1.0-r0: task do_install: Succeeded
+NOTE: Running task 1040 of 1050 (/home/deby/poky/meta/recipes-support/pinentry/pinentry_1.1.0.bb:do_package)
+NOTE: recipe pinentry-1.1.0-r0: task do_package: Started
+NOTE: recipe pinentry-1.1.0-r0: task do_package: Succeeded
+NOTE: Running task 1041 of 1050 (/home/deby/poky/meta/recipes-support/pinentry/pinentry_1.1.0.bb:do_packagedata)
+NOTE: recipe pinentry-1.1.0-r0: task do_packagedata: Started
+NOTE: recipe pinentry-1.1.0-r0: task do_packagedata: Succeeded
+NOTE: Running task 1042 of 1050 (/home/deby/poky/meta/recipes-support/pinentry/pinentry_1.1.0.bb:do_package_write_deb)
+NOTE: recipe pinentry-1.1.0-r0: task do_package_write_deb: Started
+NOTE: recipe pinentry-1.1.0-r0: task do_package_write_deb: Succeeded
+NOTE: recipe gnupg-2.2.13-r0: task do_configure: Succeeded
+NOTE: Running task 1043 of 1050 (/home/deby/poky/meta/recipes-support/gnupg/gnupg_2.2.13.bb:do_compile)
+NOTE: recipe gnupg-2.2.13-r0: task do_compile: Started
+NOTE: recipe gnupg-2.2.13-r0: task do_compile: Succeeded
+NOTE: Running task 1044 of 1050 (/home/deby/poky/meta/recipes-support/gnupg/gnupg_2.2.13.bb:do_install)
+NOTE: recipe gnupg-2.2.13-r0: task do_install: Started
+NOTE: recipe gnupg-2.2.13-r0: task do_install: Succeeded
+NOTE: Running task 1045 of 1050 (/home/deby/poky/meta/recipes-support/gnupg/gnupg_2.2.13.bb:do_package)
+NOTE: recipe gnupg-2.2.13-r0: task do_package: Started
+NOTE: recipe gnupg-2.2.13-r0: task do_package: Succeeded
+NOTE: Running task 1046 of 1050 (/home/deby/poky/meta/recipes-support/gnupg/gnupg_2.2.13.bb:do_packagedata)
+NOTE: recipe gnupg-2.2.13-r0: task do_packagedata: Started
+NOTE: recipe gnupg-2.2.13-r0: task do_packagedata: Succeeded
+NOTE: Running task 1047 of 1050 (/home/deby/poky/meta/recipes-support/gnupg/gnupg_2.2.13.bb:do_package_write_deb)
+NOTE: Running task 1048 of 1050 (/home/deby/poky/meta-debian/recipes-debian/duplicity/duplicity_debian.bb:do_package_write_deb)
+NOTE: Running task 1049 of 1050 (/home/deby/poky/meta-debian/recipes-debian/duplicity/duplicity_debian.bb:do_package_qa)
+NOTE: recipe gnupg-2.2.13-r0: task do_package_write_deb: Started
+NOTE: recipe duplicity-0.7.18.2-r0: task do_package_write_deb: Started
+NOTE: recipe duplicity-0.7.18.2-r0: task do_package_qa: Started
+NOTE: recipe duplicity-0.7.18.2-r0: task do_package_qa: Succeeded
+NOTE: recipe duplicity-0.7.18.2-r0: task do_package_write_deb: Succeeded
+NOTE: recipe gnupg-2.2.13-r0: task do_package_write_deb: Succeeded
+NOTE: Running noexec task 1050 of 1050 (/home/deby/poky/meta-debian/recipes-debian/duplicity/duplicity_debian.bb:do_build)
+NOTE: Tasks Summary: Attempted 1050 tasks of which 932 didn't need to be rerun and all succeeded.
+
+Summary: There was 1 WARNING message shown.

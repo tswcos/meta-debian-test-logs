@@ -1,0 +1,12 @@
+Loading cache...done.
+Loaded 1738 entries from dependency cache.
+Parsing recipes...WARNING: /home/deby/poky/meta/recipes-devtools/gdb/gdb_8.3.1.bb: Unable to get checksum for gdb SRC_URI entry 0001-gdbserver-ctrl-c-handling.patch: file could not be found
+WARNING: /home/deby/poky/meta/recipes-devtools/gdb/gdb-cross_8.3.1.bb: Unable to get checksum for gdb-cross-arm SRC_URI entry 0001-gdbserver-ctrl-c-handling.patch: file could not be found
+WARNING: /home/deby/poky/meta/recipes-devtools/gdb/gdb-cross-canadian_8.3.1.bb: Unable to get checksum for gdb-cross-canadian-arm SRC_URI entry 0001-gdbserver-ctrl-c-handling.patch: file could not be found
+done.
+Parsing of 1018 .bb files complete (1008 cached, 10 parsed). 1758 targets, 229 skipped, 0 masked, 0 errors.
+WARNING: No bb files matched BBFILE_PATTERN_debian-raspberrypi '^/home/deby/poky/meta-debian/tests/../../meta-debian/bsp/meta-raspberrypi/'
+ERROR: Nothing PROVIDES 'prelude-manager'
+
+Summary: There were 4 WARNING messages shown.
+Summary: There was 1 ERROR message shown, returning a non-zero exit code.

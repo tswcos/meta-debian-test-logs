@@ -1,0 +1,269 @@
+Loading cache...done.
+Loaded 1723 entries from dependency cache.
+NOTE: Resolving any missing task queue dependencies
+
+Build Configuration:
+BB_VERSION           = "1.42.0"
+BUILD_SYS            = "x86_64-linux"
+NATIVELSBSTRING      = "universal"
+TARGET_SYS           = "aarch64-deby-linux"
+MACHINE              = "qemuarm64"
+DISTRO               = "deby-tiny"
+DISTRO_VERSION       = "10.0"
+TUNE_FEATURES        = "aarch64 armv8a crc"
+TARGET_FPU           = ""
+meta                 
+meta-poky            = "warrior:79a850a10a4b88a6d20d607b322542f947874323"
+meta-debian          = "warrior:79407869d1e56b8c7cb9ac0a9a48a4923ffa202b"
+
+Initialising tasks...done.
+Sstate summary: Wanted 22 Found 0 Missed 22 Current 225 (0% match, 91% complete)
+NOTE: Executing SetScene Tasks
+NOTE: Executing RunQueue Tasks
+NOTE: Running task 733 of 1219 (/home/deby/poky/meta-debian/recipes-debian/selinux/libsepol_debian.bb:do_fetch)
+NOTE: Running task 814 of 1219 (/home/deby/poky/meta-debian/recipes-debian/e2fsprogs/e2fsprogs_debian.bb:do_fetch)
+NOTE: Running task 815 of 1219 (/home/deby/poky/meta-debian/recipes-debian/libmhash/libmhash_debian.bb:do_fetch)
+NOTE: Running task 817 of 1219 (/home/deby/poky/meta-debian/recipes-debian/selinux/libselinux_debian.bb:do_fetch)
+NOTE: Running task 943 of 1219 (/home/deby/poky/meta-debian/recipes-debian/aide/aide_debian.bb:do_fetch)
+NOTE: recipe libsepol-2.8-r0: task do_fetch: Started
+NOTE: recipe libselinux-2.8-r0: task do_fetch: Started
+NOTE: recipe e2fsprogs-1.44.5-r0: task do_fetch: Started
+NOTE: recipe libmhash-0.9.9.9-r0: task do_fetch: Started
+NOTE: recipe libselinux-2.8-r0: task do_fetch: Succeeded
+NOTE: Running task 1157 of 1219 (/home/deby/poky/meta-debian/recipes-debian/selinux/libselinux_debian.bb:do_unpack)
+NOTE: recipe aide-0.16.1-r0: task do_fetch: Started
+NOTE: recipe libselinux-2.8-r0: task do_unpack: Started
+NOTE: recipe libmhash-0.9.9.9-r0: task do_fetch: Succeeded
+NOTE: Running task 1158 of 1219 (/home/deby/poky/meta-debian/recipes-debian/libmhash/libmhash_debian.bb:do_unpack)
+NOTE: Running task 1159 of 1219 (/home/deby/poky/meta-debian/recipes-debian/libmhash/libmhash_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe aide-0.16.1-r0: task do_fetch: Succeeded
+NOTE: Running task 1160 of 1219 (/home/deby/poky/meta-debian/recipes-debian/aide/aide_debian.bb:do_unpack)
+NOTE: recipe aide-0.16.1-r0: task do_unpack: Started
+NOTE: recipe e2fsprogs-1.44.5-r0: task do_fetch: Succeeded
+NOTE: Running task 1161 of 1219 (/home/deby/poky/meta-debian/recipes-debian/e2fsprogs/e2fsprogs_debian.bb:do_unpack)
+NOTE: Running task 1162 of 1219 (/home/deby/poky/meta-debian/recipes-debian/e2fsprogs/e2fsprogs_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe libmhash-0.9.9.9-r0: task do_unpack: Started
+NOTE: recipe libmhash-0.9.9.9-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe e2fsprogs-1.44.5-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe e2fsprogs-1.44.5-r0: task do_unpack: Started
+NOTE: recipe libsepol-2.8-r0: task do_fetch: Succeeded
+NOTE: Running task 1163 of 1219 (/home/deby/poky/meta-debian/recipes-debian/selinux/libsepol_debian.bb:do_unpack)
+NOTE: Running task 1164 of 1219 (/home/deby/poky/meta-debian/recipes-debian/selinux/libsepol_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe libsepol-2.8-r0: task do_unpack: Started
+NOTE: recipe libsepol-2.8-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe libselinux-2.8-r0: task do_unpack: Succeeded
+NOTE: Running task 1165 of 1219 (/home/deby/poky/meta-debian/recipes-debian/selinux/libselinux_debian.bb:do_debian_unpack_extra)
+NOTE: recipe aide-0.16.1-r0: task do_unpack: Succeeded
+NOTE: Running task 1166 of 1219 (/home/deby/poky/meta-debian/recipes-debian/aide/aide_debian.bb:do_debian_unpack_extra)
+NOTE: recipe libselinux-2.8-r0: task do_debian_unpack_extra: Started
+NOTE: recipe libselinux-2.8-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 1167 of 1219 (/home/deby/poky/meta-debian/recipes-debian/selinux/libselinux_debian.bb:do_debian_patch)
+NOTE: recipe aide-0.16.1-r0: task do_debian_unpack_extra: Started
+NOTE: recipe aide-0.16.1-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 1168 of 1219 (/home/deby/poky/meta-debian/recipes-debian/aide/aide_debian.bb:do_debian_patch)
+NOTE: recipe libmhash-0.9.9.9-r0: task do_unpack: Succeeded
+NOTE: Running task 1169 of 1219 (/home/deby/poky/meta-debian/recipes-debian/libmhash/libmhash_debian.bb:do_debian_unpack_extra)
+NOTE: recipe libselinux-2.8-r0: task do_debian_patch: Started
+NOTE: recipe aide-0.16.1-r0: task do_debian_patch: Started
+NOTE: recipe libmhash-0.9.9.9-r0: task do_debian_unpack_extra: Started
+NOTE: recipe libmhash-0.9.9.9-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 1170 of 1219 (/home/deby/poky/meta-debian/recipes-debian/libmhash/libmhash_debian.bb:do_debian_patch)
+NOTE: recipe libmhash-0.9.9.9-r0: task do_debian_patch: Started
+NOTE: recipe libselinux-2.8-r0: task do_debian_patch: Succeeded
+NOTE: Running task 1171 of 1219 (/home/deby/poky/meta-debian/recipes-debian/selinux/libselinux_debian.bb:do_patch)
+NOTE: recipe libmhash-0.9.9.9-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: recipe libsepol-2.8-r0: task do_unpack: Succeeded
+NOTE: Running task 1172 of 1219 (/home/deby/poky/meta-debian/recipes-debian/selinux/libsepol_debian.bb:do_debian_unpack_extra)
+NOTE: recipe libselinux-2.8-r0: task do_patch: Started
+NOTE: recipe libsepol-2.8-r0: task do_debian_unpack_extra: Started
+NOTE: recipe aide-0.16.1-r0: task do_debian_patch: Succeeded
+NOTE: Running task 1173 of 1219 (/home/deby/poky/meta-debian/recipes-debian/aide/aide_debian.bb:do_patch)
+NOTE: recipe libsepol-2.8-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: recipe libsepol-2.8-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 1174 of 1219 (/home/deby/poky/meta-debian/recipes-debian/selinux/libsepol_debian.bb:do_debian_patch)
+NOTE: recipe libsepol-2.8-r0: task do_debian_patch: Started
+NOTE: recipe aide-0.16.1-r0: task do_patch: Started
+NOTE: recipe libmhash-0.9.9.9-r0: task do_debian_patch: Succeeded
+NOTE: Running task 1175 of 1219 (/home/deby/poky/meta-debian/recipes-debian/libmhash/libmhash_debian.bb:do_patch)
+NOTE: recipe libsepol-2.8-r0: task do_debian_patch: Succeeded
+NOTE: Running task 1176 of 1219 (/home/deby/poky/meta-debian/recipes-debian/selinux/libsepol_debian.bb:do_patch)
+NOTE: recipe aide-0.16.1-r0: task do_patch: Succeeded
+NOTE: Running task 1177 of 1219 (/home/deby/poky/meta-debian/recipes-debian/aide/aide_debian.bb:do_populate_lic)
+NOTE: recipe libsepol-2.8-r0: task do_patch: Started
+NOTE: recipe libmhash-0.9.9.9-r0: task do_patch: Started
+NOTE: recipe aide-0.16.1-r0: task do_populate_lic: Started
+NOTE: recipe libmhash-0.9.9.9-r0: task do_patch: Succeeded
+NOTE: Running task 1178 of 1219 (/home/deby/poky/meta-debian/recipes-debian/libmhash/libmhash_debian.bb:do_configure)
+NOTE: recipe libmhash-0.9.9.9-r0: task do_configure: Started
+NOTE: recipe libsepol-2.8-r0: task do_patch: Succeeded
+NOTE: Running task 1179 of 1219 (/home/deby/poky/meta-debian/recipes-debian/selinux/libsepol_debian.bb:do_configure)
+NOTE: recipe e2fsprogs-1.44.5-r0: task do_unpack: Succeeded
+NOTE: Running task 1180 of 1219 (/home/deby/poky/meta-debian/recipes-debian/e2fsprogs/e2fsprogs_debian.bb:do_debian_unpack_extra)
+NOTE: recipe e2fsprogs-1.44.5-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: recipe aide-0.16.1-r0: task do_populate_lic: Succeeded
+NOTE: recipe libselinux-2.8-r0: task do_patch: Succeeded
+NOTE: recipe libsepol-2.8-r0: task do_configure: Started
+NOTE: recipe libsepol-2.8-r0: task do_configure: Succeeded
+NOTE: Running task 1181 of 1219 (/home/deby/poky/meta-debian/recipes-debian/selinux/libsepol_debian.bb:do_compile)
+NOTE: recipe e2fsprogs-1.44.5-r0: task do_debian_unpack_extra: Started
+NOTE: recipe e2fsprogs-1.44.5-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 1182 of 1219 (/home/deby/poky/meta-debian/recipes-debian/e2fsprogs/e2fsprogs_debian.bb:do_debian_patch)
+NOTE: recipe libsepol-2.8-r0: task do_compile: Started
+NOTE: recipe e2fsprogs-1.44.5-r0: task do_debian_patch: Started
+NOTE: recipe e2fsprogs-1.44.5-r0: task do_debian_patch: Succeeded
+NOTE: Running task 1183 of 1219 (/home/deby/poky/meta-debian/recipes-debian/e2fsprogs/e2fsprogs_debian.bb:do_patch)
+NOTE: recipe e2fsprogs-1.44.5-r0: task do_patch: Started
+NOTE: recipe e2fsprogs-1.44.5-r0: task do_patch: Succeeded
+NOTE: Running task 1184 of 1219 (/home/deby/poky/meta-debian/recipes-debian/e2fsprogs/e2fsprogs_debian.bb:do_configure)
+NOTE: recipe e2fsprogs-1.44.5-r0: task do_configure: Started
+NOTE: recipe libsepol-2.8-r0: task do_compile: Succeeded
+NOTE: Running task 1185 of 1219 (/home/deby/poky/meta-debian/recipes-debian/selinux/libsepol_debian.bb:do_install)
+NOTE: recipe libsepol-2.8-r0: task do_install: Started
+NOTE: recipe libsepol-2.8-r0: task do_install: Succeeded
+NOTE: Running task 1186 of 1219 (/home/deby/poky/meta-debian/recipes-debian/selinux/libsepol_debian.bb:do_populate_sysroot)
+NOTE: Running task 1187 of 1219 (/home/deby/poky/meta-debian/recipes-debian/selinux/libsepol_debian.bb:do_package)
+NOTE: recipe libsepol-2.8-r0: task do_populate_sysroot: Started
+NOTE: recipe libsepol-2.8-r0: task do_package: Started
+NOTE: recipe libsepol-2.8-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 1188 of 1219 (/home/deby/poky/meta-debian/recipes-debian/selinux/libselinux_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe libselinux-2.8-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe libselinux-2.8-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 1189 of 1219 (/home/deby/poky/meta-debian/recipes-debian/selinux/libselinux_debian.bb:do_configure)
+NOTE: recipe libselinux-2.8-r0: task do_configure: Started
+NOTE: recipe libselinux-2.8-r0: task do_configure: Succeeded
+NOTE: Running task 1190 of 1219 (/home/deby/poky/meta-debian/recipes-debian/selinux/libselinux_debian.bb:do_compile)
+NOTE: recipe libselinux-2.8-r0: task do_compile: Started
+NOTE: recipe libselinux-2.8-r0: task do_compile: Succeeded
+NOTE: Running task 1191 of 1219 (/home/deby/poky/meta-debian/recipes-debian/selinux/libselinux_debian.bb:do_install)
+NOTE: recipe libselinux-2.8-r0: task do_install: Started
+NOTE: recipe libselinux-2.8-r0: task do_install: Succeeded
+NOTE: Running task 1192 of 1219 (/home/deby/poky/meta-debian/recipes-debian/selinux/libselinux_debian.bb:do_populate_sysroot)
+NOTE: recipe libselinux-2.8-r0: task do_populate_sysroot: Started
+NOTE: recipe libselinux-2.8-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe libmhash-0.9.9.9-r0: task do_configure: Succeeded
+NOTE: Running task 1193 of 1219 (/home/deby/poky/meta-debian/recipes-debian/libmhash/libmhash_debian.bb:do_compile)
+NOTE: recipe libmhash-0.9.9.9-r0: task do_compile: Started
+NOTE: recipe libsepol-2.8-r0: task do_package: Succeeded
+NOTE: Running task 1194 of 1219 (/home/deby/poky/meta-debian/recipes-debian/selinux/libsepol_debian.bb:do_packagedata)
+NOTE: recipe libsepol-2.8-r0: task do_packagedata: Started
+NOTE: recipe libsepol-2.8-r0: task do_packagedata: Succeeded
+NOTE: Running task 1195 of 1219 (/home/deby/poky/meta-debian/recipes-debian/selinux/libselinux_debian.bb:do_package)
+NOTE: Running task 1196 of 1219 (/home/deby/poky/meta-debian/recipes-debian/selinux/libsepol_debian.bb:do_package_write_deb)
+NOTE: recipe libsepol-2.8-r0: task do_package_write_deb: Started
+NOTE: recipe libselinux-2.8-r0: task do_package: Started
+NOTE: recipe libmhash-0.9.9.9-r0: task do_compile: Succeeded
+NOTE: Running task 1197 of 1219 (/home/deby/poky/meta-debian/recipes-debian/libmhash/libmhash_debian.bb:do_install)
+NOTE: recipe libmhash-0.9.9.9-r0: task do_install: Started
+NOTE: recipe libmhash-0.9.9.9-r0: task do_install: Succeeded
+NOTE: Running task 1198 of 1219 (/home/deby/poky/meta-debian/recipes-debian/libmhash/libmhash_debian.bb:do_package)
+NOTE: Running task 1199 of 1219 (/home/deby/poky/meta-debian/recipes-debian/libmhash/libmhash_debian.bb:do_populate_sysroot)
+NOTE: recipe libmhash-0.9.9.9-r0: task do_populate_sysroot: Started
+NOTE: recipe libmhash-0.9.9.9-r0: task do_package: Started
+NOTE: recipe libmhash-0.9.9.9-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe libsepol-2.8-r0: task do_package_write_deb: Succeeded
+NOTE: recipe libselinux-2.8-r0: task do_package: Succeeded
+NOTE: Running task 1200 of 1219 (/home/deby/poky/meta-debian/recipes-debian/selinux/libselinux_debian.bb:do_packagedata)
+NOTE: recipe libselinux-2.8-r0: task do_packagedata: Started
+NOTE: recipe libselinux-2.8-r0: task do_packagedata: Succeeded
+NOTE: Running task 1201 of 1219 (/home/deby/poky/meta-debian/recipes-debian/selinux/libselinux_debian.bb:do_package_write_deb)
+NOTE: recipe libselinux-2.8-r0: task do_package_write_deb: Started
+NOTE: recipe libselinux-2.8-r0: task do_package_write_deb: Succeeded
+NOTE: recipe libmhash-0.9.9.9-r0: task do_package: Succeeded
+NOTE: Running task 1202 of 1219 (/home/deby/poky/meta-debian/recipes-debian/libmhash/libmhash_debian.bb:do_packagedata)
+NOTE: recipe libmhash-0.9.9.9-r0: task do_packagedata: Started
+NOTE: recipe libmhash-0.9.9.9-r0: task do_packagedata: Succeeded
+NOTE: Running task 1203 of 1219 (/home/deby/poky/meta-debian/recipes-debian/libmhash/libmhash_debian.bb:do_package_write_deb)
+NOTE: recipe libmhash-0.9.9.9-r0: task do_package_write_deb: Started
+NOTE: recipe libmhash-0.9.9.9-r0: task do_package_write_deb: Succeeded
+NOTE: recipe e2fsprogs-1.44.5-r0: task do_configure: Succeeded
+NOTE: Running task 1204 of 1219 (/home/deby/poky/meta-debian/recipes-debian/e2fsprogs/e2fsprogs_debian.bb:do_compile)
+NOTE: recipe e2fsprogs-1.44.5-r0: task do_compile: Started
+NOTE: recipe e2fsprogs-1.44.5-r0: task do_compile: Succeeded
+NOTE: Running task 1205 of 1219 (/home/deby/poky/meta-debian/recipes-debian/e2fsprogs/e2fsprogs_debian.bb:do_install)
+NOTE: recipe e2fsprogs-1.44.5-r0: task do_install: Started
+NOTE: recipe e2fsprogs-1.44.5-r0: task do_install: Succeeded
+NOTE: Running task 1206 of 1219 (/home/deby/poky/meta-debian/recipes-debian/e2fsprogs/e2fsprogs_debian.bb:do_package)
+NOTE: Running task 1207 of 1219 (/home/deby/poky/meta-debian/recipes-debian/e2fsprogs/e2fsprogs_debian.bb:do_populate_sysroot)
+NOTE: recipe e2fsprogs-1.44.5-r0: task do_populate_sysroot: Started
+NOTE: recipe e2fsprogs-1.44.5-r0: task do_package: Started
+NOTE: recipe e2fsprogs-1.44.5-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 1208 of 1219 (/home/deby/poky/meta-debian/recipes-debian/aide/aide_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe aide-0.16.1-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe aide-0.16.1-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 1209 of 1219 (/home/deby/poky/meta-debian/recipes-debian/aide/aide_debian.bb:do_configure)
+NOTE: recipe aide-0.16.1-r0: task do_configure: Started
+ERROR: aide-0.16.1-r0 do_configure: Function failed: do_configure (log file is located at /home/deby/build-tiny/tmp/work/aarch64-deby-linux/aide/0.16.1-r0/temp/log.do_configure.7944)
+ERROR: Logfile of failure stored in: /home/deby/build-tiny/tmp/work/aarch64-deby-linux/aide/0.16.1-r0/temp/log.do_configure.7944
+Log data follows:
+| DEBUG: SITE files ['endian-little', 'bit-64', 'arm-common', 'arm-64', 'common-linux', 'common-glibc', 'aarch64-linux', 'common']
+| DEBUG: Executing shell function autotools_preconfigure
+| DEBUG: Shell function autotools_preconfigure finished
+| DEBUG: Executing python function autotools_aclocals
+| DEBUG: SITE files ['endian-little', 'bit-64', 'arm-common', 'arm-64', 'common-linux', 'common-glibc', 'aarch64-linux', 'common']
+| DEBUG: Python function autotools_aclocals finished
+| DEBUG: Executing shell function do_configure
+| checking build system type... x86_64-pc-linux-gnu
+| checking host system type... x86_64-pc-linux-gnu
+| checking target system type... x86_64-pc-linux-gnu
+| checking for a BSD-compatible install... /home/deby/build-tiny/tmp/hosttools/install -c
+| checking whether build environment is sane... yes
+| checking for a thread-safe mkdir -p... /home/deby/build-tiny/tmp/hosttools/mkdir -p
+| checking for gawk... gawk
+| checking whether make sets $(MAKE)... yes
+| checking whether make supports nested variables... yes
+| checking whether make supports the include directive... yes (GNU style)
+| checking for gcc... aarch64-deby-linux-gcc  -march=armv8-a+crc -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/aarch64-deby-linux/aide/0.16.1-r0/recipe-sysroot
+| checking whether the C compiler works... yes
+| checking for C compiler default output file name... a.out
+| checking for suffix of executables...
+| checking whether we are cross compiling... configure: error: in `/home/deby/build-tiny/tmp/work/aarch64-deby-linux/aide/0.16.1-r0/build/aide':
+| configure: error: cannot run C compiled programs.
+| If you meant to cross compile, use `--host'.
+| See `config.log' for more details
+| checking build system type... x86_64-pc-linux-gnu
+| checking host system type... x86_64-pc-linux-gnu
+| checking target system type... x86_64-pc-linux-gnu
+| checking for a BSD-compatible install... /home/deby/build-tiny/tmp/hosttools/install -c
+| checking whether build environment is sane... yes
+| checking for a thread-safe mkdir -p... /home/deby/build-tiny/tmp/hosttools/mkdir -p
+| checking for gawk... gawk
+| checking whether make sets $(MAKE)... yes
+| checking whether make supports nested variables... yes
+| checking whether make supports the include directive... yes (GNU style)
+| checking for gcc... aarch64-deby-linux-gcc  -march=armv8-a+crc -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/aarch64-deby-linux/aide/0.16.1-r0/recipe-sysroot
+| checking whether the C compiler works... yes
+| checking for C compiler default output file name... a.out
+| checking for suffix of executables...
+| checking whether we are cross compiling... configure: error: in `/home/deby/build-tiny/tmp/work/aarch64-deby-linux/aide/0.16.1-r0/build/aide/aide-xen':
+| configure: error: cannot run C compiled programs.
+| If you meant to cross compile, use `--host'.
+| See `config.log' for more details
+| checking build system type... x86_64-pc-linux-gnu
+| checking host system type... x86_64-pc-linux-gnu
+| checking target system type... x86_64-pc-linux-gnu
+| checking for a BSD-compatible install... /home/deby/build-tiny/tmp/hosttools/install -c
+| checking whether build environment is sane... yes
+| checking for a thread-safe mkdir -p... /home/deby/build-tiny/tmp/hosttools/mkdir -p
+| checking for gawk... gawk
+| checking whether make sets $(MAKE)... yes
+| checking whether make supports nested variables... yes
+| checking whether make supports the include directive... yes (GNU style)
+| checking for gcc... aarch64-deby-linux-gcc  -march=armv8-a+crc -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/aarch64-deby-linux/aide/0.16.1-r0/recipe-sysroot
+| checking whether the C compiler works... yes
+| checking for C compiler default output file name... a.out
+| checking for suffix of executables...
+| checking whether we are cross compiling... configure: error: in `/home/deby/build-tiny/tmp/work/aarch64-deby-linux/aide/0.16.1-r0/build/aide/aide-xen/aide-dynamic':
+| configure: error: cannot run C compiled programs.
+| If you meant to cross compile, use `--host'.
+| See `config.log' for more details
+| sed: can't read /home/deby/build-tiny/tmp/work/aarch64-deby-linux/aide/0.16.1-r0/build/*/config.h: No such file or directory
+| WARNING: exit code 2 from a shell command.
+| ERROR: Function failed: do_configure (log file is located at /home/deby/build-tiny/tmp/work/aarch64-deby-linux/aide/0.16.1-r0/temp/log.do_configure.7944)
+NOTE: recipe aide-0.16.1-r0: task do_configure: Failed
+ERROR: Task (/home/deby/poky/meta-debian/recipes-debian/aide/aide_debian.bb:do_configure) failed with exit code '1'
+NOTE: recipe e2fsprogs-1.44.5-r0: task do_package: Succeeded
+NOTE: Tasks Summary: Attempted 1209 tasks of which 1151 didn't need to be rerun and 1 failed.
+
+Summary: 1 task failed:
+  /home/deby/poky/meta-debian/recipes-debian/aide/aide_debian.bb:do_configure
+Summary: There was 1 ERROR message shown, returning a non-zero exit code.

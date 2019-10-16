@@ -1,0 +1,69 @@
+Loading cache...done.
+Loaded 1708 entries from dependency cache.
+NOTE: Resolving any missing task queue dependencies
+
+Build Configuration:
+BB_VERSION           = "1.42.0"
+BUILD_SYS            = "x86_64-linux"
+NATIVELSBSTRING      = "universal"
+TARGET_SYS           = "powerpc-deby-linux"
+MACHINE              = "qemuppc"
+DISTRO               = "deby"
+DISTRO_VERSION       = "10.0"
+TUNE_FEATURES        = "m32 fpu-hard ppc7400 altivec"
+TARGET_FPU           = ""
+meta                 
+meta-poky            = "warrior:79a850a10a4b88a6d20d607b322542f947874323"
+meta-debian          = "warrior:79407869d1e56b8c7cb9ac0a9a48a4923ffa202b"
+
+Initialising tasks...done.
+Sstate summary: Wanted 6 Found 0 Missed 6 Current 419 (0% match, 98% complete)
+NOTE: Executing SetScene Tasks
+NOTE: Executing RunQueue Tasks
+NOTE: Running task 1314 of 1960 (/home/deby/poky/meta-debian/recipes-debian/sudo/sudo_debian.bb:do_fetch)
+NOTE: recipe sudo-1.8.27-r0: task do_fetch: Started
+NOTE: recipe sudo-1.8.27-r0: task do_fetch: Succeeded
+NOTE: Running task 1946 of 1960 (/home/deby/poky/meta-debian/recipes-debian/sudo/sudo_debian.bb:do_unpack)
+NOTE: Running task 1947 of 1960 (/home/deby/poky/meta-debian/recipes-debian/sudo/sudo_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe sudo-1.8.27-r0: task do_unpack: Started
+NOTE: recipe sudo-1.8.27-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe sudo-1.8.27-r0: task do_unpack: Succeeded
+NOTE: Running task 1948 of 1960 (/home/deby/poky/meta-debian/recipes-debian/sudo/sudo_debian.bb:do_debian_unpack_extra)
+NOTE: recipe sudo-1.8.27-r0: task do_debian_unpack_extra: Started
+NOTE: recipe sudo-1.8.27-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 1949 of 1960 (/home/deby/poky/meta-debian/recipes-debian/sudo/sudo_debian.bb:do_debian_patch)
+NOTE: recipe sudo-1.8.27-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: recipe sudo-1.8.27-r0: task do_debian_patch: Started
+NOTE: recipe sudo-1.8.27-r0: task do_debian_patch: Succeeded
+NOTE: Running task 1950 of 1960 (/home/deby/poky/meta-debian/recipes-debian/sudo/sudo_debian.bb:do_patch)
+NOTE: recipe sudo-1.8.27-r0: task do_patch: Started
+NOTE: recipe sudo-1.8.27-r0: task do_patch: Succeeded
+NOTE: Running task 1951 of 1960 (/home/deby/poky/meta-debian/recipes-debian/sudo/sudo_debian.bb:do_configure)
+NOTE: Running task 1952 of 1960 (/home/deby/poky/meta-debian/recipes-debian/sudo/sudo_debian.bb:do_populate_lic)
+NOTE: recipe sudo-1.8.27-r0: task do_configure: Started
+NOTE: recipe sudo-1.8.27-r0: task do_populate_lic: Started
+NOTE: recipe sudo-1.8.27-r0: task do_populate_lic: Succeeded
+NOTE: recipe sudo-1.8.27-r0: task do_configure: Succeeded
+NOTE: Running task 1953 of 1960 (/home/deby/poky/meta-debian/recipes-debian/sudo/sudo_debian.bb:do_compile)
+NOTE: recipe sudo-1.8.27-r0: task do_compile: Started
+NOTE: recipe sudo-1.8.27-r0: task do_compile: Succeeded
+NOTE: Running task 1954 of 1960 (/home/deby/poky/meta-debian/recipes-debian/sudo/sudo_debian.bb:do_install)
+NOTE: recipe sudo-1.8.27-r0: task do_install: Started
+NOTE: recipe sudo-1.8.27-r0: task do_install: Succeeded
+NOTE: Running task 1955 of 1960 (/home/deby/poky/meta-debian/recipes-debian/sudo/sudo_debian.bb:do_package)
+NOTE: Running task 1956 of 1960 (/home/deby/poky/meta-debian/recipes-debian/sudo/sudo_debian.bb:do_populate_sysroot)
+NOTE: recipe sudo-1.8.27-r0: task do_package: Started
+NOTE: recipe sudo-1.8.27-r0: task do_populate_sysroot: Started
+NOTE: recipe sudo-1.8.27-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe sudo-1.8.27-r0: task do_package: Succeeded
+NOTE: Running task 1957 of 1960 (/home/deby/poky/meta-debian/recipes-debian/sudo/sudo_debian.bb:do_packagedata)
+NOTE: recipe sudo-1.8.27-r0: task do_packagedata: Started
+NOTE: recipe sudo-1.8.27-r0: task do_packagedata: Succeeded
+NOTE: Running task 1958 of 1960 (/home/deby/poky/meta-debian/recipes-debian/sudo/sudo_debian.bb:do_package_write_deb)
+NOTE: Running task 1959 of 1960 (/home/deby/poky/meta-debian/recipes-debian/sudo/sudo_debian.bb:do_package_qa)
+NOTE: recipe sudo-1.8.27-r0: task do_package_write_deb: Started
+NOTE: recipe sudo-1.8.27-r0: task do_package_qa: Started
+NOTE: recipe sudo-1.8.27-r0: task do_package_qa: Succeeded
+NOTE: recipe sudo-1.8.27-r0: task do_package_write_deb: Succeeded
+NOTE: Running noexec task 1960 of 1960 (/home/deby/poky/meta-debian/recipes-debian/sudo/sudo_debian.bb:do_build)
+NOTE: Tasks Summary: Attempted 1960 tasks of which 1944 didn't need to be rerun and all succeeded.

@@ -1,0 +1,5 @@
+Loading cache...done.
+ERROR: Nothing PROVIDES 'prelude-manager'
+Loaded 1708 entries from dependency cache.
+
+Summary: There was 1 ERROR message shown, returning a non-zero exit code.
