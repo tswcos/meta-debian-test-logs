@@ -1,5 +1,5 @@
 Loading cache...done.
-Loaded 1708 entries from dependency cache.
+Loaded 1733 entries from dependency cache.
 NOTE: Resolving any missing task queue dependencies
 
 Build Configuration:
@@ -14,59 +14,13 @@ TUNE_FEATURES        = "m32 fpu-hard ppc7400 altivec"
 TARGET_FPU           = ""
 meta                 
 meta-poky            = "warrior:79a850a10a4b88a6d20d607b322542f947874323"
-meta-debian          = "warrior:79407869d1e56b8c7cb9ac0a9a48a4923ffa202b"
+meta-debian          = "warrior:065aa7dcd28d697d2d493e1f188deb4f78253725"
 
 Initialising tasks...done.
-Sstate summary: Wanted 13 Found 0 Missed 13 Current 80 (0% match, 86% complete)
+Sstate summary: Wanted 6 Found 0 Missed 6 Current 87 (0% match, 93% complete)
 NOTE: Executing SetScene Tasks
 NOTE: Executing RunQueue Tasks
 NOTE: Running task 409 of 666 (/home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb:do_fetch)
-NOTE: Running task 567 of 666 (/home/deby/poky/meta-debian/recipes-debian/iptables/iptables_debian.bb:do_fetch)
-NOTE: Running task 621 of 666 (/home/deby/poky/meta/recipes-kernel/kmod/depmodwrapper-cross_1.0.bb:do_fetch)
-NOTE: recipe iptables-1.8.2-r0: task do_fetch: Started
-NOTE: recipe depmodwrapper-cross-1.0-r0: task do_fetch: Started
-NOTE: recipe depmodwrapper-cross-1.0-r0: task do_fetch: Succeeded
-NOTE: Running task 627 of 666 (/home/deby/poky/meta/recipes-kernel/kmod/depmodwrapper-cross_1.0.bb:do_unpack)
-NOTE: Running task 628 of 666 (/home/deby/poky/meta/recipes-kernel/kmod/depmodwrapper-cross_1.0.bb:do_prepare_recipe_sysroot)
-NOTE: recipe iptables-1.8.2-r0: task do_fetch: Succeeded
-NOTE: Running task 629 of 666 (/home/deby/poky/meta-debian/recipes-debian/iptables/iptables_debian.bb:do_unpack)
-NOTE: Running task 630 of 666 (/home/deby/poky/meta-debian/recipes-debian/iptables/iptables_debian.bb:do_prepare_recipe_sysroot)
-NOTE: recipe depmodwrapper-cross-1.0-r0: task do_unpack: Started
-NOTE: recipe depmodwrapper-cross-1.0-r0: task do_prepare_recipe_sysroot: Started
-NOTE: recipe iptables-1.8.2-r0: task do_unpack: Started
-NOTE: recipe depmodwrapper-cross-1.0-r0: task do_unpack: Succeeded
-NOTE: Running task 631 of 666 (/home/deby/poky/meta/recipes-kernel/kmod/depmodwrapper-cross_1.0.bb:do_patch)
-NOTE: recipe iptables-1.8.2-r0: task do_prepare_recipe_sysroot: Started
-NOTE: recipe depmodwrapper-cross-1.0-r0: task do_patch: Started
-NOTE: recipe iptables-1.8.2-r0: task do_prepare_recipe_sysroot: Succeeded
-NOTE: recipe iptables-1.8.2-r0: task do_unpack: Succeeded
-NOTE: Running task 632 of 666 (/home/deby/poky/meta-debian/recipes-debian/iptables/iptables_debian.bb:do_debian_unpack_extra)
-NOTE: recipe iptables-1.8.2-r0: task do_debian_unpack_extra: Started
-NOTE: recipe iptables-1.8.2-r0: task do_debian_unpack_extra: Succeeded
-NOTE: Running task 633 of 666 (/home/deby/poky/meta-debian/recipes-debian/iptables/iptables_debian.bb:do_debian_patch)
-NOTE: recipe iptables-1.8.2-r0: task do_debian_patch: Started
-NOTE: recipe depmodwrapper-cross-1.0-r0: task do_prepare_recipe_sysroot: Succeeded
-NOTE: recipe depmodwrapper-cross-1.0-r0: task do_patch: Succeeded
-NOTE: Running task 634 of 666 (/home/deby/poky/meta/recipes-kernel/kmod/depmodwrapper-cross_1.0.bb:do_configure)
-NOTE: recipe depmodwrapper-cross-1.0-r0: task do_configure: Started
-NOTE: recipe depmodwrapper-cross-1.0-r0: task do_configure: Succeeded
-NOTE: Running task 635 of 666 (/home/deby/poky/meta/recipes-kernel/kmod/depmodwrapper-cross_1.0.bb:do_compile)
-NOTE: recipe iptables-1.8.2-r0: task do_debian_patch: Succeeded
-NOTE: Running task 636 of 666 (/home/deby/poky/meta-debian/recipes-debian/iptables/iptables_debian.bb:do_patch)
-NOTE: recipe depmodwrapper-cross-1.0-r0: task do_compile: Started
-NOTE: recipe depmodwrapper-cross-1.0-r0: task do_compile: Succeeded
-NOTE: Running task 637 of 666 (/home/deby/poky/meta/recipes-kernel/kmod/depmodwrapper-cross_1.0.bb:do_install)
-NOTE: recipe iptables-1.8.2-r0: task do_patch: Started
-NOTE: recipe iptables-1.8.2-r0: task do_patch: Succeeded
-NOTE: Running task 638 of 666 (/home/deby/poky/meta-debian/recipes-debian/iptables/iptables_debian.bb:do_configure)
-NOTE: Running task 639 of 666 (/home/deby/poky/meta-debian/recipes-debian/iptables/iptables_debian.bb:do_populate_lic)
-NOTE: recipe iptables-1.8.2-r0: task do_populate_lic: Started
-NOTE: recipe iptables-1.8.2-r0: task do_configure: Started
-NOTE: recipe iptables-1.8.2-r0: task do_populate_lic: Succeeded
-NOTE: recipe depmodwrapper-cross-1.0-r0: task do_install: Started
-NOTE: recipe depmodwrapper-cross-1.0-r0: task do_install: Succeeded
-NOTE: Running task 640 of 666 (/home/deby/poky/meta/recipes-kernel/kmod/depmodwrapper-cross_1.0.bb:do_populate_sysroot)
-NOTE: recipe depmodwrapper-cross-1.0-r0: task do_populate_sysroot: Started
 ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_patch, the basehash value changed from 5ed53eb8ac6ddede7565bebeb2816b485e8d0a50271259ec767793b24d918f2c to b0545f61ea2095f6a15147dfcdf87dee38500c50ed5cf099f2d3ba904940f6b0. The metadata is not deterministic and this needs to be fixed.
 ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_populate_sysroot, the basehash value changed from c9eeaebf847807124fdf78bdaedd5e33c420f5ca231b1c2abc2683fb7a30b5a9 to 328226478ebdf58f3a217e91ecd049516924079e0d8cb9e7239fabe8c46ecb57. The metadata is not deterministic and this needs to be fixed.
 ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_fetch, the basehash value changed from a40c8650c2c7d4dfd8a321a41e79d3b3b4ff5e81af9cae97c8ab1214f406e620 to f2ea3b6ae3a9587c08efe3f69cc05a1e2c0d0c75a23dda1cb5dd7c92e7894424. The metadata is not deterministic and this needs to be fixed.
@@ -84,24 +38,11 @@ ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-bas
 ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_sizecheck, the basehash value changed from fd195e3627ddea9aad413784c37dc234a27f26cf8ef45b78accd4b31d1b8770f to 80ebdb790c42832c50a7c015a4594af3d34fe635cb5b524d907807888b06d73c. The metadata is not deterministic and this needs to be fixed.
 ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_deploy, the basehash value changed from 36ae9e4b48922d9fca35a687fc5335b55c9de0efc5fa67197b1f05d52753ee55 to 72501a394f66997bd2fd71ec1cfd5ff25ed15ff70e649141576f34164fe4e995. The metadata is not deterministic and this needs to be fixed.
 NOTE: recipe linux-base-gitAUTOINC+5863c3d7f1-r0: task do_fetch: Started
-NOTE: recipe depmodwrapper-cross-1.0-r0: task do_populate_sysroot: Succeeded
-NOTE: recipe iptables-1.8.2-r0: task do_configure: Succeeded
-NOTE: Running task 641 of 666 (/home/deby/poky/meta-debian/recipes-debian/iptables/iptables_debian.bb:do_compile)
-NOTE: recipe iptables-1.8.2-r0: task do_compile: Started
-NOTE: recipe iptables-1.8.2-r0: task do_compile: Succeeded
-NOTE: Running task 642 of 666 (/home/deby/poky/meta-debian/recipes-debian/iptables/iptables_debian.bb:do_install)
-NOTE: recipe iptables-1.8.2-r0: task do_install: Started
-NOTE: recipe iptables-1.8.2-r0: task do_install: Succeeded
-NOTE: Running task 643 of 666 (/home/deby/poky/meta-debian/recipes-debian/iptables/iptables_debian.bb:do_package)
-NOTE: Running task 644 of 666 (/home/deby/poky/meta-debian/recipes-debian/iptables/iptables_debian.bb:do_populate_sysroot)
-NOTE: recipe iptables-1.8.2-r0: task do_package: Started
-NOTE: recipe iptables-1.8.2-r0: task do_populate_sysroot: Started
-NOTE: recipe iptables-1.8.2-r0: task do_populate_sysroot: Succeeded
 ERROR: linux-base-gitAUTOINC+5863c3d7f1-r0 do_fetch: Taskhash mismatch d4ed0fca7e786527be2960949dc6cfe5726698aeb5a85dae25ed1cfb90e2c9b5 versus 371dc361ee830dc4d7d98d52a91050fec62898e051522342370b21d8c69300f5 for /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_fetch
 NOTE: recipe linux-base-gitAUTOINC+5863c3d7f1-r0: task do_fetch: Succeeded
 ERROR: Taskhash mismatch d4ed0fca7e786527be2960949dc6cfe5726698aeb5a85dae25ed1cfb90e2c9b5 versus 371dc361ee830dc4d7d98d52a91050fec62898e051522342370b21d8c69300f5 for /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_fetch
-NOTE: Running task 645 of 666 (/home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb:do_unpack)
-NOTE: Running task 646 of 666 (/home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 646 of 666 (/home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb:do_unpack)
+NOTE: Running task 647 of 666 (/home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb:do_prepare_recipe_sysroot)
 ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_patch, the basehash value changed from 5ed53eb8ac6ddede7565bebeb2816b485e8d0a50271259ec767793b24d918f2c to b0545f61ea2095f6a15147dfcdf87dee38500c50ed5cf099f2d3ba904940f6b0. The metadata is not deterministic and this needs to be fixed.
 ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_populate_sysroot, the basehash value changed from c9eeaebf847807124fdf78bdaedd5e33c420f5ca231b1c2abc2683fb7a30b5a9 to 328226478ebdf58f3a217e91ecd049516924079e0d8cb9e7239fabe8c46ecb57. The metadata is not deterministic and this needs to be fixed.
 ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_fetch, the basehash value changed from a40c8650c2c7d4dfd8a321a41e79d3b3b4ff5e81af9cae97c8ab1214f406e620 to f2ea3b6ae3a9587c08efe3f69cc05a1e2c0d0c75a23dda1cb5dd7c92e7894424. The metadata is not deterministic and this needs to be fixed.
@@ -134,13 +75,9 @@ ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-bas
 ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_strip, the basehash value changed from b8e1b46172cb44022c3e68d21881be2c0e59b6ea7d70c87398993b250f6d1790 to 455c0d1780d9d9971ce96fca69a90ba4cdaa94b5bd0c74a38465201dde60b3fd. The metadata is not deterministic and this needs to be fixed.
 ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_sizecheck, the basehash value changed from fd195e3627ddea9aad413784c37dc234a27f26cf8ef45b78accd4b31d1b8770f to 80ebdb790c42832c50a7c015a4594af3d34fe635cb5b524d907807888b06d73c. The metadata is not deterministic and this needs to be fixed.
 ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_deploy, the basehash value changed from 36ae9e4b48922d9fca35a687fc5335b55c9de0efc5fa67197b1f05d52753ee55 to 72501a394f66997bd2fd71ec1cfd5ff25ed15ff70e649141576f34164fe4e995. The metadata is not deterministic and this needs to be fixed.
-NOTE: recipe linux-base-gitAUTOINC+5863c3d7f1-r0: task do_unpack: Started
 NOTE: recipe linux-base-gitAUTOINC+5863c3d7f1-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe linux-base-gitAUTOINC+5863c3d7f1-r0: task do_unpack: Started
 NOTE: recipe linux-base-gitAUTOINC+5863c3d7f1-r0: task do_prepare_recipe_sysroot: Succeeded
-NOTE: recipe iptables-1.8.2-r0: task do_package: Succeeded
-NOTE: Running task 647 of 666 (/home/deby/poky/meta-debian/recipes-debian/iptables/iptables_debian.bb:do_packagedata)
-NOTE: recipe iptables-1.8.2-r0: task do_packagedata: Started
-NOTE: recipe iptables-1.8.2-r0: task do_packagedata: Succeeded
 NOTE: recipe linux-base-gitAUTOINC+5863c3d7f1-r0: task do_unpack: Succeeded
 NOTE: Running task 648 of 666 (/home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb:do_symlink_kernsrc)
 NOTE: Running task 649 of 666 (/home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb:do_patch)
@@ -176,8 +113,8 @@ ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-bas
 ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_strip, the basehash value changed from b8e1b46172cb44022c3e68d21881be2c0e59b6ea7d70c87398993b250f6d1790 to 455c0d1780d9d9971ce96fca69a90ba4cdaa94b5bd0c74a38465201dde60b3fd. The metadata is not deterministic and this needs to be fixed.
 ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_sizecheck, the basehash value changed from fd195e3627ddea9aad413784c37dc234a27f26cf8ef45b78accd4b31d1b8770f to 80ebdb790c42832c50a7c015a4594af3d34fe635cb5b524d907807888b06d73c. The metadata is not deterministic and this needs to be fixed.
 ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_deploy, the basehash value changed from 36ae9e4b48922d9fca35a687fc5335b55c9de0efc5fa67197b1f05d52753ee55 to 72501a394f66997bd2fd71ec1cfd5ff25ed15ff70e649141576f34164fe4e995. The metadata is not deterministic and this needs to be fixed.
-NOTE: recipe linux-base-gitAUTOINC+5863c3d7f1-r0: task do_patch: Started
 NOTE: recipe linux-base-gitAUTOINC+5863c3d7f1-r0: task do_symlink_kernsrc: Started
+NOTE: recipe linux-base-gitAUTOINC+5863c3d7f1-r0: task do_patch: Started
 NOTE: recipe linux-base-gitAUTOINC+5863c3d7f1-r0: task do_symlink_kernsrc: Succeeded
 ERROR: linux-base-gitAUTOINC+5863c3d7f1-r0 do_patch: Taskhash mismatch f59d6ccd5aca3ed7bd2876d3cb616b1d7cce6e97f7e0b55a2c344d244007767a versus 0740167e801627d10b3338b23927286e6cf54c005bb2e2a510e2e1814e619c29 for /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_patch
 NOTE: recipe linux-base-gitAUTOINC+5863c3d7f1-r0: task do_patch: Succeeded
@@ -243,14 +180,12 @@ ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-bas
 ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_sizecheck, the basehash value changed from fd195e3627ddea9aad413784c37dc234a27f26cf8ef45b78accd4b31d1b8770f to 80ebdb790c42832c50a7c015a4594af3d34fe635cb5b524d907807888b06d73c. The metadata is not deterministic and this needs to be fixed.
 ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_deploy, the basehash value changed from 36ae9e4b48922d9fca35a687fc5335b55c9de0efc5fa67197b1f05d52753ee55 to 72501a394f66997bd2fd71ec1cfd5ff25ed15ff70e649141576f34164fe4e995. The metadata is not deterministic and this needs to be fixed.
 NOTE: recipe linux-base-gitAUTOINC+5863c3d7f1-r0: task do_shared_workdir: Started
-ERROR: linux-base-gitAUTOINC+5863c3d7f1-r0 do_shared_workdir: Taskhash mismatch 7a10330382fb2531b454362f95358ea8dceeab8287902a188fc5681ce2059ba9 versus 7fb50c6db30ac0e5018b44637f2136340f2e23b2c93dc190877fdb44fdc46ae7 for /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_shared_workdir
 ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_patch, the basehash value changed from 5ed53eb8ac6ddede7565bebeb2816b485e8d0a50271259ec767793b24d918f2c to b0545f61ea2095f6a15147dfcdf87dee38500c50ed5cf099f2d3ba904940f6b0. The metadata is not deterministic and this needs to be fixed.
 ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_populate_sysroot, the basehash value changed from c9eeaebf847807124fdf78bdaedd5e33c420f5ca231b1c2abc2683fb7a30b5a9 to 328226478ebdf58f3a217e91ecd049516924079e0d8cb9e7239fabe8c46ecb57. The metadata is not deterministic and this needs to be fixed.
 ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_fetch, the basehash value changed from a40c8650c2c7d4dfd8a321a41e79d3b3b4ff5e81af9cae97c8ab1214f406e620 to f2ea3b6ae3a9587c08efe3f69cc05a1e2c0d0c75a23dda1cb5dd7c92e7894424. The metadata is not deterministic and this needs to be fixed.
 ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_configure, the basehash value changed from e26904ef002e428044cf6204cee0cdcbc42ed74c3fc40dcd780eb8f3d8e5d896 to 6a131136cd3893b8146fa08984ff6326cf9b239cadfe8048bc08bd9e46e9c8e4. The metadata is not deterministic and this needs to be fixed.
 ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_compile, the basehash value changed from c2987674f5b2224589b989a5486b72892209cfae7d83ed143fd321ae884f6c8a to b92bb27495c7c0efcf5a28cbd8bad4e485d0748532e08231dc3cb8ce416fc255. The metadata is not deterministic and this needs to be fixed.
 ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_install, the basehash value changed from 05132c5373b3127278436e30ad0685f287606fd60799f407a1101ec987f61482 to 304d3e8bc0b6090accdc456384ed24ee8df7b6540f3df5b456052ed11546326e. The metadata is not deterministic and this needs to be fixed.
-NOTE: recipe linux-base-gitAUTOINC+5863c3d7f1-r0: task do_shared_workdir: Succeeded
 ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_package, the basehash value changed from 8fafb7aee32f39e03202f432839cadfce3a8ae5240f173db480cbc0973dbf47a to ae43bad9a88c73e7ce1e1e99bec69ee4b8adec7d1f5c0d22e8cf79d5f6a3c211. The metadata is not deterministic and this needs to be fixed.
 ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_packagedata, the basehash value changed from b22b26c8357b03d16401eacd739d576ff14c19ff0f3a52b2bf7f006b2aa1c03c to 4fa9fffd3521e1a49d2015673d3f7cb64130f5c899f7d00d643517d20e404498. The metadata is not deterministic and this needs to be fixed.
 ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_package_write_deb, the basehash value changed from 41287a1bcc77f42661b84f973f351122df4289f9368240f692b252ab1a2ea5e5 to 779d0aca396a9d0ae7b191640978e936188ffe157e005b47b5073d165ed43119. The metadata is not deterministic and this needs to be fixed.
@@ -261,9 +196,11 @@ ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-bas
 ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_strip, the basehash value changed from b8e1b46172cb44022c3e68d21881be2c0e59b6ea7d70c87398993b250f6d1790 to 455c0d1780d9d9971ce96fca69a90ba4cdaa94b5bd0c74a38465201dde60b3fd. The metadata is not deterministic and this needs to be fixed.
 ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_sizecheck, the basehash value changed from fd195e3627ddea9aad413784c37dc234a27f26cf8ef45b78accd4b31d1b8770f to 80ebdb790c42832c50a7c015a4594af3d34fe635cb5b524d907807888b06d73c. The metadata is not deterministic and this needs to be fixed.
 ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_deploy, the basehash value changed from 36ae9e4b48922d9fca35a687fc5335b55c9de0efc5fa67197b1f05d52753ee55 to 72501a394f66997bd2fd71ec1cfd5ff25ed15ff70e649141576f34164fe4e995. The metadata is not deterministic and this needs to be fixed.
+NOTE: recipe linux-base-gitAUTOINC+5863c3d7f1-r0: task do_kernel_link_images: Started
+ERROR: linux-base-gitAUTOINC+5863c3d7f1-r0 do_shared_workdir: Taskhash mismatch 7a10330382fb2531b454362f95358ea8dceeab8287902a188fc5681ce2059ba9 versus 7fb50c6db30ac0e5018b44637f2136340f2e23b2c93dc190877fdb44fdc46ae7 for /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_shared_workdir
+NOTE: recipe linux-base-gitAUTOINC+5863c3d7f1-r0: task do_shared_workdir: Succeeded
 ERROR: Taskhash mismatch 7a10330382fb2531b454362f95358ea8dceeab8287902a188fc5681ce2059ba9 versus 7fb50c6db30ac0e5018b44637f2136340f2e23b2c93dc190877fdb44fdc46ae7 for /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_shared_workdir
 NOTE: Running task 654 of 666 (/home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb:do_compile_kernelmodules)
-NOTE: recipe linux-base-gitAUTOINC+5863c3d7f1-r0: task do_kernel_link_images: Started
 ERROR: linux-base-gitAUTOINC+5863c3d7f1-r0 do_kernel_link_images: Taskhash mismatch d6d805359cef35d4bb3cf515385f1bae23cad5909854032eb31e6f5c10f6844f versus a516ab4b7145f4ef8ae86093342e41cb7368171043da252a81a16eaf02d60b6d for /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_kernel_link_images
 NOTE: recipe linux-base-gitAUTOINC+5863c3d7f1-r0: task do_kernel_link_images: Succeeded
 ERROR: Taskhash mismatch d6d805359cef35d4bb3cf515385f1bae23cad5909854032eb31e6f5c10f6844f versus a516ab4b7145f4ef8ae86093342e41cb7368171043da252a81a16eaf02d60b6d for /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_kernel_link_images
@@ -369,41 +306,41 @@ ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-bas
 ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_strip, the basehash value changed from b8e1b46172cb44022c3e68d21881be2c0e59b6ea7d70c87398993b250f6d1790 to 455c0d1780d9d9971ce96fca69a90ba4cdaa94b5bd0c74a38465201dde60b3fd. The metadata is not deterministic and this needs to be fixed.
 ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_sizecheck, the basehash value changed from fd195e3627ddea9aad413784c37dc234a27f26cf8ef45b78accd4b31d1b8770f to 80ebdb790c42832c50a7c015a4594af3d34fe635cb5b524d907807888b06d73c. The metadata is not deterministic and this needs to be fixed.
 ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_deploy, the basehash value changed from 36ae9e4b48922d9fca35a687fc5335b55c9de0efc5fa67197b1f05d52753ee55 to 72501a394f66997bd2fd71ec1cfd5ff25ed15ff70e649141576f34164fe4e995. The metadata is not deterministic and this needs to be fixed.
-ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_patch, the basehash value changed from 5ed53eb8ac6ddede7565bebeb2816b485e8d0a50271259ec767793b24d918f2c to b0545f61ea2095f6a15147dfcdf87dee38500c50ed5cf099f2d3ba904940f6b0. The metadata is not deterministic and this needs to be fixed.
-ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_populate_sysroot, the basehash value changed from c9eeaebf847807124fdf78bdaedd5e33c420f5ca231b1c2abc2683fb7a30b5a9 to 328226478ebdf58f3a217e91ecd049516924079e0d8cb9e7239fabe8c46ecb57. The metadata is not deterministic and this needs to be fixed.
-ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_fetch, the basehash value changed from a40c8650c2c7d4dfd8a321a41e79d3b3b4ff5e81af9cae97c8ab1214f406e620 to f2ea3b6ae3a9587c08efe3f69cc05a1e2c0d0c75a23dda1cb5dd7c92e7894424. The metadata is not deterministic and this needs to be fixed.
-ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_configure, the basehash value changed from e26904ef002e428044cf6204cee0cdcbc42ed74c3fc40dcd780eb8f3d8e5d896 to 6a131136cd3893b8146fa08984ff6326cf9b239cadfe8048bc08bd9e46e9c8e4. The metadata is not deterministic and this needs to be fixed.
-ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_compile, the basehash value changed from c2987674f5b2224589b989a5486b72892209cfae7d83ed143fd321ae884f6c8a to b92bb27495c7c0efcf5a28cbd8bad4e485d0748532e08231dc3cb8ce416fc255. The metadata is not deterministic and this needs to be fixed.
-ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_install, the basehash value changed from 05132c5373b3127278436e30ad0685f287606fd60799f407a1101ec987f61482 to 304d3e8bc0b6090accdc456384ed24ee8df7b6540f3df5b456052ed11546326e. The metadata is not deterministic and this needs to be fixed.
-ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_package, the basehash value changed from 8fafb7aee32f39e03202f432839cadfce3a8ae5240f173db480cbc0973dbf47a to ae43bad9a88c73e7ce1e1e99bec69ee4b8adec7d1f5c0d22e8cf79d5f6a3c211. The metadata is not deterministic and this needs to be fixed.
-ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_packagedata, the basehash value changed from b22b26c8357b03d16401eacd739d576ff14c19ff0f3a52b2bf7f006b2aa1c03c to 4fa9fffd3521e1a49d2015673d3f7cb64130f5c899f7d00d643517d20e404498. The metadata is not deterministic and this needs to be fixed.
-ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_package_write_deb, the basehash value changed from 41287a1bcc77f42661b84f973f351122df4289f9368240f692b252ab1a2ea5e5 to 779d0aca396a9d0ae7b191640978e936188ffe157e005b47b5073d165ed43119. The metadata is not deterministic and this needs to be fixed.
-ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_bundle_initramfs, the basehash value changed from 66ef54614cbd5c7c52e2688ad8ddf64e59ed369e6a8e1de7f78e0c886af58e27 to c4b3fe63c18992b8ab193fe9ed25cbf034d618b607a3982bdd51f94f3b1a58a3. The metadata is not deterministic and this needs to be fixed.
-ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_compile_kernelmodules, the basehash value changed from c673d396e90e087e3f210f7692fc8e0fc5d5c7a338fc011770419e68fd4c3d9f to f88e540ef8f9bba5cefb6d9eb3eec9053f543dda46bdcba5da359b9a74d1d9d3. The metadata is not deterministic and this needs to be fixed.
-ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_shared_workdir, the basehash value changed from 105f5b773fb382784c41ced37301839f4f0e9a8e25c2b7487bc1223113944fc1 to d01909b24028074a8a0b6b0c023b6cc521a87d5a7e7b209698ce80eeacf9fda0. The metadata is not deterministic and this needs to be fixed.
-ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_kernel_link_images, the basehash value changed from 254fa6005729413b1f8115601a8aa65c44e1afc8c1e246b33624030af4fde005 to 328b7a6025f385250fe7378e839a5e61ceff17a00f744d4311bb74b867275af4. The metadata is not deterministic and this needs to be fixed.
-ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_strip, the basehash value changed from b8e1b46172cb44022c3e68d21881be2c0e59b6ea7d70c87398993b250f6d1790 to 455c0d1780d9d9971ce96fca69a90ba4cdaa94b5bd0c74a38465201dde60b3fd. The metadata is not deterministic and this needs to be fixed.
-ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_sizecheck, the basehash value changed from fd195e3627ddea9aad413784c37dc234a27f26cf8ef45b78accd4b31d1b8770f to 80ebdb790c42832c50a7c015a4594af3d34fe635cb5b524d907807888b06d73c. The metadata is not deterministic and this needs to be fixed.
-ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_deploy, the basehash value changed from 36ae9e4b48922d9fca35a687fc5335b55c9de0efc5fa67197b1f05d52753ee55 to 72501a394f66997bd2fd71ec1cfd5ff25ed15ff70e649141576f34164fe4e995. The metadata is not deterministic and this needs to be fixed.
-ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_patch, the basehash value changed from 5ed53eb8ac6ddede7565bebeb2816b485e8d0a50271259ec767793b24d918f2c to b0545f61ea2095f6a15147dfcdf87dee38500c50ed5cf099f2d3ba904940f6b0. The metadata is not deterministic and this needs to be fixed.
-ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_populate_sysroot, the basehash value changed from c9eeaebf847807124fdf78bdaedd5e33c420f5ca231b1c2abc2683fb7a30b5a9 to 328226478ebdf58f3a217e91ecd049516924079e0d8cb9e7239fabe8c46ecb57. The metadata is not deterministic and this needs to be fixed.
-ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_fetch, the basehash value changed from a40c8650c2c7d4dfd8a321a41e79d3b3b4ff5e81af9cae97c8ab1214f406e620 to f2ea3b6ae3a9587c08efe3f69cc05a1e2c0d0c75a23dda1cb5dd7c92e7894424. The metadata is not deterministic and this needs to be fixed.
-ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_configure, the basehash value changed from e26904ef002e428044cf6204cee0cdcbc42ed74c3fc40dcd780eb8f3d8e5d896 to 6a131136cd3893b8146fa08984ff6326cf9b239cadfe8048bc08bd9e46e9c8e4. The metadata is not deterministic and this needs to be fixed.
-ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_compile, the basehash value changed from c2987674f5b2224589b989a5486b72892209cfae7d83ed143fd321ae884f6c8a to b92bb27495c7c0efcf5a28cbd8bad4e485d0748532e08231dc3cb8ce416fc255. The metadata is not deterministic and this needs to be fixed.
-ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_install, the basehash value changed from 05132c5373b3127278436e30ad0685f287606fd60799f407a1101ec987f61482 to 304d3e8bc0b6090accdc456384ed24ee8df7b6540f3df5b456052ed11546326e. The metadata is not deterministic and this needs to be fixed.
-ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_package, the basehash value changed from 8fafb7aee32f39e03202f432839cadfce3a8ae5240f173db480cbc0973dbf47a to ae43bad9a88c73e7ce1e1e99bec69ee4b8adec7d1f5c0d22e8cf79d5f6a3c211. The metadata is not deterministic and this needs to be fixed.
-ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_packagedata, the basehash value changed from b22b26c8357b03d16401eacd739d576ff14c19ff0f3a52b2bf7f006b2aa1c03c to 4fa9fffd3521e1a49d2015673d3f7cb64130f5c899f7d00d643517d20e404498. The metadata is not deterministic and this needs to be fixed.
-ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_package_write_deb, the basehash value changed from 41287a1bcc77f42661b84f973f351122df4289f9368240f692b252ab1a2ea5e5 to 779d0aca396a9d0ae7b191640978e936188ffe157e005b47b5073d165ed43119. The metadata is not deterministic and this needs to be fixed.
-ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_bundle_initramfs, the basehash value changed from 66ef54614cbd5c7c52e2688ad8ddf64e59ed369e6a8e1de7f78e0c886af58e27 to c4b3fe63c18992b8ab193fe9ed25cbf034d618b607a3982bdd51f94f3b1a58a3. The metadata is not deterministic and this needs to be fixed.
-ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_compile_kernelmodules, the basehash value changed from c673d396e90e087e3f210f7692fc8e0fc5d5c7a338fc011770419e68fd4c3d9f to f88e540ef8f9bba5cefb6d9eb3eec9053f543dda46bdcba5da359b9a74d1d9d3. The metadata is not deterministic and this needs to be fixed.
-ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_shared_workdir, the basehash value changed from 105f5b773fb382784c41ced37301839f4f0e9a8e25c2b7487bc1223113944fc1 to d01909b24028074a8a0b6b0c023b6cc521a87d5a7e7b209698ce80eeacf9fda0. The metadata is not deterministic and this needs to be fixed.
-ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_kernel_link_images, the basehash value changed from 254fa6005729413b1f8115601a8aa65c44e1afc8c1e246b33624030af4fde005 to 328b7a6025f385250fe7378e839a5e61ceff17a00f744d4311bb74b867275af4. The metadata is not deterministic and this needs to be fixed.
-ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_strip, the basehash value changed from b8e1b46172cb44022c3e68d21881be2c0e59b6ea7d70c87398993b250f6d1790 to 455c0d1780d9d9971ce96fca69a90ba4cdaa94b5bd0c74a38465201dde60b3fd. The metadata is not deterministic and this needs to be fixed.
-ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_sizecheck, the basehash value changed from fd195e3627ddea9aad413784c37dc234a27f26cf8ef45b78accd4b31d1b8770f to 80ebdb790c42832c50a7c015a4594af3d34fe635cb5b524d907807888b06d73c. The metadata is not deterministic and this needs to be fixed.
-ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_deploy, the basehash value changed from 36ae9e4b48922d9fca35a687fc5335b55c9de0efc5fa67197b1f05d52753ee55 to 72501a394f66997bd2fd71ec1cfd5ff25ed15ff70e649141576f34164fe4e995. The metadata is not deterministic and this needs to be fixed.
-NOTE: recipe linux-base-gitAUTOINC+5863c3d7f1-r0: task do_populate_sysroot: Started
-NOTE: recipe linux-base-gitAUTOINC+5863c3d7f1-r0: task do_bundle_initramfs: Started
 NOTE: recipe linux-base-gitAUTOINC+5863c3d7f1-r0: task do_package: Started
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_patch, the basehash value changed from 5ed53eb8ac6ddede7565bebeb2816b485e8d0a50271259ec767793b24d918f2c to b0545f61ea2095f6a15147dfcdf87dee38500c50ed5cf099f2d3ba904940f6b0. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_populate_sysroot, the basehash value changed from c9eeaebf847807124fdf78bdaedd5e33c420f5ca231b1c2abc2683fb7a30b5a9 to 328226478ebdf58f3a217e91ecd049516924079e0d8cb9e7239fabe8c46ecb57. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_fetch, the basehash value changed from a40c8650c2c7d4dfd8a321a41e79d3b3b4ff5e81af9cae97c8ab1214f406e620 to f2ea3b6ae3a9587c08efe3f69cc05a1e2c0d0c75a23dda1cb5dd7c92e7894424. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_configure, the basehash value changed from e26904ef002e428044cf6204cee0cdcbc42ed74c3fc40dcd780eb8f3d8e5d896 to 6a131136cd3893b8146fa08984ff6326cf9b239cadfe8048bc08bd9e46e9c8e4. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_compile, the basehash value changed from c2987674f5b2224589b989a5486b72892209cfae7d83ed143fd321ae884f6c8a to b92bb27495c7c0efcf5a28cbd8bad4e485d0748532e08231dc3cb8ce416fc255. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_install, the basehash value changed from 05132c5373b3127278436e30ad0685f287606fd60799f407a1101ec987f61482 to 304d3e8bc0b6090accdc456384ed24ee8df7b6540f3df5b456052ed11546326e. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_package, the basehash value changed from 8fafb7aee32f39e03202f432839cadfce3a8ae5240f173db480cbc0973dbf47a to ae43bad9a88c73e7ce1e1e99bec69ee4b8adec7d1f5c0d22e8cf79d5f6a3c211. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_packagedata, the basehash value changed from b22b26c8357b03d16401eacd739d576ff14c19ff0f3a52b2bf7f006b2aa1c03c to 4fa9fffd3521e1a49d2015673d3f7cb64130f5c899f7d00d643517d20e404498. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_package_write_deb, the basehash value changed from 41287a1bcc77f42661b84f973f351122df4289f9368240f692b252ab1a2ea5e5 to 779d0aca396a9d0ae7b191640978e936188ffe157e005b47b5073d165ed43119. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_bundle_initramfs, the basehash value changed from 66ef54614cbd5c7c52e2688ad8ddf64e59ed369e6a8e1de7f78e0c886af58e27 to c4b3fe63c18992b8ab193fe9ed25cbf034d618b607a3982bdd51f94f3b1a58a3. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_compile_kernelmodules, the basehash value changed from c673d396e90e087e3f210f7692fc8e0fc5d5c7a338fc011770419e68fd4c3d9f to f88e540ef8f9bba5cefb6d9eb3eec9053f543dda46bdcba5da359b9a74d1d9d3. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_shared_workdir, the basehash value changed from 105f5b773fb382784c41ced37301839f4f0e9a8e25c2b7487bc1223113944fc1 to d01909b24028074a8a0b6b0c023b6cc521a87d5a7e7b209698ce80eeacf9fda0. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_kernel_link_images, the basehash value changed from 254fa6005729413b1f8115601a8aa65c44e1afc8c1e246b33624030af4fde005 to 328b7a6025f385250fe7378e839a5e61ceff17a00f744d4311bb74b867275af4. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_strip, the basehash value changed from b8e1b46172cb44022c3e68d21881be2c0e59b6ea7d70c87398993b250f6d1790 to 455c0d1780d9d9971ce96fca69a90ba4cdaa94b5bd0c74a38465201dde60b3fd. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_sizecheck, the basehash value changed from fd195e3627ddea9aad413784c37dc234a27f26cf8ef45b78accd4b31d1b8770f to 80ebdb790c42832c50a7c015a4594af3d34fe635cb5b524d907807888b06d73c. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_deploy, the basehash value changed from 36ae9e4b48922d9fca35a687fc5335b55c9de0efc5fa67197b1f05d52753ee55 to 72501a394f66997bd2fd71ec1cfd5ff25ed15ff70e649141576f34164fe4e995. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_patch, the basehash value changed from 5ed53eb8ac6ddede7565bebeb2816b485e8d0a50271259ec767793b24d918f2c to b0545f61ea2095f6a15147dfcdf87dee38500c50ed5cf099f2d3ba904940f6b0. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_populate_sysroot, the basehash value changed from c9eeaebf847807124fdf78bdaedd5e33c420f5ca231b1c2abc2683fb7a30b5a9 to 328226478ebdf58f3a217e91ecd049516924079e0d8cb9e7239fabe8c46ecb57. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_fetch, the basehash value changed from a40c8650c2c7d4dfd8a321a41e79d3b3b4ff5e81af9cae97c8ab1214f406e620 to f2ea3b6ae3a9587c08efe3f69cc05a1e2c0d0c75a23dda1cb5dd7c92e7894424. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_configure, the basehash value changed from e26904ef002e428044cf6204cee0cdcbc42ed74c3fc40dcd780eb8f3d8e5d896 to 6a131136cd3893b8146fa08984ff6326cf9b239cadfe8048bc08bd9e46e9c8e4. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_compile, the basehash value changed from c2987674f5b2224589b989a5486b72892209cfae7d83ed143fd321ae884f6c8a to b92bb27495c7c0efcf5a28cbd8bad4e485d0748532e08231dc3cb8ce416fc255. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_install, the basehash value changed from 05132c5373b3127278436e30ad0685f287606fd60799f407a1101ec987f61482 to 304d3e8bc0b6090accdc456384ed24ee8df7b6540f3df5b456052ed11546326e. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_package, the basehash value changed from 8fafb7aee32f39e03202f432839cadfce3a8ae5240f173db480cbc0973dbf47a to ae43bad9a88c73e7ce1e1e99bec69ee4b8adec7d1f5c0d22e8cf79d5f6a3c211. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_packagedata, the basehash value changed from b22b26c8357b03d16401eacd739d576ff14c19ff0f3a52b2bf7f006b2aa1c03c to 4fa9fffd3521e1a49d2015673d3f7cb64130f5c899f7d00d643517d20e404498. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_package_write_deb, the basehash value changed from 41287a1bcc77f42661b84f973f351122df4289f9368240f692b252ab1a2ea5e5 to 779d0aca396a9d0ae7b191640978e936188ffe157e005b47b5073d165ed43119. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_bundle_initramfs, the basehash value changed from 66ef54614cbd5c7c52e2688ad8ddf64e59ed369e6a8e1de7f78e0c886af58e27 to c4b3fe63c18992b8ab193fe9ed25cbf034d618b607a3982bdd51f94f3b1a58a3. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_compile_kernelmodules, the basehash value changed from c673d396e90e087e3f210f7692fc8e0fc5d5c7a338fc011770419e68fd4c3d9f to f88e540ef8f9bba5cefb6d9eb3eec9053f543dda46bdcba5da359b9a74d1d9d3. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_shared_workdir, the basehash value changed from 105f5b773fb382784c41ced37301839f4f0e9a8e25c2b7487bc1223113944fc1 to d01909b24028074a8a0b6b0c023b6cc521a87d5a7e7b209698ce80eeacf9fda0. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_kernel_link_images, the basehash value changed from 254fa6005729413b1f8115601a8aa65c44e1afc8c1e246b33624030af4fde005 to 328b7a6025f385250fe7378e839a5e61ceff17a00f744d4311bb74b867275af4. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_strip, the basehash value changed from b8e1b46172cb44022c3e68d21881be2c0e59b6ea7d70c87398993b250f6d1790 to 455c0d1780d9d9971ce96fca69a90ba4cdaa94b5bd0c74a38465201dde60b3fd. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_sizecheck, the basehash value changed from fd195e3627ddea9aad413784c37dc234a27f26cf8ef45b78accd4b31d1b8770f to 80ebdb790c42832c50a7c015a4594af3d34fe635cb5b524d907807888b06d73c. The metadata is not deterministic and this needs to be fixed.
+ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_deploy, the basehash value changed from 36ae9e4b48922d9fca35a687fc5335b55c9de0efc5fa67197b1f05d52753ee55 to 72501a394f66997bd2fd71ec1cfd5ff25ed15ff70e649141576f34164fe4e995. The metadata is not deterministic and this needs to be fixed.
+NOTE: recipe linux-base-gitAUTOINC+5863c3d7f1-r0: task do_bundle_initramfs: Started
+NOTE: recipe linux-base-gitAUTOINC+5863c3d7f1-r0: task do_populate_sysroot: Started
 ERROR: linux-base-gitAUTOINC+5863c3d7f1-r0 do_bundle_initramfs: Taskhash mismatch ff3829ce34535daa48ac740e833938d1c6891a08effb84f8c86ba5009c393256 versus a794f1d35ece04f648197937427f24499e1a68f683a72b27fb645860aeb1689e for /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_bundle_initramfs
 NOTE: recipe linux-base-gitAUTOINC+5863c3d7f1-r0: task do_bundle_initramfs: Succeeded
 ERROR: Taskhash mismatch ff3829ce34535daa48ac740e833938d1c6891a08effb84f8c86ba5009c393256 versus a794f1d35ece04f648197937427f24499e1a68f683a72b27fb645860aeb1689e for /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_bundle_initramfs
@@ -436,10 +373,6 @@ NOTE: recipe linux-base-gitAUTOINC+5863c3d7f1-r0: task do_packagedata: Succeeded
 ERROR: Taskhash mismatch 3a2ff8f3c4de48d3b8892f4933f067b738a98e2d0b3f1e75ef9ce0a7db790a45 versus 69c45314c2f83e387041050224c775c6053095f850ff7d591137f372cf1e0001 for /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_packagedata
 NOTE: Running task 662 of 666 (/home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb:do_deploy)
 NOTE: Running task 663 of 666 (/home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb:do_package_write_deb)
-NOTE: Running task 664 of 666 (/home/deby/poky/meta-debian/recipes-debian/iptables/iptables_debian.bb:do_package_write_deb)
-NOTE: Running task 665 of 666 (/home/deby/poky/meta-debian/recipes-debian/iptables/iptables_debian.bb:do_package_qa)
-NOTE: recipe iptables-1.8.2-r0: task do_package_write_deb: Started
-NOTE: recipe iptables-1.8.2-r0: task do_package_qa: Started
 ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_patch, the basehash value changed from 5ed53eb8ac6ddede7565bebeb2816b485e8d0a50271259ec767793b24d918f2c to b0545f61ea2095f6a15147dfcdf87dee38500c50ed5cf099f2d3ba904940f6b0. The metadata is not deterministic and this needs to be fixed.
 ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_populate_sysroot, the basehash value changed from c9eeaebf847807124fdf78bdaedd5e33c420f5ca231b1c2abc2683fb7a30b5a9 to 328226478ebdf58f3a217e91ecd049516924079e0d8cb9e7239fabe8c46ecb57. The metadata is not deterministic and this needs to be fixed.
 ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_fetch, the basehash value changed from a40c8650c2c7d4dfd8a321a41e79d3b3b4ff5e81af9cae97c8ab1214f406e620 to f2ea3b6ae3a9587c08efe3f69cc05a1e2c0d0c75a23dda1cb5dd7c92e7894424. The metadata is not deterministic and this needs to be fixed.
@@ -474,15 +407,12 @@ ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-bas
 ERROR: When reparsing /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_deploy, the basehash value changed from 36ae9e4b48922d9fca35a687fc5335b55c9de0efc5fa67197b1f05d52753ee55 to 72501a394f66997bd2fd71ec1cfd5ff25ed15ff70e649141576f34164fe4e995. The metadata is not deterministic and this needs to be fixed.
 NOTE: recipe linux-base-gitAUTOINC+5863c3d7f1-r0: task do_deploy: Started
 NOTE: recipe linux-base-gitAUTOINC+5863c3d7f1-r0: task do_package_write_deb: Started
-NOTE: recipe iptables-1.8.2-r0: task do_package_write_deb: Succeeded
-NOTE: recipe iptables-1.8.2-r0: task do_package_qa: Succeeded
 ERROR: linux-base-gitAUTOINC+5863c3d7f1-r0 do_package_write_deb: Taskhash mismatch b5c9bb3f0d1739fb184b86e15dacf98e4e6a820a3989d927b355c8d1502135d2 versus ddb894ec21078bb39d1f53151ed072a0a6a31dbc98779adf1e6b69e1cb6dc382 for /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_package_write_deb
 NOTE: recipe linux-base-gitAUTOINC+5863c3d7f1-r0: task do_package_write_deb: Succeeded
 ERROR: Taskhash mismatch b5c9bb3f0d1739fb184b86e15dacf98e4e6a820a3989d927b355c8d1502135d2 versus ddb894ec21078bb39d1f53151ed072a0a6a31dbc98779adf1e6b69e1cb6dc382 for /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_package_write_deb
 ERROR: linux-base-gitAUTOINC+5863c3d7f1-r0 do_deploy: Taskhash mismatch c6095363db912d5e00a1cc7dbe3169dc912866ff80d2ca0e18b3d02e88edc74c versus 61470acf11bc85099781484ce1db709de062f48390f2236d2100936967a03712 for /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_deploy
 NOTE: recipe linux-base-gitAUTOINC+5863c3d7f1-r0: task do_deploy: Succeeded
 ERROR: Taskhash mismatch c6095363db912d5e00a1cc7dbe3169dc912866ff80d2ca0e18b3d02e88edc74c versus 61470acf11bc85099781484ce1db709de062f48390f2236d2100936967a03712 for /home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb.do_deploy
-NOTE: Running noexec task 666 of 666 (/home/deby/poky/meta-debian/recipes-debian/iptables/iptables_debian.bb:do_build)
-NOTE: Tasks Summary: Attempted 666 tasks of which 623 didn't need to be rerun and all succeeded.
+NOTE: Tasks Summary: Attempted 666 tasks of which 647 didn't need to be rerun and all succeeded.
 
 Summary: There were 336 ERROR messages shown, returning a non-zero exit code.

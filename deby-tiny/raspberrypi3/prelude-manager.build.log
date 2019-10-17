@@ -1,12 +1,100 @@
 Loading cache...done.
-Loaded 1738 entries from dependency cache.
-Parsing recipes...WARNING: /home/deby/poky/meta/recipes-devtools/gdb/gdb_8.3.1.bb: Unable to get checksum for gdb SRC_URI entry 0001-gdbserver-ctrl-c-handling.patch: file could not be found
-WARNING: /home/deby/poky/meta/recipes-devtools/gdb/gdb-cross_8.3.1.bb: Unable to get checksum for gdb-cross-arm SRC_URI entry 0001-gdbserver-ctrl-c-handling.patch: file could not be found
-WARNING: /home/deby/poky/meta/recipes-devtools/gdb/gdb-cross-canadian_8.3.1.bb: Unable to get checksum for gdb-cross-canadian-arm SRC_URI entry 0001-gdbserver-ctrl-c-handling.patch: file could not be found
-done.
-Parsing of 1018 .bb files complete (1008 cached, 10 parsed). 1758 targets, 229 skipped, 0 masked, 0 errors.
+Loaded 1763 entries from dependency cache.
 WARNING: No bb files matched BBFILE_PATTERN_debian-raspberrypi '^/home/deby/poky/meta-debian/tests/../../meta-debian/bsp/meta-raspberrypi/'
-ERROR: Nothing PROVIDES 'prelude-manager'
+NOTE: Resolving any missing task queue dependencies
 
-Summary: There were 4 WARNING messages shown.
-Summary: There was 1 ERROR message shown, returning a non-zero exit code.
+Build Configuration:
+BB_VERSION           = "1.42.0"
+BUILD_SYS            = "x86_64-linux"
+NATIVELSBSTRING      = "universal"
+TARGET_SYS           = "arm-deby-linux-gnueabi"
+MACHINE              = "raspberrypi3"
+DISTRO               = "deby-tiny"
+DISTRO_VERSION       = "10.0"
+TUNE_FEATURES        = "arm vfp cortexa7 neon vfpv4 thumb callconvention-hard"
+TARGET_FPU           = "hard"
+meta                 
+meta-poky            = "warrior:79a850a10a4b88a6d20d607b322542f947874323"
+meta-debian          = "warrior:065aa7dcd28d697d2d493e1f188deb4f78253725"
+meta-raspberrypi     = "warrior:0750d5d2bc9596f35d5d61bb0ff657be4b02bfdc"
+meta-raspberrypi     = "warrior:065aa7dcd28d697d2d493e1f188deb4f78253725"
+
+Initialising tasks...done.
+Sstate summary: Wanted 20 Found 0 Missed 20 Current 163 (0% match, 89% complete)
+NOTE: Executing SetScene Tasks
+NOTE: Executing RunQueue Tasks
+NOTE: Running task 737 of 952 (/home/deby/poky/meta-debian/recipes-debian/libtool/libtool_debian.bb:do_install)
+NOTE: Running task 738 of 952 (/home/deby/poky/meta-debian/recipes-debian/libpreludedb/libpreludedb_debian.bb:do_fetch)
+NOTE: Running task 785 of 952 (/home/deby/poky/meta-debian/recipes-debian/prelude-manager/prelude-manager_debian.bb:do_fetch)
+NOTE: Running task 836 of 952 (virtual:native:/home/deby/poky/meta/recipes-support/gnutls/gnutls_3.6.7.bb:do_compile)
+NOTE: recipe libpreludedb-4.1.0-r0: task do_fetch: Started
+NOTE: recipe libpreludedb-4.1.0-r0: task do_fetch: Succeeded
+NOTE: Running task 907 of 952 (/home/deby/poky/meta-debian/recipes-debian/libpreludedb/libpreludedb_debian.bb:do_unpack)
+NOTE: recipe prelude-manager-4.1.1-r0: task do_fetch: Started
+NOTE: recipe libtool-2.4.6-r0: task do_install: Started
+NOTE: recipe gnutls-native-3.6.7-r0: task do_compile: Started
+NOTE: recipe prelude-manager-4.1.1-r0: task do_fetch: Succeeded
+NOTE: Running task 908 of 952 (/home/deby/poky/meta-debian/recipes-debian/prelude-manager/prelude-manager_debian.bb:do_unpack)
+NOTE: recipe libpreludedb-4.1.0-r0: task do_unpack: Started
+NOTE: recipe prelude-manager-4.1.1-r0: task do_unpack: Started
+NOTE: recipe libpreludedb-4.1.0-r0: task do_unpack: Succeeded
+NOTE: Running task 909 of 952 (/home/deby/poky/meta-debian/recipes-debian/libpreludedb/libpreludedb_debian.bb:do_debian_unpack_extra)
+NOTE: recipe prelude-manager-4.1.1-r0: task do_unpack: Succeeded
+NOTE: Running task 910 of 952 (/home/deby/poky/meta-debian/recipes-debian/prelude-manager/prelude-manager_debian.bb:do_debian_unpack_extra)
+NOTE: recipe libpreludedb-4.1.0-r0: task do_debian_unpack_extra: Started
+NOTE: recipe prelude-manager-4.1.1-r0: task do_debian_unpack_extra: Started
+NOTE: recipe libpreludedb-4.1.0-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 911 of 952 (/home/deby/poky/meta-debian/recipes-debian/libpreludedb/libpreludedb_debian.bb:do_debian_patch)
+NOTE: recipe prelude-manager-4.1.1-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 912 of 952 (/home/deby/poky/meta-debian/recipes-debian/prelude-manager/prelude-manager_debian.bb:do_debian_patch)
+NOTE: recipe libpreludedb-4.1.0-r0: task do_debian_patch: Started
+NOTE: recipe prelude-manager-4.1.1-r0: task do_debian_patch: Started
+NOTE: recipe libpreludedb-4.1.0-r0: task do_debian_patch: Succeeded
+NOTE: Running task 913 of 952 (/home/deby/poky/meta-debian/recipes-debian/libpreludedb/libpreludedb_debian.bb:do_patch)
+NOTE: recipe libpreludedb-4.1.0-r0: task do_patch: Started
+NOTE: recipe prelude-manager-4.1.1-r0: task do_debian_patch: Succeeded
+NOTE: Running task 914 of 952 (/home/deby/poky/meta-debian/recipes-debian/prelude-manager/prelude-manager_debian.bb:do_patch)
+NOTE: recipe prelude-manager-4.1.1-r0: task do_patch: Started
+NOTE: recipe libpreludedb-4.1.0-r0: task do_patch: Succeeded
+NOTE: recipe prelude-manager-4.1.1-r0: task do_patch: Succeeded
+NOTE: Running task 915 of 952 (/home/deby/poky/meta-debian/recipes-debian/prelude-manager/prelude-manager_debian.bb:do_populate_lic)
+NOTE: recipe prelude-manager-4.1.1-r0: task do_populate_lic: Started
+ERROR: prelude-manager-4.1.1-r0 do_populate_lic: QA Issue: prelude-manager: The LIC_FILES_CHKSUM does not match for file://config.sub;beginline=7;endline=25;md5=f92d7033ace1653856cc3084ddc33960
+prelude-manager: The new md5 checksum is e443b5b496d01ee52219d5269560d697
+prelude-manager: Here is the selected license text:
+vvvvvvvvvvvvvvvvvvvvvvvvvvvv beginline=7 vvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+# This file is free software; you can redistribute it and/or modify it
+# under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, see <http://www.gnu.org/licenses/>.
+#
+# As a special exception to the GNU General Public License, if you
+# distribute this file as part of a program that contains a
+# configuration script generated by Autoconf, you may include it under
+# the same distribution terms that you use for the rest of that
+# program.  This Exception is an additional permission under section 7
+# of the GNU General Public License, version 3 ("GPLv3").
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ endline=25 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+prelude-manager: Check if the license information has changed in /home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/prelude-manager/4.1.1-r0/prelude-manager-4.1.1/config.sub (lines 7 through to 25) to verify that the LICENSE value "GPLv2+ & LGPL-2.1+ & MIT & GPLv3+" remains valid [license-checksum]
+ERROR: prelude-manager-4.1.1-r0 do_populate_lic: Fatal QA errors found, failing task.
+ERROR: prelude-manager-4.1.1-r0 do_populate_lic: 
+ERROR: prelude-manager-4.1.1-r0 do_populate_lic: Function failed: populate_lic_qa_checksum
+ERROR: Logfile of failure stored in: /home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/prelude-manager/4.1.1-r0/temp/log.do_populate_lic.10433
+NOTE: recipe prelude-manager-4.1.1-r0: task do_populate_lic: Failed
+ERROR: Task (/home/deby/poky/meta-debian/recipes-debian/prelude-manager/prelude-manager_debian.bb:do_populate_lic) failed with exit code '1'
+NOTE: recipe libtool-2.4.6-r0: task do_install: Succeeded
+NOTE: recipe gnutls-native-3.6.7-r0: task do_compile: Succeeded
+NOTE: Tasks Summary: Attempted 915 tasks of which 902 didn't need to be rerun and 1 failed.
+
+Summary: 1 task failed:
+  /home/deby/poky/meta-debian/recipes-debian/prelude-manager/prelude-manager_debian.bb:do_populate_lic
+Summary: There was 1 WARNING message shown.
+Summary: There were 4 ERROR messages shown, returning a non-zero exit code.

@@ -1,5 +1,5 @@
 Loading cache...done.
-Loaded 1708 entries from dependency cache.
+Loaded 1733 entries from dependency cache.
 NOTE: Resolving any missing task queue dependencies
 
 Build Configuration:
@@ -14,45 +14,15 @@ TUNE_FEATURES        = "o32 bigendian fpu-hard mips32r2"
 TARGET_FPU           = ""
 meta                 
 meta-poky            = "warrior:79a850a10a4b88a6d20d607b322542f947874323"
-meta-debian          = "warrior:79407869d1e56b8c7cb9ac0a9a48a4923ffa202b"
+meta-debian          = "warrior:065aa7dcd28d697d2d493e1f188deb4f78253725"
 
 Initialising tasks...done.
 Sstate summary: Wanted 10 Found 0 Missed 10 Current 160 (0% match, 94% complete)
 NOTE: Executing SetScene Tasks
 NOTE: Executing RunQueue Tasks
-NOTE: Running task 593 of 884 (/home/deby/poky/meta-debian/recipes-debian/libtool/libtool_debian.bb:do_fetch)
-NOTE: Running task 629 of 884 (/home/deby/poky/meta-debian/recipes-debian/libprelude/libprelude_debian.bb:do_fetch)
-NOTE: recipe libtool-2.4.6-r0: task do_fetch: Started
-NOTE: recipe libprelude-4.1.0-r0: task do_fetch: Started
-NOTE: recipe libtool-2.4.6-r0: task do_fetch: Succeeded
-NOTE: Running task 858 of 884 (/home/deby/poky/meta-debian/recipes-debian/libtool/libtool_debian.bb:do_unpack)
-NOTE: Running task 859 of 884 (/home/deby/poky/meta-debian/recipes-debian/libtool/libtool_debian.bb:do_prepare_recipe_sysroot)
-NOTE: recipe libprelude-4.1.0-r0: task do_fetch: Succeeded
-NOTE: Running task 860 of 884 (/home/deby/poky/meta-debian/recipes-debian/libprelude/libprelude_debian.bb:do_unpack)
-NOTE: recipe libtool-2.4.6-r0: task do_prepare_recipe_sysroot: Started
-NOTE: recipe libtool-2.4.6-r0: task do_unpack: Started
-NOTE: recipe libprelude-4.1.0-r0: task do_unpack: Started
-NOTE: recipe libtool-2.4.6-r0: task do_unpack: Succeeded
-NOTE: Running task 861 of 884 (/home/deby/poky/meta-debian/recipes-debian/libtool/libtool_debian.bb:do_debian_unpack_extra)
-NOTE: recipe libprelude-4.1.0-r0: task do_unpack: Succeeded
-NOTE: Running task 862 of 884 (/home/deby/poky/meta-debian/recipes-debian/libprelude/libprelude_debian.bb:do_debian_unpack_extra)
-NOTE: recipe libtool-2.4.6-r0: task do_debian_unpack_extra: Started
-NOTE: recipe libtool-2.4.6-r0: task do_prepare_recipe_sysroot: Succeeded
-NOTE: recipe libtool-2.4.6-r0: task do_debian_unpack_extra: Succeeded
-NOTE: Running task 863 of 884 (/home/deby/poky/meta-debian/recipes-debian/libtool/libtool_debian.bb:do_debian_patch)
-NOTE: recipe libprelude-4.1.0-r0: task do_debian_unpack_extra: Started
-NOTE: recipe libprelude-4.1.0-r0: task do_debian_unpack_extra: Succeeded
-NOTE: Running task 864 of 884 (/home/deby/poky/meta-debian/recipes-debian/libprelude/libprelude_debian.bb:do_debian_patch)
-NOTE: recipe libtool-2.4.6-r0: task do_debian_patch: Started
-NOTE: recipe libprelude-4.1.0-r0: task do_debian_patch: Started
-NOTE: recipe libtool-2.4.6-r0: task do_debian_patch: Succeeded
-NOTE: Running task 865 of 884 (/home/deby/poky/meta-debian/recipes-debian/libtool/libtool_debian.bb:do_patch)
-NOTE: recipe libprelude-4.1.0-r0: task do_debian_patch: Succeeded
-NOTE: Running task 866 of 884 (/home/deby/poky/meta-debian/recipes-debian/libprelude/libprelude_debian.bb:do_patch)
-NOTE: recipe libtool-2.4.6-r0: task do_patch: Started
-NOTE: recipe libprelude-4.1.0-r0: task do_patch: Started
-NOTE: recipe libprelude-4.1.0-r0: task do_patch: Succeeded
-NOTE: Running task 867 of 884 (/home/deby/poky/meta-debian/recipes-debian/libprelude/libprelude_debian.bb:do_populate_lic)
+NOTE: Running task 770 of 884 (/home/deby/poky/meta-debian/recipes-debian/libtool/libtool_debian.bb:do_configure)
+NOTE: Running task 868 of 884 (/home/deby/poky/meta-debian/recipes-debian/libprelude/libprelude_debian.bb:do_populate_lic)
+NOTE: recipe libtool-2.4.6-r0: task do_configure: Started
 NOTE: recipe libprelude-4.1.0-r0: task do_populate_lic: Started
 ERROR: libprelude-4.1.0-r0 do_populate_lic: QA Issue: libprelude: The LIC_FILES_CHKSUM does not match for file://config.sub;beginline=7;endline=25;md5=f92d7033ace1653856cc3084ddc33960
 libprelude: The new md5 checksum is e443b5b496d01ee52219d5269560d697
@@ -82,11 +52,11 @@ libprelude: Check if the license information has changed in /home/deby/build-tin
 ERROR: libprelude-4.1.0-r0 do_populate_lic: Fatal QA errors found, failing task.
 ERROR: libprelude-4.1.0-r0 do_populate_lic: 
 ERROR: libprelude-4.1.0-r0 do_populate_lic: Function failed: populate_lic_qa_checksum
-ERROR: Logfile of failure stored in: /home/deby/build-tiny/tmp/work/mips32r2-deby-linux/libprelude/4.1.0-r0/temp/log.do_populate_lic.10344
+ERROR: Logfile of failure stored in: /home/deby/build-tiny/tmp/work/mips32r2-deby-linux/libprelude/4.1.0-r0/temp/log.do_populate_lic.25186
 NOTE: recipe libprelude-4.1.0-r0: task do_populate_lic: Failed
 ERROR: Task (/home/deby/poky/meta-debian/recipes-debian/libprelude/libprelude_debian.bb:do_populate_lic) failed with exit code '1'
-NOTE: recipe libtool-2.4.6-r0: task do_patch: Succeeded
-NOTE: Tasks Summary: Attempted 867 tasks of which 855 didn't need to be rerun and 1 failed.
+NOTE: recipe libtool-2.4.6-r0: task do_configure: Succeeded
+NOTE: Tasks Summary: Attempted 868 tasks of which 866 didn't need to be rerun and 1 failed.
 
 Summary: 1 task failed:
   /home/deby/poky/meta-debian/recipes-debian/libprelude/libprelude_debian.bb:do_populate_lic

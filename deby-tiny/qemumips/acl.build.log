@@ -1,5 +1,5 @@
 Loading cache...done.
-Loaded 1708 entries from dependency cache.
+Loaded 1733 entries from dependency cache.
 NOTE: Resolving any missing task queue dependencies
 
 Build Configuration:
@@ -14,95 +14,10 @@ TUNE_FEATURES        = "o32 bigendian fpu-hard mips32r2"
 TARGET_FPU           = ""
 meta                 
 meta-poky            = "warrior:79a850a10a4b88a6d20d607b322542f947874323"
-meta-debian          = "warrior:79407869d1e56b8c7cb9ac0a9a48a4923ffa202b"
+meta-debian          = "warrior:065aa7dcd28d697d2d493e1f188deb4f78253725"
 
 Initialising tasks...done.
-Sstate summary: Wanted 10 Found 0 Missed 10 Current 79 (0% match, 88% complete)
+Sstate summary: Wanted 0 Found 0 Missed 0 Current 89 (0% match, 100% complete)
 NOTE: Executing SetScene Tasks
 NOTE: Executing RunQueue Tasks
-NOTE: Running task 527 of 613 (/home/deby/poky/meta-debian/recipes-debian/attr/attr_debian.bb:do_fetch)
-NOTE: Running task 538 of 613 (/home/deby/poky/meta-debian/recipes-debian/attr/acl_debian.bb:do_fetch)
-NOTE: recipe acl-2.2.53-r0: task do_fetch: Started
-NOTE: recipe attr-2.4.48-r0: task do_fetch: Started
-NOTE: recipe attr-2.4.48-r0: task do_fetch: Succeeded
-NOTE: Running task 587 of 613 (/home/deby/poky/meta-debian/recipes-debian/attr/attr_debian.bb:do_unpack)
-NOTE: Running task 588 of 613 (/home/deby/poky/meta-debian/recipes-debian/attr/attr_debian.bb:do_prepare_recipe_sysroot)
-NOTE: recipe attr-2.4.48-r0: task do_prepare_recipe_sysroot: Started
-NOTE: recipe attr-2.4.48-r0: task do_unpack: Started
-NOTE: recipe acl-2.2.53-r0: task do_fetch: Succeeded
-NOTE: Running task 589 of 613 (/home/deby/poky/meta-debian/recipes-debian/attr/acl_debian.bb:do_unpack)
-NOTE: recipe acl-2.2.53-r0: task do_unpack: Started
-NOTE: recipe attr-2.4.48-r0: task do_unpack: Succeeded
-NOTE: Running task 590 of 613 (/home/deby/poky/meta-debian/recipes-debian/attr/attr_debian.bb:do_debian_unpack_extra)
-NOTE: recipe acl-2.2.53-r0: task do_unpack: Succeeded
-NOTE: Running task 591 of 613 (/home/deby/poky/meta-debian/recipes-debian/attr/acl_debian.bb:do_debian_unpack_extra)
-NOTE: recipe attr-2.4.48-r0: task do_prepare_recipe_sysroot: Succeeded
-NOTE: recipe attr-2.4.48-r0: task do_debian_unpack_extra: Started
-NOTE: recipe acl-2.2.53-r0: task do_debian_unpack_extra: Started
-NOTE: recipe attr-2.4.48-r0: task do_debian_unpack_extra: Succeeded
-NOTE: Running task 592 of 613 (/home/deby/poky/meta-debian/recipes-debian/attr/attr_debian.bb:do_debian_patch)
-NOTE: recipe acl-2.2.53-r0: task do_debian_unpack_extra: Succeeded
-NOTE: Running task 593 of 613 (/home/deby/poky/meta-debian/recipes-debian/attr/acl_debian.bb:do_debian_patch)
-NOTE: recipe attr-2.4.48-r0: task do_debian_patch: Started
-NOTE: recipe acl-2.2.53-r0: task do_debian_patch: Started
-NOTE: recipe attr-2.4.48-r0: task do_debian_patch: Succeeded
-NOTE: Running task 594 of 613 (/home/deby/poky/meta-debian/recipes-debian/attr/attr_debian.bb:do_patch)
-NOTE: recipe attr-2.4.48-r0: task do_patch: Started
-NOTE: recipe attr-2.4.48-r0: task do_patch: Succeeded
-NOTE: Running task 595 of 613 (/home/deby/poky/meta-debian/recipes-debian/attr/attr_debian.bb:do_configure)
-NOTE: recipe attr-2.4.48-r0: task do_configure: Started
-NOTE: recipe acl-2.2.53-r0: task do_debian_patch: Succeeded
-NOTE: Running task 596 of 613 (/home/deby/poky/meta-debian/recipes-debian/attr/acl_debian.bb:do_patch)
-NOTE: recipe acl-2.2.53-r0: task do_patch: Started
-NOTE: recipe acl-2.2.53-r0: task do_patch: Succeeded
-NOTE: Running task 597 of 613 (/home/deby/poky/meta-debian/recipes-debian/attr/acl_debian.bb:do_populate_lic)
-NOTE: recipe acl-2.2.53-r0: task do_populate_lic: Started
-NOTE: recipe acl-2.2.53-r0: task do_populate_lic: Succeeded
-NOTE: recipe attr-2.4.48-r0: task do_configure: Succeeded
-NOTE: Running task 598 of 613 (/home/deby/poky/meta-debian/recipes-debian/attr/attr_debian.bb:do_compile)
-NOTE: recipe attr-2.4.48-r0: task do_compile: Started
-NOTE: recipe attr-2.4.48-r0: task do_compile: Succeeded
-NOTE: Running task 599 of 613 (/home/deby/poky/meta-debian/recipes-debian/attr/attr_debian.bb:do_install)
-NOTE: recipe attr-2.4.48-r0: task do_install: Started
-NOTE: recipe attr-2.4.48-r0: task do_install: Succeeded
-NOTE: Running task 600 of 613 (/home/deby/poky/meta-debian/recipes-debian/attr/attr_debian.bb:do_package)
-NOTE: Running task 601 of 613 (/home/deby/poky/meta-debian/recipes-debian/attr/attr_debian.bb:do_populate_sysroot)
-NOTE: recipe attr-2.4.48-r0: task do_populate_sysroot: Started
-NOTE: recipe attr-2.4.48-r0: task do_package: Started
-NOTE: recipe attr-2.4.48-r0: task do_populate_sysroot: Succeeded
-NOTE: Running task 602 of 613 (/home/deby/poky/meta-debian/recipes-debian/attr/acl_debian.bb:do_prepare_recipe_sysroot)
-NOTE: recipe acl-2.2.53-r0: task do_prepare_recipe_sysroot: Started
-NOTE: recipe acl-2.2.53-r0: task do_prepare_recipe_sysroot: Succeeded
-NOTE: Running task 603 of 613 (/home/deby/poky/meta-debian/recipes-debian/attr/acl_debian.bb:do_configure)
-NOTE: recipe acl-2.2.53-r0: task do_configure: Started
-NOTE: recipe attr-2.4.48-r0: task do_package: Succeeded
-NOTE: Running task 604 of 613 (/home/deby/poky/meta-debian/recipes-debian/attr/attr_debian.bb:do_packagedata)
-NOTE: recipe attr-2.4.48-r0: task do_packagedata: Started
-NOTE: recipe attr-2.4.48-r0: task do_packagedata: Succeeded
-NOTE: Running task 605 of 613 (/home/deby/poky/meta-debian/recipes-debian/attr/attr_debian.bb:do_package_write_deb)
-NOTE: recipe attr-2.4.48-r0: task do_package_write_deb: Started
-NOTE: recipe attr-2.4.48-r0: task do_package_write_deb: Succeeded
-NOTE: recipe acl-2.2.53-r0: task do_configure: Succeeded
-NOTE: Running task 606 of 613 (/home/deby/poky/meta-debian/recipes-debian/attr/acl_debian.bb:do_compile)
-NOTE: recipe acl-2.2.53-r0: task do_compile: Started
-NOTE: recipe acl-2.2.53-r0: task do_compile: Succeeded
-NOTE: Running task 607 of 613 (/home/deby/poky/meta-debian/recipes-debian/attr/acl_debian.bb:do_install)
-NOTE: recipe acl-2.2.53-r0: task do_install: Started
-NOTE: recipe acl-2.2.53-r0: task do_install: Succeeded
-NOTE: Running task 608 of 613 (/home/deby/poky/meta-debian/recipes-debian/attr/acl_debian.bb:do_package)
-NOTE: Running task 609 of 613 (/home/deby/poky/meta-debian/recipes-debian/attr/acl_debian.bb:do_populate_sysroot)
-NOTE: recipe acl-2.2.53-r0: task do_package: Started
-NOTE: recipe acl-2.2.53-r0: task do_populate_sysroot: Started
-NOTE: recipe acl-2.2.53-r0: task do_populate_sysroot: Succeeded
-NOTE: recipe acl-2.2.53-r0: task do_package: Succeeded
-NOTE: Running task 610 of 613 (/home/deby/poky/meta-debian/recipes-debian/attr/acl_debian.bb:do_packagedata)
-NOTE: recipe acl-2.2.53-r0: task do_packagedata: Started
-NOTE: recipe acl-2.2.53-r0: task do_packagedata: Succeeded
-NOTE: Running task 611 of 613 (/home/deby/poky/meta-debian/recipes-debian/attr/acl_debian.bb:do_package_write_deb)
-NOTE: Running task 612 of 613 (/home/deby/poky/meta-debian/recipes-debian/attr/acl_debian.bb:do_package_qa)
-NOTE: recipe acl-2.2.53-r0: task do_package_write_deb: Started
-NOTE: recipe acl-2.2.53-r0: task do_package_qa: Started
-NOTE: recipe acl-2.2.53-r0: task do_package_qa: Succeeded
-NOTE: recipe acl-2.2.53-r0: task do_package_write_deb: Succeeded
-NOTE: Running noexec task 613 of 613 (/home/deby/poky/meta-debian/recipes-debian/attr/acl_debian.bb:do_build)
-NOTE: Tasks Summary: Attempted 613 tasks of which 584 didn't need to be rerun and all succeeded.
+NOTE: Tasks Summary: Attempted 613 tasks of which 613 didn't need to be rerun and all succeeded.

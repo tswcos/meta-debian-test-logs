@@ -1,5 +1,5 @@
 Loading cache...done.
-Loaded 1758 entries from dependency cache.
+Loaded 1763 entries from dependency cache.
 WARNING: No bb files matched BBFILE_PATTERN_debian-raspberrypi '^/home/deby/poky/meta-debian/tests/../../meta-debian/bsp/meta-raspberrypi/'
 NOTE: Resolving any missing task queue dependencies
 
@@ -15,183 +15,14 @@ TUNE_FEATURES        = "arm vfp cortexa7 neon vfpv4 thumb callconvention-hard"
 TARGET_FPU           = "hard"
 meta                 
 meta-poky            = "warrior:79a850a10a4b88a6d20d607b322542f947874323"
-meta-debian          = "warrior:79407869d1e56b8c7cb9ac0a9a48a4923ffa202b"
+meta-debian          = "warrior:065aa7dcd28d697d2d493e1f188deb4f78253725"
 meta-raspberrypi     = "warrior:0750d5d2bc9596f35d5d61bb0ff657be4b02bfdc"
-meta-raspberrypi     = "warrior:79407869d1e56b8c7cb9ac0a9a48a4923ffa202b"
+meta-raspberrypi     = "warrior:065aa7dcd28d697d2d493e1f188deb4f78253725"
 
 Initialising tasks...done.
-Sstate summary: Wanted 14 Found 0 Missed 14 Current 80 (0% match, 85% complete)
+Sstate summary: Wanted 0 Found 0 Missed 0 Current 94 (0% match, 100% complete)
 NOTE: Executing SetScene Tasks
 NOTE: Executing RunQueue Tasks
-NOTE: Running task 252 of 680 (/home/deby/poky/meta-debian/tests/../../meta-raspberrypi/recipes-kernel/linux/linux-raspberrypi_4.19.bb:do_fetch)
-NOTE: Running task 258 of 680 (/home/deby/poky/meta/recipes-kernel/kern-tools/kern-tools-native_git.bb:do_fetch)
-NOTE: Running task 568 of 680 (/home/deby/poky/meta-debian/recipes-debian/iptables/iptables_debian.bb:do_fetch)
-NOTE: Running task 622 of 680 (/home/deby/poky/meta/recipes-kernel/kmod/depmodwrapper-cross_1.0.bb:do_fetch)
-NOTE: recipe kern-tools-native-0.2+gitAUTOINC+af1a779f66-r12: task do_fetch: Started
-NOTE: recipe iptables-1.8.2-r0: task do_fetch: Started
-NOTE: recipe depmodwrapper-cross-1.0-r0: task do_fetch: Started
-NOTE: recipe depmodwrapper-cross-1.0-r0: task do_fetch: Succeeded
-NOTE: Running task 628 of 680 (/home/deby/poky/meta/recipes-kernel/kmod/depmodwrapper-cross_1.0.bb:do_unpack)
-NOTE: Running task 629 of 680 (/home/deby/poky/meta/recipes-kernel/kmod/depmodwrapper-cross_1.0.bb:do_prepare_recipe_sysroot)
-NOTE: recipe iptables-1.8.2-r0: task do_fetch: Succeeded
-NOTE: Running task 630 of 680 (/home/deby/poky/meta-debian/recipes-debian/iptables/iptables_debian.bb:do_unpack)
-NOTE: Running task 631 of 680 (/home/deby/poky/meta-debian/recipes-debian/iptables/iptables_debian.bb:do_prepare_recipe_sysroot)
-NOTE: recipe linux-raspberrypi-1_4.19.71+gitAUTOINC+13ce09db83-r0: task do_fetch: Started
-NOTE: recipe depmodwrapper-cross-1.0-r0: task do_prepare_recipe_sysroot: Started
-NOTE: recipe kern-tools-native-0.2+gitAUTOINC+af1a779f66-r12: task do_fetch: Succeeded
-NOTE: Running task 632 of 680 (/home/deby/poky/meta/recipes-kernel/kern-tools/kern-tools-native_git.bb:do_unpack)
-NOTE: Running task 633 of 680 (/home/deby/poky/meta/recipes-kernel/kern-tools/kern-tools-native_git.bb:do_prepare_recipe_sysroot)
-NOTE: recipe depmodwrapper-cross-1.0-r0: task do_unpack: Started
-NOTE: recipe kern-tools-native-0.2+gitAUTOINC+af1a779f66-r12: task do_prepare_recipe_sysroot: Started
-NOTE: recipe iptables-1.8.2-r0: task do_unpack: Started
-NOTE: recipe iptables-1.8.2-r0: task do_prepare_recipe_sysroot: Started
-NOTE: recipe kern-tools-native-0.2+gitAUTOINC+af1a779f66-r12: task do_unpack: Started
-NOTE: recipe depmodwrapper-cross-1.0-r0: task do_unpack: Succeeded
-NOTE: Running task 634 of 680 (/home/deby/poky/meta/recipes-kernel/kmod/depmodwrapper-cross_1.0.bb:do_patch)
-NOTE: recipe kern-tools-native-0.2+gitAUTOINC+af1a779f66-r12: task do_prepare_recipe_sysroot: Succeeded
-NOTE: recipe depmodwrapper-cross-1.0-r0: task do_patch: Started
-NOTE: recipe iptables-1.8.2-r0: task do_prepare_recipe_sysroot: Succeeded
-NOTE: recipe iptables-1.8.2-r0: task do_unpack: Succeeded
-NOTE: Running task 635 of 680 (/home/deby/poky/meta-debian/recipes-debian/iptables/iptables_debian.bb:do_debian_unpack_extra)
-NOTE: recipe iptables-1.8.2-r0: task do_debian_unpack_extra: Started
-NOTE: recipe iptables-1.8.2-r0: task do_debian_unpack_extra: Succeeded
-NOTE: Running task 636 of 680 (/home/deby/poky/meta-debian/recipes-debian/iptables/iptables_debian.bb:do_debian_patch)
-NOTE: recipe iptables-1.8.2-r0: task do_debian_patch: Started
-NOTE: recipe iptables-1.8.2-r0: task do_debian_patch: Succeeded
-NOTE: Running task 637 of 680 (/home/deby/poky/meta-debian/recipes-debian/iptables/iptables_debian.bb:do_patch)
-NOTE: recipe iptables-1.8.2-r0: task do_patch: Started
-NOTE: recipe iptables-1.8.2-r0: task do_patch: Succeeded
-NOTE: Running task 638 of 680 (/home/deby/poky/meta-debian/recipes-debian/iptables/iptables_debian.bb:do_configure)
-NOTE: Running task 639 of 680 (/home/deby/poky/meta-debian/recipes-debian/iptables/iptables_debian.bb:do_populate_lic)
-NOTE: recipe iptables-1.8.2-r0: task do_configure: Started
-NOTE: recipe iptables-1.8.2-r0: task do_populate_lic: Started
-NOTE: recipe iptables-1.8.2-r0: task do_populate_lic: Succeeded
-NOTE: recipe kern-tools-native-0.2+gitAUTOINC+af1a779f66-r12: task do_unpack: Succeeded
-NOTE: Running task 640 of 680 (/home/deby/poky/meta/recipes-kernel/kern-tools/kern-tools-native_git.bb:do_patch)
-NOTE: recipe kern-tools-native-0.2+gitAUTOINC+af1a779f66-r12: task do_patch: Started
-NOTE: recipe kern-tools-native-0.2+gitAUTOINC+af1a779f66-r12: task do_patch: Succeeded
-NOTE: Running task 641 of 680 (/home/deby/poky/meta/recipes-kernel/kern-tools/kern-tools-native_git.bb:do_configure)
-NOTE: recipe kern-tools-native-0.2+gitAUTOINC+af1a779f66-r12: task do_configure: Started
-NOTE: recipe kern-tools-native-0.2+gitAUTOINC+af1a779f66-r12: task do_configure: Succeeded
-NOTE: Running task 642 of 680 (/home/deby/poky/meta/recipes-kernel/kern-tools/kern-tools-native_git.bb:do_compile)
-NOTE: recipe kern-tools-native-0.2+gitAUTOINC+af1a779f66-r12: task do_compile: Started
-NOTE: recipe kern-tools-native-0.2+gitAUTOINC+af1a779f66-r12: task do_compile: Succeeded
-NOTE: Running task 643 of 680 (/home/deby/poky/meta/recipes-kernel/kern-tools/kern-tools-native_git.bb:do_install)
-NOTE: recipe kern-tools-native-0.2+gitAUTOINC+af1a779f66-r12: task do_install: Started
-NOTE: recipe kern-tools-native-0.2+gitAUTOINC+af1a779f66-r12: task do_install: Succeeded
-NOTE: Running task 644 of 680 (/home/deby/poky/meta/recipes-kernel/kern-tools/kern-tools-native_git.bb:do_populate_sysroot)
-NOTE: recipe kern-tools-native-0.2+gitAUTOINC+af1a779f66-r12: task do_populate_sysroot: Started
-NOTE: recipe depmodwrapper-cross-1.0-r0: task do_patch: Succeeded
-NOTE: recipe kern-tools-native-0.2+gitAUTOINC+af1a779f66-r12: task do_populate_sysroot: Succeeded
-NOTE: recipe depmodwrapper-cross-1.0-r0: task do_prepare_recipe_sysroot: Succeeded
-NOTE: Running task 645 of 680 (/home/deby/poky/meta/recipes-kernel/kmod/depmodwrapper-cross_1.0.bb:do_configure)
-NOTE: recipe depmodwrapper-cross-1.0-r0: task do_configure: Started
-NOTE: recipe depmodwrapper-cross-1.0-r0: task do_configure: Succeeded
-NOTE: Running task 646 of 680 (/home/deby/poky/meta/recipes-kernel/kmod/depmodwrapper-cross_1.0.bb:do_compile)
-NOTE: recipe depmodwrapper-cross-1.0-r0: task do_compile: Started
-NOTE: recipe depmodwrapper-cross-1.0-r0: task do_compile: Succeeded
-NOTE: Running task 647 of 680 (/home/deby/poky/meta/recipes-kernel/kmod/depmodwrapper-cross_1.0.bb:do_install)
-NOTE: recipe depmodwrapper-cross-1.0-r0: task do_install: Started
-NOTE: recipe depmodwrapper-cross-1.0-r0: task do_install: Succeeded
-NOTE: Running task 648 of 680 (/home/deby/poky/meta/recipes-kernel/kmod/depmodwrapper-cross_1.0.bb:do_populate_sysroot)
-NOTE: recipe depmodwrapper-cross-1.0-r0: task do_populate_sysroot: Started
-NOTE: recipe depmodwrapper-cross-1.0-r0: task do_populate_sysroot: Succeeded
-NOTE: recipe iptables-1.8.2-r0: task do_configure: Succeeded
-NOTE: Running task 649 of 680 (/home/deby/poky/meta-debian/recipes-debian/iptables/iptables_debian.bb:do_compile)
-NOTE: recipe iptables-1.8.2-r0: task do_compile: Started
-NOTE: recipe iptables-1.8.2-r0: task do_compile: Succeeded
-NOTE: Running task 650 of 680 (/home/deby/poky/meta-debian/recipes-debian/iptables/iptables_debian.bb:do_install)
-NOTE: recipe iptables-1.8.2-r0: task do_install: Started
-NOTE: recipe iptables-1.8.2-r0: task do_install: Succeeded
-NOTE: Running task 651 of 680 (/home/deby/poky/meta-debian/recipes-debian/iptables/iptables_debian.bb:do_package)
-NOTE: Running task 652 of 680 (/home/deby/poky/meta-debian/recipes-debian/iptables/iptables_debian.bb:do_populate_sysroot)
-NOTE: recipe iptables-1.8.2-r0: task do_package: Started
-NOTE: recipe iptables-1.8.2-r0: task do_populate_sysroot: Started
-NOTE: recipe iptables-1.8.2-r0: task do_populate_sysroot: Succeeded
-NOTE: recipe iptables-1.8.2-r0: task do_package: Succeeded
-NOTE: Running task 653 of 680 (/home/deby/poky/meta-debian/recipes-debian/iptables/iptables_debian.bb:do_packagedata)
-NOTE: recipe iptables-1.8.2-r0: task do_packagedata: Started
-NOTE: recipe iptables-1.8.2-r0: task do_packagedata: Succeeded
-NOTE: recipe linux-raspberrypi-1_4.19.71+gitAUTOINC+13ce09db83-r0: task do_fetch: Succeeded
-NOTE: Running task 654 of 680 (/home/deby/poky/meta-debian/tests/../../meta-raspberrypi/recipes-kernel/linux/linux-raspberrypi_4.19.bb:do_unpack)
-NOTE: Running task 655 of 680 (/home/deby/poky/meta-debian/tests/../../meta-raspberrypi/recipes-kernel/linux/linux-raspberrypi_4.19.bb:do_prepare_recipe_sysroot)
-NOTE: recipe linux-raspberrypi-1_4.19.71+gitAUTOINC+13ce09db83-r0: task do_unpack: Started
-NOTE: recipe linux-raspberrypi-1_4.19.71+gitAUTOINC+13ce09db83-r0: task do_prepare_recipe_sysroot: Started
-NOTE: recipe linux-raspberrypi-1_4.19.71+gitAUTOINC+13ce09db83-r0: task do_prepare_recipe_sysroot: Succeeded
-NOTE: recipe linux-raspberrypi-1_4.19.71+gitAUTOINC+13ce09db83-r0: task do_unpack: Succeeded
-NOTE: Running task 656 of 680 (/home/deby/poky/meta-debian/tests/../../meta-raspberrypi/recipes-kernel/linux/linux-raspberrypi_4.19.bb:do_kernel_checkout)
-NOTE: Running task 657 of 680 (/home/deby/poky/meta-debian/tests/../../meta-raspberrypi/recipes-kernel/linux/linux-raspberrypi_4.19.bb:do_symlink_kernsrc)
-NOTE: recipe linux-raspberrypi-1_4.19.71+gitAUTOINC+13ce09db83-r0: task do_symlink_kernsrc: Started
-NOTE: recipe linux-raspberrypi-1_4.19.71+gitAUTOINC+13ce09db83-r0: task do_kernel_checkout: Started
-NOTE: recipe linux-raspberrypi-1_4.19.71+gitAUTOINC+13ce09db83-r0: task do_symlink_kernsrc: Succeeded
-NOTE: recipe linux-raspberrypi-1_4.19.71+gitAUTOINC+13ce09db83-r0: task do_kernel_checkout: Succeeded
-NOTE: Running task 658 of 680 (/home/deby/poky/meta-debian/tests/../../meta-raspberrypi/recipes-kernel/linux/linux-raspberrypi_4.19.bb:do_validate_branches)
-NOTE: recipe linux-raspberrypi-1_4.19.71+gitAUTOINC+13ce09db83-r0: task do_validate_branches: Started
-NOTE: recipe linux-raspberrypi-1_4.19.71+gitAUTOINC+13ce09db83-r0: task do_validate_branches: Succeeded
-NOTE: Running task 659 of 680 (/home/deby/poky/meta-debian/tests/../../meta-raspberrypi/recipes-kernel/linux/linux-raspberrypi_4.19.bb:do_kernel_metadata)
-NOTE: recipe linux-raspberrypi-1_4.19.71+gitAUTOINC+13ce09db83-r0: task do_kernel_metadata: Started
-NOTE: recipe linux-raspberrypi-1_4.19.71+gitAUTOINC+13ce09db83-r0: task do_kernel_metadata: Succeeded
-NOTE: Running task 660 of 680 (/home/deby/poky/meta-debian/tests/../../meta-raspberrypi/recipes-kernel/linux/linux-raspberrypi_4.19.bb:do_patch)
-NOTE: Running task 661 of 680 (/home/deby/poky/meta-debian/tests/../../meta-raspberrypi/recipes-kernel/linux/linux-raspberrypi_4.19.bb:do_kernel_version_sanity_check)
-NOTE: recipe linux-raspberrypi-1_4.19.71+gitAUTOINC+13ce09db83-r0: task do_patch: Started
-NOTE: recipe linux-raspberrypi-1_4.19.71+gitAUTOINC+13ce09db83-r0: task do_kernel_version_sanity_check: Started
-NOTE: recipe linux-raspberrypi-1_4.19.71+gitAUTOINC+13ce09db83-r0: task do_kernel_version_sanity_check: Succeeded
-NOTE: recipe linux-raspberrypi-1_4.19.71+gitAUTOINC+13ce09db83-r0: task do_patch: Succeeded
-NOTE: Running task 662 of 680 (/home/deby/poky/meta-debian/tests/../../meta-raspberrypi/recipes-kernel/linux/linux-raspberrypi_4.19.bb:do_kernel_configme)
-NOTE: recipe linux-raspberrypi-1_4.19.71+gitAUTOINC+13ce09db83-r0: task do_kernel_configme: Started
-NOTE: recipe linux-raspberrypi-1_4.19.71+gitAUTOINC+13ce09db83-r0: task do_kernel_configme: Succeeded
-NOTE: Running task 663 of 680 (/home/deby/poky/meta-debian/tests/../../meta-raspberrypi/recipes-kernel/linux/linux-raspberrypi_4.19.bb:do_configure)
-NOTE: recipe linux-raspberrypi-1_4.19.71+gitAUTOINC+13ce09db83-r0: task do_configure: Started
-NOTE: recipe linux-raspberrypi-1_4.19.71+gitAUTOINC+13ce09db83-r0: task do_configure: Succeeded
-NOTE: Running task 664 of 680 (/home/deby/poky/meta-debian/tests/../../meta-raspberrypi/recipes-kernel/linux/linux-raspberrypi_4.19.bb:do_kernel_configcheck)
-NOTE: recipe linux-raspberrypi-1_4.19.71+gitAUTOINC+13ce09db83-r0: task do_kernel_configcheck: Started
-NOTE: recipe linux-raspberrypi-1_4.19.71+gitAUTOINC+13ce09db83-r0: task do_kernel_configcheck: Succeeded
-NOTE: Running task 665 of 680 (/home/deby/poky/meta-debian/tests/../../meta-raspberrypi/recipes-kernel/linux/linux-raspberrypi_4.19.bb:do_compile)
-NOTE: recipe linux-raspberrypi-1_4.19.71+gitAUTOINC+13ce09db83-r0: task do_compile: Started
-NOTE: recipe linux-raspberrypi-1_4.19.71+gitAUTOINC+13ce09db83-r0: task do_compile: Succeeded
-NOTE: Running task 666 of 680 (/home/deby/poky/meta-debian/tests/../../meta-raspberrypi/recipes-kernel/linux/linux-raspberrypi_4.19.bb:do_shared_workdir)
-NOTE: Running task 667 of 680 (/home/deby/poky/meta-debian/tests/../../meta-raspberrypi/recipes-kernel/linux/linux-raspberrypi_4.19.bb:do_kernel_link_images)
-NOTE: recipe linux-raspberrypi-1_4.19.71+gitAUTOINC+13ce09db83-r0: task do_shared_workdir: Started
-NOTE: recipe linux-raspberrypi-1_4.19.71+gitAUTOINC+13ce09db83-r0: task do_kernel_link_images: Started
-NOTE: recipe linux-raspberrypi-1_4.19.71+gitAUTOINC+13ce09db83-r0: task do_kernel_link_images: Succeeded
-NOTE: recipe linux-raspberrypi-1_4.19.71+gitAUTOINC+13ce09db83-r0: task do_shared_workdir: Succeeded
-NOTE: Running task 668 of 680 (/home/deby/poky/meta-debian/tests/../../meta-raspberrypi/recipes-kernel/linux/linux-raspberrypi_4.19.bb:do_compile_kernelmodules)
-NOTE: recipe linux-raspberrypi-1_4.19.71+gitAUTOINC+13ce09db83-r0: task do_compile_kernelmodules: Started
-NOTE: recipe linux-raspberrypi-1_4.19.71+gitAUTOINC+13ce09db83-r0: task do_compile_kernelmodules: Succeeded
-NOTE: Running task 669 of 680 (/home/deby/poky/meta-debian/tests/../../meta-raspberrypi/recipes-kernel/linux/linux-raspberrypi_4.19.bb:do_strip)
-NOTE: recipe linux-raspberrypi-1_4.19.71+gitAUTOINC+13ce09db83-r0: task do_strip: Started
-NOTE: recipe linux-raspberrypi-1_4.19.71+gitAUTOINC+13ce09db83-r0: task do_strip: Succeeded
-NOTE: Running task 670 of 680 (/home/deby/poky/meta-debian/tests/../../meta-raspberrypi/recipes-kernel/linux/linux-raspberrypi_4.19.bb:do_sizecheck)
-NOTE: recipe linux-raspberrypi-1_4.19.71+gitAUTOINC+13ce09db83-r0: task do_sizecheck: Started
-NOTE: recipe linux-raspberrypi-1_4.19.71+gitAUTOINC+13ce09db83-r0: task do_sizecheck: Succeeded
-NOTE: Running task 671 of 680 (/home/deby/poky/meta-debian/tests/../../meta-raspberrypi/recipes-kernel/linux/linux-raspberrypi_4.19.bb:do_install)
-NOTE: recipe linux-raspberrypi-1_4.19.71+gitAUTOINC+13ce09db83-r0: task do_install: Started
-NOTE: recipe linux-raspberrypi-1_4.19.71+gitAUTOINC+13ce09db83-r0: task do_install: Succeeded
-NOTE: Running task 672 of 680 (/home/deby/poky/meta-debian/tests/../../meta-raspberrypi/recipes-kernel/linux/linux-raspberrypi_4.19.bb:do_package)
-NOTE: Running task 673 of 680 (/home/deby/poky/meta-debian/tests/../../meta-raspberrypi/recipes-kernel/linux/linux-raspberrypi_4.19.bb:do_bundle_initramfs)
-NOTE: Running task 674 of 680 (/home/deby/poky/meta-debian/tests/../../meta-raspberrypi/recipes-kernel/linux/linux-raspberrypi_4.19.bb:do_populate_sysroot)
-NOTE: recipe linux-raspberrypi-1_4.19.71+gitAUTOINC+13ce09db83-r0: task do_bundle_initramfs: Started
-NOTE: recipe linux-raspberrypi-1_4.19.71+gitAUTOINC+13ce09db83-r0: task do_populate_sysroot: Started
-NOTE: recipe linux-raspberrypi-1_4.19.71+gitAUTOINC+13ce09db83-r0: task do_package: Started
-NOTE: recipe linux-raspberrypi-1_4.19.71+gitAUTOINC+13ce09db83-r0: task do_bundle_initramfs: Succeeded
-NOTE: recipe linux-raspberrypi-1_4.19.71+gitAUTOINC+13ce09db83-r0: task do_populate_sysroot: Succeeded
-NOTE: recipe linux-raspberrypi-1_4.19.71+gitAUTOINC+13ce09db83-r0: task do_package: Succeeded
-NOTE: Running task 675 of 680 (/home/deby/poky/meta-debian/tests/../../meta-raspberrypi/recipes-kernel/linux/linux-raspberrypi_4.19.bb:do_packagedata)
-NOTE: recipe linux-raspberrypi-1_4.19.71+gitAUTOINC+13ce09db83-r0: task do_packagedata: Started
-NOTE: recipe linux-raspberrypi-1_4.19.71+gitAUTOINC+13ce09db83-r0: task do_packagedata: Succeeded
-NOTE: Running task 676 of 680 (/home/deby/poky/meta-debian/tests/../../meta-raspberrypi/recipes-kernel/linux/linux-raspberrypi_4.19.bb:do_deploy)
-NOTE: Running task 677 of 680 (/home/deby/poky/meta-debian/tests/../../meta-raspberrypi/recipes-kernel/linux/linux-raspberrypi_4.19.bb:do_package_write_deb)
-NOTE: Running task 678 of 680 (/home/deby/poky/meta-debian/recipes-debian/iptables/iptables_debian.bb:do_package_write_deb)
-NOTE: Running task 679 of 680 (/home/deby/poky/meta-debian/recipes-debian/iptables/iptables_debian.bb:do_package_qa)
-NOTE: recipe linux-raspberrypi-1_4.19.71+gitAUTOINC+13ce09db83-r0: task do_deploy: Started
-NOTE: recipe linux-raspberrypi-1_4.19.71+gitAUTOINC+13ce09db83-r0: task do_package_write_deb: Started
-NOTE: recipe iptables-1.8.2-r0: task do_package_write_deb: Started
-NOTE: recipe iptables-1.8.2-r0: task do_package_qa: Started
-NOTE: recipe linux-raspberrypi-1_4.19.71+gitAUTOINC+13ce09db83-r0: task do_deploy: Succeeded
-NOTE: recipe iptables-1.8.2-r0: task do_package_write_deb: Succeeded
-NOTE: recipe iptables-1.8.2-r0: task do_package_qa: Succeeded
-NOTE: recipe linux-raspberrypi-1_4.19.71+gitAUTOINC+13ce09db83-r0: task do_package_write_deb: Succeeded
-NOTE: Running noexec task 680 of 680 (/home/deby/poky/meta-debian/recipes-debian/iptables/iptables_debian.bb:do_build)
-NOTE: Tasks Summary: Attempted 680 tasks of which 623 didn't need to be rerun and all succeeded.
+NOTE: Tasks Summary: Attempted 680 tasks of which 680 didn't need to be rerun and all succeeded.
 
 Summary: There was 1 WARNING message shown.

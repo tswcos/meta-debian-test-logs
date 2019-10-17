@@ -1,5 +1,5 @@
 Loading cache...done.
-Loaded 1738 entries from dependency cache.
+Loaded 1763 entries from dependency cache.
 WARNING: No bb files matched BBFILE_PATTERN_debian-raspberrypi '^/home/deby/poky/meta-debian/tests/../../meta-debian/bsp/meta-raspberrypi/'
 NOTE: Resolving any missing task queue dependencies
 
@@ -15,60 +15,14 @@ TUNE_FEATURES        = "arm vfp cortexa7 neon vfpv4 thumb callconvention-hard"
 TARGET_FPU           = "hard"
 meta                 
 meta-poky            = "warrior:79a850a10a4b88a6d20d607b322542f947874323"
-meta-debian          = "warrior:79407869d1e56b8c7cb9ac0a9a48a4923ffa202b"
+meta-debian          = "warrior:065aa7dcd28d697d2d493e1f188deb4f78253725"
 meta-raspberrypi     = "warrior:0750d5d2bc9596f35d5d61bb0ff657be4b02bfdc"
-meta-raspberrypi     = "warrior:79407869d1e56b8c7cb9ac0a9a48a4923ffa202b"
+meta-raspberrypi     = "warrior:065aa7dcd28d697d2d493e1f188deb4f78253725"
 
 Initialising tasks...done.
-Sstate summary: Wanted 6 Found 0 Missed 6 Current 115 (0% match, 95% complete)
+Sstate summary: Wanted 0 Found 0 Missed 0 Current 121 (0% match, 100% complete)
 NOTE: Executing SetScene Tasks
 NOTE: Executing RunQueue Tasks
-NOTE: Running task 613 of 731 (/home/deby/poky/meta-debian/recipes-debian/sudo/sudo_debian.bb:do_fetch)
-NOTE: recipe sudo-1.8.27-r0: task do_fetch: Started
-NOTE: recipe sudo-1.8.27-r0: task do_fetch: Succeeded
-NOTE: Running task 717 of 731 (/home/deby/poky/meta-debian/recipes-debian/sudo/sudo_debian.bb:do_unpack)
-NOTE: Running task 718 of 731 (/home/deby/poky/meta-debian/recipes-debian/sudo/sudo_debian.bb:do_prepare_recipe_sysroot)
-NOTE: recipe sudo-1.8.27-r0: task do_unpack: Started
-NOTE: recipe sudo-1.8.27-r0: task do_prepare_recipe_sysroot: Started
-NOTE: recipe sudo-1.8.27-r0: task do_unpack: Succeeded
-NOTE: Running task 719 of 731 (/home/deby/poky/meta-debian/recipes-debian/sudo/sudo_debian.bb:do_debian_unpack_extra)
-NOTE: recipe sudo-1.8.27-r0: task do_debian_unpack_extra: Started
-NOTE: recipe sudo-1.8.27-r0: task do_debian_unpack_extra: Succeeded
-NOTE: Running task 720 of 731 (/home/deby/poky/meta-debian/recipes-debian/sudo/sudo_debian.bb:do_debian_patch)
-NOTE: recipe sudo-1.8.27-r0: task do_prepare_recipe_sysroot: Succeeded
-NOTE: recipe sudo-1.8.27-r0: task do_debian_patch: Started
-NOTE: recipe sudo-1.8.27-r0: task do_debian_patch: Succeeded
-NOTE: Running task 721 of 731 (/home/deby/poky/meta-debian/recipes-debian/sudo/sudo_debian.bb:do_patch)
-NOTE: recipe sudo-1.8.27-r0: task do_patch: Started
-NOTE: recipe sudo-1.8.27-r0: task do_patch: Succeeded
-NOTE: Running task 722 of 731 (/home/deby/poky/meta-debian/recipes-debian/sudo/sudo_debian.bb:do_configure)
-NOTE: Running task 723 of 731 (/home/deby/poky/meta-debian/recipes-debian/sudo/sudo_debian.bb:do_populate_lic)
-NOTE: recipe sudo-1.8.27-r0: task do_populate_lic: Started
-NOTE: recipe sudo-1.8.27-r0: task do_configure: Started
-NOTE: recipe sudo-1.8.27-r0: task do_populate_lic: Succeeded
-NOTE: recipe sudo-1.8.27-r0: task do_configure: Succeeded
-NOTE: Running task 724 of 731 (/home/deby/poky/meta-debian/recipes-debian/sudo/sudo_debian.bb:do_compile)
-NOTE: recipe sudo-1.8.27-r0: task do_compile: Started
-NOTE: recipe sudo-1.8.27-r0: task do_compile: Succeeded
-NOTE: Running task 725 of 731 (/home/deby/poky/meta-debian/recipes-debian/sudo/sudo_debian.bb:do_install)
-NOTE: recipe sudo-1.8.27-r0: task do_install: Started
-NOTE: recipe sudo-1.8.27-r0: task do_install: Succeeded
-NOTE: Running task 726 of 731 (/home/deby/poky/meta-debian/recipes-debian/sudo/sudo_debian.bb:do_package)
-NOTE: Running task 727 of 731 (/home/deby/poky/meta-debian/recipes-debian/sudo/sudo_debian.bb:do_populate_sysroot)
-NOTE: recipe sudo-1.8.27-r0: task do_populate_sysroot: Started
-NOTE: recipe sudo-1.8.27-r0: task do_package: Started
-NOTE: recipe sudo-1.8.27-r0: task do_populate_sysroot: Succeeded
-NOTE: recipe sudo-1.8.27-r0: task do_package: Succeeded
-NOTE: Running task 728 of 731 (/home/deby/poky/meta-debian/recipes-debian/sudo/sudo_debian.bb:do_packagedata)
-NOTE: recipe sudo-1.8.27-r0: task do_packagedata: Started
-NOTE: recipe sudo-1.8.27-r0: task do_packagedata: Succeeded
-NOTE: Running task 729 of 731 (/home/deby/poky/meta-debian/recipes-debian/sudo/sudo_debian.bb:do_package_write_deb)
-NOTE: Running task 730 of 731 (/home/deby/poky/meta-debian/recipes-debian/sudo/sudo_debian.bb:do_package_qa)
-NOTE: recipe sudo-1.8.27-r0: task do_package_write_deb: Started
-NOTE: recipe sudo-1.8.27-r0: task do_package_qa: Started
-NOTE: recipe sudo-1.8.27-r0: task do_package_qa: Succeeded
-NOTE: recipe sudo-1.8.27-r0: task do_package_write_deb: Succeeded
-NOTE: Running noexec task 731 of 731 (/home/deby/poky/meta-debian/recipes-debian/sudo/sudo_debian.bb:do_build)
-NOTE: Tasks Summary: Attempted 731 tasks of which 715 didn't need to be rerun and all succeeded.
+NOTE: Tasks Summary: Attempted 731 tasks of which 731 didn't need to be rerun and all succeeded.
 
 Summary: There was 1 WARNING message shown.

@@ -1,5 +1,5 @@
 Loading cache...done.
-Loaded 1723 entries from dependency cache.
+Loaded 1748 entries from dependency cache.
 NOTE: Resolving any missing task queue dependencies
 
 Build Configuration:
@@ -14,17 +14,10 @@ TUNE_FEATURES        = "aarch64 armv8a crc"
 TARGET_FPU           = ""
 meta                 
 meta-poky            = "warrior:79a850a10a4b88a6d20d607b322542f947874323"
-meta-debian          = "warrior:79407869d1e56b8c7cb9ac0a9a48a4923ffa202b"
+meta-debian          = "warrior:065aa7dcd28d697d2d493e1f188deb4f78253725"
 
 Initialising tasks...done.
-Sstate summary: Wanted 2 Found 0 Missed 2 Current 419 (0% match, 99% complete)
+Sstate summary: Wanted 0 Found 0 Missed 0 Current 421 (0% match, 100% complete)
 NOTE: Executing SetScene Tasks
 NOTE: Executing RunQueue Tasks
-NOTE: Running task 1944 of 1947 (/home/deby/poky/meta-debian/recipes-debian/util-linux/util-linux_debian.bb:do_populate_lic)
-NOTE: Running task 1946 of 1947 (/home/deby/poky/meta-debian/recipes-debian/util-linux/util-linux_debian.bb:do_package_qa)
-NOTE: recipe util-linux-2.33.1-r0: task do_populate_lic: Started
-NOTE: recipe util-linux-2.33.1-r0: task do_populate_lic: Succeeded
-NOTE: recipe util-linux-2.33.1-r0: task do_package_qa: Started
-NOTE: recipe util-linux-2.33.1-r0: task do_package_qa: Succeeded
-NOTE: Running noexec task 1947 of 1947 (/home/deby/poky/meta-debian/recipes-debian/util-linux/util-linux_debian.bb:do_build)
-NOTE: Tasks Summary: Attempted 1947 tasks of which 1944 didn't need to be rerun and all succeeded.
+NOTE: Tasks Summary: Attempted 1947 tasks of which 1947 didn't need to be rerun and all succeeded.
