@@ -1,5 +1,7 @@
 Loading cache...done.
-Loaded 1733 entries from dependency cache.
+Loaded 1731 entries from dependency cache.
+Parsing recipes...done.
+Parsing of 992 .bb files complete (990 cached, 2 parsed). 1733 targets, 229 skipped, 0 masked, 0 errors.
 NOTE: Resolving any missing task queue dependencies
 
 Build Configuration:
@@ -14,32 +16,38 @@ TUNE_FEATURES        = "o32 bigendian fpu-hard mips32r2"
 TARGET_FPU           = ""
 meta                 
 meta-poky            = "warrior:79a850a10a4b88a6d20d607b322542f947874323"
-meta-debian          = "warrior:065aa7dcd28d697d2d493e1f188deb4f78253725"
+meta-debian          = "warrior:f7512bd96372e67fe4288cb5cb61cf52d282dd4e"
 
 Initialising tasks...done.
 Sstate summary: Wanted 5 Found 0 Missed 5 Current 199 (0% match, 97% complete)
 NOTE: Executing SetScene Tasks
 NOTE: Executing RunQueue Tasks
-NOTE: Running task 954 of 1074 (/home/deby/poky/meta-debian/recipes-debian/ntpsec/ntpsec_debian.bb:do_compile)
+NOTE: Running task 949 of 1074 (/home/deby/poky/meta-debian/recipes-debian/ntpsec/ntpsec_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe ntpsec-1.1.3-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe ntpsec-1.1.3-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 1066 of 1074 (/home/deby/poky/meta-debian/recipes-debian/ntpsec/ntpsec_debian.bb:do_configure)
+NOTE: recipe ntpsec-1.1.3-r0: task do_configure: Started
+NOTE: recipe ntpsec-1.1.3-r0: task do_configure: Succeeded
+NOTE: Running task 1067 of 1074 (/home/deby/poky/meta-debian/recipes-debian/ntpsec/ntpsec_debian.bb:do_compile)
 NOTE: recipe ntpsec-1.1.3-r0: task do_compile: Started
-ERROR: ntpsec-1.1.3-r0 do_compile: Function failed: do_compile (log file is located at /home/deby/build-tiny/tmp/work/mips32r2-deby-linux/ntpsec/1.1.3-r0/temp/log.do_compile.2579)
-ERROR: Logfile of failure stored in: /home/deby/build-tiny/tmp/work/mips32r2-deby-linux/ntpsec/1.1.3-r0/temp/log.do_compile.2579
-Log data follows:
-| DEBUG: Executing shell function do_compile
-| --- building host ---
-| Waf: Entering directory `/home/deby/build-tiny/tmp/work/mips32r2-deby-linux/ntpsec/1.1.3-r0/ntpsec-1.1.3+dfsg1/build/host'
-| [5/5] Compiling build/host/ntpd/ntp_parser.tab.h
-| /bin/sh: 1: /home/deby/build-tiny/tmp/work/mips32r2-deby-linux/ntpsec/1.1.3-r0/ntpsec-1.1.3+dfsg1/build/host/ntpd/keyword-gen: Exec format error
-| 
-| Waf: Leaving directory `/home/deby/build-tiny/tmp/work/mips32r2-deby-linux/ntpsec/1.1.3-r0/ntpsec-1.1.3+dfsg1/build/host'
-| Build failed
-|  -> task in 'ntp_keyword.h' failed with exit status 2 (run with -v to display more information)
-| WARNING: exit code 1 from a shell command.
-| ERROR: Function failed: do_compile (log file is located at /home/deby/build-tiny/tmp/work/mips32r2-deby-linux/ntpsec/1.1.3-r0/temp/log.do_compile.2579)
-NOTE: recipe ntpsec-1.1.3-r0: task do_compile: Failed
-ERROR: Task (/home/deby/poky/meta-debian/recipes-debian/ntpsec/ntpsec_debian.bb:do_compile) failed with exit code '1'
-NOTE: Tasks Summary: Attempted 1067 tasks of which 1066 didn't need to be rerun and 1 failed.
-
-Summary: 1 task failed:
-  /home/deby/poky/meta-debian/recipes-debian/ntpsec/ntpsec_debian.bb:do_compile
-Summary: There was 1 ERROR message shown, returning a non-zero exit code.
+NOTE: recipe ntpsec-1.1.3-r0: task do_compile: Succeeded
+NOTE: Running task 1068 of 1074 (/home/deby/poky/meta-debian/recipes-debian/ntpsec/ntpsec_debian.bb:do_install)
+NOTE: recipe ntpsec-1.1.3-r0: task do_install: Started
+NOTE: recipe ntpsec-1.1.3-r0: task do_install: Succeeded
+NOTE: Running task 1069 of 1074 (/home/deby/poky/meta-debian/recipes-debian/ntpsec/ntpsec_debian.bb:do_package)
+NOTE: Running task 1070 of 1074 (/home/deby/poky/meta-debian/recipes-debian/ntpsec/ntpsec_debian.bb:do_populate_sysroot)
+NOTE: recipe ntpsec-1.1.3-r0: task do_populate_sysroot: Started
+NOTE: recipe ntpsec-1.1.3-r0: task do_package: Started
+NOTE: recipe ntpsec-1.1.3-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe ntpsec-1.1.3-r0: task do_package: Succeeded
+NOTE: Running task 1071 of 1074 (/home/deby/poky/meta-debian/recipes-debian/ntpsec/ntpsec_debian.bb:do_packagedata)
+NOTE: recipe ntpsec-1.1.3-r0: task do_packagedata: Started
+NOTE: recipe ntpsec-1.1.3-r0: task do_packagedata: Succeeded
+NOTE: Running task 1072 of 1074 (/home/deby/poky/meta-debian/recipes-debian/ntpsec/ntpsec_debian.bb:do_package_write_deb)
+NOTE: Running task 1073 of 1074 (/home/deby/poky/meta-debian/recipes-debian/ntpsec/ntpsec_debian.bb:do_package_qa)
+NOTE: recipe ntpsec-1.1.3-r0: task do_package_write_deb: Started
+NOTE: recipe ntpsec-1.1.3-r0: task do_package_qa: Started
+NOTE: recipe ntpsec-1.1.3-r0: task do_package_qa: Succeeded
+NOTE: recipe ntpsec-1.1.3-r0: task do_package_write_deb: Succeeded
+NOTE: Running noexec task 1074 of 1074 (/home/deby/poky/meta-debian/recipes-debian/ntpsec/ntpsec_debian.bb:do_build)
+NOTE: Tasks Summary: Attempted 1074 tasks of which 1064 didn't need to be rerun and all succeeded.

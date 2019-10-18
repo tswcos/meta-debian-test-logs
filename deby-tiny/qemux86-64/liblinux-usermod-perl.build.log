@@ -1,5 +1,7 @@
 Loading cache...done.
-Loaded 1748 entries from dependency cache.
+Loaded 1746 entries from dependency cache.
+Parsing recipes...done.
+Parsing of 992 .bb files complete (990 cached, 2 parsed). 1733 targets, 208 skipped, 0 masked, 0 errors.
 NOTE: Resolving any missing task queue dependencies
 
 Build Configuration:
@@ -14,10 +16,62 @@ TUNE_FEATURES        = "m64 core2"
 TARGET_FPU           = ""
 meta                 
 meta-poky            = "warrior:79a850a10a4b88a6d20d607b322542f947874323"
-meta-debian          = "warrior:065aa7dcd28d697d2d493e1f188deb4f78253725"
+meta-debian          = "warrior:f7512bd96372e67fe4288cb5cb61cf52d282dd4e"
 
 Initialising tasks...done.
-Sstate summary: Wanted 0 Found 0 Missed 0 Current 81 (0% match, 100% complete)
+Sstate summary: Wanted 9 Found 0 Missed 9 Current 72 (0% match, 88% complete)
 NOTE: Executing SetScene Tasks
 NOTE: Executing RunQueue Tasks
-NOTE: Tasks Summary: Attempted 589 tasks of which 589 didn't need to be rerun and all succeeded.
+NOTE: Running task 538 of 589 (/home/deby/poky/meta-debian/recipes-debian/perl/perl_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe perl-5.28.1-r1: task do_prepare_recipe_sysroot: Started
+NOTE: recipe perl-5.28.1-r1: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 573 of 589 (/home/deby/poky/meta-debian/recipes-debian/perl/perl_debian.bb:do_configure)
+NOTE: recipe perl-5.28.1-r1: task do_configure: Started
+NOTE: recipe perl-5.28.1-r1: task do_configure: Succeeded
+NOTE: Running task 574 of 589 (/home/deby/poky/meta-debian/recipes-debian/perl/perl_debian.bb:do_compile)
+NOTE: recipe perl-5.28.1-r1: task do_compile: Started
+NOTE: recipe perl-5.28.1-r1: task do_compile: Succeeded
+NOTE: Running task 575 of 589 (/home/deby/poky/meta-debian/recipes-debian/perl/perl_debian.bb:do_install)
+NOTE: recipe perl-5.28.1-r1: task do_install: Started
+NOTE: recipe perl-5.28.1-r1: task do_install: Succeeded
+NOTE: Running task 576 of 589 (/home/deby/poky/meta-debian/recipes-debian/perl/perl_debian.bb:do_package)
+NOTE: Running task 577 of 589 (/home/deby/poky/meta-debian/recipes-debian/perl/perl_debian.bb:do_populate_sysroot)
+NOTE: recipe perl-5.28.1-r1: task do_populate_sysroot: Started
+NOTE: recipe perl-5.28.1-r1: task do_package: Started
+NOTE: recipe perl-5.28.1-r1: task do_populate_sysroot: Succeeded
+NOTE: Running task 578 of 589 (/home/deby/poky/meta-debian/recipes-debian/liblinux-usermod-perl/liblinux-usermod-perl_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe liblinux-usermod-perl-0.69-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe liblinux-usermod-perl-0.69-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 579 of 589 (/home/deby/poky/meta-debian/recipes-debian/liblinux-usermod-perl/liblinux-usermod-perl_debian.bb:do_configure)
+NOTE: recipe liblinux-usermod-perl-0.69-r0: task do_configure: Started
+NOTE: recipe liblinux-usermod-perl-0.69-r0: task do_configure: Succeeded
+NOTE: Running task 580 of 589 (/home/deby/poky/meta-debian/recipes-debian/liblinux-usermod-perl/liblinux-usermod-perl_debian.bb:do_compile)
+NOTE: recipe liblinux-usermod-perl-0.69-r0: task do_compile: Started
+NOTE: recipe liblinux-usermod-perl-0.69-r0: task do_compile: Succeeded
+NOTE: Running task 581 of 589 (/home/deby/poky/meta-debian/recipes-debian/liblinux-usermod-perl/liblinux-usermod-perl_debian.bb:do_install)
+NOTE: recipe liblinux-usermod-perl-0.69-r0: task do_install: Started
+NOTE: recipe liblinux-usermod-perl-0.69-r0: task do_install: Succeeded
+NOTE: Running task 582 of 589 (/home/deby/poky/meta-debian/recipes-debian/liblinux-usermod-perl/liblinux-usermod-perl_debian.bb:do_populate_sysroot)
+NOTE: recipe liblinux-usermod-perl-0.69-r0: task do_populate_sysroot: Started
+NOTE: recipe liblinux-usermod-perl-0.69-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe perl-5.28.1-r1: task do_package: Succeeded
+NOTE: Running task 583 of 589 (/home/deby/poky/meta-debian/recipes-debian/perl/perl_debian.bb:do_packagedata)
+NOTE: recipe perl-5.28.1-r1: task do_packagedata: Started
+NOTE: recipe perl-5.28.1-r1: task do_packagedata: Succeeded
+NOTE: Running task 584 of 589 (/home/deby/poky/meta-debian/recipes-debian/liblinux-usermod-perl/liblinux-usermod-perl_debian.bb:do_package)
+NOTE: Running task 585 of 589 (/home/deby/poky/meta-debian/recipes-debian/perl/perl_debian.bb:do_package_write_deb)
+NOTE: recipe perl-5.28.1-r1: task do_package_write_deb: Started
+NOTE: recipe liblinux-usermod-perl-0.69-r0: task do_package: Started
+NOTE: recipe liblinux-usermod-perl-0.69-r0: task do_package: Succeeded
+NOTE: Running task 586 of 589 (/home/deby/poky/meta-debian/recipes-debian/liblinux-usermod-perl/liblinux-usermod-perl_debian.bb:do_packagedata)
+NOTE: recipe liblinux-usermod-perl-0.69-r0: task do_packagedata: Started
+NOTE: recipe liblinux-usermod-perl-0.69-r0: task do_packagedata: Succeeded
+NOTE: Running task 587 of 589 (/home/deby/poky/meta-debian/recipes-debian/liblinux-usermod-perl/liblinux-usermod-perl_debian.bb:do_package_write_deb)
+NOTE: Running task 588 of 589 (/home/deby/poky/meta-debian/recipes-debian/liblinux-usermod-perl/liblinux-usermod-perl_debian.bb:do_package_qa)
+NOTE: recipe liblinux-usermod-perl-0.69-r0: task do_package_write_deb: Started
+NOTE: recipe liblinux-usermod-perl-0.69-r0: task do_package_qa: Started
+NOTE: recipe liblinux-usermod-perl-0.69-r0: task do_package_qa: Succeeded
+NOTE: recipe liblinux-usermod-perl-0.69-r0: task do_package_write_deb: Succeeded
+NOTE: recipe perl-5.28.1-r1: task do_package_write_deb: Succeeded
+NOTE: Running noexec task 589 of 589 (/home/deby/poky/meta-debian/recipes-debian/liblinux-usermod-perl/liblinux-usermod-perl_debian.bb:do_build)
+NOTE: Tasks Summary: Attempted 589 tasks of which 571 didn't need to be rerun and all succeeded.

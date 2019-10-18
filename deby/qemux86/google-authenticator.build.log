@@ -1,5 +1,7 @@
 Loading cache...done.
-Loaded 1748 entries from dependency cache.
+Loaded 1746 entries from dependency cache.
+Parsing recipes...done.
+Parsing of 992 .bb files complete (990 cached, 2 parsed). 1733 targets, 43 skipped, 0 masked, 0 errors.
 NOTE: Resolving any missing task queue dependencies
 
 Build Configuration:
@@ -14,26 +16,56 @@ TUNE_FEATURES        = "m32 i586"
 TARGET_FPU           = ""
 meta                 
 meta-poky            = "warrior:79a850a10a4b88a6d20d607b322542f947874323"
-meta-debian          = "warrior:065aa7dcd28d697d2d493e1f188deb4f78253725"
+meta-debian          = "warrior:f7512bd96372e67fe4288cb5cb61cf52d282dd4e"
 
 Initialising tasks...done.
-Sstate summary: Wanted 14 Found 14 Missed 0 Current 411 (100% match, 100% complete)
+Sstate summary: Wanted 6 Found 1 Missed 5 Current 419 (16% match, 98% complete)
 NOTE: Executing SetScene Tasks
-NOTE: Running setscene task 412 of 425 (/home/deby/poky/meta-debian/recipes-debian/google-authenticator/google-authenticator_debian.bb:do_populate_sysroot_setscene)
-NOTE: Running setscene task 413 of 425 (/home/deby/poky/meta-debian/recipes-debian/google-authenticator/google-authenticator_debian.bb:do_package_qa_setscene)
-NOTE: Running setscene task 414 of 425 (/home/deby/poky/meta-debian/recipes-debian/google-authenticator/google-authenticator_debian.bb:do_package_write_deb_setscene)
-NOTE: Running setscene task 415 of 425 (/home/deby/poky/meta-debian/recipes-debian/google-authenticator/google-authenticator_debian.bb:do_populate_lic_setscene)
+NOTE: Running setscene task 425 of 425 (/home/deby/poky/meta-debian/recipes-debian/google-authenticator/google-authenticator_debian.bb:do_populate_lic_setscene)
 NOTE: recipe google-authenticator-20170702-r0: task do_populate_lic_setscene: Started
-NOTE: recipe google-authenticator-20170702-r0: task do_populate_sysroot_setscene: Started
-NOTE: recipe google-authenticator-20170702-r0: task do_package_qa_setscene: Started
-NOTE: recipe google-authenticator-20170702-r0: task do_package_write_deb_setscene: Started
 NOTE: recipe google-authenticator-20170702-r0: task do_populate_lic_setscene: Succeeded
-NOTE: recipe google-authenticator-20170702-r0: task do_package_qa_setscene: Succeeded
-NOTE: recipe google-authenticator-20170702-r0: task do_package_write_deb_setscene: Succeeded
-NOTE: Running setscene task 424 of 425 (/home/deby/poky/meta-debian/recipes-debian/google-authenticator/google-authenticator_debian.bb:do_packagedata_setscene)
-NOTE: recipe google-authenticator-20170702-r0: task do_populate_sysroot_setscene: Succeeded
-NOTE: recipe google-authenticator-20170702-r0: task do_packagedata_setscene: Started
-NOTE: recipe google-authenticator-20170702-r0: task do_packagedata_setscene: Succeeded
 NOTE: Executing RunQueue Tasks
+NOTE: Running task 1314 of 1960 (/home/deby/poky/meta-debian/recipes-debian/google-authenticator/google-authenticator_debian.bb:do_fetch)
+NOTE: recipe google-authenticator-20170702-r0: task do_fetch: Started
+NOTE: recipe google-authenticator-20170702-r0: task do_fetch: Succeeded
+NOTE: Running task 1946 of 1960 (/home/deby/poky/meta-debian/recipes-debian/google-authenticator/google-authenticator_debian.bb:do_unpack)
+NOTE: Running task 1947 of 1960 (/home/deby/poky/meta-debian/recipes-debian/google-authenticator/google-authenticator_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe google-authenticator-20170702-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe google-authenticator-20170702-r0: task do_unpack: Started
+NOTE: recipe google-authenticator-20170702-r0: task do_unpack: Succeeded
+NOTE: Running task 1948 of 1960 (/home/deby/poky/meta-debian/recipes-debian/google-authenticator/google-authenticator_debian.bb:do_debian_unpack_extra)
+NOTE: recipe google-authenticator-20170702-r0: task do_debian_unpack_extra: Started
+NOTE: recipe google-authenticator-20170702-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 1949 of 1960 (/home/deby/poky/meta-debian/recipes-debian/google-authenticator/google-authenticator_debian.bb:do_debian_patch)
+NOTE: recipe google-authenticator-20170702-r0: task do_debian_patch: Started
+NOTE: recipe google-authenticator-20170702-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: recipe google-authenticator-20170702-r0: task do_debian_patch: Succeeded
+NOTE: Running task 1950 of 1960 (/home/deby/poky/meta-debian/recipes-debian/google-authenticator/google-authenticator_debian.bb:do_patch)
+NOTE: recipe google-authenticator-20170702-r0: task do_patch: Started
+NOTE: recipe google-authenticator-20170702-r0: task do_patch: Succeeded
+NOTE: Running task 1951 of 1960 (/home/deby/poky/meta-debian/recipes-debian/google-authenticator/google-authenticator_debian.bb:do_configure)
+NOTE: recipe google-authenticator-20170702-r0: task do_configure: Started
+NOTE: recipe google-authenticator-20170702-r0: task do_configure: Succeeded
+NOTE: Running task 1953 of 1960 (/home/deby/poky/meta-debian/recipes-debian/google-authenticator/google-authenticator_debian.bb:do_compile)
+NOTE: recipe google-authenticator-20170702-r0: task do_compile: Started
+NOTE: recipe google-authenticator-20170702-r0: task do_compile: Succeeded
+NOTE: Running task 1954 of 1960 (/home/deby/poky/meta-debian/recipes-debian/google-authenticator/google-authenticator_debian.bb:do_install)
+NOTE: recipe google-authenticator-20170702-r0: task do_install: Started
+NOTE: recipe google-authenticator-20170702-r0: task do_install: Succeeded
+NOTE: Running task 1955 of 1960 (/home/deby/poky/meta-debian/recipes-debian/google-authenticator/google-authenticator_debian.bb:do_package)
+NOTE: Running task 1956 of 1960 (/home/deby/poky/meta-debian/recipes-debian/google-authenticator/google-authenticator_debian.bb:do_populate_sysroot)
+NOTE: recipe google-authenticator-20170702-r0: task do_populate_sysroot: Started
+NOTE: recipe google-authenticator-20170702-r0: task do_package: Started
+NOTE: recipe google-authenticator-20170702-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe google-authenticator-20170702-r0: task do_package: Succeeded
+NOTE: Running task 1957 of 1960 (/home/deby/poky/meta-debian/recipes-debian/google-authenticator/google-authenticator_debian.bb:do_packagedata)
+NOTE: recipe google-authenticator-20170702-r0: task do_packagedata: Started
+NOTE: recipe google-authenticator-20170702-r0: task do_packagedata: Succeeded
+NOTE: Running task 1958 of 1960 (/home/deby/poky/meta-debian/recipes-debian/google-authenticator/google-authenticator_debian.bb:do_package_write_deb)
+NOTE: Running task 1959 of 1960 (/home/deby/poky/meta-debian/recipes-debian/google-authenticator/google-authenticator_debian.bb:do_package_qa)
+NOTE: recipe google-authenticator-20170702-r0: task do_package_write_deb: Started
+NOTE: recipe google-authenticator-20170702-r0: task do_package_qa: Started
+NOTE: recipe google-authenticator-20170702-r0: task do_package_write_deb: Succeeded
+NOTE: recipe google-authenticator-20170702-r0: task do_package_qa: Succeeded
 NOTE: Running noexec task 1960 of 1960 (/home/deby/poky/meta-debian/recipes-debian/google-authenticator/google-authenticator_debian.bb:do_build)
-NOTE: Tasks Summary: Attempted 1960 tasks of which 1959 didn't need to be rerun and all succeeded.
+NOTE: Tasks Summary: Attempted 1960 tasks of which 1945 didn't need to be rerun and all succeeded.

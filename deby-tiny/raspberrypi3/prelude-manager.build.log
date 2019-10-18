@@ -1,5 +1,7 @@
 Loading cache...done.
-Loaded 1763 entries from dependency cache.
+Loaded 1761 entries from dependency cache.
+Parsing recipes...done.
+Parsing of 1022 .bb files complete (1020 cached, 2 parsed). 1763 targets, 229 skipped, 0 masked, 0 errors.
 WARNING: No bb files matched BBFILE_PATTERN_debian-raspberrypi '^/home/deby/poky/meta-debian/tests/../../meta-debian/bsp/meta-raspberrypi/'
 NOTE: Resolving any missing task queue dependencies
 
@@ -15,86 +17,798 @@ TUNE_FEATURES        = "arm vfp cortexa7 neon vfpv4 thumb callconvention-hard"
 TARGET_FPU           = "hard"
 meta                 
 meta-poky            = "warrior:79a850a10a4b88a6d20d607b322542f947874323"
-meta-debian          = "warrior:065aa7dcd28d697d2d493e1f188deb4f78253725"
+meta-debian          = "warrior:f7512bd96372e67fe4288cb5cb61cf52d282dd4e"
 meta-raspberrypi     = "warrior:0750d5d2bc9596f35d5d61bb0ff657be4b02bfdc"
-meta-raspberrypi     = "warrior:065aa7dcd28d697d2d493e1f188deb4f78253725"
+meta-raspberrypi     = "warrior:f7512bd96372e67fe4288cb5cb61cf52d282dd4e"
 
 Initialising tasks...done.
-Sstate summary: Wanted 20 Found 0 Missed 20 Current 163 (0% match, 89% complete)
+Sstate summary: Wanted 10 Found 0 Missed 10 Current 173 (0% match, 94% complete)
 NOTE: Executing SetScene Tasks
 NOTE: Executing RunQueue Tasks
-NOTE: Running task 737 of 952 (/home/deby/poky/meta-debian/recipes-debian/libtool/libtool_debian.bb:do_install)
-NOTE: Running task 738 of 952 (/home/deby/poky/meta-debian/recipes-debian/libpreludedb/libpreludedb_debian.bb:do_fetch)
-NOTE: Running task 785 of 952 (/home/deby/poky/meta-debian/recipes-debian/prelude-manager/prelude-manager_debian.bb:do_fetch)
-NOTE: Running task 836 of 952 (virtual:native:/home/deby/poky/meta/recipes-support/gnutls/gnutls_3.6.7.bb:do_compile)
-NOTE: recipe libpreludedb-4.1.0-r0: task do_fetch: Started
-NOTE: recipe libpreludedb-4.1.0-r0: task do_fetch: Succeeded
-NOTE: Running task 907 of 952 (/home/deby/poky/meta-debian/recipes-debian/libpreludedb/libpreludedb_debian.bb:do_unpack)
-NOTE: recipe prelude-manager-4.1.1-r0: task do_fetch: Started
-NOTE: recipe libtool-2.4.6-r0: task do_install: Started
-NOTE: recipe gnutls-native-3.6.7-r0: task do_compile: Started
-NOTE: recipe prelude-manager-4.1.1-r0: task do_fetch: Succeeded
-NOTE: Running task 908 of 952 (/home/deby/poky/meta-debian/recipes-debian/prelude-manager/prelude-manager_debian.bb:do_unpack)
-NOTE: recipe libpreludedb-4.1.0-r0: task do_unpack: Started
-NOTE: recipe prelude-manager-4.1.1-r0: task do_unpack: Started
-NOTE: recipe libpreludedb-4.1.0-r0: task do_unpack: Succeeded
-NOTE: Running task 909 of 952 (/home/deby/poky/meta-debian/recipes-debian/libpreludedb/libpreludedb_debian.bb:do_debian_unpack_extra)
-NOTE: recipe prelude-manager-4.1.1-r0: task do_unpack: Succeeded
-NOTE: Running task 910 of 952 (/home/deby/poky/meta-debian/recipes-debian/prelude-manager/prelude-manager_debian.bb:do_debian_unpack_extra)
-NOTE: recipe libpreludedb-4.1.0-r0: task do_debian_unpack_extra: Started
-NOTE: recipe prelude-manager-4.1.1-r0: task do_debian_unpack_extra: Started
-NOTE: recipe libpreludedb-4.1.0-r0: task do_debian_unpack_extra: Succeeded
-NOTE: Running task 911 of 952 (/home/deby/poky/meta-debian/recipes-debian/libpreludedb/libpreludedb_debian.bb:do_debian_patch)
-NOTE: recipe prelude-manager-4.1.1-r0: task do_debian_unpack_extra: Succeeded
-NOTE: Running task 912 of 952 (/home/deby/poky/meta-debian/recipes-debian/prelude-manager/prelude-manager_debian.bb:do_debian_patch)
-NOTE: recipe libpreludedb-4.1.0-r0: task do_debian_patch: Started
-NOTE: recipe prelude-manager-4.1.1-r0: task do_debian_patch: Started
-NOTE: recipe libpreludedb-4.1.0-r0: task do_debian_patch: Succeeded
-NOTE: Running task 913 of 952 (/home/deby/poky/meta-debian/recipes-debian/libpreludedb/libpreludedb_debian.bb:do_patch)
-NOTE: recipe libpreludedb-4.1.0-r0: task do_patch: Started
-NOTE: recipe prelude-manager-4.1.1-r0: task do_debian_patch: Succeeded
-NOTE: Running task 914 of 952 (/home/deby/poky/meta-debian/recipes-debian/prelude-manager/prelude-manager_debian.bb:do_patch)
-NOTE: recipe prelude-manager-4.1.1-r0: task do_patch: Started
-NOTE: recipe libpreludedb-4.1.0-r0: task do_patch: Succeeded
-NOTE: recipe prelude-manager-4.1.1-r0: task do_patch: Succeeded
-NOTE: Running task 915 of 952 (/home/deby/poky/meta-debian/recipes-debian/prelude-manager/prelude-manager_debian.bb:do_populate_lic)
+NOTE: Running task 863 of 952 (/home/deby/poky/meta-debian/recipes-debian/libpreludedb/libpreludedb_debian.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 935 of 952 (/home/deby/poky/meta-debian/recipes-debian/prelude-manager/prelude-manager_debian.bb:do_populate_lic)
+NOTE: recipe libpreludedb-4.1.0-r0: task do_prepare_recipe_sysroot: Started
 NOTE: recipe prelude-manager-4.1.1-r0: task do_populate_lic: Started
-ERROR: prelude-manager-4.1.1-r0 do_populate_lic: QA Issue: prelude-manager: The LIC_FILES_CHKSUM does not match for file://config.sub;beginline=7;endline=25;md5=f92d7033ace1653856cc3084ddc33960
-prelude-manager: The new md5 checksum is e443b5b496d01ee52219d5269560d697
-prelude-manager: Here is the selected license text:
-vvvvvvvvvvvvvvvvvvvvvvvvvvvv beginline=7 vvvvvvvvvvvvvvvvvvvvvvvvvvvvv
-# This file is free software; you can redistribute it and/or modify it
-# under the terms of the GNU General Public License as published by
-# the Free Software Foundation; either version 3 of the License, or
-# (at your option) any later version.
-#
-# This program is distributed in the hope that it will be useful, but
-# WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-# General Public License for more details.
-#
-# You should have received a copy of the GNU General Public License
-# along with this program; if not, see <http://www.gnu.org/licenses/>.
-#
-# As a special exception to the GNU General Public License, if you
-# distribute this file as part of a program that contains a
-# configuration script generated by Autoconf, you may include it under
-# the same distribution terms that you use for the rest of that
-# program.  This Exception is an additional permission under section 7
-# of the GNU General Public License, version 3 ("GPLv3").
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ endline=25 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-prelude-manager: Check if the license information has changed in /home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/prelude-manager/4.1.1-r0/prelude-manager-4.1.1/config.sub (lines 7 through to 25) to verify that the LICENSE value "GPLv2+ & LGPL-2.1+ & MIT & GPLv3+" remains valid [license-checksum]
-ERROR: prelude-manager-4.1.1-r0 do_populate_lic: Fatal QA errors found, failing task.
-ERROR: prelude-manager-4.1.1-r0 do_populate_lic: 
-ERROR: prelude-manager-4.1.1-r0 do_populate_lic: Function failed: populate_lic_qa_checksum
-ERROR: Logfile of failure stored in: /home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/prelude-manager/4.1.1-r0/temp/log.do_populate_lic.10433
-NOTE: recipe prelude-manager-4.1.1-r0: task do_populate_lic: Failed
-ERROR: Task (/home/deby/poky/meta-debian/recipes-debian/prelude-manager/prelude-manager_debian.bb:do_populate_lic) failed with exit code '1'
-NOTE: recipe libtool-2.4.6-r0: task do_install: Succeeded
-NOTE: recipe gnutls-native-3.6.7-r0: task do_compile: Succeeded
-NOTE: Tasks Summary: Attempted 915 tasks of which 902 didn't need to be rerun and 1 failed.
+NOTE: recipe prelude-manager-4.1.1-r0: task do_populate_lic: Succeeded
+NOTE: recipe libpreludedb-4.1.0-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 936 of 952 (/home/deby/poky/meta-debian/recipes-debian/libpreludedb/libpreludedb_debian.bb:do_configure)
+NOTE: recipe libpreludedb-4.1.0-r0: task do_configure: Started
+NOTE: recipe libpreludedb-4.1.0-r0: task do_configure: Succeeded
+NOTE: Running task 937 of 952 (/home/deby/poky/meta-debian/recipes-debian/libpreludedb/libpreludedb_debian.bb:do_compile)
+NOTE: recipe libpreludedb-4.1.0-r0: task do_compile: Started
+ERROR: libpreludedb-4.1.0-r0 do_compile: oe_runmake failed
+ERROR: libpreludedb-4.1.0-r0 do_compile: Function failed: do_compile (log file is located at /home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/temp/log.do_compile.16287)
+ERROR: Logfile of failure stored in: /home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/temp/log.do_compile.16287
+Log data follows:
+| DEBUG: SITE files ['endian-little', 'bit-32', 'arm-common', 'arm-32', 'common-linux', 'common-glibc', 'arm-linux', 'arm-linux-gnueabi', 'common']
+| DEBUG: Executing shell function do_compile
+| NOTE: make -j 16
+| make  all-recursive
+| make[1]: Entering directory '/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/build'
+| Making all in m4
+| make[2]: Entering directory '/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/build/m4'
+| make[2]: Nothing to be done for 'all'.
+| make[2]: Leaving directory '/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/build/m4'
+| Making all in libmissing
+| make[2]: Entering directory '/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/build/libmissing'
+| rm -f alloca.h-t alloca.h && \
+| { echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+|   cat ../../libpreludedb-4.1.0/libmissing/alloca.in.h; \
+| } > alloca.h-t && \
+| mv -f alloca.h-t alloca.h
+| rm -f limits.h-t limits.h && \
+| { echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */' && \
+|   sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+|       -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+|       -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+|       -e 's|@''PRAGMA_COLUMNS''@||g' \
+|       -e 's|@''NEXT_LIMITS_H''@|<limits.h>|g' \
+|       < ../../libpreludedb-4.1.0/libmissing/limits.in.h; \
+| } > limits.h-t && \
+| mv limits.h-t limits.h
+| rm -f stdio.h-t stdio.h && \
+| { echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */' && \
+|   sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+|       -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+|       -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+|       -e 's|@''PRAGMA_COLUMNS''@||g' \
+|       -e 's|@''NEXT_STDIO_H''@|<stdio.h>|g' \
+|       -e 's/@''GNULIB_DPRINTF''@/0/g' \
+|       -e 's/@''GNULIB_FCLOSE''@/0/g' \
+|       -e 's/@''GNULIB_FDOPEN''@/IN_LIBPRELUDEDB_GNULIB_TESTS/g' \
+|       -e 's/@''GNULIB_FFLUSH''@/0/g' \
+|       -e 's/@''GNULIB_FGETC''@/1/g' \
+|       -e 's/@''GNULIB_FGETS''@/1/g' \
+|       -e 's/@''GNULIB_FOPEN''@/0/g' \
+|       -e 's/@''GNULIB_FPRINTF''@/1/g' \
+|       -e 's/@''GNULIB_FPRINTF_POSIX''@/0/g' \
+|       -e 's/@''GNULIB_FPURGE''@/0/g' \
+|       -e 's/@''GNULIB_FPUTC''@/1/g' \
+|       -e 's/@''GNULIB_FPUTS''@/1/g' \
+|       -e 's/@''GNULIB_FREAD''@/1/g' \
+|       -e 's/@''GNULIB_FREOPEN''@/0/g' \
+|       -e 's/@''GNULIB_FSCANF''@/1/g' \
+|       -e 's/@''GNULIB_FSEEK''@/0/g' \
+|       -e 's/@''GNULIB_FSEEKO''@/0/g' \
+|       -e 's/@''GNULIB_FTELL''@/0/g' \
+|       -e 's/@''GNULIB_FTELLO''@/0/g' \
+|       -e 's/@''GNULIB_FWRITE''@/1/g' \
+|       -e 's/@''GNULIB_GETC''@/1/g' \
+|       -e 's/@''GNULIB_GETCHAR''@/1/g' \
+|       -e 's/@''GNULIB_GETDELIM''@/0/g' \
+|       -e 's/@''GNULIB_GETLINE''@/0/g' \
+|       -e 's/@''GNULIB_OBSTACK_PRINTF''@/0/g' \
+|       -e 's/@''GNULIB_OBSTACK_PRINTF_POSIX''@/0/g' \
+|       -e 's/@''GNULIB_PCLOSE''@/0/g' \
+|       -e 's/@''GNULIB_PERROR''@/0/g' \
+|       -e 's/@''GNULIB_POPEN''@/0/g' \
+|       -e 's/@''GNULIB_PRINTF''@/1/g' \
+|       -e 's/@''GNULIB_PRINTF_POSIX''@/0/g' \
+|       -e 's/@''GNULIB_PUTC''@/1/g' \
+|       -e 's/@''GNULIB_PUTCHAR''@/1/g' \
+|       -e 's/@''GNULIB_PUTS''@/1/g' \
+|       -e 's/@''GNULIB_REMOVE''@/0/g' \
+|       -e 's/@''GNULIB_RENAME''@/0/g' \
+|       -e 's/@''GNULIB_RENAMEAT''@/0/g' \
+|       -e 's/@''GNULIB_SCANF''@/1/g' \
+|       -e 's/@''GNULIB_SNPRINTF''@/1/g' \
+|       -e 's/@''GNULIB_SPRINTF_POSIX''@/0/g' \
+|       -e 's/@''GNULIB_STDIO_H_NONBLOCKING''@/0/g' \
+|       -e 's/@''GNULIB_STDIO_H_SIGPIPE''@/0/g' \
+|       -e 's/@''GNULIB_TMPFILE''@/0/g' \
+|       -e 's/@''GNULIB_VASPRINTF''@/0/g' \
+|       -e 's/@''GNULIB_VDPRINTF''@/0/g' \
+|       -e 's/@''GNULIB_VFPRINTF''@/1/g' \
+|       -e 's/@''GNULIB_VFPRINTF_POSIX''@/0/g' \
+|       -e 's/@''GNULIB_VFSCANF''@/0/g' \
+|       -e 's/@''GNULIB_VSCANF''@/0/g' \
+|       -e 's/@''GNULIB_VPRINTF''@/1/g' \
+|       -e 's/@''GNULIB_VPRINTF_POSIX''@/0/g' \
+|       -e 's/@''GNULIB_VSNPRINTF''@/1/g' \
+|       -e 's/@''GNULIB_VSPRINTF_POSIX''@/0/g' \
+|       < ../../libpreludedb-4.1.0/libmissing/stdio.in.h | \
+|   sed -e 's|@''HAVE_DECL_FPURGE''@|1|g' \
+|       -e 's|@''HAVE_DECL_FSEEKO''@|1|g' \
+|       -e 's|@''HAVE_DECL_FTELLO''@|1|g' \
+|       -e 's|@''HAVE_DECL_GETDELIM''@|1|g' \
+|       -e 's|@''HAVE_DECL_GETLINE''@|1|g' \
+|       -e 's|@''HAVE_DECL_OBSTACK_PRINTF''@|1|g' \
+|       -e 's|@''HAVE_DECL_SNPRINTF''@|1|g' \
+|       -e 's|@''HAVE_DECL_VSNPRINTF''@|1|g' \
+|       -e 's|@''HAVE_DPRINTF''@|1|g' \
+|       -e 's|@''HAVE_FSEEKO''@|1|g' \
+|       -e 's|@''HAVE_FTELLO''@|1|g' \
+|       -e 's|@''HAVE_PCLOSE''@|1|g' \
+|       -e 's|@''HAVE_POPEN''@|1|g' \
+|       -e 's|@''HAVE_RENAMEAT''@|1|g' \
+|       -e 's|@''HAVE_VASPRINTF''@|1|g' \
+|       -e 's|@''HAVE_VDPRINTF''@|1|g' \
+|       -e 's|@''REPLACE_DPRINTF''@|0|g' \
+|       -e 's|@''REPLACE_FCLOSE''@|0|g' \
+|       -e 's|@''REPLACE_FDOPEN''@|0|g' \
+|       -e 's|@''REPLACE_FFLUSH''@|0|g' \
+|       -e 's|@''REPLACE_FOPEN''@|0|g' \
+|       -e 's|@''REPLACE_FPRINTF''@|0|g' \
+|       -e 's|@''REPLACE_FPURGE''@|0|g' \
+|       -e 's|@''REPLACE_FREOPEN''@|0|g' \
+|       -e 's|@''REPLACE_FSEEK''@|0|g' \
+|       -e 's|@''REPLACE_FSEEKO''@|0|g' \
+|       -e 's|@''REPLACE_FTELL''@|0|g' \
+|       -e 's|@''REPLACE_FTELLO''@|0|g' \
+|       -e 's|@''REPLACE_GETDELIM''@|0|g' \
+|       -e 's|@''REPLACE_GETLINE''@|0|g' \
+|       -e 's|@''REPLACE_OBSTACK_PRINTF''@|0|g' \
+|       -e 's|@''REPLACE_PERROR''@|0|g' \
+|       -e 's|@''REPLACE_POPEN''@|0|g' \
+|       -e 's|@''REPLACE_PRINTF''@|0|g' \
+|       -e 's|@''REPLACE_REMOVE''@|0|g' \
+|       -e 's|@''REPLACE_RENAME''@|0|g' \
+|       -e 's|@''REPLACE_RENAMEAT''@|0|g' \
+|       -e 's|@''REPLACE_SNPRINTF''@|0|g' \
+|       -e 's|@''REPLACE_SPRINTF''@|0|g' \
+|       -e 's|@''REPLACE_STDIO_READ_FUNCS''@|0|g' \
+|       -e 's|@''REPLACE_STDIO_WRITE_FUNCS''@|0|g' \
+|       -e 's|@''REPLACE_TMPFILE''@|0|g' \
+|       -e 's|@''REPLACE_VASPRINTF''@|0|g' \
+|       -e 's|@''REPLACE_VDPRINTF''@|0|g' \
+|       -e 's|@''REPLACE_VFPRINTF''@|0|g' \
+|       -e 's|@''REPLACE_VPRINTF''@|0|g' \
+|       -e 's|@''REPLACE_VSNPRINTF''@|0|g' \
+|       -e 's|@''REPLACE_VSPRINTF''@|0|g' \
+|       -e 's|@''ASM_SYMBOL_PREFIX''@||g' \
+|       -e '/definitions of _GL_FUNCDECL_RPL/r ../../libpreludedb-4.1.0/libmissing/c++defs.h' \
+|       -e '/definition of _GL_ARG_NONNULL/r ../../libpreludedb-4.1.0/libmissing/arg-nonnull.h' \
+|       -e '/definition of _GL_WARN_ON_USE/r ../../libpreludedb-4.1.0/libmissing/warn-on-use.h'; \
+| } > stdio.h-t && \
+| mv stdio.h-t stdio.h
+| rm -f stdlib.h-t stdlib.h && \
+| { echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */' && \
+|   sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+|       -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+|       -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+|       -e 's|@''PRAGMA_COLUMNS''@||g' \
+|       -e 's|@''NEXT_STDLIB_H''@|<stdlib.h>|g' \
+|       -e 's/@''GNULIB__EXIT''@/0/g' \
+|       -e 's/@''GNULIB_ATOLL''@/0/g' \
+|       -e 's/@''GNULIB_CALLOC_POSIX''@/0/g' \
+|       -e 's/@''GNULIB_CANONICALIZE_FILE_NAME''@/0/g' \
+|       -e 's/@''GNULIB_GETLOADAVG''@/0/g' \
+|       -e 's/@''GNULIB_GETSUBOPT''@/0/g' \
+|       -e 's/@''GNULIB_GRANTPT''@/0/g' \
+|       -e 's/@''GNULIB_MALLOC_POSIX''@/1/g' \
+|       -e 's/@''GNULIB_MBTOWC''@/0/g' \
+|       -e 's/@''GNULIB_MKDTEMP''@/0/g' \
+|       -e 's/@''GNULIB_MKOSTEMP''@/0/g' \
+|       -e 's/@''GNULIB_MKOSTEMPS''@/0/g' \
+|       -e 's/@''GNULIB_MKSTEMP''@/0/g' \
+|       -e 's/@''GNULIB_MKSTEMPS''@/0/g' \
+|       -e 's/@''GNULIB_POSIX_OPENPT''@/0/g' \
+|       -e 's/@''GNULIB_PTSNAME''@/0/g' \
+|       -e 's/@''GNULIB_PTSNAME_R''@/0/g' \
+|       -e 's/@''GNULIB_PUTENV''@/0/g' \
+|       -e 's/@''GNULIB_QSORT_R''@/0/g' \
+|       -e 's/@''GNULIB_RANDOM''@/0/g' \
+|       -e 's/@''GNULIB_RANDOM_R''@/0/g' \
+|       -e 's/@''GNULIB_REALLOC_POSIX''@/0/g' \
+|       -e 's/@''GNULIB_REALPATH''@/0/g' \
+|       -e 's/@''GNULIB_RPMATCH''@/0/g' \
+|       -e 's/@''GNULIB_SECURE_GETENV''@/0/g' \
+|       -e 's/@''GNULIB_SETENV''@/0/g' \
+|       -e 's/@''GNULIB_STRTOD''@/0/g' \
+|       -e 's/@''GNULIB_STRTOLL''@/0/g' \
+|       -e 's/@''GNULIB_STRTOULL''@/0/g' \
+|       -e 's/@''GNULIB_SYSTEM_POSIX''@/0/g' \
+|       -e 's/@''GNULIB_UNLOCKPT''@/0/g' \
+|       -e 's/@''GNULIB_UNSETENV''@/0/g' \
+|       -e 's/@''GNULIB_WCTOMB''@/0/g' \
+|       < ../../libpreludedb-4.1.0/libmissing/stdlib.in.h | \
+|   sed -e 's|@''HAVE__EXIT''@|1|g' \
+|       -e 's|@''HAVE_ATOLL''@|1|g' \
+|       -e 's|@''HAVE_CANONICALIZE_FILE_NAME''@|1|g' \
+|       -e 's|@''HAVE_DECL_GETLOADAVG''@|1|g' \
+|       -e 's|@''HAVE_GETSUBOPT''@|1|g' \
+|       -e 's|@''HAVE_GRANTPT''@|1|g' \
+|       -e 's|@''HAVE_MKDTEMP''@|1|g' \
+|       -e 's|@''HAVE_MKOSTEMP''@|1|g' \
+|       -e 's|@''HAVE_MKOSTEMPS''@|1|g' \
+|       -e 's|@''HAVE_MKSTEMP''@|1|g' \
+|       -e 's|@''HAVE_MKSTEMPS''@|1|g' \
+|       -e 's|@''HAVE_POSIX_OPENPT''@|1|g' \
+|       -e 's|@''HAVE_PTSNAME''@|1|g' \
+|       -e 's|@''HAVE_PTSNAME_R''@|1|g' \
+|       -e 's|@''HAVE_QSORT_R''@|1|g' \
+|       -e 's|@''HAVE_RANDOM''@|1|g' \
+|       -e 's|@''HAVE_RANDOM_H''@|1|g' \
+|       -e 's|@''HAVE_RANDOM_R''@|1|g' \
+|       -e 's|@''HAVE_REALPATH''@|1|g' \
+|       -e 's|@''HAVE_RPMATCH''@|1|g' \
+|       -e 's|@''HAVE_SECURE_GETENV''@|1|g' \
+|       -e 's|@''HAVE_DECL_SETENV''@|1|g' \
+|       -e 's|@''HAVE_STRTOD''@|1|g' \
+|       -e 's|@''HAVE_STRTOLL''@|1|g' \
+|       -e 's|@''HAVE_STRTOULL''@|1|g' \
+|       -e 's|@''HAVE_STRUCT_RANDOM_DATA''@|1|g' \
+|       -e 's|@''HAVE_SYS_LOADAVG_H''@|0|g' \
+|       -e 's|@''HAVE_UNLOCKPT''@|1|g' \
+|       -e 's|@''HAVE_DECL_UNSETENV''@|1|g' \
+|       -e 's|@''REPLACE_CALLOC''@|0|g' \
+|       -e 's|@''REPLACE_CANONICALIZE_FILE_NAME''@|0|g' \
+|       -e 's|@''REPLACE_MALLOC''@|0|g' \
+|       -e 's|@''REPLACE_MBTOWC''@|0|g' \
+|       -e 's|@''REPLACE_MKSTEMP''@|0|g' \
+|       -e 's|@''REPLACE_PTSNAME''@|0|g' \
+|       -e 's|@''REPLACE_PTSNAME_R''@|0|g' \
+|       -e 's|@''REPLACE_PUTENV''@|0|g' \
+|       -e 's|@''REPLACE_QSORT_R''@|0|g' \
+|       -e 's|@''REPLACE_RANDOM_R''@|0|g' \
+|       -e 's|@''REPLACE_REALLOC''@|0|g' \
+|       -e 's|@''REPLACE_REALPATH''@|0|g' \
+|       -e 's|@''REPLACE_SETENV''@|0|g' \
+|       -e 's|@''REPLACE_STRTOD''@|0|g' \
+|       -e 's|@''REPLACE_UNSETENV''@|0|g' \
+|       -e 's|@''REPLACE_WCTOMB''@|0|g' \
+|       -e '/definitions of _GL_FUNCDECL_RPL/r ../../libpreludedb-4.1.0/libmissing/c++defs.h' \
+|       -e '/definition of _Noreturn/r ../../libpreludedb-4.1.0/libmissing/_Noreturn.h' \
+|       -e '/definition of _GL_ARG_NONNULL/r ../../libpreludedb-4.1.0/libmissing/arg-nonnull.h' \
+|       -e '/definition of _GL_WARN_ON_USE/r ../../libpreludedb-4.1.0/libmissing/warn-on-use.h'; \
+| } > stdlib.h-t && \
+| mv stdlib.h-t stdlib.h
+| rm -f string.h-t string.h && \
+| { echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */' && \
+|   sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+|       -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+|       -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+|       -e 's|@''PRAGMA_COLUMNS''@||g' \
+|       -e 's|@''NEXT_STRING_H''@|<string.h>|g' \
+|       -e 's/@''GNULIB_FFSL''@/0/g' \
+|       -e 's/@''GNULIB_FFSLL''@/0/g' \
+|       -e 's/@''GNULIB_MBSLEN''@/0/g' \
+|       -e 's/@''GNULIB_MBSNLEN''@/0/g' \
+|       -e 's/@''GNULIB_MBSCHR''@/0/g' \
+|       -e 's/@''GNULIB_MBSRCHR''@/0/g' \
+|       -e 's/@''GNULIB_MBSSTR''@/0/g' \
+|       -e 's/@''GNULIB_MBSCASECMP''@/0/g' \
+|       -e 's/@''GNULIB_MBSNCASECMP''@/0/g' \
+|       -e 's/@''GNULIB_MBSPCASECMP''@/0/g' \
+|       -e 's/@''GNULIB_MBSCASESTR''@/0/g' \
+|       -e 's/@''GNULIB_MBSCSPN''@/0/g' \
+|       -e 's/@''GNULIB_MBSPBRK''@/0/g' \
+|       -e 's/@''GNULIB_MBSSPN''@/0/g' \
+|       -e 's/@''GNULIB_MBSSEP''@/0/g' \
+|       -e 's/@''GNULIB_MBSTOK_R''@/0/g' \
+|       -e 's/@''GNULIB_MEMCHR''@/1/g' \
+|       -e 's/@''GNULIB_MEMMEM''@/0/g' \
+|       -e 's/@''GNULIB_MEMPCPY''@/0/g' \
+|       -e 's/@''GNULIB_MEMRCHR''@/1/g' \
+|       -e 's/@''GNULIB_RAWMEMCHR''@/0/g' \
+|       -e 's/@''GNULIB_STPCPY''@/0/g' \
+|       -e 's/@''GNULIB_STPNCPY''@/0/g' \
+|       -e 's/@''GNULIB_STRCHRNUL''@/0/g' \
+|       -e 's/@''GNULIB_STRDUP''@/1/g' \
+|       -e 's/@''GNULIB_STRNCAT''@/0/g' \
+|       -e 's/@''GNULIB_STRNDUP''@/1/g' \
+|       -e 's/@''GNULIB_STRNLEN''@/1/g' \
+|       -e 's/@''GNULIB_STRPBRK''@/0/g' \
+|       -e 's/@''GNULIB_STRSEP''@/0/g' \
+|       -e 's/@''GNULIB_STRSTR''@/0/g' \
+|       -e 's/@''GNULIB_STRCASESTR''@/0/g' \
+|       -e 's/@''GNULIB_STRTOK_R''@/0/g' \
+|       -e 's/@''GNULIB_STRERROR''@/0/g' \
+|       -e 's/@''GNULIB_STRERROR_R''@/0/g' \
+|       -e 's/@''GNULIB_STRSIGNAL''@/0/g' \
+|       -e 's/@''GNULIB_STRVERSCMP''@/0/g' \
+|       < ../../libpreludedb-4.1.0/libmissing/string.in.h | \
+|   sed -e 's|@''HAVE_FFSL''@|1|g' \
+|       -e 's|@''HAVE_FFSLL''@|1|g' \
+|       -e 's|@''HAVE_MBSLEN''@|0|g' \
+|       -e 's|@''HAVE_MEMCHR''@|1|g' \
+|       -e 's|@''HAVE_DECL_MEMMEM''@|1|g' \
+|       -e 's|@''HAVE_MEMPCPY''@|1|g' \
+|       -e 's|@''HAVE_DECL_MEMRCHR''@|1|g' \
+|       -e 's|@''HAVE_RAWMEMCHR''@|1|g' \
+|       -e 's|@''HAVE_STPCPY''@|1|g' \
+|       -e 's|@''HAVE_STPNCPY''@|1|g' \
+|       -e 's|@''HAVE_STRCHRNUL''@|1|g' \
+|       -e 's|@''HAVE_DECL_STRDUP''@|1|g' \
+|       -e 's|@''HAVE_DECL_STRNDUP''@|1|g' \
+|       -e 's|@''HAVE_DECL_STRNLEN''@|1|g' \
+|       -e 's|@''HAVE_STRPBRK''@|1|g' \
+|       -e 's|@''HAVE_STRSEP''@|1|g' \
+|       -e 's|@''HAVE_STRCASESTR''@|1|g' \
+|       -e 's|@''HAVE_DECL_STRTOK_R''@|1|g' \
+|       -e 's|@''HAVE_DECL_STRERROR_R''@|1|g' \
+|       -e 's|@''HAVE_DECL_STRSIGNAL''@|1|g' \
+|       -e 's|@''HAVE_STRVERSCMP''@|1|g' \
+|       -e 's|@''REPLACE_STPNCPY''@|0|g' \
+|       -e 's|@''REPLACE_MEMCHR''@|1|g' \
+|       -e 's|@''REPLACE_MEMMEM''@|0|g' \
+|       -e 's|@''REPLACE_STRCASESTR''@|0|g' \
+|       -e 's|@''REPLACE_STRCHRNUL''@|0|g' \
+|       -e 's|@''REPLACE_STRDUP''@|0|g' \
+|       -e 's|@''REPLACE_STRSTR''@|0|g' \
+|       -e 's|@''REPLACE_STRERROR''@|0|g' \
+|       -e 's|@''REPLACE_STRERROR_R''@|0|g' \
+|       -e 's|@''REPLACE_STRNCAT''@|0|g' \
+|       -e 's|@''REPLACE_STRNDUP''@|0|g' \
+|       -e 's|@''REPLACE_STRNLEN''@|0|g' \
+|       -e 's|@''REPLACE_STRSIGNAL''@|0|g' \
+|       -e 's|@''REPLACE_STRTOK_R''@|0|g' \
+|       -e 's|@''UNDEFINE_STRTOK_R''@|0|g' \
+|       -e '/definitions of _GL_FUNCDECL_RPL/r ../../libpreludedb-4.1.0/libmissing/c++defs.h' \
+|       -e '/definition of _GL_ARG_NONNULL/r ../../libpreludedb-4.1.0/libmissing/arg-nonnull.h' \
+|       -e '/definition of _GL_WARN_ON_USE/r ../../libpreludedb-4.1.0/libmissing/warn-on-use.h'; \
+|       < ../../libpreludedb-4.1.0/libmissing/string.in.h; \
+| } > string.h-t && \
+| mv string.h-t string.h
+| /home/deby/build-tiny/tmp/hosttools/mkdir -p sys
+| rm -f time.h-t time.h && \
+| { echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */' && \
+|   sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+|       -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+|       -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+|       -e 's|@''PRAGMA_COLUMNS''@||g' \
+|       -e 's|@''NEXT_TIME_H''@|<time.h>|g' \
+|       -e 's/@''GNULIB_CTIME''@/0/g' \
+|       -e 's/@''GNULIB_LOCALTIME''@/0/g' \
+|       -e 's/@''GNULIB_MKTIME''@/0/g' \
+|       -e 's/@''GNULIB_NANOSLEEP''@/0/g' \
+|       -e 's/@''GNULIB_STRFTIME''@/0/g' \
+|       -e 's/@''GNULIB_STRPTIME''@/0/g' \
+|       -e 's/@''GNULIB_TIMEGM''@/0/g' \
+|       -e 's/@''GNULIB_TIME_R''@/1/g' \
+|       -e 's/@''GNULIB_TIME_RZ''@/0/g' \
+|       -e 's/@''GNULIB_TZSET''@/0/g' \
+|       -e 's|@''HAVE_DECL_LOCALTIME_R''@|1|g' \
+|       -e 's|@''HAVE_NANOSLEEP''@|1|g' \
+|       -e 's|@''HAVE_STRPTIME''@|1|g' \
+|       -e 's|@''HAVE_TIMEGM''@|1|g' \
+|       -e 's|@''HAVE_TIMEZONE_T''@|0|g' \
+|       -e 's|@''HAVE_TZSET''@|1|g' \
+|       -e 's|@''REPLACE_CTIME''@|GNULIB_PORTCHECK|g' \
+|       -e 's|@''REPLACE_GMTIME''@|0|g' \
+|       -e 's|@''REPLACE_LOCALTIME''@|0|g' \
+|       -e 's|@''REPLACE_LOCALTIME_R''@|0|g' \
+|       -e 's|@''REPLACE_MKTIME''@|GNULIB_PORTCHECK|g' \
+|       -e 's|@''REPLACE_NANOSLEEP''@|GNULIB_PORTCHECK|g' \
+|       -e 's|@''REPLACE_STRFTIME''@|GNULIB_PORTCHECK|g' \
+|       -e 's|@''REPLACE_TIMEGM''@|GNULIB_PORTCHECK|g' \
+|       -e 's|@''REPLACE_TZSET''@|GNULIB_PORTCHECK|g' \
+|       -e 's|@''PTHREAD_H_DEFINES_STRUCT_TIMESPEC''@|0|g' \
+|       -e 's|@''SYS_TIME_H_DEFINES_STRUCT_TIMESPEC''@|0|g' \
+|       -e 's|@''TIME_H_DEFINES_STRUCT_TIMESPEC''@|1|g' \
+|       -e 's|@''UNISTD_H_DEFINES_STRUCT_TIMESPEC''@|0|g' \
+|       -e '/definitions of _GL_FUNCDECL_RPL/r ../../libpreludedb-4.1.0/libmissing/c++defs.h' \
+|       -e '/definition of _GL_ARG_NONNULL/r ../../libpreludedb-4.1.0/libmissing/arg-nonnull.h' \
+|       -e '/definition of _GL_WARN_ON_USE/r ../../libpreludedb-4.1.0/libmissing/warn-on-use.h' \
+|       < ../../libpreludedb-4.1.0/libmissing/time.in.h; \
+| } > time.h-t && \
+| mv time.h-t time.h
+| rm -f unistd.h-t unistd.h && \
+| { echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+|   sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+|       -e 's|@''HAVE_UNISTD_H''@|1|g' \
+|       -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+|       -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+|       -e 's|@''PRAGMA_COLUMNS''@||g' \
+|       -e 's|@''NEXT_UNISTD_H''@|<unistd.h>|g' \
+|       -e 's|@''WINDOWS_64_BIT_OFF_T''@|0|g' \
+|       -e 's/@''GNULIB_CHDIR''@/0/g' \
+|       -e 's/@''GNULIB_CHOWN''@/0/g' \
+|       -e 's/@''GNULIB_CLOSE''@/0/g' \
+|       -e 's/@''GNULIB_DUP''@/0/g' \
+|       -e 's/@''GNULIB_DUP2''@/0/g' \
+|       -e 's/@''GNULIB_DUP3''@/0/g' \
+|       -e 's/@''GNULIB_ENVIRON''@/0/g' \
+|       -e 's/@''GNULIB_EUIDACCESS''@/0/g' \
+|       -e 's/@''GNULIB_FACCESSAT''@/0/g' \
+|       -e 's/@''GNULIB_FCHDIR''@/0/g' \
+|       -e 's/@''GNULIB_FCHOWNAT''@/0/g' \
+|       -e 's/@''GNULIB_FDATASYNC''@/0/g' \
+|       -e 's/@''GNULIB_FSYNC''@/0/g' \
+|       -e 's/@''GNULIB_FTRUNCATE''@/0/g' \
+|       -e 's/@''GNULIB_GETCWD''@/0/g' \
+|       -e 's/@''GNULIB_GETDOMAINNAME''@/0/g' \
+|       -e 's/@''GNULIB_GETDTABLESIZE''@/0/g' \
+|       -e 's/@''GNULIB_GETGROUPS''@/0/g' \
+|       -e 's/@''GNULIB_GETHOSTNAME''@/0/g' \
+|       -e 's/@''GNULIB_GETLOGIN''@/0/g' \
+|       -e 's/@''GNULIB_GETLOGIN_R''@/0/g' \
+|       -e 's/@''GNULIB_GETPAGESIZE''@/IN_LIBPRELUDEDB_GNULIB_TESTS/g' \
+|       -e 's/@''GNULIB_GETUSERSHELL''@/0/g' \
+|       -e 's/@''GNULIB_GROUP_MEMBER''@/0/g' \
+|       -e 's/@''GNULIB_ISATTY''@/0/g' \
+|       -e 's/@''GNULIB_LCHOWN''@/0/g' \
+|       -e 's/@''GNULIB_LINK''@/0/g' \
+|       -e 's/@''GNULIB_LINKAT''@/0/g' \
+|       -e 's/@''GNULIB_LSEEK''@/0/g' \
+|       -e 's/@''GNULIB_PIPE''@/0/g' \
+|       -e 's/@''GNULIB_PIPE2''@/0/g' \
+|       -e 's/@''GNULIB_PREAD''@/0/g' \
+|       -e 's/@''GNULIB_PWRITE''@/0/g' \
+|       -e 's/@''GNULIB_READ''@/0/g' \
+|       -e 's/@''GNULIB_READLINK''@/0/g' \
+|       -e 's/@''GNULIB_READLINKAT''@/0/g' \
+|       -e 's/@''GNULIB_RMDIR''@/0/g' \
+|       -e 's/@''GNULIB_SETHOSTNAME''@/0/g' \
+|       -e 's/@''GNULIB_SLEEP''@/IN_LIBPRELUDEDB_GNULIB_TESTS/g' \
+|       -e 's/@''GNULIB_SYMLINK''@/0/g' \
+|       -e 's/@''GNULIB_SYMLINKAT''@/0/g' \
+|       -e 's/@''GNULIB_TRUNCATE''@/0/g' \
+|       -e 's/@''GNULIB_TTYNAME_R''@/0/g' \
+|       -e 's/@''GNULIB_UNISTD_H_GETOPT''@/0/g' \
+|       -e 's/@''GNULIB_UNISTD_H_NONBLOCKING''@/0/g' \
+|       -e 's/@''GNULIB_UNISTD_H_SIGPIPE''@/0/g' \
+|       -e 's/@''GNULIB_UNLINK''@/0/g' \
+|       -e 's/@''GNULIB_UNLINKAT''@/0/g' \
+|       -e 's/@''GNULIB_USLEEP''@/IN_LIBPRELUDEDB_GNULIB_TESTS/g' \
+|       -e 's/@''GNULIB_WRITE''@/0/g' \
+|       < ../../libpreludedb-4.1.0/libmissing/unistd.in.h | \
+|   sed -e 's|@''HAVE_CHOWN''@|1|g' \
+|       -e 's|@''HAVE_DUP2''@|1|g' \
+|       -e 's|@''HAVE_DUP3''@|1|g' \
+|       -e 's|@''HAVE_EUIDACCESS''@|1|g' \
+|       -e 's|@''HAVE_FACCESSAT''@|1|g' \
+|       -e 's|@''HAVE_FCHDIR''@|1|g' \
+|       -e 's|@''HAVE_FCHOWNAT''@|1|g' \
+|       -e 's|@''HAVE_FDATASYNC''@|1|g' \
+|       -e 's|@''HAVE_FSYNC''@|1|g' \
+|       -e 's|@''HAVE_FTRUNCATE''@|1|g' \
+|       -e 's|@''HAVE_GETDTABLESIZE''@|1|g' \
+|       -e 's|@''HAVE_GETGROUPS''@|1|g' \
+|       -e 's|@''HAVE_GETHOSTNAME''@|1|g' \
+|       -e 's|@''HAVE_GETPAGESIZE''@|1|g' \
+|       -e 's|@''HAVE_GROUP_MEMBER''@|1|g' \
+|       -e 's|@''HAVE_LCHOWN''@|1|g' \
+|       -e 's|@''HAVE_LINK''@|1|g' \
+|       -e 's|@''HAVE_LINKAT''@|1|g' \
+|       -e 's|@''HAVE_PIPE''@|1|g' \
+|       -e 's|@''HAVE_PIPE2''@|1|g' \
+|       -e 's|@''HAVE_PREAD''@|1|g' \
+|       -e 's|@''HAVE_PWRITE''@|1|g' \
+|       -e 's|@''HAVE_READLINK''@|1|g' \
+|       -e 's|@''HAVE_READLINKAT''@|1|g' \
+|       -e 's|@''HAVE_SETHOSTNAME''@|1|g' \
+|       -e 's|@''HAVE_SLEEP''@|1|g' \
+|       -e 's|@''HAVE_SYMLINK''@|1|g' \
+|       -e 's|@''HAVE_SYMLINKAT''@|1|g' \
+|       -e 's|@''HAVE_TRUNCATE''@|1|g' \
+|       -e 's|@''HAVE_UNLINKAT''@|1|g' \
+|       -e 's|@''HAVE_USLEEP''@|1|g' \
+|       -e 's|@''HAVE_DECL_ENVIRON''@|1|g' \
+|       -e 's|@''HAVE_DECL_FCHDIR''@|1|g' \
+|       -e 's|@''HAVE_DECL_FDATASYNC''@|1|g' \
+|       -e 's|@''HAVE_DECL_GETDOMAINNAME''@|1|g' \
+|       -e 's|@''HAVE_DECL_GETLOGIN''@|1|g' \
+|       -e 's|@''HAVE_DECL_GETLOGIN_R''@|1|g' \
+|       -e 's|@''HAVE_DECL_GETPAGESIZE''@|1|g' \
+|       -e 's|@''HAVE_DECL_GETUSERSHELL''@|1|g' \
+|       -e 's|@''HAVE_DECL_SETHOSTNAME''@|1|g' \
+|       -e 's|@''HAVE_DECL_TTYNAME_R''@|1|g' \
+|       -e 's|@''HAVE_OS_H''@|0|g' \
+|       -e 's|@''HAVE_SYS_PARAM_H''@|0|g' \
+|   | \
+|   sed -e 's|@''REPLACE_CHOWN''@|0|g' \
+|       -e 's|@''REPLACE_CLOSE''@|0|g' \
+|       -e 's|@''REPLACE_DUP''@|0|g' \
+|       -e 's|@''REPLACE_DUP2''@|0|g' \
+|       -e 's|@''REPLACE_FCHOWNAT''@|0|g' \
+|       -e 's|@''REPLACE_FTRUNCATE''@|0|g' \
+|       -e 's|@''REPLACE_GETCWD''@|0|g' \
+|       -e 's|@''REPLACE_GETDOMAINNAME''@|0|g' \
+|       -e 's|@''REPLACE_GETDTABLESIZE''@|0|g' \
+|       -e 's|@''REPLACE_GETLOGIN_R''@|0|g' \
+|       -e 's|@''REPLACE_GETGROUPS''@|0|g' \
+|       -e 's|@''REPLACE_GETPAGESIZE''@|0|g' \
+|       -e 's|@''REPLACE_ISATTY''@|0|g' \
+|       -e 's|@''REPLACE_LCHOWN''@|0|g' \
+|       -e 's|@''REPLACE_LINK''@|0|g' \
+|       -e 's|@''REPLACE_LINKAT''@|0|g' \
+|       -e 's|@''REPLACE_LSEEK''@|0|g' \
+|       -e 's|@''REPLACE_PREAD''@|0|g' \
+|       -e 's|@''REPLACE_PWRITE''@|0|g' \
+|       -e 's|@''REPLACE_READ''@|0|g' \
+|       -e 's|@''REPLACE_READLINK''@|0|g' \
+|       -e 's|@''REPLACE_READLINKAT''@|0|g' \
+|       -e 's|@''REPLACE_RMDIR''@|0|g' \
+|       -e 's|@''REPLACE_SLEEP''@|0|g' \
+|       -e 's|@''REPLACE_SYMLINK''@|0|g' \
+|       -e 's|@''REPLACE_SYMLINKAT''@|0|g' \
+|       -e 's|@''REPLACE_TRUNCATE''@|0|g' \
+|       -e 's|@''REPLACE_TTYNAME_R''@|0|g' \
+|       -e 's|@''REPLACE_UNLINK''@|0|g' \
+|       -e 's|@''REPLACE_UNLINKAT''@|0|g' \
+|       -e 's|@''REPLACE_USLEEP''@|0|g' \
+|       -e 's|@''REPLACE_WRITE''@|0|g' \
+|       -e 's|@''UNISTD_H_HAVE_WINSOCK2_H''@|0|g' \
+|       -e 's|@''UNISTD_H_HAVE_WINSOCK2_H_AND_USE_SOCKETS''@|0|g' \
+|       -e '/definitions of _GL_FUNCDECL_RPL/r ../../libpreludedb-4.1.0/libmissing/c++defs.h' \
+|       -e '/definition of _GL_ARG_NONNULL/r ../../libpreludedb-4.1.0/libmissing/arg-nonnull.h' \
+|       -e '/definition of _GL_WARN_ON_USE/r ../../libpreludedb-4.1.0/libmissing/warn-on-use.h'; \
+| } > unistd.h-t && \
+| mv unistd.h-t unistd.h
+| rm -f sys/types.h-t sys/types.h && \
+| { echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+|   sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+|       -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+|       -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+|       -e 's|@''PRAGMA_COLUMNS''@||g' \
+|       -e 's|@''NEXT_SYS_TYPES_H''@|<sys/types.h>|g' \
+|       -e 's|@''WINDOWS_64_BIT_OFF_T''@|0|g' \
+|       -e 's|@''WINDOWS_STAT_INODES''@|0|g' \
+|       < ../../libpreludedb-4.1.0/libmissing/sys_types.in.h; \
+| } > sys/types.h-t && \
+| mv sys/types.h-t sys/types.h
+| rm -f wchar.h-t wchar.h && \
+| { echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+|   sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+|       -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+|       -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+|       -e 's|@''PRAGMA_COLUMNS''@||g' \
+|       -e 's|@''HAVE_FEATURES_H''@|1|g' \
+|       -e 's|@''NEXT_WCHAR_H''@|<wchar.h>|g' \
+|       -e 's|@''HAVE_WCHAR_H''@|1|g' \
+|       -e 's/@''HAVE_CRTDEFS_H''@/0/g' \
+|       -e 's/@''GNULIB_OVERRIDES_WINT_T''@/0/g' \
+|       -e 's/@''GNULIB_BTOWC''@/0/g' \
+|       -e 's/@''GNULIB_WCTOB''@/0/g' \
+|       -e 's/@''GNULIB_MBSINIT''@/0/g' \
+|       -e 's/@''GNULIB_MBRTOWC''@/0/g' \
+|       -e 's/@''GNULIB_MBRLEN''@/0/g' \
+|       -e 's/@''GNULIB_MBSRTOWCS''@/0/g' \
+|       -e 's/@''GNULIB_MBSNRTOWCS''@/0/g' \
+|       -e 's/@''GNULIB_WCRTOMB''@/0/g' \
+|       -e 's/@''GNULIB_WCSRTOMBS''@/0/g' \
+|       -e 's/@''GNULIB_WCSNRTOMBS''@/0/g' \
+|       -e 's/@''GNULIB_WCWIDTH''@/0/g' \
+|       -e 's/@''GNULIB_WMEMCHR''@/0/g' \
+|       -e 's/@''GNULIB_WMEMCMP''@/0/g' \
+|       -e 's/@''GNULIB_WMEMCPY''@/0/g' \
+|       -e 's/@''GNULIB_WMEMMOVE''@/0/g' \
+|       -e 's/@''GNULIB_WMEMSET''@/0/g' \
+|       -e 's/@''GNULIB_WCSLEN''@/0/g' \
+|       -e 's/@''GNULIB_WCSNLEN''@/0/g' \
+|       -e 's/@''GNULIB_WCSCPY''@/0/g' \
+|       -e 's/@''GNULIB_WCPCPY''@/0/g' \
+|       -e 's/@''GNULIB_WCSNCPY''@/0/g' \
+|       -e 's/@''GNULIB_WCPNCPY''@/0/g' \
+|       -e 's/@''GNULIB_WCSCAT''@/0/g' \
+|       -e 's/@''GNULIB_WCSNCAT''@/0/g' \
+|       -e 's/@''GNULIB_WCSCMP''@/0/g' \
+|       -e 's/@''GNULIB_WCSNCMP''@/0/g' \
+|       -e 's/@''GNULIB_WCSCASECMP''@/0/g' \
+|       -e 's/@''GNULIB_WCSNCASECMP''@/0/g' \
+|       -e 's/@''GNULIB_WCSCOLL''@/0/g' \
+|       -e 's/@''GNULIB_WCSXFRM''@/0/g' \
+|       -e 's/@''GNULIB_WCSDUP''@/0/g' \
+|       -e 's/@''GNULIB_WCSCHR''@/0/g' \
+|       -e 's/@''GNULIB_WCSRCHR''@/0/g' \
+|       -e 's/@''GNULIB_WCSCSPN''@/0/g' \
+|       -e 's/@''GNULIB_WCSSPN''@/0/g' \
+|       -e 's/@''GNULIB_WCSPBRK''@/0/g' \
+|       -e 's/@''GNULIB_WCSSTR''@/0/g' \
+|       -e 's/@''GNULIB_WCSTOK''@/0/g' \
+|       -e 's/@''GNULIB_WCSWIDTH''@/0/g' \
+|       -e 's/@''GNULIB_WCSFTIME''@/0/g' \
+|       < ../../libpreludedb-4.1.0/libmissing/wchar.in.h | \
+|   sed -e 's|@''HAVE_WINT_T''@|1|g' \
+|       -e 's|@''HAVE_BTOWC''@|1|g' \
+|       -e 's|@''HAVE_MBSINIT''@|1|g' \
+|       -e 's|@''HAVE_MBRTOWC''@|1|g' \
+|       -e 's|@''HAVE_MBRLEN''@|1|g' \
+|       -e 's|@''HAVE_MBSRTOWCS''@|1|g' \
+|       -e 's|@''HAVE_MBSNRTOWCS''@|1|g' \
+|       -e 's|@''HAVE_WCRTOMB''@|1|g' \
+|       -e 's|@''HAVE_WCSRTOMBS''@|1|g' \
+|       -e 's|@''HAVE_WCSNRTOMBS''@|1|g' \
+|       -e 's|@''HAVE_WMEMCHR''@|1|g' \
+|       -e 's|@''HAVE_WMEMCMP''@|1|g' \
+|       -e 's|@''HAVE_WMEMCPY''@|1|g' \
+|       -e 's|@''HAVE_WMEMMOVE''@|1|g' \
+|       -e 's|@''HAVE_WMEMSET''@|1|g' \
+|       -e 's|@''HAVE_WCSLEN''@|1|g' \
+|       -e 's|@''HAVE_WCSNLEN''@|1|g' \
+|       -e 's|@''HAVE_WCSCPY''@|1|g' \
+|       -e 's|@''HAVE_WCPCPY''@|1|g' \
+|       -e 's|@''HAVE_WCSNCPY''@|1|g' \
+|       -e 's|@''HAVE_WCPNCPY''@|1|g' \
+|       -e 's|@''HAVE_WCSCAT''@|1|g' \
+|       -e 's|@''HAVE_WCSNCAT''@|1|g' \
+|       -e 's|@''HAVE_WCSCMP''@|1|g' \
+|       -e 's|@''HAVE_WCSNCMP''@|1|g' \
+|       -e 's|@''HAVE_WCSCASECMP''@|1|g' \
+|       -e 's|@''HAVE_WCSNCASECMP''@|1|g' \
+|       -e 's|@''HAVE_WCSCOLL''@|1|g' \
+|       -e 's|@''HAVE_WCSXFRM''@|1|g' \
+|       -e 's|@''HAVE_WCSDUP''@|1|g' \
+|       -e 's|@''HAVE_WCSCHR''@|1|g' \
+|       -e 's|@''HAVE_WCSRCHR''@|1|g' \
+|       -e 's|@''HAVE_WCSCSPN''@|1|g' \
+|       -e 's|@''HAVE_WCSSPN''@|1|g' \
+|       -e 's|@''HAVE_WCSPBRK''@|1|g' \
+|       -e 's|@''HAVE_WCSSTR''@|1|g' \
+|       -e 's|@''HAVE_WCSTOK''@|1|g' \
+|       -e 's|@''HAVE_WCSWIDTH''@|1|g' \
+|       -e 's|@''HAVE_WCSFTIME''@|1|g' \
+|       -e 's|@''HAVE_DECL_WCTOB''@|1|g' \
+|       -e 's|@''HAVE_DECL_WCWIDTH''@|1|g' \
+|   | \
+|   sed -e 's|@''REPLACE_MBSTATE_T''@|0|g' \
+|       -e 's|@''REPLACE_BTOWC''@|0|g' \
+|       -e 's|@''REPLACE_WCTOB''@|0|g' \
+|       -e 's|@''REPLACE_MBSINIT''@|0|g' \
+|       -e 's|@''REPLACE_MBRTOWC''@|0|g' \
+|       -e 's|@''REPLACE_MBRLEN''@|0|g' \
+|       -e 's|@''REPLACE_MBSRTOWCS''@|0|g' \
+|       -e 's|@''REPLACE_MBSNRTOWCS''@|0|g' \
+|       -e 's|@''REPLACE_WCRTOMB''@|0|g' \
+|       -e 's|@''REPLACE_WCSRTOMBS''@|0|g' \
+|       -e 's|@''REPLACE_WCSNRTOMBS''@|0|g' \
+|       -e 's|@''REPLACE_WCWIDTH''@|0|g' \
+|       -e 's|@''REPLACE_WCSWIDTH''@|0|g' \
+|       -e 's|@''REPLACE_WCSFTIME''@|0|g' \
+|       -e '/definitions of _GL_FUNCDECL_RPL/r ../../libpreludedb-4.1.0/libmissing/c++defs.h' \
+|       -e '/definition of _GL_ARG_NONNULL/r ../../libpreludedb-4.1.0/libmissing/arg-nonnull.h' \
+|       -e '/definition of _GL_WARN_ON_USE/r ../../libpreludedb-4.1.0/libmissing/warn-on-use.h'; \
+| } > wchar.h-t && \
+| mv wchar.h-t wchar.h
+| make  all-recursive
+| make[3]: Entering directory '/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/build/libmissing'
+| Making all in tests
+| make[4]: Entering directory '/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/build/libmissing/tests'
+| rm -f inttypes.h-t inttypes.h && \
+| { echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+|   sed -e 's/@''HAVE_INTTYPES_H''@/1/g' \
+|       -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+|       -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+|       -e 's|@''PRAGMA_COLUMNS''@||g' \
+|       -e 's|@''NEXT_INTTYPES_H''@|<inttypes.h>|g' \
+|       -e 's/@''PRI_MACROS_BROKEN''@/0/g' \
+|       -e 's/@''APPLE_UNIVERSAL_BUILD''@/0/g' \
+|       -e 's/@''HAVE_LONG_LONG_INT''@/1/g' \
+|       -e 's/@''HAVE_UNSIGNED_LONG_LONG_INT''@/1/g' \
+|       -e 's/@''PRIPTR_PREFIX''@/""/g' \
+|       -e 's/@''GNULIB_IMAXABS''@/0/g' \
+|       -e 's/@''GNULIB_IMAXDIV''@/0/g' \
+|       -e 's/@''GNULIB_STRTOIMAX''@/0/g' \
+|       -e 's/@''GNULIB_STRTOUMAX''@/0/g' \
+|       -e 's/@''HAVE_DECL_IMAXABS''@/1/g' \
+|       -e 's/@''HAVE_DECL_IMAXDIV''@/1/g' \
+|       -e 's/@''HAVE_DECL_STRTOIMAX''@/1/g' \
+|       -e 's/@''HAVE_DECL_STRTOUMAX''@/1/g' \
+|       -e 's/@''REPLACE_STRTOIMAX''@/0/g' \
+|       -e 's/@''REPLACE_STRTOUMAX''@/0/g' \
+|       -e 's/@''INT32_MAX_LT_INTMAX_MAX''@/1/g' \
+|       -e 's/@''INT64_MAX_EQ_LONG_MAX''@/0/g' \
+|       -e 's/@''UINT32_MAX_LT_UINTMAX_MAX''@/1/g' \
+|       -e 's/@''UINT64_MAX_EQ_ULONG_MAX''@/0/g' \
+|       -e '/definitions of _GL_FUNCDECL_RPL/r ../../../libpreludedb-4.1.0/libmissing/tests/c++defs.h' \
+|       -e '/definition of _GL_ARG_NONNULL/r ../../../libpreludedb-4.1.0/libmissing/tests/arg-nonnull.h' \
+|       -e '/definition of _GL_WARN_ON_USE/r ../../../libpreludedb-4.1.0/libmissing/tests/warn-on-use.h' \
+|       < ../../../libpreludedb-4.1.0/libmissing/tests/inttypes.in.h; \
+| } > inttypes.h-t && \
+| mv inttypes.h-t inttypes.h
+| make  all-recursive
+| make[5]: Entering directory '/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/build/libmissing/tests'
+| Making all in .
+| make[6]: Entering directory '/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/build/libmissing/tests'
+| make[6]: Nothing to be done for 'all-am'.
+| make[6]: Leaving directory '/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/build/libmissing/tests'
+| make[5]: Leaving directory '/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/build/libmissing/tests'
+| make[4]: Leaving directory '/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/build/libmissing/tests'
+| make[4]: Entering directory '/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/build/libmissing'
+| ../arm-deby-linux-gnueabi-libtool  --tag=CC   --mode=compile arm-deby-linux-gnueabi-gcc  -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libpreludedb-4.1.0/libmissing -I..     -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot=                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot-native=  -c -o unistd.lo ../../libpreludedb-4.1.0/libmissing/unistd.c
+| ../arm-deby-linux-gnueabi-libtool  --tag=CC   --mode=compile arm-deby-linux-gnueabi-gcc  -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libpreludedb-4.1.0/libmissing -I..     -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot=                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot-native=  -c -o xsize.lo ../../libpreludedb-4.1.0/libmissing/xsize.c
+| ../arm-deby-linux-gnueabi-libtool  --tag=CC   --mode=compile arm-deby-linux-gnueabi-gcc  -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libpreludedb-4.1.0/libmissing -I..     -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot=                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot-native=  -c -o asnprintf.lo ../../libpreludedb-4.1.0/libmissing/asnprintf.c
+| ../arm-deby-linux-gnueabi-libtool  --tag=CC   --mode=compile arm-deby-linux-gnueabi-gcc  -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libpreludedb-4.1.0/libmissing -I..     -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot=                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot-native=  -c -o memchr.lo ../../libpreludedb-4.1.0/libmissing/memchr.c
+| ../arm-deby-linux-gnueabi-libtool  --tag=CC   --mode=compile arm-deby-linux-gnueabi-gcc  -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libpreludedb-4.1.0/libmissing -I..     -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot=                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot-native=  -c -o printf-args.lo ../../libpreludedb-4.1.0/libmissing/printf-args.c
+| ../arm-deby-linux-gnueabi-libtool  --tag=CC   --mode=compile arm-deby-linux-gnueabi-gcc  -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libpreludedb-4.1.0/libmissing -I..     -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot=                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot-native=  -c -o printf-parse.lo ../../libpreludedb-4.1.0/libmissing/printf-parse.c
+| ../arm-deby-linux-gnueabi-libtool  --tag=CC   --mode=compile arm-deby-linux-gnueabi-gcc  -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libpreludedb-4.1.0/libmissing -I..     -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot=                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot-native=  -c -o vasnprintf.lo ../../libpreludedb-4.1.0/libmissing/vasnprintf.c
+| ../arm-deby-linux-gnueabi-libtool  --tag=CC   --mode=compile arm-deby-linux-gnueabi-gcc  -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libpreludedb-4.1.0/libmissing -I..     -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot=                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot-native=  -c -o glthread/lock.lo ../../libpreludedb-4.1.0/libmissing/glthread/lock.c
+| ../arm-deby-linux-gnueabi-libtool  --tag=CC   --mode=compile arm-deby-linux-gnueabi-gcc  -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libpreludedb-4.1.0/libmissing -I..     -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot=                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot-native=  -c -o glthread/threadlib.lo ../../libpreludedb-4.1.0/libmissing/glthread/threadlib.c
+| arm-deby-linux-gnueabi-libtool: compile:  arm-deby-linux-gnueabi-gcc -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libpreludedb-4.1.0/libmissing -I.. -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot= -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot-native= -c ../../libpreludedb-4.1.0/libmissing/vasnprintf.c  -fPIC -DPIC -o .libs/vasnprintf.o
+| arm-deby-linux-gnueabi-libtool: compile:  arm-deby-linux-gnueabi-gcc -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libpreludedb-4.1.0/libmissing -I.. -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot= -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot-native= -c ../../libpreludedb-4.1.0/libmissing/asnprintf.c  -fPIC -DPIC -o .libs/asnprintf.o
+| arm-deby-linux-gnueabi-libtool: compile:  arm-deby-linux-gnueabi-gcc -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libpreludedb-4.1.0/libmissing -I.. -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot= -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot-native= -c ../../libpreludedb-4.1.0/libmissing/printf-args.c  -fPIC -DPIC -o .libs/printf-args.o
+| arm-deby-linux-gnueabi-libtool: compile:  arm-deby-linux-gnueabi-gcc -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libpreludedb-4.1.0/libmissing -I.. -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot= -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot-native= -c ../../libpreludedb-4.1.0/libmissing/glthread/threadlib.c  -fPIC -DPIC -o glthread/.libs/threadlib.o
+| arm-deby-linux-gnueabi-libtool: compile:  arm-deby-linux-gnueabi-gcc -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libpreludedb-4.1.0/libmissing -I.. -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot= -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot-native= -c ../../libpreludedb-4.1.0/libmissing/memchr.c  -fPIC -DPIC -o .libs/memchr.o
+| arm-deby-linux-gnueabi-libtool: compile:  arm-deby-linux-gnueabi-gcc -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libpreludedb-4.1.0/libmissing -I.. -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot= -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot-native= -c ../../libpreludedb-4.1.0/libmissing/unistd.c  -fPIC -DPIC -o .libs/unistd.o
+| arm-deby-linux-gnueabi-libtool: compile:  arm-deby-linux-gnueabi-gcc -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libpreludedb-4.1.0/libmissing -I.. -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot= -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot-native= -c ../../libpreludedb-4.1.0/libmissing/xsize.c  -fPIC -DPIC -o .libs/xsize.o
+| arm-deby-linux-gnueabi-libtool: compile:  arm-deby-linux-gnueabi-gcc -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libpreludedb-4.1.0/libmissing -I.. -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot= -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot-native= -c ../../libpreludedb-4.1.0/libmissing/printf-parse.c  -fPIC -DPIC -o .libs/printf-parse.o
+| arm-deby-linux-gnueabi-libtool: compile:  arm-deby-linux-gnueabi-gcc -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libpreludedb-4.1.0/libmissing -I.. -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot= -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot-native= -c ../../libpreludedb-4.1.0/libmissing/glthread/lock.c  -fPIC -DPIC -o glthread/.libs/lock.o
+| ../arm-deby-linux-gnueabi-libtool  --tag=CC   --mode=link arm-deby-linux-gnueabi-gcc  -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot  -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot=                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot-native=   -no-undefined  -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed -fstack-protector-strong -Wl,-z,relro,-z,now -z relro -z now -o libmissing.la  glthread/lock.lo glthread/threadlib.lo unistd.lo xsize.lo asnprintf.lo memchr.lo printf-args.lo printf-parse.lo vasnprintf.lo
+| arm-deby-linux-gnueabi-libtool: link: arm-deby-linux-gnueabi-gcc-ar cru .libs/libmissing.so glthread/.libs/lock.o glthread/.libs/threadlib.o .libs/unistd.o .libs/xsize.o .libs/asnprintf.o .libs/memchr.o .libs/printf-args.o .libs/printf-parse.o .libs/vasnprintf.o
+| /home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot-native/usr/bin/arm-deby-linux-gnueabi/../../libexec/arm-deby-linux-gnueabi/gcc/arm-deby-linux-gnueabi/8.3.0/ar: `u' modifier ignored since `D' is the default (see `U')
+| arm-deby-linux-gnueabi-libtool: link: arm-deby-linux-gnueabi-gcc-ranlib .libs/libmissing.so
+| arm-deby-linux-gnueabi-libtool: link: ( cd ".libs" && rm -f "libmissing.la" && ln -s "../libmissing.la" "libmissing.la" )
+| make[4]: Leaving directory '/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/build/libmissing'
+| make[3]: Leaving directory '/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/build/libmissing'
+| make[2]: Leaving directory '/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/build/libmissing'
+| Making all in src
+| make[2]: Entering directory '/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/build/src'
+| Making all in include
+| make[3]: Entering directory '/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/build/src/include'
+| make[3]: Nothing to be done for 'all'.
+| make[3]: Leaving directory '/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/build/src/include'
+| make[3]: Entering directory '/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/build/src'
+| ../arm-deby-linux-gnueabi-libtool  --tag=CC   --mode=compile arm-deby-linux-gnueabi-gcc  -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libpreludedb-4.1.0/src -I..  -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wbad-function-cast -Wcast-qual -Wcast-align -Wnested-externs -Wunused -Wformat -Wformat-security -I../../libpreludedb-4.1.0/src/include -I../../libpreludedb-4.1.0/libmissing -I../libmissing -DSQL_PLUGIN_DIR=\"/usr/lib/libpreludedb/plugins/sql\" -DFORMAT_PLUGIN_DIR=\"/usr/lib/libpreludedb/plugins/formats\" -I/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot-native/usr/include   -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot=                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot-native=  -c -o preludedb.lo ../../libpreludedb-4.1.0/src/preludedb.c
+| ../arm-deby-linux-gnueabi-libtool  --tag=CC   --mode=compile arm-deby-linux-gnueabi-gcc  -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libpreludedb-4.1.0/src -I..  -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wbad-function-cast -Wcast-qual -Wcast-align -Wnested-externs -Wunused -Wformat -Wformat-security -I../../libpreludedb-4.1.0/src/include -I../../libpreludedb-4.1.0/libmissing -I../libmissing -DSQL_PLUGIN_DIR=\"/usr/lib/libpreludedb/plugins/sql\" -DFORMAT_PLUGIN_DIR=\"/usr/lib/libpreludedb/plugins/formats\" -I/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot-native/usr/include   -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot=                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot-native=  -c -o preludedb-path-selection.lo ../../libpreludedb-4.1.0/src/preludedb-path-selection.c
+| ../arm-deby-linux-gnueabi-libtool  --tag=CC   --mode=compile arm-deby-linux-gnueabi-gcc  -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libpreludedb-4.1.0/src -I..  -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wbad-function-cast -Wcast-qual -Wcast-align -Wnested-externs -Wunused -Wformat -Wformat-security -I../../libpreludedb-4.1.0/src/include -I../../libpreludedb-4.1.0/libmissing -I../libmissing -DSQL_PLUGIN_DIR=\"/usr/lib/libpreludedb/plugins/sql\" -DFORMAT_PLUGIN_DIR=\"/usr/lib/libpreludedb/plugins/formats\" -I/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot-native/usr/include   -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot=                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot-native=  -c -o preludedb-path-selection-parser.lex.lo ../../libpreludedb-4.1.0/src/preludedb-path-selection-parser.lex.c
+| ../arm-deby-linux-gnueabi-libtool  --tag=CC   --mode=compile arm-deby-linux-gnueabi-gcc  -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libpreludedb-4.1.0/src -I..  -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wbad-function-cast -Wcast-qual -Wcast-align -Wnested-externs -Wunused -Wformat -Wformat-security -I../../libpreludedb-4.1.0/src/include -I../../libpreludedb-4.1.0/libmissing -I../libmissing -DSQL_PLUGIN_DIR=\"/usr/lib/libpreludedb/plugins/sql\" -DFORMAT_PLUGIN_DIR=\"/usr/lib/libpreludedb/plugins/formats\" -I/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot-native/usr/include   -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot=                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot-native=  -c -o preludedb-path-selection-parser.yac.lo ../../libpreludedb-4.1.0/src/preludedb-path-selection-parser.yac.c
+| ../arm-deby-linux-gnueabi-libtool  --tag=CC   --mode=compile arm-deby-linux-gnueabi-gcc  -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libpreludedb-4.1.0/src -I..  -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wbad-function-cast -Wcast-qual -Wcast-align -Wnested-externs -Wunused -Wformat -Wformat-security -I../../libpreludedb-4.1.0/src/include -I../../libpreludedb-4.1.0/libmissing -I../libmissing -DSQL_PLUGIN_DIR=\"/usr/lib/libpreludedb/plugins/sql\" -DFORMAT_PLUGIN_DIR=\"/usr/lib/libpreludedb/plugins/formats\" -I/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot-native/usr/include   -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot=                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot-native=  -c -o preludedb-plugin-format.lo ../../libpreludedb-4.1.0/src/preludedb-plugin-format.c
+| ../arm-deby-linux-gnueabi-libtool  --tag=CC   --mode=compile arm-deby-linux-gnueabi-gcc  -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libpreludedb-4.1.0/src -I..  -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wbad-function-cast -Wcast-qual -Wcast-align -Wnested-externs -Wunused -Wformat -Wformat-security -I../../libpreludedb-4.1.0/src/include -I../../libpreludedb-4.1.0/libmissing -I../libmissing -DSQL_PLUGIN_DIR=\"/usr/lib/libpreludedb/plugins/sql\" -DFORMAT_PLUGIN_DIR=\"/usr/lib/libpreludedb/plugins/formats\" -I/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot-native/usr/include   -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot=                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot-native=  -c -o preludedb-plugin-sql.lo ../../libpreludedb-4.1.0/src/preludedb-plugin-sql.c
+| ../arm-deby-linux-gnueabi-libtool  --tag=CC   --mode=compile arm-deby-linux-gnueabi-gcc  -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libpreludedb-4.1.0/src -I..  -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wbad-function-cast -Wcast-qual -Wcast-align -Wnested-externs -Wunused -Wformat -Wformat-security -I../../libpreludedb-4.1.0/src/include -I../../libpreludedb-4.1.0/libmissing -I../libmissing -DSQL_PLUGIN_DIR=\"/usr/lib/libpreludedb/plugins/sql\" -DFORMAT_PLUGIN_DIR=\"/usr/lib/libpreludedb/plugins/formats\" -I/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot-native/usr/include   -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot=                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot-native=  -c -o preludedb-sql.lo ../../libpreludedb-4.1.0/src/preludedb-sql.c
+| ../arm-deby-linux-gnueabi-libtool  --tag=CC   --mode=compile arm-deby-linux-gnueabi-gcc  -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libpreludedb-4.1.0/src -I..  -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wbad-function-cast -Wcast-qual -Wcast-align -Wnested-externs -Wunused -Wformat -Wformat-security -I../../libpreludedb-4.1.0/src/include -I../../libpreludedb-4.1.0/libmissing -I../libmissing -DSQL_PLUGIN_DIR=\"/usr/lib/libpreludedb/plugins/sql\" -DFORMAT_PLUGIN_DIR=\"/usr/lib/libpreludedb/plugins/formats\" -I/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot-native/usr/include   -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot=                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot-native=  -c -o preludedb-sql-select.lo ../../libpreludedb-4.1.0/src/preludedb-sql-select.c
+| ../arm-deby-linux-gnueabi-libtool  --tag=CC   --mode=compile arm-deby-linux-gnueabi-gcc  -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libpreludedb-4.1.0/src -I..  -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wbad-function-cast -Wcast-qual -Wcast-align -Wnested-externs -Wunused -Wformat -Wformat-security -I../../libpreludedb-4.1.0/src/include -I../../libpreludedb-4.1.0/libmissing -I../libmissing -DSQL_PLUGIN_DIR=\"/usr/lib/libpreludedb/plugins/sql\" -DFORMAT_PLUGIN_DIR=\"/usr/lib/libpreludedb/plugins/formats\" -I/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot-native/usr/include   -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot=                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot-native=  -c -o preludedb-sql-settings.lo ../../libpreludedb-4.1.0/src/preludedb-sql-settings.c
+| ../arm-deby-linux-gnueabi-libtool  --tag=CC   --mode=compile arm-deby-linux-gnueabi-gcc  -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libpreludedb-4.1.0/src -I..  -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wbad-function-cast -Wcast-qual -Wcast-align -Wnested-externs -Wunused -Wformat -Wformat-security -I../../libpreludedb-4.1.0/src/include -I../../libpreludedb-4.1.0/libmissing -I../libmissing -DSQL_PLUGIN_DIR=\"/usr/lib/libpreludedb/plugins/sql\" -DFORMAT_PLUGIN_DIR=\"/usr/lib/libpreludedb/plugins/formats\" -I/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot-native/usr/include   -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot=                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot-native=  -c -o preludedb-version.lo ../../libpreludedb-4.1.0/src/preludedb-version.c
+| ../arm-deby-linux-gnueabi-libtool  --tag=CC   --mode=compile arm-deby-linux-gnueabi-gcc  -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libpreludedb-4.1.0/src -I..  -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wbad-function-cast -Wcast-qual -Wcast-align -Wnested-externs -Wunused -Wformat -Wformat-security -I../../libpreludedb-4.1.0/src/include -I../../libpreludedb-4.1.0/libmissing -I../libmissing -DSQL_PLUGIN_DIR=\"/usr/lib/libpreludedb/plugins/sql\" -DFORMAT_PLUGIN_DIR=\"/usr/lib/libpreludedb/plugins/formats\" -I/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot-native/usr/include   -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot=                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot-native=  -c -o preludedb-error.lo ../../libpreludedb-4.1.0/src/preludedb-error.c
+| arm-deby-linux-gnueabi-libtool: compile:  arm-deby-linux-gnueabi-gcc -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libpreludedb-4.1.0/src -I.. -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wbad-function-cast -Wcast-qual -Wcast-align -Wnested-externs -Wunused -Wformat -Wformat-security -I../../libpreludedb-4.1.0/src/include -I../../libpreludedb-4.1.0/libmissing -I../libmissing -DSQL_PLUGIN_DIR=\"/usr/lib/libpreludedb/plugins/sql\" -DFORMAT_PLUGIN_DIR=\"/usr/lib/libpreludedb/plugins/formats\" -I/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot-native/usr/include -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot= -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot-native= -c ../../libpreludedb-4.1.0/src/preludedb-path-selection.c  -fPIC -DPIC -o .libs/preludedb-path-selection.o
+| arm-deby-linux-gnueabi-libtool: compile:  arm-deby-linux-gnueabi-gcc -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libpreludedb-4.1.0/src -I.. -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wbad-function-cast -Wcast-qual -Wcast-align -Wnested-externs -Wunused -Wformat -Wformat-security -I../../libpreludedb-4.1.0/src/include -I../../libpreludedb-4.1.0/libmissing -I../libmissing -DSQL_PLUGIN_DIR=\"/usr/lib/libpreludedb/plugins/sql\" -DFORMAT_PLUGIN_DIR=\"/usr/lib/libpreludedb/plugins/formats\" -I/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot-native/usr/include -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot= -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot-native= -c ../../libpreludedb-4.1.0/src/preludedb-version.c  -fPIC -DPIC -o .libs/preludedb-version.o
+| arm-deby-linux-gnueabi-libtool: compile:  arm-deby-linux-gnueabi-gcc -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libpreludedb-4.1.0/src -I.. -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wbad-function-cast -Wcast-qual -Wcast-align -Wnested-externs -Wunused -Wformat -Wformat-security -I../../libpreludedb-4.1.0/src/include -I../../libpreludedb-4.1.0/libmissing -I../libmissing -DSQL_PLUGIN_DIR=\"/usr/lib/libpreludedb/plugins/sql\" -DFORMAT_PLUGIN_DIR=\"/usr/lib/libpreludedb/plugins/formats\" -I/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot-native/usr/include -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot= -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot-native= -c ../../libpreludedb-4.1.0/src/preludedb.c  -fPIC -DPIC -o .libs/preludedb.o
+| arm-deby-linux-gnueabi-libtool: compile:  arm-deby-linux-gnueabi-gcc -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libpreludedb-4.1.0/src -I.. -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wbad-function-cast -Wcast-qual -Wcast-align -Wnested-externs -Wunused -Wformat -Wformat-security -I../../libpreludedb-4.1.0/src/include -I../../libpreludedb-4.1.0/libmissing -I../libmissing -DSQL_PLUGIN_DIR=\"/usr/lib/libpreludedb/plugins/sql\" -DFORMAT_PLUGIN_DIR=\"/usr/lib/libpreludedb/plugins/formats\" -I/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot-native/usr/include -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot= -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot-native= -c ../../libpreludedb-4.1.0/src/preludedb-sql-select.c  -fPIC -DPIC -o .libs/preludedb-sql-select.o
+| arm-deby-linux-gnueabi-libtool: compile:  arm-deby-linux-gnueabi-gcc -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libpreludedb-4.1.0/src -I.. -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wbad-function-cast -Wcast-qual -Wcast-align -Wnested-externs -Wunused -Wformat -Wformat-security -I../../libpreludedb-4.1.0/src/include -I../../libpreludedb-4.1.0/libmissing -I../libmissing -DSQL_PLUGIN_DIR=\"/usr/lib/libpreludedb/plugins/sql\" -DFORMAT_PLUGIN_DIR=\"/usr/lib/libpreludedb/plugins/formats\" -I/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot-native/usr/include -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot= -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot-native= -c ../../libpreludedb-4.1.0/src/preludedb-path-selection-parser.lex.c  -fPIC -DPIC -o .libs/preludedb-path-selection-parser.lex.o
+| arm-deby-linux-gnueabi-libtool: compile:  arm-deby-linux-gnueabi-gcc -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libpreludedb-4.1.0/src -I.. -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wbad-function-cast -Wcast-qual -Wcast-align -Wnested-externs -Wunused -Wformat -Wformat-security -I../../libpreludedb-4.1.0/src/include -I../../libpreludedb-4.1.0/libmissing -I../libmissing -DSQL_PLUGIN_DIR=\"/usr/lib/libpreludedb/plugins/sql\" -DFORMAT_PLUGIN_DIR=\"/usr/lib/libpreludedb/plugins/formats\" -I/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot-native/usr/include -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot= -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot-native= -c ../../libpreludedb-4.1.0/src/preludedb-error.c  -fPIC -DPIC -o .libs/preludedb-error.o
+| arm-deby-linux-gnueabi-libtool: compile:  arm-deby-linux-gnueabi-gcc -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libpreludedb-4.1.0/src -I.. -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wbad-function-cast -Wcast-qual -Wcast-align -Wnested-externs -Wunused -Wformat -Wformat-security -I../../libpreludedb-4.1.0/src/include -I../../libpreludedb-4.1.0/libmissing -I../libmissing -DSQL_PLUGIN_DIR=\"/usr/lib/libpreludedb/plugins/sql\" -DFORMAT_PLUGIN_DIR=\"/usr/lib/libpreludedb/plugins/formats\" -I/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot-native/usr/include -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot= -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot-native= -c ../../libpreludedb-4.1.0/src/preludedb-plugin-format.c  -fPIC -DPIC -o .libs/preludedb-plugin-format.o
+| arm-deby-linux-gnueabi-libtool: compile:  arm-deby-linux-gnueabi-gcc -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libpreludedb-4.1.0/src -I.. -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wbad-function-cast -Wcast-qual -Wcast-align -Wnested-externs -Wunused -Wformat -Wformat-security -I../../libpreludedb-4.1.0/src/include -I../../libpreludedb-4.1.0/libmissing -I../libmissing -DSQL_PLUGIN_DIR=\"/usr/lib/libpreludedb/plugins/sql\" -DFORMAT_PLUGIN_DIR=\"/usr/lib/libpreludedb/plugins/formats\" -I/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot-native/usr/include -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot= -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot-native= -c ../../libpreludedb-4.1.0/src/preludedb-sql-settings.c  -fPIC -DPIC -o .libs/preludedb-sql-settings.o
+| arm-deby-linux-gnueabi-libtool: compile:  arm-deby-linux-gnueabi-gcc -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libpreludedb-4.1.0/src -I.. -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wbad-function-cast -Wcast-qual -Wcast-align -Wnested-externs -Wunused -Wformat -Wformat-security -I../../libpreludedb-4.1.0/src/include -I../../libpreludedb-4.1.0/libmissing -I../libmissing -DSQL_PLUGIN_DIR=\"/usr/lib/libpreludedb/plugins/sql\" -DFORMAT_PLUGIN_DIR=\"/usr/lib/libpreludedb/plugins/formats\" -I/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot-native/usr/include -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot= -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot-native= -c ../../libpreludedb-4.1.0/src/preludedb-path-selection-parser.yac.c  -fPIC -DPIC -o .libs/preludedb-path-selection-parser.yac.o
+| arm-deby-linux-gnueabi-libtool: compile:  arm-deby-linux-gnueabi-gcc -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libpreludedb-4.1.0/src -I.. -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wbad-function-cast -Wcast-qual -Wcast-align -Wnested-externs -Wunused -Wformat -Wformat-security -I../../libpreludedb-4.1.0/src/include -I../../libpreludedb-4.1.0/libmissing -I../libmissing -DSQL_PLUGIN_DIR=\"/usr/lib/libpreludedb/plugins/sql\" -DFORMAT_PLUGIN_DIR=\"/usr/lib/libpreludedb/plugins/formats\" -I/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot-native/usr/include -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot= -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot-native= -c ../../libpreludedb-4.1.0/src/preludedb-sql.c  -fPIC -DPIC -o .libs/preludedb-sql.o
+| arm-deby-linux-gnueabi-libtool: compile:  arm-deby-linux-gnueabi-gcc -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libpreludedb-4.1.0/src -I.. -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wbad-function-cast -Wcast-qual -Wcast-align -Wnested-externs -Wunused -Wformat -Wformat-security -I../../libpreludedb-4.1.0/src/include -I../../libpreludedb-4.1.0/libmissing -I../libmissing -DSQL_PLUGIN_DIR=\"/usr/lib/libpreludedb/plugins/sql\" -DFORMAT_PLUGIN_DIR=\"/usr/lib/libpreludedb/plugins/formats\" -I/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot-native/usr/include -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot= -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot-native= -c ../../libpreludedb-4.1.0/src/preludedb-plugin-sql.c  -fPIC -DPIC -o .libs/preludedb-plugin-sql.o
+| ../../libpreludedb-4.1.0/src/preludedb.c: In function 'preludedb_new':
+| ../../libpreludedb-4.1.0/src/preludedb.c:231:25: warning: 'preludedb_get_error' is deprecated [-Wdeprecated-declarations]
+|                          preludedb_get_error(*db, ret, errbuf, size);
+|                          ^~~~~~~~~~~~~~~~~~~
+| In file included from ../../libpreludedb-4.1.0/src/include/preludedb-path-selection.h:60,
+|                  from ../../libpreludedb-4.1.0/src/preludedb.c:36:
+| ../../libpreludedb-4.1.0/src/include/preludedb.h:98:7: note: declared here
+|  char *preludedb_get_error(preludedb_t *db, preludedb_error_t error, char *errbuf, size_t size) PRELUDE_DEPRECATED;
+|        ^~~~~~~~~~~~~~~~~~~
+| ../../libpreludedb-4.1.0/src/preludedb-sql.c: In function 'field2row':
+| ../../libpreludedb-4.1.0/src/preludedb-sql.c:146:16: warning: cast increases required alignment of target type [-Wcast-align]
+|          return (preludedb_sql_row_t *) ((unsigned char *) field - (sizeof(*field) * field->index + offsetof(preludedb_sql_row_t, fields)));
+|                 ^
+| ../arm-deby-linux-gnueabi-libtool  --tag=CC   --mode=link arm-deby-linux-gnueabi-gcc  -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot  -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0=/usr/src/debug/libpreludedb/4.1.0-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot=                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot-native=  -no-undefined -version-info 9:1:2 -export-symbols-regex "^preludedb_"   -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed -fstack-protector-strong -Wl,-z,relro,-z,now -z relro -z now -o libpreludedb.la -rpath /usr/lib preludedb.lo preludedb-path-selection.lo preludedb-path-selection-parser.lex.lo preludedb-path-selection-parser.yac.lo preludedb-plugin-format.lo preludedb-plugin-sql.lo preludedb-sql.lo preludedb-sql-select.lo preludedb-sql-settings.lo preludedb-version.lo preludedb-error.lo -L/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot-native/usr/lib -lprelude -L/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot-native/usr/lib/pkgconfig/../../../usr/lib -lgnutls -lltdl -ldl  ../libmissing/libmissing.la
+| arm-deby-linux-gnueabi-libtool: link: arm-deby-linux-gnueabi-nm  .libs/preludedb.o .libs/preludedb-path-selection.o .libs/preludedb-path-selection-parser.lex.o .libs/preludedb-path-selection-parser.yac.o .libs/preludedb-plugin-format.o .libs/preludedb-plugin-sql.o .libs/preludedb-sql.o .libs/preludedb-sql-select.o .libs/preludedb-sql-settings.o .libs/preludedb-version.o .libs/preludedb-error.o   ../libmissing/.libs/libmissing.so | sed -n -e 's/^.*[	 ]\([ABCDGIRSTW][ABCDGIRSTW]*\)[	 ][	 ]*\([_A-Za-z][_A-Za-z0-9]*\)$/\1 \2 \2/p' | sed '/ __gnu_lto/d' | sed 's/.* //' | sort | uniq > .libs/libpreludedb.exp
+| arm-deby-linux-gnueabi-libtool: link: /home/deby/build-tiny/tmp/hosttools/grep -E -e "^preludedb_" ".libs/libpreludedb.exp" > ".libs/libpreludedb.expT"
+| arm-deby-linux-gnueabi-libtool: link: mv -f ".libs/libpreludedb.expT" ".libs/libpreludedb.exp"
+| arm-deby-linux-gnueabi-libtool: link: echo "{ global:" > .libs/libpreludedb.ver
+| arm-deby-linux-gnueabi-libtool: link:  cat .libs/libpreludedb.exp | sed -e "s/\(.*\)/\1;/" >> .libs/libpreludedb.ver
+| arm-deby-linux-gnueabi-libtool: link:  echo "local: *; };" >> .libs/libpreludedb.ver
+| arm-deby-linux-gnueabi-libtool: link:  arm-deby-linux-gnueabi-gcc  -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot -shared  -fPIC -DPIC  .libs/preludedb.o .libs/preludedb-path-selection.o .libs/preludedb-path-selection-parser.lex.o .libs/preludedb-path-selection-parser.yac.o .libs/preludedb-plugin-format.o .libs/preludedb-plugin-sql.o .libs/preludedb-sql.o .libs/preludedb-sql-select.o .libs/preludedb-sql-settings.o .libs/preludedb-version.o .libs/preludedb-error.o  -Wl,--whole-archive ../libmissing/.libs/libmissing.so -Wl,--no-whole-archive  -L/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot-native/usr/lib -lprelude -L/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot-native/usr/lib/pkgconfig/../../../usr/lib -lgnutls -lltdl -ldl  -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7 -fstack-protector-strong --sysroot=/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot -O2 -g -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed -fstack-protector-strong -Wl,-z -Wl,relro -Wl,-z -Wl,now   -Wl,-soname -Wl,libpreludedb.so.7 -Wl,-version-script -Wl,.libs/libpreludedb.ver -o .libs/libpreludedb.so.7.2.1
+| /home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/recipe-sysroot-native/usr/lib/libprelude.so: file not recognized: file format not recognized
+| collect2: error: ld returned 1 exit status
+| make[3]: *** [Makefile:1203: libpreludedb.la] Error 1
+| make[3]: Leaving directory '/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/build/src'
+| make[2]: *** [Makefile:1290: all-recursive] Error 1
+| make[2]: Leaving directory '/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/build/src'
+| make[1]: *** [Makefile:1300: all-recursive] Error 1
+| make[1]: Leaving directory '/home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/build'
+| make: *** [Makefile:1106: all] Error 2
+| ERROR: oe_runmake failed
+| WARNING: exit code 1 from a shell command.
+| ERROR: Function failed: do_compile (log file is located at /home/deby/build-tiny/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpreludedb/4.1.0-r0/temp/log.do_compile.16287)
+NOTE: recipe libpreludedb-4.1.0-r0: task do_compile: Failed
+ERROR: Task (/home/deby/poky/meta-debian/recipes-debian/libpreludedb/libpreludedb_debian.bb:do_compile) failed with exit code '1'
+NOTE: Tasks Summary: Attempted 937 tasks of which 933 didn't need to be rerun and 1 failed.
 
 Summary: 1 task failed:
-  /home/deby/poky/meta-debian/recipes-debian/prelude-manager/prelude-manager_debian.bb:do_populate_lic
+  /home/deby/poky/meta-debian/recipes-debian/libpreludedb/libpreludedb_debian.bb:do_compile
 Summary: There was 1 WARNING message shown.
-Summary: There were 4 ERROR messages shown, returning a non-zero exit code.
+Summary: There were 2 ERROR messages shown, returning a non-zero exit code.

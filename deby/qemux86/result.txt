@@ -13,7 +13,7 @@ openssh 7.9p1 PASS NA
 openssl 1.1.1c PASS NA
 pam-pkcs11 0.6.9 PASS NA
 pam-shield 0.9.6 PASS NA
-prelude-manager 4.1.1 FAIL NA
+prelude-manager 4.1.1 PASS NA
 rsyslog 8.1901.0 PASS NA
 shadow 4.5 PASS NA
 sudo 1.8.27 PASS NA

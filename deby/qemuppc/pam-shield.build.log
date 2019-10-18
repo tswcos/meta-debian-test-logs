@@ -1,5 +1,7 @@
 Loading cache...done.
-Loaded 1733 entries from dependency cache.
+Loaded 1731 entries from dependency cache.
+Parsing recipes...done.
+Parsing of 992 .bb files complete (990 cached, 2 parsed). 1733 targets, 77 skipped, 0 masked, 0 errors.
 NOTE: Resolving any missing task queue dependencies
 
 Build Configuration:
@@ -14,10 +16,38 @@ TUNE_FEATURES        = "m32 fpu-hard ppc7400 altivec"
 TARGET_FPU           = ""
 meta                 
 meta-poky            = "warrior:79a850a10a4b88a6d20d607b322542f947874323"
-meta-debian          = "warrior:065aa7dcd28d697d2d493e1f188deb4f78253725"
+meta-debian          = "warrior:f7512bd96372e67fe4288cb5cb61cf52d282dd4e"
 
 Initialising tasks...done.
-Sstate summary: Wanted 0 Found 0 Missed 0 Current 425 (0% match, 100% complete)
+Sstate summary: Wanted 5 Found 0 Missed 5 Current 420 (0% match, 98% complete)
 NOTE: Executing SetScene Tasks
 NOTE: Executing RunQueue Tasks
-NOTE: Tasks Summary: Attempted 1960 tasks of which 1960 didn't need to be rerun and all succeeded.
+NOTE: Running task 1618 of 1960 (/home/deby/poky/meta-debian/recipes-debian/pam-shield/pam-shield_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe pam-shield-0.9.6-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe pam-shield-0.9.6-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 1952 of 1960 (/home/deby/poky/meta-debian/recipes-debian/pam-shield/pam-shield_debian.bb:do_configure)
+NOTE: recipe pam-shield-0.9.6-r0: task do_configure: Started
+NOTE: recipe pam-shield-0.9.6-r0: task do_configure: Succeeded
+NOTE: Running task 1953 of 1960 (/home/deby/poky/meta-debian/recipes-debian/pam-shield/pam-shield_debian.bb:do_compile)
+NOTE: recipe pam-shield-0.9.6-r0: task do_compile: Started
+NOTE: recipe pam-shield-0.9.6-r0: task do_compile: Succeeded
+NOTE: Running task 1954 of 1960 (/home/deby/poky/meta-debian/recipes-debian/pam-shield/pam-shield_debian.bb:do_install)
+NOTE: recipe pam-shield-0.9.6-r0: task do_install: Started
+NOTE: recipe pam-shield-0.9.6-r0: task do_install: Succeeded
+NOTE: Running task 1955 of 1960 (/home/deby/poky/meta-debian/recipes-debian/pam-shield/pam-shield_debian.bb:do_package)
+NOTE: Running task 1956 of 1960 (/home/deby/poky/meta-debian/recipes-debian/pam-shield/pam-shield_debian.bb:do_populate_sysroot)
+NOTE: recipe pam-shield-0.9.6-r0: task do_populate_sysroot: Started
+NOTE: recipe pam-shield-0.9.6-r0: task do_package: Started
+NOTE: recipe pam-shield-0.9.6-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe pam-shield-0.9.6-r0: task do_package: Succeeded
+NOTE: Running task 1957 of 1960 (/home/deby/poky/meta-debian/recipes-debian/pam-shield/pam-shield_debian.bb:do_packagedata)
+NOTE: recipe pam-shield-0.9.6-r0: task do_packagedata: Started
+NOTE: recipe pam-shield-0.9.6-r0: task do_packagedata: Succeeded
+NOTE: Running task 1958 of 1960 (/home/deby/poky/meta-debian/recipes-debian/pam-shield/pam-shield_debian.bb:do_package_write_deb)
+NOTE: Running task 1959 of 1960 (/home/deby/poky/meta-debian/recipes-debian/pam-shield/pam-shield_debian.bb:do_package_qa)
+NOTE: recipe pam-shield-0.9.6-r0: task do_package_qa: Started
+NOTE: recipe pam-shield-0.9.6-r0: task do_package_write_deb: Started
+NOTE: recipe pam-shield-0.9.6-r0: task do_package_qa: Succeeded
+NOTE: recipe pam-shield-0.9.6-r0: task do_package_write_deb: Succeeded
+NOTE: Running noexec task 1960 of 1960 (/home/deby/poky/meta-debian/recipes-debian/pam-shield/pam-shield_debian.bb:do_build)
+NOTE: Tasks Summary: Attempted 1960 tasks of which 1950 didn't need to be rerun and all succeeded.

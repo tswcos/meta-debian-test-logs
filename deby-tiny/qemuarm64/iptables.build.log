@@ -1,5 +1,7 @@
 Loading cache...done.
-Loaded 1748 entries from dependency cache.
+Loaded 1746 entries from dependency cache.
+Parsing recipes...done.
+Parsing of 992 .bb files complete (990 cached, 2 parsed). 1733 targets, 218 skipped, 0 masked, 0 errors.
 NOTE: Resolving any missing task queue dependencies
 
 Build Configuration:
@@ -14,10 +16,95 @@ TUNE_FEATURES        = "aarch64 armv8a crc"
 TARGET_FPU           = ""
 meta                 
 meta-poky            = "warrior:79a850a10a4b88a6d20d607b322542f947874323"
-meta-debian          = "warrior:065aa7dcd28d697d2d493e1f188deb4f78253725"
+meta-debian          = "warrior:f7512bd96372e67fe4288cb5cb61cf52d282dd4e"
 
 Initialising tasks...done.
-Sstate summary: Wanted 0 Found 0 Missed 0 Current 93 (0% match, 100% complete)
+Sstate summary: Wanted 11 Found 0 Missed 11 Current 82 (0% match, 88% complete)
 NOTE: Executing SetScene Tasks
 NOTE: Executing RunQueue Tasks
-NOTE: Tasks Summary: Attempted 666 tasks of which 666 didn't need to be rerun and all succeeded.
+NOTE: Running task 409 of 666 (/home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb:do_fetch)
+NOTE: Running task 619 of 666 (/home/deby/poky/meta-debian/recipes-debian/iptables/iptables_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe linux-base-gitAUTOINC+5863c3d7f1-r0: task do_fetch: Started
+NOTE: recipe iptables-1.8.2-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe linux-base-gitAUTOINC+5863c3d7f1-r0: task do_fetch: Succeeded
+NOTE: Running task 640 of 666 (/home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb:do_unpack)
+NOTE: Running task 641 of 666 (/home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb:do_prepare_recipe_sysroot)
+NOTE: recipe linux-base-gitAUTOINC+5863c3d7f1-r0: task do_unpack: Started
+NOTE: recipe linux-base-gitAUTOINC+5863c3d7f1-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe iptables-1.8.2-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 642 of 666 (/home/deby/poky/meta-debian/recipes-debian/iptables/iptables_debian.bb:do_configure)
+NOTE: recipe iptables-1.8.2-r0: task do_configure: Started
+NOTE: recipe linux-base-gitAUTOINC+5863c3d7f1-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: recipe iptables-1.8.2-r0: task do_configure: Succeeded
+NOTE: Running task 643 of 666 (/home/deby/poky/meta-debian/recipes-debian/iptables/iptables_debian.bb:do_compile)
+NOTE: recipe iptables-1.8.2-r0: task do_compile: Started
+NOTE: recipe iptables-1.8.2-r0: task do_compile: Succeeded
+NOTE: Running task 644 of 666 (/home/deby/poky/meta-debian/recipes-debian/iptables/iptables_debian.bb:do_install)
+NOTE: recipe iptables-1.8.2-r0: task do_install: Started
+NOTE: recipe iptables-1.8.2-r0: task do_install: Succeeded
+NOTE: Running task 645 of 666 (/home/deby/poky/meta-debian/recipes-debian/iptables/iptables_debian.bb:do_package)
+NOTE: Running task 646 of 666 (/home/deby/poky/meta-debian/recipes-debian/iptables/iptables_debian.bb:do_populate_sysroot)
+NOTE: recipe iptables-1.8.2-r0: task do_package: Started
+NOTE: recipe iptables-1.8.2-r0: task do_populate_sysroot: Started
+NOTE: recipe iptables-1.8.2-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe iptables-1.8.2-r0: task do_package: Succeeded
+NOTE: Running task 647 of 666 (/home/deby/poky/meta-debian/recipes-debian/iptables/iptables_debian.bb:do_packagedata)
+NOTE: recipe iptables-1.8.2-r0: task do_packagedata: Started
+NOTE: recipe iptables-1.8.2-r0: task do_packagedata: Succeeded
+NOTE: recipe linux-base-gitAUTOINC+5863c3d7f1-r0: task do_unpack: Succeeded
+NOTE: Running task 648 of 666 (/home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb:do_symlink_kernsrc)
+NOTE: Running task 649 of 666 (/home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb:do_patch)
+NOTE: recipe linux-base-gitAUTOINC+5863c3d7f1-r0: task do_patch: Started
+NOTE: recipe linux-base-gitAUTOINC+5863c3d7f1-r0: task do_symlink_kernsrc: Started
+NOTE: recipe linux-base-gitAUTOINC+5863c3d7f1-r0: task do_symlink_kernsrc: Succeeded
+NOTE: recipe linux-base-gitAUTOINC+5863c3d7f1-r0: task do_patch: Succeeded
+NOTE: Running task 650 of 666 (/home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb:do_configure)
+NOTE: recipe linux-base-gitAUTOINC+5863c3d7f1-r0: task do_configure: Started
+NOTE: recipe linux-base-gitAUTOINC+5863c3d7f1-r0: task do_configure: Succeeded
+NOTE: Running task 651 of 666 (/home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb:do_compile)
+NOTE: recipe linux-base-gitAUTOINC+5863c3d7f1-r0: task do_compile: Started
+NOTE: recipe linux-base-gitAUTOINC+5863c3d7f1-r0: task do_compile: Succeeded
+NOTE: Running task 652 of 666 (/home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb:do_shared_workdir)
+NOTE: Running task 653 of 666 (/home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb:do_kernel_link_images)
+NOTE: recipe linux-base-gitAUTOINC+5863c3d7f1-r0: task do_shared_workdir: Started
+NOTE: recipe linux-base-gitAUTOINC+5863c3d7f1-r0: task do_kernel_link_images: Started
+NOTE: recipe linux-base-gitAUTOINC+5863c3d7f1-r0: task do_kernel_link_images: Succeeded
+NOTE: recipe linux-base-gitAUTOINC+5863c3d7f1-r0: task do_shared_workdir: Succeeded
+NOTE: Running task 654 of 666 (/home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb:do_compile_kernelmodules)
+NOTE: recipe linux-base-gitAUTOINC+5863c3d7f1-r0: task do_compile_kernelmodules: Started
+NOTE: recipe linux-base-gitAUTOINC+5863c3d7f1-r0: task do_compile_kernelmodules: Succeeded
+NOTE: Running task 655 of 666 (/home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb:do_strip)
+NOTE: recipe linux-base-gitAUTOINC+5863c3d7f1-r0: task do_strip: Started
+NOTE: recipe linux-base-gitAUTOINC+5863c3d7f1-r0: task do_strip: Succeeded
+NOTE: Running task 656 of 666 (/home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb:do_sizecheck)
+NOTE: recipe linux-base-gitAUTOINC+5863c3d7f1-r0: task do_sizecheck: Started
+NOTE: recipe linux-base-gitAUTOINC+5863c3d7f1-r0: task do_sizecheck: Succeeded
+NOTE: Running task 657 of 666 (/home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb:do_install)
+NOTE: recipe linux-base-gitAUTOINC+5863c3d7f1-r0: task do_install: Started
+NOTE: recipe linux-base-gitAUTOINC+5863c3d7f1-r0: task do_install: Succeeded
+NOTE: Running task 658 of 666 (/home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb:do_package)
+NOTE: Running task 659 of 666 (/home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb:do_bundle_initramfs)
+NOTE: Running task 660 of 666 (/home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb:do_populate_sysroot)
+NOTE: recipe linux-base-gitAUTOINC+5863c3d7f1-r0: task do_bundle_initramfs: Started
+NOTE: recipe linux-base-gitAUTOINC+5863c3d7f1-r0: task do_populate_sysroot: Started
+NOTE: recipe linux-base-gitAUTOINC+5863c3d7f1-r0: task do_package: Started
+NOTE: recipe linux-base-gitAUTOINC+5863c3d7f1-r0: task do_bundle_initramfs: Succeeded
+NOTE: recipe linux-base-gitAUTOINC+5863c3d7f1-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe linux-base-gitAUTOINC+5863c3d7f1-r0: task do_package: Succeeded
+NOTE: Running task 661 of 666 (/home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb:do_packagedata)
+NOTE: recipe linux-base-gitAUTOINC+5863c3d7f1-r0: task do_packagedata: Started
+NOTE: recipe linux-base-gitAUTOINC+5863c3d7f1-r0: task do_packagedata: Succeeded
+NOTE: Running task 662 of 666 (/home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb:do_deploy)
+NOTE: Running task 663 of 666 (/home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb:do_package_write_deb)
+NOTE: Running task 664 of 666 (/home/deby/poky/meta-debian/recipes-debian/iptables/iptables_debian.bb:do_package_write_deb)
+NOTE: Running task 665 of 666 (/home/deby/poky/meta-debian/recipes-debian/iptables/iptables_debian.bb:do_package_qa)
+NOTE: recipe linux-base-gitAUTOINC+5863c3d7f1-r0: task do_deploy: Started
+NOTE: recipe linux-base-gitAUTOINC+5863c3d7f1-r0: task do_package_write_deb: Started
+NOTE: recipe iptables-1.8.2-r0: task do_package_write_deb: Started
+NOTE: recipe iptables-1.8.2-r0: task do_package_qa: Started
+NOTE: recipe iptables-1.8.2-r0: task do_package_write_deb: Succeeded
+NOTE: recipe iptables-1.8.2-r0: task do_package_qa: Succeeded
+NOTE: recipe linux-base-gitAUTOINC+5863c3d7f1-r0: task do_package_write_deb: Succeeded
+NOTE: recipe linux-base-gitAUTOINC+5863c3d7f1-r0: task do_deploy: Succeeded
+NOTE: Running noexec task 666 of 666 (/home/deby/poky/meta-debian/recipes-debian/iptables/iptables_debian.bb:do_build)
+NOTE: Tasks Summary: Attempted 666 tasks of which 637 didn't need to be rerun and all succeeded.

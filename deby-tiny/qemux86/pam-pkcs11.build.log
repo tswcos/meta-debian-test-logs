@@ -1,5 +1,7 @@
 Loading cache...done.
-Loaded 1748 entries from dependency cache.
+Loaded 1746 entries from dependency cache.
+Parsing recipes...done.
+Parsing of 992 .bb files complete (990 cached, 2 parsed). 1733 targets, 208 skipped, 0 masked, 0 errors.
 NOTE: Resolving any missing task queue dependencies
 
 Build Configuration:
@@ -14,127 +16,40 @@ TUNE_FEATURES        = "m32 i586"
 TARGET_FPU           = ""
 meta                 
 meta-poky            = "warrior:79a850a10a4b88a6d20d607b322542f947874323"
-meta-debian          = "warrior:065aa7dcd28d697d2d493e1f188deb4f78253725"
+meta-debian          = "warrior:f7512bd96372e67fe4288cb5cb61cf52d282dd4e"
 
 Initialising tasks...done.
-Sstate summary: Wanted 20 Found 1 Missed 19 Current 236 (5% match, 92% complete)
+Sstate summary: Wanted 17 Found 0 Missed 17 Current 239 (0% match, 93% complete)
 NOTE: Executing SetScene Tasks
 NOTE: Executing RunQueue Tasks
-NOTE: Running task 706 of 1268 (/home/deby/poky/meta-debian/recipes-debian/kmod/kmod_debian.bb:do_fetch)
-NOTE: Running task 746 of 1268 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/libxslt/libxslt_debian.bb:do_fetch)
-NOTE: Running task 817 of 1268 (/home/deby/poky/meta-debian/recipes-debian/pcsc-lite/pcsc-lite_debian.bb:do_fetch)
-NOTE: Running task 841 of 1268 (/home/deby/poky/meta/recipes-core/udev/eudev_3.2.7.bb:do_fetch)
-NOTE: Running task 919 of 1268 (/home/deby/poky/meta-debian/recipes-debian/pam-pkcs11/pam-pkcs11_debian.bb:do_fetch)
-NOTE: recipe pam-pkcs11-0.6.9-r0: task do_fetch: Started
-NOTE: recipe eudev-3.2.7-r0: task do_fetch: Started
-NOTE: recipe kmod-26-r0: task do_fetch: Started
-NOTE: recipe pcsc-lite-1.8.24-r0: task do_fetch: Started
-NOTE: recipe eudev-3.2.7-r0: task do_fetch: Succeeded
-NOTE: recipe libxslt-native-1.1.32-r0: task do_fetch: Started
-NOTE: Running task 1211 of 1268 (/home/deby/poky/meta/recipes-core/udev/eudev_3.2.7.bb:do_unpack)
-NOTE: recipe kmod-26-r0: task do_fetch: Succeeded
-NOTE: Running task 1212 of 1268 (/home/deby/poky/meta-debian/recipes-debian/kmod/kmod_debian.bb:do_unpack)
-NOTE: Running task 1213 of 1268 (/home/deby/poky/meta-debian/recipes-debian/kmod/kmod_debian.bb:do_prepare_recipe_sysroot)
-NOTE: recipe libxslt-native-1.1.32-r0: task do_fetch: Succeeded
-NOTE: Running task 1214 of 1268 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/libxslt/libxslt_debian.bb:do_unpack)
-NOTE: Running task 1215 of 1268 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/libxslt/libxslt_debian.bb:do_prepare_recipe_sysroot)
-NOTE: recipe eudev-3.2.7-r0: task do_unpack: Started
-NOTE: recipe kmod-26-r0: task do_unpack: Started
+NOTE: Running task 898 of 1268 (/home/deby/poky/meta-debian/recipes-debian/kmod/kmod_debian.bb:do_prepare_recipe_sysroot)
 NOTE: recipe kmod-26-r0: task do_prepare_recipe_sysroot: Started
-NOTE: recipe libxslt-native-1.1.32-r0: task do_prepare_recipe_sysroot: Started
-NOTE: recipe libxslt-native-1.1.32-r0: task do_unpack: Started
-NOTE: recipe eudev-3.2.7-r0: task do_unpack: Succeeded
-NOTE: Running task 1216 of 1268 (/home/deby/poky/meta/recipes-core/udev/eudev_3.2.7.bb:do_patch)
-NOTE: recipe kmod-26-r0: task do_unpack: Succeeded
-NOTE: Running task 1217 of 1268 (/home/deby/poky/meta-debian/recipes-debian/kmod/kmod_debian.bb:do_debian_unpack_extra)
-NOTE: recipe eudev-3.2.7-r0: task do_patch: Started
-NOTE: recipe kmod-26-r0: task do_debian_unpack_extra: Started
-NOTE: recipe kmod-26-r0: task do_debian_unpack_extra: Succeeded
-NOTE: Running task 1218 of 1268 (/home/deby/poky/meta-debian/recipes-debian/kmod/kmod_debian.bb:do_debian_patch)
-NOTE: recipe eudev-3.2.7-r0: task do_patch: Succeeded
-NOTE: recipe libxslt-native-1.1.32-r0: task do_unpack: Succeeded
-NOTE: Running task 1219 of 1268 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/libxslt/libxslt_debian.bb:do_debian_unpack_extra)
-NOTE: recipe kmod-26-r0: task do_debian_patch: Started
-NOTE: recipe libxslt-native-1.1.32-r0: task do_debian_unpack_extra: Started
-NOTE: recipe libxslt-native-1.1.32-r0: task do_debian_unpack_extra: Succeeded
-NOTE: Running task 1220 of 1268 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/libxslt/libxslt_debian.bb:do_debian_patch)
-NOTE: recipe libxslt-native-1.1.32-r0: task do_debian_patch: Started
 NOTE: recipe kmod-26-r0: task do_prepare_recipe_sysroot: Succeeded
-NOTE: recipe libxslt-native-1.1.32-r0: task do_prepare_recipe_sysroot: Succeeded
-NOTE: recipe kmod-26-r0: task do_debian_patch: Succeeded
-NOTE: Running task 1221 of 1268 (/home/deby/poky/meta-debian/recipes-debian/kmod/kmod_debian.bb:do_patch)
-NOTE: recipe libxslt-native-1.1.32-r0: task do_debian_patch: Succeeded
-NOTE: Running task 1222 of 1268 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/libxslt/libxslt_debian.bb:do_patch)
-NOTE: recipe kmod-26-r0: task do_patch: Started
-NOTE: recipe libxslt-native-1.1.32-r0: task do_patch: Started
-NOTE: recipe kmod-26-r0: task do_patch: Succeeded
-NOTE: Running task 1223 of 1268 (/home/deby/poky/meta-debian/recipes-debian/kmod/kmod_debian.bb:do_configure)
-NOTE: recipe pam-pkcs11-0.6.9-r0: task do_fetch: Succeeded
-NOTE: Running task 1224 of 1268 (/home/deby/poky/meta-debian/recipes-debian/pam-pkcs11/pam-pkcs11_debian.bb:do_unpack)
-NOTE: recipe pcsc-lite-1.8.24-r0: task do_fetch: Succeeded
-NOTE: recipe libxslt-native-1.1.32-r0: task do_patch: Succeeded
-NOTE: Running task 1225 of 1268 (/home/deby/poky/meta-debian/recipes-debian/pcsc-lite/pcsc-lite_debian.bb:do_unpack)
-NOTE: Running task 1226 of 1268 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/libxslt/libxslt_debian.bb:do_configure)
+NOTE: Running task 1236 of 1268 (/home/deby/poky/meta-debian/recipes-debian/kmod/kmod_debian.bb:do_configure)
 NOTE: recipe kmod-26-r0: task do_configure: Started
-NOTE: recipe pcsc-lite-1.8.24-r0: task do_unpack: Started
-NOTE: recipe pam-pkcs11-0.6.9-r0: task do_unpack: Started
-NOTE: recipe libxslt-native-1.1.32-r0: task do_configure: Started
-NOTE: recipe pam-pkcs11-0.6.9-r0: task do_unpack: Succeeded
-NOTE: Running task 1227 of 1268 (/home/deby/poky/meta-debian/recipes-debian/pam-pkcs11/pam-pkcs11_debian.bb:do_debian_unpack_extra)
-NOTE: recipe pam-pkcs11-0.6.9-r0: task do_debian_unpack_extra: Started
-NOTE: recipe pcsc-lite-1.8.24-r0: task do_unpack: Succeeded
-NOTE: Running task 1228 of 1268 (/home/deby/poky/meta-debian/recipes-debian/pcsc-lite/pcsc-lite_debian.bb:do_debian_unpack_extra)
-NOTE: recipe pam-pkcs11-0.6.9-r0: task do_debian_unpack_extra: Succeeded
-NOTE: Running task 1229 of 1268 (/home/deby/poky/meta-debian/recipes-debian/pam-pkcs11/pam-pkcs11_debian.bb:do_debian_patch)
-NOTE: recipe pcsc-lite-1.8.24-r0: task do_debian_unpack_extra: Started
-NOTE: recipe pam-pkcs11-0.6.9-r0: task do_debian_patch: Started
-NOTE: recipe pcsc-lite-1.8.24-r0: task do_debian_unpack_extra: Succeeded
-NOTE: Running task 1230 of 1268 (/home/deby/poky/meta-debian/recipes-debian/pcsc-lite/pcsc-lite_debian.bb:do_debian_patch)
-NOTE: recipe pam-pkcs11-0.6.9-r0: task do_debian_patch: Succeeded
-NOTE: Running task 1231 of 1268 (/home/deby/poky/meta-debian/recipes-debian/pam-pkcs11/pam-pkcs11_debian.bb:do_patch)
-NOTE: recipe pcsc-lite-1.8.24-r0: task do_debian_patch: Started
-NOTE: recipe pam-pkcs11-0.6.9-r0: task do_patch: Started
-NOTE: recipe pcsc-lite-1.8.24-r0: task do_debian_patch: Succeeded
-NOTE: Running task 1232 of 1268 (/home/deby/poky/meta-debian/recipes-debian/pcsc-lite/pcsc-lite_debian.bb:do_patch)
-NOTE: recipe pam-pkcs11-0.6.9-r0: task do_patch: Succeeded
-NOTE: Running task 1233 of 1268 (/home/deby/poky/meta-debian/recipes-debian/pam-pkcs11/pam-pkcs11_debian.bb:do_populate_lic)
-NOTE: recipe pcsc-lite-1.8.24-r0: task do_patch: Started
-NOTE: recipe pam-pkcs11-0.6.9-r0: task do_populate_lic: Started
-NOTE: recipe pcsc-lite-1.8.24-r0: task do_patch: Succeeded
-NOTE: recipe pam-pkcs11-0.6.9-r0: task do_populate_lic: Succeeded
-NOTE: recipe libxslt-native-1.1.32-r0: task do_configure: Succeeded
-NOTE: Running task 1234 of 1268 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/libxslt/libxslt_debian.bb:do_compile)
-NOTE: recipe libxslt-native-1.1.32-r0: task do_compile: Started
 NOTE: recipe kmod-26-r0: task do_configure: Succeeded
-NOTE: Running task 1235 of 1268 (/home/deby/poky/meta-debian/recipes-debian/kmod/kmod_debian.bb:do_compile)
+NOTE: Running task 1237 of 1268 (/home/deby/poky/meta-debian/recipes-debian/kmod/kmod_debian.bb:do_compile)
 NOTE: recipe kmod-26-r0: task do_compile: Started
 NOTE: recipe kmod-26-r0: task do_compile: Succeeded
-NOTE: Running task 1236 of 1268 (/home/deby/poky/meta-debian/recipes-debian/kmod/kmod_debian.bb:do_install)
+NOTE: Running task 1238 of 1268 (/home/deby/poky/meta-debian/recipes-debian/kmod/kmod_debian.bb:do_install)
 NOTE: recipe kmod-26-r0: task do_install: Started
-NOTE: recipe libxslt-native-1.1.32-r0: task do_compile: Succeeded
-NOTE: Running task 1237 of 1268 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/libxslt/libxslt_debian.bb:do_install)
-NOTE: recipe libxslt-native-1.1.32-r0: task do_install: Started
 NOTE: recipe kmod-26-r0: task do_install: Succeeded
-NOTE: Running task 1238 of 1268 (/home/deby/poky/meta-debian/recipes-debian/kmod/kmod_debian.bb:do_populate_sysroot)
-NOTE: Running task 1239 of 1268 (/home/deby/poky/meta-debian/recipes-debian/kmod/kmod_debian.bb:do_package)
+NOTE: Running task 1239 of 1268 (/home/deby/poky/meta-debian/recipes-debian/kmod/kmod_debian.bb:do_populate_sysroot)
+NOTE: Running task 1240 of 1268 (/home/deby/poky/meta-debian/recipes-debian/kmod/kmod_debian.bb:do_package)
 NOTE: recipe kmod-26-r0: task do_populate_sysroot: Started
 NOTE: recipe kmod-26-r0: task do_package: Started
-NOTE: recipe libxslt-native-1.1.32-r0: task do_install: Succeeded
-NOTE: Running task 1240 of 1268 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/libxslt/libxslt_debian.bb:do_populate_sysroot)
-NOTE: recipe libxslt-native-1.1.32-r0: task do_populate_sysroot: Started
 NOTE: recipe kmod-26-r0: task do_populate_sysroot: Succeeded
-NOTE: recipe libxslt-native-1.1.32-r0: task do_populate_sysroot: Succeeded
 NOTE: Running task 1241 of 1268 (/home/deby/poky/meta/recipes-core/udev/eudev_3.2.7.bb:do_prepare_recipe_sysroot)
 NOTE: recipe eudev-3.2.7-r0: task do_prepare_recipe_sysroot: Started
-NOTE: recipe eudev-3.2.7-r0: task do_prepare_recipe_sysroot: Succeeded
-NOTE: Running task 1242 of 1268 (/home/deby/poky/meta/recipes-core/udev/eudev_3.2.7.bb:do_configure)
-NOTE: recipe eudev-3.2.7-r0: task do_configure: Started
 NOTE: recipe kmod-26-r0: task do_package: Succeeded
-NOTE: Running task 1243 of 1268 (/home/deby/poky/meta-debian/recipes-debian/kmod/kmod_debian.bb:do_packagedata)
+NOTE: Running task 1242 of 1268 (/home/deby/poky/meta-debian/recipes-debian/kmod/kmod_debian.bb:do_packagedata)
 NOTE: recipe kmod-26-r0: task do_packagedata: Started
 NOTE: recipe kmod-26-r0: task do_packagedata: Succeeded
-NOTE: Running task 1244 of 1268 (/home/deby/poky/meta-debian/recipes-debian/kmod/kmod_debian.bb:do_package_write_deb)
+NOTE: Running task 1243 of 1268 (/home/deby/poky/meta-debian/recipes-debian/kmod/kmod_debian.bb:do_package_write_deb)
 NOTE: recipe kmod-26-r0: task do_package_write_deb: Started
+NOTE: recipe eudev-3.2.7-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 1244 of 1268 (/home/deby/poky/meta/recipes-core/udev/eudev_3.2.7.bb:do_configure)
+NOTE: recipe eudev-3.2.7-r0: task do_configure: Started
 NOTE: recipe kmod-26-r0: task do_package_write_deb: Succeeded
 NOTE: recipe eudev-3.2.7-r0: task do_configure: Succeeded
 NOTE: Running task 1245 of 1268 (/home/deby/poky/meta/recipes-core/udev/eudev_3.2.7.bb:do_compile)
@@ -174,16 +89,16 @@ NOTE: recipe pcsc-lite-1.8.24-r0: task do_package: Started
 NOTE: recipe pcsc-lite-1.8.24-r0: task do_populate_sysroot: Succeeded
 NOTE: Running task 1257 of 1268 (/home/deby/poky/meta-debian/recipes-debian/pam-pkcs11/pam-pkcs11_debian.bb:do_prepare_recipe_sysroot)
 NOTE: recipe pam-pkcs11-0.6.9-r0: task do_prepare_recipe_sysroot: Started
-NOTE: recipe pam-pkcs11-0.6.9-r0: task do_prepare_recipe_sysroot: Succeeded
-NOTE: Running task 1258 of 1268 (/home/deby/poky/meta-debian/recipes-debian/pam-pkcs11/pam-pkcs11_debian.bb:do_configure)
-NOTE: recipe pam-pkcs11-0.6.9-r0: task do_configure: Started
 NOTE: recipe pcsc-lite-1.8.24-r0: task do_package: Succeeded
-NOTE: Running task 1259 of 1268 (/home/deby/poky/meta-debian/recipes-debian/pcsc-lite/pcsc-lite_debian.bb:do_packagedata)
+NOTE: Running task 1258 of 1268 (/home/deby/poky/meta-debian/recipes-debian/pcsc-lite/pcsc-lite_debian.bb:do_packagedata)
 NOTE: recipe pcsc-lite-1.8.24-r0: task do_packagedata: Started
 NOTE: recipe pcsc-lite-1.8.24-r0: task do_packagedata: Succeeded
-NOTE: Running task 1260 of 1268 (/home/deby/poky/meta-debian/recipes-debian/pcsc-lite/pcsc-lite_debian.bb:do_package_write_deb)
+NOTE: Running task 1259 of 1268 (/home/deby/poky/meta-debian/recipes-debian/pcsc-lite/pcsc-lite_debian.bb:do_package_write_deb)
 NOTE: recipe pcsc-lite-1.8.24-r0: task do_package_write_deb: Started
 NOTE: recipe pcsc-lite-1.8.24-r0: task do_package_write_deb: Succeeded
+NOTE: recipe pam-pkcs11-0.6.9-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 1260 of 1268 (/home/deby/poky/meta-debian/recipes-debian/pam-pkcs11/pam-pkcs11_debian.bb:do_configure)
+NOTE: recipe pam-pkcs11-0.6.9-r0: task do_configure: Started
 NOTE: recipe pam-pkcs11-0.6.9-r0: task do_configure: Succeeded
 NOTE: Running task 1261 of 1268 (/home/deby/poky/meta-debian/recipes-debian/pam-pkcs11/pam-pkcs11_debian.bb:do_compile)
 NOTE: recipe pam-pkcs11-0.6.9-r0: task do_compile: Started
@@ -202,9 +117,9 @@ NOTE: recipe pam-pkcs11-0.6.9-r0: task do_packagedata: Started
 NOTE: recipe pam-pkcs11-0.6.9-r0: task do_packagedata: Succeeded
 NOTE: Running task 1266 of 1268 (/home/deby/poky/meta-debian/recipes-debian/pam-pkcs11/pam-pkcs11_debian.bb:do_package_write_deb)
 NOTE: Running task 1267 of 1268 (/home/deby/poky/meta-debian/recipes-debian/pam-pkcs11/pam-pkcs11_debian.bb:do_package_qa)
-NOTE: recipe pam-pkcs11-0.6.9-r0: task do_package_write_deb: Started
 NOTE: recipe pam-pkcs11-0.6.9-r0: task do_package_qa: Started
+NOTE: recipe pam-pkcs11-0.6.9-r0: task do_package_write_deb: Started
 NOTE: recipe pam-pkcs11-0.6.9-r0: task do_package_qa: Succeeded
 NOTE: recipe pam-pkcs11-0.6.9-r0: task do_package_write_deb: Succeeded
 NOTE: Running noexec task 1268 of 1268 (/home/deby/poky/meta-debian/recipes-debian/pam-pkcs11/pam-pkcs11_debian.bb:do_build)
-NOTE: Tasks Summary: Attempted 1268 tasks of which 1205 didn't need to be rerun and all succeeded.
+NOTE: Tasks Summary: Attempted 1268 tasks of which 1234 didn't need to be rerun and all succeeded.

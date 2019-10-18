@@ -1,5 +1,7 @@
 Loading cache...done.
-Loaded 1748 entries from dependency cache.
+Loaded 1746 entries from dependency cache.
+Parsing recipes...done.
+Parsing of 992 .bb files complete (990 cached, 2 parsed). 1733 targets, 57 skipped, 0 masked, 0 errors.
 NOTE: Resolving any missing task queue dependencies
 
 Build Configuration:
@@ -14,35 +16,17 @@ TUNE_FEATURES        = "aarch64 armv8a crc"
 TARGET_FPU           = ""
 meta                 
 meta-poky            = "warrior:79a850a10a4b88a6d20d607b322542f947874323"
-meta-debian          = "warrior:065aa7dcd28d697d2d493e1f188deb4f78253725"
+meta-debian          = "warrior:f7512bd96372e67fe4288cb5cb61cf52d282dd4e"
 
 Initialising tasks...done.
-Sstate summary: Wanted 6 Found 0 Missed 6 Current 431 (0% match, 98% complete)
+Sstate summary: Wanted 5 Found 0 Missed 5 Current 432 (0% match, 98% complete)
 NOTE: Executing SetScene Tasks
 NOTE: Executing RunQueue Tasks
-NOTE: Running task 1362 of 1995 (/home/deby/poky/meta-debian/recipes-debian/tpm2-abrmd/tpm2-abrmd_debian.bb:do_fetch)
-NOTE: recipe tpm2-abrmd-2.1.0-r0: task do_fetch: Started
-NOTE: recipe tpm2-abrmd-2.1.0-r0: task do_fetch: Succeeded
-NOTE: Running task 1981 of 1995 (/home/deby/poky/meta-debian/recipes-debian/tpm2-abrmd/tpm2-abrmd_debian.bb:do_unpack)
-NOTE: Running task 1982 of 1995 (/home/deby/poky/meta-debian/recipes-debian/tpm2-abrmd/tpm2-abrmd_debian.bb:do_prepare_recipe_sysroot)
-NOTE: recipe tpm2-abrmd-2.1.0-r0: task do_unpack: Started
+NOTE: Running task 1650 of 1995 (/home/deby/poky/meta-debian/recipes-debian/tpm2-abrmd/tpm2-abrmd_debian.bb:do_prepare_recipe_sysroot)
 NOTE: recipe tpm2-abrmd-2.1.0-r0: task do_prepare_recipe_sysroot: Started
-NOTE: recipe tpm2-abrmd-2.1.0-r0: task do_unpack: Succeeded
-NOTE: Running task 1983 of 1995 (/home/deby/poky/meta-debian/recipes-debian/tpm2-abrmd/tpm2-abrmd_debian.bb:do_debian_unpack_extra)
-NOTE: recipe tpm2-abrmd-2.1.0-r0: task do_debian_unpack_extra: Started
-NOTE: recipe tpm2-abrmd-2.1.0-r0: task do_debian_unpack_extra: Succeeded
-NOTE: Running task 1984 of 1995 (/home/deby/poky/meta-debian/recipes-debian/tpm2-abrmd/tpm2-abrmd_debian.bb:do_debian_patch)
-NOTE: recipe tpm2-abrmd-2.1.0-r0: task do_debian_patch: Started
 NOTE: recipe tpm2-abrmd-2.1.0-r0: task do_prepare_recipe_sysroot: Succeeded
-NOTE: recipe tpm2-abrmd-2.1.0-r0: task do_debian_patch: Succeeded
-NOTE: Running task 1985 of 1995 (/home/deby/poky/meta-debian/recipes-debian/tpm2-abrmd/tpm2-abrmd_debian.bb:do_patch)
-NOTE: recipe tpm2-abrmd-2.1.0-r0: task do_patch: Started
-NOTE: recipe tpm2-abrmd-2.1.0-r0: task do_patch: Succeeded
-NOTE: Running task 1986 of 1995 (/home/deby/poky/meta-debian/recipes-debian/tpm2-abrmd/tpm2-abrmd_debian.bb:do_configure)
-NOTE: Running task 1987 of 1995 (/home/deby/poky/meta-debian/recipes-debian/tpm2-abrmd/tpm2-abrmd_debian.bb:do_populate_lic)
+NOTE: Running task 1987 of 1995 (/home/deby/poky/meta-debian/recipes-debian/tpm2-abrmd/tpm2-abrmd_debian.bb:do_configure)
 NOTE: recipe tpm2-abrmd-2.1.0-r0: task do_configure: Started
-NOTE: recipe tpm2-abrmd-2.1.0-r0: task do_populate_lic: Started
-NOTE: recipe tpm2-abrmd-2.1.0-r0: task do_populate_lic: Succeeded
 NOTE: recipe tpm2-abrmd-2.1.0-r0: task do_configure: Succeeded
 NOTE: Running task 1988 of 1995 (/home/deby/poky/meta-debian/recipes-debian/tpm2-abrmd/tpm2-abrmd_debian.bb:do_compile)
 NOTE: recipe tpm2-abrmd-2.1.0-r0: task do_compile: Started
@@ -63,7 +47,7 @@ NOTE: Running task 1993 of 1995 (/home/deby/poky/meta-debian/recipes-debian/tpm2
 NOTE: Running task 1994 of 1995 (/home/deby/poky/meta-debian/recipes-debian/tpm2-abrmd/tpm2-abrmd_debian.bb:do_package_qa)
 NOTE: recipe tpm2-abrmd-2.1.0-r0: task do_package_write_deb: Started
 NOTE: recipe tpm2-abrmd-2.1.0-r0: task do_package_qa: Started
-NOTE: recipe tpm2-abrmd-2.1.0-r0: task do_package_write_deb: Succeeded
 NOTE: recipe tpm2-abrmd-2.1.0-r0: task do_package_qa: Succeeded
+NOTE: recipe tpm2-abrmd-2.1.0-r0: task do_package_write_deb: Succeeded
 NOTE: Running noexec task 1995 of 1995 (/home/deby/poky/meta-debian/recipes-debian/tpm2-abrmd/tpm2-abrmd_debian.bb:do_build)
-NOTE: Tasks Summary: Attempted 1995 tasks of which 1979 didn't need to be rerun and all succeeded.
+NOTE: Tasks Summary: Attempted 1995 tasks of which 1985 didn't need to be rerun and all succeeded.

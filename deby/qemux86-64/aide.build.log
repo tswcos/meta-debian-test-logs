@@ -1,5 +1,7 @@
 Loading cache...done.
-Loaded 1748 entries from dependency cache.
+Loaded 1746 entries from dependency cache.
+Parsing recipes...done.
+Parsing of 992 .bb files complete (990 cached, 2 parsed). 1733 targets, 43 skipped, 0 masked, 0 errors.
 NOTE: Resolving any missing task queue dependencies
 
 Build Configuration:
@@ -14,91 +16,119 @@ TUNE_FEATURES        = "m64 core2"
 TARGET_FPU           = ""
 meta                 
 meta-poky            = "warrior:79a850a10a4b88a6d20d607b322542f947874323"
-meta-debian          = "warrior:065aa7dcd28d697d2d493e1f188deb4f78253725"
+meta-debian          = "warrior:f7512bd96372e67fe4288cb5cb61cf52d282dd4e"
 
 Initialising tasks...done.
-Sstate summary: Wanted 7 Found 0 Missed 7 Current 448 (0% match, 98% complete)
+Sstate summary: Wanted 17 Found 0 Missed 17 Current 438 (0% match, 96% complete)
 NOTE: Executing SetScene Tasks
 NOTE: Executing RunQueue Tasks
-NOTE: Running task 1731 of 2069 (/home/deby/poky/meta-debian/recipes-debian/aide/aide_debian.bb:do_configure)
-NOTE: Running task 1738 of 2069 (/home/deby/poky/meta-debian/recipes-debian/libmhash/libmhash_debian.bb:do_packagedata)
+NOTE: Running task 1210 of 2069 (/home/deby/poky/meta-debian/recipes-debian/libmhash/libmhash_debian.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 1441 of 2069 (/home/deby/poky/meta-debian/recipes-debian/selinux/libsepol_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe libmhash-0.9.9.9-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe libsepol-2.8-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe libsepol-2.8-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 2035 of 2069 (/home/deby/poky/meta-debian/recipes-debian/selinux/libsepol_debian.bb:do_configure)
+NOTE: recipe libsepol-2.8-r0: task do_configure: Started
+NOTE: recipe libmhash-0.9.9.9-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 2036 of 2069 (/home/deby/poky/meta-debian/recipes-debian/libmhash/libmhash_debian.bb:do_configure)
+NOTE: recipe libmhash-0.9.9.9-r0: task do_configure: Started
+NOTE: recipe libsepol-2.8-r0: task do_configure: Succeeded
+NOTE: Running task 2037 of 2069 (/home/deby/poky/meta-debian/recipes-debian/selinux/libsepol_debian.bb:do_compile)
+NOTE: recipe libsepol-2.8-r0: task do_compile: Started
+NOTE: recipe libsepol-2.8-r0: task do_compile: Succeeded
+NOTE: Running task 2038 of 2069 (/home/deby/poky/meta-debian/recipes-debian/selinux/libsepol_debian.bb:do_install)
+NOTE: recipe libsepol-2.8-r0: task do_install: Started
+NOTE: recipe libsepol-2.8-r0: task do_install: Succeeded
+NOTE: Running task 2039 of 2069 (/home/deby/poky/meta-debian/recipes-debian/selinux/libsepol_debian.bb:do_populate_sysroot)
+NOTE: Running task 2040 of 2069 (/home/deby/poky/meta-debian/recipes-debian/selinux/libsepol_debian.bb:do_package)
+NOTE: recipe libsepol-2.8-r0: task do_package: Started
+NOTE: recipe libsepol-2.8-r0: task do_populate_sysroot: Started
+NOTE: recipe libsepol-2.8-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 2041 of 2069 (/home/deby/poky/meta-debian/recipes-debian/selinux/libselinux_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe libselinux-2.8-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe libsepol-2.8-r0: task do_package: Succeeded
+NOTE: Running task 2042 of 2069 (/home/deby/poky/meta-debian/recipes-debian/selinux/libsepol_debian.bb:do_packagedata)
+NOTE: recipe libsepol-2.8-r0: task do_packagedata: Started
+NOTE: recipe libsepol-2.8-r0: task do_packagedata: Succeeded
+NOTE: Running task 2043 of 2069 (/home/deby/poky/meta-debian/recipes-debian/selinux/libsepol_debian.bb:do_package_write_deb)
+NOTE: recipe libsepol-2.8-r0: task do_package_write_deb: Started
+NOTE: recipe libselinux-2.8-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 2044 of 2069 (/home/deby/poky/meta-debian/recipes-debian/selinux/libselinux_debian.bb:do_configure)
+NOTE: recipe libselinux-2.8-r0: task do_configure: Started
+NOTE: recipe libsepol-2.8-r0: task do_package_write_deb: Succeeded
+NOTE: recipe libselinux-2.8-r0: task do_configure: Succeeded
+NOTE: Running task 2045 of 2069 (/home/deby/poky/meta-debian/recipes-debian/selinux/libselinux_debian.bb:do_compile)
+NOTE: recipe libselinux-2.8-r0: task do_compile: Started
+NOTE: recipe libselinux-2.8-r0: task do_compile: Succeeded
+NOTE: Running task 2046 of 2069 (/home/deby/poky/meta-debian/recipes-debian/selinux/libselinux_debian.bb:do_install)
+NOTE: recipe libselinux-2.8-r0: task do_install: Started
+NOTE: recipe libmhash-0.9.9.9-r0: task do_configure: Succeeded
+NOTE: Running task 2047 of 2069 (/home/deby/poky/meta-debian/recipes-debian/libmhash/libmhash_debian.bb:do_configure_ptest_base)
+NOTE: recipe libmhash-0.9.9.9-r0: task do_configure_ptest_base: Started
+NOTE: recipe libmhash-0.9.9.9-r0: task do_configure_ptest_base: Succeeded
+NOTE: Running task 2048 of 2069 (/home/deby/poky/meta-debian/recipes-debian/libmhash/libmhash_debian.bb:do_compile)
+NOTE: recipe libmhash-0.9.9.9-r0: task do_compile: Started
+NOTE: recipe libselinux-2.8-r0: task do_install: Succeeded
+NOTE: Running task 2049 of 2069 (/home/deby/poky/meta-debian/recipes-debian/selinux/libselinux_debian.bb:do_package)
+NOTE: Running task 2050 of 2069 (/home/deby/poky/meta-debian/recipes-debian/selinux/libselinux_debian.bb:do_populate_sysroot)
+NOTE: recipe libmhash-0.9.9.9-r0: task do_compile: Succeeded
+NOTE: Running task 2051 of 2069 (/home/deby/poky/meta-debian/recipes-debian/libmhash/libmhash_debian.bb:do_compile_ptest_base)
+NOTE: recipe libselinux-2.8-r0: task do_package: Started
+NOTE: recipe libselinux-2.8-r0: task do_populate_sysroot: Started
+NOTE: recipe libmhash-0.9.9.9-r0: task do_compile_ptest_base: Started
+NOTE: recipe libmhash-0.9.9.9-r0: task do_compile_ptest_base: Succeeded
+NOTE: Running task 2052 of 2069 (/home/deby/poky/meta-debian/recipes-debian/libmhash/libmhash_debian.bb:do_install)
+NOTE: recipe libselinux-2.8-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe libmhash-0.9.9.9-r0: task do_install: Started
+NOTE: recipe libmhash-0.9.9.9-r0: task do_install: Succeeded
+NOTE: Running task 2053 of 2069 (/home/deby/poky/meta-debian/recipes-debian/libmhash/libmhash_debian.bb:do_install_ptest_base)
+NOTE: recipe libmhash-0.9.9.9-r0: task do_install_ptest_base: Started
+NOTE: recipe libmhash-0.9.9.9-r0: task do_install_ptest_base: Succeeded
+NOTE: Running task 2054 of 2069 (/home/deby/poky/meta-debian/recipes-debian/libmhash/libmhash_debian.bb:do_package)
+NOTE: Running task 2055 of 2069 (/home/deby/poky/meta-debian/recipes-debian/libmhash/libmhash_debian.bb:do_populate_sysroot)
+NOTE: recipe libmhash-0.9.9.9-r0: task do_populate_sysroot: Started
+NOTE: recipe libmhash-0.9.9.9-r0: task do_package: Started
+NOTE: recipe libmhash-0.9.9.9-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 2056 of 2069 (/home/deby/poky/meta-debian/recipes-debian/aide/aide_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe aide-0.16.1-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe libmhash-0.9.9.9-r0: task do_package: Succeeded
+NOTE: Running task 2057 of 2069 (/home/deby/poky/meta-debian/recipes-debian/libmhash/libmhash_debian.bb:do_packagedata)
 NOTE: recipe libmhash-0.9.9.9-r0: task do_packagedata: Started
-NOTE: recipe aide-0.16.1-r0: task do_configure: Started
+NOTE: recipe libselinux-2.8-r0: task do_package: Succeeded
+NOTE: Running task 2058 of 2069 (/home/deby/poky/meta-debian/recipes-debian/selinux/libselinux_debian.bb:do_packagedata)
+NOTE: recipe libselinux-2.8-r0: task do_packagedata: Started
 NOTE: recipe libmhash-0.9.9.9-r0: task do_packagedata: Succeeded
-NOTE: Running task 2061 of 2069 (/home/deby/poky/meta-debian/recipes-debian/libmhash/libmhash_debian.bb:do_package_write_deb)
+NOTE: Running task 2059 of 2069 (/home/deby/poky/meta-debian/recipes-debian/libmhash/libmhash_debian.bb:do_package_write_deb)
+NOTE: recipe libselinux-2.8-r0: task do_packagedata: Succeeded
+NOTE: Running task 2060 of 2069 (/home/deby/poky/meta-debian/recipes-debian/selinux/libselinux_debian.bb:do_package_write_deb)
 NOTE: recipe libmhash-0.9.9.9-r0: task do_package_write_deb: Started
-ERROR: aide-0.16.1-r0 do_configure: Function failed: do_configure (log file is located at /home/deby/build/tmp/work/core2-64-deby-linux/aide/0.16.1-r0/temp/log.do_configure.25844)
-ERROR: Logfile of failure stored in: /home/deby/build/tmp/work/core2-64-deby-linux/aide/0.16.1-r0/temp/log.do_configure.25844
-Log data follows:
-| DEBUG: SITE files ['endian-little', 'common-linux', 'common-glibc', 'bit-64', 'x86_64-linux', 'common']
-| DEBUG: Executing shell function autotools_preconfigure
-| DEBUG: Shell function autotools_preconfigure finished
-| DEBUG: Executing python function autotools_aclocals
-| DEBUG: SITE files ['endian-little', 'common-linux', 'common-glibc', 'bit-64', 'x86_64-linux', 'common']
-| DEBUG: Python function autotools_aclocals finished
-| DEBUG: Executing shell function do_configure
-| checking build system type... x86_64-pc-linux-gnu
-| checking host system type... x86_64-pc-linux-gnu
-| checking target system type... x86_64-pc-linux-gnu
-| checking for a BSD-compatible install... /home/deby/build/tmp/hosttools/install -c
-| checking whether build environment is sane... yes
-| checking for a thread-safe mkdir -p... /home/deby/build/tmp/hosttools/mkdir -p
-| checking for gawk... gawk
-| checking whether make sets $(MAKE)... yes
-| checking whether make supports nested variables... yes
-| checking whether make supports the include directive... yes (GNU style)
-| checking for gcc... x86_64-deby-linux-gcc  -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build/tmp/work/core2-64-deby-linux/aide/0.16.1-r0/recipe-sysroot
-| checking whether the C compiler works... yes
-| checking for C compiler default output file name... a.out
-| checking for suffix of executables...
-| checking whether we are cross compiling... configure: error: in `/home/deby/build/tmp/work/core2-64-deby-linux/aide/0.16.1-r0/build/aide':
-| configure: error: cannot run C compiled programs.
-| If you meant to cross compile, use `--host'.
-| See `config.log' for more details
-| checking build system type... x86_64-pc-linux-gnu
-| checking host system type... x86_64-pc-linux-gnu
-| checking target system type... x86_64-pc-linux-gnu
-| checking for a BSD-compatible install... /home/deby/build/tmp/hosttools/install -c
-| checking whether build environment is sane... yes
-| checking for a thread-safe mkdir -p... /home/deby/build/tmp/hosttools/mkdir -p
-| checking for gawk... gawk
-| checking whether make sets $(MAKE)... yes
-| checking whether make supports nested variables... yes
-| checking whether make supports the include directive... yes (GNU style)
-| checking for gcc... x86_64-deby-linux-gcc  -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build/tmp/work/core2-64-deby-linux/aide/0.16.1-r0/recipe-sysroot
-| checking whether the C compiler works... yes
-| checking for C compiler default output file name... a.out
-| checking for suffix of executables...
-| checking whether we are cross compiling... configure: error: in `/home/deby/build/tmp/work/core2-64-deby-linux/aide/0.16.1-r0/build/aide/aide-xen':
-| configure: error: cannot run C compiled programs.
-| If you meant to cross compile, use `--host'.
-| See `config.log' for more details
-| checking build system type... x86_64-pc-linux-gnu
-| checking host system type... x86_64-pc-linux-gnu
-| checking target system type... x86_64-pc-linux-gnu
-| checking for a BSD-compatible install... /home/deby/build/tmp/hosttools/install -c
-| checking whether build environment is sane... yes
-| checking for a thread-safe mkdir -p... /home/deby/build/tmp/hosttools/mkdir -p
-| checking for gawk... gawk
-| checking whether make sets $(MAKE)... yes
-| checking whether make supports nested variables... yes
-| checking whether make supports the include directive... yes (GNU style)
-| checking for gcc... x86_64-deby-linux-gcc  -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build/tmp/work/core2-64-deby-linux/aide/0.16.1-r0/recipe-sysroot
-| checking whether the C compiler works... yes
-| checking for C compiler default output file name... a.out
-| checking for suffix of executables...
-| checking whether we are cross compiling... configure: error: in `/home/deby/build/tmp/work/core2-64-deby-linux/aide/0.16.1-r0/build/aide/aide-xen/aide-dynamic':
-| configure: error: cannot run C compiled programs.
-| If you meant to cross compile, use `--host'.
-| See `config.log' for more details
-| sed: can't read /home/deby/build/tmp/work/core2-64-deby-linux/aide/0.16.1-r0/build/*/config.h: No such file or directory
-| WARNING: exit code 2 from a shell command.
-| ERROR: Function failed: do_configure (log file is located at /home/deby/build/tmp/work/core2-64-deby-linux/aide/0.16.1-r0/temp/log.do_configure.25844)
-NOTE: recipe aide-0.16.1-r0: task do_configure: Failed
-ERROR: Task (/home/deby/poky/meta-debian/recipes-debian/aide/aide_debian.bb:do_configure) failed with exit code '1'
+NOTE: recipe libselinux-2.8-r0: task do_package_write_deb: Started
 NOTE: recipe libmhash-0.9.9.9-r0: task do_package_write_deb: Succeeded
-NOTE: Tasks Summary: Attempted 2061 tasks of which 2058 didn't need to be rerun and 1 failed.
-
-Summary: 1 task failed:
-  /home/deby/poky/meta-debian/recipes-debian/aide/aide_debian.bb:do_configure
-Summary: There was 1 ERROR message shown, returning a non-zero exit code.
+NOTE: recipe libselinux-2.8-r0: task do_package_write_deb: Succeeded
+NOTE: recipe aide-0.16.1-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 2061 of 2069 (/home/deby/poky/meta-debian/recipes-debian/aide/aide_debian.bb:do_configure)
+NOTE: recipe aide-0.16.1-r0: task do_configure: Started
+NOTE: recipe aide-0.16.1-r0: task do_configure: Succeeded
+NOTE: Running task 2062 of 2069 (/home/deby/poky/meta-debian/recipes-debian/aide/aide_debian.bb:do_compile)
+NOTE: recipe aide-0.16.1-r0: task do_compile: Started
+NOTE: recipe aide-0.16.1-r0: task do_compile: Succeeded
+NOTE: Running task 2063 of 2069 (/home/deby/poky/meta-debian/recipes-debian/aide/aide_debian.bb:do_install)
+NOTE: recipe aide-0.16.1-r0: task do_install: Started
+NOTE: recipe aide-0.16.1-r0: task do_install: Succeeded
+NOTE: Running task 2064 of 2069 (/home/deby/poky/meta-debian/recipes-debian/aide/aide_debian.bb:do_package)
+NOTE: Running task 2065 of 2069 (/home/deby/poky/meta-debian/recipes-debian/aide/aide_debian.bb:do_populate_sysroot)
+NOTE: recipe aide-0.16.1-r0: task do_populate_sysroot: Started
+NOTE: recipe aide-0.16.1-r0: task do_package: Started
+NOTE: recipe aide-0.16.1-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe aide-0.16.1-r0: task do_package: Succeeded
+NOTE: Running task 2066 of 2069 (/home/deby/poky/meta-debian/recipes-debian/aide/aide_debian.bb:do_packagedata)
+NOTE: recipe aide-0.16.1-r0: task do_packagedata: Started
+NOTE: recipe aide-0.16.1-r0: task do_packagedata: Succeeded
+NOTE: Running task 2067 of 2069 (/home/deby/poky/meta-debian/recipes-debian/aide/aide_debian.bb:do_package_write_deb)
+NOTE: Running task 2068 of 2069 (/home/deby/poky/meta-debian/recipes-debian/aide/aide_debian.bb:do_package_qa)
+NOTE: recipe aide-0.16.1-r0: task do_package_qa: Started
+NOTE: recipe aide-0.16.1-r0: task do_package_write_deb: Started
+NOTE: recipe aide-0.16.1-r0: task do_package_qa: Succeeded
+NOTE: recipe aide-0.16.1-r0: task do_package_write_deb: Succeeded
+NOTE: Running noexec task 2069 of 2069 (/home/deby/poky/meta-debian/recipes-debian/aide/aide_debian.bb:do_build)
+NOTE: Tasks Summary: Attempted 2069 tasks of which 2032 didn't need to be rerun and all succeeded.

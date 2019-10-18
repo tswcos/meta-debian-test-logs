@@ -1,5 +1,7 @@
 Loading cache...done.
-Loaded 1733 entries from dependency cache.
+Loaded 1731 entries from dependency cache.
+Parsing recipes...done.
+Parsing of 992 .bb files complete (990 cached, 2 parsed). 1733 targets, 68 skipped, 0 masked, 0 errors.
 NOTE: Resolving any missing task queue dependencies
 
 Build Configuration:
@@ -14,80 +16,65 @@ TUNE_FEATURES        = "o32 bigendian fpu-hard mips32r2"
 TARGET_FPU           = ""
 meta                 
 meta-poky            = "warrior:79a850a10a4b88a6d20d607b322542f947874323"
-meta-debian          = "warrior:065aa7dcd28d697d2d493e1f188deb4f78253725"
+meta-debian          = "warrior:f7512bd96372e67fe4288cb5cb61cf52d282dd4e"
 
 Initialising tasks...done.
-Sstate summary: Wanted 13 Found 0 Missed 13 Current 451 (0% match, 97% complete)
+Sstate summary: Wanted 10 Found 0 Missed 10 Current 454 (0% match, 97% complete)
 NOTE: Executing SetScene Tasks
 NOTE: Executing RunQueue Tasks
-NOTE: Running task 1319 of 2111 (/home/deby/poky/meta-debian/recipes-debian/libpreludedb/libpreludedb_debian.bb:do_fetch)
-NOTE: Running task 1418 of 2111 (/home/deby/poky/meta-debian/recipes-debian/prelude-manager/prelude-manager_debian.bb:do_fetch)
-NOTE: Running task 1506 of 2111 (virtual:native:/home/deby/poky/meta/recipes-extended/libidn/libidn2_2.0.5.bb:do_install)
-NOTE: recipe libpreludedb-4.1.0-r0: task do_fetch: Started
-NOTE: recipe prelude-manager-4.1.1-r0: task do_fetch: Started
-NOTE: recipe libpreludedb-4.1.0-r0: task do_fetch: Succeeded
-NOTE: Running task 2074 of 2111 (/home/deby/poky/meta-debian/recipes-debian/libpreludedb/libpreludedb_debian.bb:do_unpack)
-NOTE: recipe prelude-manager-4.1.1-r0: task do_fetch: Succeeded
-NOTE: Running task 2075 of 2111 (/home/deby/poky/meta-debian/recipes-debian/prelude-manager/prelude-manager_debian.bb:do_unpack)
-NOTE: recipe libidn2-native-2.0.5-r0: task do_install: Started
-NOTE: recipe libpreludedb-4.1.0-r0: task do_unpack: Started
-NOTE: recipe prelude-manager-4.1.1-r0: task do_unpack: Started
-NOTE: recipe libpreludedb-4.1.0-r0: task do_unpack: Succeeded
-NOTE: Running task 2076 of 2111 (/home/deby/poky/meta-debian/recipes-debian/libpreludedb/libpreludedb_debian.bb:do_debian_unpack_extra)
-NOTE: recipe prelude-manager-4.1.1-r0: task do_unpack: Succeeded
-NOTE: Running task 2077 of 2111 (/home/deby/poky/meta-debian/recipes-debian/prelude-manager/prelude-manager_debian.bb:do_debian_unpack_extra)
-NOTE: recipe libpreludedb-4.1.0-r0: task do_debian_unpack_extra: Started
-NOTE: recipe prelude-manager-4.1.1-r0: task do_debian_unpack_extra: Started
-NOTE: recipe libpreludedb-4.1.0-r0: task do_debian_unpack_extra: Succeeded
-NOTE: Running task 2078 of 2111 (/home/deby/poky/meta-debian/recipes-debian/libpreludedb/libpreludedb_debian.bb:do_debian_patch)
-NOTE: recipe prelude-manager-4.1.1-r0: task do_debian_unpack_extra: Succeeded
-NOTE: Running task 2079 of 2111 (/home/deby/poky/meta-debian/recipes-debian/prelude-manager/prelude-manager_debian.bb:do_debian_patch)
-NOTE: recipe libpreludedb-4.1.0-r0: task do_debian_patch: Started
-NOTE: recipe prelude-manager-4.1.1-r0: task do_debian_patch: Started
-NOTE: recipe prelude-manager-4.1.1-r0: task do_debian_patch: Succeeded
-NOTE: Running task 2080 of 2111 (/home/deby/poky/meta-debian/recipes-debian/prelude-manager/prelude-manager_debian.bb:do_patch)
-NOTE: recipe libpreludedb-4.1.0-r0: task do_debian_patch: Succeeded
-NOTE: Running task 2081 of 2111 (/home/deby/poky/meta-debian/recipes-debian/libpreludedb/libpreludedb_debian.bb:do_patch)
-NOTE: recipe prelude-manager-4.1.1-r0: task do_patch: Started
-NOTE: recipe libpreludedb-4.1.0-r0: task do_patch: Started
-NOTE: recipe prelude-manager-4.1.1-r0: task do_patch: Succeeded
-NOTE: Running task 2082 of 2111 (/home/deby/poky/meta-debian/recipes-debian/prelude-manager/prelude-manager_debian.bb:do_populate_lic)
+NOTE: Running task 1613 of 2111 (/home/deby/poky/meta-debian/recipes-debian/libpreludedb/libpreludedb_debian.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 2094 of 2111 (/home/deby/poky/meta-debian/recipes-debian/prelude-manager/prelude-manager_debian.bb:do_populate_lic)
+NOTE: recipe libpreludedb-4.1.0-r0: task do_prepare_recipe_sysroot: Started
 NOTE: recipe prelude-manager-4.1.1-r0: task do_populate_lic: Started
-ERROR: prelude-manager-4.1.1-r0 do_populate_lic: QA Issue: prelude-manager: The LIC_FILES_CHKSUM does not match for file://config.sub;beginline=7;endline=25;md5=f92d7033ace1653856cc3084ddc33960
-prelude-manager: The new md5 checksum is e443b5b496d01ee52219d5269560d697
-prelude-manager: Here is the selected license text:
-vvvvvvvvvvvvvvvvvvvvvvvvvvvv beginline=7 vvvvvvvvvvvvvvvvvvvvvvvvvvvvv
-# This file is free software; you can redistribute it and/or modify it
-# under the terms of the GNU General Public License as published by
-# the Free Software Foundation; either version 3 of the License, or
-# (at your option) any later version.
-#
-# This program is distributed in the hope that it will be useful, but
-# WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-# General Public License for more details.
-#
-# You should have received a copy of the GNU General Public License
-# along with this program; if not, see <http://www.gnu.org/licenses/>.
-#
-# As a special exception to the GNU General Public License, if you
-# distribute this file as part of a program that contains a
-# configuration script generated by Autoconf, you may include it under
-# the same distribution terms that you use for the rest of that
-# program.  This Exception is an additional permission under section 7
-# of the GNU General Public License, version 3 ("GPLv3").
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ endline=25 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-prelude-manager: Check if the license information has changed in /home/deby/build/tmp/work/mips32r2-deby-linux/prelude-manager/4.1.1-r0/prelude-manager-4.1.1/config.sub (lines 7 through to 25) to verify that the LICENSE value "GPLv2+ & LGPL-2.1+ & MIT & GPLv3+" remains valid [license-checksum]
-ERROR: prelude-manager-4.1.1-r0 do_populate_lic: Fatal QA errors found, failing task.
-ERROR: prelude-manager-4.1.1-r0 do_populate_lic: 
-ERROR: prelude-manager-4.1.1-r0 do_populate_lic: Function failed: populate_lic_qa_checksum
-ERROR: Logfile of failure stored in: /home/deby/build/tmp/work/mips32r2-deby-linux/prelude-manager/4.1.1-r0/temp/log.do_populate_lic.13135
-NOTE: recipe prelude-manager-4.1.1-r0: task do_populate_lic: Failed
-ERROR: Task (/home/deby/poky/meta-debian/recipes-debian/prelude-manager/prelude-manager_debian.bb:do_populate_lic) failed with exit code '1'
-NOTE: recipe libidn2-native-2.0.5-r0: task do_install: Succeeded
-NOTE: recipe libpreludedb-4.1.0-r0: task do_patch: Succeeded
-NOTE: Tasks Summary: Attempted 2082 tasks of which 2070 didn't need to be rerun and 1 failed.
-
-Summary: 1 task failed:
-  /home/deby/poky/meta-debian/recipes-debian/prelude-manager/prelude-manager_debian.bb:do_populate_lic
-Summary: There were 4 ERROR messages shown, returning a non-zero exit code.
+NOTE: recipe prelude-manager-4.1.1-r0: task do_populate_lic: Succeeded
+NOTE: recipe libpreludedb-4.1.0-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 2095 of 2111 (/home/deby/poky/meta-debian/recipes-debian/libpreludedb/libpreludedb_debian.bb:do_configure)
+NOTE: recipe libpreludedb-4.1.0-r0: task do_configure: Started
+NOTE: recipe libpreludedb-4.1.0-r0: task do_configure: Succeeded
+NOTE: Running task 2096 of 2111 (/home/deby/poky/meta-debian/recipes-debian/libpreludedb/libpreludedb_debian.bb:do_compile)
+NOTE: recipe libpreludedb-4.1.0-r0: task do_compile: Started
+NOTE: recipe libpreludedb-4.1.0-r0: task do_compile: Succeeded
+NOTE: Running task 2097 of 2111 (/home/deby/poky/meta-debian/recipes-debian/libpreludedb/libpreludedb_debian.bb:do_install)
+NOTE: recipe libpreludedb-4.1.0-r0: task do_install: Started
+NOTE: recipe libpreludedb-4.1.0-r0: task do_install: Succeeded
+NOTE: Running task 2098 of 2111 (/home/deby/poky/meta-debian/recipes-debian/libpreludedb/libpreludedb_debian.bb:do_package)
+NOTE: Running task 2099 of 2111 (/home/deby/poky/meta-debian/recipes-debian/libpreludedb/libpreludedb_debian.bb:do_populate_sysroot)
+NOTE: recipe libpreludedb-4.1.0-r0: task do_populate_sysroot: Started
+NOTE: recipe libpreludedb-4.1.0-r0: task do_package: Started
+NOTE: recipe libpreludedb-4.1.0-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 2100 of 2111 (/home/deby/poky/meta-debian/recipes-debian/prelude-manager/prelude-manager_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe prelude-manager-4.1.1-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe prelude-manager-4.1.1-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 2101 of 2111 (/home/deby/poky/meta-debian/recipes-debian/prelude-manager/prelude-manager_debian.bb:do_configure)
+NOTE: recipe prelude-manager-4.1.1-r0: task do_configure: Started
+NOTE: recipe libpreludedb-4.1.0-r0: task do_package: Succeeded
+NOTE: Running task 2102 of 2111 (/home/deby/poky/meta-debian/recipes-debian/libpreludedb/libpreludedb_debian.bb:do_packagedata)
+NOTE: recipe libpreludedb-4.1.0-r0: task do_packagedata: Started
+NOTE: recipe libpreludedb-4.1.0-r0: task do_packagedata: Succeeded
+NOTE: Running task 2103 of 2111 (/home/deby/poky/meta-debian/recipes-debian/libpreludedb/libpreludedb_debian.bb:do_package_write_deb)
+NOTE: recipe libpreludedb-4.1.0-r0: task do_package_write_deb: Started
+NOTE: recipe libpreludedb-4.1.0-r0: task do_package_write_deb: Succeeded
+NOTE: recipe prelude-manager-4.1.1-r0: task do_configure: Succeeded
+NOTE: Running task 2104 of 2111 (/home/deby/poky/meta-debian/recipes-debian/prelude-manager/prelude-manager_debian.bb:do_compile)
+NOTE: recipe prelude-manager-4.1.1-r0: task do_compile: Started
+NOTE: recipe prelude-manager-4.1.1-r0: task do_compile: Succeeded
+NOTE: Running task 2105 of 2111 (/home/deby/poky/meta-debian/recipes-debian/prelude-manager/prelude-manager_debian.bb:do_install)
+NOTE: recipe prelude-manager-4.1.1-r0: task do_install: Started
+NOTE: recipe prelude-manager-4.1.1-r0: task do_install: Succeeded
+NOTE: Running task 2106 of 2111 (/home/deby/poky/meta-debian/recipes-debian/prelude-manager/prelude-manager_debian.bb:do_package)
+NOTE: Running task 2107 of 2111 (/home/deby/poky/meta-debian/recipes-debian/prelude-manager/prelude-manager_debian.bb:do_populate_sysroot)
+NOTE: recipe prelude-manager-4.1.1-r0: task do_populate_sysroot: Started
+NOTE: recipe prelude-manager-4.1.1-r0: task do_package: Started
+NOTE: recipe prelude-manager-4.1.1-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe prelude-manager-4.1.1-r0: task do_package: Succeeded
+NOTE: Running task 2108 of 2111 (/home/deby/poky/meta-debian/recipes-debian/prelude-manager/prelude-manager_debian.bb:do_packagedata)
+NOTE: recipe prelude-manager-4.1.1-r0: task do_packagedata: Started
+NOTE: recipe prelude-manager-4.1.1-r0: task do_packagedata: Succeeded
+NOTE: Running task 2109 of 2111 (/home/deby/poky/meta-debian/recipes-debian/prelude-manager/prelude-manager_debian.bb:do_package_write_deb)
+NOTE: Running task 2110 of 2111 (/home/deby/poky/meta-debian/recipes-debian/prelude-manager/prelude-manager_debian.bb:do_package_qa)
+NOTE: recipe prelude-manager-4.1.1-r0: task do_package_write_deb: Started
+NOTE: recipe prelude-manager-4.1.1-r0: task do_package_qa: Started
+NOTE: recipe prelude-manager-4.1.1-r0: task do_package_write_deb: Succeeded
+NOTE: recipe prelude-manager-4.1.1-r0: task do_package_qa: Succeeded
+NOTE: Running noexec task 2111 of 2111 (/home/deby/poky/meta-debian/recipes-debian/prelude-manager/prelude-manager_debian.bb:do_build)
+NOTE: Tasks Summary: Attempted 2111 tasks of which 2092 didn't need to be rerun and all succeeded.
