@@ -1,0 +1,14 @@
+Loading cache...done.
+Loaded 1825 entries from dependency cache.
+Parsing recipes...done.
+Parsing of 1043 .bb files complete (1041 cached, 2 parsed). 1828 targets, 67 skipped, 0 masked, 0 errors.
+NOTE: Resolving any missing task queue dependencies
+ERROR: Nothing RPROVIDES 'python3-ipaddress' (but /home/deby/poky/meta-debian/recipes-debian/python-cryptography/python3-cryptography_debian.bb RDEPENDS on or otherwise requires it)
+NOTE: Runtime target 'python3-ipaddress' is unbuildable, removing...
+Missing or unbuildable dependency chain was: ['python3-ipaddress']
+NOTE: Runtime target 'python3-cryptography' is unbuildable, removing...
+Missing or unbuildable dependency chain was: ['python3-cryptography', 'python3-ipaddress']
+ERROR: Required build target 'python3-paramiko' has no buildable providers.
+Missing or unbuildable dependency chain was: ['python3-paramiko', 'python3-cryptography', 'python3-ipaddress']
+
+Summary: There were 2 ERROR messages shown, returning a non-zero exit code.

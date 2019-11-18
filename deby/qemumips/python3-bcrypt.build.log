@@ -1,0 +1,179 @@
+Loading cache...done.
+Loaded 1825 entries from dependency cache.
+Parsing recipes...done.
+Parsing of 1043 .bb files complete (1041 cached, 2 parsed). 1828 targets, 67 skipped, 0 masked, 0 errors.
+NOTE: Resolving any missing task queue dependencies
+
+Build Configuration:
+BB_VERSION           = "1.42.0"
+BUILD_SYS            = "x86_64-linux"
+NATIVELSBSTRING      = "universal"
+TARGET_SYS           = "mips-deby-linux"
+MACHINE              = "qemumips"
+DISTRO               = "deby"
+DISTRO_VERSION       = "10.0"
+TUNE_FEATURES        = "o32 bigendian fpu-hard mips32r2"
+TARGET_FPU           = ""
+meta                 
+meta-poky            = "warrior:79a850a10a4b88a6d20d607b322542f947874323"
+meta-debian          = "warrior:fda6a80e4cae9aa03f502551f35fe41beb7bb944"
+
+Initialising tasks...done.
+Sstate summary: Wanted 15 Found 0 Missed 15 Current 422 (0% match, 96% complete)
+NOTE: Executing SetScene Tasks
+NOTE: Executing RunQueue Tasks
+NOTE: Running task 1340 of 2034 (/home/deby/poky/meta-debian/recipes-debian/python-bcrypt/python3-bcrypt_debian.bb:do_fetch)
+NOTE: Running task 1425 of 2034 (/home/deby/poky/meta-debian/recipes-debian/python-cffi/python3-cffi_debian.bb:do_fetch)
+NOTE: Running task 1484 of 2034 (/home/deby/poky/meta-debian/recipes-debian/ply/python3-ply_debian.bb:do_fetch)
+NOTE: Running task 1491 of 2034 (/home/deby/poky/meta-debian/recipes-debian/pycparser/python3-pycparser_debian.bb:do_fetch)
+NOTE: recipe python3-bcrypt-3.1.6-r0: task do_fetch: Started
+NOTE: recipe python3-cffi-1.12.2-r0: task do_fetch: Started
+NOTE: recipe python3-ply-3.11-r0: task do_fetch: Started
+NOTE: recipe python3-bcrypt-3.1.6-r0: task do_fetch: Succeeded
+NOTE: Running task 1987 of 2034 (/home/deby/poky/meta-debian/recipes-debian/python-bcrypt/python3-bcrypt_debian.bb:do_unpack)
+NOTE: Running task 1988 of 2034 (/home/deby/poky/meta-debian/recipes-debian/python-bcrypt/python3-bcrypt_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe python3-pycparser-2.19-r0: task do_fetch: Started
+NOTE: recipe python3-ply-3.11-r0: task do_fetch: Succeeded
+NOTE: Running task 1989 of 2034 (/home/deby/poky/meta-debian/recipes-debian/ply/python3-ply_debian.bb:do_unpack)
+NOTE: Running task 1990 of 2034 (/home/deby/poky/meta-debian/recipes-debian/ply/python3-ply_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe python3-cffi-1.12.2-r0: task do_fetch: Succeeded
+NOTE: Running task 1991 of 2034 (/home/deby/poky/meta-debian/recipes-debian/python-cffi/python3-cffi_debian.bb:do_unpack)
+NOTE: Running task 1992 of 2034 (/home/deby/poky/meta-debian/recipes-debian/python-cffi/python3-cffi_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe python3-bcrypt-3.1.6-r0: task do_unpack: Started
+NOTE: recipe python3-pycparser-2.19-r0: task do_fetch: Succeeded
+NOTE: Running task 1993 of 2034 (/home/deby/poky/meta-debian/recipes-debian/pycparser/python3-pycparser_debian.bb:do_unpack)
+NOTE: Running task 1994 of 2034 (/home/deby/poky/meta-debian/recipes-debian/pycparser/python3-pycparser_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe python3-bcrypt-3.1.6-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe python3-bcrypt-3.1.6-r0: task do_unpack: Succeeded
+NOTE: Running task 1995 of 2034 (/home/deby/poky/meta-debian/recipes-debian/python-bcrypt/python3-bcrypt_debian.bb:do_debian_unpack_extra)
+NOTE: recipe python3-ply-3.11-r0: task do_unpack: Started
+NOTE: recipe python3-ply-3.11-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe python3-cffi-1.12.2-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe python3-ply-3.11-r0: task do_unpack: Succeeded
+NOTE: Running task 1996 of 2034 (/home/deby/poky/meta-debian/recipes-debian/ply/python3-ply_debian.bb:do_debian_unpack_extra)
+NOTE: recipe python3-pycparser-2.19-r0: task do_unpack: Started
+NOTE: recipe python3-cffi-1.12.2-r0: task do_unpack: Started
+NOTE: recipe python3-pycparser-2.19-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe python3-bcrypt-3.1.6-r0: task do_debian_unpack_extra: Started
+NOTE: recipe python3-pycparser-2.19-r0: task do_unpack: Succeeded
+NOTE: Running task 1997 of 2034 (/home/deby/poky/meta-debian/recipes-debian/pycparser/python3-pycparser_debian.bb:do_debian_unpack_extra)
+NOTE: recipe python3-ply-3.11-r0: task do_debian_unpack_extra: Started
+NOTE: recipe python3-cffi-1.12.2-r0: task do_unpack: Succeeded
+NOTE: recipe python3-pycparser-2.19-r0: task do_debian_unpack_extra: Started
+NOTE: Running task 1998 of 2034 (/home/deby/poky/meta-debian/recipes-debian/python-cffi/python3-cffi_debian.bb:do_debian_unpack_extra)
+NOTE: recipe python3-pycparser-2.19-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 1999 of 2034 (/home/deby/poky/meta-debian/recipes-debian/pycparser/python3-pycparser_debian.bb:do_debian_patch)
+NOTE: recipe python3-bcrypt-3.1.6-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 2000 of 2034 (/home/deby/poky/meta-debian/recipes-debian/python-bcrypt/python3-bcrypt_debian.bb:do_debian_patch)
+NOTE: recipe python3-ply-3.11-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 2001 of 2034 (/home/deby/poky/meta-debian/recipes-debian/ply/python3-ply_debian.bb:do_debian_patch)
+NOTE: recipe python3-cffi-1.12.2-r0: task do_debian_unpack_extra: Started
+NOTE: recipe python3-pycparser-2.19-r0: task do_debian_patch: Started
+NOTE: recipe python3-ply-3.11-r0: task do_debian_patch: Started
+NOTE: recipe python3-bcrypt-3.1.6-r0: task do_debian_patch: Started
+NOTE: recipe python3-cffi-1.12.2-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 2002 of 2034 (/home/deby/poky/meta-debian/recipes-debian/python-cffi/python3-cffi_debian.bb:do_debian_patch)
+NOTE: recipe python3-cffi-1.12.2-r0: task do_debian_patch: Started
+NOTE: recipe python3-cffi-1.12.2-r0: task do_debian_patch: Succeeded
+NOTE: Running task 2003 of 2034 (/home/deby/poky/meta-debian/recipes-debian/python-cffi/python3-cffi_debian.bb:do_patch)
+NOTE: recipe python3-cffi-1.12.2-r0: task do_patch: Started
+NOTE: recipe python3-ply-3.11-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: recipe python3-bcrypt-3.1.6-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: recipe python3-bcrypt-3.1.6-r0: task do_debian_patch: Succeeded
+NOTE: Running task 2004 of 2034 (/home/deby/poky/meta-debian/recipes-debian/python-bcrypt/python3-bcrypt_debian.bb:do_patch)
+NOTE: recipe python3-cffi-1.12.2-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: recipe python3-pycparser-2.19-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: recipe python3-cffi-1.12.2-r0: task do_patch: Succeeded
+NOTE: Running task 2005 of 2034 (/home/deby/poky/meta-debian/recipes-debian/python-cffi/python3-cffi_debian.bb:do_configure)
+NOTE: recipe python3-bcrypt-3.1.6-r0: task do_patch: Started
+NOTE: recipe python3-ply-3.11-r0: task do_debian_patch: Succeeded
+NOTE: Running task 2006 of 2034 (/home/deby/poky/meta-debian/recipes-debian/ply/python3-ply_debian.bb:do_patch)
+NOTE: recipe python3-bcrypt-3.1.6-r0: task do_patch: Succeeded
+NOTE: Running task 2007 of 2034 (/home/deby/poky/meta-debian/recipes-debian/python-bcrypt/python3-bcrypt_debian.bb:do_configure)
+NOTE: recipe python3-pycparser-2.19-r0: task do_debian_patch: Succeeded
+NOTE: Running task 2008 of 2034 (/home/deby/poky/meta-debian/recipes-debian/pycparser/python3-pycparser_debian.bb:do_patch)
+NOTE: Running task 2009 of 2034 (/home/deby/poky/meta-debian/recipes-debian/python-bcrypt/python3-bcrypt_debian.bb:do_populate_lic)
+NOTE: recipe python3-ply-3.11-r0: task do_patch: Started
+NOTE: recipe python3-cffi-1.12.2-r0: task do_configure: Started
+NOTE: recipe python3-bcrypt-3.1.6-r0: task do_configure: Started
+NOTE: recipe python3-bcrypt-3.1.6-r0: task do_populate_lic: Started
+NOTE: recipe python3-pycparser-2.19-r0: task do_patch: Started
+NOTE: recipe python3-ply-3.11-r0: task do_patch: Succeeded
+NOTE: Running task 2010 of 2034 (/home/deby/poky/meta-debian/recipes-debian/ply/python3-ply_debian.bb:do_configure)
+NOTE: recipe python3-pycparser-2.19-r0: task do_patch: Succeeded
+NOTE: Running task 2011 of 2034 (/home/deby/poky/meta-debian/recipes-debian/pycparser/python3-pycparser_debian.bb:do_configure)
+NOTE: recipe python3-ply-3.11-r0: task do_configure: Started
+NOTE: recipe python3-pycparser-2.19-r0: task do_configure: Started
+NOTE: recipe python3-bcrypt-3.1.6-r0: task do_populate_lic: Succeeded
+NOTE: recipe python3-ply-3.11-r0: task do_configure: Succeeded
+NOTE: Running task 2012 of 2034 (/home/deby/poky/meta-debian/recipes-debian/ply/python3-ply_debian.bb:do_compile)
+NOTE: recipe python3-pycparser-2.19-r0: task do_configure: Succeeded
+NOTE: Running task 2013 of 2034 (/home/deby/poky/meta-debian/recipes-debian/pycparser/python3-pycparser_debian.bb:do_compile)
+NOTE: recipe python3-bcrypt-3.1.6-r0: task do_configure: Succeeded
+NOTE: recipe python3-ply-3.11-r0: task do_compile: Started
+NOTE: Running task 2014 of 2034 (/home/deby/poky/meta-debian/recipes-debian/python-bcrypt/python3-bcrypt_debian.bb:do_compile)
+NOTE: recipe python3-cffi-1.12.2-r0: task do_configure: Succeeded
+NOTE: Running task 2015 of 2034 (/home/deby/poky/meta-debian/recipes-debian/python-cffi/python3-cffi_debian.bb:do_compile)
+NOTE: recipe python3-pycparser-2.19-r0: task do_compile: Started
+NOTE: recipe python3-bcrypt-3.1.6-r0: task do_compile: Started
+NOTE: recipe python3-cffi-1.12.2-r0: task do_compile: Started
+NOTE: recipe python3-ply-3.11-r0: task do_compile: Succeeded
+NOTE: Running task 2016 of 2034 (/home/deby/poky/meta-debian/recipes-debian/ply/python3-ply_debian.bb:do_install)
+NOTE: recipe python3-pycparser-2.19-r0: task do_compile: Succeeded
+NOTE: Running task 2017 of 2034 (/home/deby/poky/meta-debian/recipes-debian/pycparser/python3-pycparser_debian.bb:do_install)
+NOTE: recipe python3-ply-3.11-r0: task do_install: Started
+NOTE: recipe python3-pycparser-2.19-r0: task do_install: Started
+NOTE: recipe python3-bcrypt-3.1.6-r0: task do_compile: Succeeded
+NOTE: Running task 2018 of 2034 (/home/deby/poky/meta-debian/recipes-debian/python-bcrypt/python3-bcrypt_debian.bb:do_install)
+NOTE: recipe python3-ply-3.11-r0: task do_install: Succeeded
+NOTE: Running task 2019 of 2034 (/home/deby/poky/meta-debian/recipes-debian/ply/python3-ply_debian.bb:do_package)
+NOTE: recipe python3-bcrypt-3.1.6-r0: task do_install: Started
+NOTE: recipe python3-ply-3.11-r0: task do_package: Started
+NOTE: recipe python3-pycparser-2.19-r0: task do_install: Succeeded
+NOTE: Running task 2020 of 2034 (/home/deby/poky/meta-debian/recipes-debian/pycparser/python3-pycparser_debian.bb:do_package)
+NOTE: recipe python3-pycparser-2.19-r0: task do_package: Started
+NOTE: recipe python3-bcrypt-3.1.6-r0: task do_install: Succeeded
+NOTE: Running task 2021 of 2034 (/home/deby/poky/meta-debian/recipes-debian/python-bcrypt/python3-bcrypt_debian.bb:do_package)
+NOTE: Running task 2022 of 2034 (/home/deby/poky/meta-debian/recipes-debian/python-bcrypt/python3-bcrypt_debian.bb:do_populate_sysroot)
+NOTE: recipe python3-bcrypt-3.1.6-r0: task do_package: Started
+NOTE: recipe python3-bcrypt-3.1.6-r0: task do_populate_sysroot: Started
+NOTE: recipe python3-bcrypt-3.1.6-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe python3-ply-3.11-r0: task do_package: Succeeded
+NOTE: Running task 2023 of 2034 (/home/deby/poky/meta-debian/recipes-debian/ply/python3-ply_debian.bb:do_packagedata)
+NOTE: recipe python3-ply-3.11-r0: task do_packagedata: Started
+NOTE: recipe python3-ply-3.11-r0: task do_packagedata: Succeeded
+NOTE: Running task 2024 of 2034 (/home/deby/poky/meta-debian/recipes-debian/ply/python3-ply_debian.bb:do_package_write_deb)
+NOTE: recipe python3-ply-3.11-r0: task do_package_write_deb: Started
+NOTE: recipe python3-cffi-1.12.2-r0: task do_compile: Succeeded
+NOTE: Running task 2025 of 2034 (/home/deby/poky/meta-debian/recipes-debian/python-cffi/python3-cffi_debian.bb:do_install)
+NOTE: recipe python3-pycparser-2.19-r0: task do_package: Succeeded
+NOTE: Running task 2026 of 2034 (/home/deby/poky/meta-debian/recipes-debian/pycparser/python3-pycparser_debian.bb:do_packagedata)
+NOTE: recipe python3-cffi-1.12.2-r0: task do_install: Started
+NOTE: recipe python3-pycparser-2.19-r0: task do_packagedata: Started
+NOTE: recipe python3-pycparser-2.19-r0: task do_packagedata: Succeeded
+NOTE: Running task 2027 of 2034 (/home/deby/poky/meta-debian/recipes-debian/pycparser/python3-pycparser_debian.bb:do_package_write_deb)
+NOTE: recipe python3-pycparser-2.19-r0: task do_package_write_deb: Started
+NOTE: recipe python3-ply-3.11-r0: task do_package_write_deb: Succeeded
+NOTE: recipe python3-bcrypt-3.1.6-r0: task do_package: Succeeded
+NOTE: Running task 2028 of 2034 (/home/deby/poky/meta-debian/recipes-debian/python-bcrypt/python3-bcrypt_debian.bb:do_packagedata)
+NOTE: recipe python3-bcrypt-3.1.6-r0: task do_packagedata: Started
+NOTE: recipe python3-bcrypt-3.1.6-r0: task do_packagedata: Succeeded
+NOTE: recipe python3-pycparser-2.19-r0: task do_package_write_deb: Succeeded
+NOTE: recipe python3-cffi-1.12.2-r0: task do_install: Succeeded
+NOTE: Running task 2029 of 2034 (/home/deby/poky/meta-debian/recipes-debian/python-cffi/python3-cffi_debian.bb:do_package)
+NOTE: recipe python3-cffi-1.12.2-r0: task do_package: Started
+NOTE: recipe python3-cffi-1.12.2-r0: task do_package: Succeeded
+NOTE: Running task 2030 of 2034 (/home/deby/poky/meta-debian/recipes-debian/python-cffi/python3-cffi_debian.bb:do_packagedata)
+NOTE: recipe python3-cffi-1.12.2-r0: task do_packagedata: Started
+NOTE: recipe python3-cffi-1.12.2-r0: task do_packagedata: Succeeded
+NOTE: Running task 2031 of 2034 (/home/deby/poky/meta-debian/recipes-debian/python-cffi/python3-cffi_debian.bb:do_package_write_deb)
+NOTE: Running task 2032 of 2034 (/home/deby/poky/meta-debian/recipes-debian/python-bcrypt/python3-bcrypt_debian.bb:do_package_write_deb)
+NOTE: Running task 2033 of 2034 (/home/deby/poky/meta-debian/recipes-debian/python-bcrypt/python3-bcrypt_debian.bb:do_package_qa)
+NOTE: recipe python3-cffi-1.12.2-r0: task do_package_write_deb: Started
+NOTE: recipe python3-bcrypt-3.1.6-r0: task do_package_write_deb: Started
+NOTE: recipe python3-bcrypt-3.1.6-r0: task do_package_qa: Started
+NOTE: recipe python3-bcrypt-3.1.6-r0: task do_package_qa: Succeeded
+NOTE: recipe python3-bcrypt-3.1.6-r0: task do_package_write_deb: Succeeded
+NOTE: recipe python3-cffi-1.12.2-r0: task do_package_write_deb: Succeeded
+NOTE: Running noexec task 2034 of 2034 (/home/deby/poky/meta-debian/recipes-debian/python-bcrypt/python3-bcrypt_debian.bb:do_build)
+NOTE: Tasks Summary: Attempted 2034 tasks of which 1982 didn't need to be rerun and all succeeded.

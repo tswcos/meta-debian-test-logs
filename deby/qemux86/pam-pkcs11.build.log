@@ -1,7 +1,7 @@
 Loading cache...done.
-Loaded 1746 entries from dependency cache.
+Loaded 1825 entries from dependency cache.
 Parsing recipes...done.
-Parsing of 992 .bb files complete (990 cached, 2 parsed). 1733 targets, 43 skipped, 0 masked, 0 errors.
+Parsing of 1043 .bb files complete (1041 cached, 2 parsed). 1828 targets, 41 skipped, 0 masked, 0 errors.
 NOTE: Resolving any missing task queue dependencies
 
 Build Configuration:
@@ -16,62 +16,170 @@ TUNE_FEATURES        = "m32 i586"
 TARGET_FPU           = ""
 meta                 
 meta-poky            = "warrior:79a850a10a4b88a6d20d607b322542f947874323"
-meta-debian          = "warrior:f7512bd96372e67fe4288cb5cb61cf52d282dd4e"
+meta-debian          = "warrior:2fa6d8525f0464064f8764856015185a0c4e5411"
 
 Initialising tasks...done.
-Sstate summary: Wanted 9 Found 0 Missed 9 Current 448 (0% match, 98% complete)
+Sstate summary: Wanted 50 Found 40 Missed 10 Current 407 (80% match, 97% complete)
 NOTE: Executing SetScene Tasks
+NOTE: Running setscene task 417 of 457 (/home/deby/poky/meta-debian/recipes-debian/pam/libpam_debian.bb:do_package_write_deb_setscene)
+NOTE: Running setscene task 418 of 457 (/home/deby/poky/meta-debian/recipes-debian/bash/bash_debian.bb:do_package_write_deb_setscene)
+NOTE: Running setscene task 420 of 457 (/home/deby/poky/meta-debian/recipes-debian/coreutils/coreutils_debian.bb:do_package_write_deb_setscene)
+NOTE: Running setscene task 421 of 457 (/home/deby/poky/meta/recipes-core/udev/eudev_3.2.7.bb:do_package_write_deb_setscene)
+NOTE: Running setscene task 422 of 457 (/home/deby/poky/meta/recipes-devtools/opkg-utils/opkg-utils_0.4.0.bb:do_package_write_deb_setscene)
+NOTE: Running setscene task 423 of 457 (/home/deby/poky/meta-debian/recipes-debian/libcap/libcap_debian.bb:do_package_write_deb_setscene)
+NOTE: Running setscene task 424 of 457 (/home/deby/poky/meta-debian/recipes-debian/python/python3_debian.bb:do_populate_sysroot_setscene)
+NOTE: Running setscene task 425 of 457 (/home/deby/poky/meta-debian/recipes-debian/python/python3_debian.bb:do_package_write_deb_setscene)
+NOTE: Running setscene task 426 of 457 (/home/deby/poky/meta-debian/recipes-debian/glib-2.0/glib-2.0_debian.bb:do_package_write_deb_setscene)
+NOTE: Running setscene task 427 of 457 (/home/deby/poky/meta-debian/recipes-debian/util-linux/util-linux_debian.bb:do_package_write_deb_setscene)
+NOTE: Running setscene task 428 of 457 (/home/deby/poky/meta-debian/recipes-debian/gnome-desktop-testing/gnome-desktop-testing_debian.bb:do_package_write_deb_setscene)
+NOTE: Running setscene task 429 of 457 (/home/deby/poky/meta-debian/recipes-debian/shared-mime-info/shared-mime-info_debian.bb:do_package_write_deb_setscene)
+NOTE: Running setscene task 430 of 457 (/home/deby/poky/meta-debian/recipes-debian/mdadm/mdadm_debian.bb:do_package_write_deb_setscene)
+NOTE: Running setscene task 431 of 457 (/home/deby/poky/meta-debian/recipes-debian/iproute2/iproute2_debian.bb:do_package_write_deb_setscene)
+NOTE: Running setscene task 432 of 457 (/home/deby/poky/meta-debian/recipes-debian/btrfs-tools/btrfs-tools_debian.bb:do_package_write_deb_setscene)
+NOTE: Running setscene task 434 of 457 (/home/deby/poky/meta-debian/recipes-debian/e2fsprogs/e2fsprogs_debian.bb:do_package_write_deb_setscene)
+NOTE: recipe util-linux-2.33.1-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe libpam-1.3.1-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe e2fsprogs-1.44.5-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe iproute2-4.20.0-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe glib-2.0-2.58.3-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe gnome-desktop-testing-2018.1-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe btrfs-tools-4.20.1-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe shared-mime-info-1.10-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe eudev-3.2.7-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe opkg-utils-0.4.0-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe bash-5.0-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe mdadm-4.1-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe python3-3.7.3-r0: task do_populate_sysroot_setscene: Started
+NOTE: recipe python3-3.7.3-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe coreutils-8.30-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe libcap-2.25-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe libcap-2.25-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 435 of 457 (/home/deby/poky/meta-debian/recipes-debian/libxml/libxml2_debian.bb:do_package_write_deb_setscene)
+NOTE: recipe gnome-desktop-testing-2018.1-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: recipe shared-mime-info-1.10-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: recipe iproute2-4.20.0-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 436 of 457 (/home/deby/poky/meta-debian/recipes-debian/shadow/shadow_debian.bb:do_populate_sysroot_setscene)
+NOTE: Running setscene task 437 of 457 (/home/deby/poky/meta-debian/recipes-debian/shadow/shadow_debian.bb:do_package_write_deb_setscene)
+NOTE: recipe libxml2-2.9.4-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe eudev-3.2.7-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 438 of 457 (/home/deby/poky/meta/recipes-core/udev/eudev_3.2.7.bb:do_packagedata_setscene)
+NOTE: recipe opkg-utils-0.4.0-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: recipe btrfs-tools-4.20.1-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: recipe mdadm-4.1-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: recipe eudev-3.2.7-r0: task do_packagedata_setscene: Started
+NOTE: recipe libpam-1.3.1-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: recipe bash-5.0-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: recipe shadow-4.5-r0: task do_populate_sysroot_setscene: Started
+NOTE: recipe shadow-4.5-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe coreutils-8.30-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: recipe glib-2.0-2.58.3-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 439 of 457 (/home/deby/poky/meta-debian/recipes-debian/glib-2.0/glib-2.0_debian.bb:do_packagedata_setscene)
+NOTE: Running setscene task 440 of 457 (/home/deby/poky/meta-debian/recipes-debian/gnome-desktop-testing/gnome-desktop-testing_debian.bb:do_packagedata_setscene)
+NOTE: Running setscene task 441 of 457 (/home/deby/poky/meta-debian/recipes-debian/shared-mime-info/shared-mime-info_debian.bb:do_packagedata_setscene)
+NOTE: recipe gnome-desktop-testing-2018.1-r0: task do_packagedata_setscene: Started
+NOTE: recipe shadow-4.5-r0: task do_populate_sysroot_setscene: Succeeded
+NOTE: recipe glib-2.0-2.58.3-r0: task do_packagedata_setscene: Started
+NOTE: recipe e2fsprogs-1.44.5-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: recipe shared-mime-info-1.10-r0: task do_packagedata_setscene: Started
+NOTE: recipe libxml2-2.9.4-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 442 of 457 (/home/deby/poky/meta-debian/recipes-debian/libxml/libxml2_debian.bb:do_packagedata_setscene)
+NOTE: recipe libxml2-2.9.4-r0: task do_packagedata_setscene: Started
+NOTE: recipe shadow-4.5-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 443 of 457 (/home/deby/poky/meta-debian/recipes-debian/shadow/shadow_debian.bb:do_packagedata_setscene)
+NOTE: recipe shadow-4.5-r0: task do_packagedata_setscene: Started
+NOTE: recipe util-linux-2.33.1-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 444 of 457 (/home/deby/poky/meta-debian/recipes-debian/util-linux/util-linux_debian.bb:do_packagedata_setscene)
+NOTE: Running setscene task 445 of 457 (/home/deby/poky/meta-debian/recipes-debian/iproute2/iproute2_debian.bb:do_packagedata_setscene)
+NOTE: Running setscene task 446 of 457 (/home/deby/poky/meta-debian/recipes-debian/btrfs-tools/btrfs-tools_debian.bb:do_packagedata_setscene)
+NOTE: Running setscene task 447 of 457 (/home/deby/poky/meta-debian/recipes-debian/e2fsprogs/e2fsprogs_debian.bb:do_packagedata_setscene)
+NOTE: recipe btrfs-tools-4.20.1-r0: task do_packagedata_setscene: Started
+NOTE: recipe iproute2-4.20.0-r0: task do_packagedata_setscene: Started
+NOTE: recipe e2fsprogs-1.44.5-r0: task do_packagedata_setscene: Started
+NOTE: recipe util-linux-2.33.1-r0: task do_packagedata_setscene: Started
+NOTE: recipe python3-3.7.3-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 448 of 457 (/home/deby/poky/meta-debian/recipes-debian/coreutils/coreutils_debian.bb:do_packagedata_setscene)
+NOTE: Running setscene task 449 of 457 (/home/deby/poky/meta-debian/recipes-debian/python/python3_debian.bb:do_packagedata_setscene)
+NOTE: recipe eudev-3.2.7-r0: task do_packagedata_setscene: Succeeded
+NOTE: recipe coreutils-8.30-r0: task do_packagedata_setscene: Started
+NOTE: recipe python3-3.7.3-r0: task do_packagedata_setscene: Started
+NOTE: recipe gnome-desktop-testing-2018.1-r0: task do_packagedata_setscene: Succeeded
+NOTE: recipe btrfs-tools-4.20.1-r0: task do_packagedata_setscene: Succeeded
+NOTE: recipe shared-mime-info-1.10-r0: task do_packagedata_setscene: Succeeded
+NOTE: recipe shadow-4.5-r0: task do_packagedata_setscene: Succeeded
+NOTE: recipe util-linux-2.33.1-r0: task do_packagedata_setscene: Succeeded
+NOTE: Running setscene task 451 of 457 (/home/deby/poky/meta-debian/recipes-debian/pam/libpam_debian.bb:do_packagedata_setscene)
+NOTE: recipe iproute2-4.20.0-r0: task do_packagedata_setscene: Succeeded
+NOTE: recipe libpam-1.3.1-r0: task do_packagedata_setscene: Started
+NOTE: recipe e2fsprogs-1.44.5-r0: task do_packagedata_setscene: Succeeded
+NOTE: recipe glib-2.0-2.58.3-r0: task do_packagedata_setscene: Succeeded
+NOTE: recipe libxml2-2.9.4-r0: task do_packagedata_setscene: Succeeded
+NOTE: recipe python3-3.7.3-r0: task do_packagedata_setscene: Succeeded
+NOTE: recipe libpam-1.3.1-r0: task do_packagedata_setscene: Succeeded
+NOTE: recipe coreutils-8.30-r0: task do_packagedata_setscene: Succeeded
+NOTE: Running setscene task 455 of 457 (/home/deby/poky/meta-debian/recipes-debian/libcap/libcap_debian.bb:do_packagedata_setscene)
+NOTE: recipe libcap-2.25-r0: task do_packagedata_setscene: Started
+NOTE: recipe libcap-2.25-r0: task do_packagedata_setscene: Succeeded
+NOTE: recipe python3-3.7.3-r0: task do_populate_sysroot_setscene: Succeeded
+NOTE: Running setscene task 456 of 457 (/home/deby/poky/meta-debian/recipes-debian/util-linux/util-linux_debian.bb:do_populate_sysroot_setscene)
+NOTE: recipe util-linux-2.33.1-r0: task do_populate_sysroot_setscene: Started
+NOTE: recipe util-linux-2.33.1-r0: task do_populate_sysroot_setscene: Succeeded
+NOTE: Running setscene task 457 of 457 (/home/deby/poky/meta-debian/recipes-debian/pam/libpam_debian.bb:do_populate_sysroot_setscene)
+NOTE: recipe libpam-1.3.1-r0: task do_populate_sysroot_setscene: Started
+NOTE: recipe libpam-1.3.1-r0: task do_populate_sysroot_setscene: Succeeded
 NOTE: Executing RunQueue Tasks
-NOTE: Running task 1563 of 2067 (/home/deby/poky/meta-debian/recipes-debian/pcsc-lite/pcsc-lite_debian.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 1583 of 2087 (/home/deby/poky/meta-debian/recipes-debian/pcsc-lite/pcsc-lite_debian.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 2060 of 2087 (/home/deby/poky/meta-debian/recipes-debian/python/python_debian.bb:do_package_write_deb)
 NOTE: recipe pcsc-lite-1.8.24-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe python-2.7.16-r0: task do_package_write_deb: Started
 NOTE: recipe pcsc-lite-1.8.24-r0: task do_prepare_recipe_sysroot: Succeeded
-NOTE: Running task 2051 of 2067 (/home/deby/poky/meta-debian/recipes-debian/pcsc-lite/pcsc-lite_debian.bb:do_configure)
+NOTE: Running task 2071 of 2087 (/home/deby/poky/meta-debian/recipes-debian/pcsc-lite/pcsc-lite_debian.bb:do_configure)
 NOTE: recipe pcsc-lite-1.8.24-r0: task do_configure: Started
+NOTE: recipe python-2.7.16-r0: task do_package_write_deb: Succeeded
 NOTE: recipe pcsc-lite-1.8.24-r0: task do_configure: Succeeded
-NOTE: Running task 2052 of 2067 (/home/deby/poky/meta-debian/recipes-debian/pcsc-lite/pcsc-lite_debian.bb:do_compile)
+NOTE: Running task 2072 of 2087 (/home/deby/poky/meta-debian/recipes-debian/pcsc-lite/pcsc-lite_debian.bb:do_compile)
 NOTE: recipe pcsc-lite-1.8.24-r0: task do_compile: Started
 NOTE: recipe pcsc-lite-1.8.24-r0: task do_compile: Succeeded
-NOTE: Running task 2053 of 2067 (/home/deby/poky/meta-debian/recipes-debian/pcsc-lite/pcsc-lite_debian.bb:do_install)
+NOTE: Running task 2073 of 2087 (/home/deby/poky/meta-debian/recipes-debian/pcsc-lite/pcsc-lite_debian.bb:do_install)
 NOTE: recipe pcsc-lite-1.8.24-r0: task do_install: Started
 NOTE: recipe pcsc-lite-1.8.24-r0: task do_install: Succeeded
-NOTE: Running task 2054 of 2067 (/home/deby/poky/meta-debian/recipes-debian/pcsc-lite/pcsc-lite_debian.bb:do_package)
-NOTE: Running task 2055 of 2067 (/home/deby/poky/meta-debian/recipes-debian/pcsc-lite/pcsc-lite_debian.bb:do_populate_sysroot)
+NOTE: Running task 2074 of 2087 (/home/deby/poky/meta-debian/recipes-debian/pcsc-lite/pcsc-lite_debian.bb:do_package)
+NOTE: Running task 2075 of 2087 (/home/deby/poky/meta-debian/recipes-debian/pcsc-lite/pcsc-lite_debian.bb:do_populate_sysroot)
 NOTE: recipe pcsc-lite-1.8.24-r0: task do_package: Started
 NOTE: recipe pcsc-lite-1.8.24-r0: task do_populate_sysroot: Started
 NOTE: recipe pcsc-lite-1.8.24-r0: task do_populate_sysroot: Succeeded
-NOTE: Running task 2056 of 2067 (/home/deby/poky/meta-debian/recipes-debian/pam-pkcs11/pam-pkcs11_debian.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 2076 of 2087 (/home/deby/poky/meta-debian/recipes-debian/pam-pkcs11/pam-pkcs11_debian.bb:do_prepare_recipe_sysroot)
 NOTE: recipe pam-pkcs11-0.6.9-r0: task do_prepare_recipe_sysroot: Started
 NOTE: recipe pcsc-lite-1.8.24-r0: task do_package: Succeeded
-NOTE: Running task 2057 of 2067 (/home/deby/poky/meta-debian/recipes-debian/pcsc-lite/pcsc-lite_debian.bb:do_packagedata)
+NOTE: Running task 2077 of 2087 (/home/deby/poky/meta-debian/recipes-debian/pcsc-lite/pcsc-lite_debian.bb:do_packagedata)
 NOTE: recipe pcsc-lite-1.8.24-r0: task do_packagedata: Started
 NOTE: recipe pcsc-lite-1.8.24-r0: task do_packagedata: Succeeded
-NOTE: Running task 2058 of 2067 (/home/deby/poky/meta-debian/recipes-debian/pcsc-lite/pcsc-lite_debian.bb:do_package_write_deb)
+NOTE: Running task 2078 of 2087 (/home/deby/poky/meta-debian/recipes-debian/pcsc-lite/pcsc-lite_debian.bb:do_package_write_deb)
 NOTE: recipe pcsc-lite-1.8.24-r0: task do_package_write_deb: Started
 NOTE: recipe pcsc-lite-1.8.24-r0: task do_package_write_deb: Succeeded
 NOTE: recipe pam-pkcs11-0.6.9-r0: task do_prepare_recipe_sysroot: Succeeded
-NOTE: Running task 2059 of 2067 (/home/deby/poky/meta-debian/recipes-debian/pam-pkcs11/pam-pkcs11_debian.bb:do_configure)
+NOTE: Running task 2079 of 2087 (/home/deby/poky/meta-debian/recipes-debian/pam-pkcs11/pam-pkcs11_debian.bb:do_configure)
 NOTE: recipe pam-pkcs11-0.6.9-r0: task do_configure: Started
 NOTE: recipe pam-pkcs11-0.6.9-r0: task do_configure: Succeeded
-NOTE: Running task 2060 of 2067 (/home/deby/poky/meta-debian/recipes-debian/pam-pkcs11/pam-pkcs11_debian.bb:do_compile)
+NOTE: Running task 2080 of 2087 (/home/deby/poky/meta-debian/recipes-debian/pam-pkcs11/pam-pkcs11_debian.bb:do_compile)
 NOTE: recipe pam-pkcs11-0.6.9-r0: task do_compile: Started
 NOTE: recipe pam-pkcs11-0.6.9-r0: task do_compile: Succeeded
-NOTE: Running task 2061 of 2067 (/home/deby/poky/meta-debian/recipes-debian/pam-pkcs11/pam-pkcs11_debian.bb:do_install)
+NOTE: Running task 2081 of 2087 (/home/deby/poky/meta-debian/recipes-debian/pam-pkcs11/pam-pkcs11_debian.bb:do_install)
 NOTE: recipe pam-pkcs11-0.6.9-r0: task do_install: Started
 NOTE: recipe pam-pkcs11-0.6.9-r0: task do_install: Succeeded
-NOTE: Running task 2062 of 2067 (/home/deby/poky/meta-debian/recipes-debian/pam-pkcs11/pam-pkcs11_debian.bb:do_package)
-NOTE: Running task 2063 of 2067 (/home/deby/poky/meta-debian/recipes-debian/pam-pkcs11/pam-pkcs11_debian.bb:do_populate_sysroot)
+NOTE: Running task 2082 of 2087 (/home/deby/poky/meta-debian/recipes-debian/pam-pkcs11/pam-pkcs11_debian.bb:do_package)
+NOTE: Running task 2083 of 2087 (/home/deby/poky/meta-debian/recipes-debian/pam-pkcs11/pam-pkcs11_debian.bb:do_populate_sysroot)
 NOTE: recipe pam-pkcs11-0.6.9-r0: task do_populate_sysroot: Started
 NOTE: recipe pam-pkcs11-0.6.9-r0: task do_package: Started
 NOTE: recipe pam-pkcs11-0.6.9-r0: task do_populate_sysroot: Succeeded
 NOTE: recipe pam-pkcs11-0.6.9-r0: task do_package: Succeeded
-NOTE: Running task 2064 of 2067 (/home/deby/poky/meta-debian/recipes-debian/pam-pkcs11/pam-pkcs11_debian.bb:do_packagedata)
+NOTE: Running task 2084 of 2087 (/home/deby/poky/meta-debian/recipes-debian/pam-pkcs11/pam-pkcs11_debian.bb:do_packagedata)
 NOTE: recipe pam-pkcs11-0.6.9-r0: task do_packagedata: Started
 NOTE: recipe pam-pkcs11-0.6.9-r0: task do_packagedata: Succeeded
-NOTE: Running task 2065 of 2067 (/home/deby/poky/meta-debian/recipes-debian/pam-pkcs11/pam-pkcs11_debian.bb:do_package_write_deb)
-NOTE: Running task 2066 of 2067 (/home/deby/poky/meta-debian/recipes-debian/pam-pkcs11/pam-pkcs11_debian.bb:do_package_qa)
+NOTE: Running task 2085 of 2087 (/home/deby/poky/meta-debian/recipes-debian/pam-pkcs11/pam-pkcs11_debian.bb:do_package_write_deb)
+NOTE: Running task 2086 of 2087 (/home/deby/poky/meta-debian/recipes-debian/pam-pkcs11/pam-pkcs11_debian.bb:do_package_qa)
 NOTE: recipe pam-pkcs11-0.6.9-r0: task do_package_write_deb: Started
 NOTE: recipe pam-pkcs11-0.6.9-r0: task do_package_qa: Started
-NOTE: recipe pam-pkcs11-0.6.9-r0: task do_package_qa: Succeeded
 NOTE: recipe pam-pkcs11-0.6.9-r0: task do_package_write_deb: Succeeded
-NOTE: Running noexec task 2067 of 2067 (/home/deby/poky/meta-debian/recipes-debian/pam-pkcs11/pam-pkcs11_debian.bb:do_build)
-NOTE: Tasks Summary: Attempted 2067 tasks of which 2049 didn't need to be rerun and all succeeded.
+NOTE: recipe pam-pkcs11-0.6.9-r0: task do_package_qa: Succeeded
+NOTE: Running noexec task 2087 of 2087 (/home/deby/poky/meta-debian/recipes-debian/pam-pkcs11/pam-pkcs11_debian.bb:do_build)
+NOTE: Tasks Summary: Attempted 2087 tasks of which 2068 didn't need to be rerun and all succeeded.

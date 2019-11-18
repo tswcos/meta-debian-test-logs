@@ -1,0 +1,71 @@
+Loading cache...done.
+Loaded 1825 entries from dependency cache.
+Parsing recipes...done.
+Parsing of 1043 .bb files complete (1041 cached, 2 parsed). 1828 targets, 56 skipped, 0 masked, 0 errors.
+NOTE: Resolving any missing task queue dependencies
+
+Build Configuration:
+BB_VERSION           = "1.42.0"
+BUILD_SYS            = "x86_64-linux"
+NATIVELSBSTRING      = "universal"
+TARGET_SYS           = "aarch64-deby-linux"
+MACHINE              = "qemuarm64"
+DISTRO               = "deby"
+DISTRO_VERSION       = "10.0"
+TUNE_FEATURES        = "aarch64 armv8a crc"
+TARGET_FPU           = ""
+meta                 
+meta-poky            = "warrior:79a850a10a4b88a6d20d607b322542f947874323"
+meta-debian          = "warrior:fda6a80e4cae9aa03f502551f35fe41beb7bb944"
+
+Initialising tasks...done.
+Sstate summary: Wanted 6 Found 0 Missed 6 Current 429 (0% match, 98% complete)
+NOTE: Executing SetScene Tasks
+NOTE: Executing RunQueue Tasks
+NOTE: Running task 1358 of 2017 (/home/deby/poky/meta-debian/recipes-debian/python/python-setuptools_debian.bb:do_fetch)
+NOTE: recipe python-setuptools-40.8.0-r0: task do_fetch: Started
+NOTE: recipe python-setuptools-40.8.0-r0: task do_fetch: Succeeded
+NOTE: Running task 2003 of 2017 (/home/deby/poky/meta-debian/recipes-debian/python/python-setuptools_debian.bb:do_unpack)
+NOTE: Running task 2004 of 2017 (/home/deby/poky/meta-debian/recipes-debian/python/python-setuptools_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe python-setuptools-40.8.0-r0: task do_unpack: Started
+NOTE: recipe python-setuptools-40.8.0-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe python-setuptools-40.8.0-r0: task do_unpack: Succeeded
+NOTE: Running task 2005 of 2017 (/home/deby/poky/meta-debian/recipes-debian/python/python-setuptools_debian.bb:do_debian_unpack_extra)
+NOTE: recipe python-setuptools-40.8.0-r0: task do_debian_unpack_extra: Started
+NOTE: recipe python-setuptools-40.8.0-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 2006 of 2017 (/home/deby/poky/meta-debian/recipes-debian/python/python-setuptools_debian.bb:do_debian_patch)
+NOTE: recipe python-setuptools-40.8.0-r0: task do_debian_patch: Started
+NOTE: recipe python-setuptools-40.8.0-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: recipe python-setuptools-40.8.0-r0: task do_debian_patch: Succeeded
+NOTE: Running task 2007 of 2017 (/home/deby/poky/meta-debian/recipes-debian/python/python-setuptools_debian.bb:do_patch)
+NOTE: recipe python-setuptools-40.8.0-r0: task do_patch: Started
+NOTE: recipe python-setuptools-40.8.0-r0: task do_patch: Succeeded
+NOTE: Running task 2008 of 2017 (/home/deby/poky/meta-debian/recipes-debian/python/python-setuptools_debian.bb:do_configure)
+NOTE: Running task 2009 of 2017 (/home/deby/poky/meta-debian/recipes-debian/python/python-setuptools_debian.bb:do_populate_lic)
+NOTE: recipe python-setuptools-40.8.0-r0: task do_configure: Started
+NOTE: recipe python-setuptools-40.8.0-r0: task do_populate_lic: Started
+NOTE: recipe python-setuptools-40.8.0-r0: task do_populate_lic: Succeeded
+NOTE: recipe python-setuptools-40.8.0-r0: task do_configure: Succeeded
+NOTE: Running task 2010 of 2017 (/home/deby/poky/meta-debian/recipes-debian/python/python-setuptools_debian.bb:do_compile)
+NOTE: recipe python-setuptools-40.8.0-r0: task do_compile: Started
+NOTE: recipe python-setuptools-40.8.0-r0: task do_compile: Succeeded
+NOTE: Running task 2011 of 2017 (/home/deby/poky/meta-debian/recipes-debian/python/python-setuptools_debian.bb:do_install)
+NOTE: recipe python-setuptools-40.8.0-r0: task do_install: Started
+NOTE: recipe python-setuptools-40.8.0-r0: task do_install: Succeeded
+NOTE: Running task 2012 of 2017 (/home/deby/poky/meta-debian/recipes-debian/python/python-setuptools_debian.bb:do_package)
+NOTE: Running task 2013 of 2017 (/home/deby/poky/meta-debian/recipes-debian/python/python-setuptools_debian.bb:do_populate_sysroot)
+NOTE: recipe python-setuptools-40.8.0-r0: task do_package: Started
+NOTE: recipe python-setuptools-40.8.0-r0: task do_populate_sysroot: Started
+NOTE: recipe python-setuptools-40.8.0-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe python-setuptools-40.8.0-r0: task do_package: Succeeded
+NOTE: Running task 2014 of 2017 (/home/deby/poky/meta-debian/recipes-debian/python/python-setuptools_debian.bb:do_packagedata)
+NOTE: recipe python-setuptools-40.8.0-r0: task do_packagedata: Started
+NOTE: recipe python-setuptools-40.8.0-r0: task do_packagedata: Succeeded
+NOTE: Running task 2015 of 2017 (/home/deby/poky/meta-debian/recipes-debian/python/python-setuptools_debian.bb:do_package_write_deb)
+NOTE: Running task 2016 of 2017 (/home/deby/poky/meta-debian/recipes-debian/python/python-setuptools_debian.bb:do_package_qa)
+NOTE: recipe python-setuptools-40.8.0-r0: task do_package_write_deb: Started
+NOTE: recipe python-setuptools-40.8.0-r0: task do_package_qa: Started
+NOTE: recipe python-setuptools-40.8.0-r0: task do_package_qa: Succeeded
+NOTE: recipe python-setuptools-40.8.0-r0: task do_package_write_deb: Succeeded
+NOTE: Running noexec task 2017 of 2017 (/home/deby/poky/meta-debian/recipes-debian/python/python-setuptools_debian.bb:do_build)
+NOTE: Tasks Summary: Attempted 2017 tasks of which 2001 didn't need to be rerun and all succeeded.

@@ -1,0 +1,35 @@
+Loading cache...done.
+Loaded 1825 entries from dependency cache.
+Parsing recipes...done.
+Parsing of 1043 .bb files complete (1041 cached, 2 parsed). 1828 targets, 217 skipped, 0 masked, 0 errors.
+NOTE: Resolving any missing task queue dependencies
+
+Build Configuration:
+BB_VERSION           = "1.42.0"
+BUILD_SYS            = "x86_64-linux"
+NATIVELSBSTRING      = "universal"
+TARGET_SYS           = "aarch64-deby-linux"
+MACHINE              = "qemuarm64"
+DISTRO               = "deby-tiny"
+DISTRO_VERSION       = "10.0"
+TUNE_FEATURES        = "aarch64 armv8a crc"
+TARGET_FPU           = ""
+meta                 
+meta-poky            = "warrior:79a850a10a4b88a6d20d607b322542f947874323"
+meta-debian          = "warrior:fda6a80e4cae9aa03f502551f35fe41beb7bb944"
+
+Initialising tasks...done.
+Sstate summary: Wanted 3 Found 0 Missed 3 Current 132 (0% match, 97% complete)
+NOTE: Executing SetScene Tasks
+NOTE: Executing RunQueue Tasks
+NOTE: Running task 785 of 789 (/home/deby/poky/meta-debian/recipes-debian/pycparser/python-pycparser_debian.bb:do_populate_lic)
+NOTE: Running task 787 of 789 (/home/deby/poky/meta-debian/recipes-debian/pycparser/python-pycparser_debian.bb:do_package_qa)
+NOTE: recipe python-pycparser-2.19-r0: task do_populate_lic: Started
+NOTE: recipe python-pycparser-2.19-r0: task do_populate_lic: Succeeded
+NOTE: Running task 788 of 789 (/home/deby/poky/meta-debian/recipes-debian/pycparser/python-pycparser_debian.bb:do_populate_sysroot)
+NOTE: recipe python-pycparser-2.19-r0: task do_populate_sysroot: Started
+NOTE: recipe python-pycparser-2.19-r0: task do_package_qa: Started
+NOTE: recipe python-pycparser-2.19-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe python-pycparser-2.19-r0: task do_package_qa: Succeeded
+NOTE: Running noexec task 789 of 789 (/home/deby/poky/meta-debian/recipes-debian/pycparser/python-pycparser_debian.bb:do_build)
+NOTE: Tasks Summary: Attempted 789 tasks of which 785 didn't need to be rerun and all succeeded.

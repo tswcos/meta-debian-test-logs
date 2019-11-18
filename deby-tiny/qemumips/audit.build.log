@@ -1,7 +1,7 @@
 Loading cache...done.
-Loaded 1731 entries from dependency cache.
+Loaded 1825 entries from dependency cache.
 Parsing recipes...done.
-Parsing of 992 .bb files complete (990 cached, 2 parsed). 1733 targets, 229 skipped, 0 masked, 0 errors.
+Parsing of 1043 .bb files complete (1041 cached, 2 parsed). 1828 targets, 228 skipped, 0 masked, 0 errors.
 NOTE: Resolving any missing task queue dependencies
 
 Build Configuration:
@@ -16,134 +16,212 @@ TUNE_FEATURES        = "o32 bigendian fpu-hard mips32r2"
 TARGET_FPU           = ""
 meta                 
 meta-poky            = "warrior:79a850a10a4b88a6d20d607b322542f947874323"
-meta-debian          = "warrior:f7512bd96372e67fe4288cb5cb61cf52d282dd4e"
+meta-debian          = "warrior:fda6a80e4cae9aa03f502551f35fe41beb7bb944"
 
 Initialising tasks...done.
-Sstate summary: Wanted 21 Found 0 Missed 21 Current 194 (0% match, 90% complete)
+Sstate summary: Wanted 22 Found 0 Missed 22 Current 193 (0% match, 89% complete)
 NOTE: Executing SetScene Tasks
 NOTE: Executing RunQueue Tasks
-NOTE: Running task 875 of 1115 (/home/deby/poky/meta-debian/recipes-debian/db/db_debian.bb:do_prepare_recipe_sysroot)
-NOTE: Running task 927 of 1115 (/home/deby/poky/meta/recipes-support/libcap-ng/libcap-ng_0.7.9.bb:do_prepare_recipe_sysroot)
-NOTE: Running task 929 of 1115 (/home/deby/poky/meta-debian/recipes-debian/tcp-wrappers/tcp-wrappers_debian.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 637 of 1131 (/home/deby/poky/meta-debian/recipes-debian/db/db_debian.bb:do_fetch)
+NOTE: Running task 747 of 1131 (/home/deby/poky/meta-debian/recipes-debian/python/python_debian.bb:do_fetch)
+NOTE: Running task 748 of 1131 (/home/deby/poky/meta-debian/recipes-debian/libcap-ng/libcap-ng_debian.bb:do_fetch)
+NOTE: Running task 749 of 1131 (/home/deby/poky/meta-debian/recipes-debian/tcp-wrappers/tcp-wrappers_debian.bb:do_fetch)
+NOTE: Running task 831 of 1131 (/home/deby/poky/meta-debian/recipes-debian/audit/audit_debian.bb:do_fetch)
+NOTE: recipe tcp-wrappers-7.6.q-r0: task do_fetch: Started
+NOTE: recipe libcap-ng-0.7.9-r0: task do_fetch: Started
+NOTE: recipe db-5.3.28-r0: task do_fetch: Started
+NOTE: recipe audit-2.8.4-r0: task do_fetch: Started
+NOTE: recipe libcap-ng-0.7.9-r0: task do_fetch: Succeeded
+NOTE: Running task 1069 of 1131 (/home/deby/poky/meta-debian/recipes-debian/libcap-ng/libcap-ng_debian.bb:do_unpack)
+NOTE: Running task 1070 of 1131 (/home/deby/poky/meta-debian/recipes-debian/libcap-ng/libcap-ng_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe python-2.7.16-r0: task do_fetch: Started
+NOTE: recipe db-5.3.28-r0: task do_fetch: Succeeded
+NOTE: Running task 1071 of 1131 (/home/deby/poky/meta-debian/recipes-debian/db/db_debian.bb:do_unpack)
+NOTE: Running task 1072 of 1131 (/home/deby/poky/meta-debian/recipes-debian/db/db_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe tcp-wrappers-7.6.q-r0: task do_fetch: Succeeded
+NOTE: Running task 1073 of 1131 (/home/deby/poky/meta-debian/recipes-debian/tcp-wrappers/tcp-wrappers_debian.bb:do_unpack)
+NOTE: Running task 1074 of 1131 (/home/deby/poky/meta-debian/recipes-debian/tcp-wrappers/tcp-wrappers_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe audit-2.8.4-r0: task do_fetch: Succeeded
+NOTE: Running task 1075 of 1131 (/home/deby/poky/meta-debian/recipes-debian/audit/audit_debian.bb:do_unpack)
+NOTE: recipe python-2.7.16-r0: task do_fetch: Succeeded
+NOTE: Running task 1076 of 1131 (/home/deby/poky/meta-debian/recipes-debian/python/python_debian.bb:do_unpack)
+NOTE: recipe libcap-ng-0.7.9-r0: task do_unpack: Started
+NOTE: recipe db-5.3.28-r0: task do_unpack: Started
 NOTE: recipe db-5.3.28-r0: task do_prepare_recipe_sysroot: Started
-NOTE: recipe tcp-wrappers-7.6.q-r0: task do_prepare_recipe_sysroot: Started
 NOTE: recipe libcap-ng-0.7.9-r0: task do_prepare_recipe_sysroot: Started
-NOTE: recipe tcp-wrappers-7.6.q-r0: task do_prepare_recipe_sysroot: Succeeded
-NOTE: Running task 1077 of 1115 (/home/deby/poky/meta-debian/recipes-debian/tcp-wrappers/tcp-wrappers_debian.bb:do_configure)
+NOTE: recipe audit-2.8.4-r0: task do_unpack: Started
+NOTE: recipe tcp-wrappers-7.6.q-r0: task do_unpack: Started
+NOTE: recipe tcp-wrappers-7.6.q-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe python-2.7.16-r0: task do_unpack: Started
+NOTE: recipe libcap-ng-0.7.9-r0: task do_unpack: Succeeded
+NOTE: Running task 1077 of 1131 (/home/deby/poky/meta-debian/recipes-debian/libcap-ng/libcap-ng_debian.bb:do_debian_unpack_extra)
+NOTE: recipe libcap-ng-0.7.9-r0: task do_debian_unpack_extra: Started
+NOTE: recipe libcap-ng-0.7.9-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 1078 of 1131 (/home/deby/poky/meta-debian/recipes-debian/libcap-ng/libcap-ng_debian.bb:do_debian_patch)
+NOTE: recipe tcp-wrappers-7.6.q-r0: task do_unpack: Succeeded
+NOTE: Running task 1079 of 1131 (/home/deby/poky/meta-debian/recipes-debian/tcp-wrappers/tcp-wrappers_debian.bb:do_debian_unpack_extra)
 NOTE: recipe db-5.3.28-r0: task do_prepare_recipe_sysroot: Succeeded
-NOTE: Running task 1078 of 1115 (/home/deby/poky/meta-debian/recipes-debian/db/db_debian.bb:do_configure)
+NOTE: recipe tcp-wrappers-7.6.q-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: recipe libcap-ng-0.7.9-r0: task do_debian_patch: Started
+NOTE: recipe tcp-wrappers-7.6.q-r0: task do_debian_unpack_extra: Started
+NOTE: recipe audit-2.8.4-r0: task do_unpack: Succeeded
+NOTE: Running task 1080 of 1131 (/home/deby/poky/meta-debian/recipes-debian/audit/audit_debian.bb:do_debian_unpack_extra)
+NOTE: recipe tcp-wrappers-7.6.q-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 1081 of 1131 (/home/deby/poky/meta-debian/recipes-debian/tcp-wrappers/tcp-wrappers_debian.bb:do_debian_patch)
+NOTE: recipe audit-2.8.4-r0: task do_debian_unpack_extra: Started
+NOTE: recipe tcp-wrappers-7.6.q-r0: task do_debian_patch: Started
+NOTE: recipe audit-2.8.4-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 1082 of 1131 (/home/deby/poky/meta-debian/recipes-debian/audit/audit_debian.bb:do_debian_patch)
+NOTE: recipe audit-2.8.4-r0: task do_debian_patch: Started
+NOTE: recipe audit-2.8.4-r0: task do_debian_patch: Succeeded
+NOTE: Running task 1083 of 1131 (/home/deby/poky/meta-debian/recipes-debian/audit/audit_debian.bb:do_patch)
+NOTE: recipe tcp-wrappers-7.6.q-r0: task do_debian_patch: Succeeded
+NOTE: Running task 1084 of 1131 (/home/deby/poky/meta-debian/recipes-debian/tcp-wrappers/tcp-wrappers_debian.bb:do_patch)
+NOTE: recipe audit-2.8.4-r0: task do_patch: Started
+NOTE: recipe tcp-wrappers-7.6.q-r0: task do_patch: Started
+NOTE: recipe tcp-wrappers-7.6.q-r0: task do_patch: Succeeded
+NOTE: Running task 1085 of 1131 (/home/deby/poky/meta-debian/recipes-debian/tcp-wrappers/tcp-wrappers_debian.bb:do_configure)
+NOTE: recipe audit-2.8.4-r0: task do_patch: Succeeded
+NOTE: Running task 1086 of 1131 (/home/deby/poky/meta-debian/recipes-debian/audit/audit_debian.bb:do_populate_lic)
 NOTE: recipe tcp-wrappers-7.6.q-r0: task do_configure: Started
-NOTE: recipe db-5.3.28-r0: task do_configure: Started
 NOTE: recipe tcp-wrappers-7.6.q-r0: task do_configure: Succeeded
-NOTE: Running task 1079 of 1115 (/home/deby/poky/meta-debian/recipes-debian/tcp-wrappers/tcp-wrappers_debian.bb:do_compile)
+NOTE: Running task 1087 of 1131 (/home/deby/poky/meta-debian/recipes-debian/tcp-wrappers/tcp-wrappers_debian.bb:do_compile)
+NOTE: recipe audit-2.8.4-r0: task do_populate_lic: Started
 NOTE: recipe tcp-wrappers-7.6.q-r0: task do_compile: Started
+NOTE: recipe audit-2.8.4-r0: task do_populate_lic: Succeeded
+NOTE: recipe libcap-ng-0.7.9-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: recipe python-2.7.16-r0: task do_unpack: Succeeded
+NOTE: Running task 1088 of 1131 (/home/deby/poky/meta-debian/recipes-debian/python/python_debian.bb:do_debian_unpack_extra)
+NOTE: recipe libcap-ng-0.7.9-r0: task do_debian_patch: Succeeded
+NOTE: Running task 1089 of 1131 (/home/deby/poky/meta-debian/recipes-debian/libcap-ng/libcap-ng_debian.bb:do_patch)
+NOTE: recipe python-2.7.16-r0: task do_debian_unpack_extra: Started
+NOTE: recipe python-2.7.16-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 1090 of 1131 (/home/deby/poky/meta-debian/recipes-debian/python/python_debian.bb:do_debian_patch)
+NOTE: recipe libcap-ng-0.7.9-r0: task do_patch: Started
+NOTE: recipe python-2.7.16-r0: task do_debian_patch: Started
+NOTE: recipe libcap-ng-0.7.9-r0: task do_patch: Succeeded
+NOTE: Running task 1091 of 1131 (/home/deby/poky/meta-debian/recipes-debian/libcap-ng/libcap-ng_debian.bb:do_configure)
+NOTE: recipe db-5.3.28-r0: task do_unpack: Succeeded
+NOTE: Running task 1092 of 1131 (/home/deby/poky/meta-debian/recipes-debian/db/db_debian.bb:do_debian_unpack_extra)
+NOTE: recipe db-5.3.28-r0: task do_debian_unpack_extra: Started
+NOTE: recipe libcap-ng-0.7.9-r0: task do_configure: Started
+NOTE: recipe db-5.3.28-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 1093 of 1131 (/home/deby/poky/meta-debian/recipes-debian/db/db_debian.bb:do_debian_patch)
+NOTE: recipe db-5.3.28-r0: task do_debian_patch: Started
+NOTE: recipe db-5.3.28-r0: task do_debian_patch: Succeeded
+NOTE: Running task 1094 of 1131 (/home/deby/poky/meta-debian/recipes-debian/db/db_debian.bb:do_patch)
+NOTE: recipe db-5.3.28-r0: task do_patch: Started
+NOTE: recipe python-2.7.16-r0: task do_debian_patch: Succeeded
+NOTE: Running task 1095 of 1131 (/home/deby/poky/meta-debian/recipes-debian/python/python_debian.bb:do_patch)
+NOTE: recipe db-5.3.28-r0: task do_patch: Succeeded
+NOTE: Running task 1096 of 1131 (/home/deby/poky/meta-debian/recipes-debian/db/db_debian.bb:do_configure)
 NOTE: recipe tcp-wrappers-7.6.q-r0: task do_compile: Succeeded
-NOTE: Running task 1080 of 1115 (/home/deby/poky/meta-debian/recipes-debian/tcp-wrappers/tcp-wrappers_debian.bb:do_install)
+NOTE: Running task 1097 of 1131 (/home/deby/poky/meta-debian/recipes-debian/tcp-wrappers/tcp-wrappers_debian.bb:do_install)
+NOTE: recipe db-5.3.28-r0: task do_configure: Started
+NOTE: recipe python-2.7.16-r0: task do_patch: Started
 NOTE: recipe tcp-wrappers-7.6.q-r0: task do_install: Started
 NOTE: recipe tcp-wrappers-7.6.q-r0: task do_install: Succeeded
-NOTE: Running task 1081 of 1115 (/home/deby/poky/meta-debian/recipes-debian/tcp-wrappers/tcp-wrappers_debian.bb:do_package)
-NOTE: Running task 1082 of 1115 (/home/deby/poky/meta-debian/recipes-debian/tcp-wrappers/tcp-wrappers_debian.bb:do_populate_sysroot)
-NOTE: recipe libcap-ng-0.7.9-r0: task do_prepare_recipe_sysroot: Succeeded
-NOTE: Running task 1083 of 1115 (/home/deby/poky/meta/recipes-support/libcap-ng/libcap-ng_0.7.9.bb:do_configure)
-NOTE: recipe libcap-ng-0.7.9-r0: task do_configure: Started
+NOTE: Running task 1098 of 1131 (/home/deby/poky/meta-debian/recipes-debian/tcp-wrappers/tcp-wrappers_debian.bb:do_package)
+NOTE: Running task 1099 of 1131 (/home/deby/poky/meta-debian/recipes-debian/tcp-wrappers/tcp-wrappers_debian.bb:do_populate_sysroot)
 NOTE: recipe tcp-wrappers-7.6.q-r0: task do_populate_sysroot: Started
 NOTE: recipe tcp-wrappers-7.6.q-r0: task do_package: Started
 NOTE: recipe tcp-wrappers-7.6.q-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe python-2.7.16-r0: task do_patch: Succeeded
 NOTE: recipe tcp-wrappers-7.6.q-r0: task do_package: Succeeded
-NOTE: Running task 1084 of 1115 (/home/deby/poky/meta-debian/recipes-debian/tcp-wrappers/tcp-wrappers_debian.bb:do_packagedata)
+NOTE: Running task 1100 of 1131 (/home/deby/poky/meta-debian/recipes-debian/tcp-wrappers/tcp-wrappers_debian.bb:do_packagedata)
 NOTE: recipe tcp-wrappers-7.6.q-r0: task do_packagedata: Started
 NOTE: recipe tcp-wrappers-7.6.q-r0: task do_packagedata: Succeeded
-NOTE: Running task 1085 of 1115 (/home/deby/poky/meta-debian/recipes-debian/tcp-wrappers/tcp-wrappers_debian.bb:do_package_write_deb)
+NOTE: Running task 1101 of 1131 (/home/deby/poky/meta-debian/recipes-debian/tcp-wrappers/tcp-wrappers_debian.bb:do_package_write_deb)
 NOTE: recipe tcp-wrappers-7.6.q-r0: task do_package_write_deb: Started
 NOTE: recipe tcp-wrappers-7.6.q-r0: task do_package_write_deb: Succeeded
 NOTE: recipe libcap-ng-0.7.9-r0: task do_configure: Succeeded
-NOTE: Running task 1086 of 1115 (/home/deby/poky/meta/recipes-support/libcap-ng/libcap-ng_0.7.9.bb:do_compile)
+NOTE: Running task 1102 of 1131 (/home/deby/poky/meta-debian/recipes-debian/libcap-ng/libcap-ng_debian.bb:do_compile)
 NOTE: recipe libcap-ng-0.7.9-r0: task do_compile: Started
 NOTE: recipe libcap-ng-0.7.9-r0: task do_compile: Succeeded
-NOTE: Running task 1087 of 1115 (/home/deby/poky/meta/recipes-support/libcap-ng/libcap-ng_0.7.9.bb:do_install)
+NOTE: Running task 1103 of 1131 (/home/deby/poky/meta-debian/recipes-debian/libcap-ng/libcap-ng_debian.bb:do_install)
 NOTE: recipe libcap-ng-0.7.9-r0: task do_install: Started
 NOTE: recipe libcap-ng-0.7.9-r0: task do_install: Succeeded
-NOTE: Running task 1088 of 1115 (/home/deby/poky/meta/recipes-support/libcap-ng/libcap-ng_0.7.9.bb:do_package)
-NOTE: Running task 1089 of 1115 (/home/deby/poky/meta/recipes-support/libcap-ng/libcap-ng_0.7.9.bb:do_populate_sysroot)
+NOTE: Running task 1104 of 1131 (/home/deby/poky/meta-debian/recipes-debian/libcap-ng/libcap-ng_debian.bb:do_package)
+NOTE: Running task 1105 of 1131 (/home/deby/poky/meta-debian/recipes-debian/libcap-ng/libcap-ng_debian.bb:do_populate_sysroot)
 NOTE: recipe libcap-ng-0.7.9-r0: task do_populate_sysroot: Started
 NOTE: recipe libcap-ng-0.7.9-r0: task do_package: Started
 NOTE: recipe libcap-ng-0.7.9-r0: task do_populate_sysroot: Succeeded
 NOTE: recipe libcap-ng-0.7.9-r0: task do_package: Succeeded
-NOTE: Running task 1090 of 1115 (/home/deby/poky/meta/recipes-support/libcap-ng/libcap-ng_0.7.9.bb:do_packagedata)
+NOTE: Running task 1106 of 1131 (/home/deby/poky/meta-debian/recipes-debian/libcap-ng/libcap-ng_debian.bb:do_packagedata)
 NOTE: recipe libcap-ng-0.7.9-r0: task do_packagedata: Started
 NOTE: recipe libcap-ng-0.7.9-r0: task do_packagedata: Succeeded
-NOTE: Running task 1091 of 1115 (/home/deby/poky/meta/recipes-support/libcap-ng/libcap-ng_0.7.9.bb:do_package_write_deb)
+NOTE: Running task 1107 of 1131 (/home/deby/poky/meta-debian/recipes-debian/libcap-ng/libcap-ng_debian.bb:do_package_write_deb)
 NOTE: recipe libcap-ng-0.7.9-r0: task do_package_write_deb: Started
 NOTE: recipe libcap-ng-0.7.9-r0: task do_package_write_deb: Succeeded
 NOTE: recipe db-5.3.28-r0: task do_configure: Succeeded
-NOTE: Running task 1092 of 1115 (/home/deby/poky/meta-debian/recipes-debian/db/db_debian.bb:do_compile)
+NOTE: Running task 1108 of 1131 (/home/deby/poky/meta-debian/recipes-debian/db/db_debian.bb:do_compile)
 NOTE: recipe db-5.3.28-r0: task do_compile: Started
 NOTE: recipe db-5.3.28-r0: task do_compile: Succeeded
-NOTE: Running task 1093 of 1115 (/home/deby/poky/meta-debian/recipes-debian/db/db_debian.bb:do_install)
+NOTE: Running task 1109 of 1131 (/home/deby/poky/meta-debian/recipes-debian/db/db_debian.bb:do_install)
 NOTE: recipe db-5.3.28-r0: task do_install: Started
 NOTE: recipe db-5.3.28-r0: task do_install: Succeeded
-NOTE: Running task 1094 of 1115 (/home/deby/poky/meta-debian/recipes-debian/db/db_debian.bb:do_populate_sysroot)
-NOTE: Running task 1095 of 1115 (/home/deby/poky/meta-debian/recipes-debian/db/db_debian.bb:do_package)
+NOTE: Running task 1110 of 1131 (/home/deby/poky/meta-debian/recipes-debian/db/db_debian.bb:do_populate_sysroot)
+NOTE: Running task 1111 of 1131 (/home/deby/poky/meta-debian/recipes-debian/db/db_debian.bb:do_package)
 NOTE: recipe db-5.3.28-r0: task do_populate_sysroot: Started
 NOTE: recipe db-5.3.28-r0: task do_package: Started
 NOTE: recipe db-5.3.28-r0: task do_populate_sysroot: Succeeded
-NOTE: Running task 1096 of 1115 (/home/deby/poky/meta/recipes-devtools/python/python_2.7.16.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 1112 of 1131 (/home/deby/poky/meta-debian/recipes-debian/python/python_debian.bb:do_prepare_recipe_sysroot)
 NOTE: recipe python-2.7.16-r0: task do_prepare_recipe_sysroot: Started
 NOTE: recipe python-2.7.16-r0: task do_prepare_recipe_sysroot: Succeeded
-NOTE: Running task 1097 of 1115 (/home/deby/poky/meta/recipes-devtools/python/python_2.7.16.bb:do_configure)
+NOTE: Running task 1113 of 1131 (/home/deby/poky/meta-debian/recipes-debian/python/python_debian.bb:do_configure)
 NOTE: recipe python-2.7.16-r0: task do_configure: Started
 NOTE: recipe db-5.3.28-r0: task do_package: Succeeded
-NOTE: Running task 1098 of 1115 (/home/deby/poky/meta-debian/recipes-debian/db/db_debian.bb:do_packagedata)
+NOTE: Running task 1114 of 1131 (/home/deby/poky/meta-debian/recipes-debian/db/db_debian.bb:do_packagedata)
 NOTE: recipe db-5.3.28-r0: task do_packagedata: Started
 NOTE: recipe db-5.3.28-r0: task do_packagedata: Succeeded
-NOTE: Running task 1099 of 1115 (/home/deby/poky/meta-debian/recipes-debian/db/db_debian.bb:do_package_write_deb)
+NOTE: Running task 1115 of 1131 (/home/deby/poky/meta-debian/recipes-debian/db/db_debian.bb:do_package_write_deb)
 NOTE: recipe db-5.3.28-r0: task do_package_write_deb: Started
 NOTE: recipe db-5.3.28-r0: task do_package_write_deb: Succeeded
 NOTE: recipe python-2.7.16-r0: task do_configure: Succeeded
-NOTE: Running task 1100 of 1115 (/home/deby/poky/meta/recipes-devtools/python/python_2.7.16.bb:do_compile)
+NOTE: Running task 1116 of 1131 (/home/deby/poky/meta-debian/recipes-debian/python/python_debian.bb:do_compile)
 NOTE: recipe python-2.7.16-r0: task do_compile: Started
 NOTE: recipe python-2.7.16-r0: task do_compile: Succeeded
-NOTE: Running task 1101 of 1115 (/home/deby/poky/meta/recipes-devtools/python/python_2.7.16.bb:do_install)
+NOTE: Running task 1117 of 1131 (/home/deby/poky/meta-debian/recipes-debian/python/python_debian.bb:do_install)
 NOTE: recipe python-2.7.16-r0: task do_install: Started
 NOTE: recipe python-2.7.16-r0: task do_install: Succeeded
-NOTE: Running task 1102 of 1115 (/home/deby/poky/meta/recipes-devtools/python/python_2.7.16.bb:do_package)
-NOTE: Running task 1103 of 1115 (/home/deby/poky/meta/recipes-devtools/python/python_2.7.16.bb:do_populate_sysroot)
-NOTE: recipe python-2.7.16-r0: task do_populate_sysroot: Started
+NOTE: Running task 1118 of 1131 (/home/deby/poky/meta-debian/recipes-debian/python/python_debian.bb:do_package)
+NOTE: Running task 1119 of 1131 (/home/deby/poky/meta-debian/recipes-debian/python/python_debian.bb:do_populate_sysroot)
 NOTE: recipe python-2.7.16-r0: task do_package: Started
+NOTE: recipe python-2.7.16-r0: task do_populate_sysroot: Started
 NOTE: recipe python-2.7.16-r0: task do_populate_sysroot: Succeeded
-NOTE: Running task 1104 of 1115 (/home/deby/poky/meta-debian/recipes-debian/audit/audit_debian.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 1120 of 1131 (/home/deby/poky/meta-debian/recipes-debian/audit/audit_debian.bb:do_prepare_recipe_sysroot)
 NOTE: recipe audit-2.8.4-r0: task do_prepare_recipe_sysroot: Started
 NOTE: recipe audit-2.8.4-r0: task do_prepare_recipe_sysroot: Succeeded
-NOTE: Running task 1105 of 1115 (/home/deby/poky/meta-debian/recipes-debian/audit/audit_debian.bb:do_configure)
+NOTE: Running task 1121 of 1131 (/home/deby/poky/meta-debian/recipes-debian/audit/audit_debian.bb:do_configure)
 NOTE: recipe audit-2.8.4-r0: task do_configure: Started
-NOTE: recipe python-2.7.16-r0: task do_package: Succeeded
-NOTE: Running task 1106 of 1115 (/home/deby/poky/meta/recipes-devtools/python/python_2.7.16.bb:do_packagedata)
-NOTE: recipe python-2.7.16-r0: task do_packagedata: Started
-NOTE: recipe python-2.7.16-r0: task do_packagedata: Succeeded
-NOTE: Running task 1107 of 1115 (/home/deby/poky/meta/recipes-devtools/python/python_2.7.16.bb:do_package_write_deb)
-NOTE: recipe python-2.7.16-r0: task do_package_write_deb: Started
 NOTE: recipe audit-2.8.4-r0: task do_configure: Succeeded
-NOTE: Running task 1108 of 1115 (/home/deby/poky/meta-debian/recipes-debian/audit/audit_debian.bb:do_compile)
+NOTE: Running task 1122 of 1131 (/home/deby/poky/meta-debian/recipes-debian/audit/audit_debian.bb:do_compile)
 NOTE: recipe audit-2.8.4-r0: task do_compile: Started
-NOTE: recipe python-2.7.16-r0: task do_package_write_deb: Succeeded
 NOTE: recipe audit-2.8.4-r0: task do_compile: Succeeded
-NOTE: Running task 1109 of 1115 (/home/deby/poky/meta-debian/recipes-debian/audit/audit_debian.bb:do_install)
+NOTE: Running task 1123 of 1131 (/home/deby/poky/meta-debian/recipes-debian/audit/audit_debian.bb:do_install)
 NOTE: recipe audit-2.8.4-r0: task do_install: Started
 NOTE: recipe audit-2.8.4-r0: task do_install: Succeeded
-NOTE: Running task 1110 of 1115 (/home/deby/poky/meta-debian/recipes-debian/audit/audit_debian.bb:do_package)
-NOTE: Running task 1111 of 1115 (/home/deby/poky/meta-debian/recipes-debian/audit/audit_debian.bb:do_populate_sysroot)
+NOTE: Running task 1124 of 1131 (/home/deby/poky/meta-debian/recipes-debian/audit/audit_debian.bb:do_populate_sysroot)
 NOTE: recipe audit-2.8.4-r0: task do_populate_sysroot: Started
-NOTE: recipe audit-2.8.4-r0: task do_package: Started
 NOTE: recipe audit-2.8.4-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe python-2.7.16-r0: task do_package: Succeeded
+NOTE: Running task 1125 of 1131 (/home/deby/poky/meta-debian/recipes-debian/python/python_debian.bb:do_packagedata)
+NOTE: recipe python-2.7.16-r0: task do_packagedata: Started
+NOTE: recipe python-2.7.16-r0: task do_packagedata: Succeeded
+NOTE: Running task 1126 of 1131 (/home/deby/poky/meta-debian/recipes-debian/audit/audit_debian.bb:do_package)
+NOTE: Running task 1127 of 1131 (/home/deby/poky/meta-debian/recipes-debian/python/python_debian.bb:do_package_write_deb)
+NOTE: recipe audit-2.8.4-r0: task do_package: Started
+NOTE: recipe python-2.7.16-r0: task do_package_write_deb: Started
 NOTE: recipe audit-2.8.4-r0: task do_package: Succeeded
-NOTE: Running task 1112 of 1115 (/home/deby/poky/meta-debian/recipes-debian/audit/audit_debian.bb:do_packagedata)
+NOTE: Running task 1128 of 1131 (/home/deby/poky/meta-debian/recipes-debian/audit/audit_debian.bb:do_packagedata)
 NOTE: recipe audit-2.8.4-r0: task do_packagedata: Started
 NOTE: recipe audit-2.8.4-r0: task do_packagedata: Succeeded
-NOTE: Running task 1113 of 1115 (/home/deby/poky/meta-debian/recipes-debian/audit/audit_debian.bb:do_package_write_deb)
-NOTE: Running task 1114 of 1115 (/home/deby/poky/meta-debian/recipes-debian/audit/audit_debian.bb:do_package_qa)
-NOTE: recipe audit-2.8.4-r0: task do_package_qa: Started
+NOTE: Running task 1129 of 1131 (/home/deby/poky/meta-debian/recipes-debian/audit/audit_debian.bb:do_package_write_deb)
+NOTE: Running task 1130 of 1131 (/home/deby/poky/meta-debian/recipes-debian/audit/audit_debian.bb:do_package_qa)
 NOTE: recipe audit-2.8.4-r0: task do_package_write_deb: Started
+NOTE: recipe audit-2.8.4-r0: task do_package_qa: Started
 NOTE: recipe audit-2.8.4-r0: task do_package_qa: Succeeded
 NOTE: recipe audit-2.8.4-r0: task do_package_write_deb: Succeeded
-NOTE: Running noexec task 1115 of 1115 (/home/deby/poky/meta-debian/recipes-debian/audit/audit_debian.bb:do_build)
-NOTE: Tasks Summary: Attempted 1115 tasks of which 1073 didn't need to be rerun and all succeeded.
+NOTE: recipe python-2.7.16-r0: task do_package_write_deb: Succeeded
+NOTE: Running noexec task 1131 of 1131 (/home/deby/poky/meta-debian/recipes-debian/audit/audit_debian.bb:do_build)
+NOTE: Tasks Summary: Attempted 1131 tasks of which 1063 didn't need to be rerun and all succeeded.

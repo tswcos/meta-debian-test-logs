@@ -1,7 +1,7 @@
 Loading cache...done.
-Loaded 1981 entries from dependency cache.
+Loaded 2075 entries from dependency cache.
 Parsing recipes...done.
-Parsing of 1222 .bb files complete (1220 cached, 2 parsed). 1983 targets, 189 skipped, 0 masked, 0 errors.
+Parsing of 1273 .bb files complete (1271 cached, 2 parsed). 2078 targets, 188 skipped, 0 masked, 0 errors.
 WARNING: No bb files matched BBFILE_PATTERN_dti '^/home/deby/poky/meta-debian/tests/../../meta-debian/bsp/meta-ti/'
 NOTE: Resolving any missing task queue dependencies
 
@@ -17,123 +17,186 @@ TUNE_FEATURES        = "arm armv7a vfp thumb neon callconvention-hard"
 TARGET_FPU           = "hard"
 meta                 
 meta-poky            = "warrior:79a850a10a4b88a6d20d607b322542f947874323"
-meta-debian          = "warrior:f7512bd96372e67fe4288cb5cb61cf52d282dd4e"
+meta-debian          = "warrior:fda6a80e4cae9aa03f502551f35fe41beb7bb944"
 meta-ti              = "master:d793618c727d5a334241699d4421dbfc539be86c"
-meta-ti              = "warrior:f7512bd96372e67fe4288cb5cb61cf52d282dd4e"
+meta-ti              = "warrior:fda6a80e4cae9aa03f502551f35fe41beb7bb944"
 
 Initialising tasks...done.
-Sstate summary: Wanted 17 Found 0 Missed 17 Current 422 (0% match, 96% complete)
+Sstate summary: Wanted 18 Found 0 Missed 18 Current 421 (0% match, 95% complete)
 NOTE: Executing SetScene Tasks
 NOTE: Executing RunQueue Tasks
-NOTE: Running task 1153 of 2014 (/home/deby/poky/meta-debian/recipes-debian/db/db_debian.bb:do_prepare_recipe_sysroot)
-NOTE: Running task 1509 of 2014 (/home/deby/poky/meta/recipes-support/libcap-ng/libcap-ng_0.7.9.bb:do_prepare_recipe_sysroot)
-NOTE: recipe db-5.3.28-r0: task do_prepare_recipe_sysroot: Started
+NOTE: Running task 920 of 2030 (/home/deby/poky/meta-debian/recipes-debian/db/db_debian.bb:do_fetch)
+NOTE: Running task 935 of 2030 (/home/deby/poky/meta-debian/recipes-debian/python/python_debian.bb:do_fetch)
+NOTE: Running task 1259 of 2030 (/home/deby/poky/meta-debian/recipes-debian/libcap-ng/libcap-ng_debian.bb:do_fetch)
+NOTE: Running task 1352 of 2030 (/home/deby/poky/meta-debian/recipes-debian/audit/audit_debian.bb:do_fetch)
+NOTE: recipe python-2.7.16-r0: task do_fetch: Started
+NOTE: recipe db-5.3.28-r0: task do_fetch: Started
+NOTE: recipe libcap-ng-0.7.9-r0: task do_fetch: Started
+NOTE: recipe audit-2.8.4-r0: task do_fetch: Started
+NOTE: recipe libcap-ng-0.7.9-r0: task do_fetch: Succeeded
+NOTE: Running task 1977 of 2030 (/home/deby/poky/meta-debian/recipes-debian/libcap-ng/libcap-ng_debian.bb:do_unpack)
+NOTE: Running task 1978 of 2030 (/home/deby/poky/meta-debian/recipes-debian/libcap-ng/libcap-ng_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe python-2.7.16-r0: task do_fetch: Succeeded
+NOTE: Running task 1979 of 2030 (/home/deby/poky/meta-debian/recipes-debian/python/python_debian.bb:do_unpack)
+NOTE: recipe db-5.3.28-r0: task do_fetch: Succeeded
+NOTE: Running task 1980 of 2030 (/home/deby/poky/meta-debian/recipes-debian/db/db_debian.bb:do_unpack)
+NOTE: Running task 1981 of 2030 (/home/deby/poky/meta-debian/recipes-debian/db/db_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe audit-2.8.4-r0: task do_fetch: Succeeded
+NOTE: Running task 1982 of 2030 (/home/deby/poky/meta-debian/recipes-debian/audit/audit_debian.bb:do_unpack)
+NOTE: recipe libcap-ng-0.7.9-r0: task do_unpack: Started
 NOTE: recipe libcap-ng-0.7.9-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe db-5.3.28-r0: task do_unpack: Started
+NOTE: recipe audit-2.8.4-r0: task do_unpack: Started
+NOTE: recipe db-5.3.28-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe python-2.7.16-r0: task do_unpack: Started
+NOTE: recipe libcap-ng-0.7.9-r0: task do_unpack: Succeeded
+NOTE: Running task 1983 of 2030 (/home/deby/poky/meta-debian/recipes-debian/libcap-ng/libcap-ng_debian.bb:do_debian_unpack_extra)
+NOTE: recipe libcap-ng-0.7.9-r0: task do_debian_unpack_extra: Started
+NOTE: recipe audit-2.8.4-r0: task do_unpack: Succeeded
+NOTE: Running task 1984 of 2030 (/home/deby/poky/meta-debian/recipes-debian/audit/audit_debian.bb:do_debian_unpack_extra)
+NOTE: recipe libcap-ng-0.7.9-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 1985 of 2030 (/home/deby/poky/meta-debian/recipes-debian/libcap-ng/libcap-ng_debian.bb:do_debian_patch)
 NOTE: recipe db-5.3.28-r0: task do_prepare_recipe_sysroot: Succeeded
-NOTE: Running task 1980 of 2014 (/home/deby/poky/meta-debian/recipes-debian/db/db_debian.bb:do_configure)
-NOTE: recipe db-5.3.28-r0: task do_configure: Started
+NOTE: recipe libcap-ng-0.7.9-r0: task do_debian_patch: Started
+NOTE: recipe audit-2.8.4-r0: task do_debian_unpack_extra: Started
+NOTE: recipe audit-2.8.4-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 1986 of 2030 (/home/deby/poky/meta-debian/recipes-debian/audit/audit_debian.bb:do_debian_patch)
+NOTE: recipe audit-2.8.4-r0: task do_debian_patch: Started
+NOTE: recipe audit-2.8.4-r0: task do_debian_patch: Succeeded
+NOTE: Running task 1987 of 2030 (/home/deby/poky/meta-debian/recipes-debian/audit/audit_debian.bb:do_patch)
+NOTE: recipe audit-2.8.4-r0: task do_patch: Started
+NOTE: recipe audit-2.8.4-r0: task do_patch: Succeeded
+NOTE: Running task 1988 of 2030 (/home/deby/poky/meta-debian/recipes-debian/audit/audit_debian.bb:do_populate_lic)
+NOTE: recipe audit-2.8.4-r0: task do_populate_lic: Started
+NOTE: recipe audit-2.8.4-r0: task do_populate_lic: Succeeded
+NOTE: recipe python-2.7.16-r0: task do_unpack: Succeeded
+NOTE: Running task 1989 of 2030 (/home/deby/poky/meta-debian/recipes-debian/python/python_debian.bb:do_debian_unpack_extra)
 NOTE: recipe libcap-ng-0.7.9-r0: task do_prepare_recipe_sysroot: Succeeded
-NOTE: Running task 1981 of 2014 (/home/deby/poky/meta/recipes-support/libcap-ng/libcap-ng_0.7.9.bb:do_configure)
+NOTE: recipe python-2.7.16-r0: task do_debian_unpack_extra: Started
+NOTE: recipe libcap-ng-0.7.9-r0: task do_debian_patch: Succeeded
+NOTE: Running task 1990 of 2030 (/home/deby/poky/meta-debian/recipes-debian/libcap-ng/libcap-ng_debian.bb:do_patch)
+NOTE: recipe python-2.7.16-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 1991 of 2030 (/home/deby/poky/meta-debian/recipes-debian/python/python_debian.bb:do_debian_patch)
+NOTE: recipe libcap-ng-0.7.9-r0: task do_patch: Started
+NOTE: recipe python-2.7.16-r0: task do_debian_patch: Started
+NOTE: recipe libcap-ng-0.7.9-r0: task do_patch: Succeeded
+NOTE: Running task 1992 of 2030 (/home/deby/poky/meta-debian/recipes-debian/libcap-ng/libcap-ng_debian.bb:do_configure)
 NOTE: recipe libcap-ng-0.7.9-r0: task do_configure: Started
+NOTE: recipe db-5.3.28-r0: task do_unpack: Succeeded
+NOTE: Running task 1993 of 2030 (/home/deby/poky/meta-debian/recipes-debian/db/db_debian.bb:do_debian_unpack_extra)
+NOTE: recipe db-5.3.28-r0: task do_debian_unpack_extra: Started
+NOTE: recipe db-5.3.28-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 1994 of 2030 (/home/deby/poky/meta-debian/recipes-debian/db/db_debian.bb:do_debian_patch)
+NOTE: recipe db-5.3.28-r0: task do_debian_patch: Started
+NOTE: recipe python-2.7.16-r0: task do_debian_patch: Succeeded
+NOTE: Running task 1995 of 2030 (/home/deby/poky/meta-debian/recipes-debian/python/python_debian.bb:do_patch)
+NOTE: recipe db-5.3.28-r0: task do_debian_patch: Succeeded
+NOTE: Running task 1996 of 2030 (/home/deby/poky/meta-debian/recipes-debian/db/db_debian.bb:do_patch)
+NOTE: recipe python-2.7.16-r0: task do_patch: Started
+NOTE: recipe db-5.3.28-r0: task do_patch: Started
+NOTE: recipe db-5.3.28-r0: task do_patch: Succeeded
+NOTE: Running task 1997 of 2030 (/home/deby/poky/meta-debian/recipes-debian/db/db_debian.bb:do_configure)
+NOTE: recipe db-5.3.28-r0: task do_configure: Started
+NOTE: recipe python-2.7.16-r0: task do_patch: Succeeded
 NOTE: recipe libcap-ng-0.7.9-r0: task do_configure: Succeeded
-NOTE: Running task 1982 of 2014 (/home/deby/poky/meta/recipes-support/libcap-ng/libcap-ng_0.7.9.bb:do_compile)
+NOTE: Running task 1998 of 2030 (/home/deby/poky/meta-debian/recipes-debian/libcap-ng/libcap-ng_debian.bb:do_compile)
 NOTE: recipe libcap-ng-0.7.9-r0: task do_compile: Started
 NOTE: recipe libcap-ng-0.7.9-r0: task do_compile: Succeeded
-NOTE: Running task 1983 of 2014 (/home/deby/poky/meta/recipes-support/libcap-ng/libcap-ng_0.7.9.bb:do_install)
+NOTE: Running task 1999 of 2030 (/home/deby/poky/meta-debian/recipes-debian/libcap-ng/libcap-ng_debian.bb:do_install)
 NOTE: recipe libcap-ng-0.7.9-r0: task do_install: Started
 NOTE: recipe libcap-ng-0.7.9-r0: task do_install: Succeeded
-NOTE: Running task 1984 of 2014 (/home/deby/poky/meta/recipes-support/libcap-ng/libcap-ng_0.7.9.bb:do_package)
-NOTE: Running task 1985 of 2014 (/home/deby/poky/meta/recipes-support/libcap-ng/libcap-ng_0.7.9.bb:do_populate_sysroot)
-NOTE: recipe libcap-ng-0.7.9-r0: task do_populate_sysroot: Started
+NOTE: Running task 2000 of 2030 (/home/deby/poky/meta-debian/recipes-debian/libcap-ng/libcap-ng_debian.bb:do_package)
+NOTE: Running task 2001 of 2030 (/home/deby/poky/meta-debian/recipes-debian/libcap-ng/libcap-ng_debian.bb:do_populate_sysroot)
 NOTE: recipe libcap-ng-0.7.9-r0: task do_package: Started
+NOTE: recipe libcap-ng-0.7.9-r0: task do_populate_sysroot: Started
 NOTE: recipe libcap-ng-0.7.9-r0: task do_populate_sysroot: Succeeded
 NOTE: recipe libcap-ng-0.7.9-r0: task do_package: Succeeded
-NOTE: Running task 1986 of 2014 (/home/deby/poky/meta/recipes-support/libcap-ng/libcap-ng_0.7.9.bb:do_packagedata)
+NOTE: Running task 2002 of 2030 (/home/deby/poky/meta-debian/recipes-debian/libcap-ng/libcap-ng_debian.bb:do_packagedata)
 NOTE: recipe libcap-ng-0.7.9-r0: task do_packagedata: Started
 NOTE: recipe libcap-ng-0.7.9-r0: task do_packagedata: Succeeded
-NOTE: Running task 1987 of 2014 (/home/deby/poky/meta/recipes-support/libcap-ng/libcap-ng_0.7.9.bb:do_package_write_deb)
+NOTE: Running task 2003 of 2030 (/home/deby/poky/meta-debian/recipes-debian/libcap-ng/libcap-ng_debian.bb:do_package_write_deb)
 NOTE: recipe libcap-ng-0.7.9-r0: task do_package_write_deb: Started
 NOTE: recipe libcap-ng-0.7.9-r0: task do_package_write_deb: Succeeded
 NOTE: recipe db-5.3.28-r0: task do_configure: Succeeded
-NOTE: Running task 1988 of 2014 (/home/deby/poky/meta-debian/recipes-debian/db/db_debian.bb:do_compile)
+NOTE: Running task 2004 of 2030 (/home/deby/poky/meta-debian/recipes-debian/db/db_debian.bb:do_compile)
 NOTE: recipe db-5.3.28-r0: task do_compile: Started
 NOTE: recipe db-5.3.28-r0: task do_compile: Succeeded
-NOTE: Running task 1989 of 2014 (/home/deby/poky/meta-debian/recipes-debian/db/db_debian.bb:do_install)
+NOTE: Running task 2005 of 2030 (/home/deby/poky/meta-debian/recipes-debian/db/db_debian.bb:do_install)
 NOTE: recipe db-5.3.28-r0: task do_install: Started
 NOTE: recipe db-5.3.28-r0: task do_install: Succeeded
-NOTE: Running task 1990 of 2014 (/home/deby/poky/meta-debian/recipes-debian/db/db_debian.bb:do_populate_sysroot)
-NOTE: Running task 1991 of 2014 (/home/deby/poky/meta-debian/recipes-debian/db/db_debian.bb:do_package)
+NOTE: Running task 2006 of 2030 (/home/deby/poky/meta-debian/recipes-debian/db/db_debian.bb:do_populate_sysroot)
+NOTE: Running task 2007 of 2030 (/home/deby/poky/meta-debian/recipes-debian/db/db_debian.bb:do_package)
 NOTE: recipe db-5.3.28-r0: task do_populate_sysroot: Started
 NOTE: recipe db-5.3.28-r0: task do_package: Started
 NOTE: recipe db-5.3.28-r0: task do_populate_sysroot: Succeeded
-NOTE: Running task 1992 of 2014 (/home/deby/poky/meta/recipes-devtools/python/python_2.7.16.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 2008 of 2030 (/home/deby/poky/meta-debian/recipes-debian/python/python_debian.bb:do_prepare_recipe_sysroot)
 NOTE: recipe python-2.7.16-r0: task do_prepare_recipe_sysroot: Started
 NOTE: recipe python-2.7.16-r0: task do_prepare_recipe_sysroot: Succeeded
-NOTE: Running task 1993 of 2014 (/home/deby/poky/meta/recipes-devtools/python/python_2.7.16.bb:do_configure)
+NOTE: Running task 2009 of 2030 (/home/deby/poky/meta-debian/recipes-debian/python/python_debian.bb:do_configure)
 NOTE: recipe python-2.7.16-r0: task do_configure: Started
 NOTE: recipe db-5.3.28-r0: task do_package: Succeeded
-NOTE: Running task 1994 of 2014 (/home/deby/poky/meta-debian/recipes-debian/db/db_debian.bb:do_packagedata)
+NOTE: Running task 2010 of 2030 (/home/deby/poky/meta-debian/recipes-debian/db/db_debian.bb:do_packagedata)
 NOTE: recipe db-5.3.28-r0: task do_packagedata: Started
 NOTE: recipe db-5.3.28-r0: task do_packagedata: Succeeded
-NOTE: Running task 1995 of 2014 (/home/deby/poky/meta-debian/recipes-debian/db/db_debian.bb:do_package_write_deb)
+NOTE: Running task 2011 of 2030 (/home/deby/poky/meta-debian/recipes-debian/db/db_debian.bb:do_package_write_deb)
 NOTE: recipe db-5.3.28-r0: task do_package_write_deb: Started
 NOTE: recipe db-5.3.28-r0: task do_package_write_deb: Succeeded
 NOTE: recipe python-2.7.16-r0: task do_configure: Succeeded
-NOTE: Running task 1996 of 2014 (/home/deby/poky/meta/recipes-devtools/python/python_2.7.16.bb:do_configure_ptest_base)
+NOTE: Running task 2012 of 2030 (/home/deby/poky/meta-debian/recipes-debian/python/python_debian.bb:do_configure_ptest_base)
 NOTE: recipe python-2.7.16-r0: task do_configure_ptest_base: Started
 NOTE: recipe python-2.7.16-r0: task do_configure_ptest_base: Succeeded
-NOTE: Running task 1997 of 2014 (/home/deby/poky/meta/recipes-devtools/python/python_2.7.16.bb:do_compile)
+NOTE: Running task 2013 of 2030 (/home/deby/poky/meta-debian/recipes-debian/python/python_debian.bb:do_compile)
 NOTE: recipe python-2.7.16-r0: task do_compile: Started
 NOTE: recipe python-2.7.16-r0: task do_compile: Succeeded
-NOTE: Running task 1998 of 2014 (/home/deby/poky/meta/recipes-devtools/python/python_2.7.16.bb:do_compile_ptest_base)
+NOTE: Running task 2014 of 2030 (/home/deby/poky/meta-debian/recipes-debian/python/python_debian.bb:do_compile_ptest_base)
 NOTE: recipe python-2.7.16-r0: task do_compile_ptest_base: Started
 NOTE: recipe python-2.7.16-r0: task do_compile_ptest_base: Succeeded
-NOTE: Running task 1999 of 2014 (/home/deby/poky/meta/recipes-devtools/python/python_2.7.16.bb:do_install)
+NOTE: Running task 2015 of 2030 (/home/deby/poky/meta-debian/recipes-debian/python/python_debian.bb:do_install)
 NOTE: recipe python-2.7.16-r0: task do_install: Started
 NOTE: recipe python-2.7.16-r0: task do_install: Succeeded
-NOTE: Running task 2000 of 2014 (/home/deby/poky/meta/recipes-devtools/python/python_2.7.16.bb:do_install_ptest_base)
+NOTE: Running task 2016 of 2030 (/home/deby/poky/meta-debian/recipes-debian/python/python_debian.bb:do_install_ptest_base)
 NOTE: recipe python-2.7.16-r0: task do_install_ptest_base: Started
 NOTE: recipe python-2.7.16-r0: task do_install_ptest_base: Succeeded
-NOTE: Running task 2001 of 2014 (/home/deby/poky/meta/recipes-devtools/python/python_2.7.16.bb:do_package)
-NOTE: Running task 2002 of 2014 (/home/deby/poky/meta/recipes-devtools/python/python_2.7.16.bb:do_populate_sysroot)
+NOTE: Running task 2017 of 2030 (/home/deby/poky/meta-debian/recipes-debian/python/python_debian.bb:do_package)
+NOTE: Running task 2018 of 2030 (/home/deby/poky/meta-debian/recipes-debian/python/python_debian.bb:do_populate_sysroot)
 NOTE: recipe python-2.7.16-r0: task do_package: Started
 NOTE: recipe python-2.7.16-r0: task do_populate_sysroot: Started
 NOTE: recipe python-2.7.16-r0: task do_populate_sysroot: Succeeded
-NOTE: Running task 2003 of 2014 (/home/deby/poky/meta-debian/recipes-debian/audit/audit_debian.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 2019 of 2030 (/home/deby/poky/meta-debian/recipes-debian/audit/audit_debian.bb:do_prepare_recipe_sysroot)
 NOTE: recipe audit-2.8.4-r0: task do_prepare_recipe_sysroot: Started
 NOTE: recipe audit-2.8.4-r0: task do_prepare_recipe_sysroot: Succeeded
-NOTE: Running task 2004 of 2014 (/home/deby/poky/meta-debian/recipes-debian/audit/audit_debian.bb:do_configure)
+NOTE: Running task 2020 of 2030 (/home/deby/poky/meta-debian/recipes-debian/audit/audit_debian.bb:do_configure)
 NOTE: recipe audit-2.8.4-r0: task do_configure: Started
+NOTE: recipe audit-2.8.4-r0: task do_configure: Succeeded
+NOTE: Running task 2021 of 2030 (/home/deby/poky/meta-debian/recipes-debian/audit/audit_debian.bb:do_compile)
+NOTE: recipe audit-2.8.4-r0: task do_compile: Started
 NOTE: recipe python-2.7.16-r0: task do_package: Succeeded
-NOTE: Running task 2005 of 2014 (/home/deby/poky/meta/recipes-devtools/python/python_2.7.16.bb:do_packagedata)
+NOTE: Running task 2022 of 2030 (/home/deby/poky/meta-debian/recipes-debian/python/python_debian.bb:do_packagedata)
 NOTE: recipe python-2.7.16-r0: task do_packagedata: Started
 NOTE: recipe python-2.7.16-r0: task do_packagedata: Succeeded
-NOTE: Running task 2006 of 2014 (/home/deby/poky/meta/recipes-devtools/python/python_2.7.16.bb:do_package_write_deb)
+NOTE: Running task 2023 of 2030 (/home/deby/poky/meta-debian/recipes-debian/python/python_debian.bb:do_package_write_deb)
 NOTE: recipe python-2.7.16-r0: task do_package_write_deb: Started
-NOTE: recipe audit-2.8.4-r0: task do_configure: Succeeded
-NOTE: Running task 2007 of 2014 (/home/deby/poky/meta-debian/recipes-debian/audit/audit_debian.bb:do_compile)
-NOTE: recipe audit-2.8.4-r0: task do_compile: Started
-NOTE: recipe python-2.7.16-r0: task do_package_write_deb: Succeeded
 NOTE: recipe audit-2.8.4-r0: task do_compile: Succeeded
-NOTE: Running task 2008 of 2014 (/home/deby/poky/meta-debian/recipes-debian/audit/audit_debian.bb:do_install)
+NOTE: Running task 2024 of 2030 (/home/deby/poky/meta-debian/recipes-debian/audit/audit_debian.bb:do_install)
 NOTE: recipe audit-2.8.4-r0: task do_install: Started
+NOTE: recipe python-2.7.16-r0: task do_package_write_deb: Succeeded
 NOTE: recipe audit-2.8.4-r0: task do_install: Succeeded
-NOTE: Running task 2009 of 2014 (/home/deby/poky/meta-debian/recipes-debian/audit/audit_debian.bb:do_package)
-NOTE: Running task 2010 of 2014 (/home/deby/poky/meta-debian/recipes-debian/audit/audit_debian.bb:do_populate_sysroot)
-NOTE: recipe audit-2.8.4-r0: task do_populate_sysroot: Started
+NOTE: Running task 2025 of 2030 (/home/deby/poky/meta-debian/recipes-debian/audit/audit_debian.bb:do_package)
+NOTE: Running task 2026 of 2030 (/home/deby/poky/meta-debian/recipes-debian/audit/audit_debian.bb:do_populate_sysroot)
 NOTE: recipe audit-2.8.4-r0: task do_package: Started
+NOTE: recipe audit-2.8.4-r0: task do_populate_sysroot: Started
 NOTE: recipe audit-2.8.4-r0: task do_populate_sysroot: Succeeded
 NOTE: recipe audit-2.8.4-r0: task do_package: Succeeded
-NOTE: Running task 2011 of 2014 (/home/deby/poky/meta-debian/recipes-debian/audit/audit_debian.bb:do_packagedata)
+NOTE: Running task 2027 of 2030 (/home/deby/poky/meta-debian/recipes-debian/audit/audit_debian.bb:do_packagedata)
 NOTE: recipe audit-2.8.4-r0: task do_packagedata: Started
 NOTE: recipe audit-2.8.4-r0: task do_packagedata: Succeeded
-NOTE: Running task 2012 of 2014 (/home/deby/poky/meta-debian/recipes-debian/audit/audit_debian.bb:do_package_write_deb)
-NOTE: Running task 2013 of 2014 (/home/deby/poky/meta-debian/recipes-debian/audit/audit_debian.bb:do_package_qa)
+NOTE: Running task 2028 of 2030 (/home/deby/poky/meta-debian/recipes-debian/audit/audit_debian.bb:do_package_write_deb)
+NOTE: Running task 2029 of 2030 (/home/deby/poky/meta-debian/recipes-debian/audit/audit_debian.bb:do_package_qa)
 NOTE: recipe audit-2.8.4-r0: task do_package_write_deb: Started
 NOTE: recipe audit-2.8.4-r0: task do_package_qa: Started
 NOTE: recipe audit-2.8.4-r0: task do_package_qa: Succeeded
 NOTE: recipe audit-2.8.4-r0: task do_package_write_deb: Succeeded
-NOTE: Running noexec task 2014 of 2014 (/home/deby/poky/meta-debian/recipes-debian/audit/audit_debian.bb:do_build)
-NOTE: Tasks Summary: Attempted 2014 tasks of which 1977 didn't need to be rerun and all succeeded.
+NOTE: Running noexec task 2030 of 2030 (/home/deby/poky/meta-debian/recipes-debian/audit/audit_debian.bb:do_build)
+NOTE: Tasks Summary: Attempted 2030 tasks of which 1972 didn't need to be rerun and all succeeded.
 
 Summary: There was 1 WARNING message shown.

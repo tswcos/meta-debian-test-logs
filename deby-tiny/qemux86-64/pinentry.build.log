@@ -1,0 +1,35 @@
+Loading cache...done.
+Loaded 1825 entries from dependency cache.
+Parsing recipes...done.
+Parsing of 1043 .bb files complete (1041 cached, 2 parsed). 1828 targets, 206 skipped, 0 masked, 0 errors.
+NOTE: Resolving any missing task queue dependencies
+
+Build Configuration:
+BB_VERSION           = "1.42.0"
+BUILD_SYS            = "x86_64-linux"
+NATIVELSBSTRING      = "universal"
+TARGET_SYS           = "x86_64-deby-linux"
+MACHINE              = "qemux86-64"
+DISTRO               = "deby-tiny"
+DISTRO_VERSION       = "10.0"
+TUNE_FEATURES        = "m64 core2"
+TARGET_FPU           = ""
+meta                 
+meta-poky            = "warrior:79a850a10a4b88a6d20d607b322542f947874323"
+meta-debian          = "warrior:fda6a80e4cae9aa03f502551f35fe41beb7bb944"
+
+Initialising tasks...done.
+Sstate summary: Wanted 3 Found 0 Missed 3 Current 126 (0% match, 97% complete)
+NOTE: Executing SetScene Tasks
+NOTE: Executing RunQueue Tasks
+NOTE: Running task 761 of 765 (/home/deby/poky/meta-debian/recipes-debian/pinentry/pinentry_debian.bb:do_populate_lic)
+NOTE: Running task 763 of 765 (/home/deby/poky/meta-debian/recipes-debian/pinentry/pinentry_debian.bb:do_package_qa)
+NOTE: recipe pinentry-1.1.0-r0: task do_populate_lic: Started
+NOTE: recipe pinentry-1.1.0-r0: task do_populate_lic: Succeeded
+NOTE: Running task 764 of 765 (/home/deby/poky/meta-debian/recipes-debian/pinentry/pinentry_debian.bb:do_populate_sysroot)
+NOTE: recipe pinentry-1.1.0-r0: task do_populate_sysroot: Started
+NOTE: recipe pinentry-1.1.0-r0: task do_package_qa: Started
+NOTE: recipe pinentry-1.1.0-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe pinentry-1.1.0-r0: task do_package_qa: Succeeded
+NOTE: Running noexec task 765 of 765 (/home/deby/poky/meta-debian/recipes-debian/pinentry/pinentry_debian.bb:do_build)
+NOTE: Tasks Summary: Attempted 765 tasks of which 761 didn't need to be rerun and all succeeded.

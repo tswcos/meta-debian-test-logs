@@ -1,0 +1,51 @@
+Loading cache...done.
+Loaded 1825 entries from dependency cache.
+Parsing recipes...done.
+Parsing of 1043 .bb files complete (1041 cached, 2 parsed). 1828 targets, 237 skipped, 0 masked, 0 errors.
+NOTE: Resolving any missing task queue dependencies
+
+Build Configuration:
+BB_VERSION           = "1.42.0"
+BUILD_SYS            = "x86_64-linux"
+NATIVELSBSTRING      = "universal"
+TARGET_SYS           = "powerpc-deby-linux"
+MACHINE              = "qemuppc"
+DISTRO               = "deby-tiny"
+DISTRO_VERSION       = "10.0"
+TUNE_FEATURES        = "m32 fpu-hard ppc7400 altivec"
+TARGET_FPU           = ""
+meta                 
+meta-poky            = "warrior:79a850a10a4b88a6d20d607b322542f947874323"
+meta-debian          = "warrior:fda6a80e4cae9aa03f502551f35fe41beb7bb944"
+
+Initialising tasks...done.
+Sstate summary: Wanted 12 Found 0 Missed 12 Current 123 (0% match, 91% complete)
+NOTE: Executing SetScene Tasks
+NOTE: Executing RunQueue Tasks
+NOTE: Running task 737 of 789 (/home/deby/poky/meta-debian/recipes-debian/python/python_debian.bb:do_package)
+NOTE: Running task 778 of 789 (/home/deby/poky/meta-debian/recipes-debian/pycparser/python-pycparser_debian.bb:do_populate_lic)
+NOTE: Running task 779 of 789 (/home/deby/poky/meta-debian/recipes-debian/pycparser/python-pycparser_debian.bb:do_populate_sysroot)
+NOTE: recipe python-pycparser-2.19-r0: task do_populate_sysroot: Started
+NOTE: recipe python-pycparser-2.19-r0: task do_populate_lic: Started
+NOTE: recipe python-2.7.16-r0: task do_package: Started
+NOTE: recipe python-pycparser-2.19-r0: task do_populate_lic: Succeeded
+NOTE: recipe python-pycparser-2.19-r0: task do_populate_sysroot: Succeeded
+ERROR: python-2.7.16-r0 do_package: QA Issue: python: Files/directories were installed but not shipped in any package:
+  /usr/lib/powerpc-linux-gnu
+  /usr/lib/powerpc-linux-gnu/pkgconfig
+  /usr/lib/powerpc-linux-gnu/pkgconfig/python-2.7.pc
+  /usr/lib/powerpc-linux-gnu/pkgconfig/python2.pc
+  /usr/lib/powerpc-linux-gnu/pkgconfig/python.pc
+Please set FILES such that these items are packaged. Alternatively if they are unneeded, avoid installing them or delete them within do_install.
+python: 5 installed and not shipped files. [installed-vs-shipped]
+ERROR: python-2.7.16-r0 do_package: Fatal QA errors found, failing task.
+ERROR: python-2.7.16-r0 do_package: 
+ERROR: python-2.7.16-r0 do_package: Function failed: do_package
+ERROR: Logfile of failure stored in: /home/deby/build-tiny/tmp/work/ppc7400-deby-linux/python/2.7.16-r0/temp/log.do_package.28856
+NOTE: recipe python-2.7.16-r0: task do_package: Failed
+ERROR: Task (/home/deby/poky/meta-debian/recipes-debian/python/python_debian.bb:do_package) failed with exit code '1'
+NOTE: Tasks Summary: Attempted 779 tasks of which 776 didn't need to be rerun and 1 failed.
+
+Summary: 1 task failed:
+  /home/deby/poky/meta-debian/recipes-debian/python/python_debian.bb:do_package
+Summary: There were 4 ERROR messages shown, returning a non-zero exit code.

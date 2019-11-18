@@ -1,23 +1,70 @@
-acl 2.2.53 PASS NA
-adduser 3.118 PASS NA
-aide 0.16.1 PASS NA
-audit 2.8.4 PASS NA
-duplicity 0.7.18.2 PASS NA
-google-authenticator NA PASS NA
-iptables 1.8.2 PASS NA
-liblinux-usermod-perl 0.69 PASS NA
-libpam NA PASS NA
-libprelude 4.1.0 PASS NA
-ntpsec 1.1.3 PASS NA
-openssh 7.9p1 PASS NA
-openssl 1.1.1c PASS NA
-pam-pkcs11 0.6.9 PASS NA
-pam-shield 0.9.6 PASS NA
-prelude-manager 4.1.1 FAIL NA
-rsyslog 8.1901.0 PASS NA
-shadow 4.5 PASS NA
-sudo 1.8.27 PASS NA
-tpm2-abrmd 2.1.0 PASS NA
-tpm2-tools 3.1.3 PASS NA
-tpm2-tss 2.1.0 PASS NA
-util-linux 2.33.1 PASS NA
+acl PASS NA
+adduser PASS NA
+aide PASS NA
+audit PASS NA
+bjam-native PASS NA
+boost PASS NA
+cracklib PASS NA
+duplicity PASS NA
+enum34 PASS NA
+gnupg PASS NA
+gnutls PASS NA
+google-authenticator PASS NA
+icu PASS NA
+iptables PASS NA
+libassuan PASS NA
+libcap-ng PASS NA
+libgcrypt PASS NA
+libgpg-error PASS NA
+libidn2 PASS NA
+libidn FAIL NA
+libksba PASS NA
+liblinux-usermod-perl PASS NA
+libpam PASS NA
+libprelude PASS NA
+libunistring PASS NA
+logrotate PASS NA
+lsb PASS NA
+mtools PASS NA
+nettle PASS NA
+npth PASS NA
+ntpsec PASS NA
+openssh PASS NA
+openssl PASS NA
+pam-pkcs11 PASS NA
+pam-shield PASS NA
+pinentry PASS NA
+prelude-manager PASS NA
+python3-asn1crypto PASS NA
+python3-bcrypt PASS NA
+python3-cffi PASS NA
+python3-cryptography FAIL NA
+python3-nacl PASS NA
+python3-paramiko FAIL NA
+python3-ply PASS NA
+python3-pyasn1 PASS NA
+python3-pycparser PASS NA
+python-asn1crypto PASS NA
+python-bcrypt PASS NA
+python-cffi PASS NA
+python-cryptography PASS NA
+python-ipaddress PASS NA
+python-nacl PASS NA
+python-native PASS NA
+python-paramiko PASS NA
+python PASS NA
+python-ply PASS NA
+python-pyasn1 PASS NA
+python-pycparser PASS NA
+python-setuptools PASS NA
+rng-tools PASS NA
+rsyslog PASS NA
+shadow PASS NA
+sudo PASS NA
+swig PASS NA
+tcl PASS NA
+tpm2-abrmd PASS NA
+tpm2-tools PASS NA
+tpm2-tss PASS NA
+util-linux PASS NA
+valgrind PASS NA

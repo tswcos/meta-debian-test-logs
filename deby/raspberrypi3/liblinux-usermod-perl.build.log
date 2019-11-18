@@ -1,7 +1,7 @@
 Loading cache...done.
-Loaded 1761 entries from dependency cache.
+Loaded 1855 entries from dependency cache.
 Parsing recipes...done.
-Parsing of 1022 .bb files complete (1020 cached, 2 parsed). 1763 targets, 69 skipped, 0 masked, 0 errors.
+Parsing of 1073 .bb files complete (1071 cached, 2 parsed). 1858 targets, 68 skipped, 0 masked, 0 errors.
 WARNING: No bb files matched BBFILE_PATTERN_debian-raspberrypi '^/home/deby/poky/meta-debian/tests/../../meta-debian/bsp/meta-raspberrypi/'
 NOTE: Resolving any missing task queue dependencies
 
@@ -17,45 +17,63 @@ TUNE_FEATURES        = "arm vfp cortexa7 neon vfpv4 thumb callconvention-hard"
 TARGET_FPU           = "hard"
 meta                 
 meta-poky            = "warrior:79a850a10a4b88a6d20d607b322542f947874323"
-meta-debian          = "warrior:f7512bd96372e67fe4288cb5cb61cf52d282dd4e"
+meta-debian          = "warrior:fda6a80e4cae9aa03f502551f35fe41beb7bb944"
 meta-raspberrypi     = "warrior:0750d5d2bc9596f35d5d61bb0ff657be4b02bfdc"
-meta-raspberrypi     = "warrior:f7512bd96372e67fe4288cb5cb61cf52d282dd4e"
+meta-raspberrypi     = "warrior:fda6a80e4cae9aa03f502551f35fe41beb7bb944"
 
 Initialising tasks...done.
-Sstate summary: Wanted 6 Found 0 Missed 6 Current 421 (0% match, 98% complete)
+Sstate summary: Wanted 7 Found 0 Missed 7 Current 420 (0% match, 98% complete)
 NOTE: Executing SetScene Tasks
 NOTE: Executing RunQueue Tasks
-NOTE: Running task 1633 of 1975 (/home/deby/poky/meta-debian/recipes-debian/perl/perl_debian.bb:do_populate_sysroot)
+NOTE: Running task 1340 of 1983 (/home/deby/poky/meta-debian/recipes-debian/liblinux-usermod-perl/liblinux-usermod-perl_debian.bb:do_fetch)
+NOTE: Running task 1637 of 1983 (/home/deby/poky/meta-debian/recipes-debian/perl/perl_debian.bb:do_populate_sysroot)
+NOTE: recipe liblinux-usermod-perl-0.69-r0: task do_fetch: Started
 NOTE: recipe perl-5.28.1-r1: task do_populate_sysroot: Started
+NOTE: recipe liblinux-usermod-perl-0.69-r0: task do_fetch: Succeeded
+NOTE: Running task 1969 of 1983 (/home/deby/poky/meta-debian/recipes-debian/liblinux-usermod-perl/liblinux-usermod-perl_debian.bb:do_unpack)
+NOTE: recipe liblinux-usermod-perl-0.69-r0: task do_unpack: Started
+NOTE: recipe liblinux-usermod-perl-0.69-r0: task do_unpack: Succeeded
+NOTE: Running task 1970 of 1983 (/home/deby/poky/meta-debian/recipes-debian/liblinux-usermod-perl/liblinux-usermod-perl_debian.bb:do_debian_unpack_extra)
+NOTE: recipe liblinux-usermod-perl-0.69-r0: task do_debian_unpack_extra: Started
+NOTE: recipe liblinux-usermod-perl-0.69-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 1971 of 1983 (/home/deby/poky/meta-debian/recipes-debian/liblinux-usermod-perl/liblinux-usermod-perl_debian.bb:do_debian_patch)
+NOTE: recipe liblinux-usermod-perl-0.69-r0: task do_debian_patch: Started
+NOTE: recipe liblinux-usermod-perl-0.69-r0: task do_debian_patch: Succeeded
+NOTE: Running task 1972 of 1983 (/home/deby/poky/meta-debian/recipes-debian/liblinux-usermod-perl/liblinux-usermod-perl_debian.bb:do_patch)
+NOTE: recipe liblinux-usermod-perl-0.69-r0: task do_patch: Started
+NOTE: recipe liblinux-usermod-perl-0.69-r0: task do_patch: Succeeded
+NOTE: Running task 1973 of 1983 (/home/deby/poky/meta-debian/recipes-debian/liblinux-usermod-perl/liblinux-usermod-perl_debian.bb:do_populate_lic)
+NOTE: recipe liblinux-usermod-perl-0.69-r0: task do_populate_lic: Started
+NOTE: recipe liblinux-usermod-perl-0.69-r0: task do_populate_lic: Succeeded
 NOTE: recipe perl-5.28.1-r1: task do_populate_sysroot: Succeeded
-NOTE: Running task 1966 of 1975 (/home/deby/poky/meta-debian/recipes-debian/liblinux-usermod-perl/liblinux-usermod-perl_debian.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 1974 of 1983 (/home/deby/poky/meta-debian/recipes-debian/liblinux-usermod-perl/liblinux-usermod-perl_debian.bb:do_prepare_recipe_sysroot)
 NOTE: recipe liblinux-usermod-perl-0.69-r0: task do_prepare_recipe_sysroot: Started
 NOTE: recipe liblinux-usermod-perl-0.69-r0: task do_prepare_recipe_sysroot: Succeeded
-NOTE: Running task 1967 of 1975 (/home/deby/poky/meta-debian/recipes-debian/liblinux-usermod-perl/liblinux-usermod-perl_debian.bb:do_configure)
+NOTE: Running task 1975 of 1983 (/home/deby/poky/meta-debian/recipes-debian/liblinux-usermod-perl/liblinux-usermod-perl_debian.bb:do_configure)
 NOTE: recipe liblinux-usermod-perl-0.69-r0: task do_configure: Started
 NOTE: recipe liblinux-usermod-perl-0.69-r0: task do_configure: Succeeded
-NOTE: Running task 1968 of 1975 (/home/deby/poky/meta-debian/recipes-debian/liblinux-usermod-perl/liblinux-usermod-perl_debian.bb:do_compile)
+NOTE: Running task 1976 of 1983 (/home/deby/poky/meta-debian/recipes-debian/liblinux-usermod-perl/liblinux-usermod-perl_debian.bb:do_compile)
 NOTE: recipe liblinux-usermod-perl-0.69-r0: task do_compile: Started
 NOTE: recipe liblinux-usermod-perl-0.69-r0: task do_compile: Succeeded
-NOTE: Running task 1969 of 1975 (/home/deby/poky/meta-debian/recipes-debian/liblinux-usermod-perl/liblinux-usermod-perl_debian.bb:do_install)
+NOTE: Running task 1977 of 1983 (/home/deby/poky/meta-debian/recipes-debian/liblinux-usermod-perl/liblinux-usermod-perl_debian.bb:do_install)
 NOTE: recipe liblinux-usermod-perl-0.69-r0: task do_install: Started
 NOTE: recipe liblinux-usermod-perl-0.69-r0: task do_install: Succeeded
-NOTE: Running task 1970 of 1975 (/home/deby/poky/meta-debian/recipes-debian/liblinux-usermod-perl/liblinux-usermod-perl_debian.bb:do_package)
-NOTE: Running task 1971 of 1975 (/home/deby/poky/meta-debian/recipes-debian/liblinux-usermod-perl/liblinux-usermod-perl_debian.bb:do_populate_sysroot)
+NOTE: Running task 1978 of 1983 (/home/deby/poky/meta-debian/recipes-debian/liblinux-usermod-perl/liblinux-usermod-perl_debian.bb:do_package)
+NOTE: Running task 1979 of 1983 (/home/deby/poky/meta-debian/recipes-debian/liblinux-usermod-perl/liblinux-usermod-perl_debian.bb:do_populate_sysroot)
 NOTE: recipe liblinux-usermod-perl-0.69-r0: task do_populate_sysroot: Started
 NOTE: recipe liblinux-usermod-perl-0.69-r0: task do_package: Started
 NOTE: recipe liblinux-usermod-perl-0.69-r0: task do_populate_sysroot: Succeeded
 NOTE: recipe liblinux-usermod-perl-0.69-r0: task do_package: Succeeded
-NOTE: Running task 1972 of 1975 (/home/deby/poky/meta-debian/recipes-debian/liblinux-usermod-perl/liblinux-usermod-perl_debian.bb:do_packagedata)
+NOTE: Running task 1980 of 1983 (/home/deby/poky/meta-debian/recipes-debian/liblinux-usermod-perl/liblinux-usermod-perl_debian.bb:do_packagedata)
 NOTE: recipe liblinux-usermod-perl-0.69-r0: task do_packagedata: Started
 NOTE: recipe liblinux-usermod-perl-0.69-r0: task do_packagedata: Succeeded
-NOTE: Running task 1973 of 1975 (/home/deby/poky/meta-debian/recipes-debian/liblinux-usermod-perl/liblinux-usermod-perl_debian.bb:do_package_write_deb)
-NOTE: Running task 1974 of 1975 (/home/deby/poky/meta-debian/recipes-debian/liblinux-usermod-perl/liblinux-usermod-perl_debian.bb:do_package_qa)
-NOTE: recipe liblinux-usermod-perl-0.69-r0: task do_package_qa: Started
+NOTE: Running task 1981 of 1983 (/home/deby/poky/meta-debian/recipes-debian/liblinux-usermod-perl/liblinux-usermod-perl_debian.bb:do_package_write_deb)
+NOTE: Running task 1982 of 1983 (/home/deby/poky/meta-debian/recipes-debian/liblinux-usermod-perl/liblinux-usermod-perl_debian.bb:do_package_qa)
 NOTE: recipe liblinux-usermod-perl-0.69-r0: task do_package_write_deb: Started
+NOTE: recipe liblinux-usermod-perl-0.69-r0: task do_package_qa: Started
 NOTE: recipe liblinux-usermod-perl-0.69-r0: task do_package_qa: Succeeded
 NOTE: recipe liblinux-usermod-perl-0.69-r0: task do_package_write_deb: Succeeded
-NOTE: Running noexec task 1975 of 1975 (/home/deby/poky/meta-debian/recipes-debian/liblinux-usermod-perl/liblinux-usermod-perl_debian.bb:do_build)
-NOTE: Tasks Summary: Attempted 1975 tasks of which 1964 didn't need to be rerun and all succeeded.
+NOTE: Running noexec task 1983 of 1983 (/home/deby/poky/meta-debian/recipes-debian/liblinux-usermod-perl/liblinux-usermod-perl_debian.bb:do_build)
+NOTE: Tasks Summary: Attempted 1983 tasks of which 1966 didn't need to be rerun and all succeeded.
 
 Summary: There was 1 WARNING message shown.

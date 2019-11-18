@@ -1,0 +1,32 @@
+Loading cache...done.
+Loaded 1825 entries from dependency cache.
+Parsing recipes...done.
+Parsing of 1043 .bb files complete (1041 cached, 2 parsed). 1828 targets, 206 skipped, 0 masked, 0 errors.
+NOTE: Resolving any missing task queue dependencies
+
+Build Configuration:
+BB_VERSION           = "1.42.0"
+BUILD_SYS            = "x86_64-linux"
+NATIVELSBSTRING      = "universal"
+TARGET_SYS           = "x86_64-deby-linux"
+MACHINE              = "qemux86-64"
+DISTRO               = "deby-tiny"
+DISTRO_VERSION       = "10.0"
+TUNE_FEATURES        = "m64 core2"
+TARGET_FPU           = ""
+meta                 
+meta-poky            = "warrior:79a850a10a4b88a6d20d607b322542f947874323"
+meta-debian          = "warrior:fda6a80e4cae9aa03f502551f35fe41beb7bb944"
+
+Initialising tasks...done.
+Sstate summary: Wanted 2 Found 0 Missed 2 Current 79 (0% match, 97% complete)
+NOTE: Executing SetScene Tasks
+NOTE: Executing RunQueue Tasks
+NOTE: Running task 589 of 593 (/home/deby/poky/meta-debian/recipes-debian/libunistring/libunistring_debian.bb:do_populate_lic)
+NOTE: Running task 591 of 593 (/home/deby/poky/meta-debian/recipes-debian/libunistring/libunistring_debian.bb:do_package_qa)
+NOTE: recipe libunistring-0.9.10-r0: task do_populate_lic: Started
+NOTE: recipe libunistring-0.9.10-r0: task do_populate_lic: Succeeded
+NOTE: recipe libunistring-0.9.10-r0: task do_package_qa: Started
+NOTE: recipe libunistring-0.9.10-r0: task do_package_qa: Succeeded
+NOTE: Running noexec task 593 of 593 (/home/deby/poky/meta-debian/recipes-debian/libunistring/libunistring_debian.bb:do_build)
+NOTE: Tasks Summary: Attempted 593 tasks of which 590 didn't need to be rerun and all succeeded.

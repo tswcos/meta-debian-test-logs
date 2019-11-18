@@ -1,7 +1,7 @@
 Loading cache...done.
-Loaded 1746 entries from dependency cache.
+Loaded 1825 entries from dependency cache.
 Parsing recipes...done.
-Parsing of 992 .bb files complete (990 cached, 2 parsed). 1733 targets, 208 skipped, 0 masked, 0 errors.
+Parsing of 1043 .bb files complete (1041 cached, 2 parsed). 1828 targets, 209 skipped, 0 masked, 0 errors.
 NOTE: Resolving any missing task queue dependencies
 
 Build Configuration:
@@ -16,14 +16,14 @@ TUNE_FEATURES        = "m32 i586"
 TARGET_FPU           = ""
 meta                 
 meta-poky            = "warrior:79a850a10a4b88a6d20d607b322542f947874323"
-meta-debian          = "warrior:f7512bd96372e67fe4288cb5cb61cf52d282dd4e"
+meta-debian          = "warrior:2fa6d8525f0464064f8764856015185a0c4e5411"
 
 Initialising tasks...done.
-Sstate summary: Wanted 1 Found 0 Missed 1 Current 132 (0% match, 99% complete)
+Sstate summary: Wanted 1 Found 0 Missed 1 Current 100 (0% match, 99% complete)
 NOTE: Executing SetScene Tasks
 NOTE: Executing RunQueue Tasks
-NOTE: Running task 764 of 766 (/home/deby/poky/meta-debian/recipes-debian/tpm2-tss/tpm2-tss_debian.bb:do_package_qa)
+NOTE: Running task 654 of 656 (/home/deby/poky/meta-debian/recipes-debian/tpm2-tss/tpm2-tss_debian.bb:do_package_qa)
 NOTE: recipe tpm2-tss-2.1.0-r0: task do_package_qa: Started
 NOTE: recipe tpm2-tss-2.1.0-r0: task do_package_qa: Succeeded
-NOTE: Running noexec task 766 of 766 (/home/deby/poky/meta-debian/recipes-debian/tpm2-tss/tpm2-tss_debian.bb:do_build)
-NOTE: Tasks Summary: Attempted 766 tasks of which 764 didn't need to be rerun and all succeeded.
+NOTE: Running noexec task 656 of 656 (/home/deby/poky/meta-debian/recipes-debian/tpm2-tss/tpm2-tss_debian.bb:do_build)
+NOTE: Tasks Summary: Attempted 656 tasks of which 654 didn't need to be rerun and all succeeded.

@@ -1,0 +1,110 @@
+Loading cache...done.
+Loaded 1825 entries from dependency cache.
+Parsing recipes...done.
+Parsing of 1043 .bb files complete (1041 cached, 2 parsed). 1828 targets, 237 skipped, 0 masked, 0 errors.
+NOTE: Resolving any missing task queue dependencies
+
+Build Configuration:
+BB_VERSION           = "1.42.0"
+BUILD_SYS            = "x86_64-linux"
+NATIVELSBSTRING      = "universal"
+TARGET_SYS           = "powerpc-deby-linux"
+MACHINE              = "qemuppc"
+DISTRO               = "deby-tiny"
+DISTRO_VERSION       = "10.0"
+TUNE_FEATURES        = "m32 fpu-hard ppc7400 altivec"
+TARGET_FPU           = ""
+meta                 
+meta-poky            = "warrior:79a850a10a4b88a6d20d607b322542f947874323"
+meta-debian          = "warrior:fda6a80e4cae9aa03f502551f35fe41beb7bb944"
+
+Initialising tasks...done.
+Sstate summary: Wanted 10 Found 0 Missed 10 Current 192 (0% match, 95% complete)
+NOTE: Executing SetScene Tasks
+NOTE: Executing RunQueue Tasks
+NOTE: Running task 659 of 1084 (/home/deby/poky/meta-debian/recipes-debian/icu/icu_debian.bb:do_fetch)
+NOTE: Running task 749 of 1084 (/home/deby/poky/meta-debian/recipes-debian/boost/boost_debian.bb:do_fetch)
+NOTE: recipe boost-1.67.0-r0: task do_fetch: Started
+NOTE: recipe boost-1.67.0-r0: task do_fetch: Succeeded
+NOTE: Running task 1058 of 1084 (/home/deby/poky/meta-debian/recipes-debian/boost/boost_debian.bb:do_unpack)
+NOTE: recipe icu-63.1-r0: task do_fetch: Started
+NOTE: recipe icu-63.1-r0: task do_fetch: Succeeded
+NOTE: Running task 1059 of 1084 (/home/deby/poky/meta-debian/recipes-debian/icu/icu_debian.bb:do_unpack)
+NOTE: Running task 1060 of 1084 (/home/deby/poky/meta-debian/recipes-debian/icu/icu_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe boost-1.67.0-r0: task do_unpack: Started
+NOTE: recipe icu-63.1-r0: task do_unpack: Started
+NOTE: recipe icu-63.1-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe icu-63.1-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: recipe icu-63.1-r0: task do_unpack: Succeeded
+NOTE: Running task 1061 of 1084 (/home/deby/poky/meta-debian/recipes-debian/icu/icu_debian.bb:do_debian_unpack_extra)
+NOTE: recipe icu-63.1-r0: task do_debian_unpack_extra: Started
+NOTE: recipe icu-63.1-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 1062 of 1084 (/home/deby/poky/meta-debian/recipes-debian/icu/icu_debian.bb:do_debian_patch)
+NOTE: recipe icu-63.1-r0: task do_debian_patch: Started
+NOTE: recipe icu-63.1-r0: task do_debian_patch: Succeeded
+NOTE: Running task 1063 of 1084 (/home/deby/poky/meta-debian/recipes-debian/icu/icu_debian.bb:do_patch)
+NOTE: recipe icu-63.1-r0: task do_patch: Started
+NOTE: recipe icu-63.1-r0: task do_patch: Succeeded
+NOTE: Running task 1064 of 1084 (/home/deby/poky/meta-debian/recipes-debian/icu/icu_debian.bb:do_configure)
+NOTE: recipe icu-63.1-r0: task do_configure: Started
+NOTE: recipe boost-1.67.0-r0: task do_unpack: Succeeded
+NOTE: Running task 1065 of 1084 (/home/deby/poky/meta-debian/recipes-debian/boost/boost_debian.bb:do_debian_unpack_extra)
+NOTE: recipe boost-1.67.0-r0: task do_debian_unpack_extra: Started
+NOTE: recipe boost-1.67.0-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 1066 of 1084 (/home/deby/poky/meta-debian/recipes-debian/boost/boost_debian.bb:do_debian_patch)
+NOTE: recipe boost-1.67.0-r0: task do_debian_patch: Started
+NOTE: recipe boost-1.67.0-r0: task do_debian_patch: Succeeded
+NOTE: Running task 1067 of 1084 (/home/deby/poky/meta-debian/recipes-debian/boost/boost_debian.bb:do_patch)
+NOTE: recipe boost-1.67.0-r0: task do_patch: Started
+NOTE: recipe boost-1.67.0-r0: task do_patch: Succeeded
+NOTE: Running task 1068 of 1084 (/home/deby/poky/meta-debian/recipes-debian/boost/boost_debian.bb:do_populate_lic)
+NOTE: recipe boost-1.67.0-r0: task do_populate_lic: Started
+NOTE: recipe boost-1.67.0-r0: task do_populate_lic: Succeeded
+NOTE: recipe icu-63.1-r0: task do_configure: Succeeded
+NOTE: Running task 1069 of 1084 (/home/deby/poky/meta-debian/recipes-debian/icu/icu_debian.bb:do_compile)
+NOTE: recipe icu-63.1-r0: task do_compile: Started
+NOTE: recipe icu-63.1-r0: task do_compile: Succeeded
+NOTE: Running task 1070 of 1084 (/home/deby/poky/meta-debian/recipes-debian/icu/icu_debian.bb:do_install)
+NOTE: recipe icu-63.1-r0: task do_install: Started
+NOTE: recipe icu-63.1-r0: task do_install: Succeeded
+NOTE: Running task 1071 of 1084 (/home/deby/poky/meta-debian/recipes-debian/icu/icu_debian.bb:do_package)
+NOTE: Running task 1072 of 1084 (/home/deby/poky/meta-debian/recipes-debian/icu/icu_debian.bb:do_populate_sysroot)
+NOTE: recipe icu-63.1-r0: task do_package: Started
+NOTE: recipe icu-63.1-r0: task do_populate_sysroot: Started
+NOTE: recipe icu-63.1-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 1073 of 1084 (/home/deby/poky/meta-debian/recipes-debian/boost/boost_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe boost-1.67.0-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe boost-1.67.0-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 1074 of 1084 (/home/deby/poky/meta-debian/recipes-debian/boost/boost_debian.bb:do_configure)
+NOTE: recipe boost-1.67.0-r0: task do_configure: Started
+NOTE: recipe boost-1.67.0-r0: task do_configure: Succeeded
+NOTE: Running task 1075 of 1084 (/home/deby/poky/meta-debian/recipes-debian/boost/boost_debian.bb:do_compile)
+NOTE: recipe boost-1.67.0-r0: task do_compile: Started
+NOTE: recipe icu-63.1-r0: task do_package: Succeeded
+NOTE: Running task 1076 of 1084 (/home/deby/poky/meta-debian/recipes-debian/icu/icu_debian.bb:do_packagedata)
+NOTE: recipe icu-63.1-r0: task do_packagedata: Started
+NOTE: recipe icu-63.1-r0: task do_packagedata: Succeeded
+NOTE: Running task 1077 of 1084 (/home/deby/poky/meta-debian/recipes-debian/icu/icu_debian.bb:do_package_write_deb)
+NOTE: recipe icu-63.1-r0: task do_package_write_deb: Started
+NOTE: recipe icu-63.1-r0: task do_package_write_deb: Succeeded
+NOTE: recipe boost-1.67.0-r0: task do_compile: Succeeded
+NOTE: Running task 1078 of 1084 (/home/deby/poky/meta-debian/recipes-debian/boost/boost_debian.bb:do_install)
+NOTE: recipe boost-1.67.0-r0: task do_install: Started
+NOTE: recipe boost-1.67.0-r0: task do_install: Succeeded
+NOTE: Running task 1079 of 1084 (/home/deby/poky/meta-debian/recipes-debian/boost/boost_debian.bb:do_package)
+NOTE: Running task 1080 of 1084 (/home/deby/poky/meta-debian/recipes-debian/boost/boost_debian.bb:do_populate_sysroot)
+NOTE: recipe boost-1.67.0-r0: task do_populate_sysroot: Started
+NOTE: recipe boost-1.67.0-r0: task do_package: Started
+NOTE: recipe boost-1.67.0-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe boost-1.67.0-r0: task do_package: Succeeded
+NOTE: Running task 1081 of 1084 (/home/deby/poky/meta-debian/recipes-debian/boost/boost_debian.bb:do_packagedata)
+NOTE: recipe boost-1.67.0-r0: task do_packagedata: Started
+NOTE: recipe boost-1.67.0-r0: task do_packagedata: Succeeded
+NOTE: Running task 1082 of 1084 (/home/deby/poky/meta-debian/recipes-debian/boost/boost_debian.bb:do_package_write_deb)
+NOTE: Running task 1083 of 1084 (/home/deby/poky/meta-debian/recipes-debian/boost/boost_debian.bb:do_package_qa)
+NOTE: recipe boost-1.67.0-r0: task do_package_write_deb: Started
+NOTE: recipe boost-1.67.0-r0: task do_package_qa: Started
+NOTE: recipe boost-1.67.0-r0: task do_package_write_deb: Succeeded
+NOTE: recipe boost-1.67.0-r0: task do_package_qa: Succeeded
+NOTE: Running noexec task 1084 of 1084 (/home/deby/poky/meta-debian/recipes-debian/boost/boost_debian.bb:do_build)
+NOTE: Tasks Summary: Attempted 1084 tasks of which 1055 didn't need to be rerun and all succeeded.

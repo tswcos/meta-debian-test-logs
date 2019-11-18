@@ -1,8 +1,7 @@
-NOTE: Bitbake server didn't start within 5 seconds, waiting for 90
 Loading cache...done.
-Loaded 1746 entries from dependency cache.
+Loaded 1825 entries from dependency cache.
 Parsing recipes...done.
-Parsing of 992 .bb files complete (990 cached, 2 parsed). 1733 targets, 208 skipped, 0 masked, 0 errors.
+Parsing of 1043 .bb files complete (1040 cached, 3 parsed). 1828 targets, 206 skipped, 0 masked, 0 errors.
 NOTE: Resolving any missing task queue dependencies
 
 Build Configuration:
@@ -17,17 +16,194 @@ TUNE_FEATURES        = "m32 i586"
 TARGET_FPU           = ""
 meta                 
 meta-poky            = "warrior:79a850a10a4b88a6d20d607b322542f947874323"
-meta-debian          = "warrior:f7512bd96372e67fe4288cb5cb61cf52d282dd4e"
+meta-debian          = "warrior:2fa6d8525f0464064f8764856015185a0c4e5411"
 
 Initialising tasks...done.
-Sstate summary: Wanted 2 Found 1 Missed 1 Current 115 (50% match, 99% complete)
+Sstate summary: Wanted 28 Found 1 Missed 27 Current 85 (3% match, 76% complete)
 NOTE: Executing SetScene Tasks
-NOTE: Running setscene task 117 of 117 (/home/deby/poky/meta-debian/recipes-debian/pam/libpam_debian.bb:do_populate_lic_setscene)
+NOTE: Running setscene task 88 of 113 (/home/deby/poky/meta-debian/recipes-debian/pam/libpam_debian.bb:do_populate_lic_setscene)
 NOTE: recipe libpam-1.3.1-r0: task do_populate_lic_setscene: Started
 NOTE: recipe libpam-1.3.1-r0: task do_populate_lic_setscene: Succeeded
 NOTE: Executing RunQueue Tasks
-NOTE: Running task 717 of 718 (/home/deby/poky/meta-debian/recipes-debian/pam/libpam_debian.bb:do_package_qa)
+NOTE: Running task 547 of 713 (/home/deby/poky/meta-debian/recipes-debian/pam/libpam_debian.bb:do_fetch)
+NOTE: Running task 576 of 713 (/home/deby/poky/meta-debian/recipes-debian/flex/flex_debian.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 580 of 713 (/home/deby/poky/meta-debian/recipes-debian/cracklib/cracklib_debian.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 634 of 713 (/home/deby/poky/meta-debian/recipes-debian/gmp/gmp_debian.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 648 of 713 (/home/deby/poky/meta-debian/recipes-debian/m4/m4_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe libpam-1.3.1-r0: task do_fetch: Started
+NOTE: recipe flex-2.6.4-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe cracklib-2.9.6-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe m4-1.4.18-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe gmp-6.1.2-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe libpam-1.3.1-r0: task do_fetch: Succeeded
+NOTE: Running task 657 of 713 (/home/deby/poky/meta-debian/recipes-debian/pam/libpam_debian.bb:do_unpack)
+NOTE: recipe libpam-1.3.1-r0: task do_unpack: Started
+NOTE: recipe libpam-1.3.1-r0: task do_unpack: Succeeded
+NOTE: Running task 658 of 713 (/home/deby/poky/meta-debian/recipes-debian/pam/libpam_debian.bb:do_debian_unpack_extra)
+NOTE: recipe libpam-1.3.1-r0: task do_debian_unpack_extra: Started
+NOTE: recipe libpam-1.3.1-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 659 of 713 (/home/deby/poky/meta-debian/recipes-debian/pam/libpam_debian.bb:do_debian_patch)
+NOTE: recipe libpam-1.3.1-r0: task do_debian_patch: Started
+NOTE: recipe flex-2.6.4-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: recipe m4-1.4.18-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 660 of 713 (/home/deby/poky/meta-debian/recipes-debian/flex/flex_debian.bb:do_configure)
+NOTE: Running task 661 of 713 (/home/deby/poky/meta-debian/recipes-debian/m4/m4_debian.bb:do_configure)
+NOTE: recipe gmp-6.1.2-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 662 of 713 (/home/deby/poky/meta-debian/recipes-debian/gmp/gmp_debian.bb:do_configure)
+NOTE: recipe m4-1.4.18-r0: task do_configure: Started
+NOTE: recipe flex-2.6.4-r0: task do_configure: Started
+NOTE: recipe gmp-6.1.2-r0: task do_configure: Started
+NOTE: recipe libpam-1.3.1-r0: task do_debian_patch: Succeeded
+NOTE: Running task 663 of 713 (/home/deby/poky/meta-debian/recipes-debian/pam/libpam_debian.bb:do_patch)
+NOTE: recipe libpam-1.3.1-r0: task do_patch: Started
+NOTE: recipe cracklib-2.9.6-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 664 of 713 (/home/deby/poky/meta-debian/recipes-debian/cracklib/cracklib_debian.bb:do_configure)
+NOTE: recipe cracklib-2.9.6-r0: task do_configure: Started
+NOTE: recipe libpam-1.3.1-r0: task do_patch: Succeeded
+NOTE: recipe cracklib-2.9.6-r0: task do_configure: Succeeded
+NOTE: Running task 666 of 713 (/home/deby/poky/meta-debian/recipes-debian/cracklib/cracklib_debian.bb:do_compile)
+NOTE: recipe cracklib-2.9.6-r0: task do_compile: Started
+NOTE: recipe cracklib-2.9.6-r0: task do_compile: Succeeded
+NOTE: Running task 667 of 713 (/home/deby/poky/meta-debian/recipes-debian/cracklib/cracklib_debian.bb:do_install)
+NOTE: recipe cracklib-2.9.6-r0: task do_install: Started
+NOTE: recipe cracklib-2.9.6-r0: task do_install: Succeeded
+NOTE: Running task 668 of 713 (/home/deby/poky/meta-debian/recipes-debian/cracklib/cracklib_debian.bb:do_populate_sysroot)
+NOTE: Running task 669 of 713 (/home/deby/poky/meta-debian/recipes-debian/cracklib/cracklib_debian.bb:do_package)
+NOTE: recipe cracklib-2.9.6-r0: task do_populate_sysroot: Started
+NOTE: recipe cracklib-2.9.6-r0: task do_package: Started
+NOTE: recipe cracklib-2.9.6-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe cracklib-2.9.6-r0: task do_package: Succeeded
+NOTE: Running task 670 of 713 (/home/deby/poky/meta-debian/recipes-debian/cracklib/cracklib_debian.bb:do_packagedata)
+NOTE: recipe cracklib-2.9.6-r0: task do_packagedata: Started
+NOTE: recipe cracklib-2.9.6-r0: task do_packagedata: Succeeded
+NOTE: Running task 671 of 713 (/home/deby/poky/meta-debian/recipes-debian/cracklib/cracklib_debian.bb:do_package_write_deb)
+NOTE: recipe cracklib-2.9.6-r0: task do_package_write_deb: Started
+NOTE: recipe cracklib-2.9.6-r0: task do_package_write_deb: Succeeded
+NOTE: recipe flex-2.6.4-r0: task do_configure: Succeeded
+NOTE: Running task 672 of 713 (/home/deby/poky/meta-debian/recipes-debian/flex/flex_debian.bb:do_compile)
+NOTE: recipe flex-2.6.4-r0: task do_compile: Started
+NOTE: recipe flex-2.6.4-r0: task do_compile: Succeeded
+NOTE: Running task 673 of 713 (/home/deby/poky/meta-debian/recipes-debian/flex/flex_debian.bb:do_install)
+NOTE: recipe flex-2.6.4-r0: task do_install: Started
+NOTE: recipe flex-2.6.4-r0: task do_install: Succeeded
+NOTE: Running task 674 of 713 (/home/deby/poky/meta-debian/recipes-debian/flex/flex_debian.bb:do_populate_sysroot)
+NOTE: Running task 675 of 713 (/home/deby/poky/meta-debian/recipes-debian/flex/flex_debian.bb:do_package)
+NOTE: recipe flex-2.6.4-r0: task do_populate_sysroot: Started
+NOTE: recipe flex-2.6.4-r0: task do_package: Started
+NOTE: recipe flex-2.6.4-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 676 of 713 (/home/deby/poky/meta-debian/recipes-debian/pam/libpam_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe libpam-1.3.1-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe libpam-1.3.1-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: recipe flex-2.6.4-r0: task do_package: Succeeded
+NOTE: Running task 677 of 713 (/home/deby/poky/meta-debian/recipes-debian/pam/libpam_debian.bb:do_configure)
+NOTE: Running task 678 of 713 (/home/deby/poky/meta-debian/recipes-debian/flex/flex_debian.bb:do_packagedata)
+NOTE: recipe libpam-1.3.1-r0: task do_configure: Started
+NOTE: recipe flex-2.6.4-r0: task do_packagedata: Started
+NOTE: recipe flex-2.6.4-r0: task do_packagedata: Succeeded
+NOTE: recipe gmp-6.1.2-r0: task do_configure: Succeeded
+NOTE: Running task 679 of 713 (/home/deby/poky/meta-debian/recipes-debian/gmp/gmp_debian.bb:do_compile)
+NOTE: recipe gmp-6.1.2-r0: task do_compile: Started
+NOTE: recipe gmp-6.1.2-r0: task do_compile: Succeeded
+NOTE: Running task 680 of 713 (/home/deby/poky/meta-debian/recipes-debian/gmp/gmp_debian.bb:do_install)
+NOTE: recipe m4-1.4.18-r0: task do_configure: Succeeded
+NOTE: Running task 681 of 713 (/home/deby/poky/meta-debian/recipes-debian/m4/m4_debian.bb:do_compile)
+NOTE: recipe gmp-6.1.2-r0: task do_install: Started
+NOTE: recipe m4-1.4.18-r0: task do_compile: Started
+NOTE: recipe gmp-6.1.2-r0: task do_install: Succeeded
+NOTE: Running task 682 of 713 (/home/deby/poky/meta-debian/recipes-debian/gmp/gmp_debian.bb:do_package)
+NOTE: Running task 683 of 713 (/home/deby/poky/meta-debian/recipes-debian/gmp/gmp_debian.bb:do_populate_sysroot)
+NOTE: recipe gmp-6.1.2-r0: task do_populate_sysroot: Started
+NOTE: recipe gmp-6.1.2-r0: task do_package: Started
+NOTE: recipe libpam-1.3.1-r0: task do_configure: Succeeded
+NOTE: Running task 684 of 713 (/home/deby/poky/meta-debian/recipes-debian/pam/libpam_debian.bb:do_compile)
+NOTE: recipe libpam-1.3.1-r0: task do_compile: Started
+NOTE: recipe gmp-6.1.2-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe m4-1.4.18-r0: task do_compile: Succeeded
+NOTE: Running task 685 of 713 (/home/deby/poky/meta-debian/recipes-debian/m4/m4_debian.bb:do_install)
+NOTE: recipe m4-1.4.18-r0: task do_install: Started
+NOTE: recipe gmp-6.1.2-r0: task do_package: Succeeded
+NOTE: Running task 686 of 713 (/home/deby/poky/meta-debian/recipes-debian/gmp/gmp_debian.bb:do_packagedata)
+NOTE: recipe gmp-6.1.2-r0: task do_packagedata: Started
+NOTE: recipe gmp-6.1.2-r0: task do_packagedata: Succeeded
+NOTE: Running task 687 of 713 (/home/deby/poky/meta-debian/recipes-debian/gmp/gmp_debian.bb:do_package_write_deb)
+NOTE: recipe gmp-6.1.2-r0: task do_package_write_deb: Started
+NOTE: recipe m4-1.4.18-r0: task do_install: Succeeded
+NOTE: Running task 688 of 713 (/home/deby/poky/meta-debian/recipes-debian/m4/m4_debian.bb:do_package)
+NOTE: recipe m4-1.4.18-r0: task do_package: Started
+NOTE: recipe gmp-6.1.2-r0: task do_package_write_deb: Succeeded
+NOTE: recipe m4-1.4.18-r0: task do_package: Succeeded
+NOTE: Running task 689 of 713 (/home/deby/poky/meta-debian/recipes-debian/m4/m4_debian.bb:do_packagedata)
+NOTE: recipe m4-1.4.18-r0: task do_packagedata: Started
+NOTE: recipe m4-1.4.18-r0: task do_packagedata: Succeeded
+NOTE: Running task 690 of 713 (/home/deby/poky/meta-debian/recipes-debian/m4/m4_debian.bb:do_package_write_deb)
+NOTE: Running task 691 of 713 (/home/deby/poky/meta-debian/recipes-debian/flex/flex_debian.bb:do_package_write_deb)
+NOTE: recipe m4-1.4.18-r0: task do_package_write_deb: Started
+NOTE: recipe flex-2.6.4-r0: task do_package_write_deb: Started
+NOTE: recipe flex-2.6.4-r0: task do_package_write_deb: Succeeded
+NOTE: recipe m4-1.4.18-r0: task do_package_write_deb: Succeeded
+NOTE: recipe libpam-1.3.1-r0: task do_compile: Succeeded
+NOTE: Running task 692 of 713 (/home/deby/poky/meta-debian/recipes-debian/pam/libpam_debian.bb:do_install)
+NOTE: recipe libpam-1.3.1-r0: task do_install: Started
+NOTE: recipe libpam-1.3.1-r0: task do_install: Succeeded
+NOTE: Running task 693 of 713 (/home/deby/poky/meta-debian/recipes-debian/pam/libpam_debian.bb:do_populate_sysroot)
+NOTE: Running task 694 of 713 (/home/deby/poky/meta-debian/recipes-debian/pam/libpam_debian.bb:do_package)
+NOTE: recipe libpam-1.3.1-r0: task do_populate_sysroot: Started
+NOTE: recipe libpam-1.3.1-r0: task do_package: Started
+NOTE: recipe libpam-1.3.1-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 695 of 713 (/home/deby/poky/meta-debian/recipes-debian/libcap/libcap_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe libcap-2.25-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe libcap-2.25-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 696 of 713 (/home/deby/poky/meta-debian/recipes-debian/libcap/libcap_debian.bb:do_configure)
+NOTE: recipe libcap-2.25-r0: task do_configure: Started
+NOTE: recipe libcap-2.25-r0: task do_configure: Succeeded
+NOTE: Running task 697 of 713 (/home/deby/poky/meta-debian/recipes-debian/libcap/libcap_debian.bb:do_compile)
+NOTE: recipe libcap-2.25-r0: task do_compile: Started
+NOTE: recipe libcap-2.25-r0: task do_compile: Succeeded
+NOTE: Running task 698 of 713 (/home/deby/poky/meta-debian/recipes-debian/libcap/libcap_debian.bb:do_install)
+NOTE: recipe libcap-2.25-r0: task do_install: Started
+NOTE: recipe libcap-2.25-r0: task do_install: Succeeded
+NOTE: Running task 699 of 713 (/home/deby/poky/meta-debian/recipes-debian/libcap/libcap_debian.bb:do_populate_sysroot)
+NOTE: recipe libcap-2.25-r0: task do_populate_sysroot: Started
+NOTE: recipe libcap-2.25-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 700 of 713 (/home/deby/poky/meta-debian/recipes-debian/coreutils/coreutils_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe coreutils-8.30-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe coreutils-8.30-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 701 of 713 (/home/deby/poky/meta-debian/recipes-debian/coreutils/coreutils_debian.bb:do_configure)
+NOTE: recipe coreutils-8.30-r0: task do_configure: Started
+NOTE: recipe libpam-1.3.1-r0: task do_package: Succeeded
+NOTE: Running task 702 of 713 (/home/deby/poky/meta-debian/recipes-debian/pam/libpam_debian.bb:do_packagedata)
+NOTE: recipe libpam-1.3.1-r0: task do_packagedata: Started
+NOTE: recipe libpam-1.3.1-r0: task do_packagedata: Succeeded
+NOTE: Running task 703 of 713 (/home/deby/poky/meta-debian/recipes-debian/libcap/libcap_debian.bb:do_package)
+NOTE: recipe libcap-2.25-r0: task do_package: Started
+NOTE: recipe libcap-2.25-r0: task do_package: Succeeded
+NOTE: Running task 704 of 713 (/home/deby/poky/meta-debian/recipes-debian/libcap/libcap_debian.bb:do_packagedata)
+NOTE: recipe libcap-2.25-r0: task do_packagedata: Started
+NOTE: recipe libcap-2.25-r0: task do_packagedata: Succeeded
+NOTE: Running task 705 of 713 (/home/deby/poky/meta-debian/recipes-debian/libcap/libcap_debian.bb:do_package_write_deb)
+NOTE: recipe libcap-2.25-r0: task do_package_write_deb: Started
+NOTE: recipe libcap-2.25-r0: task do_package_write_deb: Succeeded
+NOTE: recipe coreutils-8.30-r0: task do_configure: Succeeded
+NOTE: Running task 706 of 713 (/home/deby/poky/meta-debian/recipes-debian/coreutils/coreutils_debian.bb:do_compile)
+NOTE: recipe coreutils-8.30-r0: task do_compile: Started
+NOTE: recipe coreutils-8.30-r0: task do_compile: Succeeded
+NOTE: Running task 707 of 713 (/home/deby/poky/meta-debian/recipes-debian/coreutils/coreutils_debian.bb:do_install)
+NOTE: recipe coreutils-8.30-r0: task do_install: Started
+NOTE: recipe coreutils-8.30-r0: task do_install: Succeeded
+NOTE: Running task 708 of 713 (/home/deby/poky/meta-debian/recipes-debian/coreutils/coreutils_debian.bb:do_package)
+NOTE: recipe coreutils-8.30-r0: task do_package: Started
+NOTE: recipe coreutils-8.30-r0: task do_package: Succeeded
+NOTE: Running task 709 of 713 (/home/deby/poky/meta-debian/recipes-debian/coreutils/coreutils_debian.bb:do_packagedata)
+NOTE: recipe coreutils-8.30-r0: task do_packagedata: Started
+NOTE: recipe coreutils-8.30-r0: task do_packagedata: Succeeded
+NOTE: Running task 710 of 713 (/home/deby/poky/meta-debian/recipes-debian/coreutils/coreutils_debian.bb:do_package_write_deb)
+NOTE: Running task 711 of 713 (/home/deby/poky/meta-debian/recipes-debian/pam/libpam_debian.bb:do_package_write_deb)
+NOTE: Running task 712 of 713 (/home/deby/poky/meta-debian/recipes-debian/pam/libpam_debian.bb:do_package_qa)
+NOTE: recipe libpam-1.3.1-r0: task do_package_write_deb: Started
 NOTE: recipe libpam-1.3.1-r0: task do_package_qa: Started
+NOTE: recipe coreutils-8.30-r0: task do_package_write_deb: Started
+NOTE: recipe libpam-1.3.1-r0: task do_package_write_deb: Succeeded
+NOTE: recipe coreutils-8.30-r0: task do_package_write_deb: Succeeded
 NOTE: recipe libpam-1.3.1-r0: task do_package_qa: Succeeded
-NOTE: Running noexec task 718 of 718 (/home/deby/poky/meta-debian/recipes-debian/pam/libpam_debian.bb:do_build)
-NOTE: Tasks Summary: Attempted 718 tasks of which 716 didn't need to be rerun and all succeeded.
+NOTE: Running noexec task 713 of 713 (/home/deby/poky/meta-debian/recipes-debian/pam/libpam_debian.bb:do_build)
+NOTE: Tasks Summary: Attempted 713 tasks of which 652 didn't need to be rerun and all succeeded.

@@ -1,0 +1,32 @@
+Loading cache...done.
+Loaded 1825 entries from dependency cache.
+Parsing recipes...done.
+Parsing of 1043 .bb files complete (1041 cached, 2 parsed). 1828 targets, 209 skipped, 0 masked, 0 errors.
+NOTE: Resolving any missing task queue dependencies
+
+Build Configuration:
+BB_VERSION           = "1.42.0"
+BUILD_SYS            = "x86_64-linux"
+NATIVELSBSTRING      = "universal"
+TARGET_SYS           = "i586-deby-linux"
+MACHINE              = "qemux86"
+DISTRO               = "deby-tiny"
+DISTRO_VERSION       = "10.0"
+TUNE_FEATURES        = "m32 i586"
+TARGET_FPU           = ""
+meta                 
+meta-poky            = "warrior:79a850a10a4b88a6d20d607b322542f947874323"
+meta-debian          = "warrior:2fa6d8525f0464064f8764856015185a0c4e5411"
+
+Initialising tasks...done.
+Sstate summary: Wanted 4 Found 2 Missed 2 Current 168 (50% match, 98% complete)
+NOTE: Executing SetScene Tasks
+NOTE: Executing RunQueue Tasks
+NOTE: Running task 962 of 964 (/home/deby/poky/meta-debian/recipes-debian/pycparser/python3-pycparser_debian.bb:do_package_qa)
+NOTE: Running task 963 of 964 (/home/deby/poky/meta-debian/recipes-debian/pycparser/python3-pycparser_debian.bb:do_populate_sysroot)
+NOTE: recipe python3-pycparser-2.19-r0: task do_populate_sysroot: Started
+NOTE: recipe python3-pycparser-2.19-r0: task do_package_qa: Started
+NOTE: recipe python3-pycparser-2.19-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe python3-pycparser-2.19-r0: task do_package_qa: Succeeded
+NOTE: Running noexec task 964 of 964 (/home/deby/poky/meta-debian/recipes-debian/pycparser/python3-pycparser_debian.bb:do_build)
+NOTE: Tasks Summary: Attempted 964 tasks of which 961 didn't need to be rerun and all succeeded.

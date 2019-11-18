@@ -1,7 +1,7 @@
 Loading cache...done.
-Loaded 1746 entries from dependency cache.
+Loaded 1825 entries from dependency cache.
 Parsing recipes...done.
-Parsing of 992 .bb files complete (990 cached, 2 parsed). 1733 targets, 223 skipped, 0 masked, 0 errors.
+Parsing of 1043 .bb files complete (1041 cached, 2 parsed). 1828 targets, 222 skipped, 0 masked, 0 errors.
 NOTE: Resolving any missing task queue dependencies
 
 Build Configuration:
@@ -16,134 +16,212 @@ TUNE_FEATURES        = "arm armv7ve vfp thumb neon callconvention-hard"
 TARGET_FPU           = "hard"
 meta                 
 meta-poky            = "warrior:79a850a10a4b88a6d20d607b322542f947874323"
-meta-debian          = "warrior:f7512bd96372e67fe4288cb5cb61cf52d282dd4e"
+meta-debian          = "warrior:fda6a80e4cae9aa03f502551f35fe41beb7bb944"
 
 Initialising tasks...done.
-Sstate summary: Wanted 21 Found 0 Missed 21 Current 176 (0% match, 89% complete)
+Sstate summary: Wanted 22 Found 0 Missed 22 Current 175 (0% match, 88% complete)
 NOTE: Executing SetScene Tasks
 NOTE: Executing RunQueue Tasks
-NOTE: Running task 793 of 993 (/home/deby/poky/meta-debian/recipes-debian/libestr/libestr_debian.bb:do_prepare_recipe_sysroot)
-NOTE: Running task 795 of 993 (/home/deby/poky/meta-debian/recipes-debian/rsyslog/libfastjson_debian.bb:do_prepare_recipe_sysroot)
-NOTE: Running task 818 of 993 (/home/deby/poky/meta-debian/recipes-debian/popt/popt_debian.bb:do_prepare_recipe_sysroot)
-NOTE: Running task 859 of 993 (/home/deby/poky/meta-debian/recipes-debian/coreutils/coreutils_debian.bb:do_populate_sysroot)
-NOTE: recipe libfastjson-0.99.8-r0: task do_prepare_recipe_sysroot: Started
+NOTE: Running task 668 of 1015 (/home/deby/poky/meta-debian/recipes-debian/libestr/libestr_debian.bb:do_fetch)
+NOTE: Running task 669 of 1015 (/home/deby/poky/meta-debian/recipes-debian/rsyslog/libfastjson_debian.bb:do_fetch)
+NOTE: Running task 691 of 1015 (/home/deby/poky/meta-debian/recipes-debian/popt/popt_debian.bb:do_fetch)
+NOTE: Running task 753 of 1015 (/home/deby/poky/meta-debian/recipes-debian/rsyslog/rsyslog_debian.bb:do_fetch)
+NOTE: Running task 778 of 1015 (/home/deby/poky/meta-debian/recipes-debian/logrotate/logrotate_debian.bb:do_fetch)
+NOTE: Running task 860 of 1015 (/home/deby/poky/meta-debian/recipes-debian/coreutils/coreutils_debian.bb:do_populate_sysroot)
+NOTE: recipe libestr-0.1.10-r0: task do_fetch: Started
+NOTE: recipe libfastjson-0.99.8-r0: task do_fetch: Started
+NOTE: recipe logrotate-3.14.0-r0: task do_fetch: Started
+NOTE: recipe libestr-0.1.10-r0: task do_fetch: Succeeded
+NOTE: Running task 954 of 1015 (/home/deby/poky/meta-debian/recipes-debian/libestr/libestr_debian.bb:do_unpack)
+NOTE: Running task 955 of 1015 (/home/deby/poky/meta-debian/recipes-debian/libestr/libestr_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe rsyslog-8.1901.0-r0: task do_fetch: Started
+NOTE: recipe rsyslog-8.1901.0-r0: task do_fetch: Succeeded
+NOTE: recipe logrotate-3.14.0-r0: task do_fetch: Succeeded
+NOTE: Running task 956 of 1015 (/home/deby/poky/meta-debian/recipes-debian/rsyslog/rsyslog_debian.bb:do_unpack)
+NOTE: Running task 957 of 1015 (/home/deby/poky/meta-debian/recipes-debian/logrotate/logrotate_debian.bb:do_unpack)
+NOTE: recipe libfastjson-0.99.8-r0: task do_fetch: Succeeded
+NOTE: Running task 958 of 1015 (/home/deby/poky/meta-debian/recipes-debian/rsyslog/libfastjson_debian.bb:do_unpack)
+NOTE: Running task 959 of 1015 (/home/deby/poky/meta-debian/recipes-debian/rsyslog/libfastjson_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe libestr-0.1.10-r0: task do_unpack: Started
+NOTE: recipe logrotate-3.14.0-r0: task do_unpack: Started
+NOTE: recipe popt-1.16-r0: task do_fetch: Started
+NOTE: recipe rsyslog-8.1901.0-r0: task do_unpack: Started
 NOTE: recipe libestr-0.1.10-r0: task do_prepare_recipe_sysroot: Started
-NOTE: recipe popt-1.16-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe libfastjson-0.99.8-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe libfastjson-0.99.8-r0: task do_unpack: Started
 NOTE: recipe coreutils-8.30-r0: task do_populate_sysroot: Started
+NOTE: recipe popt-1.16-r0: task do_fetch: Succeeded
+NOTE: Running task 960 of 1015 (/home/deby/poky/meta-debian/recipes-debian/popt/popt_debian.bb:do_unpack)
+NOTE: Running task 961 of 1015 (/home/deby/poky/meta-debian/recipes-debian/popt/popt_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe logrotate-3.14.0-r0: task do_unpack: Succeeded
+NOTE: Running task 962 of 1015 (/home/deby/poky/meta-debian/recipes-debian/logrotate/logrotate_debian.bb:do_debian_unpack_extra)
+NOTE: recipe libestr-0.1.10-r0: task do_unpack: Succeeded
+NOTE: Running task 963 of 1015 (/home/deby/poky/meta-debian/recipes-debian/libestr/libestr_debian.bb:do_debian_unpack_extra)
+NOTE: recipe popt-1.16-r0: task do_unpack: Started
+NOTE: recipe popt-1.16-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe logrotate-3.14.0-r0: task do_debian_unpack_extra: Started
+NOTE: recipe libfastjson-0.99.8-r0: task do_unpack: Succeeded
+NOTE: Running task 964 of 1015 (/home/deby/poky/meta-debian/recipes-debian/rsyslog/libfastjson_debian.bb:do_debian_unpack_extra)
+NOTE: recipe libestr-0.1.10-r0: task do_debian_unpack_extra: Started
+NOTE: recipe logrotate-3.14.0-r0: task do_debian_unpack_extra: Succeeded
+NOTE: recipe libestr-0.1.10-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 965 of 1015 (/home/deby/poky/meta-debian/recipes-debian/libestr/libestr_debian.bb:do_debian_patch)
+NOTE: Running task 966 of 1015 (/home/deby/poky/meta-debian/recipes-debian/logrotate/logrotate_debian.bb:do_debian_patch)
+NOTE: recipe libfastjson-0.99.8-r0: task do_debian_unpack_extra: Started
+NOTE: recipe libestr-0.1.10-r0: task do_debian_patch: Started
+NOTE: recipe logrotate-3.14.0-r0: task do_debian_patch: Started
 NOTE: recipe libestr-0.1.10-r0: task do_prepare_recipe_sysroot: Succeeded
-NOTE: Running task 956 of 993 (/home/deby/poky/meta-debian/recipes-debian/libestr/libestr_debian.bb:do_configure)
-NOTE: recipe libestr-0.1.10-r0: task do_configure: Started
-NOTE: recipe popt-1.16-r0: task do_prepare_recipe_sysroot: Succeeded
-NOTE: Running task 957 of 993 (/home/deby/poky/meta-debian/recipes-debian/popt/popt_debian.bb:do_configure)
-NOTE: recipe popt-1.16-r0: task do_configure: Started
-NOTE: recipe coreutils-8.30-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe libestr-0.1.10-r0: task do_debian_patch: Succeeded
+NOTE: Running task 967 of 1015 (/home/deby/poky/meta-debian/recipes-debian/libestr/libestr_debian.bb:do_patch)
 NOTE: recipe libfastjson-0.99.8-r0: task do_prepare_recipe_sysroot: Succeeded
-NOTE: Running task 958 of 993 (/home/deby/poky/meta-debian/recipes-debian/rsyslog/libfastjson_debian.bb:do_configure)
+NOTE: recipe logrotate-3.14.0-r0: task do_debian_patch: Succeeded
+NOTE: Running task 968 of 1015 (/home/deby/poky/meta-debian/recipes-debian/logrotate/logrotate_debian.bb:do_patch)
+NOTE: recipe libfastjson-0.99.8-r0: task do_debian_unpack_extra: Succeeded
+NOTE: recipe popt-1.16-r0: task do_unpack: Succeeded
+NOTE: Running task 969 of 1015 (/home/deby/poky/meta-debian/recipes-debian/popt/popt_debian.bb:do_debian_unpack_extra)
+NOTE: Running task 970 of 1015 (/home/deby/poky/meta-debian/recipes-debian/rsyslog/libfastjson_debian.bb:do_debian_patch)
+NOTE: recipe libestr-0.1.10-r0: task do_patch: Started
+NOTE: recipe libestr-0.1.10-r0: task do_patch: Succeeded
+NOTE: Running task 971 of 1015 (/home/deby/poky/meta-debian/recipes-debian/libestr/libestr_debian.bb:do_configure)
+NOTE: recipe logrotate-3.14.0-r0: task do_patch: Started
+NOTE: recipe popt-1.16-r0: task do_debian_unpack_extra: Started
+NOTE: recipe libfastjson-0.99.8-r0: task do_debian_patch: Started
+NOTE: recipe libestr-0.1.10-r0: task do_configure: Started
+NOTE: recipe popt-1.16-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 972 of 1015 (/home/deby/poky/meta-debian/recipes-debian/popt/popt_debian.bb:do_debian_patch)
+NOTE: recipe logrotate-3.14.0-r0: task do_patch: Succeeded
+NOTE: recipe popt-1.16-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: recipe libfastjson-0.99.8-r0: task do_debian_patch: Succeeded
+NOTE: Running task 973 of 1015 (/home/deby/poky/meta-debian/recipes-debian/rsyslog/libfastjson_debian.bb:do_patch)
+NOTE: recipe popt-1.16-r0: task do_debian_patch: Started
+NOTE: recipe libfastjson-0.99.8-r0: task do_patch: Started
+NOTE: recipe rsyslog-8.1901.0-r0: task do_unpack: Succeeded
+NOTE: Running task 974 of 1015 (/home/deby/poky/meta-debian/recipes-debian/rsyslog/rsyslog_debian.bb:do_debian_unpack_extra)
+NOTE: recipe libfastjson-0.99.8-r0: task do_patch: Succeeded
+NOTE: Running task 975 of 1015 (/home/deby/poky/meta-debian/recipes-debian/rsyslog/libfastjson_debian.bb:do_configure)
+NOTE: recipe rsyslog-8.1901.0-r0: task do_debian_unpack_extra: Started
+NOTE: recipe popt-1.16-r0: task do_debian_patch: Succeeded
+NOTE: Running task 976 of 1015 (/home/deby/poky/meta-debian/recipes-debian/popt/popt_debian.bb:do_patch)
 NOTE: recipe libfastjson-0.99.8-r0: task do_configure: Started
+NOTE: recipe popt-1.16-r0: task do_patch: Started
+NOTE: recipe rsyslog-8.1901.0-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 977 of 1015 (/home/deby/poky/meta-debian/recipes-debian/rsyslog/rsyslog_debian.bb:do_debian_patch)
+NOTE: recipe popt-1.16-r0: task do_patch: Succeeded
+NOTE: Running task 978 of 1015 (/home/deby/poky/meta-debian/recipes-debian/popt/popt_debian.bb:do_configure)
+NOTE: recipe rsyslog-8.1901.0-r0: task do_debian_patch: Started
+NOTE: recipe popt-1.16-r0: task do_configure: Started
+NOTE: recipe rsyslog-8.1901.0-r0: task do_debian_patch: Succeeded
+NOTE: Running task 979 of 1015 (/home/deby/poky/meta-debian/recipes-debian/rsyslog/rsyslog_debian.bb:do_patch)
+NOTE: recipe rsyslog-8.1901.0-r0: task do_patch: Started
+NOTE: recipe rsyslog-8.1901.0-r0: task do_patch: Succeeded
+NOTE: Running task 980 of 1015 (/home/deby/poky/meta-debian/recipes-debian/rsyslog/rsyslog_debian.bb:do_populate_lic)
+NOTE: recipe rsyslog-8.1901.0-r0: task do_populate_lic: Started
+NOTE: recipe coreutils-8.30-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe rsyslog-8.1901.0-r0: task do_populate_lic: Succeeded
 NOTE: recipe libestr-0.1.10-r0: task do_configure: Succeeded
-NOTE: Running task 959 of 993 (/home/deby/poky/meta-debian/recipes-debian/libestr/libestr_debian.bb:do_compile)
+NOTE: Running task 981 of 1015 (/home/deby/poky/meta-debian/recipes-debian/libestr/libestr_debian.bb:do_compile)
 NOTE: recipe libestr-0.1.10-r0: task do_compile: Started
 NOTE: recipe libestr-0.1.10-r0: task do_compile: Succeeded
-NOTE: Running task 960 of 993 (/home/deby/poky/meta-debian/recipes-debian/libestr/libestr_debian.bb:do_install)
+NOTE: Running task 982 of 1015 (/home/deby/poky/meta-debian/recipes-debian/libestr/libestr_debian.bb:do_install)
 NOTE: recipe libestr-0.1.10-r0: task do_install: Started
 NOTE: recipe libestr-0.1.10-r0: task do_install: Succeeded
-NOTE: Running task 961 of 993 (/home/deby/poky/meta-debian/recipes-debian/libestr/libestr_debian.bb:do_package)
-NOTE: Running task 962 of 993 (/home/deby/poky/meta-debian/recipes-debian/libestr/libestr_debian.bb:do_populate_sysroot)
+NOTE: Running task 983 of 1015 (/home/deby/poky/meta-debian/recipes-debian/libestr/libestr_debian.bb:do_package)
+NOTE: Running task 984 of 1015 (/home/deby/poky/meta-debian/recipes-debian/libestr/libestr_debian.bb:do_populate_sysroot)
 NOTE: recipe libestr-0.1.10-r0: task do_populate_sysroot: Started
 NOTE: recipe libestr-0.1.10-r0: task do_package: Started
-NOTE: recipe libestr-0.1.10-r0: task do_populate_sysroot: Succeeded
-NOTE: recipe libestr-0.1.10-r0: task do_package: Succeeded
-NOTE: Running task 963 of 993 (/home/deby/poky/meta-debian/recipes-debian/libestr/libestr_debian.bb:do_packagedata)
-NOTE: recipe libestr-0.1.10-r0: task do_packagedata: Started
-NOTE: recipe libestr-0.1.10-r0: task do_packagedata: Succeeded
-NOTE: Running task 964 of 993 (/home/deby/poky/meta-debian/recipes-debian/libestr/libestr_debian.bb:do_package_write_deb)
-NOTE: recipe libestr-0.1.10-r0: task do_package_write_deb: Started
 NOTE: recipe libfastjson-0.99.8-r0: task do_configure: Succeeded
-NOTE: Running task 965 of 993 (/home/deby/poky/meta-debian/recipes-debian/rsyslog/libfastjson_debian.bb:do_compile)
+NOTE: Running task 985 of 1015 (/home/deby/poky/meta-debian/recipes-debian/rsyslog/libfastjson_debian.bb:do_compile)
 NOTE: recipe libfastjson-0.99.8-r0: task do_compile: Started
 NOTE: recipe popt-1.16-r0: task do_configure: Succeeded
-NOTE: Running task 966 of 993 (/home/deby/poky/meta-debian/recipes-debian/popt/popt_debian.bb:do_compile)
+NOTE: Running task 986 of 1015 (/home/deby/poky/meta-debian/recipes-debian/popt/popt_debian.bb:do_compile)
 NOTE: recipe popt-1.16-r0: task do_compile: Started
-NOTE: recipe libestr-0.1.10-r0: task do_package_write_deb: Succeeded
 NOTE: recipe libfastjson-0.99.8-r0: task do_compile: Succeeded
-NOTE: Running task 967 of 993 (/home/deby/poky/meta-debian/recipes-debian/rsyslog/libfastjson_debian.bb:do_install)
+NOTE: Running task 987 of 1015 (/home/deby/poky/meta-debian/recipes-debian/rsyslog/libfastjson_debian.bb:do_install)
 NOTE: recipe libfastjson-0.99.8-r0: task do_install: Started
-NOTE: recipe popt-1.16-r0: task do_compile: Succeeded
-NOTE: Running task 968 of 993 (/home/deby/poky/meta-debian/recipes-debian/popt/popt_debian.bb:do_install)
-NOTE: recipe popt-1.16-r0: task do_install: Started
 NOTE: recipe libfastjson-0.99.8-r0: task do_install: Succeeded
-NOTE: Running task 969 of 993 (/home/deby/poky/meta-debian/recipes-debian/rsyslog/libfastjson_debian.bb:do_package)
-NOTE: Running task 970 of 993 (/home/deby/poky/meta-debian/recipes-debian/rsyslog/libfastjson_debian.bb:do_populate_sysroot)
-NOTE: recipe libfastjson-0.99.8-r0: task do_populate_sysroot: Started
+NOTE: Running task 988 of 1015 (/home/deby/poky/meta-debian/recipes-debian/rsyslog/libfastjson_debian.bb:do_package)
+NOTE: Running task 989 of 1015 (/home/deby/poky/meta-debian/recipes-debian/rsyslog/libfastjson_debian.bb:do_populate_sysroot)
 NOTE: recipe libfastjson-0.99.8-r0: task do_package: Started
-NOTE: recipe libfastjson-0.99.8-r0: task do_populate_sysroot: Succeeded
-NOTE: Running task 971 of 993 (/home/deby/poky/meta-debian/recipes-debian/rsyslog/rsyslog_debian.bb:do_prepare_recipe_sysroot)
-NOTE: recipe rsyslog-8.1901.0-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe libfastjson-0.99.8-r0: task do_populate_sysroot: Started
+NOTE: recipe popt-1.16-r0: task do_compile: Succeeded
+NOTE: Running task 990 of 1015 (/home/deby/poky/meta-debian/recipes-debian/popt/popt_debian.bb:do_install)
+NOTE: recipe popt-1.16-r0: task do_install: Started
 NOTE: recipe popt-1.16-r0: task do_install: Succeeded
-NOTE: Running task 972 of 993 (/home/deby/poky/meta-debian/recipes-debian/popt/popt_debian.bb:do_package)
-NOTE: Running task 973 of 993 (/home/deby/poky/meta-debian/recipes-debian/popt/popt_debian.bb:do_populate_sysroot)
+NOTE: Running task 991 of 1015 (/home/deby/poky/meta-debian/recipes-debian/popt/popt_debian.bb:do_package)
+NOTE: Running task 992 of 1015 (/home/deby/poky/meta-debian/recipes-debian/popt/popt_debian.bb:do_populate_sysroot)
 NOTE: recipe popt-1.16-r0: task do_populate_sysroot: Started
 NOTE: recipe popt-1.16-r0: task do_package: Started
 NOTE: recipe popt-1.16-r0: task do_populate_sysroot: Succeeded
-NOTE: Running task 974 of 993 (/home/deby/poky/meta/recipes-extended/logrotate/logrotate_3.15.0.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 993 of 1015 (/home/deby/poky/meta-debian/recipes-debian/logrotate/logrotate_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe logrotate-3.14.0-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe logrotate-3.14.0-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 994 of 1015 (/home/deby/poky/meta-debian/recipes-debian/logrotate/logrotate_debian.bb:do_configure)
+NOTE: recipe logrotate-3.14.0-r0: task do_configure: Started
+NOTE: recipe libestr-0.1.10-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe libestr-0.1.10-r0: task do_package: Succeeded
+NOTE: Running task 995 of 1015 (/home/deby/poky/meta-debian/recipes-debian/libestr/libestr_debian.bb:do_packagedata)
+NOTE: recipe libestr-0.1.10-r0: task do_packagedata: Started
+NOTE: recipe libestr-0.1.10-r0: task do_packagedata: Succeeded
+NOTE: Running task 996 of 1015 (/home/deby/poky/meta-debian/recipes-debian/libestr/libestr_debian.bb:do_package_write_deb)
+NOTE: recipe libestr-0.1.10-r0: task do_package_write_deb: Started
+NOTE: recipe libestr-0.1.10-r0: task do_package_write_deb: Succeeded
+NOTE: recipe libfastjson-0.99.8-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 997 of 1015 (/home/deby/poky/meta-debian/recipes-debian/rsyslog/rsyslog_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe rsyslog-8.1901.0-r0: task do_prepare_recipe_sysroot: Started
 NOTE: recipe libfastjson-0.99.8-r0: task do_package: Succeeded
-NOTE: Running task 975 of 993 (/home/deby/poky/meta-debian/recipes-debian/rsyslog/libfastjson_debian.bb:do_packagedata)
-NOTE: recipe logrotate-3.15.0-r0: task do_prepare_recipe_sysroot: Started
-NOTE: recipe libfastjson-0.99.8-r0: task do_packagedata: Started
-NOTE: recipe popt-1.16-r0: task do_package: Succeeded
-NOTE: Running task 976 of 993 (/home/deby/poky/meta-debian/recipes-debian/popt/popt_debian.bb:do_packagedata)
-NOTE: recipe popt-1.16-r0: task do_packagedata: Started
-NOTE: recipe libfastjson-0.99.8-r0: task do_packagedata: Succeeded
-NOTE: Running task 977 of 993 (/home/deby/poky/meta-debian/recipes-debian/rsyslog/libfastjson_debian.bb:do_package_write_deb)
-NOTE: recipe libfastjson-0.99.8-r0: task do_package_write_deb: Started
-NOTE: recipe popt-1.16-r0: task do_packagedata: Succeeded
-NOTE: Running task 978 of 993 (/home/deby/poky/meta-debian/recipes-debian/popt/popt_debian.bb:do_package_write_deb)
-NOTE: recipe popt-1.16-r0: task do_package_write_deb: Started
-NOTE: recipe libfastjson-0.99.8-r0: task do_package_write_deb: Succeeded
-NOTE: recipe popt-1.16-r0: task do_package_write_deb: Succeeded
-NOTE: recipe logrotate-3.15.0-r0: task do_prepare_recipe_sysroot: Succeeded
-NOTE: Running task 979 of 993 (/home/deby/poky/meta/recipes-extended/logrotate/logrotate_3.15.0.bb:do_configure)
-NOTE: recipe logrotate-3.15.0-r0: task do_configure: Started
+NOTE: Running task 998 of 1015 (/home/deby/poky/meta-debian/recipes-debian/rsyslog/libfastjson_debian.bb:do_packagedata)
 NOTE: recipe rsyslog-8.1901.0-r0: task do_prepare_recipe_sysroot: Succeeded
-NOTE: Running task 980 of 993 (/home/deby/poky/meta-debian/recipes-debian/rsyslog/rsyslog_debian.bb:do_configure)
+NOTE: Running task 999 of 1015 (/home/deby/poky/meta-debian/recipes-debian/rsyslog/rsyslog_debian.bb:do_configure)
+NOTE: recipe libfastjson-0.99.8-r0: task do_packagedata: Started
 NOTE: recipe rsyslog-8.1901.0-r0: task do_configure: Started
-NOTE: recipe logrotate-3.15.0-r0: task do_configure: Succeeded
-NOTE: Running task 981 of 993 (/home/deby/poky/meta/recipes-extended/logrotate/logrotate_3.15.0.bb:do_compile)
-NOTE: recipe logrotate-3.15.0-r0: task do_compile: Started
-NOTE: recipe logrotate-3.15.0-r0: task do_compile: Succeeded
-NOTE: Running task 982 of 993 (/home/deby/poky/meta/recipes-extended/logrotate/logrotate_3.15.0.bb:do_install)
-NOTE: recipe logrotate-3.15.0-r0: task do_install: Started
-NOTE: recipe logrotate-3.15.0-r0: task do_install: Succeeded
-NOTE: Running task 983 of 993 (/home/deby/poky/meta/recipes-extended/logrotate/logrotate_3.15.0.bb:do_package)
-NOTE: recipe logrotate-3.15.0-r0: task do_package: Started
-NOTE: recipe logrotate-3.15.0-r0: task do_package: Succeeded
-NOTE: Running task 984 of 993 (/home/deby/poky/meta/recipes-extended/logrotate/logrotate_3.15.0.bb:do_packagedata)
-NOTE: recipe logrotate-3.15.0-r0: task do_packagedata: Started
-NOTE: recipe logrotate-3.15.0-r0: task do_packagedata: Succeeded
-NOTE: Running task 985 of 993 (/home/deby/poky/meta/recipes-extended/logrotate/logrotate_3.15.0.bb:do_package_write_deb)
-NOTE: recipe logrotate-3.15.0-r0: task do_package_write_deb: Started
-NOTE: recipe logrotate-3.15.0-r0: task do_package_write_deb: Succeeded
+NOTE: recipe libfastjson-0.99.8-r0: task do_packagedata: Succeeded
+NOTE: Running task 1000 of 1015 (/home/deby/poky/meta-debian/recipes-debian/rsyslog/libfastjson_debian.bb:do_package_write_deb)
+NOTE: recipe libfastjson-0.99.8-r0: task do_package_write_deb: Started
+NOTE: recipe libfastjson-0.99.8-r0: task do_package_write_deb: Succeeded
+NOTE: recipe logrotate-3.14.0-r0: task do_configure: Succeeded
+NOTE: recipe popt-1.16-r0: task do_package: Succeeded
+NOTE: Running task 1001 of 1015 (/home/deby/poky/meta-debian/recipes-debian/logrotate/logrotate_debian.bb:do_compile)
+NOTE: Running task 1002 of 1015 (/home/deby/poky/meta-debian/recipes-debian/popt/popt_debian.bb:do_packagedata)
+NOTE: recipe logrotate-3.14.0-r0: task do_compile: Started
+NOTE: recipe popt-1.16-r0: task do_packagedata: Started
+NOTE: recipe popt-1.16-r0: task do_packagedata: Succeeded
+NOTE: Running task 1003 of 1015 (/home/deby/poky/meta-debian/recipes-debian/popt/popt_debian.bb:do_package_write_deb)
+NOTE: recipe popt-1.16-r0: task do_package_write_deb: Started
+NOTE: recipe popt-1.16-r0: task do_package_write_deb: Succeeded
+NOTE: recipe logrotate-3.14.0-r0: task do_compile: Succeeded
+NOTE: Running task 1004 of 1015 (/home/deby/poky/meta-debian/recipes-debian/logrotate/logrotate_debian.bb:do_install)
+NOTE: recipe logrotate-3.14.0-r0: task do_install: Started
+NOTE: recipe logrotate-3.14.0-r0: task do_install: Succeeded
+NOTE: Running task 1005 of 1015 (/home/deby/poky/meta-debian/recipes-debian/logrotate/logrotate_debian.bb:do_package)
+NOTE: recipe logrotate-3.14.0-r0: task do_package: Started
+NOTE: recipe logrotate-3.14.0-r0: task do_package: Succeeded
+NOTE: Running task 1006 of 1015 (/home/deby/poky/meta-debian/recipes-debian/logrotate/logrotate_debian.bb:do_packagedata)
+NOTE: recipe logrotate-3.14.0-r0: task do_packagedata: Started
+NOTE: recipe logrotate-3.14.0-r0: task do_packagedata: Succeeded
+NOTE: Running task 1007 of 1015 (/home/deby/poky/meta-debian/recipes-debian/logrotate/logrotate_debian.bb:do_package_write_deb)
+NOTE: recipe logrotate-3.14.0-r0: task do_package_write_deb: Started
+NOTE: recipe logrotate-3.14.0-r0: task do_package_write_deb: Succeeded
 NOTE: recipe rsyslog-8.1901.0-r0: task do_configure: Succeeded
-NOTE: Running task 986 of 993 (/home/deby/poky/meta-debian/recipes-debian/rsyslog/rsyslog_debian.bb:do_compile)
+NOTE: Running task 1008 of 1015 (/home/deby/poky/meta-debian/recipes-debian/rsyslog/rsyslog_debian.bb:do_compile)
 NOTE: recipe rsyslog-8.1901.0-r0: task do_compile: Started
 NOTE: recipe rsyslog-8.1901.0-r0: task do_compile: Succeeded
-NOTE: Running task 987 of 993 (/home/deby/poky/meta-debian/recipes-debian/rsyslog/rsyslog_debian.bb:do_install)
+NOTE: Running task 1009 of 1015 (/home/deby/poky/meta-debian/recipes-debian/rsyslog/rsyslog_debian.bb:do_install)
 NOTE: recipe rsyslog-8.1901.0-r0: task do_install: Started
 NOTE: recipe rsyslog-8.1901.0-r0: task do_install: Succeeded
-NOTE: Running task 988 of 993 (/home/deby/poky/meta-debian/recipes-debian/rsyslog/rsyslog_debian.bb:do_package)
-NOTE: Running task 989 of 993 (/home/deby/poky/meta-debian/recipes-debian/rsyslog/rsyslog_debian.bb:do_populate_sysroot)
+NOTE: Running task 1010 of 1015 (/home/deby/poky/meta-debian/recipes-debian/rsyslog/rsyslog_debian.bb:do_package)
+NOTE: Running task 1011 of 1015 (/home/deby/poky/meta-debian/recipes-debian/rsyslog/rsyslog_debian.bb:do_populate_sysroot)
 NOTE: recipe rsyslog-8.1901.0-r0: task do_package: Started
 NOTE: recipe rsyslog-8.1901.0-r0: task do_populate_sysroot: Started
 NOTE: recipe rsyslog-8.1901.0-r0: task do_populate_sysroot: Succeeded
 NOTE: recipe rsyslog-8.1901.0-r0: task do_package: Succeeded
-NOTE: Running task 990 of 993 (/home/deby/poky/meta-debian/recipes-debian/rsyslog/rsyslog_debian.bb:do_packagedata)
+NOTE: Running task 1012 of 1015 (/home/deby/poky/meta-debian/recipes-debian/rsyslog/rsyslog_debian.bb:do_packagedata)
 NOTE: recipe rsyslog-8.1901.0-r0: task do_packagedata: Started
 NOTE: recipe rsyslog-8.1901.0-r0: task do_packagedata: Succeeded
-NOTE: Running task 991 of 993 (/home/deby/poky/meta-debian/recipes-debian/rsyslog/rsyslog_debian.bb:do_package_write_deb)
-NOTE: Running task 992 of 993 (/home/deby/poky/meta-debian/recipes-debian/rsyslog/rsyslog_debian.bb:do_package_qa)
+NOTE: Running task 1013 of 1015 (/home/deby/poky/meta-debian/recipes-debian/rsyslog/rsyslog_debian.bb:do_package_write_deb)
+NOTE: Running task 1014 of 1015 (/home/deby/poky/meta-debian/recipes-debian/rsyslog/rsyslog_debian.bb:do_package_qa)
 NOTE: recipe rsyslog-8.1901.0-r0: task do_package_qa: Started
 NOTE: recipe rsyslog-8.1901.0-r0: task do_package_write_deb: Started
 NOTE: recipe rsyslog-8.1901.0-r0: task do_package_qa: Succeeded
 NOTE: recipe rsyslog-8.1901.0-r0: task do_package_write_deb: Succeeded
-NOTE: Running noexec task 993 of 993 (/home/deby/poky/meta-debian/recipes-debian/rsyslog/rsyslog_debian.bb:do_build)
-NOTE: Tasks Summary: Attempted 993 tasks of which 951 didn't need to be rerun and all succeeded.
+NOTE: Running noexec task 1015 of 1015 (/home/deby/poky/meta-debian/recipes-debian/rsyslog/rsyslog_debian.bb:do_build)
+NOTE: Tasks Summary: Attempted 1015 tasks of which 947 didn't need to be rerun and all succeeded.

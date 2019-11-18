@@ -1,7 +1,7 @@
 Loading cache...done.
-Loaded 1981 entries from dependency cache.
+Loaded 2075 entries from dependency cache.
 Parsing recipes...done.
-Parsing of 1222 .bb files complete (1220 cached, 2 parsed). 1983 targets, 189 skipped, 0 masked, 0 errors.
+Parsing of 1273 .bb files complete (1271 cached, 2 parsed). 2078 targets, 188 skipped, 0 masked, 0 errors.
 WARNING: No bb files matched BBFILE_PATTERN_dti '^/home/deby/poky/meta-debian/tests/../../meta-debian/bsp/meta-ti/'
 NOTE: Resolving any missing task queue dependencies
 
@@ -17,18 +17,21 @@ TUNE_FEATURES        = "arm armv7a vfp thumb neon callconvention-hard"
 TARGET_FPU           = "hard"
 meta                 
 meta-poky            = "warrior:79a850a10a4b88a6d20d607b322542f947874323"
-meta-debian          = "warrior:f7512bd96372e67fe4288cb5cb61cf52d282dd4e"
+meta-debian          = "warrior:fda6a80e4cae9aa03f502551f35fe41beb7bb944"
 meta-ti              = "master:d793618c727d5a334241699d4421dbfc539be86c"
-meta-ti              = "warrior:f7512bd96372e67fe4288cb5cb61cf52d282dd4e"
+meta-ti              = "warrior:fda6a80e4cae9aa03f502551f35fe41beb7bb944"
 
 Initialising tasks...done.
-Sstate summary: Wanted 1 Found 0 Missed 1 Current 420 (0% match, 99% complete)
+Sstate summary: Wanted 2 Found 0 Missed 2 Current 419 (0% match, 99% complete)
 NOTE: Executing SetScene Tasks
 NOTE: Executing RunQueue Tasks
-NOTE: Running task 1946 of 1947 (/home/deby/poky/meta-debian/recipes-debian/openssl/openssl_debian.bb:do_package_qa)
+NOTE: Running task 1952 of 1955 (/home/deby/poky/meta-debian/recipes-debian/openssl/openssl_debian.bb:do_populate_lic)
+NOTE: Running task 1954 of 1955 (/home/deby/poky/meta-debian/recipes-debian/openssl/openssl_debian.bb:do_package_qa)
+NOTE: recipe openssl-1.1.1c-r0: task do_populate_lic: Started
+NOTE: recipe openssl-1.1.1c-r0: task do_populate_lic: Succeeded
 NOTE: recipe openssl-1.1.1c-r0: task do_package_qa: Started
 NOTE: recipe openssl-1.1.1c-r0: task do_package_qa: Succeeded
-NOTE: Running noexec task 1947 of 1947 (/home/deby/poky/meta-debian/recipes-debian/openssl/openssl_debian.bb:do_build)
-NOTE: Tasks Summary: Attempted 1947 tasks of which 1945 didn't need to be rerun and all succeeded.
+NOTE: Running noexec task 1955 of 1955 (/home/deby/poky/meta-debian/recipes-debian/openssl/openssl_debian.bb:do_build)
+NOTE: Tasks Summary: Attempted 1955 tasks of which 1952 didn't need to be rerun and all succeeded.
 
 Summary: There was 1 WARNING message shown.

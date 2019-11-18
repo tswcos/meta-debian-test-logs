@@ -1,7 +1,7 @@
 Loading cache...done.
-Loaded 1746 entries from dependency cache.
+Loaded 1825 entries from dependency cache.
 Parsing recipes...done.
-Parsing of 992 .bb files complete (990 cached, 2 parsed). 1733 targets, 43 skipped, 0 masked, 0 errors.
+Parsing of 1043 .bb files complete (1041 cached, 2 parsed). 1828 targets, 48 skipped, 0 masked, 0 errors.
 NOTE: Resolving any missing task queue dependencies
 
 Build Configuration:
@@ -16,38 +16,38 @@ TUNE_FEATURES        = "m32 i586"
 TARGET_FPU           = ""
 meta                 
 meta-poky            = "warrior:79a850a10a4b88a6d20d607b322542f947874323"
-meta-debian          = "warrior:f7512bd96372e67fe4288cb5cb61cf52d282dd4e"
+meta-debian          = "warrior:2fa6d8525f0464064f8764856015185a0c4e5411"
 
 Initialising tasks...done.
-Sstate summary: Wanted 5 Found 0 Missed 5 Current 432 (0% match, 98% complete)
+Sstate summary: Wanted 22 Found 17 Missed 5 Current 406 (77% match, 98% complete)
 NOTE: Executing SetScene Tasks
 NOTE: Executing RunQueue Tasks
-NOTE: Running task 1650 of 1995 (/home/deby/poky/meta-debian/recipes-debian/tpm2-abrmd/tpm2-abrmd_debian.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 1624 of 1971 (/home/deby/poky/meta-debian/recipes-debian/tpm2-abrmd/tpm2-abrmd_debian.bb:do_prepare_recipe_sysroot)
 NOTE: recipe tpm2-abrmd-2.1.0-r0: task do_prepare_recipe_sysroot: Started
 NOTE: recipe tpm2-abrmd-2.1.0-r0: task do_prepare_recipe_sysroot: Succeeded
-NOTE: Running task 1987 of 1995 (/home/deby/poky/meta-debian/recipes-debian/tpm2-abrmd/tpm2-abrmd_debian.bb:do_configure)
+NOTE: Running task 1963 of 1971 (/home/deby/poky/meta-debian/recipes-debian/tpm2-abrmd/tpm2-abrmd_debian.bb:do_configure)
 NOTE: recipe tpm2-abrmd-2.1.0-r0: task do_configure: Started
 NOTE: recipe tpm2-abrmd-2.1.0-r0: task do_configure: Succeeded
-NOTE: Running task 1988 of 1995 (/home/deby/poky/meta-debian/recipes-debian/tpm2-abrmd/tpm2-abrmd_debian.bb:do_compile)
+NOTE: Running task 1964 of 1971 (/home/deby/poky/meta-debian/recipes-debian/tpm2-abrmd/tpm2-abrmd_debian.bb:do_compile)
 NOTE: recipe tpm2-abrmd-2.1.0-r0: task do_compile: Started
 NOTE: recipe tpm2-abrmd-2.1.0-r0: task do_compile: Succeeded
-NOTE: Running task 1989 of 1995 (/home/deby/poky/meta-debian/recipes-debian/tpm2-abrmd/tpm2-abrmd_debian.bb:do_install)
+NOTE: Running task 1965 of 1971 (/home/deby/poky/meta-debian/recipes-debian/tpm2-abrmd/tpm2-abrmd_debian.bb:do_install)
 NOTE: recipe tpm2-abrmd-2.1.0-r0: task do_install: Started
 NOTE: recipe tpm2-abrmd-2.1.0-r0: task do_install: Succeeded
-NOTE: Running task 1990 of 1995 (/home/deby/poky/meta-debian/recipes-debian/tpm2-abrmd/tpm2-abrmd_debian.bb:do_package)
-NOTE: Running task 1991 of 1995 (/home/deby/poky/meta-debian/recipes-debian/tpm2-abrmd/tpm2-abrmd_debian.bb:do_populate_sysroot)
-NOTE: recipe tpm2-abrmd-2.1.0-r0: task do_populate_sysroot: Started
+NOTE: Running task 1966 of 1971 (/home/deby/poky/meta-debian/recipes-debian/tpm2-abrmd/tpm2-abrmd_debian.bb:do_package)
+NOTE: Running task 1967 of 1971 (/home/deby/poky/meta-debian/recipes-debian/tpm2-abrmd/tpm2-abrmd_debian.bb:do_populate_sysroot)
 NOTE: recipe tpm2-abrmd-2.1.0-r0: task do_package: Started
+NOTE: recipe tpm2-abrmd-2.1.0-r0: task do_populate_sysroot: Started
 NOTE: recipe tpm2-abrmd-2.1.0-r0: task do_populate_sysroot: Succeeded
 NOTE: recipe tpm2-abrmd-2.1.0-r0: task do_package: Succeeded
-NOTE: Running task 1992 of 1995 (/home/deby/poky/meta-debian/recipes-debian/tpm2-abrmd/tpm2-abrmd_debian.bb:do_packagedata)
+NOTE: Running task 1968 of 1971 (/home/deby/poky/meta-debian/recipes-debian/tpm2-abrmd/tpm2-abrmd_debian.bb:do_packagedata)
 NOTE: recipe tpm2-abrmd-2.1.0-r0: task do_packagedata: Started
 NOTE: recipe tpm2-abrmd-2.1.0-r0: task do_packagedata: Succeeded
-NOTE: Running task 1993 of 1995 (/home/deby/poky/meta-debian/recipes-debian/tpm2-abrmd/tpm2-abrmd_debian.bb:do_package_write_deb)
-NOTE: Running task 1994 of 1995 (/home/deby/poky/meta-debian/recipes-debian/tpm2-abrmd/tpm2-abrmd_debian.bb:do_package_qa)
+NOTE: Running task 1969 of 1971 (/home/deby/poky/meta-debian/recipes-debian/tpm2-abrmd/tpm2-abrmd_debian.bb:do_package_write_deb)
+NOTE: Running task 1970 of 1971 (/home/deby/poky/meta-debian/recipes-debian/tpm2-abrmd/tpm2-abrmd_debian.bb:do_package_qa)
 NOTE: recipe tpm2-abrmd-2.1.0-r0: task do_package_write_deb: Started
 NOTE: recipe tpm2-abrmd-2.1.0-r0: task do_package_qa: Started
 NOTE: recipe tpm2-abrmd-2.1.0-r0: task do_package_qa: Succeeded
 NOTE: recipe tpm2-abrmd-2.1.0-r0: task do_package_write_deb: Succeeded
-NOTE: Running noexec task 1995 of 1995 (/home/deby/poky/meta-debian/recipes-debian/tpm2-abrmd/tpm2-abrmd_debian.bb:do_build)
-NOTE: Tasks Summary: Attempted 1995 tasks of which 1985 didn't need to be rerun and all succeeded.
+NOTE: Running noexec task 1971 of 1971 (/home/deby/poky/meta-debian/recipes-debian/tpm2-abrmd/tpm2-abrmd_debian.bb:do_build)
+NOTE: Tasks Summary: Attempted 1971 tasks of which 1961 didn't need to be rerun and all succeeded.

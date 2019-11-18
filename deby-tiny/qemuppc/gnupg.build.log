@@ -1,0 +1,56 @@
+Loading cache...done.
+Loaded 1825 entries from dependency cache.
+Parsing recipes...done.
+Parsing of 1043 .bb files complete (1041 cached, 2 parsed). 1828 targets, 237 skipped, 0 masked, 0 errors.
+NOTE: Resolving any missing task queue dependencies
+
+Build Configuration:
+BB_VERSION           = "1.42.0"
+BUILD_SYS            = "x86_64-linux"
+NATIVELSBSTRING      = "universal"
+TARGET_SYS           = "powerpc-deby-linux"
+MACHINE              = "qemuppc"
+DISTRO               = "deby-tiny"
+DISTRO_VERSION       = "10.0"
+TUNE_FEATURES        = "m32 fpu-hard ppc7400 altivec"
+TARGET_FPU           = ""
+meta                 
+meta-poky            = "warrior:79a850a10a4b88a6d20d607b322542f947874323"
+meta-debian          = "warrior:fda6a80e4cae9aa03f502551f35fe41beb7bb944"
+
+Initialising tasks...done.
+Sstate summary: Wanted 8 Found 0 Missed 8 Current 165 (0% match, 95% complete)
+NOTE: Executing SetScene Tasks
+NOTE: Executing RunQueue Tasks
+NOTE: Running task 847 of 917 (/home/deby/poky/meta-debian/recipes-debian/gnupg/gnupg_debian.bb:do_compile)
+NOTE: Running task 879 of 917 (/home/deby/poky/meta-debian/recipes-debian/pinentry/pinentry_debian.bb:do_packagedata)
+NOTE: Running task 909 of 917 (/home/deby/poky/meta-debian/recipes-debian/gnupg/gnupg_debian.bb:do_populate_lic)
+NOTE: recipe gnupg-2.2.12-r0: task do_populate_lic: Started
+NOTE: recipe gnupg-2.2.12-r0: task do_compile: Started
+NOTE: recipe pinentry-1.1.0-r0: task do_packagedata: Started
+NOTE: recipe pinentry-1.1.0-r0: task do_packagedata: Succeeded
+NOTE: Running task 910 of 917 (/home/deby/poky/meta-debian/recipes-debian/pinentry/pinentry_debian.bb:do_package_write_deb)
+NOTE: recipe gnupg-2.2.12-r0: task do_populate_lic: Succeeded
+NOTE: recipe pinentry-1.1.0-r0: task do_package_write_deb: Started
+NOTE: recipe pinentry-1.1.0-r0: task do_package_write_deb: Succeeded
+NOTE: recipe gnupg-2.2.12-r0: task do_compile: Succeeded
+NOTE: Running task 911 of 917 (/home/deby/poky/meta-debian/recipes-debian/gnupg/gnupg_debian.bb:do_install)
+NOTE: recipe gnupg-2.2.12-r0: task do_install: Started
+NOTE: recipe gnupg-2.2.12-r0: task do_install: Succeeded
+NOTE: Running task 912 of 917 (/home/deby/poky/meta-debian/recipes-debian/gnupg/gnupg_debian.bb:do_package)
+NOTE: Running task 913 of 917 (/home/deby/poky/meta-debian/recipes-debian/gnupg/gnupg_debian.bb:do_populate_sysroot)
+NOTE: recipe gnupg-2.2.12-r0: task do_package: Started
+NOTE: recipe gnupg-2.2.12-r0: task do_populate_sysroot: Started
+NOTE: recipe gnupg-2.2.12-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe gnupg-2.2.12-r0: task do_package: Succeeded
+NOTE: Running task 914 of 917 (/home/deby/poky/meta-debian/recipes-debian/gnupg/gnupg_debian.bb:do_packagedata)
+NOTE: recipe gnupg-2.2.12-r0: task do_packagedata: Started
+NOTE: recipe gnupg-2.2.12-r0: task do_packagedata: Succeeded
+NOTE: Running task 915 of 917 (/home/deby/poky/meta-debian/recipes-debian/gnupg/gnupg_debian.bb:do_package_write_deb)
+NOTE: Running task 916 of 917 (/home/deby/poky/meta-debian/recipes-debian/gnupg/gnupg_debian.bb:do_package_qa)
+NOTE: recipe gnupg-2.2.12-r0: task do_package_write_deb: Started
+NOTE: recipe gnupg-2.2.12-r0: task do_package_qa: Started
+NOTE: recipe gnupg-2.2.12-r0: task do_package_qa: Succeeded
+NOTE: recipe gnupg-2.2.12-r0: task do_package_write_deb: Succeeded
+NOTE: Running noexec task 917 of 917 (/home/deby/poky/meta-debian/recipes-debian/gnupg/gnupg_debian.bb:do_build)
+NOTE: Tasks Summary: Attempted 917 tasks of which 906 didn't need to be rerun and all succeeded.

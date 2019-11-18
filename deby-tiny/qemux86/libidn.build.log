@@ -1,0 +1,832 @@
+Loading cache...done.
+Loaded 1825 entries from dependency cache.
+Parsing recipes...done.
+Parsing of 1043 .bb files complete (1041 cached, 2 parsed). 1828 targets, 209 skipped, 0 masked, 0 errors.
+NOTE: Resolving any missing task queue dependencies
+
+Build Configuration:
+BB_VERSION           = "1.42.0"
+BUILD_SYS            = "x86_64-linux"
+NATIVELSBSTRING      = "universal"
+TARGET_SYS           = "i586-deby-linux"
+MACHINE              = "qemux86"
+DISTRO               = "deby-tiny"
+DISTRO_VERSION       = "10.0"
+TUNE_FEATURES        = "m32 i586"
+TARGET_FPU           = ""
+meta                 
+meta-poky            = "warrior:79a850a10a4b88a6d20d607b322542f947874323"
+meta-debian          = "warrior:2fa6d8525f0464064f8764856015185a0c4e5411"
+
+Initialising tasks...done.
+Sstate summary: Wanted 5 Found 0 Missed 5 Current 81 (0% match, 94% complete)
+NOTE: Executing SetScene Tasks
+NOTE: Executing RunQueue Tasks
+NOTE: Running task 593 of 616 (/home/deby/poky/meta-debian/recipes-debian/libidn/libidn_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe libidn-1.33-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe libidn-1.33-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 608 of 616 (/home/deby/poky/meta-debian/recipes-debian/libidn/libidn_debian.bb:do_configure)
+NOTE: recipe libidn-1.33-r0: task do_configure: Started
+NOTE: recipe libidn-1.33-r0: task do_configure: Succeeded
+NOTE: Running task 609 of 616 (/home/deby/poky/meta-debian/recipes-debian/libidn/libidn_debian.bb:do_compile)
+NOTE: recipe libidn-1.33-r0: task do_compile: Started
+ERROR: libidn-1.33-r0 do_compile: oe_runmake failed
+ERROR: libidn-1.33-r0 do_compile: Function failed: do_compile (log file is located at /home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/temp/log.do_compile.8054)
+ERROR: Logfile of failure stored in: /home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/temp/log.do_compile.8054
+Log data follows:
+| DEBUG: SITE files ['endian-little', 'bit-32', 'ix86-common', 'common-linux', 'common-glibc', 'i586-linux', 'common']
+| DEBUG: Executing shell function do_compile
+| NOTE: make -j 16
+| make  all-recursive
+| make[1]: Entering directory '/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/build'
+| Making all in gl
+| make[2]: Entering directory '/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/build/gl'
+| rm -f arg-nonnull.h-t arg-nonnull.h && \
+| sed -n -e '/GL_ARG_NONNULL/,$p' \
+|   < ../../libidn-1.33/build-aux/snippet/arg-nonnull.h \
+|   > arg-nonnull.h-t && \
+| mv arg-nonnull.h-t arg-nonnull.h
+| rm -f c++defs.h-t c++defs.h && \
+| sed -n -e '/_GL_CXXDEFS/,$p' \
+|   < ../../libidn-1.33/build-aux/snippet/c++defs.h \
+|   > c++defs.h-t && \
+| mv c++defs.h-t c++defs.h
+| rm -f warn-on-use.h-t warn-on-use.h && \
+| sed -n -e '/^.ifndef/,$p' \
+|   < ../../libidn-1.33/build-aux/snippet/warn-on-use.h \
+|   > warn-on-use.h-t && \
+| mv warn-on-use.h-t warn-on-use.h
+| /home/deby/build-tiny/tmp/hosttools/mkdir -p sys
+| rm -f sys/types.h-t sys/types.h && \
+| { echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+|   sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+|       -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+|       -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+|       -e 's|@''PRAGMA_COLUMNS''@||g' \
+|       -e 's|@''NEXT_SYS_TYPES_H''@|<sys/types.h>|g' \
+|       -e 's|@''WINDOWS_64_BIT_OFF_T''@|0|g' \
+|       < ../../libidn-1.33/gl/sys_types.in.h; \
+| } > sys/types.h-t && \
+| mv sys/types.h-t sys/types.h
+| rm -f getopt.h-t getopt.h && \
+| { echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+|   sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+|       -e 's|@''HAVE_GETOPT_H''@|1|g' \
+|       -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+|       -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+|       -e 's|@''PRAGMA_COLUMNS''@||g' \
+|       -e 's|@''NEXT_GETOPT_H''@|<getopt.h>|g' \
+|       -e '/definition of _GL_ARG_NONNULL/r arg-nonnull.h' \
+|       < ../../libidn-1.33/gl/getopt.in.h; \
+| } > getopt.h-t && \
+| mv -f getopt.h-t getopt.h
+| rm -f stdio.h-t stdio.h && \
+| { echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */' && \
+|   sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+|       -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+|       -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+|       -e 's|@''PRAGMA_COLUMNS''@||g' \
+|       -e 's|@''NEXT_STDIO_H''@|<stdio.h>|g' \
+|       -e 's/@''GNULIB_DPRINTF''@/0/g' \
+|       -e 's/@''GNULIB_FCLOSE''@/0/g' \
+|       -e 's/@''GNULIB_FDOPEN''@/IN_LIBIDN_GNULIB_TESTS/g' \
+|       -e 's/@''GNULIB_FFLUSH''@/0/g' \
+|       -e 's/@''GNULIB_FGETC''@/1/g' \
+|       -e 's/@''GNULIB_FGETS''@/1/g' \
+|       -e 's/@''GNULIB_FOPEN''@/0/g' \
+|       -e 's/@''GNULIB_FPRINTF''@/1/g' \
+|       -e 's/@''GNULIB_FPRINTF_POSIX''@/0/g' \
+|       -e 's/@''GNULIB_FPURGE''@/0/g' \
+|       -e 's/@''GNULIB_FPUTC''@/1/g' \
+|       -e 's/@''GNULIB_FPUTS''@/1/g' \
+|       -e 's/@''GNULIB_FREAD''@/1/g' \
+|       -e 's/@''GNULIB_FREOPEN''@/0/g' \
+|       -e 's/@''GNULIB_FSCANF''@/1/g' \
+|       -e 's/@''GNULIB_FSEEK''@/0/g' \
+|       -e 's/@''GNULIB_FSEEKO''@/0/g' \
+|       -e 's/@''GNULIB_FTELL''@/0/g' \
+|       -e 's/@''GNULIB_FTELLO''@/0/g' \
+|       -e 's/@''GNULIB_FWRITE''@/1/g' \
+|       -e 's/@''GNULIB_GETC''@/1/g' \
+|       -e 's/@''GNULIB_GETCHAR''@/1/g' \
+|       -e 's/@''GNULIB_GETDELIM''@/1/g' \
+|       -e 's/@''GNULIB_GETLINE''@/1/g' \
+|       -e 's/@''GNULIB_OBSTACK_PRINTF''@/0/g' \
+|       -e 's/@''GNULIB_OBSTACK_PRINTF_POSIX''@/0/g' \
+|       -e 's/@''GNULIB_PCLOSE''@/0/g' \
+|       -e 's/@''GNULIB_PERROR''@/0/g' \
+|       -e 's/@''GNULIB_POPEN''@/0/g' \
+|       -e 's/@''GNULIB_PRINTF''@/1/g' \
+|       -e 's/@''GNULIB_PRINTF_POSIX''@/0/g' \
+|       -e 's/@''GNULIB_PUTC''@/1/g' \
+|       -e 's/@''GNULIB_PUTCHAR''@/1/g' \
+|       -e 's/@''GNULIB_PUTS''@/1/g' \
+|       -e 's/@''GNULIB_REMOVE''@/0/g' \
+|       -e 's/@''GNULIB_RENAME''@/0/g' \
+|       -e 's/@''GNULIB_RENAMEAT''@/0/g' \
+|       -e 's/@''GNULIB_SCANF''@/1/g' \
+|       -e 's/@''GNULIB_SNPRINTF''@/0/g' \
+|       -e 's/@''GNULIB_SPRINTF_POSIX''@/0/g' \
+|       -e 's/@''GNULIB_STDIO_H_NONBLOCKING''@/0/g' \
+|       -e 's/@''GNULIB_STDIO_H_SIGPIPE''@/0/g' \
+|       -e 's/@''GNULIB_TMPFILE''@/0/g' \
+|       -e 's/@''GNULIB_VASPRINTF''@/0/g' \
+|       -e 's/@''GNULIB_VDPRINTF''@/0/g' \
+|       -e 's/@''GNULIB_VFPRINTF''@/1/g' \
+|       -e 's/@''GNULIB_VFPRINTF_POSIX''@/0/g' \
+|       -e 's/@''GNULIB_VFSCANF''@/0/g' \
+|       -e 's/@''GNULIB_VSCANF''@/0/g' \
+|       -e 's/@''GNULIB_VPRINTF''@/1/g' \
+|       -e 's/@''GNULIB_VPRINTF_POSIX''@/0/g' \
+|       -e 's/@''GNULIB_VSNPRINTF''@/0/g' \
+|       -e 's/@''GNULIB_VSPRINTF_POSIX''@/0/g' \
+|       < ../../libidn-1.33/gl/stdio.in.h | \
+|   sed -e 's|@''HAVE_DECL_FPURGE''@|1|g' \
+|       -e 's|@''HAVE_DECL_FSEEKO''@|1|g' \
+|       -e 's|@''HAVE_DECL_FTELLO''@|1|g' \
+|       -e 's|@''HAVE_DECL_GETDELIM''@|1|g' \
+|       -e 's|@''HAVE_DECL_GETLINE''@|1|g' \
+|       -e 's|@''HAVE_DECL_OBSTACK_PRINTF''@|1|g' \
+|       -e 's|@''HAVE_DECL_SNPRINTF''@|1|g' \
+|       -e 's|@''HAVE_DECL_VSNPRINTF''@|1|g' \
+|       -e 's|@''HAVE_DPRINTF''@|1|g' \
+|       -e 's|@''HAVE_FSEEKO''@|1|g' \
+|       -e 's|@''HAVE_FTELLO''@|1|g' \
+|       -e 's|@''HAVE_PCLOSE''@|1|g' \
+|       -e 's|@''HAVE_POPEN''@|1|g' \
+|       -e 's|@''HAVE_RENAMEAT''@|1|g' \
+|       -e 's|@''HAVE_VASPRINTF''@|1|g' \
+|       -e 's|@''HAVE_VDPRINTF''@|1|g' \
+|       -e 's|@''REPLACE_DPRINTF''@|0|g' \
+|       -e 's|@''REPLACE_FCLOSE''@|0|g' \
+|       -e 's|@''REPLACE_FDOPEN''@|0|g' \
+|       -e 's|@''REPLACE_FFLUSH''@|0|g' \
+|       -e 's|@''REPLACE_FOPEN''@|0|g' \
+|       -e 's|@''REPLACE_FPRINTF''@|0|g' \
+|       -e 's|@''REPLACE_FPURGE''@|0|g' \
+|       -e 's|@''REPLACE_FREOPEN''@|0|g' \
+|       -e 's|@''REPLACE_FSEEK''@|0|g' \
+|       -e 's|@''REPLACE_FSEEKO''@|0|g' \
+|       -e 's|@''REPLACE_FTELL''@|0|g' \
+|       -e 's|@''REPLACE_FTELLO''@|0|g' \
+|       -e 's|@''REPLACE_GETDELIM''@|0|g' \
+|       -e 's|@''REPLACE_GETLINE''@|0|g' \
+|       -e 's|@''REPLACE_OBSTACK_PRINTF''@|0|g' \
+|       -e 's|@''REPLACE_PERROR''@|0|g' \
+|       -e 's|@''REPLACE_POPEN''@|0|g' \
+|       -e 's|@''REPLACE_PRINTF''@|0|g' \
+|       -e 's|@''REPLACE_REMOVE''@|0|g' \
+|       -e 's|@''REPLACE_RENAME''@|0|g' \
+|       -e 's|@''REPLACE_RENAMEAT''@|0|g' \
+|       -e 's|@''REPLACE_SNPRINTF''@|0|g' \
+|       -e 's|@''REPLACE_SPRINTF''@|0|g' \
+|       -e 's|@''REPLACE_STDIO_READ_FUNCS''@|0|g' \
+|       -e 's|@''REPLACE_STDIO_WRITE_FUNCS''@|0|g' \
+|       -e 's|@''REPLACE_TMPFILE''@|0|g' \
+|       -e 's|@''REPLACE_VASPRINTF''@|0|g' \
+|       -e 's|@''REPLACE_VDPRINTF''@|0|g' \
+|       -e 's|@''REPLACE_VFPRINTF''@|0|g' \
+|       -e 's|@''REPLACE_VPRINTF''@|0|g' \
+|       -e 's|@''REPLACE_VSNPRINTF''@|0|g' \
+|       -e 's|@''REPLACE_VSPRINTF''@|0|g' \
+|       -e 's|@''ASM_SYMBOL_PREFIX''@||g' \
+|       -e '/definitions of _GL_FUNCDECL_RPL/r c++defs.h' \
+|       -e '/definition of _GL_ARG_NONNULL/r arg-nonnull.h' \
+|       -e '/definition of _GL_WARN_ON_USE/r warn-on-use.h'; \
+| } > stdio.h-t && \
+| mv stdio.h-t stdio.h
+| rm -f stdlib.h-t stdlib.h && \
+| { echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */' && \
+|   sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+|       -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+|       -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+|       -e 's|@''PRAGMA_COLUMNS''@||g' \
+|       -e 's|@''NEXT_STDLIB_H''@|<stdlib.h>|g' \
+|       -e 's/@''GNULIB__EXIT''@/0/g' \
+|       -e 's/@''GNULIB_ATOLL''@/0/g' \
+|       -e 's/@''GNULIB_CALLOC_POSIX''@/0/g' \
+|       -e 's/@''GNULIB_CANONICALIZE_FILE_NAME''@/0/g' \
+|       -e 's/@''GNULIB_GETLOADAVG''@/0/g' \
+|       -e 's/@''GNULIB_GETSUBOPT''@/0/g' \
+|       -e 's/@''GNULIB_GRANTPT''@/0/g' \
+|       -e 's/@''GNULIB_MALLOC_POSIX''@/(IN_LIBIDN_GNULIB_TESTS || IN_LIBIDN_GNULIB_TESTS)/g' \
+|       -e 's/@''GNULIB_MBTOWC''@/0/g' \
+|       -e 's/@''GNULIB_MKDTEMP''@/0/g' \
+|       -e 's/@''GNULIB_MKOSTEMP''@/0/g' \
+|       -e 's/@''GNULIB_MKOSTEMPS''@/0/g' \
+|       -e 's/@''GNULIB_MKSTEMP''@/0/g' \
+|       -e 's/@''GNULIB_MKSTEMPS''@/0/g' \
+|       -e 's/@''GNULIB_POSIX_OPENPT''@/0/g' \
+|       -e 's/@''GNULIB_PTSNAME''@/0/g' \
+|       -e 's/@''GNULIB_PTSNAME_R''@/0/g' \
+|       -e 's/@''GNULIB_PUTENV''@/(IN_LIBIDN_GNULIB_TESTS || IN_LIBIDN_GNULIB_TESTS)/g' \
+|       -e 's/@''GNULIB_QSORT_R''@/0/g' \
+|       -e 's/@''GNULIB_RANDOM''@/0/g' \
+|       -e 's/@''GNULIB_RANDOM_R''@/0/g' \
+|       -e 's/@''GNULIB_REALLOC_POSIX''@/1/g' \
+|       -e 's/@''GNULIB_REALPATH''@/0/g' \
+|       -e 's/@''GNULIB_RPMATCH''@/0/g' \
+|       -e 's/@''GNULIB_SECURE_GETENV''@/0/g' \
+|       -e 's/@''GNULIB_SETENV''@/(IN_LIBIDN_GNULIB_TESTS || IN_LIBIDN_GNULIB_TESTS)/g' \
+|       -e 's/@''GNULIB_STRTOD''@/0/g' \
+|       -e 's/@''GNULIB_STRTOLL''@/0/g' \
+|       -e 's/@''GNULIB_STRTOULL''@/0/g' \
+|       -e 's/@''GNULIB_SYSTEM_POSIX''@/0/g' \
+|       -e 's/@''GNULIB_UNLOCKPT''@/0/g' \
+|       -e 's/@''GNULIB_UNSETENV''@/(IN_LIBIDN_GNULIB_TESTS || IN_LIBIDN_GNULIB_TESTS)/g' \
+|       -e 's/@''GNULIB_WCTOMB''@/0/g' \
+|       < ../../libidn-1.33/gl/stdlib.in.h | \
+|   sed -e 's|@''HAVE__EXIT''@|1|g' \
+|       -e 's|@''HAVE_ATOLL''@|1|g' \
+|       -e 's|@''HAVE_CANONICALIZE_FILE_NAME''@|1|g' \
+|       -e 's|@''HAVE_DECL_GETLOADAVG''@|1|g' \
+|       -e 's|@''HAVE_GETSUBOPT''@|1|g' \
+|       -e 's|@''HAVE_GRANTPT''@|1|g' \
+|       -e 's|@''HAVE_MKDTEMP''@|1|g' \
+|       -e 's|@''HAVE_MKOSTEMP''@|1|g' \
+|       -e 's|@''HAVE_MKOSTEMPS''@|1|g' \
+|       -e 's|@''HAVE_MKSTEMP''@|1|g' \
+|       -e 's|@''HAVE_MKSTEMPS''@|1|g' \
+|       -e 's|@''HAVE_POSIX_OPENPT''@|1|g' \
+|       -e 's|@''HAVE_PTSNAME''@|1|g' \
+|       -e 's|@''HAVE_PTSNAME_R''@|1|g' \
+|       -e 's|@''HAVE_RANDOM''@|1|g' \
+|       -e 's|@''HAVE_RANDOM_H''@|1|g' \
+|       -e 's|@''HAVE_RANDOM_R''@|1|g' \
+|       -e 's|@''HAVE_REALPATH''@|1|g' \
+|       -e 's|@''HAVE_RPMATCH''@|1|g' \
+|       -e 's|@''HAVE_SECURE_GETENV''@|1|g' \
+|       -e 's|@''HAVE_DECL_SETENV''@|1|g' \
+|       -e 's|@''HAVE_STRTOD''@|1|g' \
+|       -e 's|@''HAVE_STRTOLL''@|1|g' \
+|       -e 's|@''HAVE_STRTOULL''@|1|g' \
+|       -e 's|@''HAVE_STRUCT_RANDOM_DATA''@|1|g' \
+|       -e 's|@''HAVE_SYS_LOADAVG_H''@|0|g' \
+|       -e 's|@''HAVE_UNLOCKPT''@|1|g' \
+|       -e 's|@''HAVE_DECL_UNSETENV''@|1|g' \
+|       -e 's|@''REPLACE_CALLOC''@|0|g' \
+|       -e 's|@''REPLACE_CANONICALIZE_FILE_NAME''@|0|g' \
+|       -e 's|@''REPLACE_MALLOC''@|0|g' \
+|       -e 's|@''REPLACE_MBTOWC''@|0|g' \
+|       -e 's|@''REPLACE_MKSTEMP''@|0|g' \
+|       -e 's|@''REPLACE_PTSNAME''@|0|g' \
+|       -e 's|@''REPLACE_PTSNAME_R''@|0|g' \
+|       -e 's|@''REPLACE_PUTENV''@|0|g' \
+|       -e 's|@''REPLACE_QSORT_R''@|0|g' \
+|       -e 's|@''REPLACE_RANDOM_R''@|0|g' \
+|       -e 's|@''REPLACE_REALLOC''@|0|g' \
+|       -e 's|@''REPLACE_REALPATH''@|0|g' \
+|       -e 's|@''REPLACE_SETENV''@|0|g' \
+|       -e 's|@''REPLACE_STRTOD''@|0|g' \
+|       -e 's|@''REPLACE_UNSETENV''@|0|g' \
+|       -e 's|@''REPLACE_WCTOMB''@|0|g' \
+|       -e '/definitions of _GL_FUNCDECL_RPL/r c++defs.h' \
+|       -e '/definition of _Noreturn/r ../../libidn-1.33/build-aux/snippet/_Noreturn.h' \
+|       -e '/definition of _GL_ARG_NONNULL/r arg-nonnull.h' \
+|       -e '/definition of _GL_WARN_ON_USE/r warn-on-use.h'; \
+| } > stdlib.h-t && \
+| mv stdlib.h-t stdlib.h
+| rm -f string.h-t string.h && \
+| { echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */' && \
+|   sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+|       -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+|       -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+|       -e 's|@''PRAGMA_COLUMNS''@||g' \
+|       -e 's|@''NEXT_STRING_H''@|<string.h>|g' \
+|       -e 's/@''GNULIB_FFSL''@/0/g' \
+|       -e 's/@''GNULIB_FFSLL''@/0/g' \
+|       -e 's/@''GNULIB_MBSLEN''@/0/g' \
+|       -e 's/@''GNULIB_MBSNLEN''@/0/g' \
+|       -e 's/@''GNULIB_MBSCHR''@/0/g' \
+|       -e 's/@''GNULIB_MBSRCHR''@/0/g' \
+|       -e 's/@''GNULIB_MBSSTR''@/0/g' \
+|       -e 's/@''GNULIB_MBSCASECMP''@/0/g' \
+|       -e 's/@''GNULIB_MBSNCASECMP''@/0/g' \
+|       -e 's/@''GNULIB_MBSPCASECMP''@/0/g' \
+|       -e 's/@''GNULIB_MBSCASESTR''@/0/g' \
+|       -e 's/@''GNULIB_MBSCSPN''@/0/g' \
+|       -e 's/@''GNULIB_MBSPBRK''@/0/g' \
+|       -e 's/@''GNULIB_MBSSPN''@/0/g' \
+|       -e 's/@''GNULIB_MBSSEP''@/0/g' \
+|       -e 's/@''GNULIB_MBSTOK_R''@/0/g' \
+|       -e 's/@''GNULIB_MEMCHR''@/0/g' \
+|       -e 's/@''GNULIB_MEMMEM''@/0/g' \
+|       -e 's/@''GNULIB_MEMPCPY''@/0/g' \
+|       -e 's/@''GNULIB_MEMRCHR''@/0/g' \
+|       -e 's/@''GNULIB_RAWMEMCHR''@/0/g' \
+|       -e 's/@''GNULIB_STPCPY''@/0/g' \
+|       -e 's/@''GNULIB_STPNCPY''@/0/g' \
+|       -e 's/@''GNULIB_STRCHRNUL''@/0/g' \
+|       -e 's/@''GNULIB_STRDUP''@/0/g' \
+|       -e 's/@''GNULIB_STRNCAT''@/0/g' \
+|       -e 's/@''GNULIB_STRNDUP''@/0/g' \
+|       -e 's/@''GNULIB_STRNLEN''@/0/g' \
+|       -e 's/@''GNULIB_STRPBRK''@/0/g' \
+|       -e 's/@''GNULIB_STRSEP''@/0/g' \
+|       -e 's/@''GNULIB_STRSTR''@/0/g' \
+|       -e 's/@''GNULIB_STRCASESTR''@/0/g' \
+|       -e 's/@''GNULIB_STRTOK_R''@/0/g' \
+|       -e 's/@''GNULIB_STRERROR''@/1/g' \
+|       -e 's/@''GNULIB_STRERROR_R''@/0/g' \
+|       -e 's/@''GNULIB_STRSIGNAL''@/0/g' \
+|       -e 's/@''GNULIB_STRVERSCMP''@/1/g' \
+|       < ../../libidn-1.33/gl/string.in.h | \
+|   sed -e 's|@''HAVE_FFSL''@|1|g' \
+|       -e 's|@''HAVE_FFSLL''@|1|g' \
+|       -e 's|@''HAVE_MBSLEN''@|0|g' \
+|       -e 's|@''HAVE_MEMCHR''@|1|g' \
+|       -e 's|@''HAVE_DECL_MEMMEM''@|1|g' \
+|       -e 's|@''HAVE_MEMPCPY''@|1|g' \
+|       -e 's|@''HAVE_DECL_MEMRCHR''@|1|g' \
+|       -e 's|@''HAVE_RAWMEMCHR''@|1|g' \
+|       -e 's|@''HAVE_STPCPY''@|1|g' \
+|       -e 's|@''HAVE_STPNCPY''@|1|g' \
+|       -e 's|@''HAVE_STRCHRNUL''@|1|g' \
+|       -e 's|@''HAVE_DECL_STRDUP''@|1|g' \
+|       -e 's|@''HAVE_DECL_STRNDUP''@|1|g' \
+|       -e 's|@''HAVE_DECL_STRNLEN''@|1|g' \
+|       -e 's|@''HAVE_STRPBRK''@|1|g' \
+|       -e 's|@''HAVE_STRSEP''@|1|g' \
+|       -e 's|@''HAVE_STRCASESTR''@|1|g' \
+|       -e 's|@''HAVE_DECL_STRTOK_R''@|1|g' \
+|       -e 's|@''HAVE_DECL_STRERROR_R''@|1|g' \
+|       -e 's|@''HAVE_DECL_STRSIGNAL''@|1|g' \
+|       -e 's|@''HAVE_STRVERSCMP''@|1|g' \
+|       -e 's|@''REPLACE_STPNCPY''@|0|g' \
+|       -e 's|@''REPLACE_MEMCHR''@|0|g' \
+|       -e 's|@''REPLACE_MEMMEM''@|0|g' \
+|       -e 's|@''REPLACE_STRCASESTR''@|0|g' \
+|       -e 's|@''REPLACE_STRCHRNUL''@|0|g' \
+|       -e 's|@''REPLACE_STRDUP''@|0|g' \
+|       -e 's|@''REPLACE_STRSTR''@|0|g' \
+|       -e 's|@''REPLACE_STRERROR''@|0|g' \
+|       -e 's|@''REPLACE_STRERROR_R''@|0|g' \
+|       -e 's|@''REPLACE_STRNCAT''@|0|g' \
+|       -e 's|@''REPLACE_STRNDUP''@|0|g' \
+|       -e 's|@''REPLACE_STRNLEN''@|0|g' \
+|       -e 's|@''REPLACE_STRSIGNAL''@|0|g' \
+|       -e 's|@''REPLACE_STRTOK_R''@|0|g' \
+|       -e 's|@''UNDEFINE_STRTOK_R''@|0|g' \
+|       -e '/definitions of _GL_FUNCDECL_RPL/r c++defs.h' \
+|       -e '/definition of _GL_ARG_NONNULL/r arg-nonnull.h' \
+|       -e '/definition of _GL_WARN_ON_USE/r warn-on-use.h'; \
+|       < ../../libidn-1.33/gl/string.in.h; \
+| } > string.h-t && \
+| mv string.h-t string.h
+| rm -f unistd.h-t unistd.h && \
+| { echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+|   sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+|       -e 's|@''HAVE_UNISTD_H''@|1|g' \
+|       -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+|       -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+|       -e 's|@''PRAGMA_COLUMNS''@||g' \
+|       -e 's|@''NEXT_UNISTD_H''@|<unistd.h>|g' \
+|       -e 's|@''WINDOWS_64_BIT_OFF_T''@|0|g' \
+|       -e 's/@''GNULIB_CHDIR''@/0/g' \
+|       -e 's/@''GNULIB_CHOWN''@/0/g' \
+|       -e 's/@''GNULIB_CLOSE''@/IN_LIBIDN_GNULIB_TESTS/g' \
+|       -e 's/@''GNULIB_DUP''@/0/g' \
+|       -e 's/@''GNULIB_DUP2''@/IN_LIBIDN_GNULIB_TESTS/g' \
+|       -e 's/@''GNULIB_DUP3''@/0/g' \
+|       -e 's/@''GNULIB_ENVIRON''@/(IN_LIBIDN_GNULIB_TESTS || IN_LIBIDN_GNULIB_TESTS)/g' \
+|       -e 's/@''GNULIB_EUIDACCESS''@/0/g' \
+|       -e 's/@''GNULIB_FACCESSAT''@/0/g' \
+|       -e 's/@''GNULIB_FCHDIR''@/0/g' \
+|       -e 's/@''GNULIB_FCHOWNAT''@/0/g' \
+|       -e 's/@''GNULIB_FDATASYNC''@/0/g' \
+|       -e 's/@''GNULIB_FSYNC''@/0/g' \
+|       -e 's/@''GNULIB_FTRUNCATE''@/0/g' \
+|       -e 's/@''GNULIB_GETCWD''@/IN_LIBIDN_GNULIB_TESTS/g' \
+|       -e 's/@''GNULIB_GETDOMAINNAME''@/0/g' \
+|       -e 's/@''GNULIB_GETDTABLESIZE''@/IN_LIBIDN_GNULIB_TESTS/g' \
+|       -e 's/@''GNULIB_GETGROUPS''@/0/g' \
+|       -e 's/@''GNULIB_GETHOSTNAME''@/0/g' \
+|       -e 's/@''GNULIB_GETLOGIN''@/0/g' \
+|       -e 's/@''GNULIB_GETLOGIN_R''@/0/g' \
+|       -e 's/@''GNULIB_GETPAGESIZE''@/0/g' \
+|       -e 's/@''GNULIB_GETUSERSHELL''@/0/g' \
+|       -e 's/@''GNULIB_GROUP_MEMBER''@/0/g' \
+|       -e 's/@''GNULIB_ISATTY''@/0/g' \
+|       -e 's/@''GNULIB_LCHOWN''@/0/g' \
+|       -e 's/@''GNULIB_LINK''@/0/g' \
+|       -e 's/@''GNULIB_LINKAT''@/0/g' \
+|       -e 's/@''GNULIB_LSEEK''@/0/g' \
+|       -e 's/@''GNULIB_PIPE''@/0/g' \
+|       -e 's/@''GNULIB_PIPE2''@/0/g' \
+|       -e 's/@''GNULIB_PREAD''@/0/g' \
+|       -e 's/@''GNULIB_PWRITE''@/0/g' \
+|       -e 's/@''GNULIB_READ''@/0/g' \
+|       -e 's/@''GNULIB_READLINK''@/0/g' \
+|       -e 's/@''GNULIB_READLINKAT''@/0/g' \
+|       -e 's/@''GNULIB_RMDIR''@/0/g' \
+|       -e 's/@''GNULIB_SETHOSTNAME''@/0/g' \
+|       -e 's/@''GNULIB_SLEEP''@/0/g' \
+|       -e 's/@''GNULIB_SYMLINK''@/IN_LIBIDN_GNULIB_TESTS/g' \
+|       -e 's/@''GNULIB_SYMLINKAT''@/0/g' \
+|       -e 's/@''GNULIB_TTYNAME_R''@/0/g' \
+|       -e 's/@''GNULIB_UNISTD_H_GETOPT''@/01/g' \
+|       -e 's/@''GNULIB_UNISTD_H_NONBLOCKING''@/0/g' \
+|       -e 's/@''GNULIB_UNISTD_H_SIGPIPE''@/0/g' \
+|       -e 's/@''GNULIB_UNLINK''@/0/g' \
+|       -e 's/@''GNULIB_UNLINKAT''@/0/g' \
+|       -e 's/@''GNULIB_USLEEP''@/0/g' \
+|       -e 's/@''GNULIB_WRITE''@/0/g' \
+|       < ../../libidn-1.33/gl/unistd.in.h | \
+|   sed -e 's|@''HAVE_CHOWN''@|1|g' \
+|       -e 's|@''HAVE_DUP2''@|1|g' \
+|       -e 's|@''HAVE_DUP3''@|1|g' \
+|       -e 's|@''HAVE_EUIDACCESS''@|1|g' \
+|       -e 's|@''HAVE_FACCESSAT''@|1|g' \
+|       -e 's|@''HAVE_FCHDIR''@|1|g' \
+|       -e 's|@''HAVE_FCHOWNAT''@|1|g' \
+|       -e 's|@''HAVE_FDATASYNC''@|1|g' \
+|       -e 's|@''HAVE_FSYNC''@|1|g' \
+|       -e 's|@''HAVE_FTRUNCATE''@|1|g' \
+|       -e 's|@''HAVE_GETDTABLESIZE''@|1|g' \
+|       -e 's|@''HAVE_GETGROUPS''@|1|g' \
+|       -e 's|@''HAVE_GETHOSTNAME''@|1|g' \
+|       -e 's|@''HAVE_GETLOGIN''@|1|g' \
+|       -e 's|@''HAVE_GETPAGESIZE''@|1|g' \
+|       -e 's|@''HAVE_GROUP_MEMBER''@|1|g' \
+|       -e 's|@''HAVE_LCHOWN''@|1|g' \
+|       -e 's|@''HAVE_LINK''@|1|g' \
+|       -e 's|@''HAVE_LINKAT''@|1|g' \
+|       -e 's|@''HAVE_PIPE''@|1|g' \
+|       -e 's|@''HAVE_PIPE2''@|1|g' \
+|       -e 's|@''HAVE_PREAD''@|1|g' \
+|       -e 's|@''HAVE_PWRITE''@|1|g' \
+|       -e 's|@''HAVE_READLINK''@|1|g' \
+|       -e 's|@''HAVE_READLINKAT''@|1|g' \
+|       -e 's|@''HAVE_SETHOSTNAME''@|1|g' \
+|       -e 's|@''HAVE_SLEEP''@|1|g' \
+|       -e 's|@''HAVE_SYMLINK''@|1|g' \
+|       -e 's|@''HAVE_SYMLINKAT''@|1|g' \
+|       -e 's|@''HAVE_UNLINKAT''@|1|g' \
+|       -e 's|@''HAVE_USLEEP''@|1|g' \
+|       -e 's|@''HAVE_DECL_ENVIRON''@|1|g' \
+|       -e 's|@''HAVE_DECL_FCHDIR''@|1|g' \
+|       -e 's|@''HAVE_DECL_FDATASYNC''@|1|g' \
+|       -e 's|@''HAVE_DECL_GETDOMAINNAME''@|1|g' \
+|       -e 's|@''HAVE_DECL_GETLOGIN_R''@|1|g' \
+|       -e 's|@''HAVE_DECL_GETPAGESIZE''@|1|g' \
+|       -e 's|@''HAVE_DECL_GETUSERSHELL''@|1|g' \
+|       -e 's|@''HAVE_DECL_SETHOSTNAME''@|1|g' \
+|       -e 's|@''HAVE_DECL_TTYNAME_R''@|1|g' \
+|       -e 's|@''HAVE_OS_H''@|0|g' \
+|       -e 's|@''HAVE_SYS_PARAM_H''@|0|g' \
+|   | \
+|   sed -e 's|@''REPLACE_CHOWN''@|0|g' \
+|       -e 's|@''REPLACE_CLOSE''@|0|g' \
+|       -e 's|@''REPLACE_DUP''@|0|g' \
+|       -e 's|@''REPLACE_DUP2''@|0|g' \
+|       -e 's|@''REPLACE_FCHOWNAT''@|0|g' \
+|       -e 's|@''REPLACE_FTRUNCATE''@|0|g' \
+|       -e 's|@''REPLACE_GETCWD''@|0|g' \
+|       -e 's|@''REPLACE_GETDOMAINNAME''@|0|g' \
+|       -e 's|@''REPLACE_GETDTABLESIZE''@|0|g' \
+|       -e 's|@''REPLACE_GETLOGIN_R''@|0|g' \
+|       -e 's|@''REPLACE_GETGROUPS''@|0|g' \
+|       -e 's|@''REPLACE_GETPAGESIZE''@|0|g' \
+|       -e 's|@''REPLACE_ISATTY''@|0|g' \
+|       -e 's|@''REPLACE_LCHOWN''@|0|g' \
+|       -e 's|@''REPLACE_LINK''@|0|g' \
+|       -e 's|@''REPLACE_LINKAT''@|0|g' \
+|       -e 's|@''REPLACE_LSEEK''@|0|g' \
+|       -e 's|@''REPLACE_PREAD''@|0|g' \
+|       -e 's|@''REPLACE_PWRITE''@|0|g' \
+|       -e 's|@''REPLACE_READ''@|0|g' \
+|       -e 's|@''REPLACE_READLINK''@|0|g' \
+|       -e 's|@''REPLACE_READLINKAT''@|0|g' \
+|       -e 's|@''REPLACE_RMDIR''@|0|g' \
+|       -e 's|@''REPLACE_SLEEP''@|0|g' \
+|       -e 's|@''REPLACE_SYMLINK''@|0|g' \
+|       -e 's|@''REPLACE_SYMLINKAT''@|0|g' \
+|       -e 's|@''REPLACE_TTYNAME_R''@|0|g' \
+|       -e 's|@''REPLACE_UNLINK''@|0|g' \
+|       -e 's|@''REPLACE_UNLINKAT''@|0|g' \
+|       -e 's|@''REPLACE_USLEEP''@|0|g' \
+|       -e 's|@''REPLACE_WRITE''@|0|g' \
+|       -e 's|@''UNISTD_H_HAVE_WINSOCK2_H''@|0|g' \
+|       -e 's|@''UNISTD_H_HAVE_WINSOCK2_H_AND_USE_SOCKETS''@|0|g' \
+|       -e '/definitions of _GL_FUNCDECL_RPL/r c++defs.h' \
+|       -e '/definition of _GL_ARG_NONNULL/r arg-nonnull.h' \
+|       -e '/definition of _GL_WARN_ON_USE/r warn-on-use.h'; \
+| } > unistd.h-t && \
+| mv unistd.h-t unistd.h
+| make  all-recursive
+| make[3]: Entering directory '/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/build/gl'
+| make[4]: Entering directory '/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/build/gl'
+| ../i586-deby-linux-libtool  --tag=CC   --mode=compile i586-deby-linux-gcc  -m32 -march=i586 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libidn-1.33/gl -I..     -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot=                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot-native=  -c -o progname.lo ../../libidn-1.33/gl/progname.c
+| ../i586-deby-linux-libtool  --tag=CC   --mode=compile i586-deby-linux-gcc  -m32 -march=i586 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libidn-1.33/gl -I..     -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot=                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot-native=  -c -o unistd.lo ../../libidn-1.33/gl/unistd.c
+| ../i586-deby-linux-libtool  --tag=CC   --mode=compile i586-deby-linux-gcc  -m32 -march=i586 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libidn-1.33/gl -I..     -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot=                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot-native=  -c -o version-etc.lo ../../libidn-1.33/gl/version-etc.c
+| ../i586-deby-linux-libtool  --tag=CC   --mode=compile i586-deby-linux-gcc  -m32 -march=i586 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libidn-1.33/gl -I..     -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot=                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot-native=  -c -o getopt.lo ../../libidn-1.33/gl/getopt.c
+| ../i586-deby-linux-libtool  --tag=CC   --mode=compile i586-deby-linux-gcc  -m32 -march=i586 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libidn-1.33/gl -I..     -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot=                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot-native=  -c -o getopt1.lo ../../libidn-1.33/gl/getopt1.c
+| i586-deby-linux-libtool: compile:  i586-deby-linux-gcc -m32 -march=i586 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libidn-1.33/gl -I.. -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot= -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot-native= -c ../../libidn-1.33/gl/progname.c  -fPIC -DPIC -o .libs/progname.o
+| i586-deby-linux-libtool: compile:  i586-deby-linux-gcc -m32 -march=i586 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libidn-1.33/gl -I.. -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot= -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot-native= -c ../../libidn-1.33/gl/unistd.c  -fPIC -DPIC -o .libs/unistd.o
+| i586-deby-linux-libtool: compile:  i586-deby-linux-gcc -m32 -march=i586 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libidn-1.33/gl -I.. -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot= -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot-native= -c ../../libidn-1.33/gl/version-etc.c  -fPIC -DPIC -o .libs/version-etc.o
+| i586-deby-linux-libtool: compile:  i586-deby-linux-gcc -m32 -march=i586 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libidn-1.33/gl -I.. -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot= -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot-native= -c ../../libidn-1.33/gl/getopt1.c  -fPIC -DPIC -o .libs/getopt1.o
+| i586-deby-linux-libtool: compile:  i586-deby-linux-gcc -m32 -march=i586 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libidn-1.33/gl -I.. -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot= -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot-native= -c ../../libidn-1.33/gl/getopt.c  -fPIC -DPIC -o .libs/getopt.o
+| ../i586-deby-linux-libtool  --tag=CC   --mode=link i586-deby-linux-gcc  -m32 -march=i586 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot  -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot=                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot-native=   -no-undefined  -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed -fstack-protector-strong -Wl,-z,relro,-z,now -o libgnu.la  progname.lo unistd.lo version-etc.lo getopt.lo getopt1.lo
+| i586-deby-linux-libtool: link: i586-deby-linux-gcc-ar cru .libs/libgnu.a .libs/progname.o .libs/unistd.o .libs/version-etc.o .libs/getopt.o .libs/getopt1.o
+| /home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot-native/usr/bin/i586-deby-linux/../../libexec/i586-deby-linux/gcc/i586-deby-linux/8.3.0/ar: `u' modifier ignored since `D' is the default (see `U')
+| i586-deby-linux-libtool: link: i586-deby-linux-gcc-ranlib .libs/libgnu.a
+| i586-deby-linux-libtool: link: ( cd ".libs" && rm -f "libgnu.la" && ln -s "../libgnu.la" "libgnu.la" )
+| make[4]: Leaving directory '/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/build/gl'
+| make[3]: Leaving directory '/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/build/gl'
+| make[2]: Leaving directory '/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/build/gl'
+| Making all in lib/gl
+| make[2]: Entering directory '/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/build/lib/gl'
+| rm -f c++defs.h-t c++defs.h && \
+| sed -n -e '/_GL_CXXDEFS/,$p' \
+|   < ../../../libidn-1.33/build-aux/snippet/c++defs.h \
+|   > c++defs.h-t && \
+| mv c++defs.h-t c++defs.h
+| rm -f arg-nonnull.h-t arg-nonnull.h && \
+| sed -n -e '/GL_ARG_NONNULL/,$p' \
+|   < ../../../libidn-1.33/build-aux/snippet/arg-nonnull.h \
+|   > arg-nonnull.h-t && \
+| mv arg-nonnull.h-t arg-nonnull.h
+| rm -f warn-on-use.h-t warn-on-use.h && \
+| sed -n -e '/^.ifndef/,$p' \
+|   < ../../../libidn-1.33/build-aux/snippet/warn-on-use.h \
+|   > warn-on-use.h-t && \
+| mv warn-on-use.h-t warn-on-use.h
+| rm -f unused-parameter.h-t unused-parameter.h && \
+| sed -n -e '/GL_UNUSED_PARAMETER/,$p' \
+|   < ../../../libidn-1.33/build-aux/snippet/unused-parameter.h \
+|   > unused-parameter.h-t && \
+| mv unused-parameter.h-t unused-parameter.h
+| /home/deby/build-tiny/tmp/hosttools/mkdir -p sys
+| rm -f unistr.h-t unistr.h && \
+| { echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+|   cat ../../../libidn-1.33/lib/gl/unistr.in.h; \
+| } > unistr.h-t && \
+| mv -f unistr.h-t unistr.h
+| rm -f unitypes.h-t unitypes.h && \
+| { echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+|   cat ../../../libidn-1.33/lib/gl/unitypes.in.h; \
+| } > unitypes.h-t && \
+| mv -f unitypes.h-t unitypes.h
+| rm -f sys/types.h-t sys/types.h && \
+| { echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+|   sed -e 's|@''GUARD_PREFIX''@|GL_LGL|g' \
+|       -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+|       -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+|       -e 's|@''PRAGMA_COLUMNS''@||g' \
+|       -e 's|@''NEXT_SYS_TYPES_H''@|<sys/types.h>|g' \
+|       -e 's|@''WINDOWS_64_BIT_OFF_T''@|0|g' \
+|       < ../../../libidn-1.33/lib/gl/sys_types.in.h; \
+| } > sys/types.h-t && \
+| mv sys/types.h-t sys/types.h
+| rm -f iconv.h-t iconv.h && \
+| { echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */' && \
+|   sed -e 's|@''GUARD_PREFIX''@|GL_LGL|g' \
+|       -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+|       -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+|       -e 's|@''PRAGMA_COLUMNS''@||g' \
+|       -e 's|@''NEXT_ICONV_H''@|<iconv.h>|g' \
+|       -e 's/@''GNULIB_ICONV''@/1/g' \
+|       -e 's|@''ICONV_CONST''@||g' \
+|       -e 's|@''REPLACE_ICONV''@|0|g' \
+|       -e 's|@''REPLACE_ICONV_OPEN''@|0|g' \
+|       -e 's|@''REPLACE_ICONV_UTF''@|0|g' \
+|       -e '/definitions of _GL_FUNCDECL_RPL/r c++defs.h' \
+|       -e '/definition of _GL_ARG_NONNULL/r arg-nonnull.h' \
+|       -e '/definition of _GL_WARN_ON_USE/r warn-on-use.h' \
+|       < ../../../libidn-1.33/lib/gl/iconv.in.h; \
+| } > iconv.h-t && \
+| mv iconv.h-t iconv.h
+| rm -f string.h-t string.h && \
+| { echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */' && \
+|   sed -e 's|@''GUARD_PREFIX''@|GL_LGL|g' \
+|       -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+|       -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+|       -e 's|@''PRAGMA_COLUMNS''@||g' \
+|       -e 's|@''NEXT_STRING_H''@|<string.h>|g' \
+|       -e 's/@''GNULIB_FFSL''@/0/g' \
+|       -e 's/@''GNULIB_FFSLL''@/0/g' \
+|       -e 's/@''GNULIB_MBSLEN''@/0/g' \
+|       -e 's/@''GNULIB_MBSNLEN''@/0/g' \
+|       -e 's/@''GNULIB_MBSCHR''@/0/g' \
+|       -e 's/@''GNULIB_MBSRCHR''@/0/g' \
+|       -e 's/@''GNULIB_MBSSTR''@/0/g' \
+|       -e 's/@''GNULIB_MBSCASECMP''@/0/g' \
+|       -e 's/@''GNULIB_MBSNCASECMP''@/0/g' \
+|       -e 's/@''GNULIB_MBSPCASECMP''@/0/g' \
+|       -e 's/@''GNULIB_MBSCASESTR''@/0/g' \
+|       -e 's/@''GNULIB_MBSCSPN''@/0/g' \
+|       -e 's/@''GNULIB_MBSPBRK''@/0/g' \
+|       -e 's/@''GNULIB_MBSSPN''@/0/g' \
+|       -e 's/@''GNULIB_MBSSEP''@/0/g' \
+|       -e 's/@''GNULIB_MBSTOK_R''@/0/g' \
+|       -e 's/@''GNULIB_MEMCHR''@/0/g' \
+|       -e 's/@''GNULIB_MEMMEM''@/0/g' \
+|       -e 's/@''GNULIB_MEMPCPY''@/0/g' \
+|       -e 's/@''GNULIB_MEMRCHR''@/0/g' \
+|       -e 's/@''GNULIB_RAWMEMCHR''@/0/g' \
+|       -e 's/@''GNULIB_STPCPY''@/0/g' \
+|       -e 's/@''GNULIB_STPNCPY''@/0/g' \
+|       -e 's/@''GNULIB_STRCHRNUL''@/0/g' \
+|       -e 's/@''GNULIB_STRDUP''@/0/g' \
+|       -e 's/@''GNULIB_STRNCAT''@/0/g' \
+|       -e 's/@''GNULIB_STRNDUP''@/0/g' \
+|       -e 's/@''GNULIB_STRNLEN''@/0/g' \
+|       -e 's/@''GNULIB_STRPBRK''@/0/g' \
+|       -e 's/@''GNULIB_STRSEP''@/0/g' \
+|       -e 's/@''GNULIB_STRSTR''@/0/g' \
+|       -e 's/@''GNULIB_STRCASESTR''@/0/g' \
+|       -e 's/@''GNULIB_STRTOK_R''@/0/g' \
+|       -e 's/@''GNULIB_STRERROR''@/1/g' \
+|       -e 's/@''GNULIB_STRERROR_R''@/0/g' \
+|       -e 's/@''GNULIB_STRSIGNAL''@/0/g' \
+|       -e 's/@''GNULIB_STRVERSCMP''@/1/g' \
+|       < ../../../libidn-1.33/lib/gl/string.in.h | \
+|   sed -e 's|@''HAVE_FFSL''@|1|g' \
+|       -e 's|@''HAVE_FFSLL''@|1|g' \
+|       -e 's|@''HAVE_MBSLEN''@|0|g' \
+|       -e 's|@''HAVE_MEMCHR''@|1|g' \
+|       -e 's|@''HAVE_DECL_MEMMEM''@|1|g' \
+|       -e 's|@''HAVE_MEMPCPY''@|1|g' \
+|       -e 's|@''HAVE_DECL_MEMRCHR''@|1|g' \
+|       -e 's|@''HAVE_RAWMEMCHR''@|1|g' \
+|       -e 's|@''HAVE_STPCPY''@|1|g' \
+|       -e 's|@''HAVE_STPNCPY''@|1|g' \
+|       -e 's|@''HAVE_STRCHRNUL''@|1|g' \
+|       -e 's|@''HAVE_DECL_STRDUP''@|1|g' \
+|       -e 's|@''HAVE_DECL_STRNDUP''@|1|g' \
+|       -e 's|@''HAVE_DECL_STRNLEN''@|1|g' \
+|       -e 's|@''HAVE_STRPBRK''@|1|g' \
+|       -e 's|@''HAVE_STRSEP''@|1|g' \
+|       -e 's|@''HAVE_STRCASESTR''@|1|g' \
+|       -e 's|@''HAVE_DECL_STRTOK_R''@|1|g' \
+|       -e 's|@''HAVE_DECL_STRERROR_R''@|1|g' \
+|       -e 's|@''HAVE_DECL_STRSIGNAL''@|1|g' \
+|       -e 's|@''HAVE_STRVERSCMP''@|1|g' \
+|       -e 's|@''REPLACE_STPNCPY''@|0|g' \
+|       -e 's|@''REPLACE_MEMCHR''@|0|g' \
+|       -e 's|@''REPLACE_MEMMEM''@|0|g' \
+|       -e 's|@''REPLACE_STRCASESTR''@|0|g' \
+|       -e 's|@''REPLACE_STRCHRNUL''@|0|g' \
+|       -e 's|@''REPLACE_STRDUP''@|0|g' \
+|       -e 's|@''REPLACE_STRSTR''@|0|g' \
+|       -e 's|@''REPLACE_STRERROR''@|0|g' \
+|       -e 's|@''REPLACE_STRERROR_R''@|0|g' \
+|       -e 's|@''REPLACE_STRNCAT''@|0|g' \
+|       -e 's|@''REPLACE_STRNDUP''@|0|g' \
+|       -e 's|@''REPLACE_STRNLEN''@|0|g' \
+|       -e 's|@''REPLACE_STRSIGNAL''@|0|g' \
+|       -e 's|@''REPLACE_STRTOK_R''@|0|g' \
+|       -e 's|@''UNDEFINE_STRTOK_R''@|0|g' \
+|       -e '/definitions of _GL_FUNCDECL_RPL/r c++defs.h' \
+|       -e '/definition of _GL_ARG_NONNULL/r arg-nonnull.h' \
+|       -e '/definition of _GL_WARN_ON_USE/r warn-on-use.h'; \
+|       < ../../../libidn-1.33/lib/gl/string.in.h; \
+| } > string.h-t && \
+| mv string.h-t string.h
+| make  all-recursive
+| make[3]: Entering directory '/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/build/lib/gl'
+| make[4]: Entering directory '/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/build/lib/gl'
+| ../../i586-deby-linux-libtool  --tag=CC   --mode=compile i586-deby-linux-gcc  -m32 -march=i586 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../../libidn-1.33/lib/gl -I../..    -fvisibility=hidden -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot=                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot-native=  -c -o c-ctype.lo ../../../libidn-1.33/lib/gl/c-ctype.c
+| ../../i586-deby-linux-libtool  --tag=CC   --mode=compile i586-deby-linux-gcc  -m32 -march=i586 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../../libidn-1.33/lib/gl -I../..    -fvisibility=hidden -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot=                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot-native=  -c -o c-strcasecmp.lo ../../../libidn-1.33/lib/gl/c-strcasecmp.c
+| ../../i586-deby-linux-libtool  --tag=CC   --mode=compile i586-deby-linux-gcc  -m32 -march=i586 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../../libidn-1.33/lib/gl -I../..    -fvisibility=hidden -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot=                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot-native=  -c -o c-strncasecmp.lo ../../../libidn-1.33/lib/gl/c-strncasecmp.c
+| ../../i586-deby-linux-libtool  --tag=CC   --mode=compile i586-deby-linux-gcc  -m32 -march=i586 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../../libidn-1.33/lib/gl -I../..    -fvisibility=hidden -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot=                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot-native=  -c -o striconv.lo ../../../libidn-1.33/lib/gl/striconv.c
+| ../../i586-deby-linux-libtool  --tag=CC   --mode=compile i586-deby-linux-gcc  -m32 -march=i586 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../../libidn-1.33/lib/gl -I../..    -fvisibility=hidden -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot=                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot-native=  -c -o unistr/u8-check.lo ../../../libidn-1.33/lib/gl/unistr/u8-check.c
+| ../../i586-deby-linux-libtool  --tag=CC   --mode=compile i586-deby-linux-gcc  -m32 -march=i586 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../../libidn-1.33/lib/gl -I../..    -fvisibility=hidden -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot=                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot-native=  -c -o unistr/u8-mbtoucr.lo ../../../libidn-1.33/lib/gl/unistr/u8-mbtoucr.c
+| ../../i586-deby-linux-libtool  --tag=CC   --mode=compile i586-deby-linux-gcc  -m32 -march=i586 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../../libidn-1.33/lib/gl -I../..    -fvisibility=hidden -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot=                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot-native=  -c -o unistr/u8-uctomb.lo ../../../libidn-1.33/lib/gl/unistr/u8-uctomb.c
+| ../../i586-deby-linux-libtool  --tag=CC   --mode=compile i586-deby-linux-gcc  -m32 -march=i586 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../../libidn-1.33/lib/gl -I../..    -fvisibility=hidden -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot=                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot-native=  -c -o unistr/u8-uctomb-aux.lo ../../../libidn-1.33/lib/gl/unistr/u8-uctomb-aux.c
+| i586-deby-linux-libtool: compile:  i586-deby-linux-gcc -m32 -march=i586 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../../libidn-1.33/lib/gl -I../.. -fvisibility=hidden -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot= -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot-native= -c ../../../libidn-1.33/lib/gl/unistr/u8-mbtoucr.c  -fPIC -DPIC -o unistr/.libs/u8-mbtoucr.o
+| i586-deby-linux-libtool: compile:  i586-deby-linux-gcc -m32 -march=i586 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../../libidn-1.33/lib/gl -I../.. -fvisibility=hidden -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot= -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot-native= -c ../../../libidn-1.33/lib/gl/unistr/u8-uctomb-aux.c  -fPIC -DPIC -o unistr/.libs/u8-uctomb-aux.o
+| i586-deby-linux-libtool: compile:  i586-deby-linux-gcc -m32 -march=i586 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../../libidn-1.33/lib/gl -I../.. -fvisibility=hidden -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot= -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot-native= -c ../../../libidn-1.33/lib/gl/unistr/u8-uctomb.c  -fPIC -DPIC -o unistr/.libs/u8-uctomb.o
+| i586-deby-linux-libtool: compile:  i586-deby-linux-gcc -m32 -march=i586 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../../libidn-1.33/lib/gl -I../.. -fvisibility=hidden -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot= -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot-native= -c ../../../libidn-1.33/lib/gl/unistr/u8-check.c  -fPIC -DPIC -o unistr/.libs/u8-check.o
+| i586-deby-linux-libtool: compile:  i586-deby-linux-gcc -m32 -march=i586 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../../libidn-1.33/lib/gl -I../.. -fvisibility=hidden -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot= -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot-native= -c ../../../libidn-1.33/lib/gl/c-strcasecmp.c  -fPIC -DPIC -o .libs/c-strcasecmp.o
+| i586-deby-linux-libtool: compile:  i586-deby-linux-gcc -m32 -march=i586 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../../libidn-1.33/lib/gl -I../.. -fvisibility=hidden -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot= -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot-native= -c ../../../libidn-1.33/lib/gl/c-ctype.c  -fPIC -DPIC -o .libs/c-ctype.o
+| i586-deby-linux-libtool: compile:  i586-deby-linux-gcc -m32 -march=i586 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../../libidn-1.33/lib/gl -I../.. -fvisibility=hidden -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot= -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot-native= -c ../../../libidn-1.33/lib/gl/striconv.c  -fPIC -DPIC -o .libs/striconv.o
+| i586-deby-linux-libtool: compile:  i586-deby-linux-gcc -m32 -march=i586 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../../libidn-1.33/lib/gl -I../.. -fvisibility=hidden -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot= -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot-native= -c ../../../libidn-1.33/lib/gl/c-strncasecmp.c  -fPIC -DPIC -o .libs/c-strncasecmp.o
+| ../../i586-deby-linux-libtool  --tag=CC   --mode=link i586-deby-linux-gcc  -m32 -march=i586 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot -fvisibility=hidden -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot=                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot-native=   -no-undefined    -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed -fstack-protector-strong -Wl,-z,relro,-z,now -o libgnu.la  c-ctype.lo c-strcasecmp.lo c-strncasecmp.lo striconv.lo unistr/u8-check.lo unistr/u8-mbtoucr.lo unistr/u8-uctomb.lo unistr/u8-uctomb-aux.lo
+| i586-deby-linux-libtool: link: i586-deby-linux-gcc-ar cru .libs/libgnu.a .libs/c-ctype.o .libs/c-strcasecmp.o .libs/c-strncasecmp.o .libs/striconv.o unistr/.libs/u8-check.o unistr/.libs/u8-mbtoucr.o unistr/.libs/u8-uctomb.o unistr/.libs/u8-uctomb-aux.o
+| /home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot-native/usr/bin/i586-deby-linux/../../libexec/i586-deby-linux/gcc/i586-deby-linux/8.3.0/ar: `u' modifier ignored since `D' is the default (see `U')
+| i586-deby-linux-libtool: link: i586-deby-linux-gcc-ranlib .libs/libgnu.a
+| i586-deby-linux-libtool: link: ( cd ".libs" && rm -f "libgnu.la" && ln -s "../libgnu.la" "libgnu.la" )
+| make[4]: Leaving directory '/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/build/lib/gl'
+| make[3]: Leaving directory '/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/build/lib/gl'
+| make[2]: Leaving directory '/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/build/lib/gl'
+| Making all in lib
+| make[2]: Entering directory '/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/build/lib'
+| if test -n ""; then \
+| 	sed -e s/include_next/include/ gl/stdint.h > idn-int.h; \
+| else \
+| 	echo '#include <stdint.h>' > idn-int.h; \
+| fi
+| make  all-am
+| make[3]: Entering directory '/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/build/lib'
+| ../i586-deby-linux-libtool  --tag=CC   --mode=compile i586-deby-linux-gcc  -m32 -march=i586 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libidn-1.33/lib -I..  -I../../libidn-1.33/lib/gl -Igl -DLIBIDN_BUILDING -DLOCALEDIR=\"/usr/share/locale\"     -fvisibility=hidden -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot=                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot-native=  -c -o nfkc.lo ../../libidn-1.33/lib/nfkc.c
+| ../i586-deby-linux-libtool  --tag=CC   --mode=compile i586-deby-linux-gcc  -m32 -march=i586 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libidn-1.33/lib -I..  -I../../libidn-1.33/lib/gl -Igl -DLIBIDN_BUILDING -DLOCALEDIR=\"/usr/share/locale\"     -fvisibility=hidden -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot=                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot-native=  -c -o toutf8.lo ../../libidn-1.33/lib/toutf8.c
+| ../i586-deby-linux-libtool  --tag=CC   --mode=compile i586-deby-linux-gcc  -m32 -march=i586 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libidn-1.33/lib -I..  -I../../libidn-1.33/lib/gl -Igl -DLIBIDN_BUILDING -DLOCALEDIR=\"/usr/share/locale\"     -fvisibility=hidden -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot=                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot-native=  -c -o version.lo ../../libidn-1.33/lib/version.c
+| ../i586-deby-linux-libtool  --tag=CC   --mode=compile i586-deby-linux-gcc  -m32 -march=i586 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libidn-1.33/lib -I..  -I../../libidn-1.33/lib/gl -Igl -DLIBIDN_BUILDING -DLOCALEDIR=\"/usr/share/locale\"     -fvisibility=hidden -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot=                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot-native=  -c -o stringprep.lo ../../libidn-1.33/lib/stringprep.c
+| ../i586-deby-linux-libtool  --tag=CC   --mode=compile i586-deby-linux-gcc  -m32 -march=i586 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libidn-1.33/lib -I..  -I../../libidn-1.33/lib/gl -Igl -DLIBIDN_BUILDING -DLOCALEDIR=\"/usr/share/locale\"     -fvisibility=hidden -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot=                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot-native=  -c -o rfc3454.lo ../../libidn-1.33/lib/rfc3454.c
+| ../i586-deby-linux-libtool  --tag=CC   --mode=compile i586-deby-linux-gcc  -m32 -march=i586 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libidn-1.33/lib -I..  -I../../libidn-1.33/lib/gl -Igl -DLIBIDN_BUILDING -DLOCALEDIR=\"/usr/share/locale\"     -fvisibility=hidden -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot=                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot-native=  -c -o profiles.lo ../../libidn-1.33/lib/profiles.c
+| ../i586-deby-linux-libtool  --tag=CC   --mode=compile i586-deby-linux-gcc  -m32 -march=i586 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libidn-1.33/lib -I..  -I../../libidn-1.33/lib/gl -Igl -DLIBIDN_BUILDING -DLOCALEDIR=\"/usr/share/locale\"     -fvisibility=hidden -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot=                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot-native=  -c -o punycode.lo ../../libidn-1.33/lib/punycode.c
+| ../i586-deby-linux-libtool  --tag=CC   --mode=compile i586-deby-linux-gcc  -m32 -march=i586 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libidn-1.33/lib -I..  -I../../libidn-1.33/lib/gl -Igl -DLIBIDN_BUILDING -DLOCALEDIR=\"/usr/share/locale\"     -fvisibility=hidden -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot=                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot-native=  -c -o idna.lo ../../libidn-1.33/lib/idna.c
+| ../i586-deby-linux-libtool  --tag=CC   --mode=compile i586-deby-linux-gcc  -m32 -march=i586 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libidn-1.33/lib -I..  -I../../libidn-1.33/lib/gl -Igl -DLIBIDN_BUILDING -DLOCALEDIR=\"/usr/share/locale\"     -fvisibility=hidden -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot=                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot-native=  -c -o pr29.lo ../../libidn-1.33/lib/pr29.c
+| ../i586-deby-linux-libtool  --tag=CC   --mode=compile i586-deby-linux-gcc  -m32 -march=i586 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libidn-1.33/lib -I..  -I../../libidn-1.33/lib/gl -Igl -DLIBIDN_BUILDING -DLOCALEDIR=\"/usr/share/locale\"     -fvisibility=hidden -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot=                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot-native=  -c -o idn-free.lo ../../libidn-1.33/lib/idn-free.c
+| ../i586-deby-linux-libtool  --tag=CC   --mode=compile i586-deby-linux-gcc  -m32 -march=i586 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libidn-1.33/lib -I..  -I../../libidn-1.33/lib/gl -Igl -DLIBIDN_BUILDING -DLOCALEDIR=\"/usr/share/locale\"     -fvisibility=hidden -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot=                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot-native=  -c -o strerror-idna.lo ../../libidn-1.33/lib/strerror-idna.c
+| ../i586-deby-linux-libtool  --tag=CC   --mode=compile i586-deby-linux-gcc  -m32 -march=i586 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libidn-1.33/lib -I..  -I../../libidn-1.33/lib/gl -Igl -DLIBIDN_BUILDING -DLOCALEDIR=\"/usr/share/locale\"     -fvisibility=hidden -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot=                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot-native=  -c -o strerror-pr29.lo ../../libidn-1.33/lib/strerror-pr29.c
+| ../i586-deby-linux-libtool  --tag=CC   --mode=compile i586-deby-linux-gcc  -m32 -march=i586 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libidn-1.33/lib -I..  -I../../libidn-1.33/lib/gl -Igl -DLIBIDN_BUILDING -DLOCALEDIR=\"/usr/share/locale\"     -fvisibility=hidden -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot=                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot-native=  -c -o strerror-punycode.lo ../../libidn-1.33/lib/strerror-punycode.c
+| ../i586-deby-linux-libtool  --tag=CC   --mode=compile i586-deby-linux-gcc  -m32 -march=i586 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libidn-1.33/lib -I..  -I../../libidn-1.33/lib/gl -Igl -DLIBIDN_BUILDING -DLOCALEDIR=\"/usr/share/locale\"     -fvisibility=hidden -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot=                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot-native=  -c -o strerror-stringprep.lo ../../libidn-1.33/lib/strerror-stringprep.c
+| ../i586-deby-linux-libtool  --tag=CC   --mode=compile i586-deby-linux-gcc  -m32 -march=i586 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libidn-1.33/lib -I..  -I../../libidn-1.33/lib/gl -Igl -DLIBIDN_BUILDING -DLOCALEDIR=\"/usr/share/locale\"     -fvisibility=hidden -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot=                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot-native=  -c -o strerror-tld.lo ../../libidn-1.33/lib/strerror-tld.c
+| ../i586-deby-linux-libtool  --tag=CC   --mode=compile i586-deby-linux-gcc  -m32 -march=i586 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libidn-1.33/lib -I..  -I../../libidn-1.33/lib/gl -Igl -DLIBIDN_BUILDING -DLOCALEDIR=\"/usr/share/locale\"     -fvisibility=hidden -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot=                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot-native=  -c -o tld.lo ../../libidn-1.33/lib/tld.c
+| i586-deby-linux-libtool: compile:  i586-deby-linux-gcc -m32 -march=i586 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libidn-1.33/lib -I.. -I../../libidn-1.33/lib/gl -Igl -DLIBIDN_BUILDING -DLOCALEDIR=\"/usr/share/locale\" -fvisibility=hidden -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot= -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot-native= -c ../../libidn-1.33/lib/profiles.c  -fPIC -DPIC -o .libs/profiles.o
+| i586-deby-linux-libtool: compile:  i586-deby-linux-gcc -m32 -march=i586 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libidn-1.33/lib -I.. -I../../libidn-1.33/lib/gl -Igl -DLIBIDN_BUILDING -DLOCALEDIR=\"/usr/share/locale\" -fvisibility=hidden -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot= -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot-native= -c ../../libidn-1.33/lib/version.c  -fPIC -DPIC -o .libs/version.o
+| i586-deby-linux-libtool: compile:  i586-deby-linux-gcc -m32 -march=i586 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libidn-1.33/lib -I.. -I../../libidn-1.33/lib/gl -Igl -DLIBIDN_BUILDING -DLOCALEDIR=\"/usr/share/locale\" -fvisibility=hidden -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot= -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot-native= -c ../../libidn-1.33/lib/idna.c  -fPIC -DPIC -o .libs/idna.o
+| i586-deby-linux-libtool: compile:  i586-deby-linux-gcc -m32 -march=i586 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libidn-1.33/lib -I.. -I../../libidn-1.33/lib/gl -Igl -DLIBIDN_BUILDING -DLOCALEDIR=\"/usr/share/locale\" -fvisibility=hidden -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot= -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot-native= -c ../../libidn-1.33/lib/rfc3454.c  -fPIC -DPIC -o .libs/rfc3454.o
+| i586-deby-linux-libtool: compile:  i586-deby-linux-gcc -m32 -march=i586 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libidn-1.33/lib -I.. -I../../libidn-1.33/lib/gl -Igl -DLIBIDN_BUILDING -DLOCALEDIR=\"/usr/share/locale\" -fvisibility=hidden -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot= -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot-native= -c ../../libidn-1.33/lib/toutf8.c  -fPIC -DPIC -o .libs/toutf8.o
+| i586-deby-linux-libtool: compile:  i586-deby-linux-gcc -m32 -march=i586 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libidn-1.33/lib -I.. -I../../libidn-1.33/lib/gl -Igl -DLIBIDN_BUILDING -DLOCALEDIR=\"/usr/share/locale\" -fvisibility=hidden -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot= -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot-native= -c ../../libidn-1.33/lib/nfkc.c  -fPIC -DPIC -o .libs/nfkc.o
+| i586-deby-linux-libtool: compile:  i586-deby-linux-gcc -m32 -march=i586 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libidn-1.33/lib -I.. -I../../libidn-1.33/lib/gl -Igl -DLIBIDN_BUILDING -DLOCALEDIR=\"/usr/share/locale\" -fvisibility=hidden -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot= -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot-native= -c ../../libidn-1.33/lib/strerror-pr29.c  -fPIC -DPIC -o .libs/strerror-pr29.o
+| i586-deby-linux-libtool: compile:  i586-deby-linux-gcc -m32 -march=i586 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libidn-1.33/lib -I.. -I../../libidn-1.33/lib/gl -Igl -DLIBIDN_BUILDING -DLOCALEDIR=\"/usr/share/locale\" -fvisibility=hidden -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot= -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot-native= -c ../../libidn-1.33/lib/stringprep.c  -fPIC -DPIC -o .libs/stringprep.o
+| i586-deby-linux-libtool: compile:  i586-deby-linux-gcc -m32 -march=i586 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libidn-1.33/lib -I.. -I../../libidn-1.33/lib/gl -Igl -DLIBIDN_BUILDING -DLOCALEDIR=\"/usr/share/locale\" -fvisibility=hidden -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot= -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot-native= -c ../../libidn-1.33/lib/tld.c  -fPIC -DPIC -o .libs/tld.o
+| i586-deby-linux-libtool: compile:  i586-deby-linux-gcc -m32 -march=i586 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libidn-1.33/lib -I.. -I../../libidn-1.33/lib/gl -Igl -DLIBIDN_BUILDING -DLOCALEDIR=\"/usr/share/locale\" -fvisibility=hidden -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot= -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot-native= -c ../../libidn-1.33/lib/idn-free.c  -fPIC -DPIC -o .libs/idn-free.o
+| i586-deby-linux-libtool: compile:  i586-deby-linux-gcc -m32 -march=i586 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libidn-1.33/lib -I.. -I../../libidn-1.33/lib/gl -Igl -DLIBIDN_BUILDING -DLOCALEDIR=\"/usr/share/locale\" -fvisibility=hidden -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot= -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot-native= -c ../../libidn-1.33/lib/strerror-stringprep.c  -fPIC -DPIC -o .libs/strerror-stringprep.o
+| i586-deby-linux-libtool: compile:  i586-deby-linux-gcc -m32 -march=i586 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libidn-1.33/lib -I.. -I../../libidn-1.33/lib/gl -Igl -DLIBIDN_BUILDING -DLOCALEDIR=\"/usr/share/locale\" -fvisibility=hidden -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot= -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot-native= -c ../../libidn-1.33/lib/punycode.c  -fPIC -DPIC -o .libs/punycode.o
+| i586-deby-linux-libtool: compile:  i586-deby-linux-gcc -m32 -march=i586 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libidn-1.33/lib -I.. -I../../libidn-1.33/lib/gl -Igl -DLIBIDN_BUILDING -DLOCALEDIR=\"/usr/share/locale\" -fvisibility=hidden -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot= -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot-native= -c ../../libidn-1.33/lib/pr29.c  -fPIC -DPIC -o .libs/pr29.o
+| i586-deby-linux-libtool: compile:  i586-deby-linux-gcc -m32 -march=i586 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libidn-1.33/lib -I.. -I../../libidn-1.33/lib/gl -Igl -DLIBIDN_BUILDING -DLOCALEDIR=\"/usr/share/locale\" -fvisibility=hidden -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot= -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot-native= -c ../../libidn-1.33/lib/strerror-punycode.c  -fPIC -DPIC -o .libs/strerror-punycode.o
+| i586-deby-linux-libtool: compile:  i586-deby-linux-gcc -m32 -march=i586 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libidn-1.33/lib -I.. -I../../libidn-1.33/lib/gl -Igl -DLIBIDN_BUILDING -DLOCALEDIR=\"/usr/share/locale\" -fvisibility=hidden -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot= -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot-native= -c ../../libidn-1.33/lib/strerror-tld.c  -fPIC -DPIC -o .libs/strerror-tld.o
+| i586-deby-linux-libtool: compile:  i586-deby-linux-gcc -m32 -march=i586 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libidn-1.33/lib -I.. -I../../libidn-1.33/lib/gl -Igl -DLIBIDN_BUILDING -DLOCALEDIR=\"/usr/share/locale\" -fvisibility=hidden -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot= -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot-native= -c ../../libidn-1.33/lib/strerror-idna.c  -fPIC -DPIC -o .libs/strerror-idna.o
+| ../i586-deby-linux-libtool  --tag=CC   --mode=compile i586-deby-linux-gcc  -m32 -march=i586 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libidn-1.33/lib -I..  -I../../libidn-1.33/lib/gl -Igl -DLIBIDN_BUILDING -DLOCALEDIR=\"/usr/share/locale\"     -fvisibility=hidden -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot=                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot-native=  -c -o tlds.lo ../../libidn-1.33/lib/tlds.c
+| i586-deby-linux-libtool: compile:  i586-deby-linux-gcc -m32 -march=i586 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libidn-1.33/lib -I.. -I../../libidn-1.33/lib/gl -Igl -DLIBIDN_BUILDING -DLOCALEDIR=\"/usr/share/locale\" -fvisibility=hidden -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot= -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot-native= -c ../../libidn-1.33/lib/tlds.c  -fPIC -DPIC -o .libs/tlds.o
+| ../i586-deby-linux-libtool  --tag=CC   --mode=link i586-deby-linux-gcc  -m32 -march=i586 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot    -fvisibility=hidden -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot=                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot-native=  -version-info 17:16:6 -no-undefined -Wl,--version-script=../../libidn-1.33/lib/libidn.map   -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed -fstack-protector-strong -Wl,-z,relro,-z,now -o libidn.la -rpath /usr/lib nfkc.lo toutf8.lo version.lo stringprep.lo rfc3454.lo profiles.lo punycode.lo idna.lo pr29.lo idn-free.lo strerror-idna.lo strerror-pr29.lo strerror-punycode.lo strerror-stringprep.lo strerror-tld.lo tld.lo tlds.lo   gl/libgnu.la
+| i586-deby-linux-libtool: link: i586-deby-linux-gcc  -m32 -march=i586 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot -shared  -fPIC -DPIC  .libs/nfkc.o .libs/toutf8.o .libs/version.o .libs/stringprep.o .libs/rfc3454.o .libs/profiles.o .libs/punycode.o .libs/idna.o .libs/pr29.o .libs/idn-free.o .libs/strerror-idna.o .libs/strerror-pr29.o .libs/strerror-punycode.o .libs/strerror-stringprep.o .libs/strerror-tld.o .libs/tld.o .libs/tlds.o  -Wl,--whole-archive gl/.libs/libgnu.a -Wl,--no-whole-archive   -m32 -march=i586 -fstack-protector-strong --sysroot=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot -O2 -g -Wl,--version-script=../../libidn-1.33/lib/libidn.map -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed -fstack-protector-strong -Wl,-z -Wl,relro -Wl,-z -Wl,now   -Wl,-soname -Wl,libidn.so.11 -o .libs/libidn.so.11.6.16
+| i586-deby-linux-libtool: link: (cd ".libs" && rm -f "libidn.so.11" && ln -s "libidn.so.11.6.16" "libidn.so.11")
+| i586-deby-linux-libtool: link: (cd ".libs" && rm -f "libidn.so" && ln -s "libidn.so.11.6.16" "libidn.so")
+| i586-deby-linux-libtool: link: ( cd ".libs" && rm -f "libidn.la" && ln -s "../libidn.la" "libidn.la" )
+| make[3]: Leaving directory '/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/build/lib'
+| make[2]: Leaving directory '/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/build/lib'
+| Making all in po
+| make[2]: Entering directory '/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/build/po'
+| make[2]: Nothing to be done for 'all'.
+| make[2]: Leaving directory '/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/build/po'
+| Making all in src
+| make[2]: Entering directory '/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/build/src'
+| make  all-am
+| make[3]: Entering directory '/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/build/src'
+| i586-deby-linux-gcc  -m32 -march=i586 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libidn-1.33/src -I..  -I../../libidn-1.33/lib -I../lib -I../../libidn-1.33/gl -I../gl -DLOCALEDIR=\"/usr/share/locale\"    -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot=                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot-native=  -c -o idn.o ../../libidn-1.33/src/idn.c
+| ../i586-deby-linux-libtool  --tag=CC   --mode=compile i586-deby-linux-gcc  -m32 -march=i586 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libidn-1.33/src -I..  -I../../libidn-1.33/lib -I../lib -I../../libidn-1.33/gl -I../gl -DLOCALEDIR=\"/usr/share/locale\"   -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot=                      -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot-native=  -c -o libidn_cmd_la-idn_cmd.lo `test -f 'idn_cmd.c' || echo '../../libidn-1.33/src/'`idn_cmd.c
+| i586-deby-linux-libtool: compile:  i586-deby-linux-gcc -m32 -march=i586 -fstack-protector-strong -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot -DHAVE_CONFIG_H -I. -I../../libidn-1.33/src -I.. -I../../libidn-1.33/lib -I../lib -I../../libidn-1.33/gl -I../gl -DLOCALEDIR=\"/usr/share/locale\" -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0=/usr/src/debug/libidn/1.33-r0 -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot= -fdebug-prefix-map=/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/recipe-sysroot-native= -c ../../libidn-1.33/src/idn_cmd.c  -fPIC -DPIC -o .libs/libidn_cmd_la-idn_cmd.o
+| ../../libidn-1.33/src/idn.c: In function 'main':
+| ../../libidn-1.33/src/idn.c:173:7: error: format not a string literal and no format arguments [-Werror=format-security]
+|        error (0, 0, _("only one of -s, -e, -d, -a, -u or -n can be specified"));
+|        ^~~~~
+| ../../libidn-1.33/src/idn.c:188:5: error: format not a string literal and no format arguments [-Werror=format-security]
+|      fprintf (stderr, _("Type each input string on a line by itself, "
+|      ^~~~~~~
+| ../../libidn-1.33/src/idn.c:200:4: error: format not a string literal and no format arguments [-Werror=format-security]
+|     error (EXIT_FAILURE, errno, _("input error"));
+|     ^~~~~
+| ../../libidn-1.33/src/idn.c:219:8: error: format not a string literal and no format arguments [-Werror=format-security]
+|         _("could not convert from UTF-8 to UCS-4"));
+|         ^
+| ../../libidn-1.33/src/idn.c:244:8: error: format not a string literal and no format arguments [-Werror=format-security]
+|         _("could not convert from UTF-8 to UCS-4"));
+|         ^
+| ../../libidn-1.33/src/idn.c:281:6: error: format not a string literal and no format arguments [-Werror=format-security]
+|       _("could not convert from UTF-8 to UCS-4"));
+|       ^
+| ../../libidn-1.33/src/idn.c:340:6: error: format not a string literal and no format arguments [-Werror=format-security]
+|       _("could not convert from UCS-4 to UTF-8"));
+|       ^
+| ../../libidn-1.33/src/idn.c:364:6: error: format not a string literal and no format arguments [-Werror=format-security]
+|       _("could not convert from UCS-4 to UTF-8"));
+|       ^
+| ../../libidn-1.33/src/idn.c:442:8: error: format not a string literal and no format arguments [-Werror=format-security]
+|         _("could not convert from UCS-4 to UTF-8"));
+|         ^
+| ../../libidn-1.33/src/idn.c:498:6: error: format not a string literal and no format arguments [-Werror=format-security]
+|       _("could not convert from UTF-8 to UCS-4"));
+|       ^
+| ../../libidn-1.33/src/idn.c:527:5: error: format not a string literal and no format arguments [-Werror=format-security]
+|      _("could not convert from UTF-8 to UCS-4"));
+|      ^
+| ../../libidn-1.33/src/idn.c:540:6: error: format not a string literal and no format arguments [-Werror=format-security]
+|       error (EXIT_FAILURE, 0, _("could not do NFKC normalization"));
+|       ^~~~~
+| ../../libidn-1.33/src/idn.c:551:5: error: format not a string literal and no format arguments [-Werror=format-security]
+|      _("could not convert from UTF-8 to UCS-4"));
+|      ^
+| cc1: some warnings being treated as errors
+| make[3]: *** [Makefile:1312: idn.o] Error 1
+| make[3]: *** Waiting for unfinished jobs....
+| make[3]: Leaving directory '/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/build/src'
+| make[2]: *** [Makefile:1191: all] Error 2
+| make[2]: Leaving directory '/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/build/src'
+| make[1]: *** [Makefile:1334: all-recursive] Error 1
+| make[1]: Leaving directory '/home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/build'
+| make: *** [Makefile:1237: all] Error 2
+| ERROR: oe_runmake failed
+| WARNING: exit code 1 from a shell command.
+| ERROR: Function failed: do_compile (log file is located at /home/deby/build-tiny/tmp/work/i586-deby-linux/libidn/1.33-r0/temp/log.do_compile.8054)
+NOTE: recipe libidn-1.33-r0: task do_compile: Failed
+ERROR: Task (/home/deby/poky/meta-debian/recipes-debian/libidn/libidn_debian.bb:do_compile) failed with exit code '1'
+NOTE: Tasks Summary: Attempted 609 tasks of which 606 didn't need to be rerun and 1 failed.
+
+Summary: 1 task failed:
+  /home/deby/poky/meta-debian/recipes-debian/libidn/libidn_debian.bb:do_compile
+Summary: There were 2 ERROR messages shown, returning a non-zero exit code.

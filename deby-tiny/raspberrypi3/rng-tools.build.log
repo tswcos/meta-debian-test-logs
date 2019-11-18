@@ -1,0 +1,40 @@
+Loading cache...done.
+Loaded 1855 entries from dependency cache.
+Parsing recipes...done.
+Parsing of 1073 .bb files complete (1071 cached, 2 parsed). 1858 targets, 228 skipped, 0 masked, 0 errors.
+WARNING: No bb files matched BBFILE_PATTERN_debian-raspberrypi '^/home/deby/poky/meta-debian/tests/../../meta-debian/bsp/meta-raspberrypi/'
+NOTE: Resolving any missing task queue dependencies
+
+Build Configuration:
+BB_VERSION           = "1.42.0"
+BUILD_SYS            = "x86_64-linux"
+NATIVELSBSTRING      = "universal"
+TARGET_SYS           = "arm-deby-linux-gnueabi"
+MACHINE              = "raspberrypi3"
+DISTRO               = "deby-tiny"
+DISTRO_VERSION       = "10.0"
+TUNE_FEATURES        = "arm vfp cortexa7 neon vfpv4 thumb callconvention-hard"
+TARGET_FPU           = "hard"
+meta                 
+meta-poky            = "warrior:79a850a10a4b88a6d20d607b322542f947874323"
+meta-debian          = "warrior:fda6a80e4cae9aa03f502551f35fe41beb7bb944"
+meta-raspberrypi     = "warrior:0750d5d2bc9596f35d5d61bb0ff657be4b02bfdc"
+meta-raspberrypi     = "warrior:fda6a80e4cae9aa03f502551f35fe41beb7bb944"
+
+Initialising tasks...done.
+Sstate summary: Wanted 3 Found 0 Missed 3 Current 79 (0% match, 96% complete)
+NOTE: Executing SetScene Tasks
+NOTE: Executing RunQueue Tasks
+NOTE: Running task 597 of 601 (/home/deby/poky/meta-debian/recipes-debian/rng-tools/rng-tools_debian.bb:do_populate_lic)
+NOTE: Running task 599 of 601 (/home/deby/poky/meta-debian/recipes-debian/rng-tools/rng-tools_debian.bb:do_package_qa)
+NOTE: recipe rng-tools-2-unofficial-mt.14-r0: task do_populate_lic: Started
+NOTE: recipe rng-tools-2-unofficial-mt.14-r0: task do_populate_lic: Succeeded
+NOTE: Running task 600 of 601 (/home/deby/poky/meta-debian/recipes-debian/rng-tools/rng-tools_debian.bb:do_populate_sysroot)
+NOTE: recipe rng-tools-2-unofficial-mt.14-r0: task do_populate_sysroot: Started
+NOTE: recipe rng-tools-2-unofficial-mt.14-r0: task do_package_qa: Started
+NOTE: recipe rng-tools-2-unofficial-mt.14-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe rng-tools-2-unofficial-mt.14-r0: task do_package_qa: Succeeded
+NOTE: Running noexec task 601 of 601 (/home/deby/poky/meta-debian/recipes-debian/rng-tools/rng-tools_debian.bb:do_build)
+NOTE: Tasks Summary: Attempted 601 tasks of which 597 didn't need to be rerun and all succeeded.
+
+Summary: There was 1 WARNING message shown.

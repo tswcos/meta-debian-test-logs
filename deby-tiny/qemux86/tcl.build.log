@@ -1,0 +1,53 @@
+Loading cache...done.
+Loaded 1825 entries from dependency cache.
+Parsing recipes...done.
+Parsing of 1043 .bb files complete (1041 cached, 2 parsed). 1828 targets, 209 skipped, 0 masked, 0 errors.
+NOTE: Resolving any missing task queue dependencies
+
+Build Configuration:
+BB_VERSION           = "1.42.0"
+BUILD_SYS            = "x86_64-linux"
+NATIVELSBSTRING      = "universal"
+TARGET_SYS           = "i586-deby-linux"
+MACHINE              = "qemux86"
+DISTRO               = "deby-tiny"
+DISTRO_VERSION       = "10.0"
+TUNE_FEATURES        = "m32 i586"
+TARGET_FPU           = ""
+meta                 
+meta-poky            = "warrior:79a850a10a4b88a6d20d607b322542f947874323"
+meta-debian          = "warrior:2fa6d8525f0464064f8764856015185a0c4e5411"
+
+Initialising tasks...done.
+Sstate summary: Wanted 5 Found 0 Missed 5 Current 80 (0% match, 94% complete)
+NOTE: Executing SetScene Tasks
+NOTE: Executing RunQueue Tasks
+NOTE: Running task 584 of 606 (/home/deby/poky/meta-debian/recipes-debian/tcltk/tcl_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe tcl-8.6.9-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe tcl-8.6.9-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 598 of 606 (/home/deby/poky/meta-debian/recipes-debian/tcltk/tcl_debian.bb:do_configure)
+NOTE: recipe tcl-8.6.9-r0: task do_configure: Started
+NOTE: recipe tcl-8.6.9-r0: task do_configure: Succeeded
+NOTE: Running task 599 of 606 (/home/deby/poky/meta-debian/recipes-debian/tcltk/tcl_debian.bb:do_compile)
+NOTE: recipe tcl-8.6.9-r0: task do_compile: Started
+NOTE: recipe tcl-8.6.9-r0: task do_compile: Succeeded
+NOTE: Running task 600 of 606 (/home/deby/poky/meta-debian/recipes-debian/tcltk/tcl_debian.bb:do_install)
+NOTE: recipe tcl-8.6.9-r0: task do_install: Started
+NOTE: recipe tcl-8.6.9-r0: task do_install: Succeeded
+NOTE: Running task 601 of 606 (/home/deby/poky/meta-debian/recipes-debian/tcltk/tcl_debian.bb:do_package)
+NOTE: Running task 602 of 606 (/home/deby/poky/meta-debian/recipes-debian/tcltk/tcl_debian.bb:do_populate_sysroot)
+NOTE: recipe tcl-8.6.9-r0: task do_populate_sysroot: Started
+NOTE: recipe tcl-8.6.9-r0: task do_package: Started
+NOTE: recipe tcl-8.6.9-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe tcl-8.6.9-r0: task do_package: Succeeded
+NOTE: Running task 603 of 606 (/home/deby/poky/meta-debian/recipes-debian/tcltk/tcl_debian.bb:do_packagedata)
+NOTE: recipe tcl-8.6.9-r0: task do_packagedata: Started
+NOTE: recipe tcl-8.6.9-r0: task do_packagedata: Succeeded
+NOTE: Running task 604 of 606 (/home/deby/poky/meta-debian/recipes-debian/tcltk/tcl_debian.bb:do_package_write_deb)
+NOTE: Running task 605 of 606 (/home/deby/poky/meta-debian/recipes-debian/tcltk/tcl_debian.bb:do_package_qa)
+NOTE: recipe tcl-8.6.9-r0: task do_package_qa: Started
+NOTE: recipe tcl-8.6.9-r0: task do_package_write_deb: Started
+NOTE: recipe tcl-8.6.9-r0: task do_package_qa: Succeeded
+NOTE: recipe tcl-8.6.9-r0: task do_package_write_deb: Succeeded
+NOTE: Running noexec task 606 of 606 (/home/deby/poky/meta-debian/recipes-debian/tcltk/tcl_debian.bb:do_build)
+NOTE: Tasks Summary: Attempted 606 tasks of which 596 didn't need to be rerun and all succeeded.

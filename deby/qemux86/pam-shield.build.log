@@ -1,7 +1,7 @@
 Loading cache...done.
-Loaded 1746 entries from dependency cache.
+Loaded 1825 entries from dependency cache.
 Parsing recipes...done.
-Parsing of 992 .bb files complete (990 cached, 2 parsed). 1733 targets, 43 skipped, 0 masked, 0 errors.
+Parsing of 1043 .bb files complete (1041 cached, 2 parsed). 1828 targets, 41 skipped, 0 masked, 0 errors.
 NOTE: Resolving any missing task queue dependencies
 
 Build Configuration:
@@ -16,38 +16,143 @@ TUNE_FEATURES        = "m32 i586"
 TARGET_FPU           = ""
 meta                 
 meta-poky            = "warrior:79a850a10a4b88a6d20d607b322542f947874323"
-meta-debian          = "warrior:f7512bd96372e67fe4288cb5cb61cf52d282dd4e"
+meta-debian          = "warrior:2fa6d8525f0464064f8764856015185a0c4e5411"
 
 Initialising tasks...done.
-Sstate summary: Wanted 5 Found 0 Missed 5 Current 420 (0% match, 98% complete)
+Sstate summary: Wanted 42 Found 37 Missed 5 Current 383 (88% match, 98% complete)
 NOTE: Executing SetScene Tasks
+NOTE: Running setscene task 389 of 425 (/home/deby/poky/meta-debian/recipes-debian/pam/libpam_debian.bb:do_package_write_deb_setscene)
+NOTE: Running setscene task 390 of 425 (/home/deby/poky/meta-debian/recipes-debian/coreutils/coreutils_debian.bb:do_package_write_deb_setscene)
+NOTE: Running setscene task 391 of 425 (/home/deby/poky/meta/recipes-devtools/opkg-utils/opkg-utils_0.4.0.bb:do_package_write_deb_setscene)
+NOTE: Running setscene task 393 of 425 (/home/deby/poky/meta-debian/recipes-debian/libcap/libcap_debian.bb:do_package_write_deb_setscene)
+NOTE: Running setscene task 394 of 425 (/home/deby/poky/meta-debian/recipes-debian/bash/bash_debian.bb:do_package_write_deb_setscene)
+NOTE: Running setscene task 395 of 425 (/home/deby/poky/meta-debian/recipes-debian/python/python3_debian.bb:do_package_write_deb_setscene)
+NOTE: Running setscene task 396 of 425 (/home/deby/poky/meta-debian/recipes-debian/util-linux/util-linux_debian.bb:do_package_write_deb_setscene)
+NOTE: Running setscene task 397 of 425 (/home/deby/poky/meta-debian/recipes-debian/e2fsprogs/e2fsprogs_debian.bb:do_package_write_deb_setscene)
+NOTE: Running setscene task 398 of 425 (/home/deby/poky/meta-debian/recipes-debian/iproute2/iproute2_debian.bb:do_package_write_deb_setscene)
+NOTE: Running setscene task 399 of 425 (/home/deby/poky/meta-debian/recipes-debian/btrfs-tools/btrfs-tools_debian.bb:do_package_write_deb_setscene)
+NOTE: Running setscene task 400 of 425 (/home/deby/poky/meta-debian/recipes-debian/mdadm/mdadm_debian.bb:do_package_write_deb_setscene)
+NOTE: Running setscene task 401 of 425 (/home/deby/poky/meta-debian/recipes-debian/glib-2.0/glib-2.0_debian.bb:do_populate_sysroot_setscene)
+NOTE: Running setscene task 402 of 425 (/home/deby/poky/meta-debian/recipes-debian/glib-2.0/glib-2.0_debian.bb:do_package_write_deb_setscene)
+NOTE: Running setscene task 403 of 425 (/home/deby/poky/meta-debian/recipes-debian/libxml/libxml2_debian.bb:do_package_write_deb_setscene)
+NOTE: Running setscene task 404 of 425 (/home/deby/poky/meta/recipes-core/udev/eudev_3.2.7.bb:do_package_write_deb_setscene)
+NOTE: Running setscene task 405 of 425 (/home/deby/poky/meta-debian/recipes-debian/shared-mime-info/shared-mime-info_debian.bb:do_package_write_deb_setscene)
+NOTE: recipe libcap-2.25-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe opkg-utils-0.4.0-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe libpam-1.3.1-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe coreutils-8.30-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe iproute2-4.20.0-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe bash-5.0-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe mdadm-4.1-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe btrfs-tools-4.20.1-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe util-linux-2.33.1-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe e2fsprogs-1.44.5-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe opkg-utils-0.4.0-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: recipe libxml2-2.9.4-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe shared-mime-info-1.10-r0: task do_package_write_deb_setscene: Started
+NOTE: Running setscene task 406 of 425 (/home/deby/poky/meta-debian/recipes-debian/gnome-desktop-testing/gnome-desktop-testing_debian.bb:do_package_write_deb_setscene)
+NOTE: recipe eudev-3.2.7-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe glib-2.0-2.58.3-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe glib-2.0-2.58.3-r0: task do_populate_sysroot_setscene: Started
+NOTE: recipe libpam-1.3.1-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 407 of 425 (/home/deby/poky/meta-debian/recipes-debian/shadow/shadow_debian.bb:do_populate_sysroot_setscene)
+NOTE: recipe python3-3.7.3-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe libcap-2.25-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 408 of 425 (/home/deby/poky/meta-debian/recipes-debian/libcap/libcap_debian.bb:do_packagedata_setscene)
+NOTE: recipe bash-5.0-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: recipe btrfs-tools-4.20.1-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 409 of 425 (/home/deby/poky/meta-debian/recipes-debian/shadow/shadow_debian.bb:do_package_write_deb_setscene)
+NOTE: recipe mdadm-4.1-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: recipe libxml2-2.9.4-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: recipe libcap-2.25-r0: task do_packagedata_setscene: Started
+NOTE: recipe gnome-desktop-testing-2018.1-r0: task do_package_write_deb_setscene: Started
+NOTE: Running setscene task 410 of 425 (/home/deby/poky/meta-debian/recipes-debian/libxml/libxml2_debian.bb:do_packagedata_setscene)
+NOTE: recipe coreutils-8.30-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: recipe shadow-4.5-r0: task do_populate_sysroot_setscene: Started
+NOTE: recipe iproute2-4.20.0-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: recipe shared-mime-info-1.10-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: recipe eudev-3.2.7-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: recipe e2fsprogs-1.44.5-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 411 of 425 (/home/deby/poky/meta/recipes-core/udev/eudev_3.2.7.bb:do_packagedata_setscene)
+NOTE: recipe shadow-4.5-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe gnome-desktop-testing-2018.1-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: recipe util-linux-2.33.1-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 412 of 425 (/home/deby/poky/meta-debian/recipes-debian/e2fsprogs/e2fsprogs_debian.bb:do_packagedata_setscene)
+NOTE: Running setscene task 413 of 425 (/home/deby/poky/meta-debian/recipes-debian/iproute2/iproute2_debian.bb:do_packagedata_setscene)
+NOTE: Running setscene task 414 of 425 (/home/deby/poky/meta-debian/recipes-debian/btrfs-tools/btrfs-tools_debian.bb:do_packagedata_setscene)
+NOTE: recipe glib-2.0-2.58.3-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: recipe libxml2-2.9.4-r0: task do_packagedata_setscene: Started
+NOTE: Running setscene task 415 of 425 (/home/deby/poky/meta-debian/recipes-debian/glib-2.0/glib-2.0_debian.bb:do_packagedata_setscene)
+NOTE: Running setscene task 416 of 425 (/home/deby/poky/meta-debian/recipes-debian/shared-mime-info/shared-mime-info_debian.bb:do_packagedata_setscene)
+NOTE: Running setscene task 417 of 425 (/home/deby/poky/meta-debian/recipes-debian/gnome-desktop-testing/gnome-desktop-testing_debian.bb:do_packagedata_setscene)
+NOTE: recipe libcap-2.25-r0: task do_packagedata_setscene: Succeeded
+NOTE: recipe eudev-3.2.7-r0: task do_packagedata_setscene: Started
+NOTE: recipe shadow-4.5-r0: task do_populate_sysroot_setscene: Succeeded
+NOTE: recipe shadow-4.5-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 418 of 425 (/home/deby/poky/meta-debian/recipes-debian/pam/libpam_debian.bb:do_packagedata_setscene)
+NOTE: Running setscene task 419 of 425 (/home/deby/poky/meta-debian/recipes-debian/util-linux/util-linux_debian.bb:do_packagedata_setscene)
+NOTE: Running setscene task 420 of 425 (/home/deby/poky/meta-debian/recipes-debian/shadow/shadow_debian.bb:do_packagedata_setscene)
+NOTE: recipe glib-2.0-2.58.3-r0: task do_populate_sysroot_setscene: Succeeded
+NOTE: Running setscene task 421 of 425 (/home/deby/poky/meta-debian/recipes-debian/util-linux/util-linux_debian.bb:do_populate_sysroot_setscene)
+NOTE: recipe iproute2-4.20.0-r0: task do_packagedata_setscene: Started
+NOTE: recipe btrfs-tools-4.20.1-r0: task do_packagedata_setscene: Started
+NOTE: recipe glib-2.0-2.58.3-r0: task do_packagedata_setscene: Started
+NOTE: recipe python3-3.7.3-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 422 of 425 (/home/deby/poky/meta-debian/recipes-debian/coreutils/coreutils_debian.bb:do_packagedata_setscene)
+NOTE: Running setscene task 423 of 425 (/home/deby/poky/meta-debian/recipes-debian/python/python3_debian.bb:do_packagedata_setscene)
+NOTE: recipe libpam-1.3.1-r0: task do_packagedata_setscene: Started
+NOTE: recipe gnome-desktop-testing-2018.1-r0: task do_packagedata_setscene: Started
+NOTE: recipe e2fsprogs-1.44.5-r0: task do_packagedata_setscene: Started
+NOTE: recipe shared-mime-info-1.10-r0: task do_packagedata_setscene: Started
+NOTE: recipe util-linux-2.33.1-r0: task do_packagedata_setscene: Started
+NOTE: recipe shadow-4.5-r0: task do_packagedata_setscene: Started
+NOTE: recipe util-linux-2.33.1-r0: task do_populate_sysroot_setscene: Started
+NOTE: recipe coreutils-8.30-r0: task do_packagedata_setscene: Started
+NOTE: recipe libxml2-2.9.4-r0: task do_packagedata_setscene: Succeeded
+NOTE: recipe python3-3.7.3-r0: task do_packagedata_setscene: Started
+NOTE: recipe util-linux-2.33.1-r0: task do_populate_sysroot_setscene: Succeeded
+NOTE: Running setscene task 424 of 425 (/home/deby/poky/meta-debian/recipes-debian/pam/libpam_debian.bb:do_populate_sysroot_setscene)
+NOTE: recipe libpam-1.3.1-r0: task do_populate_sysroot_setscene: Started
+NOTE: recipe libpam-1.3.1-r0: task do_populate_sysroot_setscene: Succeeded
+NOTE: recipe iproute2-4.20.0-r0: task do_packagedata_setscene: Succeeded
+NOTE: recipe libpam-1.3.1-r0: task do_packagedata_setscene: Succeeded
+NOTE: recipe coreutils-8.30-r0: task do_packagedata_setscene: Succeeded
+NOTE: recipe gnome-desktop-testing-2018.1-r0: task do_packagedata_setscene: Succeeded
+NOTE: recipe glib-2.0-2.58.3-r0: task do_packagedata_setscene: Succeeded
+NOTE: recipe eudev-3.2.7-r0: task do_packagedata_setscene: Succeeded
+NOTE: recipe shadow-4.5-r0: task do_packagedata_setscene: Succeeded
+NOTE: recipe shared-mime-info-1.10-r0: task do_packagedata_setscene: Succeeded
+NOTE: recipe util-linux-2.33.1-r0: task do_packagedata_setscene: Succeeded
+NOTE: recipe python3-3.7.3-r0: task do_packagedata_setscene: Succeeded
+NOTE: recipe btrfs-tools-4.20.1-r0: task do_packagedata_setscene: Succeeded
+NOTE: recipe e2fsprogs-1.44.5-r0: task do_packagedata_setscene: Succeeded
 NOTE: Executing RunQueue Tasks
-NOTE: Running task 1618 of 1960 (/home/deby/poky/meta-debian/recipes-debian/pam-shield/pam-shield_debian.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 1626 of 1968 (/home/deby/poky/meta-debian/recipes-debian/pam-shield/pam-shield_debian.bb:do_prepare_recipe_sysroot)
 NOTE: recipe pam-shield-0.9.6-r0: task do_prepare_recipe_sysroot: Started
 NOTE: recipe pam-shield-0.9.6-r0: task do_prepare_recipe_sysroot: Succeeded
-NOTE: Running task 1952 of 1960 (/home/deby/poky/meta-debian/recipes-debian/pam-shield/pam-shield_debian.bb:do_configure)
+NOTE: Running task 1960 of 1968 (/home/deby/poky/meta-debian/recipes-debian/pam-shield/pam-shield_debian.bb:do_configure)
 NOTE: recipe pam-shield-0.9.6-r0: task do_configure: Started
 NOTE: recipe pam-shield-0.9.6-r0: task do_configure: Succeeded
-NOTE: Running task 1953 of 1960 (/home/deby/poky/meta-debian/recipes-debian/pam-shield/pam-shield_debian.bb:do_compile)
+NOTE: Running task 1961 of 1968 (/home/deby/poky/meta-debian/recipes-debian/pam-shield/pam-shield_debian.bb:do_compile)
 NOTE: recipe pam-shield-0.9.6-r0: task do_compile: Started
 NOTE: recipe pam-shield-0.9.6-r0: task do_compile: Succeeded
-NOTE: Running task 1954 of 1960 (/home/deby/poky/meta-debian/recipes-debian/pam-shield/pam-shield_debian.bb:do_install)
+NOTE: Running task 1962 of 1968 (/home/deby/poky/meta-debian/recipes-debian/pam-shield/pam-shield_debian.bb:do_install)
 NOTE: recipe pam-shield-0.9.6-r0: task do_install: Started
 NOTE: recipe pam-shield-0.9.6-r0: task do_install: Succeeded
-NOTE: Running task 1955 of 1960 (/home/deby/poky/meta-debian/recipes-debian/pam-shield/pam-shield_debian.bb:do_package)
-NOTE: Running task 1956 of 1960 (/home/deby/poky/meta-debian/recipes-debian/pam-shield/pam-shield_debian.bb:do_populate_sysroot)
-NOTE: recipe pam-shield-0.9.6-r0: task do_package: Started
+NOTE: Running task 1963 of 1968 (/home/deby/poky/meta-debian/recipes-debian/pam-shield/pam-shield_debian.bb:do_package)
+NOTE: Running task 1964 of 1968 (/home/deby/poky/meta-debian/recipes-debian/pam-shield/pam-shield_debian.bb:do_populate_sysroot)
 NOTE: recipe pam-shield-0.9.6-r0: task do_populate_sysroot: Started
+NOTE: recipe pam-shield-0.9.6-r0: task do_package: Started
 NOTE: recipe pam-shield-0.9.6-r0: task do_populate_sysroot: Succeeded
 NOTE: recipe pam-shield-0.9.6-r0: task do_package: Succeeded
-NOTE: Running task 1957 of 1960 (/home/deby/poky/meta-debian/recipes-debian/pam-shield/pam-shield_debian.bb:do_packagedata)
+NOTE: Running task 1965 of 1968 (/home/deby/poky/meta-debian/recipes-debian/pam-shield/pam-shield_debian.bb:do_packagedata)
 NOTE: recipe pam-shield-0.9.6-r0: task do_packagedata: Started
 NOTE: recipe pam-shield-0.9.6-r0: task do_packagedata: Succeeded
-NOTE: Running task 1958 of 1960 (/home/deby/poky/meta-debian/recipes-debian/pam-shield/pam-shield_debian.bb:do_package_write_deb)
-NOTE: Running task 1959 of 1960 (/home/deby/poky/meta-debian/recipes-debian/pam-shield/pam-shield_debian.bb:do_package_qa)
+NOTE: Running task 1966 of 1968 (/home/deby/poky/meta-debian/recipes-debian/pam-shield/pam-shield_debian.bb:do_package_write_deb)
+NOTE: Running task 1967 of 1968 (/home/deby/poky/meta-debian/recipes-debian/pam-shield/pam-shield_debian.bb:do_package_qa)
 NOTE: recipe pam-shield-0.9.6-r0: task do_package_write_deb: Started
 NOTE: recipe pam-shield-0.9.6-r0: task do_package_qa: Started
 NOTE: recipe pam-shield-0.9.6-r0: task do_package_qa: Succeeded
 NOTE: recipe pam-shield-0.9.6-r0: task do_package_write_deb: Succeeded
-NOTE: Running noexec task 1960 of 1960 (/home/deby/poky/meta-debian/recipes-debian/pam-shield/pam-shield_debian.bb:do_build)
-NOTE: Tasks Summary: Attempted 1960 tasks of which 1950 didn't need to be rerun and all succeeded.
+NOTE: Running noexec task 1968 of 1968 (/home/deby/poky/meta-debian/recipes-debian/pam-shield/pam-shield_debian.bb:do_build)
+NOTE: Tasks Summary: Attempted 1968 tasks of which 1958 didn't need to be rerun and all succeeded.

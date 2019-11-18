@@ -1,7 +1,7 @@
 Loading cache...done.
-Loaded 1731 entries from dependency cache.
+Loaded 1825 entries from dependency cache.
 Parsing recipes...done.
-Parsing of 992 .bb files complete (990 cached, 2 parsed). 1733 targets, 229 skipped, 0 masked, 0 errors.
+Parsing of 1043 .bb files complete (1041 cached, 2 parsed). 1828 targets, 228 skipped, 0 masked, 0 errors.
 NOTE: Resolving any missing task queue dependencies
 
 Build Configuration:
@@ -16,239 +16,824 @@ TUNE_FEATURES        = "o32 bigendian fpu-hard mips32r2"
 TARGET_FPU           = ""
 meta                 
 meta-poky            = "warrior:79a850a10a4b88a6d20d607b322542f947874323"
-meta-debian          = "warrior:f7512bd96372e67fe4288cb5cb61cf52d282dd4e"
+meta-debian          = "warrior:fda6a80e4cae9aa03f502551f35fe41beb7bb944"
 
 Initialising tasks...done.
-Sstate summary: Wanted 36 Found 0 Missed 36 Current 180 (0% match, 83% complete)
+Sstate summary: Wanted 73 Found 0 Missed 73 Current 195 (0% match, 72% complete)
 NOTE: Executing SetScene Tasks
 NOTE: Executing RunQueue Tasks
-NOTE: Running task 862 of 1050 (/home/deby/poky/meta/recipes-support/libassuan/libassuan_2.5.3.bb:do_prepare_recipe_sysroot)
-NOTE: Running task 875 of 1050 (/home/deby/poky/meta-debian/recipes-debian/librsync/librsync_debian.bb:do_prepare_recipe_sysroot)
-NOTE: Running task 887 of 1050 (/home/deby/poky/meta/recipes-support/npth/npth_1.6.bb:do_prepare_recipe_sysroot)
-NOTE: Running task 889 of 1050 (/home/deby/poky/meta/recipes-support/libksba/libksba_1.3.5.bb:do_prepare_recipe_sysroot)
-NOTE: Running task 916 of 1050 (/home/deby/poky/meta-debian/recipes-debian/python/python-six_debian.bb:do_prepare_recipe_sysroot)
-NOTE: Running task 918 of 1050 (/home/deby/poky/meta-debian/recipes-debian/python/python-monotonic_debian.bb:do_prepare_recipe_sysroot)
-NOTE: Running task 928 of 1050 (/home/deby/poky/meta-debian/recipes-debian/python/python-fasteners_debian.bb:do_prepare_recipe_sysroot)
-NOTE: recipe python-fasteners-0.12.0-r0: task do_prepare_recipe_sysroot: Started
+NOTE: Running task 752 of 1304 (/home/deby/poky/meta-debian/recipes-debian/libassuan/libassuan_debian.bb:do_fetch)
+NOTE: Running task 808 of 1304 (/home/deby/poky/meta-debian/recipes-debian/librsync/librsync_debian.bb:do_fetch)
+NOTE: Running task 835 of 1304 (/home/deby/poky/meta-debian/recipes-debian/npth/npth_debian.bb:do_fetch)
+NOTE: Running task 837 of 1304 (/home/deby/poky/meta-debian/recipes-debian/libksba/libksba_debian.bb:do_fetch)
+NOTE: Running task 869 of 1304 (/home/deby/poky/meta-debian/recipes-debian/duplicity/duplicity_debian.bb:do_fetch)
+NOTE: Running task 884 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python-cffi/python-cffi_debian.bb:do_fetch)
+NOTE: Running task 885 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python/python-six_debian.bb:do_fetch)
+NOTE: Running task 886 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python/python-monotonic_debian.bb:do_fetch)
+NOTE: Running task 897 of 1304 (/home/deby/poky/meta-debian/recipes-debian/lftp/lftp_debian.bb:do_fetch)
+NOTE: Running task 898 of 1304 (/home/deby/poky/meta-debian/recipes-debian/gnupg/gnupg_debian.bb:do_fetch)
+NOTE: Running task 899 of 1304 (/home/deby/poky/meta-debian/recipes-debian/paramiko/python-paramiko_debian.bb:do_fetch)
+NOTE: Running task 900 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python/python-fasteners_debian.bb:do_fetch)
+NOTE: Running task 910 of 1304 (/home/deby/poky/meta-debian/recipes-debian/ply/python-ply_debian.bb:do_fetch)
+NOTE: Running task 912 of 1304 (/home/deby/poky/meta-debian/recipes-debian/pycparser/python-pycparser_debian.bb:do_fetch)
+NOTE: Running task 914 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python-ipaddress/python-ipaddress_debian.bb:do_fetch)
+NOTE: Running task 915 of 1304 (/home/deby/poky/meta-debian/recipes-debian/enum34/enum34_debian.bb:do_fetch)
+NOTE: recipe librsync-0.9.7-r0: task do_fetch: Started
+NOTE: recipe lftp-4.8.4-r0: task do_fetch: Started
+NOTE: recipe gnupg-2.2.12-r0: task do_fetch: Started
+NOTE: recipe librsync-0.9.7-r0: task do_fetch: Succeeded
+NOTE: Running task 916 of 1304 (/home/deby/poky/meta-debian/recipes-debian/librsync/librsync_debian.bb:do_unpack)
+NOTE: recipe lftp-4.8.4-r0: task do_fetch: Succeeded
+NOTE: recipe libksba-1.3.5-r0: task do_fetch: Started
+NOTE: Running task 917 of 1304 (/home/deby/poky/meta-debian/recipes-debian/asn1crypto/python-asn1crypto_debian.bb:do_fetch)
+NOTE: recipe python-cffi-1.12.2-r0: task do_fetch: Started
+NOTE: recipe npth-1.6-r0: task do_fetch: Started
+NOTE: recipe python-ipaddress-1.0.17-r0: task do_fetch: Started
+NOTE: recipe enum34-1.1.6-r0: task do_fetch: Started
+NOTE: recipe python-fasteners-0.12.0-r0: task do_fetch: Started
+NOTE: recipe duplicity-0.7.18.2-r0: task do_fetch: Started
+NOTE: recipe python-paramiko-2.4.2-r0: task do_fetch: Started
+NOTE: recipe python-pycparser-2.19-r0: task do_fetch: Started
+NOTE: recipe python-monotonic-1.1-r0: task do_fetch: Started
+NOTE: recipe python-ply-3.11-r0: task do_fetch: Started
+NOTE: recipe libassuan-2.5.2-r0: task do_fetch: Started
+NOTE: recipe python-six-1.12.0-r0: task do_fetch: Started
+NOTE: recipe gnupg-2.2.12-r0: task do_fetch: Succeeded
+NOTE: Running task 920 of 1304 (/home/deby/poky/meta-debian/recipes-debian/pinentry/pinentry_debian.bb:do_fetch)
+NOTE: recipe librsync-0.9.7-r0: task do_unpack: Started
+NOTE: recipe python-ipaddress-1.0.17-r0: task do_fetch: Succeeded
+NOTE: recipe python-ply-3.11-r0: task do_fetch: Succeeded
+NOTE: Running task 921 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python-nacl/python-nacl_debian.bb:do_fetch)
+NOTE: Running task 922 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python-bcrypt/python-bcrypt_debian.bb:do_fetch)
+NOTE: recipe python-pycparser-2.19-r0: task do_fetch: Succeeded
+NOTE: Running task 923 of 1304 (/home/deby/poky/meta-debian/recipes-debian/pyasn1/python-pyasn1_debian.bb:do_fetch)
+NOTE: recipe enum34-1.1.6-r0: task do_fetch: Succeeded
+NOTE: Running task 924 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python-cryptography/python-cryptography_debian.bb:do_fetch)
+NOTE: recipe python-asn1crypto-0.24.0-r0: task do_fetch: Started
+NOTE: recipe python-cffi-1.12.2-r0: task do_fetch: Succeeded
+NOTE: Running task 925 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python-cffi/python-cffi_debian.bb:do_unpack)
+NOTE: recipe python-paramiko-2.4.2-r0: task do_fetch: Succeeded
+NOTE: Running task 926 of 1304 (/home/deby/poky/meta-debian/recipes-debian/librsync/librsync_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe pinentry-1.1.0-r0: task do_fetch: Started
+NOTE: recipe npth-1.6-r0: task do_fetch: Succeeded
+NOTE: recipe libksba-1.3.5-r0: task do_fetch: Succeeded
+NOTE: recipe python-monotonic-1.1-r0: task do_fetch: Succeeded
+NOTE: recipe python-six-1.12.0-r0: task do_fetch: Succeeded
+NOTE: Running task 927 of 1304 (/home/deby/poky/meta-debian/recipes-debian/npth/npth_debian.bb:do_unpack)
+NOTE: Running task 928 of 1304 (/home/deby/poky/meta-debian/recipes-debian/libksba/libksba_debian.bb:do_unpack)
+NOTE: Running task 929 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python/python-monotonic_debian.bb:do_unpack)
+NOTE: recipe libassuan-2.5.2-r0: task do_fetch: Succeeded
+NOTE: Running task 930 of 1304 (/home/deby/poky/meta-debian/recipes-debian/libassuan/libassuan_debian.bb:do_unpack)
+NOTE: Running task 931 of 1304 (/home/deby/poky/meta-debian/recipes-debian/libassuan/libassuan_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe python-fasteners-0.12.0-r0: task do_fetch: Succeeded
+NOTE: recipe duplicity-0.7.18.2-r0: task do_fetch: Succeeded
+NOTE: Running task 932 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python/python-six_debian.bb:do_unpack)
+NOTE: Running task 933 of 1304 (/home/deby/poky/meta-debian/recipes-debian/duplicity/duplicity_debian.bb:do_unpack)
+NOTE: recipe python-asn1crypto-0.24.0-r0: task do_fetch: Succeeded
+NOTE: Running task 934 of 1304 (/home/deby/poky/meta-debian/recipes-debian/lftp/lftp_debian.bb:do_unpack)
+NOTE: recipe python-cryptography-2.6.1-r0: task do_fetch: Started
+NOTE: recipe python-pyasn1-0.4.2-r0: task do_fetch: Started
+NOTE: recipe librsync-0.9.7-r0: task do_unpack: Succeeded
+NOTE: Running task 935 of 1304 (/home/deby/poky/meta-debian/recipes-debian/librsync/librsync_debian.bb:do_debian_unpack_extra)
+NOTE: recipe python-bcrypt-3.1.6-r0: task do_fetch: Started
+NOTE: recipe pinentry-1.1.0-r0: task do_fetch: Succeeded
+NOTE: Running task 936 of 1304 (/home/deby/poky/meta-debian/recipes-debian/gnupg/gnupg_debian.bb:do_unpack)
+NOTE: recipe python-cffi-1.12.2-r0: task do_unpack: Started
+NOTE: recipe python-nacl-1.3.0-r0: task do_fetch: Started
+NOTE: recipe python-pyasn1-0.4.2-r0: task do_fetch: Succeeded
 NOTE: recipe librsync-0.9.7-r0: task do_prepare_recipe_sysroot: Started
-NOTE: recipe libksba-1.3.5-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe python-cryptography-2.6.1-r0: task do_fetch: Succeeded
+NOTE: Running task 937 of 1304 (/home/deby/poky/meta-debian/recipes-debian/paramiko/python-paramiko_debian.bb:do_unpack)
+NOTE: recipe python-monotonic-1.1-r0: task do_unpack: Started
+NOTE: Running task 938 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python/python-fasteners_debian.bb:do_unpack)
+NOTE: recipe libassuan-2.5.2-r0: task do_unpack: Started
+NOTE: recipe duplicity-0.7.18.2-r0: task do_unpack: Started
+NOTE: recipe npth-1.6-r0: task do_unpack: Started
+NOTE: recipe python-six-1.12.0-r0: task do_unpack: Started
+NOTE: recipe libassuan-2.5.2-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe libksba-1.3.5-r0: task do_unpack: Started
+NOTE: recipe lftp-4.8.4-r0: task do_unpack: Started
+NOTE: recipe python-nacl-1.3.0-r0: task do_fetch: Succeeded
+NOTE: Running task 945 of 1304 (/home/deby/poky/meta-debian/recipes-debian/npth/npth_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe librsync-0.9.7-r0: task do_debian_unpack_extra: Started
+NOTE: recipe python-bcrypt-3.1.6-r0: task do_fetch: Succeeded
+NOTE: Running task 948 of 1304 (/home/deby/poky/meta-debian/recipes-debian/libksba/libksba_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe gnupg-2.2.12-r0: task do_unpack: Started
+NOTE: recipe librsync-0.9.7-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 949 of 1304 (/home/deby/poky/meta-debian/recipes-debian/librsync/librsync_debian.bb:do_debian_patch)
+NOTE: recipe python-paramiko-2.4.2-r0: task do_unpack: Started
+NOTE: recipe python-fasteners-0.12.0-r0: task do_unpack: Started
 NOTE: recipe npth-1.6-r0: task do_prepare_recipe_sysroot: Started
-NOTE: recipe python-six-1.12.0-r0: task do_prepare_recipe_sysroot: Started
-NOTE: recipe libassuan-2.5.3-r0: task do_prepare_recipe_sysroot: Started
-NOTE: recipe python-monotonic-1.1-r0: task do_prepare_recipe_sysroot: Started
-NOTE: recipe libksba-1.3.5-r0: task do_prepare_recipe_sysroot: Succeeded
-NOTE: Running task 981 of 1050 (/home/deby/poky/meta/recipes-support/libksba/libksba_1.3.5.bb:do_configure)
-NOTE: recipe libksba-1.3.5-r0: task do_configure: Started
+NOTE: recipe python-monotonic-1.1-r0: task do_unpack: Succeeded
+NOTE: recipe python-six-1.12.0-r0: task do_unpack: Succeeded
+NOTE: recipe libksba-1.3.5-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe librsync-0.9.7-r0: task do_debian_patch: Started
+NOTE: Running task 962 of 1304 (/home/deby/poky/meta-debian/recipes-debian/ply/python-ply_debian.bb:do_unpack)
+NOTE: Running task 964 of 1304 (/home/deby/poky/meta-debian/recipes-debian/pycparser/python-pycparser_debian.bb:do_unpack)
+NOTE: recipe python-cffi-1.12.2-r0: task do_unpack: Succeeded
+NOTE: Running task 967 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python-ipaddress/python-ipaddress_debian.bb:do_unpack)
+NOTE: recipe python-fasteners-0.12.0-r0: task do_unpack: Succeeded
+NOTE: Running task 968 of 1304 (/home/deby/poky/meta-debian/recipes-debian/enum34/enum34_debian.bb:do_unpack)
+NOTE: recipe npth-1.6-r0: task do_unpack: Succeeded
+NOTE: recipe python-ply-3.11-r0: task do_unpack: Started
+NOTE: Running task 969 of 1304 (/home/deby/poky/meta-debian/recipes-debian/npth/npth_debian.bb:do_debian_unpack_extra)
+NOTE: recipe python-pycparser-2.19-r0: task do_unpack: Started
+NOTE: recipe python-ipaddress-1.0.17-r0: task do_unpack: Started
+NOTE: recipe enum34-1.1.6-r0: task do_unpack: Started
+NOTE: recipe duplicity-0.7.18.2-r0: task do_unpack: Succeeded
+NOTE: Running task 970 of 1304 (/home/deby/poky/meta-debian/recipes-debian/asn1crypto/python-asn1crypto_debian.bb:do_unpack)
+NOTE: recipe npth-1.6-r0: task do_debian_unpack_extra: Started
+NOTE: recipe python-paramiko-2.4.2-r0: task do_unpack: Succeeded
+NOTE: Running task 974 of 1304 (/home/deby/poky/meta-debian/recipes-debian/pinentry/pinentry_debian.bb:do_unpack)
+NOTE: recipe lftp-4.8.4-r0: task do_unpack: Succeeded
+NOTE: recipe python-pycparser-2.19-r0: task do_unpack: Succeeded
+NOTE: recipe python-asn1crypto-0.24.0-r0: task do_unpack: Started
+NOTE: Running task 975 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python-nacl/python-nacl_debian.bb:do_unpack)
+NOTE: Running task 976 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python-bcrypt/python-bcrypt_debian.bb:do_unpack)
+NOTE: recipe libksba-1.3.5-r0: task do_unpack: Succeeded
+NOTE: Running task 977 of 1304 (/home/deby/poky/meta-debian/recipes-debian/libksba/libksba_debian.bb:do_debian_unpack_extra)
+NOTE: recipe npth-1.6-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 978 of 1304 (/home/deby/poky/meta-debian/recipes-debian/npth/npth_debian.bb:do_debian_patch)
+NOTE: recipe python-nacl-1.3.0-r0: task do_unpack: Started
+NOTE: recipe python-bcrypt-3.1.6-r0: task do_unpack: Started
+NOTE: recipe pinentry-1.1.0-r0: task do_unpack: Started
+NOTE: recipe libksba-1.3.5-r0: task do_debian_unpack_extra: Started
 NOTE: recipe librsync-0.9.7-r0: task do_prepare_recipe_sysroot: Succeeded
-NOTE: Running task 982 of 1050 (/home/deby/poky/meta-debian/recipes-debian/librsync/librsync_debian.bb:do_configure)
-NOTE: recipe librsync-0.9.7-r0: task do_configure: Started
-NOTE: recipe libassuan-2.5.3-r0: task do_prepare_recipe_sysroot: Succeeded
-NOTE: Running task 983 of 1050 (/home/deby/poky/meta/recipes-support/libassuan/libassuan_2.5.3.bb:do_configure)
-NOTE: recipe libassuan-2.5.3-r0: task do_configure: Started
+NOTE: Running task 979 of 1304 (/home/deby/poky/meta-debian/recipes-debian/pyasn1/python-pyasn1_debian.bb:do_unpack)
+NOTE: recipe python-ply-3.11-r0: task do_unpack: Succeeded
+NOTE: Running task 980 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python-cryptography/python-cryptography_debian.bb:do_unpack)
+NOTE: recipe npth-1.6-r0: task do_debian_patch: Started
+NOTE: recipe libksba-1.3.5-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 981 of 1304 (/home/deby/poky/meta-debian/recipes-debian/libksba/libksba_debian.bb:do_debian_patch)
+NOTE: recipe python-ipaddress-1.0.17-r0: task do_unpack: Succeeded
+NOTE: recipe libksba-1.3.5-r0: task do_prepare_recipe_sysroot: Succeeded
 NOTE: recipe npth-1.6-r0: task do_prepare_recipe_sysroot: Succeeded
-NOTE: Running task 984 of 1050 (/home/deby/poky/meta/recipes-support/npth/npth_1.6.bb:do_configure)
+NOTE: Running task 1002 of 1304 (/home/deby/poky/meta-debian/recipes-debian/duplicity/duplicity_debian.bb:do_debian_unpack_extra)
+NOTE: Running task 1004 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python-cffi/python-cffi_debian.bb:do_debian_unpack_extra)
+NOTE: recipe python-pyasn1-0.4.2-r0: task do_unpack: Started
+NOTE: Running task 1005 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python/python-six_debian.bb:do_debian_unpack_extra)
+NOTE: recipe libassuan-2.5.2-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 1006 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python/python-monotonic_debian.bb:do_debian_unpack_extra)
+NOTE: recipe python-cryptography-2.6.1-r0: task do_unpack: Started
+NOTE: recipe librsync-0.9.7-r0: task do_debian_patch: Succeeded
+NOTE: Running task 1007 of 1304 (/home/deby/poky/meta-debian/recipes-debian/librsync/librsync_debian.bb:do_patch)
+NOTE: recipe npth-1.6-r0: task do_debian_patch: Succeeded
+NOTE: Running task 1008 of 1304 (/home/deby/poky/meta-debian/recipes-debian/npth/npth_debian.bb:do_patch)
+NOTE: recipe python-asn1crypto-0.24.0-r0: task do_unpack: Succeeded
+NOTE: Running task 1009 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python-cffi/python-cffi_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe libassuan-2.5.2-r0: task do_unpack: Succeeded
+NOTE: Running task 1010 of 1304 (/home/deby/poky/meta-debian/recipes-debian/libassuan/libassuan_debian.bb:do_debian_unpack_extra)
+NOTE: recipe enum34-1.1.6-r0: task do_unpack: Succeeded
+NOTE: recipe librsync-0.9.7-r0: task do_patch: Started
+NOTE: Running task 1011 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python/python-six_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe librsync-0.9.7-r0: task do_patch: Succeeded
+NOTE: Running task 1012 of 1304 (/home/deby/poky/meta-debian/recipes-debian/librsync/librsync_debian.bb:do_configure)
+NOTE: recipe librsync-0.9.7-r0: task do_configure: Started
+NOTE: recipe libksba-1.3.5-r0: task do_debian_patch: Started
+NOTE: recipe python-cffi-1.12.2-r0: task do_debian_unpack_extra: Started
+NOTE: recipe python-cffi-1.12.2-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe duplicity-0.7.18.2-r0: task do_debian_unpack_extra: Started
+NOTE: recipe python-six-1.12.0-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe libassuan-2.5.2-r0: task do_debian_unpack_extra: Started
+NOTE: recipe python-monotonic-1.1-r0: task do_debian_unpack_extra: Started
+NOTE: recipe python-six-1.12.0-r0: task do_debian_unpack_extra: Started
+NOTE: recipe npth-1.6-r0: task do_patch: Started
+NOTE: recipe python-bcrypt-3.1.6-r0: task do_unpack: Succeeded
+NOTE: recipe libassuan-2.5.2-r0: task do_debian_unpack_extra: Succeeded
+NOTE: recipe python-six-1.12.0-r0: task do_debian_unpack_extra: Succeeded
+NOTE: recipe python-cffi-1.12.2-r0: task do_debian_unpack_extra: Succeeded
+NOTE: recipe python-monotonic-1.1-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 1013 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python/python-monotonic_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe duplicity-0.7.18.2-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 1014 of 1304 (/home/deby/poky/meta-debian/recipes-debian/libassuan/libassuan_debian.bb:do_debian_patch)
+NOTE: Running task 1015 of 1304 (/home/deby/poky/meta-debian/recipes-debian/duplicity/duplicity_debian.bb:do_debian_patch)
+NOTE: Running task 1016 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python-cffi/python-cffi_debian.bb:do_debian_patch)
+NOTE: Running task 1017 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python/python-six_debian.bb:do_debian_patch)
+NOTE: Running task 1018 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python/python-monotonic_debian.bb:do_debian_patch)
+NOTE: recipe python-pyasn1-0.4.2-r0: task do_unpack: Succeeded
+NOTE: Running task 1021 of 1304 (/home/deby/poky/meta-debian/recipes-debian/lftp/lftp_debian.bb:do_debian_unpack_extra)
+NOTE: recipe libksba-1.3.5-r0: task do_debian_patch: Succeeded
+NOTE: Running task 1022 of 1304 (/home/deby/poky/meta-debian/recipes-debian/libksba/libksba_debian.bb:do_patch)
+NOTE: recipe npth-1.6-r0: task do_patch: Succeeded
+NOTE: Running task 1023 of 1304 (/home/deby/poky/meta-debian/recipes-debian/npth/npth_debian.bb:do_configure)
+NOTE: recipe python-monotonic-1.1-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe pinentry-1.1.0-r0: task do_unpack: Succeeded
+NOTE: Running task 1024 of 1304 (/home/deby/poky/meta-debian/recipes-debian/paramiko/python-paramiko_debian.bb:do_debian_unpack_extra)
+NOTE: recipe duplicity-0.7.18.2-r0: task do_debian_patch: Started
+NOTE: recipe python-monotonic-1.1-r0: task do_debian_patch: Started
+NOTE: recipe python-cffi-1.12.2-r0: task do_debian_patch: Started
+NOTE: recipe python-six-1.12.0-r0: task do_debian_patch: Started
+NOTE: recipe python-cryptography-2.6.1-r0: task do_unpack: Succeeded
+NOTE: recipe libassuan-2.5.2-r0: task do_debian_patch: Started
+NOTE: Running task 1025 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python/python-fasteners_debian.bb:do_debian_unpack_extra)
+NOTE: recipe lftp-4.8.4-r0: task do_debian_unpack_extra: Started
+NOTE: recipe libksba-1.3.5-r0: task do_patch: Started
+NOTE: recipe lftp-4.8.4-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 1027 of 1304 (/home/deby/poky/meta-debian/recipes-debian/lftp/lftp_debian.bb:do_debian_patch)
+NOTE: recipe python-monotonic-1.1-r0: task do_debian_patch: Succeeded
+NOTE: recipe python-paramiko-2.4.2-r0: task do_debian_unpack_extra: Started
+NOTE: Running task 1028 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python/python-monotonic_debian.bb:do_patch)
 NOTE: recipe npth-1.6-r0: task do_configure: Started
-NOTE: recipe python-six-1.12.0-r0: task do_prepare_recipe_sysroot: Succeeded
-NOTE: Running task 985 of 1050 (/home/deby/poky/meta-debian/recipes-debian/python/python-six_debian.bb:do_configure)
+NOTE: recipe python-paramiko-2.4.2-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 1029 of 1304 (/home/deby/poky/meta-debian/recipes-debian/paramiko/python-paramiko_debian.bb:do_debian_patch)
+NOTE: recipe python-fasteners-0.12.0-r0: task do_debian_unpack_extra: Started
+NOTE: recipe lftp-4.8.4-r0: task do_debian_patch: Started
+NOTE: recipe libassuan-2.5.2-r0: task do_debian_patch: Succeeded
+NOTE: Running task 1030 of 1304 (/home/deby/poky/meta-debian/recipes-debian/libassuan/libassuan_debian.bb:do_patch)
+NOTE: recipe python-monotonic-1.1-r0: task do_patch: Started
+NOTE: recipe python-paramiko-2.4.2-r0: task do_debian_patch: Started
+NOTE: recipe python-fasteners-0.12.0-r0: task do_debian_unpack_extra: Succeeded
+NOTE: recipe duplicity-0.7.18.2-r0: task do_debian_patch: Succeeded
+NOTE: Running task 1031 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python/python-fasteners_debian.bb:do_debian_patch)
+NOTE: Running task 1032 of 1304 (/home/deby/poky/meta-debian/recipes-debian/duplicity/duplicity_debian.bb:do_patch)
+NOTE: recipe libassuan-2.5.2-r0: task do_patch: Started
+NOTE: recipe libksba-1.3.5-r0: task do_patch: Succeeded
+NOTE: Running task 1033 of 1304 (/home/deby/poky/meta-debian/recipes-debian/libksba/libksba_debian.bb:do_configure)
+NOTE: recipe duplicity-0.7.18.2-r0: task do_patch: Started
+NOTE: recipe python-fasteners-0.12.0-r0: task do_debian_patch: Started
+NOTE: recipe duplicity-0.7.18.2-r0: task do_patch: Succeeded
+NOTE: Running task 1034 of 1304 (/home/deby/poky/meta-debian/recipes-debian/lftp/lftp_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe libassuan-2.5.2-r0: task do_patch: Succeeded
+NOTE: Running task 1035 of 1304 (/home/deby/poky/meta-debian/recipes-debian/libassuan/libassuan_debian.bb:do_configure)
+NOTE: recipe python-fasteners-0.12.0-r0: task do_debian_patch: Succeeded
+NOTE: Running task 1036 of 1304 (/home/deby/poky/meta-debian/recipes-debian/paramiko/python-paramiko_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe python-paramiko-2.4.2-r0: task do_debian_patch: Succeeded
+NOTE: recipe libksba-1.3.5-r0: task do_configure: Started
+NOTE: Running task 1037 of 1304 (/home/deby/poky/meta-debian/recipes-debian/paramiko/python-paramiko_debian.bb:do_patch)
+NOTE: recipe lftp-4.8.4-r0: task do_debian_patch: Succeeded
+NOTE: Running task 1038 of 1304 (/home/deby/poky/meta-debian/recipes-debian/lftp/lftp_debian.bb:do_patch)
+NOTE: recipe lftp-4.8.4-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe python-nacl-1.3.0-r0: task do_unpack: Succeeded
+NOTE: Running task 1039 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python/python-fasteners_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe libassuan-2.5.2-r0: task do_configure: Started
+NOTE: recipe python-paramiko-2.4.2-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe python-paramiko-2.4.2-r0: task do_patch: Started
+NOTE: recipe python-paramiko-2.4.2-r0: task do_patch: Succeeded
+NOTE: Running task 1040 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python/python-fasteners_debian.bb:do_patch)
+NOTE: recipe python-fasteners-0.12.0-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe lftp-4.8.4-r0: task do_patch: Started
+NOTE: recipe python-fasteners-0.12.0-r0: task do_patch: Started
+NOTE: recipe lftp-4.8.4-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 1043 of 1304 (/home/deby/poky/meta-debian/recipes-debian/ply/python-ply_debian.bb:do_debian_unpack_extra)
+NOTE: recipe lftp-4.8.4-r0: task do_patch: Succeeded
+NOTE: Running task 1044 of 1304 (/home/deby/poky/meta-debian/recipes-debian/lftp/lftp_debian.bb:do_configure)
+NOTE: recipe python-ply-3.11-r0: task do_debian_unpack_extra: Started
+NOTE: recipe lftp-4.8.4-r0: task do_configure: Started
+NOTE: recipe python-ply-3.11-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 1046 of 1304 (/home/deby/poky/meta-debian/recipes-debian/pycparser/python-pycparser_debian.bb:do_debian_unpack_extra)
+NOTE: recipe python-pycparser-2.19-r0: task do_debian_unpack_extra: Started
+NOTE: recipe python-pycparser-2.19-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 1048 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python-ipaddress/python-ipaddress_debian.bb:do_debian_unpack_extra)
+NOTE: recipe python-ipaddress-1.0.17-r0: task do_debian_unpack_extra: Started
+NOTE: recipe python-ipaddress-1.0.17-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 1049 of 1304 (/home/deby/poky/meta-debian/recipes-debian/enum34/enum34_debian.bb:do_debian_unpack_extra)
+NOTE: recipe enum34-1.1.6-r0: task do_debian_unpack_extra: Started
+NOTE: recipe enum34-1.1.6-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 1050 of 1304 (/home/deby/poky/meta-debian/recipes-debian/asn1crypto/python-asn1crypto_debian.bb:do_debian_unpack_extra)
+NOTE: recipe gnupg-2.2.12-r0: task do_unpack: Succeeded
+NOTE: Running task 1051 of 1304 (/home/deby/poky/meta-debian/recipes-debian/gnupg/gnupg_debian.bb:do_debian_unpack_extra)
+NOTE: recipe python-asn1crypto-0.24.0-r0: task do_debian_unpack_extra: Started
+NOTE: recipe gnupg-2.2.12-r0: task do_debian_unpack_extra: Started
+NOTE: recipe python-asn1crypto-0.24.0-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 1054 of 1304 (/home/deby/poky/meta-debian/recipes-debian/pinentry/pinentry_debian.bb:do_debian_unpack_extra)
+NOTE: recipe gnupg-2.2.12-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 1055 of 1304 (/home/deby/poky/meta-debian/recipes-debian/gnupg/gnupg_debian.bb:do_debian_patch)
+NOTE: recipe gnupg-2.2.12-r0: task do_debian_patch: Started
+NOTE: recipe pinentry-1.1.0-r0: task do_debian_unpack_extra: Started
+NOTE: recipe pinentry-1.1.0-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 1056 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python-nacl/python-nacl_debian.bb:do_debian_unpack_extra)
+NOTE: recipe python-nacl-1.3.0-r0: task do_debian_unpack_extra: Started
 NOTE: recipe python-fasteners-0.12.0-r0: task do_prepare_recipe_sysroot: Succeeded
-NOTE: Running task 986 of 1050 (/home/deby/poky/meta-debian/recipes-debian/python/python-fasteners_debian.bb:do_configure)
-NOTE: recipe python-monotonic-1.1-r0: task do_prepare_recipe_sysroot: Succeeded
-NOTE: Running task 987 of 1050 (/home/deby/poky/meta-debian/recipes-debian/python/python-monotonic_debian.bb:do_configure)
+NOTE: Running task 1057 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python-bcrypt/python-bcrypt_debian.bb:do_debian_unpack_extra)
+NOTE: recipe python-paramiko-2.4.2-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 1058 of 1304 (/home/deby/poky/meta-debian/recipes-debian/paramiko/python-paramiko_debian.bb:do_configure)
+NOTE: recipe python-fasteners-0.12.0-r0: task do_patch: Succeeded
+NOTE: Running task 1059 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python/python-fasteners_debian.bb:do_configure)
+NOTE: recipe python-bcrypt-3.1.6-r0: task do_debian_unpack_extra: Started
+NOTE: recipe python-paramiko-2.4.2-r0: task do_configure: Started
 NOTE: recipe python-fasteners-0.12.0-r0: task do_configure: Started
-NOTE: recipe python-six-1.12.0-r0: task do_configure: Started
+NOTE: recipe python-bcrypt-3.1.6-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 1060 of 1304 (/home/deby/poky/meta-debian/recipes-debian/pyasn1/python-pyasn1_debian.bb:do_debian_unpack_extra)
+NOTE: recipe python-pyasn1-0.4.2-r0: task do_debian_unpack_extra: Started
+NOTE: recipe python-cffi-1.12.2-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 1061 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python-cryptography/python-cryptography_debian.bb:do_debian_unpack_extra)
+NOTE: recipe python-pyasn1-0.4.2-r0: task do_debian_unpack_extra: Succeeded
+NOTE: recipe python-nacl-1.3.0-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 1063 of 1304 (/home/deby/poky/meta-debian/recipes-debian/ply/python-ply_debian.bb:do_debian_patch)
+NOTE: Running task 1065 of 1304 (/home/deby/poky/meta-debian/recipes-debian/pycparser/python-pycparser_debian.bb:do_debian_patch)
+NOTE: recipe python-cffi-1.12.2-r0: task do_debian_patch: Succeeded
+NOTE: recipe python-cryptography-2.6.1-r0: task do_debian_unpack_extra: Started
+NOTE: Running task 1066 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python-cffi/python-cffi_debian.bb:do_patch)
+NOTE: recipe python-ply-3.11-r0: task do_debian_patch: Started
+NOTE: recipe python-pycparser-2.19-r0: task do_debian_patch: Started
+NOTE: recipe python-monotonic-1.1-r0: task do_patch: Succeeded
+NOTE: Running task 1068 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python-ipaddress/python-ipaddress_debian.bb:do_debian_patch)
+NOTE: recipe python-six-1.12.0-r0: task do_debian_patch: Succeeded
+NOTE: Running task 1069 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python/python-six_debian.bb:do_patch)
+NOTE: recipe python-cryptography-2.6.1-r0: task do_debian_unpack_extra: Succeeded
+NOTE: recipe python-cffi-1.12.2-r0: task do_patch: Started
+NOTE: Running task 1070 of 1304 (/home/deby/poky/meta-debian/recipes-debian/enum34/enum34_debian.bb:do_debian_patch)
+NOTE: recipe python-pycparser-2.19-r0: task do_debian_patch: Succeeded
+NOTE: Running task 1071 of 1304 (/home/deby/poky/meta-debian/recipes-debian/asn1crypto/python-asn1crypto_debian.bb:do_debian_patch)
+NOTE: recipe python-ply-3.11-r0: task do_debian_patch: Succeeded
+NOTE: Running task 1075 of 1304 (/home/deby/poky/meta-debian/recipes-debian/pinentry/pinentry_debian.bb:do_debian_patch)
+NOTE: recipe python-ipaddress-1.0.17-r0: task do_debian_patch: Started
+NOTE: recipe python-six-1.12.0-r0: task do_patch: Started
+NOTE: recipe python-monotonic-1.1-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 1076 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python/python-monotonic_debian.bb:do_configure)
+NOTE: recipe python-asn1crypto-0.24.0-r0: task do_debian_patch: Started
+NOTE: recipe enum34-1.1.6-r0: task do_debian_patch: Started
+NOTE: recipe python-six-1.12.0-r0: task do_patch: Succeeded
+NOTE: Running task 1077 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python-nacl/python-nacl_debian.bb:do_debian_patch)
+NOTE: recipe python-asn1crypto-0.24.0-r0: task do_debian_patch: Succeeded
+NOTE: Running task 1078 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python-bcrypt/python-bcrypt_debian.bb:do_debian_patch)
 NOTE: recipe python-monotonic-1.1-r0: task do_configure: Started
+NOTE: recipe pinentry-1.1.0-r0: task do_debian_patch: Started
+NOTE: recipe python-ipaddress-1.0.17-r0: task do_debian_patch: Succeeded
+NOTE: Running task 1079 of 1304 (/home/deby/poky/meta-debian/recipes-debian/pyasn1/python-pyasn1_debian.bb:do_debian_patch)
+NOTE: recipe python-nacl-1.3.0-r0: task do_debian_patch: Started
+NOTE: recipe python-pyasn1-0.4.2-r0: task do_debian_patch: Started
+NOTE: recipe python-bcrypt-3.1.6-r0: task do_debian_patch: Started
+NOTE: recipe python-bcrypt-3.1.6-r0: task do_debian_patch: Succeeded
+NOTE: Running task 1080 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python-cryptography/python-cryptography_debian.bb:do_debian_patch)
+NOTE: recipe pinentry-1.1.0-r0: task do_debian_patch: Succeeded
+NOTE: Running task 1083 of 1304 (/home/deby/poky/meta-debian/recipes-debian/ply/python-ply_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe enum34-1.1.6-r0: task do_debian_patch: Succeeded
+NOTE: recipe python-six-1.12.0-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 1084 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python/python-six_debian.bb:do_configure)
+NOTE: recipe python-pyasn1-0.4.2-r0: task do_debian_patch: Succeeded
+NOTE: Running task 1085 of 1304 (/home/deby/poky/meta-debian/recipes-debian/ply/python-ply_debian.bb:do_patch)
+NOTE: Running task 1088 of 1304 (/home/deby/poky/meta-debian/recipes-debian/pycparser/python-pycparser_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe python-cryptography-2.6.1-r0: task do_debian_patch: Started
+NOTE: recipe python-six-1.12.0-r0: task do_configure: Started
+NOTE: recipe python-ply-3.11-r0: task do_patch: Started
+NOTE: recipe python-ply-3.11-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe python-pycparser-2.19-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe python-ply-3.11-r0: task do_patch: Succeeded
+NOTE: Running task 1089 of 1304 (/home/deby/poky/meta-debian/recipes-debian/pycparser/python-pycparser_debian.bb:do_patch)
+NOTE: recipe gnupg-2.2.12-r0: task do_debian_patch: Succeeded
+NOTE: Running task 1090 of 1304 (/home/deby/poky/meta-debian/recipes-debian/gnupg/gnupg_debian.bb:do_patch)
+NOTE: recipe python-cryptography-2.6.1-r0: task do_debian_patch: Succeeded
+NOTE: Running task 1093 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python-ipaddress/python-ipaddress_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe python-cffi-1.12.2-r0: task do_patch: Succeeded
+NOTE: Running task 1094 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python-cffi/python-cffi_debian.bb:do_configure)
+NOTE: recipe python-pycparser-2.19-r0: task do_patch: Started
+NOTE: recipe python-ipaddress-1.0.17-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe gnupg-2.2.12-r0: task do_patch: Started
+NOTE: recipe python-cffi-1.12.2-r0: task do_configure: Started
+NOTE: recipe gnupg-2.2.12-r0: task do_patch: Succeeded
+NOTE: Running task 1095 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python-ipaddress/python-ipaddress_debian.bb:do_patch)
+NOTE: recipe python-ipaddress-1.0.17-r0: task do_patch: Started
+NOTE: recipe python-nacl-1.3.0-r0: task do_debian_patch: Succeeded
+NOTE: Running task 1096 of 1304 (/home/deby/poky/meta-debian/recipes-debian/enum34/enum34_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe enum34-1.1.6-r0: task do_prepare_recipe_sysroot: Started
 NOTE: recipe python-monotonic-1.1-r0: task do_configure: Succeeded
-NOTE: Running task 988 of 1050 (/home/deby/poky/meta-debian/recipes-debian/python/python-monotonic_debian.bb:do_compile)
-NOTE: recipe python-six-1.12.0-r0: task do_configure: Succeeded
-NOTE: Running task 989 of 1050 (/home/deby/poky/meta-debian/recipes-debian/python/python-six_debian.bb:do_compile)
-NOTE: recipe python-fasteners-0.12.0-r0: task do_configure: Succeeded
-NOTE: Running task 990 of 1050 (/home/deby/poky/meta-debian/recipes-debian/python/python-fasteners_debian.bb:do_compile)
+NOTE: Running task 1097 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python/python-monotonic_debian.bb:do_compile)
 NOTE: recipe python-monotonic-1.1-r0: task do_compile: Started
+NOTE: recipe python-six-1.12.0-r0: task do_configure: Succeeded
+NOTE: Running task 1098 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python/python-six_debian.bb:do_compile)
+NOTE: recipe python-cffi-1.12.2-r0: task do_configure: Succeeded
+NOTE: Running task 1099 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python-cffi/python-cffi_debian.bb:do_compile)
+NOTE: recipe python-paramiko-2.4.2-r0: task do_configure: Succeeded
+NOTE: Running task 1100 of 1304 (/home/deby/poky/meta-debian/recipes-debian/paramiko/python-paramiko_debian.bb:do_compile)
+NOTE: recipe python-fasteners-0.12.0-r0: task do_configure: Succeeded
+NOTE: Running task 1101 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python/python-fasteners_debian.bb:do_compile)
 NOTE: recipe python-six-1.12.0-r0: task do_compile: Started
-NOTE: recipe python-fasteners-0.12.0-r0: task do_compile: Started
+NOTE: recipe python-cffi-1.12.2-r0: task do_compile: Started
+NOTE: recipe python-paramiko-2.4.2-r0: task do_compile: Started
 NOTE: recipe python-monotonic-1.1-r0: task do_compile: Succeeded
-NOTE: Running task 991 of 1050 (/home/deby/poky/meta-debian/recipes-debian/python/python-monotonic_debian.bb:do_install)
+NOTE: recipe python-fasteners-0.12.0-r0: task do_compile: Started
+NOTE: Running task 1102 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python/python-monotonic_debian.bb:do_install)
 NOTE: recipe python-six-1.12.0-r0: task do_compile: Succeeded
 NOTE: recipe python-fasteners-0.12.0-r0: task do_compile: Succeeded
-NOTE: Running task 992 of 1050 (/home/deby/poky/meta-debian/recipes-debian/python/python-six_debian.bb:do_install)
-NOTE: Running task 993 of 1050 (/home/deby/poky/meta-debian/recipes-debian/python/python-fasteners_debian.bb:do_install)
-NOTE: recipe python-six-1.12.0-r0: task do_install: Started
+NOTE: recipe python-paramiko-2.4.2-r0: task do_compile: Succeeded
+NOTE: Running task 1103 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python/python-six_debian.bb:do_install)
+NOTE: Running task 1104 of 1304 (/home/deby/poky/meta-debian/recipes-debian/paramiko/python-paramiko_debian.bb:do_install)
+NOTE: Running task 1105 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python/python-fasteners_debian.bb:do_install)
 NOTE: recipe python-monotonic-1.1-r0: task do_install: Started
+NOTE: recipe python-six-1.12.0-r0: task do_install: Started
 NOTE: recipe python-fasteners-0.12.0-r0: task do_install: Started
-NOTE: recipe python-monotonic-1.1-r0: task do_install: Succeeded
-NOTE: Running task 994 of 1050 (/home/deby/poky/meta-debian/recipes-debian/python/python-monotonic_debian.bb:do_package)
+NOTE: recipe enum34-1.1.6-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 1106 of 1304 (/home/deby/poky/meta-debian/recipes-debian/enum34/enum34_debian.bb:do_patch)
+NOTE: recipe python-paramiko-2.4.2-r0: task do_install: Started
+NOTE: recipe python-ipaddress-1.0.17-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 1107 of 1304 (/home/deby/poky/meta-debian/recipes-debian/asn1crypto/python-asn1crypto_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe enum34-1.1.6-r0: task do_patch: Started
+NOTE: recipe python-ipaddress-1.0.17-r0: task do_patch: Succeeded
+NOTE: Running task 1108 of 1304 (/home/deby/poky/meta-debian/recipes-debian/asn1crypto/python-asn1crypto_debian.bb:do_patch)
+NOTE: recipe python-ply-3.11-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 1113 of 1304 (/home/deby/poky/meta-debian/recipes-debian/pinentry/pinentry_debian.bb:do_patch)
+NOTE: recipe enum34-1.1.6-r0: task do_patch: Succeeded
+NOTE: Running task 1114 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python-nacl/python-nacl_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe python-pycparser-2.19-r0: task do_patch: Succeeded
+NOTE: recipe python-pycparser-2.19-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 1115 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python-nacl/python-nacl_debian.bb:do_patch)
+NOTE: Running task 1116 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python-bcrypt/python-bcrypt_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe python-asn1crypto-0.24.0-r0: task do_patch: Started
+NOTE: recipe python-nacl-1.3.0-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe python-asn1crypto-0.24.0-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe pinentry-1.1.0-r0: task do_patch: Started
+NOTE: recipe python-asn1crypto-0.24.0-r0: task do_patch: Succeeded
+NOTE: recipe python-nacl-1.3.0-r0: task do_patch: Started
+NOTE: Running task 1117 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python-bcrypt/python-bcrypt_debian.bb:do_patch)
+NOTE: recipe python-bcrypt-3.1.6-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe python-bcrypt-3.1.6-r0: task do_patch: Started
+NOTE: recipe pinentry-1.1.0-r0: task do_patch: Succeeded
+NOTE: Running task 1118 of 1304 (/home/deby/poky/meta-debian/recipes-debian/pyasn1/python-pyasn1_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe python-pyasn1-0.4.2-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe python-asn1crypto-0.24.0-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 1119 of 1304 (/home/deby/poky/meta-debian/recipes-debian/pyasn1/python-pyasn1_debian.bb:do_patch)
+NOTE: recipe python-bcrypt-3.1.6-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 1120 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python-cryptography/python-cryptography_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe python-bcrypt-3.1.6-r0: task do_patch: Succeeded
+NOTE: Running task 1121 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python-cryptography/python-cryptography_debian.bb:do_patch)
+NOTE: recipe python-pyasn1-0.4.2-r0: task do_patch: Started
+NOTE: recipe python-cryptography-2.6.1-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe python-nacl-1.3.0-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 1123 of 1304 (/home/deby/poky/meta-debian/recipes-debian/ply/python-ply_debian.bb:do_configure)
 NOTE: recipe python-six-1.12.0-r0: task do_install: Succeeded
-NOTE: Running task 995 of 1050 (/home/deby/poky/meta-debian/recipes-debian/python/python-six_debian.bb:do_package)
-NOTE: recipe python-monotonic-1.1-r0: task do_package: Started
-NOTE: recipe python-six-1.12.0-r0: task do_package: Started
+NOTE: recipe python-monotonic-1.1-r0: task do_install: Succeeded
+NOTE: Running task 1124 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python/python-six_debian.bb:do_package)
+NOTE: Running task 1125 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python/python-monotonic_debian.bb:do_package)
+NOTE: recipe python-pyasn1-0.4.2-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: recipe python-cryptography-2.6.1-r0: task do_patch: Started
+NOTE: Running task 1127 of 1304 (/home/deby/poky/meta-debian/recipes-debian/pycparser/python-pycparser_debian.bb:do_configure)
+NOTE: recipe python-cffi-1.12.2-r0: task do_compile: Succeeded
+NOTE: Running task 1128 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python-cffi/python-cffi_debian.bb:do_install)
+NOTE: recipe python-ply-3.11-r0: task do_configure: Started
+NOTE: recipe python-pyasn1-0.4.2-r0: task do_patch: Succeeded
 NOTE: recipe python-fasteners-0.12.0-r0: task do_install: Succeeded
-NOTE: Running task 996 of 1050 (/home/deby/poky/meta-debian/recipes-debian/python/python-fasteners_debian.bb:do_package)
+NOTE: Running task 1129 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python/python-fasteners_debian.bb:do_package)
+NOTE: Running task 1131 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python-ipaddress/python-ipaddress_debian.bb:do_configure)
+NOTE: recipe python-nacl-1.3.0-r0: task do_patch: Succeeded
+NOTE: Running task 1132 of 1304 (/home/deby/poky/meta-debian/recipes-debian/enum34/enum34_debian.bb:do_configure)
+NOTE: recipe python-pycparser-2.19-r0: task do_configure: Started
+NOTE: recipe python-ipaddress-1.0.17-r0: task do_configure: Started
+NOTE: recipe python-six-1.12.0-r0: task do_package: Started
+NOTE: recipe python-monotonic-1.1-r0: task do_package: Started
+NOTE: recipe enum34-1.1.6-r0: task do_configure: Started
+NOTE: recipe python-cffi-1.12.2-r0: task do_install: Started
 NOTE: recipe python-fasteners-0.12.0-r0: task do_package: Started
-NOTE: recipe python-monotonic-1.1-r0: task do_package: Succeeded
-NOTE: Running task 997 of 1050 (/home/deby/poky/meta-debian/recipes-debian/python/python-monotonic_debian.bb:do_packagedata)
-NOTE: recipe python-six-1.12.0-r0: task do_package: Succeeded
-NOTE: Running task 998 of 1050 (/home/deby/poky/meta-debian/recipes-debian/python/python-six_debian.bb:do_packagedata)
-NOTE: recipe python-monotonic-1.1-r0: task do_packagedata: Started
-NOTE: recipe python-six-1.12.0-r0: task do_packagedata: Started
-NOTE: recipe python-six-1.12.0-r0: task do_packagedata: Succeeded
-NOTE: Running task 999 of 1050 (/home/deby/poky/meta-debian/recipes-debian/python/python-six_debian.bb:do_package_write_deb)
-NOTE: recipe python-monotonic-1.1-r0: task do_packagedata: Succeeded
-NOTE: Running task 1000 of 1050 (/home/deby/poky/meta-debian/recipes-debian/python/python-monotonic_debian.bb:do_package_write_deb)
-NOTE: recipe python-six-1.12.0-r0: task do_package_write_deb: Started
-NOTE: recipe python-fasteners-0.12.0-r0: task do_package: Succeeded
-NOTE: Running task 1001 of 1050 (/home/deby/poky/meta-debian/recipes-debian/python/python-fasteners_debian.bb:do_packagedata)
-NOTE: recipe python-monotonic-1.1-r0: task do_package_write_deb: Started
-NOTE: recipe python-fasteners-0.12.0-r0: task do_packagedata: Started
-NOTE: recipe python-fasteners-0.12.0-r0: task do_packagedata: Succeeded
-NOTE: Running task 1002 of 1050 (/home/deby/poky/meta-debian/recipes-debian/python/python-fasteners_debian.bb:do_package_write_deb)
-NOTE: recipe python-six-1.12.0-r0: task do_package_write_deb: Succeeded
-NOTE: recipe python-monotonic-1.1-r0: task do_package_write_deb: Succeeded
-NOTE: recipe python-fasteners-0.12.0-r0: task do_package_write_deb: Started
-NOTE: recipe python-fasteners-0.12.0-r0: task do_package_write_deb: Succeeded
+NOTE: recipe python-ply-3.11-r0: task do_configure: Succeeded
+NOTE: Running task 1133 of 1304 (/home/deby/poky/meta-debian/recipes-debian/asn1crypto/python-asn1crypto_debian.bb:do_configure)
+NOTE: recipe python-pycparser-2.19-r0: task do_configure: Succeeded
+NOTE: recipe python-ipaddress-1.0.17-r0: task do_configure: Succeeded
+NOTE: Running task 1136 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python-nacl/python-nacl_debian.bb:do_configure)
+NOTE: recipe python-asn1crypto-0.24.0-r0: task do_configure: Started
+NOTE: Running task 1137 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python-bcrypt/python-bcrypt_debian.bb:do_configure)
+NOTE: recipe python-bcrypt-3.1.6-r0: task do_configure: Started
+NOTE: recipe python-nacl-1.3.0-r0: task do_configure: Started
+NOTE: recipe python-paramiko-2.4.2-r0: task do_install: Succeeded
+NOTE: Running task 1138 of 1304 (/home/deby/poky/meta-debian/recipes-debian/paramiko/python-paramiko_debian.bb:do_package)
+NOTE: recipe enum34-1.1.6-r0: task do_configure: Succeeded
+NOTE: Running task 1139 of 1304 (/home/deby/poky/meta-debian/recipes-debian/pyasn1/python-pyasn1_debian.bb:do_configure)
+NOTE: recipe python-asn1crypto-0.24.0-r0: task do_configure: Succeeded
+NOTE: Running task 1141 of 1304 (/home/deby/poky/meta-debian/recipes-debian/ply/python-ply_debian.bb:do_compile)
+NOTE: recipe python-paramiko-2.4.2-r0: task do_package: Started
+NOTE: recipe python-pyasn1-0.4.2-r0: task do_configure: Started
+NOTE: recipe python-ply-3.11-r0: task do_compile: Started
+NOTE: recipe python-ply-3.11-r0: task do_compile: Succeeded
+NOTE: Running task 1143 of 1304 (/home/deby/poky/meta-debian/recipes-debian/pycparser/python-pycparser_debian.bb:do_compile)
+NOTE: recipe python-pyasn1-0.4.2-r0: task do_configure: Succeeded
+NOTE: Running task 1145 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python-ipaddress/python-ipaddress_debian.bb:do_compile)
+NOTE: recipe python-bcrypt-3.1.6-r0: task do_configure: Succeeded
+NOTE: recipe python-pycparser-2.19-r0: task do_compile: Started
+NOTE: Running task 1146 of 1304 (/home/deby/poky/meta-debian/recipes-debian/enum34/enum34_debian.bb:do_compile)
+NOTE: recipe python-ipaddress-1.0.17-r0: task do_compile: Started
+NOTE: recipe enum34-1.1.6-r0: task do_compile: Started
+NOTE: recipe python-pycparser-2.19-r0: task do_compile: Succeeded
+NOTE: Running task 1147 of 1304 (/home/deby/poky/meta-debian/recipes-debian/asn1crypto/python-asn1crypto_debian.bb:do_compile)
+NOTE: recipe python-ipaddress-1.0.17-r0: task do_compile: Succeeded
+NOTE: Running task 1150 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python-bcrypt/python-bcrypt_debian.bb:do_compile)
+NOTE: recipe enum34-1.1.6-r0: task do_compile: Succeeded
+NOTE: Running task 1151 of 1304 (/home/deby/poky/meta-debian/recipes-debian/pyasn1/python-pyasn1_debian.bb:do_compile)
+NOTE: recipe python-asn1crypto-0.24.0-r0: task do_compile: Started
+NOTE: recipe python-bcrypt-3.1.6-r0: task do_compile: Started
+NOTE: recipe python-pyasn1-0.4.2-r0: task do_compile: Started
+NOTE: recipe python-nacl-1.3.0-r0: task do_configure: Succeeded
+NOTE: Running task 1152 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python-nacl/python-nacl_debian.bb:do_compile)
+NOTE: recipe python-nacl-1.3.0-r0: task do_compile: Started
+NOTE: recipe python-asn1crypto-0.24.0-r0: task do_compile: Succeeded
+NOTE: Running task 1154 of 1304 (/home/deby/poky/meta-debian/recipes-debian/ply/python-ply_debian.bb:do_install)
+NOTE: recipe python-pyasn1-0.4.2-r0: task do_compile: Succeeded
+NOTE: Running task 1156 of 1304 (/home/deby/poky/meta-debian/recipes-debian/pycparser/python-pycparser_debian.bb:do_install)
+NOTE: recipe python-ply-3.11-r0: task do_install: Started
+NOTE: recipe python-cryptography-2.6.1-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 1158 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python-ipaddress/python-ipaddress_debian.bb:do_install)
+NOTE: recipe python-cryptography-2.6.1-r0: task do_patch: Succeeded
+NOTE: Running task 1159 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python-cryptography/python-cryptography_debian.bb:do_configure)
+NOTE: recipe python-pycparser-2.19-r0: task do_install: Started
+NOTE: recipe python-cryptography-2.6.1-r0: task do_configure: Started
+NOTE: recipe python-ipaddress-1.0.17-r0: task do_install: Started
+NOTE: recipe python-cryptography-2.6.1-r0: task do_configure: Succeeded
+NOTE: Running task 1160 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python-cryptography/python-cryptography_debian.bb:do_compile)
+NOTE: recipe python-cryptography-2.6.1-r0: task do_compile: Started
+NOTE: recipe python-cffi-1.12.2-r0: task do_install: Succeeded
+NOTE: Running task 1161 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python-cffi/python-cffi_debian.bb:do_package)
+NOTE: recipe python-cffi-1.12.2-r0: task do_package: Started
+NOTE: recipe python-bcrypt-3.1.6-r0: task do_compile: Succeeded
+NOTE: Running task 1162 of 1304 (/home/deby/poky/meta-debian/recipes-debian/enum34/enum34_debian.bb:do_install)
+NOTE: recipe enum34-1.1.6-r0: task do_install: Started
+NOTE: recipe python-ipaddress-1.0.17-r0: task do_install: Succeeded
+NOTE: Running task 1163 of 1304 (/home/deby/poky/meta-debian/recipes-debian/asn1crypto/python-asn1crypto_debian.bb:do_install)
+NOTE: recipe python-asn1crypto-0.24.0-r0: task do_install: Started
+NOTE: recipe python-ply-3.11-r0: task do_install: Succeeded
+NOTE: Running task 1166 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python-bcrypt/python-bcrypt_debian.bb:do_install)
+NOTE: recipe python-bcrypt-3.1.6-r0: task do_install: Started
+NOTE: recipe python-pycparser-2.19-r0: task do_install: Succeeded
+NOTE: Running task 1167 of 1304 (/home/deby/poky/meta-debian/recipes-debian/pyasn1/python-pyasn1_debian.bb:do_install)
+NOTE: recipe python-pyasn1-0.4.2-r0: task do_install: Started
+NOTE: recipe enum34-1.1.6-r0: task do_install: Succeeded
+NOTE: Running task 1169 of 1304 (/home/deby/poky/meta-debian/recipes-debian/ply/python-ply_debian.bb:do_package)
+NOTE: recipe python-ply-3.11-r0: task do_package: Started
+NOTE: recipe python-asn1crypto-0.24.0-r0: task do_install: Succeeded
+NOTE: Running task 1171 of 1304 (/home/deby/poky/meta-debian/recipes-debian/pycparser/python-pycparser_debian.bb:do_package)
+NOTE: recipe python-bcrypt-3.1.6-r0: task do_install: Succeeded
+NOTE: Running task 1173 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python-ipaddress/python-ipaddress_debian.bb:do_package)
+NOTE: recipe python-pycparser-2.19-r0: task do_package: Started
+NOTE: recipe python-ipaddress-1.0.17-r0: task do_package: Started
 NOTE: recipe npth-1.6-r0: task do_configure: Succeeded
-NOTE: Running task 1003 of 1050 (/home/deby/poky/meta/recipes-support/npth/npth_1.6.bb:do_compile)
+NOTE: Running task 1174 of 1304 (/home/deby/poky/meta-debian/recipes-debian/npth/npth_debian.bb:do_compile)
 NOTE: recipe npth-1.6-r0: task do_compile: Started
-NOTE: recipe libassuan-2.5.3-r0: task do_configure: Succeeded
-NOTE: Running task 1004 of 1050 (/home/deby/poky/meta/recipes-support/libassuan/libassuan_2.5.3.bb:do_compile)
+NOTE: recipe python-pyasn1-0.4.2-r0: task do_install: Succeeded
+NOTE: Running task 1175 of 1304 (/home/deby/poky/meta-debian/recipes-debian/enum34/enum34_debian.bb:do_package)
 NOTE: recipe npth-1.6-r0: task do_compile: Succeeded
-NOTE: recipe libassuan-2.5.3-r0: task do_compile: Started
-NOTE: Running task 1005 of 1050 (/home/deby/poky/meta/recipes-support/npth/npth_1.6.bb:do_install)
-NOTE: recipe libksba-1.3.5-r0: task do_configure: Succeeded
-NOTE: Running task 1006 of 1050 (/home/deby/poky/meta/recipes-support/libksba/libksba_1.3.5.bb:do_compile)
-NOTE: recipe libksba-1.3.5-r0: task do_compile: Started
-NOTE: recipe librsync-0.9.7-r0: task do_configure: Succeeded
-NOTE: Running task 1007 of 1050 (/home/deby/poky/meta-debian/recipes-debian/librsync/librsync_debian.bb:do_compile)
-NOTE: recipe librsync-0.9.7-r0: task do_compile: Started
+NOTE: Running task 1176 of 1304 (/home/deby/poky/meta-debian/recipes-debian/npth/npth_debian.bb:do_install)
+NOTE: recipe enum34-1.1.6-r0: task do_package: Started
 NOTE: recipe npth-1.6-r0: task do_install: Started
 NOTE: recipe npth-1.6-r0: task do_install: Succeeded
-NOTE: Running task 1008 of 1050 (/home/deby/poky/meta/recipes-support/npth/npth_1.6.bb:do_package)
-NOTE: Running task 1009 of 1050 (/home/deby/poky/meta/recipes-support/npth/npth_1.6.bb:do_populate_sysroot)
-NOTE: recipe npth-1.6-r0: task do_populate_sysroot: Started
-NOTE: recipe librsync-0.9.7-r0: task do_compile: Succeeded
-NOTE: Running task 1010 of 1050 (/home/deby/poky/meta-debian/recipes-debian/librsync/librsync_debian.bb:do_install)
+NOTE: Running task 1177 of 1304 (/home/deby/poky/meta-debian/recipes-debian/npth/npth_debian.bb:do_package)
 NOTE: recipe npth-1.6-r0: task do_package: Started
-NOTE: recipe npth-1.6-r0: task do_populate_sysroot: Succeeded
-NOTE: recipe librsync-0.9.7-r0: task do_install: Started
-NOTE: recipe libassuan-2.5.3-r0: task do_compile: Succeeded
-NOTE: Running task 1011 of 1050 (/home/deby/poky/meta/recipes-support/libassuan/libassuan_2.5.3.bb:do_install)
-NOTE: recipe librsync-0.9.7-r0: task do_install: Succeeded
-NOTE: Running task 1012 of 1050 (/home/deby/poky/meta-debian/recipes-debian/librsync/librsync_debian.bb:do_package)
-NOTE: Running task 1013 of 1050 (/home/deby/poky/meta-debian/recipes-debian/librsync/librsync_debian.bb:do_populate_sysroot)
-NOTE: recipe libassuan-2.5.3-r0: task do_install: Started
+NOTE: recipe libksba-1.3.5-r0: task do_configure: Succeeded
+NOTE: recipe libassuan-2.5.2-r0: task do_configure: Succeeded
+NOTE: Running task 1178 of 1304 (/home/deby/poky/meta-debian/recipes-debian/libksba/libksba_debian.bb:do_compile)
+NOTE: Running task 1179 of 1304 (/home/deby/poky/meta-debian/recipes-debian/libassuan/libassuan_debian.bb:do_compile)
+NOTE: recipe libksba-1.3.5-r0: task do_compile: Started
+NOTE: recipe libassuan-2.5.2-r0: task do_compile: Started
+NOTE: recipe libassuan-2.5.2-r0: task do_compile: Succeeded
+NOTE: Running task 1180 of 1304 (/home/deby/poky/meta-debian/recipes-debian/libassuan/libassuan_debian.bb:do_install)
 NOTE: recipe libksba-1.3.5-r0: task do_compile: Succeeded
-NOTE: Running task 1014 of 1050 (/home/deby/poky/meta/recipes-support/libksba/libksba_1.3.5.bb:do_install)
-NOTE: recipe npth-1.6-r0: task do_package: Succeeded
-NOTE: Running task 1015 of 1050 (/home/deby/poky/meta/recipes-support/npth/npth_1.6.bb:do_packagedata)
-NOTE: recipe librsync-0.9.7-r0: task do_populate_sysroot: Started
-NOTE: recipe librsync-0.9.7-r0: task do_package: Started
-NOTE: recipe npth-1.6-r0: task do_packagedata: Started
-NOTE: recipe libassuan-2.5.3-r0: task do_install: Succeeded
-NOTE: Running task 1016 of 1050 (/home/deby/poky/meta/recipes-support/libassuan/libassuan_2.5.3.bb:do_package)
-NOTE: Running task 1017 of 1050 (/home/deby/poky/meta/recipes-support/libassuan/libassuan_2.5.3.bb:do_populate_sysroot)
-NOTE: recipe libassuan-2.5.3-r0: task do_populate_sysroot: Started
-NOTE: recipe libassuan-2.5.3-r0: task do_package: Started
-NOTE: recipe librsync-0.9.7-r0: task do_populate_sysroot: Succeeded
-NOTE: Running task 1018 of 1050 (/home/deby/poky/meta-debian/recipes-debian/duplicity/duplicity_debian.bb:do_prepare_recipe_sysroot)
-NOTE: recipe npth-1.6-r0: task do_packagedata: Succeeded
-NOTE: Running task 1019 of 1050 (/home/deby/poky/meta/recipes-support/npth/npth_1.6.bb:do_package_write_deb)
-NOTE: recipe npth-1.6-r0: task do_package_write_deb: Started
-NOTE: recipe duplicity-0.7.18.2-r0: task do_prepare_recipe_sysroot: Started
+NOTE: Running task 1181 of 1304 (/home/deby/poky/meta-debian/recipes-debian/libksba/libksba_debian.bb:do_install)
+NOTE: recipe libassuan-2.5.2-r0: task do_install: Started
 NOTE: recipe libksba-1.3.5-r0: task do_install: Started
-NOTE: recipe librsync-0.9.7-r0: task do_package: Succeeded
-NOTE: Running task 1020 of 1050 (/home/deby/poky/meta-debian/recipes-debian/librsync/librsync_debian.bb:do_packagedata)
-NOTE: recipe libassuan-2.5.3-r0: task do_populate_sysroot: Succeeded
-NOTE: Running task 1021 of 1050 (/home/deby/poky/meta/recipes-support/pinentry/pinentry_1.1.0.bb:do_prepare_recipe_sysroot)
-NOTE: recipe librsync-0.9.7-r0: task do_packagedata: Started
-NOTE: recipe npth-1.6-r0: task do_package_write_deb: Succeeded
-NOTE: recipe pinentry-1.1.0-r0: task do_prepare_recipe_sysroot: Started
-NOTE: recipe librsync-0.9.7-r0: task do_packagedata: Succeeded
-NOTE: Running task 1022 of 1050 (/home/deby/poky/meta-debian/recipes-debian/librsync/librsync_debian.bb:do_package_write_deb)
+NOTE: recipe python-cryptography-2.6.1-r0: task do_compile: Succeeded
+NOTE: Running task 1182 of 1304 (/home/deby/poky/meta-debian/recipes-debian/npth/npth_debian.bb:do_populate_sysroot)
+NOTE: recipe npth-1.6-r0: task do_populate_sysroot: Started
+NOTE: recipe libassuan-2.5.2-r0: task do_install: Succeeded
+NOTE: Running task 1183 of 1304 (/home/deby/poky/meta-debian/recipes-debian/libassuan/libassuan_debian.bb:do_package)
+NOTE: recipe libassuan-2.5.2-r0: task do_package: Started
 NOTE: recipe libksba-1.3.5-r0: task do_install: Succeeded
-NOTE: recipe librsync-0.9.7-r0: task do_package_write_deb: Started
-NOTE: Running task 1023 of 1050 (/home/deby/poky/meta/recipes-support/libksba/libksba_1.3.5.bb:do_package)
-NOTE: Running task 1024 of 1050 (/home/deby/poky/meta/recipes-support/libksba/libksba_1.3.5.bb:do_populate_sysroot)
-NOTE: recipe libassuan-2.5.3-r0: task do_package: Succeeded
-NOTE: Running task 1025 of 1050 (/home/deby/poky/meta/recipes-support/libassuan/libassuan_2.5.3.bb:do_packagedata)
-NOTE: recipe libksba-1.3.5-r0: task do_populate_sysroot: Started
+NOTE: Running task 1184 of 1304 (/home/deby/poky/meta-debian/recipes-debian/libassuan/libassuan_debian.bb:do_populate_sysroot)
+NOTE: recipe libassuan-2.5.2-r0: task do_populate_sysroot: Started
+NOTE: recipe librsync-0.9.7-r0: task do_configure: Succeeded
+NOTE: Running task 1185 of 1304 (/home/deby/poky/meta-debian/recipes-debian/librsync/librsync_debian.bb:do_compile)
+NOTE: recipe librsync-0.9.7-r0: task do_compile: Started
+NOTE: recipe librsync-0.9.7-r0: task do_compile: Succeeded
+NOTE: Running task 1186 of 1304 (/home/deby/poky/meta-debian/recipes-debian/librsync/librsync_debian.bb:do_install)
+NOTE: recipe librsync-0.9.7-r0: task do_install: Started
+NOTE: recipe librsync-0.9.7-r0: task do_install: Succeeded
+NOTE: Running task 1187 of 1304 (/home/deby/poky/meta-debian/recipes-debian/librsync/librsync_debian.bb:do_package)
+NOTE: recipe librsync-0.9.7-r0: task do_package: Started
+NOTE: recipe python-monotonic-1.1-r0: task do_package: Succeeded
+NOTE: Running task 1188 of 1304 (/home/deby/poky/meta-debian/recipes-debian/librsync/librsync_debian.bb:do_populate_sysroot)
+NOTE: recipe python-six-1.12.0-r0: task do_package: Succeeded
+NOTE: Running task 1189 of 1304 (/home/deby/poky/meta-debian/recipes-debian/libksba/libksba_debian.bb:do_package)
+NOTE: recipe librsync-0.9.7-r0: task do_populate_sysroot: Started
 NOTE: recipe libksba-1.3.5-r0: task do_package: Started
-NOTE: recipe libassuan-2.5.3-r0: task do_packagedata: Started
-NOTE: recipe libassuan-2.5.3-r0: task do_packagedata: Succeeded
-NOTE: Running task 1026 of 1050 (/home/deby/poky/meta/recipes-support/libassuan/libassuan_2.5.3.bb:do_package_write_deb)
-NOTE: recipe libksba-1.3.5-r0: task do_populate_sysroot: Succeeded
-NOTE: Running task 1027 of 1050 (/home/deby/poky/meta/recipes-support/gnupg/gnupg_2.2.13.bb:do_prepare_recipe_sysroot)
-NOTE: recipe libassuan-2.5.3-r0: task do_package_write_deb: Started
-NOTE: recipe librsync-0.9.7-r0: task do_package_write_deb: Succeeded
-NOTE: recipe gnupg-2.2.13-r0: task do_prepare_recipe_sysroot: Started
-NOTE: recipe libassuan-2.5.3-r0: task do_package_write_deb: Succeeded
-NOTE: recipe libksba-1.3.5-r0: task do_package: Succeeded
-NOTE: Running task 1028 of 1050 (/home/deby/poky/meta/recipes-support/libksba/libksba_1.3.5.bb:do_packagedata)
-NOTE: recipe libksba-1.3.5-r0: task do_packagedata: Started
-NOTE: recipe libksba-1.3.5-r0: task do_packagedata: Succeeded
-NOTE: Running task 1029 of 1050 (/home/deby/poky/meta/recipes-support/libksba/libksba_1.3.5.bb:do_package_write_deb)
-NOTE: recipe libksba-1.3.5-r0: task do_package_write_deb: Started
-NOTE: recipe duplicity-0.7.18.2-r0: task do_prepare_recipe_sysroot: Succeeded
-NOTE: Running task 1030 of 1050 (/home/deby/poky/meta-debian/recipes-debian/duplicity/duplicity_debian.bb:do_configure)
-NOTE: recipe libksba-1.3.5-r0: task do_package_write_deb: Succeeded
+NOTE: recipe python-fasteners-0.12.0-r0: task do_package: Succeeded
+NOTE: Running task 1190 of 1304 (/home/deby/poky/meta-debian/recipes-debian/libksba/libksba_debian.bb:do_populate_sysroot)
+NOTE: recipe libksba-1.3.5-r0: task do_populate_sysroot: Started
+NOTE: recipe python-paramiko-2.4.2-r0: task do_package: Succeeded
+NOTE: Running task 1191 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python/python-six_debian.bb:do_packagedata)
+NOTE: recipe python-six-1.12.0-r0: task do_packagedata: Started
+NOTE: recipe python-six-1.12.0-r0: task do_packagedata: Succeeded
+NOTE: Running task 1192 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python/python-monotonic_debian.bb:do_packagedata)
+NOTE: recipe python-monotonic-1.1-r0: task do_packagedata: Started
+NOTE: recipe python-monotonic-1.1-r0: task do_packagedata: Succeeded
+NOTE: Running task 1193 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python-cryptography/python-cryptography_debian.bb:do_install)
+NOTE: recipe python-cryptography-2.6.1-r0: task do_install: Started
+NOTE: recipe python-cffi-1.12.2-r0: task do_package: Succeeded
+NOTE: Running task 1194 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python-cffi/python-cffi_debian.bb:do_packagedata)
+NOTE: recipe python-cffi-1.12.2-r0: task do_packagedata: Started
+NOTE: recipe python-cffi-1.12.2-r0: task do_packagedata: Succeeded
+NOTE: Running task 1195 of 1304 (/home/deby/poky/meta-debian/recipes-debian/asn1crypto/python-asn1crypto_debian.bb:do_package)
+NOTE: recipe python-asn1crypto-0.24.0-r0: task do_package: Started
+NOTE: recipe python-ply-3.11-r0: task do_package: Succeeded
+NOTE: Running task 1198 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python-bcrypt/python-bcrypt_debian.bb:do_package)
+NOTE: recipe python-bcrypt-3.1.6-r0: task do_package: Started
+NOTE: recipe python-ipaddress-1.0.17-r0: task do_package: Succeeded
+NOTE: Running task 1199 of 1304 (/home/deby/poky/meta-debian/recipes-debian/pyasn1/python-pyasn1_debian.bb:do_package)
+NOTE: recipe python-pyasn1-0.4.2-r0: task do_package: Started
+NOTE: recipe python-pycparser-2.19-r0: task do_package: Succeeded
+NOTE: Running task 1200 of 1304 (/home/deby/poky/meta-debian/recipes-debian/paramiko/python-paramiko_debian.bb:do_packagedata)
+NOTE: recipe enum34-1.1.6-r0: task do_package: Succeeded
+NOTE: Running task 1201 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python/python-fasteners_debian.bb:do_packagedata)
+NOTE: recipe python-paramiko-2.4.2-r0: task do_packagedata: Started
+NOTE: recipe python-fasteners-0.12.0-r0: task do_packagedata: Started
+NOTE: recipe python-paramiko-2.4.2-r0: task do_packagedata: Succeeded
+NOTE: Running task 1203 of 1304 (/home/deby/poky/meta-debian/recipes-debian/ply/python-ply_debian.bb:do_packagedata)
+NOTE: recipe python-fasteners-0.12.0-r0: task do_packagedata: Succeeded
+NOTE: Running task 1205 of 1304 (/home/deby/poky/meta-debian/recipes-debian/pycparser/python-pycparser_debian.bb:do_packagedata)
+NOTE: recipe python-ply-3.11-r0: task do_packagedata: Started
+NOTE: recipe python-pycparser-2.19-r0: task do_packagedata: Started
+NOTE: recipe python-ply-3.11-r0: task do_packagedata: Succeeded
+NOTE: Running task 1207 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python-ipaddress/python-ipaddress_debian.bb:do_packagedata)
+NOTE: recipe python-pycparser-2.19-r0: task do_packagedata: Succeeded
+NOTE: Running task 1208 of 1304 (/home/deby/poky/meta-debian/recipes-debian/enum34/enum34_debian.bb:do_packagedata)
+NOTE: recipe python-ipaddress-1.0.17-r0: task do_packagedata: Started
+NOTE: recipe enum34-1.1.6-r0: task do_packagedata: Started
+NOTE: recipe python-ipaddress-1.0.17-r0: task do_packagedata: Succeeded
+NOTE: Running task 1212 of 1304 (/home/deby/poky/meta-debian/recipes-debian/ply/python-ply_debian.bb:do_package_write_deb)
+NOTE: recipe enum34-1.1.6-r0: task do_packagedata: Succeeded
+NOTE: Running task 1216 of 1304 (/home/deby/poky/meta-debian/recipes-debian/pycparser/python-pycparser_debian.bb:do_package_write_deb)
+NOTE: recipe python-ply-3.11-r0: task do_package_write_deb: Started
+NOTE: recipe python-pycparser-2.19-r0: task do_package_write_deb: Started
+NOTE: recipe python-cryptography-2.6.1-r0: task do_install: Succeeded
+NOTE: Running task 1217 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python-cryptography/python-cryptography_debian.bb:do_package)
+NOTE: recipe python-cryptography-2.6.1-r0: task do_package: Started
+NOTE: recipe python-ply-3.11-r0: task do_package_write_deb: Succeeded
+NOTE: Running task 1220 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python-ipaddress/python-ipaddress_debian.bb:do_package_write_deb)
+NOTE: recipe python-pycparser-2.19-r0: task do_package_write_deb: Succeeded
+NOTE: Running task 1221 of 1304 (/home/deby/poky/meta-debian/recipes-debian/enum34/enum34_debian.bb:do_package_write_deb)
+NOTE: recipe python-ipaddress-1.0.17-r0: task do_package_write_deb: Started
+NOTE: recipe enum34-1.1.6-r0: task do_package_write_deb: Started
+NOTE: recipe python-ipaddress-1.0.17-r0: task do_package_write_deb: Succeeded
+NOTE: Running task 1222 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python-cffi/python-cffi_debian.bb:do_package_write_deb)
+NOTE: recipe python-cffi-1.12.2-r0: task do_package_write_deb: Started
+NOTE: recipe enum34-1.1.6-r0: task do_package_write_deb: Succeeded
+NOTE: Running task 1248 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python/python-six_debian.bb:do_package_write_deb)
+NOTE: recipe python-six-1.12.0-r0: task do_package_write_deb: Started
+NOTE: recipe python-cffi-1.12.2-r0: task do_package_write_deb: Succeeded
+NOTE: Running task 1249 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python/python-monotonic_debian.bb:do_package_write_deb)
+NOTE: recipe python-monotonic-1.1-r0: task do_package_write_deb: Started
+NOTE: recipe python-six-1.12.0-r0: task do_package_write_deb: Succeeded
+NOTE: Running task 1250 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python/python-fasteners_debian.bb:do_package_write_deb)
+NOTE: recipe python-fasteners-0.12.0-r0: task do_package_write_deb: Started
+NOTE: recipe python-monotonic-1.1-r0: task do_package_write_deb: Succeeded
+NOTE: Running task 1254 of 1304 (/home/deby/poky/meta-debian/recipes-debian/duplicity/duplicity_debian.bb:do_populate_lic)
+NOTE: recipe npth-1.6-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe duplicity-0.7.18.2-r0: task do_populate_lic: Started
+NOTE: recipe python-fasteners-0.12.0-r0: task do_package_write_deb: Succeeded
+NOTE: recipe duplicity-0.7.18.2-r0: task do_populate_lic: Succeeded
+NOTE: recipe npth-1.6-r0: task do_package: Succeeded
+NOTE: Running task 1255 of 1304 (/home/deby/poky/meta-debian/recipes-debian/npth/npth_debian.bb:do_packagedata)
+NOTE: recipe npth-1.6-r0: task do_packagedata: Started
+NOTE: recipe npth-1.6-r0: task do_packagedata: Succeeded
+NOTE: Running task 1256 of 1304 (/home/deby/poky/meta-debian/recipes-debian/npth/npth_debian.bb:do_package_write_deb)
+NOTE: recipe npth-1.6-r0: task do_package_write_deb: Started
+NOTE: recipe npth-1.6-r0: task do_package_write_deb: Succeeded
+NOTE: recipe libassuan-2.5.2-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 1257 of 1304 (/home/deby/poky/meta-debian/recipes-debian/pinentry/pinentry_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe pinentry-1.1.0-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe libassuan-2.5.2-r0: task do_package: Succeeded
+NOTE: Running task 1258 of 1304 (/home/deby/poky/meta-debian/recipes-debian/libassuan/libassuan_debian.bb:do_packagedata)
 NOTE: recipe pinentry-1.1.0-r0: task do_prepare_recipe_sysroot: Succeeded
-NOTE: Running task 1031 of 1050 (/home/deby/poky/meta/recipes-support/pinentry/pinentry_1.1.0.bb:do_configure)
-NOTE: recipe duplicity-0.7.18.2-r0: task do_configure: Started
+NOTE: Running task 1259 of 1304 (/home/deby/poky/meta-debian/recipes-debian/pinentry/pinentry_debian.bb:do_configure)
+NOTE: recipe libassuan-2.5.2-r0: task do_packagedata: Started
 NOTE: recipe pinentry-1.1.0-r0: task do_configure: Started
+NOTE: recipe libassuan-2.5.2-r0: task do_packagedata: Succeeded
+NOTE: Running task 1260 of 1304 (/home/deby/poky/meta-debian/recipes-debian/libassuan/libassuan_debian.bb:do_package_write_deb)
+NOTE: recipe libassuan-2.5.2-r0: task do_package_write_deb: Started
+NOTE: recipe libassuan-2.5.2-r0: task do_package_write_deb: Succeeded
+NOTE: recipe librsync-0.9.7-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 1261 of 1304 (/home/deby/poky/meta-debian/recipes-debian/duplicity/duplicity_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe libksba-1.3.5-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 1262 of 1304 (/home/deby/poky/meta-debian/recipes-debian/gnupg/gnupg_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe duplicity-0.7.18.2-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe gnupg-2.2.12-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe python-bcrypt-3.1.6-r0: task do_package: Succeeded
+NOTE: Running task 1263 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python-bcrypt/python-bcrypt_debian.bb:do_packagedata)
+NOTE: recipe python-bcrypt-3.1.6-r0: task do_packagedata: Started
+NOTE: recipe gnupg-2.2.12-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 1264 of 1304 (/home/deby/poky/meta-debian/recipes-debian/gnupg/gnupg_debian.bb:do_configure)
+NOTE: recipe python-bcrypt-3.1.6-r0: task do_packagedata: Succeeded
+NOTE: Running task 1265 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python-bcrypt/python-bcrypt_debian.bb:do_package_write_deb)
+NOTE: recipe gnupg-2.2.12-r0: task do_configure: Started
+NOTE: recipe python-bcrypt-3.1.6-r0: task do_package_write_deb: Started
+NOTE: recipe python-asn1crypto-0.24.0-r0: task do_package: Succeeded
+NOTE: Running task 1266 of 1304 (/home/deby/poky/meta-debian/recipes-debian/asn1crypto/python-asn1crypto_debian.bb:do_packagedata)
+NOTE: recipe python-asn1crypto-0.24.0-r0: task do_packagedata: Started
+NOTE: recipe librsync-0.9.7-r0: task do_package: Succeeded
+NOTE: Running task 1267 of 1304 (/home/deby/poky/meta-debian/recipes-debian/librsync/librsync_debian.bb:do_packagedata)
+NOTE: recipe libksba-1.3.5-r0: task do_package: Succeeded
+NOTE: Running task 1268 of 1304 (/home/deby/poky/meta-debian/recipes-debian/libksba/libksba_debian.bb:do_packagedata)
+NOTE: recipe python-asn1crypto-0.24.0-r0: task do_packagedata: Succeeded
+NOTE: Running task 1269 of 1304 (/home/deby/poky/meta-debian/recipes-debian/asn1crypto/python-asn1crypto_debian.bb:do_package_write_deb)
+NOTE: recipe duplicity-0.7.18.2-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: recipe librsync-0.9.7-r0: task do_packagedata: Started
+NOTE: Running task 1270 of 1304 (/home/deby/poky/meta-debian/recipes-debian/duplicity/duplicity_debian.bb:do_configure)
+NOTE: recipe libksba-1.3.5-r0: task do_packagedata: Started
+NOTE: recipe duplicity-0.7.18.2-r0: task do_configure: Started
+NOTE: recipe python-asn1crypto-0.24.0-r0: task do_package_write_deb: Started
+NOTE: recipe librsync-0.9.7-r0: task do_packagedata: Succeeded
+NOTE: Running task 1271 of 1304 (/home/deby/poky/meta-debian/recipes-debian/librsync/librsync_debian.bb:do_package_write_deb)
+NOTE: recipe libksba-1.3.5-r0: task do_packagedata: Succeeded
+NOTE: Running task 1272 of 1304 (/home/deby/poky/meta-debian/recipes-debian/libksba/libksba_debian.bb:do_package_write_deb)
+NOTE: recipe librsync-0.9.7-r0: task do_package_write_deb: Started
+NOTE: recipe libksba-1.3.5-r0: task do_package_write_deb: Started
 NOTE: recipe duplicity-0.7.18.2-r0: task do_configure: Succeeded
-NOTE: Running task 1032 of 1050 (/home/deby/poky/meta-debian/recipes-debian/duplicity/duplicity_debian.bb:do_compile)
+NOTE: Running task 1273 of 1304 (/home/deby/poky/meta-debian/recipes-debian/duplicity/duplicity_debian.bb:do_compile)
 NOTE: recipe duplicity-0.7.18.2-r0: task do_compile: Started
-NOTE: recipe gnupg-2.2.13-r0: task do_prepare_recipe_sysroot: Succeeded
-NOTE: Running task 1033 of 1050 (/home/deby/poky/meta/recipes-support/gnupg/gnupg_2.2.13.bb:do_configure)
+NOTE: recipe python-bcrypt-3.1.6-r0: task do_package_write_deb: Succeeded
+NOTE: recipe python-pyasn1-0.4.2-r0: task do_package: Succeeded
+NOTE: Running task 1274 of 1304 (/home/deby/poky/meta-debian/recipes-debian/pyasn1/python-pyasn1_debian.bb:do_packagedata)
+NOTE: recipe python-pyasn1-0.4.2-r0: task do_packagedata: Started
+NOTE: recipe python-pyasn1-0.4.2-r0: task do_packagedata: Succeeded
+NOTE: Running task 1275 of 1304 (/home/deby/poky/meta-debian/recipes-debian/pyasn1/python-pyasn1_debian.bb:do_package_write_deb)
+NOTE: recipe python-pyasn1-0.4.2-r0: task do_package_write_deb: Started
+NOTE: recipe python-asn1crypto-0.24.0-r0: task do_package_write_deb: Succeeded
+NOTE: recipe librsync-0.9.7-r0: task do_package_write_deb: Succeeded
 NOTE: recipe duplicity-0.7.18.2-r0: task do_compile: Succeeded
-NOTE: Running task 1034 of 1050 (/home/deby/poky/meta-debian/recipes-debian/duplicity/duplicity_debian.bb:do_install)
-NOTE: recipe gnupg-2.2.13-r0: task do_configure: Started
+NOTE: Running task 1276 of 1304 (/home/deby/poky/meta-debian/recipes-debian/duplicity/duplicity_debian.bb:do_install)
+NOTE: recipe libksba-1.3.5-r0: task do_package_write_deb: Succeeded
 NOTE: recipe duplicity-0.7.18.2-r0: task do_install: Started
+NOTE: recipe python-pyasn1-0.4.2-r0: task do_package_write_deb: Succeeded
+NOTE: recipe python-cryptography-2.6.1-r0: task do_package: Succeeded
+NOTE: Running task 1277 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python-cryptography/python-cryptography_debian.bb:do_packagedata)
+NOTE: recipe python-cryptography-2.6.1-r0: task do_packagedata: Started
+NOTE: recipe python-cryptography-2.6.1-r0: task do_packagedata: Succeeded
+NOTE: Running task 1278 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python-cryptography/python-cryptography_debian.bb:do_package_write_deb)
 NOTE: recipe duplicity-0.7.18.2-r0: task do_install: Succeeded
-NOTE: Running task 1035 of 1050 (/home/deby/poky/meta-debian/recipes-debian/duplicity/duplicity_debian.bb:do_package)
-NOTE: Running task 1036 of 1050 (/home/deby/poky/meta-debian/recipes-debian/duplicity/duplicity_debian.bb:do_populate_sysroot)
+NOTE: Running task 1279 of 1304 (/home/deby/poky/meta-debian/recipes-debian/duplicity/duplicity_debian.bb:do_package)
+NOTE: Running task 1280 of 1304 (/home/deby/poky/meta-debian/recipes-debian/duplicity/duplicity_debian.bb:do_populate_sysroot)
+NOTE: recipe python-cryptography-2.6.1-r0: task do_package_write_deb: Started
 NOTE: recipe duplicity-0.7.18.2-r0: task do_package: Started
 NOTE: recipe duplicity-0.7.18.2-r0: task do_populate_sysroot: Started
 NOTE: recipe duplicity-0.7.18.2-r0: task do_populate_sysroot: Succeeded
-NOTE: recipe duplicity-0.7.18.2-r0: task do_package: Succeeded
-NOTE: Running task 1037 of 1050 (/home/deby/poky/meta-debian/recipes-debian/duplicity/duplicity_debian.bb:do_packagedata)
-NOTE: recipe duplicity-0.7.18.2-r0: task do_packagedata: Started
-NOTE: recipe duplicity-0.7.18.2-r0: task do_packagedata: Succeeded
+NOTE: recipe python-cryptography-2.6.1-r0: task do_package_write_deb: Succeeded
 NOTE: recipe pinentry-1.1.0-r0: task do_configure: Succeeded
-NOTE: Running task 1038 of 1050 (/home/deby/poky/meta/recipes-support/pinentry/pinentry_1.1.0.bb:do_compile)
+NOTE: Running task 1281 of 1304 (/home/deby/poky/meta-debian/recipes-debian/pinentry/pinentry_debian.bb:do_compile)
 NOTE: recipe pinentry-1.1.0-r0: task do_compile: Started
 NOTE: recipe pinentry-1.1.0-r0: task do_compile: Succeeded
-NOTE: Running task 1039 of 1050 (/home/deby/poky/meta/recipes-support/pinentry/pinentry_1.1.0.bb:do_install)
+NOTE: Running task 1282 of 1304 (/home/deby/poky/meta-debian/recipes-debian/pinentry/pinentry_debian.bb:do_install)
 NOTE: recipe pinentry-1.1.0-r0: task do_install: Started
 NOTE: recipe pinentry-1.1.0-r0: task do_install: Succeeded
-NOTE: Running task 1040 of 1050 (/home/deby/poky/meta/recipes-support/pinentry/pinentry_1.1.0.bb:do_package)
+NOTE: Running task 1283 of 1304 (/home/deby/poky/meta-debian/recipes-debian/pinentry/pinentry_debian.bb:do_package)
 NOTE: recipe pinentry-1.1.0-r0: task do_package: Started
+NOTE: recipe duplicity-0.7.18.2-r0: task do_package: Succeeded
+NOTE: Running task 1284 of 1304 (/home/deby/poky/meta-debian/recipes-debian/duplicity/duplicity_debian.bb:do_packagedata)
+NOTE: recipe duplicity-0.7.18.2-r0: task do_packagedata: Started
+NOTE: recipe duplicity-0.7.18.2-r0: task do_packagedata: Succeeded
 NOTE: recipe pinentry-1.1.0-r0: task do_package: Succeeded
-NOTE: Running task 1041 of 1050 (/home/deby/poky/meta/recipes-support/pinentry/pinentry_1.1.0.bb:do_packagedata)
+NOTE: Running task 1285 of 1304 (/home/deby/poky/meta-debian/recipes-debian/pinentry/pinentry_debian.bb:do_packagedata)
 NOTE: recipe pinentry-1.1.0-r0: task do_packagedata: Started
 NOTE: recipe pinentry-1.1.0-r0: task do_packagedata: Succeeded
-NOTE: Running task 1042 of 1050 (/home/deby/poky/meta/recipes-support/pinentry/pinentry_1.1.0.bb:do_package_write_deb)
+NOTE: Running task 1286 of 1304 (/home/deby/poky/meta-debian/recipes-debian/pinentry/pinentry_debian.bb:do_package_write_deb)
 NOTE: recipe pinentry-1.1.0-r0: task do_package_write_deb: Started
 NOTE: recipe pinentry-1.1.0-r0: task do_package_write_deb: Succeeded
-NOTE: recipe gnupg-2.2.13-r0: task do_configure: Succeeded
-NOTE: Running task 1043 of 1050 (/home/deby/poky/meta/recipes-support/gnupg/gnupg_2.2.13.bb:do_compile)
-NOTE: recipe gnupg-2.2.13-r0: task do_compile: Started
-NOTE: recipe gnupg-2.2.13-r0: task do_compile: Succeeded
-NOTE: Running task 1044 of 1050 (/home/deby/poky/meta/recipes-support/gnupg/gnupg_2.2.13.bb:do_install)
-NOTE: recipe gnupg-2.2.13-r0: task do_install: Started
-NOTE: recipe gnupg-2.2.13-r0: task do_install: Succeeded
-NOTE: Running task 1045 of 1050 (/home/deby/poky/meta/recipes-support/gnupg/gnupg_2.2.13.bb:do_package)
-NOTE: recipe gnupg-2.2.13-r0: task do_package: Started
-NOTE: recipe gnupg-2.2.13-r0: task do_package: Succeeded
-NOTE: Running task 1046 of 1050 (/home/deby/poky/meta/recipes-support/gnupg/gnupg_2.2.13.bb:do_packagedata)
-NOTE: recipe gnupg-2.2.13-r0: task do_packagedata: Started
-NOTE: recipe gnupg-2.2.13-r0: task do_packagedata: Succeeded
-NOTE: Running task 1047 of 1050 (/home/deby/poky/meta/recipes-support/gnupg/gnupg_2.2.13.bb:do_package_write_deb)
-NOTE: Running task 1048 of 1050 (/home/deby/poky/meta-debian/recipes-debian/duplicity/duplicity_debian.bb:do_package_write_deb)
-NOTE: Running task 1049 of 1050 (/home/deby/poky/meta-debian/recipes-debian/duplicity/duplicity_debian.bb:do_package_qa)
-NOTE: recipe gnupg-2.2.13-r0: task do_package_write_deb: Started
+NOTE: recipe lftp-4.8.4-r0: task do_configure: Succeeded
+NOTE: Running task 1287 of 1304 (/home/deby/poky/meta-debian/recipes-debian/lftp/lftp_debian.bb:do_compile)
+NOTE: recipe lftp-4.8.4-r0: task do_compile: Started
+NOTE: recipe gnupg-2.2.12-r0: task do_configure: Succeeded
+NOTE: Running task 1288 of 1304 (/home/deby/poky/meta-debian/recipes-debian/gnupg/gnupg_debian.bb:do_compile)
+NOTE: recipe gnupg-2.2.12-r0: task do_compile: Started
+NOTE: recipe python-nacl-1.3.0-r0: task do_compile: Succeeded
+NOTE: Running task 1289 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python-nacl/python-nacl_debian.bb:do_install)
+NOTE: recipe python-nacl-1.3.0-r0: task do_install: Started
+NOTE: recipe lftp-4.8.4-r0: task do_compile: Succeeded
+NOTE: Running task 1290 of 1304 (/home/deby/poky/meta-debian/recipes-debian/lftp/lftp_debian.bb:do_install)
+NOTE: recipe lftp-4.8.4-r0: task do_install: Started
+NOTE: recipe lftp-4.8.4-r0: task do_install: Succeeded
+NOTE: Running task 1291 of 1304 (/home/deby/poky/meta-debian/recipes-debian/lftp/lftp_debian.bb:do_package)
+NOTE: recipe lftp-4.8.4-r0: task do_package: Started
+NOTE: recipe lftp-4.8.4-r0: task do_package: Succeeded
+NOTE: Running task 1292 of 1304 (/home/deby/poky/meta-debian/recipes-debian/lftp/lftp_debian.bb:do_packagedata)
+NOTE: recipe lftp-4.8.4-r0: task do_packagedata: Started
+NOTE: recipe lftp-4.8.4-r0: task do_packagedata: Succeeded
+NOTE: Running task 1293 of 1304 (/home/deby/poky/meta-debian/recipes-debian/lftp/lftp_debian.bb:do_package_write_deb)
+NOTE: recipe lftp-4.8.4-r0: task do_package_write_deb: Started
+NOTE: recipe gnupg-2.2.12-r0: task do_compile: Succeeded
+NOTE: Running task 1294 of 1304 (/home/deby/poky/meta-debian/recipes-debian/gnupg/gnupg_debian.bb:do_install)
+NOTE: recipe gnupg-2.2.12-r0: task do_install: Started
+NOTE: recipe lftp-4.8.4-r0: task do_package_write_deb: Succeeded
+NOTE: recipe gnupg-2.2.12-r0: task do_install: Succeeded
+NOTE: Running task 1295 of 1304 (/home/deby/poky/meta-debian/recipes-debian/gnupg/gnupg_debian.bb:do_package)
+NOTE: recipe gnupg-2.2.12-r0: task do_package: Started
+NOTE: recipe python-nacl-1.3.0-r0: task do_install: Succeeded
+NOTE: Running task 1296 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python-nacl/python-nacl_debian.bb:do_package)
+NOTE: recipe python-nacl-1.3.0-r0: task do_package: Started
+NOTE: recipe python-nacl-1.3.0-r0: task do_package: Succeeded
+NOTE: Running task 1297 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python-nacl/python-nacl_debian.bb:do_packagedata)
+NOTE: recipe python-nacl-1.3.0-r0: task do_packagedata: Started
+NOTE: recipe python-nacl-1.3.0-r0: task do_packagedata: Succeeded
+NOTE: Running task 1298 of 1304 (/home/deby/poky/meta-debian/recipes-debian/python-nacl/python-nacl_debian.bb:do_package_write_deb)
+NOTE: Running task 1299 of 1304 (/home/deby/poky/meta-debian/recipes-debian/paramiko/python-paramiko_debian.bb:do_package_write_deb)
+NOTE: recipe python-nacl-1.3.0-r0: task do_package_write_deb: Started
+NOTE: recipe python-paramiko-2.4.2-r0: task do_package_write_deb: Started
+NOTE: recipe gnupg-2.2.12-r0: task do_package: Succeeded
+NOTE: Running task 1300 of 1304 (/home/deby/poky/meta-debian/recipes-debian/gnupg/gnupg_debian.bb:do_packagedata)
+NOTE: recipe python-nacl-1.3.0-r0: task do_package_write_deb: Succeeded
+NOTE: recipe python-paramiko-2.4.2-r0: task do_package_write_deb: Succeeded
+NOTE: recipe gnupg-2.2.12-r0: task do_packagedata: Started
+NOTE: recipe gnupg-2.2.12-r0: task do_packagedata: Succeeded
+NOTE: Running task 1301 of 1304 (/home/deby/poky/meta-debian/recipes-debian/gnupg/gnupg_debian.bb:do_package_write_deb)
+NOTE: Running task 1302 of 1304 (/home/deby/poky/meta-debian/recipes-debian/duplicity/duplicity_debian.bb:do_package_write_deb)
+NOTE: Running task 1303 of 1304 (/home/deby/poky/meta-debian/recipes-debian/duplicity/duplicity_debian.bb:do_package_qa)
+NOTE: recipe gnupg-2.2.12-r0: task do_package_write_deb: Started
 NOTE: recipe duplicity-0.7.18.2-r0: task do_package_write_deb: Started
 NOTE: recipe duplicity-0.7.18.2-r0: task do_package_qa: Started
-NOTE: recipe duplicity-0.7.18.2-r0: task do_package_qa: Succeeded
 NOTE: recipe duplicity-0.7.18.2-r0: task do_package_write_deb: Succeeded
-NOTE: recipe gnupg-2.2.13-r0: task do_package_write_deb: Succeeded
-NOTE: Running noexec task 1050 of 1050 (/home/deby/poky/meta-debian/recipes-debian/duplicity/duplicity_debian.bb:do_build)
-NOTE: Tasks Summary: Attempted 1050 tasks of which 973 didn't need to be rerun and all succeeded.
+NOTE: recipe duplicity-0.7.18.2-r0: task do_package_qa: Succeeded
+NOTE: recipe gnupg-2.2.12-r0: task do_package_write_deb: Succeeded
+NOTE: Running noexec task 1304 of 1304 (/home/deby/poky/meta-debian/recipes-debian/duplicity/duplicity_debian.bb:do_build)
+NOTE: Tasks Summary: Attempted 1304 tasks of which 1032 didn't need to be rerun and all succeeded.

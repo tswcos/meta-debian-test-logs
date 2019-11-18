@@ -1,0 +1,38 @@
+Loading cache...done.
+Loaded 1825 entries from dependency cache.
+Parsing recipes...done.
+Parsing of 1043 .bb files complete (1041 cached, 2 parsed). 1828 targets, 209 skipped, 0 masked, 0 errors.
+NOTE: Resolving any missing task queue dependencies
+
+Build Configuration:
+BB_VERSION           = "1.42.0"
+BUILD_SYS            = "x86_64-linux"
+NATIVELSBSTRING      = "universal"
+TARGET_SYS           = "i586-deby-linux"
+MACHINE              = "qemux86"
+DISTRO               = "deby-tiny"
+DISTRO_VERSION       = "10.0"
+TUNE_FEATURES        = "m32 i586"
+TARGET_FPU           = ""
+meta                 
+meta-poky            = "warrior:79a850a10a4b88a6d20d607b322542f947874323"
+meta-debian          = "warrior:2fa6d8525f0464064f8764856015185a0c4e5411"
+
+Initialising tasks...done.
+Sstate summary: Wanted 4 Found 2 Missed 2 Current 145 (50% match, 98% complete)
+NOTE: Executing SetScene Tasks
+NOTE: Running setscene task 148 of 149 (/home/deby/poky/meta-debian/recipes-debian/libcap/libcap_debian.bb:do_package_write_deb_setscene)
+NOTE: recipe libcap-2.25-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe libcap-2.25-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 149 of 149 (/home/deby/poky/meta-debian/recipes-debian/libcap/libcap_debian.bb:do_packagedata_setscene)
+NOTE: recipe libcap-2.25-r0: task do_packagedata_setscene: Started
+NOTE: recipe libcap-2.25-r0: task do_packagedata_setscene: Succeeded
+NOTE: Executing RunQueue Tasks
+NOTE: Running task 819 of 821 (/home/deby/poky/meta-debian/recipes-debian/gnupg/gnupg_debian.bb:do_package_qa)
+NOTE: Running task 820 of 821 (/home/deby/poky/meta-debian/recipes-debian/gnupg/gnupg_debian.bb:do_populate_sysroot)
+NOTE: recipe gnupg-2.2.12-r0: task do_populate_sysroot: Started
+NOTE: recipe gnupg-2.2.12-r0: task do_package_qa: Started
+NOTE: recipe gnupg-2.2.12-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe gnupg-2.2.12-r0: task do_package_qa: Succeeded
+NOTE: Running noexec task 821 of 821 (/home/deby/poky/meta-debian/recipes-debian/gnupg/gnupg_debian.bb:do_build)
+NOTE: Tasks Summary: Attempted 821 tasks of which 818 didn't need to be rerun and all succeeded.

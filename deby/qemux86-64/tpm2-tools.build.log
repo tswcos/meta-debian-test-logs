@@ -1,7 +1,7 @@
 Loading cache...done.
-Loaded 1746 entries from dependency cache.
+Loaded 1825 entries from dependency cache.
 Parsing recipes...done.
-Parsing of 992 .bb files complete (990 cached, 2 parsed). 1733 targets, 43 skipped, 0 masked, 0 errors.
+Parsing of 1043 .bb files complete (1041 cached, 2 parsed). 1828 targets, 41 skipped, 0 masked, 0 errors.
 NOTE: Resolving any missing task queue dependencies
 
 Build Configuration:
@@ -16,263 +16,416 @@ TUNE_FEATURES        = "m64 core2"
 TARGET_FPU           = ""
 meta                 
 meta-poky            = "warrior:79a850a10a4b88a6d20d607b322542f947874323"
-meta-debian          = "warrior:f7512bd96372e67fe4288cb5cb61cf52d282dd4e"
+meta-debian          = "warrior:fda6a80e4cae9aa03f502551f35fe41beb7bb944"
 
 Initialising tasks...done.
-Sstate summary: Wanted 41 Found 0 Missed 41 Current 420 (0% match, 91% complete)
+Sstate summary: Wanted 42 Found 0 Missed 42 Current 419 (0% match, 90% complete)
 NOTE: Executing SetScene Tasks
 NOTE: Executing RunQueue Tasks
-NOTE: Running task 1086 of 2068 (/home/deby/poky/meta/recipes-support/nettle/nettle_3.4.1.bb:do_prepare_recipe_sysroot)
-NOTE: Running task 1213 of 2068 (/home/deby/poky/meta/recipes-support/libunistring/libunistring_0.9.10.bb:do_prepare_recipe_sysroot)
-NOTE: Running task 1299 of 2068 (/home/deby/poky/meta/recipes-support/libgpg-error/libgpg-error_1.35.bb:do_prepare_recipe_sysroot)
-NOTE: Running task 1508 of 2068 (/home/deby/poky/meta-debian/recipes-debian/pkgconfig/pkgconfig_debian.bb:do_prepare_recipe_sysroot)
-NOTE: recipe libgpg-error-1.35-r0: task do_prepare_recipe_sysroot: Started
-NOTE: recipe libunistring-0.9.10-r0: task do_prepare_recipe_sysroot: Started
+NOTE: Running task 818 of 2088 (/home/deby/poky/meta-debian/recipes-debian/nettle/nettle_debian.bb:do_fetch)
+NOTE: Running task 1089 of 2088 (/home/deby/poky/meta-debian/recipes-debian/libunistring/libunistring_debian.bb:do_fetch)
+NOTE: Running task 1158 of 2088 (/home/deby/poky/meta-debian/recipes-debian/libgpg-error/libgpg-error_debian.bb:do_fetch)
+NOTE: Running task 1161 of 2088 (/home/deby/poky/meta-debian/recipes-debian/libidn/libidn2_debian.bb:do_fetch)
+NOTE: Running task 1193 of 2088 (/home/deby/poky/meta-debian/recipes-debian/libgcrypt/libgcrypt_debian.bb:do_fetch)
+NOTE: Running task 1204 of 2088 (/home/deby/poky/meta-debian/recipes-debian/gnutls/gnutls_debian.bb:do_fetch)
+NOTE: Running task 1254 of 2088 (/home/deby/poky/meta-debian/recipes-debian/curl/curl_debian.bb:do_fetch)
+NOTE: Running task 1255 of 2088 (/home/deby/poky/meta-debian/recipes-debian/tpm2-tss/tpm2-tss_debian.bb:do_fetch)
+NOTE: Running task 1256 of 2088 (/home/deby/poky/meta-debian/recipes-debian/pkgconfig/pkgconfig_debian.bb:do_fetch)
+NOTE: Running task 1356 of 2088 (/home/deby/poky/meta-debian/recipes-debian/tpm2-tools/tpm2-tools_debian.bb:do_fetch)
+NOTE: recipe nettle-3.4.1-r0: task do_fetch: Started
+NOTE: recipe gnutls-3.6.7-r0: task do_fetch: Started
+NOTE: recipe curl-7.64.0-r1: task do_fetch: Started
+NOTE: recipe tpm2-tss-2.1.0-r0: task do_fetch: Started
+NOTE: recipe tpm2-tools-3.1.3-r0: task do_fetch: Started
+NOTE: recipe libgcrypt-1.8.4-r0: task do_fetch: Started
+NOTE: recipe libunistring-0.9.10-r0: task do_fetch: Started
+NOTE: recipe libidn2-2.0.5-r0: task do_fetch: Started
+NOTE: recipe nettle-3.4.1-r0: task do_fetch: Succeeded
+NOTE: Running task 1963 of 2088 (/home/deby/poky/meta-debian/recipes-debian/nettle/nettle_debian.bb:do_unpack)
+NOTE: Running task 1964 of 2088 (/home/deby/poky/meta-debian/recipes-debian/nettle/nettle_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe libgpg-error-1.35-r0: task do_fetch: Started
+NOTE: recipe nettle-3.4.1-r0: task do_unpack: Started
 NOTE: recipe nettle-3.4.1-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe pkgconfig-0.29-r0: task do_fetch: Started
+NOTE: recipe tpm2-tss-2.1.0-r0: task do_fetch: Succeeded
+NOTE: Running task 1965 of 2088 (/home/deby/poky/meta-debian/recipes-debian/tpm2-tss/tpm2-tss_debian.bb:do_unpack)
+NOTE: recipe libgcrypt-1.8.4-r0: task do_fetch: Succeeded
+NOTE: recipe curl-7.64.0-r1: task do_fetch: Succeeded
+NOTE: Running task 1966 of 2088 (/home/deby/poky/meta-debian/recipes-debian/libgcrypt/libgcrypt_debian.bb:do_unpack)
+NOTE: Running task 1967 of 2088 (/home/deby/poky/meta-debian/recipes-debian/curl/curl_debian.bb:do_unpack)
+NOTE: recipe tpm2-tools-3.1.3-r0: task do_fetch: Succeeded
+NOTE: Running task 1968 of 2088 (/home/deby/poky/meta-debian/recipes-debian/tpm2-tools/tpm2-tools_debian.bb:do_unpack)
+NOTE: recipe pkgconfig-0.29-r0: task do_fetch: Succeeded
+NOTE: Running task 1969 of 2088 (/home/deby/poky/meta-debian/recipes-debian/pkgconfig/pkgconfig_debian.bb:do_unpack)
+NOTE: Running task 1970 of 2088 (/home/deby/poky/meta-debian/recipes-debian/pkgconfig/pkgconfig_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe libgpg-error-1.35-r0: task do_fetch: Succeeded
+NOTE: recipe libidn2-2.0.5-r0: task do_fetch: Succeeded
+NOTE: recipe gnutls-3.6.7-r0: task do_fetch: Succeeded
+NOTE: Running task 1971 of 2088 (/home/deby/poky/meta-debian/recipes-debian/libgpg-error/libgpg-error_debian.bb:do_unpack)
+NOTE: Running task 1972 of 2088 (/home/deby/poky/meta-debian/recipes-debian/libidn/libidn2_debian.bb:do_unpack)
+NOTE: Running task 1973 of 2088 (/home/deby/poky/meta-debian/recipes-debian/gnutls/gnutls_debian.bb:do_unpack)
+NOTE: Running task 1974 of 2088 (/home/deby/poky/meta-debian/recipes-debian/libgpg-error/libgpg-error_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe tpm2-tss-2.1.0-r0: task do_unpack: Started
+NOTE: recipe tpm2-tools-3.1.3-r0: task do_unpack: Started
+NOTE: recipe libgcrypt-1.8.4-r0: task do_unpack: Started
+NOTE: recipe curl-7.64.0-r1: task do_unpack: Started
+NOTE: recipe pkgconfig-0.29-r0: task do_unpack: Started
+NOTE: recipe libunistring-0.9.10-r0: task do_fetch: Succeeded
 NOTE: recipe pkgconfig-0.29-r0: task do_prepare_recipe_sysroot: Started
+NOTE: Running task 1975 of 2088 (/home/deby/poky/meta-debian/recipes-debian/libunistring/libunistring_debian.bb:do_unpack)
+NOTE: Running task 1976 of 2088 (/home/deby/poky/meta-debian/recipes-debian/libunistring/libunistring_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe libgpg-error-1.35-r0: task do_unpack: Started
+NOTE: recipe libgpg-error-1.35-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe libidn2-2.0.5-r0: task do_unpack: Started
+NOTE: recipe gnutls-3.6.7-r0: task do_unpack: Started
+NOTE: recipe libunistring-0.9.10-r0: task do_unpack: Started
+NOTE: recipe libunistring-0.9.10-r0: task do_prepare_recipe_sysroot: Started
 NOTE: recipe libgpg-error-1.35-r0: task do_prepare_recipe_sysroot: Succeeded
-NOTE: Running task 1988 of 2068 (/home/deby/poky/meta/recipes-support/libgpg-error/libgpg-error_1.35.bb:do_configure)
-NOTE: recipe libgpg-error-1.35-r0: task do_configure: Started
-NOTE: recipe nettle-3.4.1-r0: task do_prepare_recipe_sysroot: Succeeded
-NOTE: Running task 1989 of 2068 (/home/deby/poky/meta/recipes-support/nettle/nettle_3.4.1.bb:do_configure)
-NOTE: recipe nettle-3.4.1-r0: task do_configure: Started
+NOTE: recipe tpm2-tss-2.1.0-r0: task do_unpack: Succeeded
+NOTE: recipe tpm2-tools-3.1.3-r0: task do_unpack: Succeeded
+NOTE: Running task 1977 of 2088 (/home/deby/poky/meta-debian/recipes-debian/tpm2-tss/tpm2-tss_debian.bb:do_debian_unpack_extra)
+NOTE: Running task 1978 of 2088 (/home/deby/poky/meta-debian/recipes-debian/tpm2-tools/tpm2-tools_debian.bb:do_debian_unpack_extra)
 NOTE: recipe libunistring-0.9.10-r0: task do_prepare_recipe_sysroot: Succeeded
-NOTE: Running task 1990 of 2068 (/home/deby/poky/meta/recipes-support/libunistring/libunistring_0.9.10.bb:do_configure)
-NOTE: recipe libunistring-0.9.10-r0: task do_configure: Started
+NOTE: recipe nettle-3.4.1-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: recipe tpm2-tools-3.1.3-r0: task do_debian_unpack_extra: Started
+NOTE: recipe tpm2-tss-2.1.0-r0: task do_debian_unpack_extra: Started
+NOTE: recipe tpm2-tools-3.1.3-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 1979 of 2088 (/home/deby/poky/meta-debian/recipes-debian/tpm2-tools/tpm2-tools_debian.bb:do_debian_patch)
+NOTE: recipe tpm2-tss-2.1.0-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 1980 of 2088 (/home/deby/poky/meta-debian/recipes-debian/tpm2-tss/tpm2-tss_debian.bb:do_debian_patch)
+NOTE: recipe tpm2-tools-3.1.3-r0: task do_debian_patch: Started
+NOTE: recipe tpm2-tss-2.1.0-r0: task do_debian_patch: Started
+NOTE: recipe tpm2-tools-3.1.3-r0: task do_debian_patch: Succeeded
+NOTE: Running task 1981 of 2088 (/home/deby/poky/meta-debian/recipes-debian/tpm2-tools/tpm2-tools_debian.bb:do_patch)
+NOTE: recipe tpm2-tss-2.1.0-r0: task do_debian_patch: Succeeded
+NOTE: Running task 1982 of 2088 (/home/deby/poky/meta-debian/recipes-debian/tpm2-tss/tpm2-tss_debian.bb:do_patch)
+NOTE: recipe tpm2-tools-3.1.3-r0: task do_patch: Started
+NOTE: recipe tpm2-tools-3.1.3-r0: task do_patch: Succeeded
+NOTE: Running task 1983 of 2088 (/home/deby/poky/meta-debian/recipes-debian/tpm2-tools/tpm2-tools_debian.bb:do_populate_lic)
+NOTE: recipe tpm2-tss-2.1.0-r0: task do_patch: Started
+NOTE: recipe tpm2-tools-3.1.3-r0: task do_populate_lic: Started
+NOTE: recipe libgpg-error-1.35-r0: task do_unpack: Succeeded
+NOTE: Running task 1984 of 2088 (/home/deby/poky/meta-debian/recipes-debian/libgpg-error/libgpg-error_debian.bb:do_debian_unpack_extra)
+NOTE: recipe libgpg-error-1.35-r0: task do_debian_unpack_extra: Started
+NOTE: recipe tpm2-tss-2.1.0-r0: task do_patch: Succeeded
+NOTE: recipe libgpg-error-1.35-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 1985 of 2088 (/home/deby/poky/meta-debian/recipes-debian/libgpg-error/libgpg-error_debian.bb:do_debian_patch)
+NOTE: recipe libgpg-error-1.35-r0: task do_debian_patch: Started
+NOTE: recipe pkgconfig-0.29-r0: task do_unpack: Succeeded
+NOTE: Running task 1986 of 2088 (/home/deby/poky/meta-debian/recipes-debian/pkgconfig/pkgconfig_debian.bb:do_debian_unpack_extra)
+NOTE: recipe nettle-3.4.1-r0: task do_unpack: Succeeded
+NOTE: Running task 1987 of 2088 (/home/deby/poky/meta-debian/recipes-debian/nettle/nettle_debian.bb:do_debian_unpack_extra)
+NOTE: recipe pkgconfig-0.29-r0: task do_debian_unpack_extra: Started
+NOTE: recipe libgpg-error-1.35-r0: task do_debian_patch: Succeeded
+NOTE: Running task 1988 of 2088 (/home/deby/poky/meta-debian/recipes-debian/libgpg-error/libgpg-error_debian.bb:do_patch)
+NOTE: recipe libgpg-error-1.35-r0: task do_patch: Started
+NOTE: recipe nettle-3.4.1-r0: task do_debian_unpack_extra: Started
+NOTE: recipe tpm2-tools-3.1.3-r0: task do_populate_lic: Succeeded
+NOTE: recipe pkgconfig-0.29-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 1989 of 2088 (/home/deby/poky/meta-debian/recipes-debian/pkgconfig/pkgconfig_debian.bb:do_debian_patch)
+NOTE: recipe libidn2-2.0.5-r0: task do_unpack: Succeeded
+NOTE: Running task 1990 of 2088 (/home/deby/poky/meta-debian/recipes-debian/libidn/libidn2_debian.bb:do_debian_unpack_extra)
+NOTE: recipe pkgconfig-0.29-r0: task do_debian_patch: Started
+NOTE: recipe libidn2-2.0.5-r0: task do_debian_unpack_extra: Started
+NOTE: recipe nettle-3.4.1-r0: task do_debian_unpack_extra: Succeeded
+NOTE: recipe libgpg-error-1.35-r0: task do_patch: Succeeded
+NOTE: recipe curl-7.64.0-r1: task do_unpack: Succeeded
+NOTE: recipe libidn2-2.0.5-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 1991 of 2088 (/home/deby/poky/meta-debian/recipes-debian/nettle/nettle_debian.bb:do_debian_patch)
+NOTE: Running task 1992 of 2088 (/home/deby/poky/meta-debian/recipes-debian/libgpg-error/libgpg-error_debian.bb:do_configure)
+NOTE: recipe libunistring-0.9.10-r0: task do_unpack: Succeeded
+NOTE: Running task 1993 of 2088 (/home/deby/poky/meta-debian/recipes-debian/libidn/libidn2_debian.bb:do_debian_patch)
+NOTE: Running task 1994 of 2088 (/home/deby/poky/meta-debian/recipes-debian/curl/curl_debian.bb:do_debian_unpack_extra)
+NOTE: Running task 1995 of 2088 (/home/deby/poky/meta-debian/recipes-debian/libunistring/libunistring_debian.bb:do_debian_unpack_extra)
+NOTE: recipe curl-7.64.0-r1: task do_debian_unpack_extra: Started
+NOTE: recipe nettle-3.4.1-r0: task do_debian_patch: Started
+NOTE: recipe libgpg-error-1.35-r0: task do_configure: Started
+NOTE: recipe libidn2-2.0.5-r0: task do_debian_patch: Started
+NOTE: recipe libunistring-0.9.10-r0: task do_debian_unpack_extra: Started
 NOTE: recipe pkgconfig-0.29-r0: task do_prepare_recipe_sysroot: Succeeded
-NOTE: Running task 1991 of 2068 (/home/deby/poky/meta-debian/recipes-debian/pkgconfig/pkgconfig_debian.bb:do_configure)
+NOTE: recipe curl-7.64.0-r1: task do_debian_unpack_extra: Succeeded
+NOTE: recipe libunistring-0.9.10-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 1996 of 2088 (/home/deby/poky/meta-debian/recipes-debian/curl/curl_debian.bb:do_debian_patch)
+NOTE: Running task 1997 of 2088 (/home/deby/poky/meta-debian/recipes-debian/libunistring/libunistring_debian.bb:do_debian_patch)
+NOTE: recipe curl-7.64.0-r1: task do_debian_patch: Started
+NOTE: recipe libunistring-0.9.10-r0: task do_debian_patch: Started
+NOTE: recipe nettle-3.4.1-r0: task do_debian_patch: Succeeded
+NOTE: Running task 1998 of 2088 (/home/deby/poky/meta-debian/recipes-debian/nettle/nettle_debian.bb:do_patch)
+NOTE: recipe pkgconfig-0.29-r0: task do_debian_patch: Succeeded
+NOTE: Running task 1999 of 2088 (/home/deby/poky/meta-debian/recipes-debian/pkgconfig/pkgconfig_debian.bb:do_patch)
+NOTE: recipe nettle-3.4.1-r0: task do_patch: Started
+NOTE: recipe pkgconfig-0.29-r0: task do_patch: Started
+NOTE: recipe libgcrypt-1.8.4-r0: task do_unpack: Succeeded
+NOTE: Running task 2000 of 2088 (/home/deby/poky/meta-debian/recipes-debian/libgcrypt/libgcrypt_debian.bb:do_debian_unpack_extra)
+NOTE: recipe libunistring-0.9.10-r0: task do_debian_patch: Succeeded
+NOTE: Running task 2001 of 2088 (/home/deby/poky/meta-debian/recipes-debian/libunistring/libunistring_debian.bb:do_patch)
+NOTE: recipe nettle-3.4.1-r0: task do_patch: Succeeded
+NOTE: Running task 2002 of 2088 (/home/deby/poky/meta-debian/recipes-debian/nettle/nettle_debian.bb:do_configure)
+NOTE: recipe pkgconfig-0.29-r0: task do_patch: Succeeded
+NOTE: Running task 2003 of 2088 (/home/deby/poky/meta-debian/recipes-debian/pkgconfig/pkgconfig_debian.bb:do_configure)
+NOTE: recipe libunistring-0.9.10-r0: task do_patch: Started
+NOTE: recipe libgcrypt-1.8.4-r0: task do_debian_unpack_extra: Started
+NOTE: recipe libunistring-0.9.10-r0: task do_patch: Succeeded
+NOTE: Running task 2004 of 2088 (/home/deby/poky/meta-debian/recipes-debian/libunistring/libunistring_debian.bb:do_configure)
+NOTE: recipe nettle-3.4.1-r0: task do_configure: Started
+NOTE: recipe libgcrypt-1.8.4-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 2005 of 2088 (/home/deby/poky/meta-debian/recipes-debian/libgcrypt/libgcrypt_debian.bb:do_debian_patch)
 NOTE: recipe pkgconfig-0.29-r0: task do_configure: Started
+NOTE: recipe curl-7.64.0-r1: task do_debian_patch: Succeeded
+NOTE: Running task 2006 of 2088 (/home/deby/poky/meta-debian/recipes-debian/curl/curl_debian.bb:do_patch)
+NOTE: recipe libunistring-0.9.10-r0: task do_configure: Started
+NOTE: recipe libidn2-2.0.5-r0: task do_debian_patch: Succeeded
+NOTE: Running task 2007 of 2088 (/home/deby/poky/meta-debian/recipes-debian/libidn/libidn2_debian.bb:do_patch)
+NOTE: recipe libgcrypt-1.8.4-r0: task do_debian_patch: Started
+NOTE: recipe curl-7.64.0-r1: task do_patch: Started
+NOTE: recipe curl-7.64.0-r1: task do_patch: Succeeded
+NOTE: recipe libidn2-2.0.5-r0: task do_patch: Started
+NOTE: recipe libidn2-2.0.5-r0: task do_patch: Succeeded
+NOTE: recipe libgcrypt-1.8.4-r0: task do_debian_patch: Succeeded
+NOTE: Running task 2008 of 2088 (/home/deby/poky/meta-debian/recipes-debian/libgcrypt/libgcrypt_debian.bb:do_patch)
+NOTE: recipe gnutls-3.6.7-r0: task do_unpack: Succeeded
+NOTE: Running task 2009 of 2088 (/home/deby/poky/meta-debian/recipes-debian/gnutls/gnutls_debian.bb:do_debian_unpack_extra)
+NOTE: recipe libgcrypt-1.8.4-r0: task do_patch: Started
+NOTE: recipe gnutls-3.6.7-r0: task do_debian_unpack_extra: Started
+NOTE: recipe gnutls-3.6.7-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 2010 of 2088 (/home/deby/poky/meta-debian/recipes-debian/gnutls/gnutls_debian.bb:do_debian_patch)
+NOTE: recipe gnutls-3.6.7-r0: task do_debian_patch: Started
+NOTE: recipe libgcrypt-1.8.4-r0: task do_patch: Succeeded
+NOTE: recipe gnutls-3.6.7-r0: task do_debian_patch: Succeeded
+NOTE: Running task 2011 of 2088 (/home/deby/poky/meta-debian/recipes-debian/gnutls/gnutls_debian.bb:do_patch)
+NOTE: recipe gnutls-3.6.7-r0: task do_patch: Started
+NOTE: recipe gnutls-3.6.7-r0: task do_patch: Succeeded
 NOTE: recipe nettle-3.4.1-r0: task do_configure: Succeeded
-NOTE: Running task 1992 of 2068 (/home/deby/poky/meta/recipes-support/nettle/nettle_3.4.1.bb:do_configure_ptest_base)
+NOTE: Running task 2012 of 2088 (/home/deby/poky/meta-debian/recipes-debian/nettle/nettle_debian.bb:do_configure_ptest_base)
 NOTE: recipe nettle-3.4.1-r0: task do_configure_ptest_base: Started
 NOTE: recipe nettle-3.4.1-r0: task do_configure_ptest_base: Succeeded
-NOTE: Running task 1993 of 2068 (/home/deby/poky/meta/recipes-support/nettle/nettle_3.4.1.bb:do_compile)
+NOTE: Running task 2013 of 2088 (/home/deby/poky/meta-debian/recipes-debian/nettle/nettle_debian.bb:do_compile)
 NOTE: recipe nettle-3.4.1-r0: task do_compile: Started
 NOTE: recipe libgpg-error-1.35-r0: task do_configure: Succeeded
-NOTE: Running task 1994 of 2068 (/home/deby/poky/meta/recipes-support/libgpg-error/libgpg-error_1.35.bb:do_compile)
+NOTE: Running task 2014 of 2088 (/home/deby/poky/meta-debian/recipes-debian/libgpg-error/libgpg-error_debian.bb:do_compile)
 NOTE: recipe libgpg-error-1.35-r0: task do_compile: Started
-NOTE: recipe nettle-3.4.1-r0: task do_compile: Succeeded
-NOTE: Running task 1995 of 2068 (/home/deby/poky/meta/recipes-support/nettle/nettle_3.4.1.bb:do_compile_ptest_base)
-NOTE: recipe nettle-3.4.1-r0: task do_compile_ptest_base: Started
+NOTE: recipe pkgconfig-0.29-r0: task do_configure: Succeeded
+NOTE: Running task 2015 of 2088 (/home/deby/poky/meta-debian/recipes-debian/pkgconfig/pkgconfig_debian.bb:do_compile)
+NOTE: recipe pkgconfig-0.29-r0: task do_compile: Started
+NOTE: recipe pkgconfig-0.29-r0: task do_compile: Succeeded
+NOTE: Running task 2016 of 2088 (/home/deby/poky/meta-debian/recipes-debian/pkgconfig/pkgconfig_debian.bb:do_install)
+NOTE: recipe pkgconfig-0.29-r0: task do_install: Started
+NOTE: recipe pkgconfig-0.29-r0: task do_install: Succeeded
+NOTE: Running task 2017 of 2088 (/home/deby/poky/meta-debian/recipes-debian/pkgconfig/pkgconfig_debian.bb:do_package)
+NOTE: Running task 2018 of 2088 (/home/deby/poky/meta-debian/recipes-debian/pkgconfig/pkgconfig_debian.bb:do_populate_sysroot)
+NOTE: recipe pkgconfig-0.29-r0: task do_populate_sysroot: Started
+NOTE: recipe pkgconfig-0.29-r0: task do_package: Started
+NOTE: recipe pkgconfig-0.29-r0: task do_populate_sysroot: Succeeded
 NOTE: recipe libgpg-error-1.35-r0: task do_compile: Succeeded
-NOTE: Running task 1996 of 2068 (/home/deby/poky/meta/recipes-support/libgpg-error/libgpg-error_1.35.bb:do_install)
+NOTE: Running task 2019 of 2088 (/home/deby/poky/meta-debian/recipes-debian/libgpg-error/libgpg-error_debian.bb:do_install)
 NOTE: recipe libgpg-error-1.35-r0: task do_install: Started
+NOTE: recipe nettle-3.4.1-r0: task do_compile: Succeeded
+NOTE: Running task 2020 of 2088 (/home/deby/poky/meta-debian/recipes-debian/nettle/nettle_debian.bb:do_compile_ptest_base)
+NOTE: recipe nettle-3.4.1-r0: task do_compile_ptest_base: Started
 NOTE: recipe libgpg-error-1.35-r0: task do_install: Succeeded
-NOTE: Running task 1997 of 2068 (/home/deby/poky/meta/recipes-support/libgpg-error/libgpg-error_1.35.bb:do_populate_sysroot)
-NOTE: Running task 1998 of 2068 (/home/deby/poky/meta/recipes-support/libgpg-error/libgpg-error_1.35.bb:do_package)
+NOTE: Running task 2021 of 2088 (/home/deby/poky/meta-debian/recipes-debian/libgpg-error/libgpg-error_debian.bb:do_populate_sysroot)
+NOTE: Running task 2022 of 2088 (/home/deby/poky/meta-debian/recipes-debian/libgpg-error/libgpg-error_debian.bb:do_package)
 NOTE: recipe libgpg-error-1.35-r0: task do_populate_sysroot: Started
 NOTE: recipe libgpg-error-1.35-r0: task do_package: Started
 NOTE: recipe libgpg-error-1.35-r0: task do_populate_sysroot: Succeeded
-NOTE: Running task 1999 of 2068 (/home/deby/poky/meta/recipes-support/libgcrypt/libgcrypt_1.8.4.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 2023 of 2088 (/home/deby/poky/meta-debian/recipes-debian/libgcrypt/libgcrypt_debian.bb:do_prepare_recipe_sysroot)
 NOTE: recipe libgcrypt-1.8.4-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe libgcrypt-1.8.4-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 2024 of 2088 (/home/deby/poky/meta-debian/recipes-debian/libgcrypt/libgcrypt_debian.bb:do_configure)
+NOTE: recipe libgcrypt-1.8.4-r0: task do_configure: Started
+NOTE: recipe pkgconfig-0.29-r0: task do_package: Succeeded
+NOTE: Running task 2025 of 2088 (/home/deby/poky/meta-debian/recipes-debian/pkgconfig/pkgconfig_debian.bb:do_packagedata)
+NOTE: recipe pkgconfig-0.29-r0: task do_packagedata: Started
 NOTE: recipe libgpg-error-1.35-r0: task do_package: Succeeded
-NOTE: Running task 2000 of 2068 (/home/deby/poky/meta/recipes-support/libgpg-error/libgpg-error_1.35.bb:do_packagedata)
+NOTE: Running task 2026 of 2088 (/home/deby/poky/meta-debian/recipes-debian/libgpg-error/libgpg-error_debian.bb:do_packagedata)
 NOTE: recipe libgpg-error-1.35-r0: task do_packagedata: Started
 NOTE: recipe libgpg-error-1.35-r0: task do_packagedata: Succeeded
-NOTE: Running task 2001 of 2068 (/home/deby/poky/meta/recipes-support/libgpg-error/libgpg-error_1.35.bb:do_package_write_deb)
-NOTE: recipe libgpg-error-1.35-r0: task do_package_write_deb: Started
-NOTE: recipe libgcrypt-1.8.4-r0: task do_prepare_recipe_sysroot: Succeeded
-NOTE: Running task 2002 of 2068 (/home/deby/poky/meta/recipes-support/libgcrypt/libgcrypt_1.8.4.bb:do_configure)
-NOTE: recipe libgcrypt-1.8.4-r0: task do_configure: Started
-NOTE: recipe libgpg-error-1.35-r0: task do_package_write_deb: Succeeded
-NOTE: recipe pkgconfig-0.29-r0: task do_configure: Succeeded
-NOTE: Running task 2003 of 2068 (/home/deby/poky/meta-debian/recipes-debian/pkgconfig/pkgconfig_debian.bb:do_compile)
-NOTE: recipe pkgconfig-0.29-r0: task do_compile: Started
-NOTE: recipe pkgconfig-0.29-r0: task do_compile: Succeeded
-NOTE: Running task 2004 of 2068 (/home/deby/poky/meta-debian/recipes-debian/pkgconfig/pkgconfig_debian.bb:do_install)
-NOTE: recipe pkgconfig-0.29-r0: task do_install: Started
-NOTE: recipe pkgconfig-0.29-r0: task do_install: Succeeded
-NOTE: Running task 2005 of 2068 (/home/deby/poky/meta-debian/recipes-debian/pkgconfig/pkgconfig_debian.bb:do_package)
-NOTE: Running task 2006 of 2068 (/home/deby/poky/meta-debian/recipes-debian/pkgconfig/pkgconfig_debian.bb:do_populate_sysroot)
-NOTE: recipe pkgconfig-0.29-r0: task do_package: Started
-NOTE: recipe pkgconfig-0.29-r0: task do_populate_sysroot: Started
-NOTE: recipe pkgconfig-0.29-r0: task do_populate_sysroot: Succeeded
-NOTE: recipe pkgconfig-0.29-r0: task do_package: Succeeded
-NOTE: Running task 2007 of 2068 (/home/deby/poky/meta-debian/recipes-debian/pkgconfig/pkgconfig_debian.bb:do_packagedata)
-NOTE: recipe pkgconfig-0.29-r0: task do_packagedata: Started
+NOTE: Running task 2027 of 2088 (/home/deby/poky/meta-debian/recipes-debian/libgpg-error/libgpg-error_debian.bb:do_package_write_deb)
 NOTE: recipe pkgconfig-0.29-r0: task do_packagedata: Succeeded
-NOTE: Running task 2008 of 2068 (/home/deby/poky/meta-debian/recipes-debian/pkgconfig/pkgconfig_debian.bb:do_package_write_deb)
+NOTE: Running task 2028 of 2088 (/home/deby/poky/meta-debian/recipes-debian/pkgconfig/pkgconfig_debian.bb:do_package_write_deb)
+NOTE: recipe libgpg-error-1.35-r0: task do_package_write_deb: Started
 NOTE: recipe pkgconfig-0.29-r0: task do_package_write_deb: Started
 NOTE: recipe pkgconfig-0.29-r0: task do_package_write_deb: Succeeded
+NOTE: recipe libgpg-error-1.35-r0: task do_package_write_deb: Succeeded
 NOTE: recipe nettle-3.4.1-r0: task do_compile_ptest_base: Succeeded
-NOTE: Running task 2009 of 2068 (/home/deby/poky/meta/recipes-support/nettle/nettle_3.4.1.bb:do_install)
+NOTE: Running task 2029 of 2088 (/home/deby/poky/meta-debian/recipes-debian/nettle/nettle_debian.bb:do_install)
 NOTE: recipe nettle-3.4.1-r0: task do_install: Started
 NOTE: recipe nettle-3.4.1-r0: task do_install: Succeeded
-NOTE: Running task 2010 of 2068 (/home/deby/poky/meta/recipes-support/nettle/nettle_3.4.1.bb:do_install_ptest_base)
+NOTE: Running task 2030 of 2088 (/home/deby/poky/meta-debian/recipes-debian/nettle/nettle_debian.bb:do_install_ptest_base)
 NOTE: recipe nettle-3.4.1-r0: task do_install_ptest_base: Started
 NOTE: recipe nettle-3.4.1-r0: task do_install_ptest_base: Succeeded
-NOTE: Running task 2011 of 2068 (/home/deby/poky/meta/recipes-support/nettle/nettle_3.4.1.bb:do_populate_sysroot)
-NOTE: Running task 2012 of 2068 (/home/deby/poky/meta/recipes-support/nettle/nettle_3.4.1.bb:do_package)
-NOTE: recipe nettle-3.4.1-r0: task do_package: Started
+NOTE: Running task 2031 of 2088 (/home/deby/poky/meta-debian/recipes-debian/nettle/nettle_debian.bb:do_populate_sysroot)
+NOTE: Running task 2032 of 2088 (/home/deby/poky/meta-debian/recipes-debian/nettle/nettle_debian.bb:do_package)
 NOTE: recipe nettle-3.4.1-r0: task do_populate_sysroot: Started
+NOTE: recipe nettle-3.4.1-r0: task do_package: Started
 NOTE: recipe nettle-3.4.1-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe libunistring-0.9.10-r0: task do_configure: Succeeded
+NOTE: Running task 2033 of 2088 (/home/deby/poky/meta-debian/recipes-debian/libunistring/libunistring_debian.bb:do_compile)
+NOTE: recipe libunistring-0.9.10-r0: task do_compile: Started
 NOTE: recipe nettle-3.4.1-r0: task do_package: Succeeded
-NOTE: Running task 2013 of 2068 (/home/deby/poky/meta/recipes-support/nettle/nettle_3.4.1.bb:do_packagedata)
+NOTE: Running task 2034 of 2088 (/home/deby/poky/meta-debian/recipes-debian/nettle/nettle_debian.bb:do_packagedata)
 NOTE: recipe nettle-3.4.1-r0: task do_packagedata: Started
 NOTE: recipe nettle-3.4.1-r0: task do_packagedata: Succeeded
-NOTE: Running task 2014 of 2068 (/home/deby/poky/meta/recipes-support/nettle/nettle_3.4.1.bb:do_package_write_deb)
+NOTE: Running task 2035 of 2088 (/home/deby/poky/meta-debian/recipes-debian/nettle/nettle_debian.bb:do_package_write_deb)
 NOTE: recipe nettle-3.4.1-r0: task do_package_write_deb: Started
-NOTE: recipe libunistring-0.9.10-r0: task do_configure: Succeeded
-NOTE: Running task 2015 of 2068 (/home/deby/poky/meta/recipes-support/libunistring/libunistring_0.9.10.bb:do_compile)
-NOTE: recipe libunistring-0.9.10-r0: task do_compile: Started
 NOTE: recipe libgcrypt-1.8.4-r0: task do_configure: Succeeded
-NOTE: Running task 2016 of 2068 (/home/deby/poky/meta/recipes-support/libgcrypt/libgcrypt_1.8.4.bb:do_compile)
+NOTE: Running task 2036 of 2088 (/home/deby/poky/meta-debian/recipes-debian/libgcrypt/libgcrypt_debian.bb:do_compile)
 NOTE: recipe libgcrypt-1.8.4-r0: task do_compile: Started
 NOTE: recipe nettle-3.4.1-r0: task do_package_write_deb: Succeeded
 NOTE: recipe libgcrypt-1.8.4-r0: task do_compile: Succeeded
-NOTE: Running task 2017 of 2068 (/home/deby/poky/meta/recipes-support/libgcrypt/libgcrypt_1.8.4.bb:do_install)
+NOTE: Running task 2037 of 2088 (/home/deby/poky/meta-debian/recipes-debian/libgcrypt/libgcrypt_debian.bb:do_install)
 NOTE: recipe libgcrypt-1.8.4-r0: task do_install: Started
 NOTE: recipe libgcrypt-1.8.4-r0: task do_install: Succeeded
-NOTE: Running task 2018 of 2068 (/home/deby/poky/meta/recipes-support/libgcrypt/libgcrypt_1.8.4.bb:do_populate_sysroot)
-NOTE: Running task 2019 of 2068 (/home/deby/poky/meta/recipes-support/libgcrypt/libgcrypt_1.8.4.bb:do_package)
-NOTE: recipe libgcrypt-1.8.4-r0: task do_package: Started
+NOTE: Running task 2038 of 2088 (/home/deby/poky/meta-debian/recipes-debian/libgcrypt/libgcrypt_debian.bb:do_populate_sysroot)
+NOTE: Running task 2039 of 2088 (/home/deby/poky/meta-debian/recipes-debian/libgcrypt/libgcrypt_debian.bb:do_package)
 NOTE: recipe libgcrypt-1.8.4-r0: task do_populate_sysroot: Started
+NOTE: recipe libgcrypt-1.8.4-r0: task do_package: Started
 NOTE: recipe libgcrypt-1.8.4-r0: task do_populate_sysroot: Succeeded
-NOTE: Running task 2020 of 2068 (/home/deby/poky/meta-debian/recipes-debian/tpm2-tss/tpm2-tss_debian.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 2040 of 2088 (/home/deby/poky/meta-debian/recipes-debian/tpm2-tss/tpm2-tss_debian.bb:do_prepare_recipe_sysroot)
 NOTE: recipe tpm2-tss-2.1.0-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe tpm2-tss-2.1.0-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 2041 of 2088 (/home/deby/poky/meta-debian/recipes-debian/tpm2-tss/tpm2-tss_debian.bb:do_configure)
+NOTE: recipe tpm2-tss-2.1.0-r0: task do_configure: Started
 NOTE: recipe libgcrypt-1.8.4-r0: task do_package: Succeeded
-NOTE: Running task 2021 of 2068 (/home/deby/poky/meta/recipes-support/libgcrypt/libgcrypt_1.8.4.bb:do_packagedata)
+NOTE: Running task 2042 of 2088 (/home/deby/poky/meta-debian/recipes-debian/libgcrypt/libgcrypt_debian.bb:do_packagedata)
 NOTE: recipe libgcrypt-1.8.4-r0: task do_packagedata: Started
 NOTE: recipe libgcrypt-1.8.4-r0: task do_packagedata: Succeeded
-NOTE: Running task 2022 of 2068 (/home/deby/poky/meta/recipes-support/libgcrypt/libgcrypt_1.8.4.bb:do_package_write_deb)
+NOTE: Running task 2043 of 2088 (/home/deby/poky/meta-debian/recipes-debian/libgcrypt/libgcrypt_debian.bb:do_package_write_deb)
 NOTE: recipe libgcrypt-1.8.4-r0: task do_package_write_deb: Started
-NOTE: recipe tpm2-tss-2.1.0-r0: task do_prepare_recipe_sysroot: Succeeded
-NOTE: Running task 2023 of 2068 (/home/deby/poky/meta-debian/recipes-debian/tpm2-tss/tpm2-tss_debian.bb:do_configure)
-NOTE: recipe tpm2-tss-2.1.0-r0: task do_configure: Started
 NOTE: recipe libgcrypt-1.8.4-r0: task do_package_write_deb: Succeeded
-NOTE: recipe tpm2-tss-2.1.0-r0: task do_configure: Succeeded
-NOTE: Running task 2024 of 2068 (/home/deby/poky/meta-debian/recipes-debian/tpm2-tss/tpm2-tss_debian.bb:do_compile)
-NOTE: recipe tpm2-tss-2.1.0-r0: task do_compile: Started
-NOTE: recipe tpm2-tss-2.1.0-r0: task do_compile: Succeeded
-NOTE: Running task 2025 of 2068 (/home/deby/poky/meta-debian/recipes-debian/tpm2-tss/tpm2-tss_debian.bb:do_install)
-NOTE: recipe tpm2-tss-2.1.0-r0: task do_install: Started
-NOTE: recipe tpm2-tss-2.1.0-r0: task do_install: Succeeded
-NOTE: Running task 2026 of 2068 (/home/deby/poky/meta-debian/recipes-debian/tpm2-tss/tpm2-tss_debian.bb:do_package)
-NOTE: Running task 2027 of 2068 (/home/deby/poky/meta-debian/recipes-debian/tpm2-tss/tpm2-tss_debian.bb:do_populate_sysroot)
-NOTE: recipe tpm2-tss-2.1.0-r0: task do_populate_sysroot: Started
-NOTE: recipe tpm2-tss-2.1.0-r0: task do_package: Started
-NOTE: recipe tpm2-tss-2.1.0-r0: task do_populate_sysroot: Succeeded
-NOTE: recipe tpm2-tss-2.1.0-r0: task do_package: Succeeded
-NOTE: Running task 2028 of 2068 (/home/deby/poky/meta-debian/recipes-debian/tpm2-tss/tpm2-tss_debian.bb:do_packagedata)
-NOTE: recipe tpm2-tss-2.1.0-r0: task do_packagedata: Started
-NOTE: recipe tpm2-tss-2.1.0-r0: task do_packagedata: Succeeded
-NOTE: Running task 2029 of 2068 (/home/deby/poky/meta-debian/recipes-debian/tpm2-tss/tpm2-tss_debian.bb:do_package_write_deb)
-NOTE: recipe tpm2-tss-2.1.0-r0: task do_package_write_deb: Started
-NOTE: recipe tpm2-tss-2.1.0-r0: task do_package_write_deb: Succeeded
 NOTE: recipe libunistring-0.9.10-r0: task do_compile: Succeeded
-NOTE: Running task 2030 of 2068 (/home/deby/poky/meta/recipes-support/libunistring/libunistring_0.9.10.bb:do_install)
+NOTE: Running task 2044 of 2088 (/home/deby/poky/meta-debian/recipes-debian/libunistring/libunistring_debian.bb:do_install)
 NOTE: recipe libunistring-0.9.10-r0: task do_install: Started
 NOTE: recipe libunistring-0.9.10-r0: task do_install: Succeeded
-NOTE: Running task 2031 of 2068 (/home/deby/poky/meta/recipes-support/libunistring/libunistring_0.9.10.bb:do_populate_sysroot)
-NOTE: Running task 2032 of 2068 (/home/deby/poky/meta/recipes-support/libunistring/libunistring_0.9.10.bb:do_package)
+NOTE: Running task 2045 of 2088 (/home/deby/poky/meta-debian/recipes-debian/libunistring/libunistring_debian.bb:do_populate_sysroot)
+NOTE: Running task 2046 of 2088 (/home/deby/poky/meta-debian/recipes-debian/libunistring/libunistring_debian.bb:do_package)
 NOTE: recipe libunistring-0.9.10-r0: task do_populate_sysroot: Started
 NOTE: recipe libunistring-0.9.10-r0: task do_package: Started
 NOTE: recipe libunistring-0.9.10-r0: task do_populate_sysroot: Succeeded
-NOTE: Running task 2033 of 2068 (/home/deby/poky/meta/recipes-extended/libidn/libidn2_2.0.5.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 2047 of 2088 (/home/deby/poky/meta-debian/recipes-debian/libidn/libidn2_debian.bb:do_prepare_recipe_sysroot)
 NOTE: recipe libidn2-2.0.5-r0: task do_prepare_recipe_sysroot: Started
 NOTE: recipe libidn2-2.0.5-r0: task do_prepare_recipe_sysroot: Succeeded
-NOTE: Running task 2034 of 2068 (/home/deby/poky/meta/recipes-extended/libidn/libidn2_2.0.5.bb:do_configure)
+NOTE: Running task 2048 of 2088 (/home/deby/poky/meta-debian/recipes-debian/libidn/libidn2_debian.bb:do_configure)
 NOTE: recipe libidn2-2.0.5-r0: task do_configure: Started
+NOTE: recipe tpm2-tss-2.1.0-r0: task do_configure: Succeeded
+NOTE: Running task 2049 of 2088 (/home/deby/poky/meta-debian/recipes-debian/tpm2-tss/tpm2-tss_debian.bb:do_compile)
+NOTE: recipe tpm2-tss-2.1.0-r0: task do_compile: Started
+NOTE: recipe tpm2-tss-2.1.0-r0: task do_compile: Succeeded
+NOTE: Running task 2050 of 2088 (/home/deby/poky/meta-debian/recipes-debian/tpm2-tss/tpm2-tss_debian.bb:do_install)
+NOTE: recipe tpm2-tss-2.1.0-r0: task do_install: Started
+NOTE: recipe tpm2-tss-2.1.0-r0: task do_install: Succeeded
+NOTE: Running task 2051 of 2088 (/home/deby/poky/meta-debian/recipes-debian/tpm2-tss/tpm2-tss_debian.bb:do_package)
+NOTE: Running task 2052 of 2088 (/home/deby/poky/meta-debian/recipes-debian/tpm2-tss/tpm2-tss_debian.bb:do_populate_sysroot)
+NOTE: recipe tpm2-tss-2.1.0-r0: task do_populate_sysroot: Started
+NOTE: recipe tpm2-tss-2.1.0-r0: task do_package: Started
+NOTE: recipe tpm2-tss-2.1.0-r0: task do_populate_sysroot: Succeeded
 NOTE: recipe libunistring-0.9.10-r0: task do_package: Succeeded
-NOTE: Running task 2035 of 2068 (/home/deby/poky/meta/recipes-support/libunistring/libunistring_0.9.10.bb:do_packagedata)
+NOTE: Running task 2053 of 2088 (/home/deby/poky/meta-debian/recipes-debian/libunistring/libunistring_debian.bb:do_packagedata)
 NOTE: recipe libunistring-0.9.10-r0: task do_packagedata: Started
 NOTE: recipe libunistring-0.9.10-r0: task do_packagedata: Succeeded
-NOTE: Running task 2036 of 2068 (/home/deby/poky/meta/recipes-support/libunistring/libunistring_0.9.10.bb:do_package_write_deb)
+NOTE: Running task 2054 of 2088 (/home/deby/poky/meta-debian/recipes-debian/libunistring/libunistring_debian.bb:do_package_write_deb)
 NOTE: recipe libunistring-0.9.10-r0: task do_package_write_deb: Started
 NOTE: recipe libunistring-0.9.10-r0: task do_package_write_deb: Succeeded
+NOTE: recipe tpm2-tss-2.1.0-r0: task do_package: Succeeded
+NOTE: Running task 2055 of 2088 (/home/deby/poky/meta-debian/recipes-debian/tpm2-tss/tpm2-tss_debian.bb:do_packagedata)
+NOTE: recipe tpm2-tss-2.1.0-r0: task do_packagedata: Started
+NOTE: recipe tpm2-tss-2.1.0-r0: task do_packagedata: Succeeded
+NOTE: Running task 2056 of 2088 (/home/deby/poky/meta-debian/recipes-debian/tpm2-tss/tpm2-tss_debian.bb:do_package_write_deb)
+NOTE: recipe tpm2-tss-2.1.0-r0: task do_package_write_deb: Started
+NOTE: recipe tpm2-tss-2.1.0-r0: task do_package_write_deb: Succeeded
 NOTE: recipe libidn2-2.0.5-r0: task do_configure: Succeeded
-NOTE: Running task 2037 of 2068 (/home/deby/poky/meta/recipes-extended/libidn/libidn2_2.0.5.bb:do_compile)
+NOTE: Running task 2057 of 2088 (/home/deby/poky/meta-debian/recipes-debian/libidn/libidn2_debian.bb:do_compile)
 NOTE: recipe libidn2-2.0.5-r0: task do_compile: Started
 NOTE: recipe libidn2-2.0.5-r0: task do_compile: Succeeded
-NOTE: Running task 2038 of 2068 (/home/deby/poky/meta/recipes-extended/libidn/libidn2_2.0.5.bb:do_install)
+NOTE: Running task 2058 of 2088 (/home/deby/poky/meta-debian/recipes-debian/libidn/libidn2_debian.bb:do_install)
 NOTE: recipe libidn2-2.0.5-r0: task do_install: Started
 NOTE: recipe libidn2-2.0.5-r0: task do_install: Succeeded
-NOTE: Running task 2039 of 2068 (/home/deby/poky/meta/recipes-extended/libidn/libidn2_2.0.5.bb:do_populate_sysroot)
-NOTE: Running task 2040 of 2068 (/home/deby/poky/meta/recipes-extended/libidn/libidn2_2.0.5.bb:do_package)
+NOTE: Running task 2059 of 2088 (/home/deby/poky/meta-debian/recipes-debian/libidn/libidn2_debian.bb:do_populate_sysroot)
+NOTE: Running task 2060 of 2088 (/home/deby/poky/meta-debian/recipes-debian/libidn/libidn2_debian.bb:do_package)
 NOTE: recipe libidn2-2.0.5-r0: task do_populate_sysroot: Started
 NOTE: recipe libidn2-2.0.5-r0: task do_package: Started
 NOTE: recipe libidn2-2.0.5-r0: task do_populate_sysroot: Succeeded
-NOTE: Running task 2041 of 2068 (/home/deby/poky/meta/recipes-support/gnutls/gnutls_3.6.7.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 2061 of 2088 (/home/deby/poky/meta-debian/recipes-debian/gnutls/gnutls_debian.bb:do_prepare_recipe_sysroot)
 NOTE: recipe gnutls-3.6.7-r0: task do_prepare_recipe_sysroot: Started
-NOTE: recipe libidn2-2.0.5-r0: task do_package: Succeeded
-NOTE: Running task 2042 of 2068 (/home/deby/poky/meta/recipes-extended/libidn/libidn2_2.0.5.bb:do_packagedata)
-NOTE: recipe libidn2-2.0.5-r0: task do_packagedata: Started
 NOTE: recipe gnutls-3.6.7-r0: task do_prepare_recipe_sysroot: Succeeded
-NOTE: Running task 2043 of 2068 (/home/deby/poky/meta/recipes-support/gnutls/gnutls_3.6.7.bb:do_configure)
-NOTE: recipe libidn2-2.0.5-r0: task do_packagedata: Succeeded
-NOTE: Running task 2044 of 2068 (/home/deby/poky/meta/recipes-extended/libidn/libidn2_2.0.5.bb:do_package_write_deb)
+NOTE: Running task 2062 of 2088 (/home/deby/poky/meta-debian/recipes-debian/gnutls/gnutls_debian.bb:do_configure)
 NOTE: recipe gnutls-3.6.7-r0: task do_configure: Started
+NOTE: recipe libidn2-2.0.5-r0: task do_package: Succeeded
+NOTE: Running task 2063 of 2088 (/home/deby/poky/meta-debian/recipes-debian/libidn/libidn2_debian.bb:do_packagedata)
+NOTE: recipe libidn2-2.0.5-r0: task do_packagedata: Started
+NOTE: recipe libidn2-2.0.5-r0: task do_packagedata: Succeeded
+NOTE: Running task 2064 of 2088 (/home/deby/poky/meta-debian/recipes-debian/libidn/libidn2_debian.bb:do_package_write_deb)
 NOTE: recipe libidn2-2.0.5-r0: task do_package_write_deb: Started
 NOTE: recipe libidn2-2.0.5-r0: task do_package_write_deb: Succeeded
 NOTE: recipe gnutls-3.6.7-r0: task do_configure: Succeeded
-NOTE: Running task 2045 of 2068 (/home/deby/poky/meta/recipes-support/gnutls/gnutls_3.6.7.bb:do_compile)
+NOTE: Running task 2065 of 2088 (/home/deby/poky/meta-debian/recipes-debian/gnutls/gnutls_debian.bb:do_compile)
 NOTE: recipe gnutls-3.6.7-r0: task do_compile: Started
 NOTE: recipe gnutls-3.6.7-r0: task do_compile: Succeeded
-NOTE: Running task 2046 of 2068 (/home/deby/poky/meta/recipes-support/gnutls/gnutls_3.6.7.bb:do_install)
+NOTE: Running task 2066 of 2088 (/home/deby/poky/meta-debian/recipes-debian/gnutls/gnutls_debian.bb:do_install)
 NOTE: recipe gnutls-3.6.7-r0: task do_install: Started
 NOTE: recipe gnutls-3.6.7-r0: task do_install: Succeeded
-NOTE: Running task 2047 of 2068 (/home/deby/poky/meta/recipes-support/gnutls/gnutls_3.6.7.bb:do_populate_sysroot)
-NOTE: Running task 2048 of 2068 (/home/deby/poky/meta/recipes-support/gnutls/gnutls_3.6.7.bb:do_package)
+NOTE: Running task 2067 of 2088 (/home/deby/poky/meta-debian/recipes-debian/gnutls/gnutls_debian.bb:do_populate_sysroot)
+NOTE: Running task 2068 of 2088 (/home/deby/poky/meta-debian/recipes-debian/gnutls/gnutls_debian.bb:do_package)
 NOTE: recipe gnutls-3.6.7-r0: task do_populate_sysroot: Started
 NOTE: recipe gnutls-3.6.7-r0: task do_package: Started
 NOTE: recipe gnutls-3.6.7-r0: task do_populate_sysroot: Succeeded
-NOTE: Running task 2049 of 2068 (/home/deby/poky/meta-debian/recipes-debian/curl/curl_debian.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 2069 of 2088 (/home/deby/poky/meta-debian/recipes-debian/curl/curl_debian.bb:do_prepare_recipe_sysroot)
 NOTE: recipe curl-7.64.0-r1: task do_prepare_recipe_sysroot: Started
 NOTE: recipe curl-7.64.0-r1: task do_prepare_recipe_sysroot: Succeeded
-NOTE: Running task 2050 of 2068 (/home/deby/poky/meta-debian/recipes-debian/curl/curl_debian.bb:do_configure)
+NOTE: Running task 2070 of 2088 (/home/deby/poky/meta-debian/recipes-debian/curl/curl_debian.bb:do_configure)
 NOTE: recipe curl-7.64.0-r1: task do_configure: Started
 NOTE: recipe gnutls-3.6.7-r0: task do_package: Succeeded
-NOTE: Running task 2051 of 2068 (/home/deby/poky/meta/recipes-support/gnutls/gnutls_3.6.7.bb:do_packagedata)
+NOTE: Running task 2071 of 2088 (/home/deby/poky/meta-debian/recipes-debian/gnutls/gnutls_debian.bb:do_packagedata)
 NOTE: recipe gnutls-3.6.7-r0: task do_packagedata: Started
 NOTE: recipe gnutls-3.6.7-r0: task do_packagedata: Succeeded
-NOTE: Running task 2052 of 2068 (/home/deby/poky/meta/recipes-support/gnutls/gnutls_3.6.7.bb:do_package_write_deb)
+NOTE: Running task 2072 of 2088 (/home/deby/poky/meta-debian/recipes-debian/gnutls/gnutls_debian.bb:do_package_write_deb)
 NOTE: recipe gnutls-3.6.7-r0: task do_package_write_deb: Started
 NOTE: recipe gnutls-3.6.7-r0: task do_package_write_deb: Succeeded
 NOTE: recipe curl-7.64.0-r1: task do_configure: Succeeded
-NOTE: Running task 2053 of 2068 (/home/deby/poky/meta-debian/recipes-debian/curl/curl_debian.bb:do_compile)
+NOTE: Running task 2073 of 2088 (/home/deby/poky/meta-debian/recipes-debian/curl/curl_debian.bb:do_compile)
 NOTE: recipe curl-7.64.0-r1: task do_compile: Started
 NOTE: recipe curl-7.64.0-r1: task do_compile: Succeeded
-NOTE: Running task 2054 of 2068 (/home/deby/poky/meta-debian/recipes-debian/curl/curl_debian.bb:do_install)
+NOTE: Running task 2074 of 2088 (/home/deby/poky/meta-debian/recipes-debian/curl/curl_debian.bb:do_install)
 NOTE: recipe curl-7.64.0-r1: task do_install: Started
 NOTE: recipe curl-7.64.0-r1: task do_install: Succeeded
-NOTE: Running task 2055 of 2068 (/home/deby/poky/meta-debian/recipes-debian/curl/curl_debian.bb:do_package)
-NOTE: Running task 2056 of 2068 (/home/deby/poky/meta-debian/recipes-debian/curl/curl_debian.bb:do_populate_sysroot)
+NOTE: Running task 2075 of 2088 (/home/deby/poky/meta-debian/recipes-debian/curl/curl_debian.bb:do_package)
+NOTE: Running task 2076 of 2088 (/home/deby/poky/meta-debian/recipes-debian/curl/curl_debian.bb:do_populate_sysroot)
 NOTE: recipe curl-7.64.0-r1: task do_populate_sysroot: Started
 NOTE: recipe curl-7.64.0-r1: task do_package: Started
 NOTE: recipe curl-7.64.0-r1: task do_populate_sysroot: Succeeded
-NOTE: Running task 2057 of 2068 (/home/deby/poky/meta-debian/recipes-debian/tpm2-tools/tpm2-tools_debian.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 2077 of 2088 (/home/deby/poky/meta-debian/recipes-debian/tpm2-tools/tpm2-tools_debian.bb:do_prepare_recipe_sysroot)
 NOTE: recipe tpm2-tools-3.1.3-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe tpm2-tools-3.1.3-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 2078 of 2088 (/home/deby/poky/meta-debian/recipes-debian/tpm2-tools/tpm2-tools_debian.bb:do_configure)
+NOTE: recipe tpm2-tools-3.1.3-r0: task do_configure: Started
 NOTE: recipe curl-7.64.0-r1: task do_package: Succeeded
-NOTE: Running task 2058 of 2068 (/home/deby/poky/meta-debian/recipes-debian/curl/curl_debian.bb:do_packagedata)
+NOTE: Running task 2079 of 2088 (/home/deby/poky/meta-debian/recipes-debian/curl/curl_debian.bb:do_packagedata)
 NOTE: recipe curl-7.64.0-r1: task do_packagedata: Started
 NOTE: recipe curl-7.64.0-r1: task do_packagedata: Succeeded
-NOTE: Running task 2059 of 2068 (/home/deby/poky/meta-debian/recipes-debian/curl/curl_debian.bb:do_package_write_deb)
+NOTE: Running task 2080 of 2088 (/home/deby/poky/meta-debian/recipes-debian/curl/curl_debian.bb:do_package_write_deb)
 NOTE: recipe curl-7.64.0-r1: task do_package_write_deb: Started
-NOTE: recipe tpm2-tools-3.1.3-r0: task do_prepare_recipe_sysroot: Succeeded
-NOTE: Running task 2060 of 2068 (/home/deby/poky/meta-debian/recipes-debian/tpm2-tools/tpm2-tools_debian.bb:do_configure)
-NOTE: recipe tpm2-tools-3.1.3-r0: task do_configure: Started
 NOTE: recipe curl-7.64.0-r1: task do_package_write_deb: Succeeded
 NOTE: recipe tpm2-tools-3.1.3-r0: task do_configure: Succeeded
-NOTE: Running task 2061 of 2068 (/home/deby/poky/meta-debian/recipes-debian/tpm2-tools/tpm2-tools_debian.bb:do_compile)
+NOTE: Running task 2081 of 2088 (/home/deby/poky/meta-debian/recipes-debian/tpm2-tools/tpm2-tools_debian.bb:do_compile)
 NOTE: recipe tpm2-tools-3.1.3-r0: task do_compile: Started
 NOTE: recipe tpm2-tools-3.1.3-r0: task do_compile: Succeeded
-NOTE: Running task 2062 of 2068 (/home/deby/poky/meta-debian/recipes-debian/tpm2-tools/tpm2-tools_debian.bb:do_install)
+NOTE: Running task 2082 of 2088 (/home/deby/poky/meta-debian/recipes-debian/tpm2-tools/tpm2-tools_debian.bb:do_install)
 NOTE: recipe tpm2-tools-3.1.3-r0: task do_install: Started
 NOTE: recipe tpm2-tools-3.1.3-r0: task do_install: Succeeded
-NOTE: Running task 2063 of 2068 (/home/deby/poky/meta-debian/recipes-debian/tpm2-tools/tpm2-tools_debian.bb:do_package)
-NOTE: Running task 2064 of 2068 (/home/deby/poky/meta-debian/recipes-debian/tpm2-tools/tpm2-tools_debian.bb:do_populate_sysroot)
+NOTE: Running task 2083 of 2088 (/home/deby/poky/meta-debian/recipes-debian/tpm2-tools/tpm2-tools_debian.bb:do_package)
+NOTE: Running task 2084 of 2088 (/home/deby/poky/meta-debian/recipes-debian/tpm2-tools/tpm2-tools_debian.bb:do_populate_sysroot)
 NOTE: recipe tpm2-tools-3.1.3-r0: task do_package: Started
 NOTE: recipe tpm2-tools-3.1.3-r0: task do_populate_sysroot: Started
 NOTE: recipe tpm2-tools-3.1.3-r0: task do_populate_sysroot: Succeeded
 NOTE: recipe tpm2-tools-3.1.3-r0: task do_package: Succeeded
-NOTE: Running task 2065 of 2068 (/home/deby/poky/meta-debian/recipes-debian/tpm2-tools/tpm2-tools_debian.bb:do_packagedata)
+NOTE: Running task 2085 of 2088 (/home/deby/poky/meta-debian/recipes-debian/tpm2-tools/tpm2-tools_debian.bb:do_packagedata)
 NOTE: recipe tpm2-tools-3.1.3-r0: task do_packagedata: Started
 NOTE: recipe tpm2-tools-3.1.3-r0: task do_packagedata: Succeeded
-NOTE: Running task 2066 of 2068 (/home/deby/poky/meta-debian/recipes-debian/tpm2-tools/tpm2-tools_debian.bb:do_package_write_deb)
-NOTE: Running task 2067 of 2068 (/home/deby/poky/meta-debian/recipes-debian/tpm2-tools/tpm2-tools_debian.bb:do_package_qa)
+NOTE: Running task 2086 of 2088 (/home/deby/poky/meta-debian/recipes-debian/tpm2-tools/tpm2-tools_debian.bb:do_package_write_deb)
+NOTE: Running task 2087 of 2088 (/home/deby/poky/meta-debian/recipes-debian/tpm2-tools/tpm2-tools_debian.bb:do_package_qa)
 NOTE: recipe tpm2-tools-3.1.3-r0: task do_package_write_deb: Started
 NOTE: recipe tpm2-tools-3.1.3-r0: task do_package_qa: Started
 NOTE: recipe tpm2-tools-3.1.3-r0: task do_package_qa: Succeeded
 NOTE: recipe tpm2-tools-3.1.3-r0: task do_package_write_deb: Succeeded
-NOTE: Running noexec task 2068 of 2068 (/home/deby/poky/meta-debian/recipes-debian/tpm2-tools/tpm2-tools_debian.bb:do_build)
-NOTE: Tasks Summary: Attempted 2068 tasks of which 1983 didn't need to be rerun and all succeeded.
+NOTE: Running noexec task 2088 of 2088 (/home/deby/poky/meta-debian/recipes-debian/tpm2-tools/tpm2-tools_debian.bb:do_build)
+NOTE: Tasks Summary: Attempted 2088 tasks of which 1952 didn't need to be rerun and all succeeded.

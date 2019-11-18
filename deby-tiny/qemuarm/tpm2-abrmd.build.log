@@ -1,8 +1,7 @@
-NOTE: Bitbake server didn't start within 5 seconds, waiting for 90
 Loading cache...done.
-Loaded 1746 entries from dependency cache.
+Loaded 1825 entries from dependency cache.
 Parsing recipes...done.
-Parsing of 992 .bb files complete (990 cached, 2 parsed). 1733 targets, 223 skipped, 0 masked, 0 errors.
+Parsing of 1043 .bb files complete (1041 cached, 2 parsed). 1828 targets, 222 skipped, 0 masked, 0 errors.
 NOTE: Resolving any missing task queue dependencies
 
 Build Configuration:
@@ -17,110 +16,170 @@ TUNE_FEATURES        = "arm armv7ve vfp thumb neon callconvention-hard"
 TARGET_FPU           = "hard"
 meta                 
 meta-poky            = "warrior:79a850a10a4b88a6d20d607b322542f947874323"
-meta-debian          = "warrior:f7512bd96372e67fe4288cb5cb61cf52d282dd4e"
+meta-debian          = "warrior:fda6a80e4cae9aa03f502551f35fe41beb7bb944"
 
 Initialising tasks...done.
-Sstate summary: Wanted 17 Found 0 Missed 17 Current 239 (0% match, 93% complete)
+Sstate summary: Wanted 19 Found 0 Missed 19 Current 237 (0% match, 92% complete)
 NOTE: Executing SetScene Tasks
 NOTE: Executing RunQueue Tasks
-NOTE: Running task 880 of 1265 (/home/deby/poky/meta/recipes-extended/shadow/shadow-sysroot_4.6.bb:do_prepare_recipe_sysroot)
-NOTE: Running task 948 of 1265 (/home/deby/poky/meta-debian/recipes-debian/expat/expat_debian.bb:do_prepare_recipe_sysroot)
-NOTE: recipe expat-2.2.6-r0: task do_prepare_recipe_sysroot: Started
+NOTE: Running task 718 of 1277 (/home/deby/poky/meta-debian/recipes-debian/expat/expat_debian.bb:do_fetch)
+NOTE: Running task 776 of 1277 (/home/deby/poky/meta/recipes-extended/shadow/shadow-sysroot_4.6.bb:do_fetch)
+NOTE: Running task 812 of 1277 (/home/deby/poky/meta-debian/recipes-debian/dbus/dbus_debian.bb:do_fetch)
+NOTE: Running task 939 of 1277 (/home/deby/poky/meta-debian/recipes-debian/tpm2-abrmd/tpm2-abrmd_debian.bb:do_fetch)
+NOTE: Running task 983 of 1277 (/home/deby/poky/meta-debian/recipes-debian/base-files/base-files_debian.bb:do_populate_sysroot)
+NOTE: recipe expat-2.2.6-r0: task do_fetch: Started
+NOTE: recipe shadow-sysroot-4.6-r3: task do_fetch: Started
+NOTE: recipe tpm2-abrmd-2.1.0-r0: task do_fetch: Started
+NOTE: recipe expat-2.2.6-r0: task do_fetch: Succeeded
+NOTE: Running task 1229 of 1277 (/home/deby/poky/meta-debian/recipes-debian/expat/expat_debian.bb:do_unpack)
+NOTE: Running task 1230 of 1277 (/home/deby/poky/meta-debian/recipes-debian/expat/expat_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe shadow-sysroot-4.6-r3: task do_fetch: Succeeded
+NOTE: Running task 1231 of 1277 (/home/deby/poky/meta/recipes-extended/shadow/shadow-sysroot_4.6.bb:do_unpack)
+NOTE: Running task 1232 of 1277 (/home/deby/poky/meta/recipes-extended/shadow/shadow-sysroot_4.6.bb:do_prepare_recipe_sysroot)
+NOTE: recipe dbus-1.12.16-r0: task do_fetch: Started
+NOTE: recipe tpm2-abrmd-2.1.0-r0: task do_fetch: Succeeded
+NOTE: Running task 1233 of 1277 (/home/deby/poky/meta-debian/recipes-debian/tpm2-abrmd/tpm2-abrmd_debian.bb:do_unpack)
+NOTE: recipe base-files-10.3+deb10u1-r0: task do_populate_sysroot: Started
+NOTE: recipe dbus-1.12.16-r0: task do_fetch: Succeeded
+NOTE: recipe shadow-sysroot-4.6-r3: task do_unpack: Started
+NOTE: Running task 1234 of 1277 (/home/deby/poky/meta-debian/recipes-debian/dbus/dbus_debian.bb:do_unpack)
+NOTE: recipe expat-2.2.6-r0: task do_unpack: Started
 NOTE: recipe shadow-sysroot-4.6-r3: task do_prepare_recipe_sysroot: Started
+NOTE: recipe expat-2.2.6-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe shadow-sysroot-4.6-r3: task do_unpack: Succeeded
+NOTE: Running task 1235 of 1277 (/home/deby/poky/meta/recipes-extended/shadow/shadow-sysroot_4.6.bb:do_patch)
+NOTE: recipe tpm2-abrmd-2.1.0-r0: task do_unpack: Started
+NOTE: recipe dbus-1.12.16-r0: task do_unpack: Started
+NOTE: recipe shadow-sysroot-4.6-r3: task do_patch: Started
+NOTE: recipe tpm2-abrmd-2.1.0-r0: task do_unpack: Succeeded
+NOTE: Running task 1236 of 1277 (/home/deby/poky/meta-debian/recipes-debian/tpm2-abrmd/tpm2-abrmd_debian.bb:do_debian_unpack_extra)
+NOTE: recipe dbus-1.12.16-r0: task do_unpack: Succeeded
+NOTE: Running task 1237 of 1277 (/home/deby/poky/meta-debian/recipes-debian/dbus/dbus_debian.bb:do_debian_unpack_extra)
+NOTE: recipe tpm2-abrmd-2.1.0-r0: task do_debian_unpack_extra: Started
+NOTE: recipe dbus-1.12.16-r0: task do_debian_unpack_extra: Started
+NOTE: recipe tpm2-abrmd-2.1.0-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 1238 of 1277 (/home/deby/poky/meta-debian/recipes-debian/tpm2-abrmd/tpm2-abrmd_debian.bb:do_debian_patch)
+NOTE: recipe dbus-1.12.16-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 1239 of 1277 (/home/deby/poky/meta-debian/recipes-debian/dbus/dbus_debian.bb:do_debian_patch)
+NOTE: recipe expat-2.2.6-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: recipe tpm2-abrmd-2.1.0-r0: task do_debian_patch: Started
 NOTE: recipe shadow-sysroot-4.6-r3: task do_prepare_recipe_sysroot: Succeeded
-NOTE: Running task 1234 of 1265 (/home/deby/poky/meta/recipes-extended/shadow/shadow-sysroot_4.6.bb:do_configure)
+NOTE: recipe base-files-10.3+deb10u1-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe dbus-1.12.16-r0: task do_debian_patch: Started
+NOTE: recipe shadow-sysroot-4.6-r3: task do_patch: Succeeded
+NOTE: Running task 1240 of 1277 (/home/deby/poky/meta/recipes-extended/shadow/shadow-sysroot_4.6.bb:do_configure)
+NOTE: recipe tpm2-abrmd-2.1.0-r0: task do_debian_patch: Succeeded
+NOTE: Running task 1241 of 1277 (/home/deby/poky/meta-debian/recipes-debian/tpm2-abrmd/tpm2-abrmd_debian.bb:do_patch)
 NOTE: recipe shadow-sysroot-4.6-r3: task do_configure: Started
+NOTE: recipe tpm2-abrmd-2.1.0-r0: task do_patch: Started
+NOTE: recipe dbus-1.12.16-r0: task do_debian_patch: Succeeded
+NOTE: Running task 1242 of 1277 (/home/deby/poky/meta-debian/recipes-debian/dbus/dbus_debian.bb:do_patch)
 NOTE: recipe shadow-sysroot-4.6-r3: task do_configure: Succeeded
-NOTE: Running task 1235 of 1265 (/home/deby/poky/meta/recipes-extended/shadow/shadow-sysroot_4.6.bb:do_compile)
+NOTE: Running task 1243 of 1277 (/home/deby/poky/meta/recipes-extended/shadow/shadow-sysroot_4.6.bb:do_compile)
+NOTE: recipe tpm2-abrmd-2.1.0-r0: task do_patch: Succeeded
+NOTE: Running task 1244 of 1277 (/home/deby/poky/meta-debian/recipes-debian/tpm2-abrmd/tpm2-abrmd_debian.bb:do_populate_lic)
+NOTE: recipe expat-2.2.6-r0: task do_unpack: Succeeded
+NOTE: Running task 1245 of 1277 (/home/deby/poky/meta-debian/recipes-debian/expat/expat_debian.bb:do_debian_unpack_extra)
 NOTE: recipe shadow-sysroot-4.6-r3: task do_compile: Started
+NOTE: recipe dbus-1.12.16-r0: task do_patch: Started
 NOTE: recipe shadow-sysroot-4.6-r3: task do_compile: Succeeded
-NOTE: Running task 1236 of 1265 (/home/deby/poky/meta/recipes-extended/shadow/shadow-sysroot_4.6.bb:do_install)
+NOTE: Running task 1246 of 1277 (/home/deby/poky/meta/recipes-extended/shadow/shadow-sysroot_4.6.bb:do_install)
+NOTE: recipe tpm2-abrmd-2.1.0-r0: task do_populate_lic: Started
+NOTE: recipe expat-2.2.6-r0: task do_debian_unpack_extra: Started
+NOTE: recipe dbus-1.12.16-r0: task do_patch: Succeeded
+NOTE: recipe expat-2.2.6-r0: task do_debian_unpack_extra: Succeeded
+NOTE: recipe tpm2-abrmd-2.1.0-r0: task do_populate_lic: Succeeded
+NOTE: Running task 1247 of 1277 (/home/deby/poky/meta-debian/recipes-debian/expat/expat_debian.bb:do_debian_patch)
 NOTE: recipe shadow-sysroot-4.6-r3: task do_install: Started
+NOTE: recipe expat-2.2.6-r0: task do_debian_patch: Started
+NOTE: recipe expat-2.2.6-r0: task do_debian_patch: Succeeded
+NOTE: Running task 1248 of 1277 (/home/deby/poky/meta-debian/recipes-debian/expat/expat_debian.bb:do_patch)
 NOTE: recipe shadow-sysroot-4.6-r3: task do_install: Succeeded
-NOTE: Running task 1237 of 1265 (/home/deby/poky/meta/recipes-extended/shadow/shadow-sysroot_4.6.bb:do_populate_sysroot)
-NOTE: Running task 1238 of 1265 (/home/deby/poky/meta/recipes-extended/shadow/shadow-sysroot_4.6.bb:do_package)
+NOTE: Running task 1249 of 1277 (/home/deby/poky/meta/recipes-extended/shadow/shadow-sysroot_4.6.bb:do_populate_sysroot)
+NOTE: Running task 1250 of 1277 (/home/deby/poky/meta/recipes-extended/shadow/shadow-sysroot_4.6.bb:do_package)
+NOTE: recipe expat-2.2.6-r0: task do_patch: Started
 NOTE: recipe shadow-sysroot-4.6-r3: task do_populate_sysroot: Started
 NOTE: recipe shadow-sysroot-4.6-r3: task do_package: Started
+NOTE: recipe expat-2.2.6-r0: task do_patch: Succeeded
+NOTE: Running task 1251 of 1277 (/home/deby/poky/meta-debian/recipes-debian/expat/expat_debian.bb:do_configure)
 NOTE: recipe shadow-sysroot-4.6-r3: task do_populate_sysroot: Succeeded
 NOTE: recipe shadow-sysroot-4.6-r3: task do_package: Succeeded
-NOTE: Running task 1239 of 1265 (/home/deby/poky/meta/recipes-extended/shadow/shadow-sysroot_4.6.bb:do_packagedata)
+NOTE: Running task 1252 of 1277 (/home/deby/poky/meta/recipes-extended/shadow/shadow-sysroot_4.6.bb:do_packagedata)
 NOTE: recipe shadow-sysroot-4.6-r3: task do_packagedata: Started
+NOTE: recipe expat-2.2.6-r0: task do_configure: Started
 NOTE: recipe shadow-sysroot-4.6-r3: task do_packagedata: Succeeded
-NOTE: Running task 1240 of 1265 (/home/deby/poky/meta/recipes-extended/shadow/shadow-sysroot_4.6.bb:do_package_write_deb)
+NOTE: Running task 1253 of 1277 (/home/deby/poky/meta/recipes-extended/shadow/shadow-sysroot_4.6.bb:do_package_write_deb)
 NOTE: recipe shadow-sysroot-4.6-r3: task do_package_write_deb: Started
 NOTE: recipe shadow-sysroot-4.6-r3: task do_package_write_deb: Succeeded
-NOTE: recipe expat-2.2.6-r0: task do_prepare_recipe_sysroot: Succeeded
-NOTE: Running task 1241 of 1265 (/home/deby/poky/meta-debian/recipes-debian/expat/expat_debian.bb:do_configure)
-NOTE: recipe expat-2.2.6-r0: task do_configure: Started
 NOTE: recipe expat-2.2.6-r0: task do_configure: Succeeded
-NOTE: Running task 1242 of 1265 (/home/deby/poky/meta-debian/recipes-debian/expat/expat_debian.bb:do_compile)
+NOTE: Running task 1254 of 1277 (/home/deby/poky/meta-debian/recipes-debian/expat/expat_debian.bb:do_compile)
 NOTE: recipe expat-2.2.6-r0: task do_compile: Started
 NOTE: recipe expat-2.2.6-r0: task do_compile: Succeeded
-NOTE: Running task 1243 of 1265 (/home/deby/poky/meta-debian/recipes-debian/expat/expat_debian.bb:do_install)
+NOTE: Running task 1255 of 1277 (/home/deby/poky/meta-debian/recipes-debian/expat/expat_debian.bb:do_install)
 NOTE: recipe expat-2.2.6-r0: task do_install: Started
 NOTE: recipe expat-2.2.6-r0: task do_install: Succeeded
-NOTE: Running task 1244 of 1265 (/home/deby/poky/meta-debian/recipes-debian/expat/expat_debian.bb:do_populate_sysroot)
-NOTE: Running task 1245 of 1265 (/home/deby/poky/meta-debian/recipes-debian/expat/expat_debian.bb:do_package)
+NOTE: Running task 1256 of 1277 (/home/deby/poky/meta-debian/recipes-debian/expat/expat_debian.bb:do_populate_sysroot)
+NOTE: Running task 1257 of 1277 (/home/deby/poky/meta-debian/recipes-debian/expat/expat_debian.bb:do_package)
 NOTE: recipe expat-2.2.6-r0: task do_populate_sysroot: Started
 NOTE: recipe expat-2.2.6-r0: task do_package: Started
 NOTE: recipe expat-2.2.6-r0: task do_populate_sysroot: Succeeded
-NOTE: Running task 1246 of 1265 (/home/deby/poky/meta-debian/recipes-debian/dbus/dbus_debian.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 1258 of 1277 (/home/deby/poky/meta-debian/recipes-debian/dbus/dbus_debian.bb:do_prepare_recipe_sysroot)
 NOTE: recipe dbus-1.12.16-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe dbus-1.12.16-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 1259 of 1277 (/home/deby/poky/meta-debian/recipes-debian/dbus/dbus_debian.bb:do_configure)
+NOTE: recipe dbus-1.12.16-r0: task do_configure: Started
 NOTE: recipe expat-2.2.6-r0: task do_package: Succeeded
-NOTE: Running task 1247 of 1265 (/home/deby/poky/meta-debian/recipes-debian/expat/expat_debian.bb:do_packagedata)
+NOTE: Running task 1260 of 1277 (/home/deby/poky/meta-debian/recipes-debian/expat/expat_debian.bb:do_packagedata)
 NOTE: recipe expat-2.2.6-r0: task do_packagedata: Started
 NOTE: recipe expat-2.2.6-r0: task do_packagedata: Succeeded
-NOTE: Running task 1248 of 1265 (/home/deby/poky/meta-debian/recipes-debian/expat/expat_debian.bb:do_package_write_deb)
+NOTE: Running task 1261 of 1277 (/home/deby/poky/meta-debian/recipes-debian/expat/expat_debian.bb:do_package_write_deb)
 NOTE: recipe expat-2.2.6-r0: task do_package_write_deb: Started
-NOTE: recipe dbus-1.12.16-r0: task do_prepare_recipe_sysroot: Succeeded
-NOTE: Running task 1249 of 1265 (/home/deby/poky/meta-debian/recipes-debian/dbus/dbus_debian.bb:do_configure)
-NOTE: recipe dbus-1.12.16-r0: task do_configure: Started
 NOTE: recipe expat-2.2.6-r0: task do_package_write_deb: Succeeded
 NOTE: recipe dbus-1.12.16-r0: task do_configure: Succeeded
-NOTE: Running task 1250 of 1265 (/home/deby/poky/meta-debian/recipes-debian/dbus/dbus_debian.bb:do_compile)
+NOTE: Running task 1262 of 1277 (/home/deby/poky/meta-debian/recipes-debian/dbus/dbus_debian.bb:do_compile)
 NOTE: recipe dbus-1.12.16-r0: task do_compile: Started
 NOTE: recipe dbus-1.12.16-r0: task do_compile: Succeeded
-NOTE: Running task 1251 of 1265 (/home/deby/poky/meta-debian/recipes-debian/dbus/dbus_debian.bb:do_install)
+NOTE: Running task 1263 of 1277 (/home/deby/poky/meta-debian/recipes-debian/dbus/dbus_debian.bb:do_install)
 NOTE: recipe dbus-1.12.16-r0: task do_install: Started
 NOTE: recipe dbus-1.12.16-r0: task do_install: Succeeded
-NOTE: Running task 1252 of 1265 (/home/deby/poky/meta-debian/recipes-debian/dbus/dbus_debian.bb:do_package)
-NOTE: Running task 1253 of 1265 (/home/deby/poky/meta-debian/recipes-debian/dbus/dbus_debian.bb:do_populate_sysroot)
-NOTE: recipe dbus-1.12.16-r0: task do_populate_sysroot: Started
+NOTE: Running task 1264 of 1277 (/home/deby/poky/meta-debian/recipes-debian/dbus/dbus_debian.bb:do_package)
+NOTE: Running task 1265 of 1277 (/home/deby/poky/meta-debian/recipes-debian/dbus/dbus_debian.bb:do_populate_sysroot)
 NOTE: recipe dbus-1.12.16-r0: task do_package: Started
+NOTE: recipe dbus-1.12.16-r0: task do_populate_sysroot: Started
 NOTE: recipe dbus-1.12.16-r0: task do_populate_sysroot: Succeeded
-NOTE: Running task 1254 of 1265 (/home/deby/poky/meta-debian/recipes-debian/tpm2-abrmd/tpm2-abrmd_debian.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 1266 of 1277 (/home/deby/poky/meta-debian/recipes-debian/tpm2-abrmd/tpm2-abrmd_debian.bb:do_prepare_recipe_sysroot)
 NOTE: recipe tpm2-abrmd-2.1.0-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe tpm2-abrmd-2.1.0-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 1267 of 1277 (/home/deby/poky/meta-debian/recipes-debian/tpm2-abrmd/tpm2-abrmd_debian.bb:do_configure)
+NOTE: recipe tpm2-abrmd-2.1.0-r0: task do_configure: Started
 NOTE: recipe dbus-1.12.16-r0: task do_package: Succeeded
-NOTE: Running task 1255 of 1265 (/home/deby/poky/meta-debian/recipes-debian/dbus/dbus_debian.bb:do_packagedata)
+NOTE: Running task 1268 of 1277 (/home/deby/poky/meta-debian/recipes-debian/dbus/dbus_debian.bb:do_packagedata)
 NOTE: recipe dbus-1.12.16-r0: task do_packagedata: Started
 NOTE: recipe dbus-1.12.16-r0: task do_packagedata: Succeeded
-NOTE: Running task 1256 of 1265 (/home/deby/poky/meta-debian/recipes-debian/dbus/dbus_debian.bb:do_package_write_deb)
+NOTE: Running task 1269 of 1277 (/home/deby/poky/meta-debian/recipes-debian/dbus/dbus_debian.bb:do_package_write_deb)
 NOTE: recipe dbus-1.12.16-r0: task do_package_write_deb: Started
 NOTE: recipe dbus-1.12.16-r0: task do_package_write_deb: Succeeded
-NOTE: recipe tpm2-abrmd-2.1.0-r0: task do_prepare_recipe_sysroot: Succeeded
-NOTE: Running task 1257 of 1265 (/home/deby/poky/meta-debian/recipes-debian/tpm2-abrmd/tpm2-abrmd_debian.bb:do_configure)
-NOTE: recipe tpm2-abrmd-2.1.0-r0: task do_configure: Started
 NOTE: recipe tpm2-abrmd-2.1.0-r0: task do_configure: Succeeded
-NOTE: Running task 1258 of 1265 (/home/deby/poky/meta-debian/recipes-debian/tpm2-abrmd/tpm2-abrmd_debian.bb:do_compile)
+NOTE: Running task 1270 of 1277 (/home/deby/poky/meta-debian/recipes-debian/tpm2-abrmd/tpm2-abrmd_debian.bb:do_compile)
 NOTE: recipe tpm2-abrmd-2.1.0-r0: task do_compile: Started
 NOTE: recipe tpm2-abrmd-2.1.0-r0: task do_compile: Succeeded
-NOTE: Running task 1259 of 1265 (/home/deby/poky/meta-debian/recipes-debian/tpm2-abrmd/tpm2-abrmd_debian.bb:do_install)
+NOTE: Running task 1271 of 1277 (/home/deby/poky/meta-debian/recipes-debian/tpm2-abrmd/tpm2-abrmd_debian.bb:do_install)
 NOTE: recipe tpm2-abrmd-2.1.0-r0: task do_install: Started
 NOTE: recipe tpm2-abrmd-2.1.0-r0: task do_install: Succeeded
-NOTE: Running task 1260 of 1265 (/home/deby/poky/meta-debian/recipes-debian/tpm2-abrmd/tpm2-abrmd_debian.bb:do_package)
-NOTE: Running task 1261 of 1265 (/home/deby/poky/meta-debian/recipes-debian/tpm2-abrmd/tpm2-abrmd_debian.bb:do_populate_sysroot)
+NOTE: Running task 1272 of 1277 (/home/deby/poky/meta-debian/recipes-debian/tpm2-abrmd/tpm2-abrmd_debian.bb:do_package)
+NOTE: Running task 1273 of 1277 (/home/deby/poky/meta-debian/recipes-debian/tpm2-abrmd/tpm2-abrmd_debian.bb:do_populate_sysroot)
 NOTE: recipe tpm2-abrmd-2.1.0-r0: task do_populate_sysroot: Started
 NOTE: recipe tpm2-abrmd-2.1.0-r0: task do_package: Started
 NOTE: recipe tpm2-abrmd-2.1.0-r0: task do_populate_sysroot: Succeeded
 NOTE: recipe tpm2-abrmd-2.1.0-r0: task do_package: Succeeded
-NOTE: Running task 1262 of 1265 (/home/deby/poky/meta-debian/recipes-debian/tpm2-abrmd/tpm2-abrmd_debian.bb:do_packagedata)
+NOTE: Running task 1274 of 1277 (/home/deby/poky/meta-debian/recipes-debian/tpm2-abrmd/tpm2-abrmd_debian.bb:do_packagedata)
 NOTE: recipe tpm2-abrmd-2.1.0-r0: task do_packagedata: Started
 NOTE: recipe tpm2-abrmd-2.1.0-r0: task do_packagedata: Succeeded
-NOTE: Running task 1263 of 1265 (/home/deby/poky/meta-debian/recipes-debian/tpm2-abrmd/tpm2-abrmd_debian.bb:do_package_write_deb)
-NOTE: Running task 1264 of 1265 (/home/deby/poky/meta-debian/recipes-debian/tpm2-abrmd/tpm2-abrmd_debian.bb:do_package_qa)
+NOTE: Running task 1275 of 1277 (/home/deby/poky/meta-debian/recipes-debian/tpm2-abrmd/tpm2-abrmd_debian.bb:do_package_write_deb)
+NOTE: Running task 1276 of 1277 (/home/deby/poky/meta-debian/recipes-debian/tpm2-abrmd/tpm2-abrmd_debian.bb:do_package_qa)
 NOTE: recipe tpm2-abrmd-2.1.0-r0: task do_package_write_deb: Started
 NOTE: recipe tpm2-abrmd-2.1.0-r0: task do_package_qa: Started
-NOTE: recipe tpm2-abrmd-2.1.0-r0: task do_package_write_deb: Succeeded
 NOTE: recipe tpm2-abrmd-2.1.0-r0: task do_package_qa: Succeeded
-NOTE: Running noexec task 1265 of 1265 (/home/deby/poky/meta-debian/recipes-debian/tpm2-abrmd/tpm2-abrmd_debian.bb:do_build)
-NOTE: Tasks Summary: Attempted 1265 tasks of which 1231 didn't need to be rerun and all succeeded.
+NOTE: recipe tpm2-abrmd-2.1.0-r0: task do_package_write_deb: Succeeded
+NOTE: Running noexec task 1277 of 1277 (/home/deby/poky/meta-debian/recipes-debian/tpm2-abrmd/tpm2-abrmd_debian.bb:do_build)
+NOTE: Tasks Summary: Attempted 1277 tasks of which 1223 didn't need to be rerun and all succeeded.

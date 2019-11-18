@@ -1,7 +1,7 @@
 Loading cache...done.
-Loaded 1746 entries from dependency cache.
+Loaded 1825 entries from dependency cache.
 Parsing recipes...done.
-Parsing of 992 .bb files complete (990 cached, 2 parsed). 1733 targets, 218 skipped, 0 masked, 0 errors.
+Parsing of 1043 .bb files complete (1041 cached, 2 parsed). 1828 targets, 217 skipped, 0 masked, 0 errors.
 NOTE: Resolving any missing task queue dependencies
 
 Build Configuration:
@@ -16,14 +16,17 @@ TUNE_FEATURES        = "aarch64 armv8a crc"
 TARGET_FPU           = ""
 meta                 
 meta-poky            = "warrior:79a850a10a4b88a6d20d607b322542f947874323"
-meta-debian          = "warrior:f7512bd96372e67fe4288cb5cb61cf52d282dd4e"
+meta-debian          = "warrior:fda6a80e4cae9aa03f502551f35fe41beb7bb944"
 
 Initialising tasks...done.
-Sstate summary: Wanted 1 Found 0 Missed 1 Current 139 (0% match, 99% complete)
+Sstate summary: Wanted 2 Found 0 Missed 2 Current 138 (0% match, 98% complete)
 NOTE: Executing SetScene Tasks
 NOTE: Executing RunQueue Tasks
-NOTE: Running task 797 of 799 (/home/deby/poky/meta-debian/recipes-debian/util-linux/util-linux_debian.bb:do_package_qa)
+NOTE: Running task 803 of 807 (/home/deby/poky/meta-debian/recipes-debian/util-linux/util-linux_debian.bb:do_populate_lic)
+NOTE: Running task 805 of 807 (/home/deby/poky/meta-debian/recipes-debian/util-linux/util-linux_debian.bb:do_package_qa)
+NOTE: recipe util-linux-2.33.1-r0: task do_populate_lic: Started
+NOTE: recipe util-linux-2.33.1-r0: task do_populate_lic: Succeeded
 NOTE: recipe util-linux-2.33.1-r0: task do_package_qa: Started
 NOTE: recipe util-linux-2.33.1-r0: task do_package_qa: Succeeded
-NOTE: Running noexec task 799 of 799 (/home/deby/poky/meta-debian/recipes-debian/util-linux/util-linux_debian.bb:do_build)
-NOTE: Tasks Summary: Attempted 799 tasks of which 797 didn't need to be rerun and all succeeded.
+NOTE: Running noexec task 807 of 807 (/home/deby/poky/meta-debian/recipes-debian/util-linux/util-linux_debian.bb:do_build)
+NOTE: Tasks Summary: Attempted 807 tasks of which 804 didn't need to be rerun and all succeeded.

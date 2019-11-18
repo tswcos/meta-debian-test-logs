@@ -1,7 +1,7 @@
 Loading cache...done.
-Loaded 1731 entries from dependency cache.
+Loaded 1825 entries from dependency cache.
 Parsing recipes...done.
-Parsing of 992 .bb files complete (990 cached, 2 parsed). 1733 targets, 229 skipped, 0 masked, 0 errors.
+Parsing of 1043 .bb files complete (1041 cached, 2 parsed). 1828 targets, 228 skipped, 0 masked, 0 errors.
 NOTE: Resolving any missing task queue dependencies
 
 Build Configuration:
@@ -16,105 +16,92 @@ TUNE_FEATURES        = "o32 bigendian fpu-hard mips32r2"
 TARGET_FPU           = ""
 meta                 
 meta-poky            = "warrior:79a850a10a4b88a6d20d607b322542f947874323"
-meta-debian          = "warrior:f7512bd96372e67fe4288cb5cb61cf52d282dd4e"
+meta-debian          = "warrior:fda6a80e4cae9aa03f502551f35fe41beb7bb944"
 
 Initialising tasks...done.
-Sstate summary: Wanted 16 Found 0 Missed 16 Current 168 (0% match, 91% complete)
+Sstate summary: Wanted 9 Found 0 Missed 9 Current 159 (0% match, 94% complete)
 NOTE: Executing SetScene Tasks
 NOTE: Executing RunQueue Tasks
-NOTE: Running task 749 of 946 (/home/deby/poky/meta-debian/recipes-debian/sysfsutils/sysfsutils_debian.bb:do_prepare_recipe_sysroot)
-NOTE: Running task 753 of 946 (/home/deby/poky/meta/recipes-support/libjitterentropy/libjitterentropy_2.1.2.bb:do_prepare_recipe_sysroot)
-NOTE: Running task 818 of 946 (/home/deby/poky/meta-debian/recipes-debian/openssh/openssh_debian.bb:do_prepare_recipe_sysroot)
-NOTE: recipe sysfsutils-2.1.0-r0: task do_prepare_recipe_sysroot: Started
-NOTE: recipe libjitterentropy-2.1.2-r0: task do_prepare_recipe_sysroot: Started
+NOTE: Running task 655 of 910 (/home/deby/poky/meta-debian/recipes-debian/openssh/openssh_debian.bb:do_fetch)
+NOTE: Running task 690 of 910 (/home/deby/poky/meta-debian/recipes-debian/rng-tools/rng-tools_debian.bb:do_fetch)
+NOTE: recipe rng-tools-2-unofficial-mt.14-r0: task do_fetch: Started
+NOTE: recipe openssh-7.9p1-r0: task do_fetch: Started
+NOTE: recipe rng-tools-2-unofficial-mt.14-r0: task do_fetch: Succeeded
+NOTE: Running task 885 of 910 (/home/deby/poky/meta-debian/recipes-debian/rng-tools/rng-tools_debian.bb:do_unpack)
+NOTE: Running task 886 of 910 (/home/deby/poky/meta-debian/recipes-debian/rng-tools/rng-tools_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe openssh-7.9p1-r0: task do_fetch: Succeeded
+NOTE: Running task 887 of 910 (/home/deby/poky/meta-debian/recipes-debian/openssh/openssh_debian.bb:do_unpack)
+NOTE: Running task 888 of 910 (/home/deby/poky/meta-debian/recipes-debian/openssh/openssh_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe rng-tools-2-unofficial-mt.14-r0: task do_unpack: Started
+NOTE: recipe rng-tools-2-unofficial-mt.14-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe openssh-7.9p1-r0: task do_unpack: Started
 NOTE: recipe openssh-7.9p1-r0: task do_prepare_recipe_sysroot: Started
-NOTE: recipe libjitterentropy-2.1.2-r0: task do_prepare_recipe_sysroot: Succeeded
-NOTE: Running noexec task 917 of 946 (/home/deby/poky/meta/recipes-support/libjitterentropy/libjitterentropy_2.1.2.bb:do_configure)
-NOTE: Running task 918 of 946 (/home/deby/poky/meta/recipes-support/libjitterentropy/libjitterentropy_2.1.2.bb:do_compile)
-NOTE: recipe libjitterentropy-2.1.2-r0: task do_compile: Started
-NOTE: recipe libjitterentropy-2.1.2-r0: task do_compile: Succeeded
-NOTE: Running task 919 of 946 (/home/deby/poky/meta/recipes-support/libjitterentropy/libjitterentropy_2.1.2.bb:do_install)
-NOTE: recipe sysfsutils-2.1.0-r0: task do_prepare_recipe_sysroot: Succeeded
-NOTE: Running task 920 of 946 (/home/deby/poky/meta-debian/recipes-debian/sysfsutils/sysfsutils_debian.bb:do_configure)
-NOTE: recipe sysfsutils-2.1.0-r0: task do_configure: Started
-NOTE: recipe libjitterentropy-2.1.2-r0: task do_install: Started
+NOTE: recipe rng-tools-2-unofficial-mt.14-r0: task do_unpack: Succeeded
+NOTE: Running task 889 of 910 (/home/deby/poky/meta-debian/recipes-debian/rng-tools/rng-tools_debian.bb:do_debian_unpack_extra)
+NOTE: recipe rng-tools-2-unofficial-mt.14-r0: task do_debian_unpack_extra: Started
+NOTE: recipe rng-tools-2-unofficial-mt.14-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 890 of 910 (/home/deby/poky/meta-debian/recipes-debian/rng-tools/rng-tools_debian.bb:do_debian_patch)
+NOTE: recipe rng-tools-2-unofficial-mt.14-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: recipe rng-tools-2-unofficial-mt.14-r0: task do_debian_patch: Started
+NOTE: recipe rng-tools-2-unofficial-mt.14-r0: task do_debian_patch: Succeeded
+NOTE: Running task 891 of 910 (/home/deby/poky/meta-debian/recipes-debian/rng-tools/rng-tools_debian.bb:do_patch)
+NOTE: recipe openssh-7.9p1-r0: task do_unpack: Succeeded
+NOTE: Running task 892 of 910 (/home/deby/poky/meta-debian/recipes-debian/openssh/openssh_debian.bb:do_debian_unpack_extra)
+NOTE: recipe rng-tools-2-unofficial-mt.14-r0: task do_patch: Started
+NOTE: recipe openssh-7.9p1-r0: task do_debian_unpack_extra: Started
+NOTE: recipe openssh-7.9p1-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 893 of 910 (/home/deby/poky/meta-debian/recipes-debian/openssh/openssh_debian.bb:do_debian_patch)
+NOTE: recipe rng-tools-2-unofficial-mt.14-r0: task do_patch: Succeeded
+NOTE: Running task 894 of 910 (/home/deby/poky/meta-debian/recipes-debian/rng-tools/rng-tools_debian.bb:do_configure)
 NOTE: recipe openssh-7.9p1-r0: task do_prepare_recipe_sysroot: Succeeded
-NOTE: Running task 921 of 946 (/home/deby/poky/meta-debian/recipes-debian/openssh/openssh_debian.bb:do_configure)
+NOTE: recipe openssh-7.9p1-r0: task do_debian_patch: Started
+NOTE: recipe rng-tools-2-unofficial-mt.14-r0: task do_configure: Started
+NOTE: recipe openssh-7.9p1-r0: task do_debian_patch: Succeeded
+NOTE: Running task 895 of 910 (/home/deby/poky/meta-debian/recipes-debian/openssh/openssh_debian.bb:do_patch)
+NOTE: recipe openssh-7.9p1-r0: task do_patch: Started
+NOTE: recipe openssh-7.9p1-r0: task do_patch: Succeeded
+NOTE: Running task 896 of 910 (/home/deby/poky/meta-debian/recipes-debian/openssh/openssh_debian.bb:do_configure)
+NOTE: Running task 897 of 910 (/home/deby/poky/meta-debian/recipes-debian/openssh/openssh_debian.bb:do_populate_lic)
 NOTE: recipe openssh-7.9p1-r0: task do_configure: Started
-NOTE: recipe libjitterentropy-2.1.2-r0: task do_install: Succeeded
-NOTE: Running task 922 of 946 (/home/deby/poky/meta/recipes-support/libjitterentropy/libjitterentropy_2.1.2.bb:do_package)
-NOTE: Running task 923 of 946 (/home/deby/poky/meta/recipes-support/libjitterentropy/libjitterentropy_2.1.2.bb:do_populate_sysroot)
-NOTE: recipe libjitterentropy-2.1.2-r0: task do_package: Started
-NOTE: recipe libjitterentropy-2.1.2-r0: task do_populate_sysroot: Started
-NOTE: recipe libjitterentropy-2.1.2-r0: task do_populate_sysroot: Succeeded
-NOTE: recipe libjitterentropy-2.1.2-r0: task do_package: Succeeded
-NOTE: Running task 924 of 946 (/home/deby/poky/meta/recipes-support/libjitterentropy/libjitterentropy_2.1.2.bb:do_packagedata)
-NOTE: recipe libjitterentropy-2.1.2-r0: task do_packagedata: Started
-NOTE: recipe libjitterentropy-2.1.2-r0: task do_packagedata: Succeeded
-NOTE: Running task 925 of 946 (/home/deby/poky/meta/recipes-support/libjitterentropy/libjitterentropy_2.1.2.bb:do_package_write_deb)
-NOTE: recipe libjitterentropy-2.1.2-r0: task do_package_write_deb: Started
-NOTE: recipe libjitterentropy-2.1.2-r0: task do_package_write_deb: Succeeded
-NOTE: recipe sysfsutils-2.1.0-r0: task do_configure: Succeeded
-NOTE: Running task 926 of 946 (/home/deby/poky/meta-debian/recipes-debian/sysfsutils/sysfsutils_debian.bb:do_compile)
-NOTE: recipe sysfsutils-2.1.0-r0: task do_compile: Started
-NOTE: recipe sysfsutils-2.1.0-r0: task do_compile: Succeeded
-NOTE: Running task 927 of 946 (/home/deby/poky/meta-debian/recipes-debian/sysfsutils/sysfsutils_debian.bb:do_install)
-NOTE: recipe sysfsutils-2.1.0-r0: task do_install: Started
-NOTE: recipe sysfsutils-2.1.0-r0: task do_install: Succeeded
-NOTE: Running task 928 of 946 (/home/deby/poky/meta-debian/recipes-debian/sysfsutils/sysfsutils_debian.bb:do_package)
-NOTE: Running task 929 of 946 (/home/deby/poky/meta-debian/recipes-debian/sysfsutils/sysfsutils_debian.bb:do_populate_sysroot)
-NOTE: recipe sysfsutils-2.1.0-r0: task do_populate_sysroot: Started
-NOTE: recipe sysfsutils-2.1.0-r0: task do_package: Started
-NOTE: recipe sysfsutils-2.1.0-r0: task do_populate_sysroot: Succeeded
-NOTE: Running task 930 of 946 (/home/deby/poky/meta/recipes-support/rng-tools/rng-tools_6.6.bb:do_prepare_recipe_sysroot)
-NOTE: recipe rng-tools-6.6-r0: task do_prepare_recipe_sysroot: Started
-NOTE: recipe sysfsutils-2.1.0-r0: task do_package: Succeeded
-NOTE: Running task 931 of 946 (/home/deby/poky/meta-debian/recipes-debian/sysfsutils/sysfsutils_debian.bb:do_packagedata)
-NOTE: recipe sysfsutils-2.1.0-r0: task do_packagedata: Started
-NOTE: recipe sysfsutils-2.1.0-r0: task do_packagedata: Succeeded
-NOTE: Running task 932 of 946 (/home/deby/poky/meta-debian/recipes-debian/sysfsutils/sysfsutils_debian.bb:do_package_write_deb)
-NOTE: recipe sysfsutils-2.1.0-r0: task do_package_write_deb: Started
-NOTE: recipe rng-tools-6.6-r0: task do_prepare_recipe_sysroot: Succeeded
-NOTE: Running task 933 of 946 (/home/deby/poky/meta/recipes-support/rng-tools/rng-tools_6.6.bb:do_configure)
-NOTE: recipe rng-tools-6.6-r0: task do_configure: Started
-NOTE: recipe sysfsutils-2.1.0-r0: task do_package_write_deb: Succeeded
-NOTE: recipe rng-tools-6.6-r0: task do_configure: Succeeded
-NOTE: Running task 934 of 946 (/home/deby/poky/meta/recipes-support/rng-tools/rng-tools_6.6.bb:do_compile)
-NOTE: recipe rng-tools-6.6-r0: task do_compile: Started
-NOTE: recipe rng-tools-6.6-r0: task do_compile: Succeeded
-NOTE: Running task 935 of 946 (/home/deby/poky/meta/recipes-support/rng-tools/rng-tools_6.6.bb:do_install)
-NOTE: recipe rng-tools-6.6-r0: task do_install: Started
-NOTE: recipe rng-tools-6.6-r0: task do_install: Succeeded
-NOTE: Running task 936 of 946 (/home/deby/poky/meta/recipes-support/rng-tools/rng-tools_6.6.bb:do_package)
-NOTE: recipe rng-tools-6.6-r0: task do_package: Started
-NOTE: recipe rng-tools-6.6-r0: task do_package: Succeeded
-NOTE: Running task 937 of 946 (/home/deby/poky/meta/recipes-support/rng-tools/rng-tools_6.6.bb:do_packagedata)
-NOTE: recipe rng-tools-6.6-r0: task do_packagedata: Started
-NOTE: recipe rng-tools-6.6-r0: task do_packagedata: Succeeded
-NOTE: Running task 938 of 946 (/home/deby/poky/meta/recipes-support/rng-tools/rng-tools_6.6.bb:do_package_write_deb)
-NOTE: recipe rng-tools-6.6-r0: task do_package_write_deb: Started
-NOTE: recipe rng-tools-6.6-r0: task do_package_write_deb: Succeeded
+NOTE: recipe openssh-7.9p1-r0: task do_populate_lic: Started
+NOTE: recipe openssh-7.9p1-r0: task do_populate_lic: Succeeded
+NOTE: recipe rng-tools-2-unofficial-mt.14-r0: task do_configure: Succeeded
+NOTE: Running task 898 of 910 (/home/deby/poky/meta-debian/recipes-debian/rng-tools/rng-tools_debian.bb:do_compile)
+NOTE: recipe rng-tools-2-unofficial-mt.14-r0: task do_compile: Started
+NOTE: recipe rng-tools-2-unofficial-mt.14-r0: task do_compile: Succeeded
+NOTE: Running task 899 of 910 (/home/deby/poky/meta-debian/recipes-debian/rng-tools/rng-tools_debian.bb:do_install)
+NOTE: recipe rng-tools-2-unofficial-mt.14-r0: task do_install: Started
+NOTE: recipe rng-tools-2-unofficial-mt.14-r0: task do_install: Succeeded
+NOTE: Running task 900 of 910 (/home/deby/poky/meta-debian/recipes-debian/rng-tools/rng-tools_debian.bb:do_package)
+NOTE: recipe rng-tools-2-unofficial-mt.14-r0: task do_package: Started
+NOTE: recipe rng-tools-2-unofficial-mt.14-r0: task do_package: Succeeded
+NOTE: Running task 901 of 910 (/home/deby/poky/meta-debian/recipes-debian/rng-tools/rng-tools_debian.bb:do_packagedata)
+NOTE: recipe rng-tools-2-unofficial-mt.14-r0: task do_packagedata: Started
+NOTE: recipe rng-tools-2-unofficial-mt.14-r0: task do_packagedata: Succeeded
+NOTE: Running task 902 of 910 (/home/deby/poky/meta-debian/recipes-debian/rng-tools/rng-tools_debian.bb:do_package_write_deb)
+NOTE: recipe rng-tools-2-unofficial-mt.14-r0: task do_package_write_deb: Started
+NOTE: recipe rng-tools-2-unofficial-mt.14-r0: task do_package_write_deb: Succeeded
 NOTE: recipe openssh-7.9p1-r0: task do_configure: Succeeded
-NOTE: Running task 939 of 946 (/home/deby/poky/meta-debian/recipes-debian/openssh/openssh_debian.bb:do_compile)
+NOTE: Running task 903 of 910 (/home/deby/poky/meta-debian/recipes-debian/openssh/openssh_debian.bb:do_compile)
 NOTE: recipe openssh-7.9p1-r0: task do_compile: Started
 NOTE: recipe openssh-7.9p1-r0: task do_compile: Succeeded
-NOTE: Running task 940 of 946 (/home/deby/poky/meta-debian/recipes-debian/openssh/openssh_debian.bb:do_install)
+NOTE: Running task 904 of 910 (/home/deby/poky/meta-debian/recipes-debian/openssh/openssh_debian.bb:do_install)
 NOTE: recipe openssh-7.9p1-r0: task do_install: Started
 NOTE: recipe openssh-7.9p1-r0: task do_install: Succeeded
-NOTE: Running task 941 of 946 (/home/deby/poky/meta-debian/recipes-debian/openssh/openssh_debian.bb:do_package)
-NOTE: Running task 942 of 946 (/home/deby/poky/meta-debian/recipes-debian/openssh/openssh_debian.bb:do_populate_sysroot)
+NOTE: Running task 905 of 910 (/home/deby/poky/meta-debian/recipes-debian/openssh/openssh_debian.bb:do_package)
+NOTE: Running task 906 of 910 (/home/deby/poky/meta-debian/recipes-debian/openssh/openssh_debian.bb:do_populate_sysroot)
 NOTE: recipe openssh-7.9p1-r0: task do_populate_sysroot: Started
 NOTE: recipe openssh-7.9p1-r0: task do_package: Started
 NOTE: recipe openssh-7.9p1-r0: task do_populate_sysroot: Succeeded
 NOTE: recipe openssh-7.9p1-r0: task do_package: Succeeded
-NOTE: Running task 943 of 946 (/home/deby/poky/meta-debian/recipes-debian/openssh/openssh_debian.bb:do_packagedata)
+NOTE: Running task 907 of 910 (/home/deby/poky/meta-debian/recipes-debian/openssh/openssh_debian.bb:do_packagedata)
 NOTE: recipe openssh-7.9p1-r0: task do_packagedata: Started
 NOTE: recipe openssh-7.9p1-r0: task do_packagedata: Succeeded
-NOTE: Running task 944 of 946 (/home/deby/poky/meta-debian/recipes-debian/openssh/openssh_debian.bb:do_package_write_deb)
-NOTE: Running task 945 of 946 (/home/deby/poky/meta-debian/recipes-debian/openssh/openssh_debian.bb:do_package_qa)
+NOTE: Running task 908 of 910 (/home/deby/poky/meta-debian/recipes-debian/openssh/openssh_debian.bb:do_package_write_deb)
+NOTE: Running task 909 of 910 (/home/deby/poky/meta-debian/recipes-debian/openssh/openssh_debian.bb:do_package_qa)
 NOTE: recipe openssh-7.9p1-r0: task do_package_write_deb: Started
 NOTE: recipe openssh-7.9p1-r0: task do_package_qa: Started
 NOTE: recipe openssh-7.9p1-r0: task do_package_qa: Succeeded
 NOTE: recipe openssh-7.9p1-r0: task do_package_write_deb: Succeeded
-NOTE: Running noexec task 946 of 946 (/home/deby/poky/meta-debian/recipes-debian/openssh/openssh_debian.bb:do_build)
-NOTE: Tasks Summary: Attempted 946 tasks of which 913 didn't need to be rerun and all succeeded.
+NOTE: Running noexec task 910 of 910 (/home/deby/poky/meta-debian/recipes-debian/openssh/openssh_debian.bb:do_build)
+NOTE: Tasks Summary: Attempted 910 tasks of which 882 didn't need to be rerun and all succeeded.

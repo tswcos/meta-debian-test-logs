@@ -1,7 +1,7 @@
 Loading cache...done.
-Loaded 1746 entries from dependency cache.
+Loaded 1825 entries from dependency cache.
 Parsing recipes...done.
-Parsing of 992 .bb files complete (990 cached, 2 parsed). 1733 targets, 43 skipped, 0 masked, 0 errors.
+Parsing of 1043 .bb files complete (1040 cached, 3 parsed). 1828 targets, 41 skipped, 0 masked, 0 errors.
 NOTE: Resolving any missing task queue dependencies
 
 Build Configuration:
@@ -16,17 +16,437 @@ TUNE_FEATURES        = "m32 i586"
 TARGET_FPU           = ""
 meta                 
 meta-poky            = "warrior:79a850a10a4b88a6d20d607b322542f947874323"
-meta-debian          = "warrior:f7512bd96372e67fe4288cb5cb61cf52d282dd4e"
+meta-debian          = "warrior:2fa6d8525f0464064f8764856015185a0c4e5411"
 
 Initialising tasks...done.
-Sstate summary: Wanted 2 Found 1 Missed 1 Current 419 (50% match, 99% complete)
+Sstate summary: Wanted 60 Found 1 Missed 59 Current 361 (1% match, 85% complete)
 NOTE: Executing SetScene Tasks
-NOTE: Running setscene task 421 of 421 (/home/deby/poky/meta-debian/recipes-debian/pam/libpam_debian.bb:do_populate_lic_setscene)
+NOTE: Running setscene task 364 of 421 (/home/deby/poky/meta-debian/recipes-debian/pam/libpam_debian.bb:do_populate_lic_setscene)
 NOTE: recipe libpam-1.3.1-r0: task do_populate_lic_setscene: Started
 NOTE: recipe libpam-1.3.1-r0: task do_populate_lic_setscene: Succeeded
 NOTE: Executing RunQueue Tasks
-NOTE: Running task 1946 of 1947 (/home/deby/poky/meta-debian/recipes-debian/pam/libpam_debian.bb:do_package_qa)
+NOTE: Running task 579 of 1955 (/home/deby/poky/meta-debian/recipes-debian/pam/libpam_debian.bb:do_fetch)
+NOTE: Running task 636 of 1955 (/home/deby/poky/meta-debian/recipes-debian/cracklib/cracklib_debian.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 759 of 1955 (/home/deby/poky/meta-debian/recipes-debian/shadow/shadow_debian.bb:do_fetch)
+NOTE: recipe libpam-1.3.1-r0: task do_fetch: Started
+NOTE: recipe cracklib-2.9.6-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe shadow-4.5-r0: task do_fetch: Started
+NOTE: recipe libpam-1.3.1-r0: task do_fetch: Succeeded
+NOTE: Running task 1808 of 1955 (/home/deby/poky/meta-debian/recipes-debian/pam/libpam_debian.bb:do_unpack)
+NOTE: recipe libpam-1.3.1-r0: task do_unpack: Started
+NOTE: recipe libpam-1.3.1-r0: task do_unpack: Succeeded
+NOTE: Running task 1809 of 1955 (/home/deby/poky/meta-debian/recipes-debian/pam/libpam_debian.bb:do_debian_unpack_extra)
+NOTE: recipe libpam-1.3.1-r0: task do_debian_unpack_extra: Started
+NOTE: recipe libpam-1.3.1-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 1810 of 1955 (/home/deby/poky/meta-debian/recipes-debian/pam/libpam_debian.bb:do_debian_patch)
+NOTE: recipe libpam-1.3.1-r0: task do_debian_patch: Started
+NOTE: recipe cracklib-2.9.6-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 1811 of 1955 (/home/deby/poky/meta-debian/recipes-debian/cracklib/cracklib_debian.bb:do_configure)
+NOTE: recipe cracklib-2.9.6-r0: task do_configure: Started
+NOTE: recipe libpam-1.3.1-r0: task do_debian_patch: Succeeded
+NOTE: Running task 1812 of 1955 (/home/deby/poky/meta-debian/recipes-debian/pam/libpam_debian.bb:do_patch)
+NOTE: recipe libpam-1.3.1-r0: task do_patch: Started
+NOTE: recipe libpam-1.3.1-r0: task do_patch: Succeeded
+NOTE: recipe shadow-4.5-r0: task do_fetch: Succeeded
+NOTE: Running task 1814 of 1955 (/home/deby/poky/meta-debian/recipes-debian/shadow/shadow_debian.bb:do_unpack)
+NOTE: recipe shadow-4.5-r0: task do_unpack: Started
+NOTE: recipe shadow-4.5-r0: task do_unpack: Succeeded
+NOTE: Running task 1815 of 1955 (/home/deby/poky/meta-debian/recipes-debian/shadow/shadow_debian.bb:do_debian_unpack_extra)
+NOTE: recipe shadow-4.5-r0: task do_debian_unpack_extra: Started
+NOTE: recipe shadow-4.5-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 1816 of 1955 (/home/deby/poky/meta-debian/recipes-debian/shadow/shadow_debian.bb:do_debian_patch)
+NOTE: recipe shadow-4.5-r0: task do_debian_patch: Started
+NOTE: recipe shadow-4.5-r0: task do_debian_patch: Succeeded
+NOTE: Running task 1817 of 1955 (/home/deby/poky/meta-debian/recipes-debian/shadow/shadow_debian.bb:do_patch)
+NOTE: recipe shadow-4.5-r0: task do_patch: Started
+NOTE: recipe shadow-4.5-r0: task do_patch: Succeeded
+NOTE: recipe cracklib-2.9.6-r0: task do_configure: Succeeded
+NOTE: Running task 1818 of 1955 (/home/deby/poky/meta-debian/recipes-debian/cracklib/cracklib_debian.bb:do_compile)
+NOTE: recipe cracklib-2.9.6-r0: task do_compile: Started
+NOTE: recipe cracklib-2.9.6-r0: task do_compile: Succeeded
+NOTE: Running task 1819 of 1955 (/home/deby/poky/meta-debian/recipes-debian/cracklib/cracklib_debian.bb:do_install)
+NOTE: recipe cracklib-2.9.6-r0: task do_install: Started
+NOTE: recipe cracklib-2.9.6-r0: task do_install: Succeeded
+NOTE: Running task 1820 of 1955 (/home/deby/poky/meta-debian/recipes-debian/cracklib/cracklib_debian.bb:do_populate_sysroot)
+NOTE: Running task 1821 of 1955 (/home/deby/poky/meta-debian/recipes-debian/cracklib/cracklib_debian.bb:do_package)
+NOTE: recipe cracklib-2.9.6-r0: task do_populate_sysroot: Started
+NOTE: recipe cracklib-2.9.6-r0: task do_package: Started
+NOTE: recipe cracklib-2.9.6-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 1822 of 1955 (/home/deby/poky/meta-debian/recipes-debian/pam/libpam_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe libpam-1.3.1-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe cracklib-2.9.6-r0: task do_package: Succeeded
+NOTE: Running task 1823 of 1955 (/home/deby/poky/meta-debian/recipes-debian/cracklib/cracklib_debian.bb:do_packagedata)
+NOTE: recipe cracklib-2.9.6-r0: task do_packagedata: Started
+NOTE: recipe cracklib-2.9.6-r0: task do_packagedata: Succeeded
+NOTE: Running task 1824 of 1955 (/home/deby/poky/meta-debian/recipes-debian/cracklib/cracklib_debian.bb:do_package_write_deb)
+NOTE: recipe cracklib-2.9.6-r0: task do_package_write_deb: Started
+NOTE: recipe cracklib-2.9.6-r0: task do_package_write_deb: Succeeded
+NOTE: recipe libpam-1.3.1-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 1825 of 1955 (/home/deby/poky/meta-debian/recipes-debian/pam/libpam_debian.bb:do_configure)
+NOTE: recipe libpam-1.3.1-r0: task do_configure: Started
+NOTE: recipe libpam-1.3.1-r0: task do_configure: Succeeded
+NOTE: Running task 1826 of 1955 (/home/deby/poky/meta-debian/recipes-debian/pam/libpam_debian.bb:do_compile)
+NOTE: recipe libpam-1.3.1-r0: task do_compile: Started
+NOTE: recipe libpam-1.3.1-r0: task do_compile: Succeeded
+NOTE: Running task 1827 of 1955 (/home/deby/poky/meta-debian/recipes-debian/pam/libpam_debian.bb:do_install)
+NOTE: recipe libpam-1.3.1-r0: task do_install: Started
+NOTE: recipe libpam-1.3.1-r0: task do_install: Succeeded
+NOTE: Running task 1828 of 1955 (/home/deby/poky/meta-debian/recipes-debian/pam/libpam_debian.bb:do_populate_sysroot)
+NOTE: Running task 1829 of 1955 (/home/deby/poky/meta-debian/recipes-debian/pam/libpam_debian.bb:do_package)
+NOTE: recipe libpam-1.3.1-r0: task do_package: Started
+NOTE: recipe libpam-1.3.1-r0: task do_populate_sysroot: Started
+NOTE: recipe libpam-1.3.1-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 1830 of 1955 (/home/deby/poky/meta-debian/recipes-debian/util-linux/util-linux_debian.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 1831 of 1955 (/home/deby/poky/meta-debian/recipes-debian/shadow/shadow_debian.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 1832 of 1955 (/home/deby/poky/meta-debian/recipes-debian/libcap/libcap_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe util-linux-2.33.1-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe shadow-4.5-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe libcap-2.25-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe shadow-4.5-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 1833 of 1955 (/home/deby/poky/meta-debian/recipes-debian/shadow/shadow_debian.bb:do_configure)
+NOTE: recipe util-linux-2.33.1-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 1834 of 1955 (/home/deby/poky/meta-debian/recipes-debian/util-linux/util-linux_debian.bb:do_configure)
+NOTE: recipe shadow-4.5-r0: task do_configure: Started
+NOTE: recipe libcap-2.25-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 1835 of 1955 (/home/deby/poky/meta-debian/recipes-debian/libcap/libcap_debian.bb:do_configure)
+NOTE: recipe util-linux-2.33.1-r0: task do_configure: Started
+NOTE: recipe libcap-2.25-r0: task do_configure: Started
+NOTE: recipe libcap-2.25-r0: task do_configure: Succeeded
+NOTE: Running task 1836 of 1955 (/home/deby/poky/meta-debian/recipes-debian/libcap/libcap_debian.bb:do_compile)
+NOTE: recipe libcap-2.25-r0: task do_compile: Started
+NOTE: recipe libcap-2.25-r0: task do_compile: Succeeded
+NOTE: Running task 1837 of 1955 (/home/deby/poky/meta-debian/recipes-debian/libcap/libcap_debian.bb:do_install)
+NOTE: recipe libcap-2.25-r0: task do_install: Started
+NOTE: recipe libcap-2.25-r0: task do_install: Succeeded
+NOTE: Running task 1838 of 1955 (/home/deby/poky/meta-debian/recipes-debian/libcap/libcap_debian.bb:do_populate_sysroot)
+NOTE: recipe libcap-2.25-r0: task do_populate_sysroot: Started
+NOTE: recipe libcap-2.25-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 1839 of 1955 (/home/deby/poky/meta-debian/recipes-debian/coreutils/coreutils_debian.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 1840 of 1955 (/home/deby/poky/meta-debian/recipes-debian/iproute2/iproute2_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe coreutils-8.30-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe iproute2-4.20.0-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe iproute2-4.20.0-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 1841 of 1955 (/home/deby/poky/meta-debian/recipes-debian/iproute2/iproute2_debian.bb:do_configure)
+NOTE: recipe coreutils-8.30-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 1842 of 1955 (/home/deby/poky/meta-debian/recipes-debian/coreutils/coreutils_debian.bb:do_configure)
+NOTE: recipe iproute2-4.20.0-r0: task do_configure: Started
+NOTE: recipe coreutils-8.30-r0: task do_configure: Started
+NOTE: recipe iproute2-4.20.0-r0: task do_configure: Succeeded
+NOTE: Running task 1843 of 1955 (/home/deby/poky/meta-debian/recipes-debian/iproute2/iproute2_debian.bb:do_compile)
+NOTE: recipe iproute2-4.20.0-r0: task do_compile: Started
+NOTE: recipe iproute2-4.20.0-r0: task do_compile: Succeeded
+NOTE: Running task 1844 of 1955 (/home/deby/poky/meta-debian/recipes-debian/iproute2/iproute2_debian.bb:do_install)
+NOTE: recipe iproute2-4.20.0-r0: task do_install: Started
+NOTE: recipe iproute2-4.20.0-r0: task do_install: Succeeded
+NOTE: recipe libpam-1.3.1-r0: task do_package: Succeeded
+NOTE: Running task 1845 of 1955 (/home/deby/poky/meta-debian/recipes-debian/pam/libpam_debian.bb:do_packagedata)
+NOTE: recipe libpam-1.3.1-r0: task do_packagedata: Started
+NOTE: recipe libpam-1.3.1-r0: task do_packagedata: Succeeded
+NOTE: Running task 1846 of 1955 (/home/deby/poky/meta-debian/recipes-debian/libcap/libcap_debian.bb:do_package)
+NOTE: recipe libcap-2.25-r0: task do_package: Started
+NOTE: recipe libcap-2.25-r0: task do_package: Succeeded
+NOTE: Running task 1847 of 1955 (/home/deby/poky/meta-debian/recipes-debian/libcap/libcap_debian.bb:do_packagedata)
+NOTE: recipe libcap-2.25-r0: task do_packagedata: Started
+NOTE: recipe libcap-2.25-r0: task do_packagedata: Succeeded
+NOTE: Running task 1848 of 1955 (/home/deby/poky/meta-debian/recipes-debian/iproute2/iproute2_debian.bb:do_package)
+NOTE: Running task 1849 of 1955 (/home/deby/poky/meta-debian/recipes-debian/libcap/libcap_debian.bb:do_package_write_deb)
+NOTE: recipe libcap-2.25-r0: task do_package_write_deb: Started
+NOTE: recipe iproute2-4.20.0-r0: task do_package: Started
+NOTE: recipe libcap-2.25-r0: task do_package_write_deb: Succeeded
+NOTE: recipe iproute2-4.20.0-r0: task do_package: Succeeded
+NOTE: Running task 1850 of 1955 (/home/deby/poky/meta-debian/recipes-debian/iproute2/iproute2_debian.bb:do_packagedata)
+NOTE: recipe iproute2-4.20.0-r0: task do_packagedata: Started
+NOTE: recipe iproute2-4.20.0-r0: task do_packagedata: Succeeded
+NOTE: Running task 1851 of 1955 (/home/deby/poky/meta-debian/recipes-debian/iproute2/iproute2_debian.bb:do_package_write_deb)
+NOTE: recipe iproute2-4.20.0-r0: task do_package_write_deb: Started
+NOTE: recipe iproute2-4.20.0-r0: task do_package_write_deb: Succeeded
+NOTE: recipe shadow-4.5-r0: task do_configure: Succeeded
+NOTE: Running task 1852 of 1955 (/home/deby/poky/meta-debian/recipes-debian/shadow/shadow_debian.bb:do_compile)
+NOTE: recipe shadow-4.5-r0: task do_compile: Started
+NOTE: recipe shadow-4.5-r0: task do_compile: Succeeded
+NOTE: Running task 1853 of 1955 (/home/deby/poky/meta-debian/recipes-debian/shadow/shadow_debian.bb:do_install)
+NOTE: recipe shadow-4.5-r0: task do_install: Started
+NOTE: recipe shadow-4.5-r0: task do_install: Succeeded
+NOTE: Running task 1854 of 1955 (/home/deby/poky/meta-debian/recipes-debian/shadow/shadow_debian.bb:do_populate_sysroot)
+NOTE: Running task 1855 of 1955 (/home/deby/poky/meta-debian/recipes-debian/shadow/shadow_debian.bb:do_package)
+NOTE: recipe shadow-4.5-r0: task do_populate_sysroot: Started
+NOTE: recipe shadow-4.5-r0: task do_package: Started
+NOTE: recipe shadow-4.5-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe util-linux-2.33.1-r0: task do_configure: Succeeded
+NOTE: Running task 1861 of 1955 (/home/deby/poky/meta-debian/recipes-debian/util-linux/util-linux_debian.bb:do_configure_ptest_base)
+NOTE: recipe util-linux-2.33.1-r0: task do_configure_ptest_base: Started
+NOTE: recipe util-linux-2.33.1-r0: task do_configure_ptest_base: Succeeded
+NOTE: Running task 1862 of 1955 (/home/deby/poky/meta-debian/recipes-debian/util-linux/util-linux_debian.bb:do_compile)
+NOTE: recipe util-linux-2.33.1-r0: task do_compile: Started
+NOTE: recipe util-linux-2.33.1-r0: task do_compile: Succeeded
+NOTE: Running task 1863 of 1955 (/home/deby/poky/meta-debian/recipes-debian/util-linux/util-linux_debian.bb:do_compile_ptest_base)
+NOTE: recipe util-linux-2.33.1-r0: task do_compile_ptest_base: Started
+NOTE: recipe shadow-4.5-r0: task do_package: Succeeded
+NOTE: Running task 1864 of 1955 (/home/deby/poky/meta-debian/recipes-debian/shadow/shadow_debian.bb:do_packagedata)
+NOTE: recipe shadow-4.5-r0: task do_packagedata: Started
+NOTE: recipe shadow-4.5-r0: task do_packagedata: Succeeded
+NOTE: recipe util-linux-2.33.1-r0: task do_compile_ptest_base: Succeeded
+NOTE: Running task 1868 of 1955 (/home/deby/poky/meta-debian/recipes-debian/util-linux/util-linux_debian.bb:do_install)
+NOTE: recipe util-linux-2.33.1-r0: task do_install: Started
+NOTE: recipe util-linux-2.33.1-r0: task do_install: Succeeded
+NOTE: Running task 1869 of 1955 (/home/deby/poky/meta-debian/recipes-debian/util-linux/util-linux_debian.bb:do_install_ptest_base)
+NOTE: recipe util-linux-2.33.1-r0: task do_install_ptest_base: Started
+NOTE: recipe util-linux-2.33.1-r0: task do_install_ptest_base: Succeeded
+NOTE: Running task 1870 of 1955 (/home/deby/poky/meta-debian/recipes-debian/util-linux/util-linux_debian.bb:do_populate_sysroot)
+NOTE: Running task 1871 of 1955 (/home/deby/poky/meta-debian/recipes-debian/util-linux/util-linux_debian.bb:do_package)
+NOTE: recipe util-linux-2.33.1-r0: task do_populate_sysroot: Started
+NOTE: recipe util-linux-2.33.1-r0: task do_package: Started
+NOTE: recipe util-linux-2.33.1-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 1872 of 1955 (/home/deby/poky/meta-debian/recipes-debian/glib-2.0/glib-2.0_debian.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 1873 of 1955 (/home/deby/poky/meta-debian/recipes-debian/python/python3_debian.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 1874 of 1955 (/home/deby/poky/meta-debian/recipes-debian/e2fsprogs/e2fsprogs_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe glib-2.0-2.58.3-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe python3-3.7.3-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe e2fsprogs-1.44.5-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe python3-3.7.3-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 1875 of 1955 (/home/deby/poky/meta-debian/recipes-debian/python/python3_debian.bb:do_configure)
+NOTE: recipe glib-2.0-2.58.3-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 1876 of 1955 (/home/deby/poky/meta-debian/recipes-debian/glib-2.0/glib-2.0_debian.bb:do_configure)
+NOTE: recipe e2fsprogs-1.44.5-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: recipe python3-3.7.3-r0: task do_configure: Started
+NOTE: Running task 1877 of 1955 (/home/deby/poky/meta-debian/recipes-debian/e2fsprogs/e2fsprogs_debian.bb:do_configure)
+NOTE: recipe glib-2.0-2.58.3-r0: task do_configure: Started
+NOTE: recipe e2fsprogs-1.44.5-r0: task do_configure: Started
+NOTE: recipe coreutils-8.30-r0: task do_configure: Succeeded
+NOTE: Running task 1878 of 1955 (/home/deby/poky/meta-debian/recipes-debian/coreutils/coreutils_debian.bb:do_compile)
+NOTE: recipe coreutils-8.30-r0: task do_compile: Started
+NOTE: recipe coreutils-8.30-r0: task do_compile: Succeeded
+NOTE: Running task 1879 of 1955 (/home/deby/poky/meta-debian/recipes-debian/coreutils/coreutils_debian.bb:do_install)
+NOTE: recipe coreutils-8.30-r0: task do_install: Started
+NOTE: recipe util-linux-2.33.1-r0: task do_package: Succeeded
+NOTE: Running task 1880 of 1955 (/home/deby/poky/meta-debian/recipes-debian/util-linux/util-linux_debian.bb:do_packagedata)
+NOTE: recipe util-linux-2.33.1-r0: task do_packagedata: Started
+NOTE: recipe util-linux-2.33.1-r0: task do_packagedata: Succeeded
+NOTE: Running task 1881 of 1955 (/home/deby/poky/meta-debian/recipes-debian/shadow/shadow_debian.bb:do_package_write_deb)
+NOTE: recipe shadow-4.5-r0: task do_package_write_deb: Started
+NOTE: recipe shadow-4.5-r0: task do_package_write_deb: Succeeded
+NOTE: recipe coreutils-8.30-r0: task do_install: Succeeded
+NOTE: Running task 1882 of 1955 (/home/deby/poky/meta-debian/recipes-debian/coreutils/coreutils_debian.bb:do_package)
+NOTE: recipe coreutils-8.30-r0: task do_package: Started
+NOTE: recipe glib-2.0-2.58.3-r0: task do_configure: Succeeded
+NOTE: Running task 1883 of 1955 (/home/deby/poky/meta-debian/recipes-debian/glib-2.0/glib-2.0_debian.bb:do_configure_ptest_base)
+NOTE: recipe glib-2.0-2.58.3-r0: task do_configure_ptest_base: Started
+NOTE: recipe glib-2.0-2.58.3-r0: task do_configure_ptest_base: Succeeded
+NOTE: Running task 1884 of 1955 (/home/deby/poky/meta-debian/recipes-debian/glib-2.0/glib-2.0_debian.bb:do_compile)
+NOTE: recipe glib-2.0-2.58.3-r0: task do_compile: Started
+NOTE: recipe e2fsprogs-1.44.5-r0: task do_configure: Succeeded
+NOTE: Running task 1885 of 1955 (/home/deby/poky/meta-debian/recipes-debian/e2fsprogs/e2fsprogs_debian.bb:do_configure_ptest_base)
+NOTE: recipe e2fsprogs-1.44.5-r0: task do_configure_ptest_base: Started
+NOTE: recipe e2fsprogs-1.44.5-r0: task do_configure_ptest_base: Succeeded
+NOTE: Running task 1886 of 1955 (/home/deby/poky/meta-debian/recipes-debian/e2fsprogs/e2fsprogs_debian.bb:do_compile)
+NOTE: recipe e2fsprogs-1.44.5-r0: task do_compile: Started
+NOTE: recipe e2fsprogs-1.44.5-r0: task do_compile: Succeeded
+NOTE: Running task 1887 of 1955 (/home/deby/poky/meta-debian/recipes-debian/e2fsprogs/e2fsprogs_debian.bb:do_compile_ptest_base)
+NOTE: recipe e2fsprogs-1.44.5-r0: task do_compile_ptest_base: Started
+NOTE: recipe e2fsprogs-1.44.5-r0: task do_compile_ptest_base: Succeeded
+NOTE: Running task 1888 of 1955 (/home/deby/poky/meta-debian/recipes-debian/e2fsprogs/e2fsprogs_debian.bb:do_install)
+NOTE: recipe e2fsprogs-1.44.5-r0: task do_install: Started
+NOTE: recipe coreutils-8.30-r0: task do_package: Succeeded
+NOTE: Running task 1889 of 1955 (/home/deby/poky/meta-debian/recipes-debian/coreutils/coreutils_debian.bb:do_packagedata)
+NOTE: recipe coreutils-8.30-r0: task do_packagedata: Started
+NOTE: recipe coreutils-8.30-r0: task do_packagedata: Succeeded
+NOTE: Running task 1890 of 1955 (/home/deby/poky/meta-debian/recipes-debian/mdadm/mdadm_debian.bb:do_package_write_deb)
+NOTE: Running task 1891 of 1955 (/home/deby/poky/meta-debian/recipes-debian/bash/bash_debian.bb:do_package_write_deb)
+NOTE: Running task 1892 of 1955 (/home/deby/poky/meta-debian/recipes-debian/coreutils/coreutils_debian.bb:do_package_write_deb)
+NOTE: Running task 1893 of 1955 (/home/deby/poky/meta-debian/recipes-debian/pam/libpam_debian.bb:do_package_write_deb)
+NOTE: Running task 1894 of 1955 (/home/deby/poky/meta-debian/recipes-debian/pam/libpam_debian.bb:do_package_qa)
+NOTE: recipe coreutils-8.30-r0: task do_package_write_deb: Started
+NOTE: recipe libpam-1.3.1-r0: task do_package_write_deb: Started
 NOTE: recipe libpam-1.3.1-r0: task do_package_qa: Started
+NOTE: recipe mdadm-4.1-r0: task do_package_write_deb: Started
+NOTE: recipe bash-5.0-r0: task do_package_write_deb: Started
+NOTE: recipe mdadm-4.1-r0: task do_package_write_deb: Succeeded
+NOTE: recipe bash-5.0-r0: task do_package_write_deb: Succeeded
+NOTE: recipe libpam-1.3.1-r0: task do_package_write_deb: Succeeded
+NOTE: recipe coreutils-8.30-r0: task do_package_write_deb: Succeeded
+NOTE: recipe e2fsprogs-1.44.5-r0: task do_install: Succeeded
+NOTE: Running task 1895 of 1955 (/home/deby/poky/meta-debian/recipes-debian/e2fsprogs/e2fsprogs_debian.bb:do_install_ptest_base)
+NOTE: recipe e2fsprogs-1.44.5-r0: task do_install_ptest_base: Started
 NOTE: recipe libpam-1.3.1-r0: task do_package_qa: Succeeded
-NOTE: Running noexec task 1947 of 1947 (/home/deby/poky/meta-debian/recipes-debian/pam/libpam_debian.bb:do_build)
-NOTE: Tasks Summary: Attempted 1947 tasks of which 1945 didn't need to be rerun and all succeeded.
+NOTE: recipe glib-2.0-2.58.3-r0: task do_compile: Succeeded
+NOTE: Running task 1896 of 1955 (/home/deby/poky/meta-debian/recipes-debian/glib-2.0/glib-2.0_debian.bb:do_compile_ptest_base)
+NOTE: recipe glib-2.0-2.58.3-r0: task do_compile_ptest_base: Started
+NOTE: recipe glib-2.0-2.58.3-r0: task do_compile_ptest_base: Succeeded
+NOTE: Running task 1897 of 1955 (/home/deby/poky/meta-debian/recipes-debian/glib-2.0/glib-2.0_debian.bb:do_install)
+NOTE: recipe glib-2.0-2.58.3-r0: task do_install: Started
+NOTE: recipe e2fsprogs-1.44.5-r0: task do_install_ptest_base: Succeeded
+NOTE: Running task 1898 of 1955 (/home/deby/poky/meta-debian/recipes-debian/e2fsprogs/e2fsprogs_debian.bb:do_package)
+NOTE: Running task 1899 of 1955 (/home/deby/poky/meta-debian/recipes-debian/e2fsprogs/e2fsprogs_debian.bb:do_populate_sysroot)
+NOTE: recipe e2fsprogs-1.44.5-r0: task do_package: Started
+NOTE: recipe e2fsprogs-1.44.5-r0: task do_populate_sysroot: Started
+NOTE: recipe e2fsprogs-1.44.5-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe python3-3.7.3-r0: task do_configure: Succeeded
+NOTE: Running task 1900 of 1955 (/home/deby/poky/meta-debian/recipes-debian/python/python3_debian.bb:do_configure_ptest_base)
+NOTE: recipe python3-3.7.3-r0: task do_configure_ptest_base: Started
+NOTE: recipe python3-3.7.3-r0: task do_configure_ptest_base: Succeeded
+NOTE: Running task 1901 of 1955 (/home/deby/poky/meta-debian/recipes-debian/python/python3_debian.bb:do_compile)
+NOTE: recipe python3-3.7.3-r0: task do_compile: Started
+NOTE: recipe e2fsprogs-1.44.5-r0: task do_package: Succeeded
+NOTE: Running task 1902 of 1955 (/home/deby/poky/meta-debian/recipes-debian/e2fsprogs/e2fsprogs_debian.bb:do_packagedata)
+NOTE: recipe e2fsprogs-1.44.5-r0: task do_packagedata: Started
+NOTE: recipe e2fsprogs-1.44.5-r0: task do_packagedata: Succeeded
+NOTE: Running task 1903 of 1955 (/home/deby/poky/meta-debian/recipes-debian/e2fsprogs/e2fsprogs_debian.bb:do_package_write_deb)
+NOTE: recipe e2fsprogs-1.44.5-r0: task do_package_write_deb: Started
+NOTE: recipe glib-2.0-2.58.3-r0: task do_install: Succeeded
+NOTE: Running task 1904 of 1955 (/home/deby/poky/meta-debian/recipes-debian/glib-2.0/glib-2.0_debian.bb:do_install_ptest_base)
+NOTE: recipe glib-2.0-2.58.3-r0: task do_install_ptest_base: Started
+NOTE: recipe glib-2.0-2.58.3-r0: task do_install_ptest_base: Succeeded
+NOTE: Running task 1905 of 1955 (/home/deby/poky/meta-debian/recipes-debian/glib-2.0/glib-2.0_debian.bb:do_populate_sysroot)
+NOTE: Running task 1906 of 1955 (/home/deby/poky/meta-debian/recipes-debian/glib-2.0/glib-2.0_debian.bb:do_package)
+NOTE: recipe glib-2.0-2.58.3-r0: task do_populate_sysroot: Started
+NOTE: recipe glib-2.0-2.58.3-r0: task do_package: Started
+NOTE: recipe glib-2.0-2.58.3-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 1907 of 1955 (/home/deby/poky/meta/recipes-core/udev/eudev_3.2.7.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 1908 of 1955 (/home/deby/poky/meta-debian/recipes-debian/gnome-desktop-testing/gnome-desktop-testing_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe eudev-3.2.7-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe gnome-desktop-testing-2018.1-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe gnome-desktop-testing-2018.1-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 1909 of 1955 (/home/deby/poky/meta-debian/recipes-debian/gnome-desktop-testing/gnome-desktop-testing_debian.bb:do_configure)
+NOTE: recipe eudev-3.2.7-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 1910 of 1955 (/home/deby/poky/meta/recipes-core/udev/eudev_3.2.7.bb:do_configure)
+NOTE: recipe gnome-desktop-testing-2018.1-r0: task do_configure: Started
+NOTE: recipe eudev-3.2.7-r0: task do_configure: Started
+NOTE: recipe e2fsprogs-1.44.5-r0: task do_package_write_deb: Succeeded
+NOTE: recipe gnome-desktop-testing-2018.1-r0: task do_configure: Succeeded
+NOTE: Running task 1911 of 1955 (/home/deby/poky/meta-debian/recipes-debian/gnome-desktop-testing/gnome-desktop-testing_debian.bb:do_compile)
+NOTE: recipe gnome-desktop-testing-2018.1-r0: task do_compile: Started
+NOTE: recipe gnome-desktop-testing-2018.1-r0: task do_compile: Succeeded
+NOTE: Running task 1912 of 1955 (/home/deby/poky/meta-debian/recipes-debian/gnome-desktop-testing/gnome-desktop-testing_debian.bb:do_install)
+NOTE: recipe gnome-desktop-testing-2018.1-r0: task do_install: Started
+NOTE: recipe gnome-desktop-testing-2018.1-r0: task do_install: Succeeded
+NOTE: recipe eudev-3.2.7-r0: task do_configure: Succeeded
+NOTE: Running task 1913 of 1955 (/home/deby/poky/meta/recipes-core/udev/eudev_3.2.7.bb:do_compile)
+NOTE: recipe eudev-3.2.7-r0: task do_compile: Started
+NOTE: recipe glib-2.0-2.58.3-r0: task do_package: Succeeded
+NOTE: Running task 1914 of 1955 (/home/deby/poky/meta-debian/recipes-debian/glib-2.0/glib-2.0_debian.bb:do_packagedata)
+NOTE: recipe glib-2.0-2.58.3-r0: task do_packagedata: Started
+NOTE: recipe glib-2.0-2.58.3-r0: task do_packagedata: Succeeded
+NOTE: Running task 1915 of 1955 (/home/deby/poky/meta-debian/recipes-debian/gnome-desktop-testing/gnome-desktop-testing_debian.bb:do_package)
+NOTE: recipe gnome-desktop-testing-2018.1-r0: task do_package: Started
+NOTE: recipe gnome-desktop-testing-2018.1-r0: task do_package: Succeeded
+NOTE: Running task 1916 of 1955 (/home/deby/poky/meta-debian/recipes-debian/gnome-desktop-testing/gnome-desktop-testing_debian.bb:do_packagedata)
+NOTE: recipe gnome-desktop-testing-2018.1-r0: task do_packagedata: Started
+NOTE: recipe gnome-desktop-testing-2018.1-r0: task do_packagedata: Succeeded
+NOTE: Running task 1917 of 1955 (/home/deby/poky/meta-debian/recipes-debian/gnome-desktop-testing/gnome-desktop-testing_debian.bb:do_package_write_deb)
+NOTE: recipe gnome-desktop-testing-2018.1-r0: task do_package_write_deb: Started
+NOTE: recipe gnome-desktop-testing-2018.1-r0: task do_package_write_deb: Succeeded
+NOTE: recipe eudev-3.2.7-r0: task do_compile: Succeeded
+NOTE: Running task 1918 of 1955 (/home/deby/poky/meta/recipes-core/udev/eudev_3.2.7.bb:do_install)
+NOTE: recipe eudev-3.2.7-r0: task do_install: Started
+NOTE: recipe eudev-3.2.7-r0: task do_install: Succeeded
+NOTE: Running task 1919 of 1955 (/home/deby/poky/meta/recipes-core/udev/eudev_3.2.7.bb:do_package)
+NOTE: Running task 1920 of 1955 (/home/deby/poky/meta/recipes-core/udev/eudev_3.2.7.bb:do_populate_sysroot)
+NOTE: recipe eudev-3.2.7-r0: task do_package: Started
+NOTE: recipe eudev-3.2.7-r0: task do_populate_sysroot: Started
+NOTE: recipe eudev-3.2.7-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe eudev-3.2.7-r0: task do_package: Succeeded
+NOTE: Running task 1921 of 1955 (/home/deby/poky/meta/recipes-core/udev/eudev_3.2.7.bb:do_packagedata)
+NOTE: recipe eudev-3.2.7-r0: task do_packagedata: Started
+NOTE: recipe eudev-3.2.7-r0: task do_packagedata: Succeeded
+NOTE: Running task 1922 of 1955 (/home/deby/poky/meta/recipes-core/udev/eudev_3.2.7.bb:do_package_write_deb)
+NOTE: recipe eudev-3.2.7-r0: task do_package_write_deb: Started
+NOTE: recipe eudev-3.2.7-r0: task do_package_write_deb: Succeeded
+NOTE: recipe python3-3.7.3-r0: task do_compile: Succeeded
+NOTE: Running task 1923 of 1955 (/home/deby/poky/meta-debian/recipes-debian/python/python3_debian.bb:do_compile_ptest_base)
+NOTE: recipe python3-3.7.3-r0: task do_compile_ptest_base: Started
+NOTE: recipe python3-3.7.3-r0: task do_compile_ptest_base: Succeeded
+NOTE: Running task 1924 of 1955 (/home/deby/poky/meta-debian/recipes-debian/python/python3_debian.bb:do_install)
+NOTE: recipe python3-3.7.3-r0: task do_install: Started
+NOTE: recipe python3-3.7.3-r0: task do_install: Succeeded
+NOTE: Running task 1925 of 1955 (/home/deby/poky/meta-debian/recipes-debian/python/python3_debian.bb:do_install_ptest_base)
+NOTE: recipe python3-3.7.3-r0: task do_install_ptest_base: Started
+NOTE: recipe python3-3.7.3-r0: task do_install_ptest_base: Succeeded
+NOTE: Running task 1926 of 1955 (/home/deby/poky/meta-debian/recipes-debian/python/python3_debian.bb:do_package)
+NOTE: Running task 1927 of 1955 (/home/deby/poky/meta-debian/recipes-debian/python/python3_debian.bb:do_populate_sysroot)
+NOTE: recipe python3-3.7.3-r0: task do_populate_sysroot: Started
+NOTE: recipe python3-3.7.3-r0: task do_package: Started
+NOTE: recipe python3-3.7.3-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 1928 of 1955 (/home/deby/poky/meta-debian/recipes-debian/libxml/libxml2_debian.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 1929 of 1955 (/home/deby/poky/meta-debian/recipes-debian/btrfs-tools/btrfs-tools_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe libxml2-2.9.4-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe btrfs-tools-4.20.1-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe libxml2-2.9.4-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 1930 of 1955 (/home/deby/poky/meta-debian/recipes-debian/libxml/libxml2_debian.bb:do_configure)
+NOTE: recipe btrfs-tools-4.20.1-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 1931 of 1955 (/home/deby/poky/meta-debian/recipes-debian/btrfs-tools/btrfs-tools_debian.bb:do_configure)
+NOTE: recipe libxml2-2.9.4-r0: task do_configure: Started
+NOTE: recipe btrfs-tools-4.20.1-r0: task do_configure: Started
+NOTE: recipe btrfs-tools-4.20.1-r0: task do_configure: Succeeded
+NOTE: Running task 1932 of 1955 (/home/deby/poky/meta-debian/recipes-debian/btrfs-tools/btrfs-tools_debian.bb:do_compile)
+NOTE: recipe btrfs-tools-4.20.1-r0: task do_compile: Started
+NOTE: recipe btrfs-tools-4.20.1-r0: task do_compile: Succeeded
+NOTE: Running task 1933 of 1955 (/home/deby/poky/meta-debian/recipes-debian/btrfs-tools/btrfs-tools_debian.bb:do_install)
+NOTE: recipe btrfs-tools-4.20.1-r0: task do_install: Started
+NOTE: recipe btrfs-tools-4.20.1-r0: task do_install: Succeeded
+NOTE: recipe libxml2-2.9.4-r0: task do_configure: Succeeded
+NOTE: Running task 1934 of 1955 (/home/deby/poky/meta-debian/recipes-debian/libxml/libxml2_debian.bb:do_compile)
+NOTE: recipe libxml2-2.9.4-r0: task do_compile: Started
+NOTE: recipe python3-3.7.3-r0: task do_package: Succeeded
+NOTE: Running task 1935 of 1955 (/home/deby/poky/meta-debian/recipes-debian/python/python3_debian.bb:do_packagedata)
+NOTE: recipe python3-3.7.3-r0: task do_packagedata: Started
+NOTE: recipe python3-3.7.3-r0: task do_packagedata: Succeeded
+NOTE: Running task 1936 of 1955 (/home/deby/poky/meta-debian/recipes-debian/btrfs-tools/btrfs-tools_debian.bb:do_package)
+NOTE: Running task 1937 of 1955 (/home/deby/poky/meta-debian/recipes-debian/python/python3_debian.bb:do_package_write_deb)
+NOTE: Running task 1938 of 1955 (/home/deby/poky/meta/recipes-devtools/opkg-utils/opkg-utils_0.4.0.bb:do_package_write_deb)
+NOTE: recipe opkg-utils-0.4.0-r0: task do_package_write_deb: Started
+NOTE: recipe btrfs-tools-4.20.1-r0: task do_package: Started
+NOTE: recipe python3-3.7.3-r0: task do_package_write_deb: Started
+NOTE: recipe opkg-utils-0.4.0-r0: task do_package_write_deb: Succeeded
+NOTE: recipe btrfs-tools-4.20.1-r0: task do_package: Succeeded
+NOTE: Running task 1939 of 1955 (/home/deby/poky/meta-debian/recipes-debian/btrfs-tools/btrfs-tools_debian.bb:do_packagedata)
+NOTE: recipe btrfs-tools-4.20.1-r0: task do_packagedata: Started
+NOTE: recipe btrfs-tools-4.20.1-r0: task do_packagedata: Succeeded
+NOTE: Running task 1940 of 1955 (/home/deby/poky/meta-debian/recipes-debian/btrfs-tools/btrfs-tools_debian.bb:do_package_write_deb)
+NOTE: Running task 1941 of 1955 (/home/deby/poky/meta-debian/recipes-debian/util-linux/util-linux_debian.bb:do_package_write_deb)
+NOTE: recipe btrfs-tools-4.20.1-r0: task do_package_write_deb: Started
+NOTE: recipe util-linux-2.33.1-r0: task do_package_write_deb: Started
+NOTE: recipe libxml2-2.9.4-r0: task do_compile: Succeeded
+NOTE: Running task 1942 of 1955 (/home/deby/poky/meta-debian/recipes-debian/libxml/libxml2_debian.bb:do_install)
+NOTE: recipe libxml2-2.9.4-r0: task do_install: Started
+NOTE: recipe python3-3.7.3-r0: task do_package_write_deb: Succeeded
+NOTE: recipe btrfs-tools-4.20.1-r0: task do_package_write_deb: Succeeded
+NOTE: recipe libxml2-2.9.4-r0: task do_install: Succeeded
+NOTE: Running task 1943 of 1955 (/home/deby/poky/meta-debian/recipes-debian/libxml/libxml2_debian.bb:do_package)
+NOTE: Running task 1944 of 1955 (/home/deby/poky/meta-debian/recipes-debian/libxml/libxml2_debian.bb:do_populate_sysroot)
+NOTE: recipe util-linux-2.33.1-r0: task do_package_write_deb: Succeeded
+NOTE: recipe libxml2-2.9.4-r0: task do_populate_sysroot: Started
+NOTE: recipe libxml2-2.9.4-r0: task do_package: Started
+NOTE: recipe libxml2-2.9.4-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 1945 of 1955 (/home/deby/poky/meta-debian/recipes-debian/shared-mime-info/shared-mime-info_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe shared-mime-info-1.10-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe shared-mime-info-1.10-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 1946 of 1955 (/home/deby/poky/meta-debian/recipes-debian/shared-mime-info/shared-mime-info_debian.bb:do_configure)
+NOTE: recipe shared-mime-info-1.10-r0: task do_configure: Started
+NOTE: recipe libxml2-2.9.4-r0: task do_package: Succeeded
+NOTE: Running task 1947 of 1955 (/home/deby/poky/meta-debian/recipes-debian/libxml/libxml2_debian.bb:do_packagedata)
+NOTE: recipe libxml2-2.9.4-r0: task do_packagedata: Started
+NOTE: recipe libxml2-2.9.4-r0: task do_packagedata: Succeeded
+NOTE: Running task 1948 of 1955 (/home/deby/poky/meta-debian/recipes-debian/libxml/libxml2_debian.bb:do_package_write_deb)
+NOTE: recipe libxml2-2.9.4-r0: task do_package_write_deb: Started
+NOTE: recipe libxml2-2.9.4-r0: task do_package_write_deb: Succeeded
+NOTE: recipe shared-mime-info-1.10-r0: task do_configure: Succeeded
+NOTE: Running task 1949 of 1955 (/home/deby/poky/meta-debian/recipes-debian/shared-mime-info/shared-mime-info_debian.bb:do_compile)
+NOTE: recipe shared-mime-info-1.10-r0: task do_compile: Started
+NOTE: recipe shared-mime-info-1.10-r0: task do_compile: Succeeded
+NOTE: Running task 1950 of 1955 (/home/deby/poky/meta-debian/recipes-debian/shared-mime-info/shared-mime-info_debian.bb:do_install)
+NOTE: recipe shared-mime-info-1.10-r0: task do_install: Started
+NOTE: recipe shared-mime-info-1.10-r0: task do_install: Succeeded
+NOTE: Running task 1951 of 1955 (/home/deby/poky/meta-debian/recipes-debian/shared-mime-info/shared-mime-info_debian.bb:do_package)
+NOTE: recipe shared-mime-info-1.10-r0: task do_package: Started
+NOTE: recipe shared-mime-info-1.10-r0: task do_package: Succeeded
+NOTE: Running task 1952 of 1955 (/home/deby/poky/meta-debian/recipes-debian/shared-mime-info/shared-mime-info_debian.bb:do_packagedata)
+NOTE: recipe shared-mime-info-1.10-r0: task do_packagedata: Started
+NOTE: recipe shared-mime-info-1.10-r0: task do_packagedata: Succeeded
+NOTE: Running task 1953 of 1955 (/home/deby/poky/meta-debian/recipes-debian/shared-mime-info/shared-mime-info_debian.bb:do_package_write_deb)
+NOTE: Running task 1954 of 1955 (/home/deby/poky/meta-debian/recipes-debian/glib-2.0/glib-2.0_debian.bb:do_package_write_deb)
+NOTE: recipe shared-mime-info-1.10-r0: task do_package_write_deb: Started
+NOTE: recipe glib-2.0-2.58.3-r0: task do_package_write_deb: Started
+NOTE: recipe shared-mime-info-1.10-r0: task do_package_write_deb: Succeeded
+NOTE: recipe glib-2.0-2.58.3-r0: task do_package_write_deb: Succeeded
+NOTE: Running noexec task 1955 of 1955 (/home/deby/poky/meta-debian/recipes-debian/pam/libpam_debian.bb:do_build)
+NOTE: Tasks Summary: Attempted 1955 tasks of which 1813 didn't need to be rerun and all succeeded.
