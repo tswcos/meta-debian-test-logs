@@ -1,0 +1,272 @@
+Loading cache...done.
+Loaded 1803 entries from dependency cache.
+Parsing recipes...done.
+Parsing of 1030 .bb files complete (1028 cached, 2 parsed). 1806 targets, 220 skipped, 0 masked, 0 errors.
+NOTE: Resolving any missing task queue dependencies
+
+Build Configuration:
+BB_VERSION           = "1.42.0"
+BUILD_SYS            = "x86_64-linux"
+NATIVELSBSTRING      = "universal"
+TARGET_SYS           = "aarch64-deby-linux"
+MACHINE              = "qemuarm64"
+DISTRO               = "deby-tiny"
+DISTRO_VERSION       = "10.0"
+TUNE_FEATURES        = "aarch64 armv8a crc"
+TARGET_FPU           = ""
+meta                 
+meta-poky            = "warrior:023ff85a9ae94331926e923b346fd8a349881e63"
+meta-debian          = "warrior:8e157b1a7a3a3ae1224ea194f0fc9e25772d0e07"
+
+Initialising tasks...done.
+Sstate summary: Wanted 28 Found 0 Missed 28 Current 96 (0% match, 77% complete)
+NOTE: Executing SetScene Tasks
+NOTE: Executing RunQueue Tasks
+NOTE: Running task 552 of 751 (/home/deby/poky/meta-debian/recipes-debian/groff/groff_debian.bb:do_fetch)
+NOTE: Running task 558 of 751 (/home/deby/poky/meta-debian/recipes-debian/libedit/libedit_debian.bb:do_fetch)
+NOTE: Running task 559 of 751 (/home/deby/poky/meta-debian/recipes-debian/pps-tools/pps-tools_debian.bb:do_fetch)
+NOTE: Running task 563 of 751 (/home/deby/poky/meta/recipes-support/libbsd/libbsd_0.9.1.bb:do_fetch)
+NOTE: Running task 577 of 751 (/home/deby/poky/meta-debian/recipes-debian/chrony/chrony_debian.bb:do_fetch)
+NOTE: Running task 611 of 751 (/home/deby/poky/meta-debian/recipes-debian/sed/sed_debian.bb:do_fetch)
+NOTE: Running task 652 of 751 (/home/deby/poky/meta-debian/recipes-debian/perl/perl_debian.bb:do_compile)
+NOTE: recipe chrony-3.4-r0: task do_fetch: Started
+NOTE: recipe libedit-3.1-20181209-r0: task do_fetch: Started
+NOTE: recipe sed-4.7-r0: task do_fetch: Started
+NOTE: recipe libbsd-0.9.1-r0: task do_fetch: Started
+NOTE: recipe pps-tools-1.0.2-r0: task do_fetch: Started
+NOTE: recipe groff-1.22.4-r0: task do_fetch: Started
+NOTE: recipe perl-5.28.1-r1: task do_compile: Started
+NOTE: recipe sed-4.7-r0: task do_fetch: Succeeded
+NOTE: Running task 676 of 751 (/home/deby/poky/meta-debian/recipes-debian/sed/sed_debian.bb:do_unpack)
+NOTE: Running task 677 of 751 (/home/deby/poky/meta-debian/recipes-debian/sed/sed_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe chrony-3.4-r0: task do_fetch: Succeeded
+NOTE: Running task 678 of 751 (/home/deby/poky/meta-debian/recipes-debian/chrony/chrony_debian.bb:do_unpack)
+NOTE: recipe libedit-3.1-20181209-r0: task do_fetch: Succeeded
+NOTE: Running task 679 of 751 (/home/deby/poky/meta-debian/recipes-debian/libedit/libedit_debian.bb:do_unpack)
+NOTE: recipe libbsd-0.9.1-r0: task do_fetch: Succeeded
+NOTE: Running task 680 of 751 (/home/deby/poky/meta/recipes-support/libbsd/libbsd_0.9.1.bb:do_unpack)
+NOTE: Running task 681 of 751 (/home/deby/poky/meta/recipes-support/libbsd/libbsd_0.9.1.bb:do_prepare_recipe_sysroot)
+NOTE: recipe sed-4.7-r0: task do_unpack: Started
+NOTE: recipe pps-tools-1.0.2-r0: task do_fetch: Succeeded
+NOTE: recipe sed-4.7-r0: task do_prepare_recipe_sysroot: Started
+NOTE: Running task 682 of 751 (/home/deby/poky/meta-debian/recipes-debian/pps-tools/pps-tools_debian.bb:do_unpack)
+NOTE: Running task 683 of 751 (/home/deby/poky/meta-debian/recipes-debian/pps-tools/pps-tools_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe chrony-3.4-r0: task do_unpack: Started
+NOTE: recipe libbsd-0.9.1-r0: task do_unpack: Started
+NOTE: recipe libedit-3.1-20181209-r0: task do_unpack: Started
+NOTE: recipe libbsd-0.9.1-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe pps-tools-1.0.2-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe pps-tools-1.0.2-r0: task do_unpack: Started
+NOTE: recipe sed-4.7-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: recipe libbsd-0.9.1-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: recipe pps-tools-1.0.2-r0: task do_unpack: Succeeded
+NOTE: Running task 684 of 751 (/home/deby/poky/meta-debian/recipes-debian/pps-tools/pps-tools_debian.bb:do_debian_unpack_extra)
+NOTE: recipe pps-tools-1.0.2-r0: task do_debian_unpack_extra: Started
+NOTE: recipe pps-tools-1.0.2-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: recipe pps-tools-1.0.2-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 685 of 751 (/home/deby/poky/meta-debian/recipes-debian/pps-tools/pps-tools_debian.bb:do_debian_patch)
+NOTE: recipe groff-1.22.4-r0: task do_fetch: Succeeded
+NOTE: Running task 686 of 751 (/home/deby/poky/meta-debian/recipes-debian/groff/groff_debian.bb:do_unpack)
+NOTE: Running task 687 of 751 (/home/deby/poky/meta-debian/recipes-debian/groff/groff_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe pps-tools-1.0.2-r0: task do_debian_patch: Started
+NOTE: recipe chrony-3.4-r0: task do_unpack: Succeeded
+NOTE: Running task 688 of 751 (/home/deby/poky/meta-debian/recipes-debian/chrony/chrony_debian.bb:do_debian_unpack_extra)
+NOTE: recipe groff-1.22.4-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe groff-1.22.4-r0: task do_unpack: Started
+NOTE: recipe chrony-3.4-r0: task do_debian_unpack_extra: Started
+NOTE: recipe chrony-3.4-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 689 of 751 (/home/deby/poky/meta-debian/recipes-debian/chrony/chrony_debian.bb:do_debian_patch)
+NOTE: recipe libbsd-0.9.1-r0: task do_unpack: Succeeded
+NOTE: recipe libedit-3.1-20181209-r0: task do_unpack: Succeeded
+NOTE: Running task 690 of 751 (/home/deby/poky/meta/recipes-support/libbsd/libbsd_0.9.1.bb:do_patch)
+NOTE: Running task 691 of 751 (/home/deby/poky/meta-debian/recipes-debian/libedit/libedit_debian.bb:do_debian_unpack_extra)
+NOTE: recipe chrony-3.4-r0: task do_debian_patch: Started
+NOTE: recipe pps-tools-1.0.2-r0: task do_debian_patch: Succeeded
+NOTE: Running task 692 of 751 (/home/deby/poky/meta-debian/recipes-debian/pps-tools/pps-tools_debian.bb:do_patch)
+NOTE: recipe pps-tools-1.0.2-r0: task do_patch: Started
+NOTE: recipe libedit-3.1-20181209-r0: task do_debian_unpack_extra: Started
+NOTE: recipe libbsd-0.9.1-r0: task do_patch: Started
+NOTE: recipe libedit-3.1-20181209-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 693 of 751 (/home/deby/poky/meta-debian/recipes-debian/libedit/libedit_debian.bb:do_debian_patch)
+NOTE: recipe pps-tools-1.0.2-r0: task do_patch: Succeeded
+NOTE: Running task 694 of 751 (/home/deby/poky/meta-debian/recipes-debian/pps-tools/pps-tools_debian.bb:do_configure)
+NOTE: recipe libedit-3.1-20181209-r0: task do_debian_patch: Started
+NOTE: recipe pps-tools-1.0.2-r0: task do_configure: Started
+NOTE: recipe pps-tools-1.0.2-r0: task do_configure: Succeeded
+NOTE: recipe chrony-3.4-r0: task do_debian_patch: Succeeded
+NOTE: Running task 695 of 751 (/home/deby/poky/meta-debian/recipes-debian/pps-tools/pps-tools_debian.bb:do_compile)
+NOTE: Running task 696 of 751 (/home/deby/poky/meta-debian/recipes-debian/chrony/chrony_debian.bb:do_patch)
+NOTE: recipe chrony-3.4-r0: task do_patch: Started
+NOTE: recipe pps-tools-1.0.2-r0: task do_compile: Started
+NOTE: recipe libedit-3.1-20181209-r0: task do_debian_patch: Succeeded
+NOTE: recipe sed-4.7-r0: task do_unpack: Succeeded
+NOTE: recipe libbsd-0.9.1-r0: task do_patch: Succeeded
+NOTE: Running task 697 of 751 (/home/deby/poky/meta-debian/recipes-debian/libedit/libedit_debian.bb:do_patch)
+NOTE: Running task 698 of 751 (/home/deby/poky/meta-debian/recipes-debian/sed/sed_debian.bb:do_debian_unpack_extra)
+NOTE: Running task 699 of 751 (/home/deby/poky/meta/recipes-support/libbsd/libbsd_0.9.1.bb:do_configure)
+NOTE: recipe chrony-3.4-r0: task do_patch: Succeeded
+NOTE: Running task 700 of 751 (/home/deby/poky/meta-debian/recipes-debian/chrony/chrony_debian.bb:do_populate_lic)
+NOTE: recipe chrony-3.4-r0: task do_populate_lic: Started
+NOTE: recipe sed-4.7-r0: task do_debian_unpack_extra: Started
+NOTE: recipe libbsd-0.9.1-r0: task do_configure: Started
+NOTE: recipe libedit-3.1-20181209-r0: task do_patch: Started
+NOTE: recipe libedit-3.1-20181209-r0: task do_patch: Succeeded
+NOTE: recipe sed-4.7-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 701 of 751 (/home/deby/poky/meta-debian/recipes-debian/sed/sed_debian.bb:do_debian_patch)
+NOTE: recipe sed-4.7-r0: task do_debian_patch: Started
+NOTE: recipe sed-4.7-r0: task do_debian_patch: Succeeded
+NOTE: Running task 702 of 751 (/home/deby/poky/meta-debian/recipes-debian/sed/sed_debian.bb:do_patch)
+NOTE: recipe sed-4.7-r0: task do_patch: Started
+NOTE: recipe sed-4.7-r0: task do_patch: Succeeded
+NOTE: Running task 703 of 751 (/home/deby/poky/meta-debian/recipes-debian/sed/sed_debian.bb:do_configure)
+NOTE: recipe sed-4.7-r0: task do_configure: Started
+NOTE: recipe chrony-3.4-r0: task do_populate_lic: Succeeded
+NOTE: recipe groff-1.22.4-r0: task do_unpack: Succeeded
+NOTE: recipe pps-tools-1.0.2-r0: task do_compile: Succeeded
+NOTE: Running task 704 of 751 (/home/deby/poky/meta-debian/recipes-debian/groff/groff_debian.bb:do_debian_unpack_extra)
+NOTE: Running task 705 of 751 (/home/deby/poky/meta-debian/recipes-debian/pps-tools/pps-tools_debian.bb:do_install)
+NOTE: recipe groff-1.22.4-r0: task do_debian_unpack_extra: Started
+NOTE: recipe groff-1.22.4-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 706 of 751 (/home/deby/poky/meta-debian/recipes-debian/groff/groff_debian.bb:do_debian_patch)
+NOTE: recipe pps-tools-1.0.2-r0: task do_install: Started
+NOTE: recipe groff-1.22.4-r0: task do_debian_patch: Started
+NOTE: recipe pps-tools-1.0.2-r0: task do_install: Succeeded
+NOTE: Running task 707 of 751 (/home/deby/poky/meta-debian/recipes-debian/pps-tools/pps-tools_debian.bb:do_package)
+NOTE: Running task 708 of 751 (/home/deby/poky/meta-debian/recipes-debian/pps-tools/pps-tools_debian.bb:do_populate_sysroot)
+NOTE: recipe pps-tools-1.0.2-r0: task do_populate_sysroot: Started
+NOTE: recipe pps-tools-1.0.2-r0: task do_package: Started
+NOTE: recipe pps-tools-1.0.2-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe groff-1.22.4-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: recipe groff-1.22.4-r0: task do_debian_patch: Succeeded
+NOTE: Running task 709 of 751 (/home/deby/poky/meta-debian/recipes-debian/groff/groff_debian.bb:do_patch)
+NOTE: recipe groff-1.22.4-r0: task do_patch: Started
+NOTE: recipe groff-1.22.4-r0: task do_patch: Succeeded
+NOTE: Running task 710 of 751 (/home/deby/poky/meta-debian/recipes-debian/groff/groff_debian.bb:do_configure)
+NOTE: recipe groff-1.22.4-r0: task do_configure: Started
+NOTE: recipe pps-tools-1.0.2-r0: task do_package: Succeeded
+NOTE: Running task 711 of 751 (/home/deby/poky/meta-debian/recipes-debian/pps-tools/pps-tools_debian.bb:do_packagedata)
+NOTE: recipe pps-tools-1.0.2-r0: task do_packagedata: Started
+NOTE: recipe pps-tools-1.0.2-r0: task do_packagedata: Succeeded
+NOTE: Running task 712 of 751 (/home/deby/poky/meta-debian/recipes-debian/pps-tools/pps-tools_debian.bb:do_package_write_deb)
+NOTE: recipe pps-tools-1.0.2-r0: task do_package_write_deb: Started
+NOTE: recipe pps-tools-1.0.2-r0: task do_package_write_deb: Succeeded
+NOTE: recipe libbsd-0.9.1-r0: task do_configure: Succeeded
+NOTE: Running task 713 of 751 (/home/deby/poky/meta/recipes-support/libbsd/libbsd_0.9.1.bb:do_compile)
+NOTE: recipe libbsd-0.9.1-r0: task do_compile: Started
+NOTE: recipe libbsd-0.9.1-r0: task do_compile: Succeeded
+NOTE: Running task 714 of 751 (/home/deby/poky/meta/recipes-support/libbsd/libbsd_0.9.1.bb:do_install)
+NOTE: recipe libbsd-0.9.1-r0: task do_install: Started
+NOTE: recipe libbsd-0.9.1-r0: task do_install: Succeeded
+NOTE: Running task 715 of 751 (/home/deby/poky/meta/recipes-support/libbsd/libbsd_0.9.1.bb:do_populate_sysroot)
+NOTE: Running task 716 of 751 (/home/deby/poky/meta/recipes-support/libbsd/libbsd_0.9.1.bb:do_package)
+NOTE: recipe libbsd-0.9.1-r0: task do_populate_sysroot: Started
+NOTE: recipe libbsd-0.9.1-r0: task do_package: Started
+NOTE: recipe libbsd-0.9.1-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe libbsd-0.9.1-r0: task do_package: Succeeded
+NOTE: Running task 717 of 751 (/home/deby/poky/meta/recipes-support/libbsd/libbsd_0.9.1.bb:do_packagedata)
+NOTE: recipe libbsd-0.9.1-r0: task do_packagedata: Started
+NOTE: recipe libbsd-0.9.1-r0: task do_packagedata: Succeeded
+NOTE: Running task 718 of 751 (/home/deby/poky/meta/recipes-support/libbsd/libbsd_0.9.1.bb:do_package_write_deb)
+NOTE: recipe libbsd-0.9.1-r0: task do_package_write_deb: Started
+NOTE: recipe groff-1.22.4-r0: task do_configure: Succeeded
+NOTE: Running task 719 of 751 (/home/deby/poky/meta-debian/recipes-debian/groff/groff_debian.bb:do_compile)
+NOTE: recipe groff-1.22.4-r0: task do_compile: Started
+NOTE: recipe libbsd-0.9.1-r0: task do_package_write_deb: Succeeded
+NOTE: recipe sed-4.7-r0: task do_configure: Succeeded
+NOTE: Running task 720 of 751 (/home/deby/poky/meta-debian/recipes-debian/sed/sed_debian.bb:do_compile)
+NOTE: recipe sed-4.7-r0: task do_compile: Started
+NOTE: recipe sed-4.7-r0: task do_compile: Succeeded
+NOTE: Running task 721 of 751 (/home/deby/poky/meta-debian/recipes-debian/sed/sed_debian.bb:do_install)
+NOTE: recipe sed-4.7-r0: task do_install: Started
+NOTE: recipe sed-4.7-r0: task do_install: Succeeded
+NOTE: Running task 722 of 751 (/home/deby/poky/meta-debian/recipes-debian/sed/sed_debian.bb:do_package)
+NOTE: recipe sed-4.7-r0: task do_package: Started
+NOTE: recipe perl-5.28.1-r1: task do_compile: Succeeded
+NOTE: Running task 723 of 751 (/home/deby/poky/meta-debian/recipes-debian/perl/perl_debian.bb:do_install)
+NOTE: recipe perl-5.28.1-r1: task do_install: Started
+NOTE: recipe sed-4.7-r0: task do_package: Succeeded
+NOTE: Running task 724 of 751 (/home/deby/poky/meta-debian/recipes-debian/sed/sed_debian.bb:do_packagedata)
+NOTE: recipe sed-4.7-r0: task do_packagedata: Started
+NOTE: recipe sed-4.7-r0: task do_packagedata: Succeeded
+NOTE: Running task 725 of 751 (/home/deby/poky/meta-debian/recipes-debian/sed/sed_debian.bb:do_package_write_deb)
+NOTE: recipe sed-4.7-r0: task do_package_write_deb: Started
+NOTE: recipe sed-4.7-r0: task do_package_write_deb: Succeeded
+NOTE: recipe perl-5.28.1-r1: task do_install: Succeeded
+NOTE: Running task 726 of 751 (/home/deby/poky/meta-debian/recipes-debian/perl/perl_debian.bb:do_package)
+NOTE: recipe perl-5.28.1-r1: task do_package: Started
+NOTE: recipe groff-1.22.4-r0: task do_compile: Succeeded
+NOTE: Running task 727 of 751 (/home/deby/poky/meta-debian/recipes-debian/groff/groff_debian.bb:do_install)
+NOTE: recipe groff-1.22.4-r0: task do_install: Started
+NOTE: recipe groff-1.22.4-r0: task do_install: Succeeded
+NOTE: Running task 728 of 751 (/home/deby/poky/meta-debian/recipes-debian/groff/groff_debian.bb:do_populate_sysroot)
+NOTE: Running task 729 of 751 (/home/deby/poky/meta-debian/recipes-debian/groff/groff_debian.bb:do_package)
+NOTE: recipe groff-1.22.4-r0: task do_populate_sysroot: Started
+NOTE: recipe groff-1.22.4-r0: task do_package: Started
+NOTE: recipe groff-1.22.4-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 730 of 751 (/home/deby/poky/meta-debian/recipes-debian/libedit/libedit_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe libedit-3.1-20181209-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe libedit-3.1-20181209-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 731 of 751 (/home/deby/poky/meta-debian/recipes-debian/libedit/libedit_debian.bb:do_configure)
+NOTE: recipe libedit-3.1-20181209-r0: task do_configure: Started
+NOTE: recipe perl-5.28.1-r1: task do_package: Succeeded
+NOTE: Running task 732 of 751 (/home/deby/poky/meta-debian/recipes-debian/perl/perl_debian.bb:do_packagedata)
+NOTE: recipe groff-1.22.4-r0: task do_package: Succeeded
+NOTE: Running task 733 of 751 (/home/deby/poky/meta-debian/recipes-debian/groff/groff_debian.bb:do_packagedata)
+NOTE: recipe perl-5.28.1-r1: task do_packagedata: Started
+NOTE: recipe groff-1.22.4-r0: task do_packagedata: Started
+NOTE: recipe perl-5.28.1-r1: task do_packagedata: Succeeded
+NOTE: Running task 734 of 751 (/home/deby/poky/meta-debian/recipes-debian/perl/perl_debian.bb:do_package_write_deb)
+NOTE: recipe groff-1.22.4-r0: task do_packagedata: Succeeded
+NOTE: Running task 735 of 751 (/home/deby/poky/meta-debian/recipes-debian/groff/groff_debian.bb:do_package_write_deb)
+NOTE: recipe perl-5.28.1-r1: task do_package_write_deb: Started
+NOTE: recipe groff-1.22.4-r0: task do_package_write_deb: Started
+NOTE: recipe groff-1.22.4-r0: task do_package_write_deb: Succeeded
+NOTE: recipe libedit-3.1-20181209-r0: task do_configure: Succeeded
+NOTE: Running task 736 of 751 (/home/deby/poky/meta-debian/recipes-debian/libedit/libedit_debian.bb:do_compile)
+NOTE: recipe libedit-3.1-20181209-r0: task do_compile: Started
+NOTE: recipe libedit-3.1-20181209-r0: task do_compile: Succeeded
+NOTE: Running task 737 of 751 (/home/deby/poky/meta-debian/recipes-debian/libedit/libedit_debian.bb:do_install)
+NOTE: recipe libedit-3.1-20181209-r0: task do_install: Started
+NOTE: recipe libedit-3.1-20181209-r0: task do_install: Succeeded
+NOTE: Running task 738 of 751 (/home/deby/poky/meta-debian/recipes-debian/libedit/libedit_debian.bb:do_package)
+NOTE: Running task 739 of 751 (/home/deby/poky/meta-debian/recipes-debian/libedit/libedit_debian.bb:do_populate_sysroot)
+NOTE: recipe libedit-3.1-20181209-r0: task do_package: Started
+NOTE: recipe libedit-3.1-20181209-r0: task do_populate_sysroot: Started
+NOTE: recipe perl-5.28.1-r1: task do_package_write_deb: Succeeded
+NOTE: recipe libedit-3.1-20181209-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 740 of 751 (/home/deby/poky/meta-debian/recipes-debian/chrony/chrony_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe chrony-3.4-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe libedit-3.1-20181209-r0: task do_package: Succeeded
+NOTE: Running task 741 of 751 (/home/deby/poky/meta-debian/recipes-debian/libedit/libedit_debian.bb:do_packagedata)
+NOTE: recipe chrony-3.4-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 742 of 751 (/home/deby/poky/meta-debian/recipes-debian/chrony/chrony_debian.bb:do_configure)
+NOTE: recipe chrony-3.4-r0: task do_configure: Started
+NOTE: recipe libedit-3.1-20181209-r0: task do_packagedata: Started
+NOTE: recipe libedit-3.1-20181209-r0: task do_packagedata: Succeeded
+NOTE: Running task 743 of 751 (/home/deby/poky/meta-debian/recipes-debian/libedit/libedit_debian.bb:do_package_write_deb)
+NOTE: recipe libedit-3.1-20181209-r0: task do_package_write_deb: Started
+NOTE: recipe libedit-3.1-20181209-r0: task do_package_write_deb: Succeeded
+NOTE: recipe chrony-3.4-r0: task do_configure: Succeeded
+NOTE: Running task 744 of 751 (/home/deby/poky/meta-debian/recipes-debian/chrony/chrony_debian.bb:do_compile)
+NOTE: recipe chrony-3.4-r0: task do_compile: Started
+NOTE: recipe chrony-3.4-r0: task do_compile: Succeeded
+NOTE: Running task 745 of 751 (/home/deby/poky/meta-debian/recipes-debian/chrony/chrony_debian.bb:do_install)
+NOTE: recipe chrony-3.4-r0: task do_install: Started
+NOTE: recipe chrony-3.4-r0: task do_install: Succeeded
+NOTE: Running task 746 of 751 (/home/deby/poky/meta-debian/recipes-debian/chrony/chrony_debian.bb:do_package)
+NOTE: Running task 747 of 751 (/home/deby/poky/meta-debian/recipes-debian/chrony/chrony_debian.bb:do_populate_sysroot)
+NOTE: recipe chrony-3.4-r0: task do_populate_sysroot: Started
+NOTE: recipe chrony-3.4-r0: task do_package: Started
+NOTE: recipe chrony-3.4-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe chrony-3.4-r0: task do_package: Succeeded
+NOTE: Running task 748 of 751 (/home/deby/poky/meta-debian/recipes-debian/chrony/chrony_debian.bb:do_packagedata)
+NOTE: recipe chrony-3.4-r0: task do_packagedata: Started
+NOTE: recipe chrony-3.4-r0: task do_packagedata: Succeeded
+NOTE: Running task 749 of 751 (/home/deby/poky/meta-debian/recipes-debian/chrony/chrony_debian.bb:do_package_write_deb)
+NOTE: Running task 750 of 751 (/home/deby/poky/meta-debian/recipes-debian/chrony/chrony_debian.bb:do_package_qa)
+NOTE: recipe chrony-3.4-r0: task do_package_qa: Started
+NOTE: recipe chrony-3.4-r0: task do_package_write_deb: Started
+NOTE: recipe chrony-3.4-r0: task do_package_qa: Succeeded
+NOTE: recipe chrony-3.4-r0: task do_package_write_deb: Succeeded
+NOTE: Running noexec task 751 of 751 (/home/deby/poky/meta-debian/recipes-debian/chrony/chrony_debian.bb:do_build)
+NOTE: Tasks Summary: Attempted 751 tasks of which 668 didn't need to be rerun and all succeeded.

@@ -1,0 +1,62 @@
+Loading cache...done.
+Loaded 1803 entries from dependency cache.
+Parsing recipes...done.
+Parsing of 1030 .bb files complete (1028 cached, 2 parsed). 1806 targets, 48 skipped, 0 masked, 0 errors.
+NOTE: Resolving any missing task queue dependencies
+
+Build Configuration:
+BB_VERSION           = "1.42.0"
+BUILD_SYS            = "x86_64-linux"
+NATIVELSBSTRING      = "universal"
+TARGET_SYS           = "i586-deby-linux"
+MACHINE              = "qemux86"
+DISTRO               = "deby"
+DISTRO_VERSION       = "10.0"
+TUNE_FEATURES        = "m32 i586"
+TARGET_FPU           = ""
+meta                 
+meta-poky            = "warrior:023ff85a9ae94331926e923b346fd8a349881e63"
+meta-debian          = "warrior:8e157b1a7a3a3ae1224ea194f0fc9e25772d0e07"
+
+Initialising tasks...done.
+Sstate summary: Wanted 40 Found 0 Missed 40 Current 495 (0% match, 92% complete)
+NOTE: Executing SetScene Tasks
+NOTE: Executing RunQueue Tasks
+NOTE: Running task 1483 of 2344 (/home/deby/poky/meta/recipes-graphics/wayland/wayland_1.17.0.bb:do_configure)
+NOTE: Running task 1759 of 2344 (/home/deby/poky/meta-debian/recipes-debian/libpcap/libpcap_debian.bb:do_configure)
+NOTE: Running task 1866 of 2344 (/home/deby/poky/meta/recipes-gnome/gobject-introspection/gobject-introspection_1.58.3.bb:do_configure)
+NOTE: recipe wayland-1.17.0-r0: task do_configure: Started
+NOTE: Running task 2083 of 2344 (/home/deby/poky/meta-debian/recipes-debian/python/python3-setuptools_debian.bb:do_configure)
+NOTE: Running task 2084 of 2344 (/home/deby/poky/meta/recipes-devtools/python/python3-dbus_1.2.8.bb:do_configure)
+NOTE: recipe libpcap-1.8.1-r0: task do_configure: Started
+NOTE: recipe gobject-introspection-1.58.3-r0: task do_configure: Started
+NOTE: Running task 2274 of 2344 (/home/deby/poky/meta-debian/recipes-debian/libnet/libnet_debian.bb:do_populate_lic)
+ERROR: libpcap-1.8.1-r0 do_configure: Function failed: do_configure (log file is located at /home/deby/build/tmp/work/i586-deby-linux/libpcap/1.8.1-r0/temp/log.do_configure.26299)
+ERROR: Logfile of failure stored in: /home/deby/build/tmp/work/i586-deby-linux/libpcap/1.8.1-r0/temp/log.do_configure.26299
+Log data follows:
+| DEBUG: SITE files ['endian-little', 'bit-32', 'ix86-common', 'common-linux', 'common-glibc', 'i586-linux', 'common']
+| DEBUG: Executing shell function autotools_preconfigure
+| DEBUG: Shell function autotools_preconfigure finished
+| DEBUG: Executing python function autotools_aclocals
+| DEBUG: SITE files ['endian-little', 'bit-32', 'ix86-common', 'common-linux', 'common-glibc', 'i586-linux', 'common']
+| DEBUG: Python function autotools_aclocals finished
+| DEBUG: Executing shell function do_configure
+| /home/deby/build/tmp/work/i586-deby-linux/libpcap/1.8.1-r0/temp/run.do_configure.26299: 113: /home/deby/build/tmp/work/i586-deby-linux/libpcap/1.8.1-r0/temp/run.do_configure.26299: srcdir: not found
+| sed: can't read /Makefile.in: No such file or directory
+| WARNING: exit code 2 from a shell command.
+| ERROR: Function failed: do_configure (log file is located at /home/deby/build/tmp/work/i586-deby-linux/libpcap/1.8.1-r0/temp/log.do_configure.26299)
+NOTE: recipe libpcap-1.8.1-r0: task do_configure: Failed
+ERROR: Task (/home/deby/poky/meta-debian/recipes-debian/libpcap/libpcap_debian.bb:do_configure) failed with exit code '1'
+NOTE: recipe python3-dbus-1.2.8-r0: task do_configure: Started
+NOTE: recipe python3-setuptools-40.8.0-r0: task do_configure: Started
+NOTE: recipe libnet-1.1.6-r0: task do_populate_lic: Started
+NOTE: recipe libnet-1.1.6-r0: task do_populate_lic: Succeeded
+NOTE: recipe python3-setuptools-40.8.0-r0: task do_configure: Succeeded
+NOTE: recipe gobject-introspection-1.58.3-r0: task do_configure: Succeeded
+NOTE: recipe wayland-1.17.0-r0: task do_configure: Succeeded
+NOTE: recipe python3-dbus-1.2.8-r0: task do_configure: Succeeded
+NOTE: Tasks Summary: Attempted 2274 tasks of which 2268 didn't need to be rerun and 1 failed.
+
+Summary: 1 task failed:
+  /home/deby/poky/meta-debian/recipes-debian/libpcap/libpcap_debian.bb:do_configure
+Summary: There was 1 ERROR message shown, returning a non-zero exit code.

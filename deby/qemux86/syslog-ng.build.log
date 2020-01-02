@@ -1,0 +1,128 @@
+Loading cache...done.
+Loaded 1803 entries from dependency cache.
+Parsing recipes...done.
+Parsing of 1030 .bb files complete (1028 cached, 2 parsed). 1806 targets, 48 skipped, 0 masked, 0 errors.
+NOTE: Resolving any missing task queue dependencies
+
+Build Configuration:
+BB_VERSION           = "1.42.0"
+BUILD_SYS            = "x86_64-linux"
+NATIVELSBSTRING      = "universal"
+TARGET_SYS           = "i586-deby-linux"
+MACHINE              = "qemux86"
+DISTRO               = "deby"
+DISTRO_VERSION       = "10.0"
+TUNE_FEATURES        = "m32 i586"
+TARGET_FPU           = ""
+meta                 
+meta-poky            = "warrior:023ff85a9ae94331926e923b346fd8a349881e63"
+meta-debian          = "warrior:8e157b1a7a3a3ae1224ea194f0fc9e25772d0e07"
+
+Initialising tasks...done.
+Sstate summary: Wanted 14 Found 0 Missed 14 Current 417 (0% match, 96% complete)
+NOTE: Executing SetScene Tasks
+NOTE: Executing RunQueue Tasks
+NOTE: Running task 1197 of 1995 (/home/deby/poky/meta-debian/recipes-debian/ivykis/ivykis_debian.bb:do_fetch)
+NOTE: Running task 1303 of 1995 (/home/deby/poky/meta-debian/recipes-debian/syslog-ng/syslog-ng_debian.bb:do_fetch)
+NOTE: recipe ivykis-0.42.3-r0: task do_fetch: Started
+NOTE: Running task 1823 of 1995 (/home/deby/poky/meta-debian/recipes-debian/python/python_debian.bb:do_install_ptest_base)
+NOTE: recipe syslog-ng-3.19.1-r0: task do_fetch: Started
+NOTE: recipe ivykis-0.42.3-r0: task do_fetch: Succeeded
+NOTE: recipe syslog-ng-3.19.1-r0: task do_fetch: Succeeded
+NOTE: Running task 1824 of 1995 (/home/deby/poky/meta-debian/recipes-debian/ivykis/ivykis_debian.bb:do_unpack)
+NOTE: Running task 1825 of 1995 (/home/deby/poky/meta-debian/recipes-debian/syslog-ng/syslog-ng_debian.bb:do_unpack)
+NOTE: Running task 1826 of 1995 (/home/deby/poky/meta-debian/recipes-debian/ivykis/ivykis_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe ivykis-0.42.3-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe syslog-ng-3.19.1-r0: task do_unpack: Started
+NOTE: recipe ivykis-0.42.3-r0: task do_unpack: Started
+NOTE: recipe ivykis-0.42.3-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: recipe python-2.7.16-r0: task do_install_ptest_base: Started
+NOTE: recipe ivykis-0.42.3-r0: task do_unpack: Succeeded
+NOTE: Running task 1968 of 1995 (/home/deby/poky/meta-debian/recipes-debian/ivykis/ivykis_debian.bb:do_debian_unpack_extra)
+NOTE: recipe ivykis-0.42.3-r0: task do_debian_unpack_extra: Started
+NOTE: recipe ivykis-0.42.3-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 1969 of 1995 (/home/deby/poky/meta-debian/recipes-debian/ivykis/ivykis_debian.bb:do_debian_patch)
+NOTE: recipe ivykis-0.42.3-r0: task do_debian_patch: Started
+NOTE: recipe ivykis-0.42.3-r0: task do_debian_patch: Succeeded
+NOTE: Running task 1970 of 1995 (/home/deby/poky/meta-debian/recipes-debian/ivykis/ivykis_debian.bb:do_patch)
+NOTE: recipe ivykis-0.42.3-r0: task do_patch: Started
+NOTE: recipe ivykis-0.42.3-r0: task do_patch: Succeeded
+NOTE: Running task 1971 of 1995 (/home/deby/poky/meta-debian/recipes-debian/ivykis/ivykis_debian.bb:do_configure)
+NOTE: recipe syslog-ng-3.19.1-r0: task do_unpack: Succeeded
+NOTE: Running task 1972 of 1995 (/home/deby/poky/meta-debian/recipes-debian/syslog-ng/syslog-ng_debian.bb:do_debian_unpack_extra)
+NOTE: recipe python-2.7.16-r0: task do_install_ptest_base: Succeeded
+NOTE: Running task 1973 of 1995 (/home/deby/poky/meta-debian/recipes-debian/python/python_debian.bb:do_package)
+NOTE: recipe ivykis-0.42.3-r0: task do_configure: Started
+NOTE: recipe syslog-ng-3.19.1-r0: task do_debian_unpack_extra: Started
+NOTE: recipe syslog-ng-3.19.1-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 1974 of 1995 (/home/deby/poky/meta-debian/recipes-debian/syslog-ng/syslog-ng_debian.bb:do_debian_patch)
+NOTE: recipe python-2.7.16-r0: task do_package: Started
+NOTE: recipe syslog-ng-3.19.1-r0: task do_debian_patch: Started
+NOTE: recipe syslog-ng-3.19.1-r0: task do_debian_patch: Succeeded
+NOTE: Running task 1975 of 1995 (/home/deby/poky/meta-debian/recipes-debian/syslog-ng/syslog-ng_debian.bb:do_patch)
+NOTE: recipe syslog-ng-3.19.1-r0: task do_patch: Started
+NOTE: recipe syslog-ng-3.19.1-r0: task do_patch: Succeeded
+NOTE: Running task 1976 of 1995 (/home/deby/poky/meta-debian/recipes-debian/syslog-ng/syslog-ng_debian.bb:do_populate_lic)
+NOTE: recipe syslog-ng-3.19.1-r0: task do_populate_lic: Started
+WARNING: syslog-ng-3.19.1-r0 do_populate_lic: syslog-ng: No generic license file exists for: LGPL-2.1-with-OpenSSL-exception in any provider
+NOTE: recipe syslog-ng-3.19.1-r0: task do_populate_lic: Succeeded
+NOTE: recipe ivykis-0.42.3-r0: task do_configure: Succeeded
+NOTE: Running task 1977 of 1995 (/home/deby/poky/meta-debian/recipes-debian/ivykis/ivykis_debian.bb:do_compile)
+NOTE: recipe ivykis-0.42.3-r0: task do_compile: Started
+NOTE: recipe ivykis-0.42.3-r0: task do_compile: Succeeded
+NOTE: Running task 1978 of 1995 (/home/deby/poky/meta-debian/recipes-debian/ivykis/ivykis_debian.bb:do_install)
+NOTE: recipe ivykis-0.42.3-r0: task do_install: Started
+NOTE: recipe ivykis-0.42.3-r0: task do_install: Succeeded
+NOTE: Running task 1979 of 1995 (/home/deby/poky/meta-debian/recipes-debian/ivykis/ivykis_debian.bb:do_package)
+NOTE: Running task 1980 of 1995 (/home/deby/poky/meta-debian/recipes-debian/ivykis/ivykis_debian.bb:do_populate_sysroot)
+NOTE: recipe ivykis-0.42.3-r0: task do_populate_sysroot: Started
+NOTE: recipe ivykis-0.42.3-r0: task do_package: Started
+NOTE: recipe ivykis-0.42.3-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 1981 of 1995 (/home/deby/poky/meta-debian/recipes-debian/syslog-ng/syslog-ng_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe syslog-ng-3.19.1-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe syslog-ng-3.19.1-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 1982 of 1995 (/home/deby/poky/meta-debian/recipes-debian/syslog-ng/syslog-ng_debian.bb:do_configure)
+NOTE: recipe syslog-ng-3.19.1-r0: task do_configure: Started
+NOTE: recipe ivykis-0.42.3-r0: task do_package: Succeeded
+NOTE: Running task 1983 of 1995 (/home/deby/poky/meta-debian/recipes-debian/ivykis/ivykis_debian.bb:do_packagedata)
+NOTE: recipe ivykis-0.42.3-r0: task do_packagedata: Started
+NOTE: recipe ivykis-0.42.3-r0: task do_packagedata: Succeeded
+NOTE: Running task 1984 of 1995 (/home/deby/poky/meta-debian/recipes-debian/ivykis/ivykis_debian.bb:do_package_write_deb)
+NOTE: recipe ivykis-0.42.3-r0: task do_package_write_deb: Started
+NOTE: recipe ivykis-0.42.3-r0: task do_package_write_deb: Succeeded
+NOTE: recipe python-2.7.16-r0: task do_package: Succeeded
+NOTE: Running task 1985 of 1995 (/home/deby/poky/meta-debian/recipes-debian/python/python_debian.bb:do_packagedata)
+NOTE: recipe python-2.7.16-r0: task do_packagedata: Started
+NOTE: recipe python-2.7.16-r0: task do_packagedata: Succeeded
+NOTE: Running task 1986 of 1995 (/home/deby/poky/meta-debian/recipes-debian/python/python_debian.bb:do_package_write_deb)
+NOTE: Running task 1987 of 1995 (/home/deby/poky/meta-debian/recipes-debian/lsb/lsb_debian.bb:do_package_write_deb)
+NOTE: recipe python-2.7.16-r0: task do_package_write_deb: Started
+NOTE: recipe lsb-10.2019051400-r0: task do_package_write_deb: Started
+NOTE: recipe lsb-10.2019051400-r0: task do_package_write_deb: Succeeded
+NOTE: recipe python-2.7.16-r0: task do_package_write_deb: Succeeded
+NOTE: recipe syslog-ng-3.19.1-r0: task do_configure: Succeeded
+NOTE: Running task 1988 of 1995 (/home/deby/poky/meta-debian/recipes-debian/syslog-ng/syslog-ng_debian.bb:do_compile)
+NOTE: recipe syslog-ng-3.19.1-r0: task do_compile: Started
+NOTE: recipe syslog-ng-3.19.1-r0: task do_compile: Succeeded
+NOTE: Running task 1989 of 1995 (/home/deby/poky/meta-debian/recipes-debian/syslog-ng/syslog-ng_debian.bb:do_install)
+NOTE: recipe syslog-ng-3.19.1-r0: task do_install: Started
+NOTE: recipe syslog-ng-3.19.1-r0: task do_install: Succeeded
+NOTE: Running task 1990 of 1995 (/home/deby/poky/meta-debian/recipes-debian/syslog-ng/syslog-ng_debian.bb:do_package)
+NOTE: Running task 1991 of 1995 (/home/deby/poky/meta-debian/recipes-debian/syslog-ng/syslog-ng_debian.bb:do_populate_sysroot)
+NOTE: recipe syslog-ng-3.19.1-r0: task do_package: Started
+NOTE: recipe syslog-ng-3.19.1-r0: task do_populate_sysroot: Started
+NOTE: recipe syslog-ng-3.19.1-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe syslog-ng-3.19.1-r0: task do_package: Succeeded
+NOTE: Running task 1992 of 1995 (/home/deby/poky/meta-debian/recipes-debian/syslog-ng/syslog-ng_debian.bb:do_packagedata)
+NOTE: recipe syslog-ng-3.19.1-r0: task do_packagedata: Started
+NOTE: recipe syslog-ng-3.19.1-r0: task do_packagedata: Succeeded
+NOTE: Running task 1993 of 1995 (/home/deby/poky/meta-debian/recipes-debian/syslog-ng/syslog-ng_debian.bb:do_package_write_deb)
+NOTE: Running task 1994 of 1995 (/home/deby/poky/meta-debian/recipes-debian/syslog-ng/syslog-ng_debian.bb:do_package_qa)
+NOTE: recipe syslog-ng-3.19.1-r0: task do_package_write_deb: Started
+NOTE: recipe syslog-ng-3.19.1-r0: task do_package_qa: Started
+NOTE: recipe syslog-ng-3.19.1-r0: task do_package_qa: Succeeded
+NOTE: recipe syslog-ng-3.19.1-r0: task do_package_write_deb: Succeeded
+NOTE: Running noexec task 1995 of 1995 (/home/deby/poky/meta-debian/recipes-debian/syslog-ng/syslog-ng_debian.bb:do_build)
+NOTE: Tasks Summary: Attempted 1995 tasks of which 1961 didn't need to be rerun and all succeeded.
+
+Summary: There was 1 WARNING message shown.

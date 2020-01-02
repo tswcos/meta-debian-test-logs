@@ -1,0 +1,65 @@
+Loading cache...done.
+Loaded 1803 entries from dependency cache.
+Parsing recipes...done.
+Parsing of 1030 .bb files complete (1028 cached, 2 parsed). 1806 targets, 75 skipped, 0 masked, 0 errors.
+NOTE: Resolving any missing task queue dependencies
+
+Build Configuration:
+BB_VERSION           = "1.42.0"
+BUILD_SYS            = "x86_64-linux"
+NATIVELSBSTRING      = "universal"
+TARGET_SYS           = "mips-deby-linux"
+MACHINE              = "qemumips"
+DISTRO               = "deby"
+DISTRO_VERSION       = "10.0"
+TUNE_FEATURES        = "o32 bigendian fpu-hard mips32r2"
+TARGET_FPU           = ""
+meta                 
+meta-poky            = "warrior:023ff85a9ae94331926e923b346fd8a349881e63"
+meta-debian          = "warrior:8e157b1a7a3a3ae1224ea194f0fc9e25772d0e07"
+
+Initialising tasks...done.
+Sstate summary: Wanted 37 Found 0 Missed 37 Current 494 (0% match, 93% complete)
+NOTE: Executing SetScene Tasks
+NOTE: Executing RunQueue Tasks
+NOTE: Running task 1467 of 2331 (/home/deby/poky/meta/recipes-graphics/wayland/wayland_1.17.0.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 1846 of 2331 (/home/deby/poky/meta/recipes-gnome/gobject-introspection/gobject-introspection_1.58.3.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 1918 of 2331 (/home/deby/poky/meta-debian/recipes-debian/libpcap/libpcap_debian.bb:do_configure)
+NOTE: Running task 1923 of 2331 (/home/deby/poky/meta/recipes-connectivity/bluez5/bluez5_5.50.bb:do_packagedata)
+NOTE: recipe wayland-1.17.0-r0: task do_prepare_recipe_sysroot: Started
+NOTE: Running task 2057 of 2331 (/home/deby/poky/meta-debian/recipes-debian/python/python3-setuptools_debian.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 2060 of 2331 (/home/deby/poky/meta/recipes-devtools/python/python3-dbus_1.2.8.bb:do_prepare_recipe_sysroot)
+NOTE: recipe libpcap-1.8.1-r0: task do_configure: Started
+NOTE: Running task 2265 of 2331 (/home/deby/poky/meta-debian/recipes-debian/libpcap/libpcap_debian.bb:do_populate_lic)
+NOTE: recipe bluez5-5.50-r0: task do_packagedata: Started
+NOTE: recipe gobject-introspection-1.58.3-r0: task do_prepare_recipe_sysroot: Started
+ERROR: libpcap-1.8.1-r0 do_configure: Function failed: do_configure (log file is located at /home/deby/build/tmp/work/mips32r2-deby-linux/libpcap/1.8.1-r0/temp/log.do_configure.3314)
+ERROR: Logfile of failure stored in: /home/deby/build/tmp/work/mips32r2-deby-linux/libpcap/1.8.1-r0/temp/log.do_configure.3314
+Log data follows:
+| DEBUG: SITE files ['endian-big', 'bit-32', 'mips-common', 'common-linux', 'common-glibc', 'mips-linux', 'common']
+| DEBUG: Executing shell function autotools_preconfigure
+| DEBUG: Shell function autotools_preconfigure finished
+| DEBUG: Executing python function autotools_aclocals
+| DEBUG: SITE files ['endian-big', 'bit-32', 'mips-common', 'common-linux', 'common-glibc', 'mips-linux', 'common']
+| DEBUG: Python function autotools_aclocals finished
+| DEBUG: Executing shell function do_configure
+| /home/deby/build/tmp/work/mips32r2-deby-linux/libpcap/1.8.1-r0/temp/run.do_configure.3314: 113: /home/deby/build/tmp/work/mips32r2-deby-linux/libpcap/1.8.1-r0/temp/run.do_configure.3314: srcdir: not found
+| sed: can't read /Makefile.in: No such file or directory
+| WARNING: exit code 2 from a shell command.
+| ERROR: Function failed: do_configure (log file is located at /home/deby/build/tmp/work/mips32r2-deby-linux/libpcap/1.8.1-r0/temp/log.do_configure.3314)
+NOTE: recipe libpcap-1.8.1-r0: task do_configure: Failed
+ERROR: Task (/home/deby/poky/meta-debian/recipes-debian/libpcap/libpcap_debian.bb:do_configure) failed with exit code '1'
+NOTE: recipe python3-dbus-1.2.8-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe libpcap-1.8.1-r0: task do_populate_lic: Started
+NOTE: recipe python3-setuptools-40.8.0-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe bluez5-5.50-r0: task do_packagedata: Succeeded
+NOTE: recipe libpcap-1.8.1-r0: task do_populate_lic: Succeeded
+NOTE: recipe wayland-1.17.0-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: recipe python3-setuptools-40.8.0-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: recipe gobject-introspection-1.58.3-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: recipe python3-dbus-1.2.8-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Tasks Summary: Attempted 2265 tasks of which 2258 didn't need to be rerun and 1 failed.
+
+Summary: 1 task failed:
+  /home/deby/poky/meta-debian/recipes-debian/libpcap/libpcap_debian.bb:do_configure
+Summary: There was 1 ERROR message shown, returning a non-zero exit code.

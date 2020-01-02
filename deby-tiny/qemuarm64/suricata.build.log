@@ -1,0 +1,980 @@
+Parsing recipes...done.
+Parsing of 1030 .bb files complete (0 cached, 1030 parsed). 1806 targets, 220 skipped, 0 masked, 0 errors.
+NOTE: Resolving any missing task queue dependencies
+
+Build Configuration:
+BB_VERSION           = "1.42.0"
+BUILD_SYS            = "x86_64-linux"
+NATIVELSBSTRING      = "universal"
+TARGET_SYS           = "aarch64-deby-linux"
+MACHINE              = "qemuarm64"
+DISTRO               = "deby-tiny"
+DISTRO_VERSION       = "10.0"
+TUNE_FEATURES        = "aarch64 armv8a crc"
+TARGET_FPU           = ""
+meta                 
+meta-poky            = "warrior:023ff85a9ae94331926e923b346fd8a349881e63"
+meta-debian          = "warrior:8e157b1a7a3a3ae1224ea194f0fc9e25772d0e07"
+
+Initialising tasks...done.
+Sstate summary: Wanted 164 Found 2 Missed 162 Current 63 (1% match, 28% complete)
+NOTE: Executing SetScene Tasks
+NOTE: Running setscene task 142 of 227 (/home/deby/poky/meta-debian/recipes-debian/ca-certificates/ca-certificates_debian.bb:do_package_write_deb_setscene)
+NOTE: recipe ca-certificates-20190110-r0: task do_package_write_deb_setscene: Started
+NOTE: recipe ca-certificates-20190110-r0: task do_package_write_deb_setscene: Succeeded
+NOTE: Running setscene task 208 of 227 (/home/deby/poky/meta-debian/recipes-debian/ca-certificates/ca-certificates_debian.bb:do_packagedata_setscene)
+NOTE: recipe ca-certificates-20190110-r0: task do_packagedata_setscene: Started
+NOTE: recipe ca-certificates-20190110-r0: task do_packagedata_setscene: Succeeded
+NOTE: Executing RunQueue Tasks
+NOTE: Running task 85 of 1154 (/home/deby/poky/meta-debian/recipes-debian/binutils/binutils-cross_debian.bb:do_fetch)
+NOTE: Running task 133 of 1154 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-source_debian.bb:do_unpack)
+NOTE: Running task 144 of 1154 (/home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb:do_fetch)
+NOTE: Running noexec task 209 of 1154 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-cross_debian.bb:do_fetch)
+NOTE: Running task 211 of 1154 (/home/deby/poky/meta-debian/recipes-debian/glibc/glibc_debian.bb:do_fetch)
+NOTE: Running noexec task 213 of 1154 (/home/deby/poky/meta-debian/recipes-debian/gcc/libgcc-initial_debian.bb:do_fetch)
+NOTE: Running noexec task 309 of 1154 (/home/deby/poky/meta-debian/recipes-debian/gcc/libgcc_debian.bb:do_fetch)
+NOTE: Running task 366 of 1154 (/home/deby/poky/meta-debian/recipes-debian/libtool/libtool-cross_debian.bb:do_fetch)
+NOTE: Running noexec task 470 of 1154 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-runtime_debian.bb:do_fetch)
+NOTE: Running task 471 of 1154 (/home/deby/poky/meta/recipes-devtools/opkg-utils/opkg-utils_0.4.0.bb:do_fetch)
+NOTE: Running task 472 of 1154 (/home/deby/poky/meta-debian/recipes-debian/zlib/zlib_debian.bb:do_fetch)
+NOTE: Running task 473 of 1154 (/home/deby/poky/meta-debian/recipes-debian/ncurses/ncurses_debian.bb:do_fetch)
+NOTE: Running task 474 of 1154 (/home/deby/poky/meta-debian/recipes-debian/libxcrypt/libxcrypt_debian.bb:do_fetch)
+NOTE: Running task 475 of 1154 (/home/deby/poky/meta-debian/recipes-debian/libtirpc/libtirpc_debian.bb:do_fetch)
+NOTE: Running task 477 of 1154 (/home/deby/poky/meta-debian/recipes-debian/sqlite3/sqlite3_debian.bb:do_fetch)
+NOTE: Running task 478 of 1154 (/home/deby/poky/meta-debian/recipes-debian/bzip2/bzip2_debian.bb:do_fetch)
+NOTE: Running task 479 of 1154 (/home/deby/poky/meta-debian/recipes-debian/bash-completion/bash-completion_debian.bb:do_fetch)
+NOTE: Running task 483 of 1154 (/home/deby/poky/meta-debian/recipes-debian/openssl/openssl_debian.bb:do_fetch)
+NOTE: Running task 484 of 1154 (/home/deby/poky/meta-debian/recipes-debian/gdbm/gdbm_debian.bb:do_fetch)
+NOTE: Running task 485 of 1154 (/home/deby/poky/meta-debian/recipes-debian/libffi/libffi_debian.bb:do_fetch)
+NOTE: recipe binutils-cross-aarch64-2.31.1-r0: task do_fetch: Started
+NOTE: recipe gcc-source-8.3.0-8.3.0-r0: task do_unpack: Started
+NOTE: recipe linux-libc-headers-base-gitAUTOINC+e665510be1-r0: task do_fetch: Started
+NOTE: recipe opkg-utils-0.4.0-r0: task do_fetch: Started
+NOTE: recipe binutils-cross-aarch64-2.31.1-r0: task do_fetch: Succeeded
+NOTE: recipe libtool-cross-2.4.6-r0: task do_fetch: Started
+NOTE: Running task 486 of 1154 (/home/deby/poky/meta-debian/recipes-debian/binutils/binutils-cross_debian.bb:do_unpack)
+NOTE: recipe zlib-1.2.11-r0: task do_fetch: Started
+NOTE: recipe glibc-2.28-r0: task do_fetch: Started
+NOTE: recipe libxcrypt-4.1.1-r0: task do_fetch: Started
+NOTE: recipe libtirpc-1.1.4-r0: task do_fetch: Started
+NOTE: recipe sqlite3-3_3.27.2-r0: task do_fetch: Started
+NOTE: recipe openssl-1.1.1d-r0: task do_fetch: Started
+NOTE: recipe libffi-3.2.1-r0: task do_fetch: Started
+NOTE: recipe ncurses-6.1+20181013-r0: task do_fetch: Started
+NOTE: recipe gdbm-1.18.1-r0: task do_fetch: Started
+NOTE: recipe bzip2-1.0.6-r0: task do_fetch: Started
+NOTE: recipe bash-completion-2.8-r0: task do_fetch: Started
+NOTE: recipe binutils-cross-aarch64-2.31.1-r0: task do_unpack: Started
+NOTE: recipe linux-libc-headers-base-gitAUTOINC+e665510be1-r0: task do_fetch: Succeeded
+NOTE: Running task 487 of 1154 (/home/deby/poky/meta-debian/recipes-debian/binutils/binutils-cross_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe opkg-utils-0.4.0-r0: task do_fetch: Succeeded
+NOTE: Running task 488 of 1154 (/home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb:do_unpack)
+NOTE: recipe binutils-cross-aarch64-2.31.1-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe openssl-1.1.1d-r0: task do_fetch: Succeeded
+NOTE: Running task 489 of 1154 (/home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb:do_prepare_recipe_sysroot)
+NOTE: recipe libtirpc-1.1.4-r0: task do_fetch: Succeeded
+NOTE: recipe ncurses-6.1+20181013-r0: task do_fetch: Succeeded
+NOTE: Running task 490 of 1154 (/home/deby/poky/meta/recipes-devtools/opkg-utils/opkg-utils_0.4.0.bb:do_unpack)
+NOTE: recipe linux-libc-headers-base-gitAUTOINC+e665510be1-r0: task do_unpack: Started
+NOTE: recipe bzip2-1.0.6-r0: task do_fetch: Succeeded
+NOTE: Running task 491 of 1154 (/home/deby/poky/meta-debian/recipes-debian/ncurses/ncurses_debian.bb:do_unpack)
+NOTE: recipe bash-completion-2.8-r0: task do_fetch: Succeeded
+NOTE: recipe zlib-1.2.11-r0: task do_fetch: Succeeded
+NOTE: Running task 492 of 1154 (/home/deby/poky/meta-debian/recipes-debian/libtirpc/libtirpc_debian.bb:do_unpack)
+NOTE: recipe gdbm-1.18.1-r0: task do_fetch: Succeeded
+NOTE: Running task 493 of 1154 (/home/deby/poky/meta-debian/recipes-debian/zlib/zlib_debian.bb:do_unpack)
+NOTE: Running task 494 of 1154 (/home/deby/poky/meta-debian/recipes-debian/bzip2/bzip2_debian.bb:do_unpack)
+NOTE: Running task 495 of 1154 (/home/deby/poky/meta-debian/recipes-debian/readline/readline_debian.bb:do_fetch)
+NOTE: recipe libtool-cross-2.4.6-r0: task do_fetch: Succeeded
+NOTE: recipe libffi-3.2.1-r0: task do_fetch: Succeeded
+NOTE: Running task 496 of 1154 (/home/deby/poky/meta-debian/recipes-debian/libtool/libtool-cross_debian.bb:do_unpack)
+NOTE: Running task 498 of 1154 (/home/deby/poky/meta-debian/recipes-debian/bash-completion/bash-completion_debian.bb:do_unpack)
+NOTE: recipe sqlite3-3_3.27.2-r0: task do_fetch: Succeeded
+NOTE: Running task 499 of 1154 (/home/deby/poky/meta-debian/recipes-debian/sqlite3/sqlite3_debian.bb:do_unpack)
+NOTE: recipe libxcrypt-4.1.1-r0: task do_fetch: Succeeded
+NOTE: Running task 500 of 1154 (/home/deby/poky/meta-debian/recipes-debian/libxcrypt/libxcrypt_debian.bb:do_unpack)
+NOTE: recipe opkg-utils-0.4.0-r0: task do_unpack: Started
+NOTE: recipe glibc-2.28-r0: task do_fetch: Succeeded
+NOTE: Running task 501 of 1154 (/home/deby/poky/meta-debian/recipes-debian/glibc/glibc_debian.bb:do_unpack)
+NOTE: recipe linux-libc-headers-base-gitAUTOINC+e665510be1-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe ncurses-6.1+20181013-r0: task do_unpack: Started
+NOTE: recipe zlib-1.2.11-r0: task do_unpack: Started
+NOTE: recipe libtirpc-1.1.4-r0: task do_unpack: Started
+NOTE: recipe readline-7.0-r0: task do_fetch: Started
+NOTE: recipe libtool-cross-2.4.6-r0: task do_unpack: Started
+NOTE: recipe bzip2-1.0.6-r0: task do_unpack: Started
+NOTE: recipe bash-completion-2.8-r0: task do_unpack: Started
+NOTE: recipe libxcrypt-4.1.1-r0: task do_unpack: Started
+NOTE: recipe sqlite3-3_3.27.2-r0: task do_unpack: Started
+NOTE: recipe binutils-cross-aarch64-2.31.1-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 505 of 1154 (/home/deby/poky/meta-debian/recipes-debian/util-linux/util-linux_debian.bb:do_fetch)
+NOTE: recipe glibc-2.28-r0: task do_unpack: Started
+NOTE: recipe libxcrypt-4.1.1-r0: task do_unpack: Succeeded
+NOTE: Running task 506 of 1154 (/home/deby/poky/meta-debian/recipes-debian/xz/xz_debian.bb:do_fetch)
+NOTE: recipe opkg-utils-0.4.0-r0: task do_unpack: Succeeded
+NOTE: Running task 507 of 1154 (/home/deby/poky/meta/recipes-devtools/opkg-utils/opkg-utils_0.4.0.bb:do_patch)
+NOTE: recipe util-linux-2.33.1-r0: task do_fetch: Started
+NOTE: recipe opkg-utils-0.4.0-r0: task do_patch: Started
+NOTE: recipe xz-5.2.4-r0: task do_fetch: Started
+NOTE: recipe util-linux-2.33.1-r0: task do_fetch: Succeeded
+NOTE: Running task 508 of 1154 (/home/deby/poky/meta-debian/recipes-debian/openssl/openssl_debian.bb:do_unpack)
+NOTE: recipe xz-5.2.4-r0: task do_fetch: Succeeded
+NOTE: Running task 509 of 1154 (/home/deby/poky/meta-debian/recipes-debian/nspr/nspr_debian.bb:do_fetch)
+NOTE: recipe readline-7.0-r0: task do_fetch: Succeeded
+NOTE: Running task 510 of 1154 (/home/deby/poky/meta-debian/recipes-debian/libpcap/libpcap_debian.bb:do_fetch)
+NOTE: recipe linux-libc-headers-base-gitAUTOINC+e665510be1-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 511 of 1154 (/home/deby/poky/meta-debian/recipes-debian/gdbm/gdbm_debian.bb:do_unpack)
+NOTE: recipe openssl-1.1.1d-r0: task do_unpack: Started
+NOTE: recipe opkg-utils-0.4.0-r0: task do_patch: Succeeded
+NOTE: Running task 512 of 1154 (/home/deby/poky/meta-debian/recipes-debian/libffi/libffi_debian.bb:do_unpack)
+NOTE: recipe libpcap-1.8.1-r0: task do_fetch: Started
+NOTE: recipe nspr-4.20-r0: task do_fetch: Started
+NOTE: recipe bash-completion-2.8-r0: task do_unpack: Succeeded
+NOTE: Running task 513 of 1154 (/home/deby/poky/meta-debian/recipes-debian/readline/readline_debian.bb:do_unpack)
+NOTE: recipe zlib-1.2.11-r0: task do_unpack: Succeeded
+NOTE: Running task 514 of 1154 (/home/deby/poky/meta-debian/recipes-debian/zlib/zlib_debian.bb:do_debian_unpack_extra)
+NOTE: recipe gdbm-1.18.1-r0: task do_unpack: Started
+NOTE: recipe libffi-3.2.1-r0: task do_unpack: Started
+NOTE: recipe readline-7.0-r0: task do_unpack: Started
+NOTE: recipe zlib-1.2.11-r0: task do_debian_unpack_extra: Started
+NOTE: recipe zlib-1.2.11-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 515 of 1154 (/home/deby/poky/meta-debian/recipes-debian/zlib/zlib_debian.bb:do_debian_patch)
+NOTE: recipe zlib-1.2.11-r0: task do_debian_patch: Started
+NOTE: recipe libtirpc-1.1.4-r0: task do_unpack: Succeeded
+NOTE: Running task 518 of 1154 (/home/deby/poky/meta-debian/recipes-debian/util-linux/util-linux_debian.bb:do_unpack)
+NOTE: recipe zlib-1.2.11-r0: task do_debian_patch: Succeeded
+NOTE: Running task 519 of 1154 (/home/deby/poky/meta-debian/recipes-debian/zlib/zlib_debian.bb:do_patch)
+NOTE: recipe libpcap-1.8.1-r0: task do_fetch: Succeeded
+NOTE: Running task 520 of 1154 (/home/deby/poky/meta-debian/recipes-debian/xz/xz_debian.bb:do_unpack)
+NOTE: recipe zlib-1.2.11-r0: task do_patch: Started
+NOTE: recipe util-linux-2.33.1-r0: task do_unpack: Started
+NOTE: recipe bzip2-1.0.6-r0: task do_unpack: Succeeded
+NOTE: Running task 522 of 1154 (/home/deby/poky/meta-debian/recipes-debian/libpcap/libpcap_debian.bb:do_unpack)
+NOTE: recipe zlib-1.2.11-r0: task do_patch: Succeeded
+NOTE: recipe nspr-4.20-r0: task do_fetch: Succeeded
+NOTE: Running task 527 of 1154 (/home/deby/poky/meta-debian/recipes-debian/python/python3_debian.bb:do_fetch)
+NOTE: Running task 528 of 1154 (/home/deby/poky/meta-debian/recipes-debian/nspr/nspr_debian.bb:do_unpack)
+NOTE: recipe xz-5.2.4-r0: task do_unpack: Started
+NOTE: recipe libpcap-1.8.1-r0: task do_unpack: Started
+NOTE: recipe nspr-4.20-r0: task do_unpack: Started
+NOTE: recipe python3-3.7.3-r0: task do_fetch: Started
+NOTE: recipe python3-3.7.3-r0: task do_fetch: Succeeded
+NOTE: Running task 530 of 1154 (/home/deby/poky/meta-debian/recipes-debian/libxcrypt/libxcrypt_debian.bb:do_debian_unpack_extra)
+NOTE: recipe gdbm-1.18.1-r0: task do_unpack: Succeeded
+NOTE: Running task 531 of 1154 (/home/deby/poky/meta-debian/recipes-debian/libtirpc/libtirpc_debian.bb:do_debian_unpack_extra)
+NOTE: recipe libxcrypt-4.1.1-r0: task do_debian_unpack_extra: Started
+NOTE: recipe libxcrypt-4.1.1-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 532 of 1154 (/home/deby/poky/meta-debian/recipes-debian/libxcrypt/libxcrypt_debian.bb:do_debian_patch)
+NOTE: recipe libtirpc-1.1.4-r0: task do_debian_unpack_extra: Started
+NOTE: recipe xz-5.2.4-r0: task do_unpack: Succeeded
+NOTE: Running task 538 of 1154 (/home/deby/poky/meta/recipes-extended/libnsl/libnsl2_git.bb:do_fetch)
+NOTE: recipe libtirpc-1.1.4-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 539 of 1154 (/home/deby/poky/meta-debian/recipes-debian/libtirpc/libtirpc_debian.bb:do_debian_patch)
+NOTE: recipe libtool-cross-2.4.6-r0: task do_unpack: Succeeded
+NOTE: recipe libpcap-1.8.1-r0: task do_unpack: Succeeded
+NOTE: Running task 540 of 1154 (/home/deby/poky/meta-debian/recipes-debian/libtool/libtool-cross_debian.bb:do_debian_unpack_extra)
+NOTE: Running task 541 of 1154 (/home/deby/poky/meta-debian/recipes-debian/python/python3_debian.bb:do_unpack)
+NOTE: recipe readline-7.0-r0: task do_unpack: Succeeded
+NOTE: recipe libxcrypt-4.1.1-r0: task do_debian_patch: Started
+NOTE: Running task 549 of 1154 (/home/deby/poky/meta-debian/recipes-debian/bzip2/bzip2_debian.bb:do_debian_unpack_extra)
+NOTE: recipe libnsl2-1.2.0+gitAUTOINC+37c5ffe303-r0: task do_fetch: Started
+NOTE: recipe libtool-cross-2.4.6-r0: task do_debian_unpack_extra: Started
+NOTE: recipe ncurses-6.1+20181013-r0: task do_unpack: Succeeded
+NOTE: Running task 550 of 1154 (/home/deby/poky/meta-debian/recipes-debian/ncurses/ncurses_debian.bb:do_debian_unpack_extra)
+NOTE: recipe libtirpc-1.1.4-r0: task do_debian_patch: Started
+NOTE: recipe bzip2-1.0.6-r0: task do_debian_unpack_extra: Started
+NOTE: recipe libtool-cross-2.4.6-r0: task do_debian_unpack_extra: Succeeded
+NOTE: recipe libxcrypt-4.1.1-r0: task do_debian_patch: Succeeded
+NOTE: Running task 551 of 1154 (/home/deby/poky/meta-debian/recipes-debian/libtool/libtool-cross_debian.bb:do_debian_patch)
+NOTE: Running task 552 of 1154 (/home/deby/poky/meta-debian/recipes-debian/libxcrypt/libxcrypt_debian.bb:do_patch)
+NOTE: recipe python3-3.7.3-r0: task do_unpack: Started
+NOTE: recipe bzip2-1.0.6-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 554 of 1154 (/home/deby/poky/meta-debian/recipes-debian/bzip2/bzip2_debian.bb:do_debian_patch)
+NOTE: recipe ncurses-6.1+20181013-r0: task do_debian_unpack_extra: Started
+NOTE: recipe libtool-cross-2.4.6-r0: task do_debian_patch: Started
+NOTE: recipe libxcrypt-4.1.1-r0: task do_patch: Started
+NOTE: recipe bzip2-1.0.6-r0: task do_debian_patch: Started
+NOTE: recipe libxcrypt-4.1.1-r0: task do_patch: Succeeded
+NOTE: recipe libtirpc-1.1.4-r0: task do_debian_patch: Succeeded
+NOTE: recipe libffi-3.2.1-r0: task do_unpack: Succeeded
+NOTE: recipe bzip2-1.0.6-r0: task do_debian_patch: Succeeded
+NOTE: recipe ncurses-6.1+20181013-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 556 of 1154 (/home/deby/poky/meta-debian/recipes-debian/jansson/jansson_debian.bb:do_fetch)
+NOTE: Running task 557 of 1154 (/home/deby/poky/meta-debian/recipes-debian/ncurses/ncurses_debian.bb:do_debian_patch)
+NOTE: Running task 558 of 1154 (/home/deby/poky/meta-debian/recipes-debian/libtirpc/libtirpc_debian.bb:do_patch)
+NOTE: Running task 559 of 1154 (/home/deby/poky/meta-debian/recipes-debian/bzip2/bzip2_debian.bb:do_patch)
+NOTE: Running task 560 of 1154 (/home/deby/poky/meta-debian/recipes-debian/libnfnetlink/libnfnetlink_debian.bb:do_fetch)
+NOTE: recipe libnsl2-1.2.0+gitAUTOINC+37c5ffe303-r0: task do_fetch: Succeeded
+NOTE: Running task 561 of 1154 (/home/deby/poky/meta-debian/recipes-debian/nss/nss_debian.bb:do_fetch)
+NOTE: recipe nss-3.42.1-r0: task do_fetch: Started
+NOTE: recipe libtool-cross-2.4.6-r0: task do_debian_patch: Succeeded
+NOTE: Running task 562 of 1154 (/home/deby/poky/meta-debian/recipes-debian/libtool/libtool-cross_debian.bb:do_patch)
+NOTE: recipe libtirpc-1.1.4-r0: task do_patch: Started
+NOTE: recipe libnfnetlink-1.0.1-r0: task do_fetch: Started
+NOTE: recipe bzip2-1.0.6-r0: task do_patch: Started
+NOTE: recipe bzip2-1.0.6-r0: task do_patch: Succeeded
+NOTE: recipe ncurses-6.1+20181013-r0: task do_debian_patch: Started
+NOTE: Running task 563 of 1154 (/home/deby/poky/meta-debian/recipes-debian/libnet/libnet_debian.bb:do_fetch)
+NOTE: recipe libtirpc-1.1.4-r0: task do_patch: Succeeded
+NOTE: Running task 564 of 1154 (/home/deby/poky/meta-debian/recipes-debian/libhtp/libhtp_debian.bb:do_fetch)
+NOTE: recipe libtool-cross-2.4.6-r0: task do_patch: Started
+NOTE: recipe libhtp-0.5.30-r0: task do_fetch: Started
+NOTE: recipe jansson-2.12-r0: task do_fetch: Started
+NOTE: recipe ncurses-6.1+20181013-r0: task do_debian_patch: Succeeded
+NOTE: Running task 565 of 1154 (/home/deby/poky/meta-debian/recipes-debian/ncurses/ncurses_debian.bb:do_patch)
+NOTE: recipe nss-3.42.1-r0: task do_fetch: Succeeded
+NOTE: Running task 566 of 1154 (/home/deby/poky/meta-debian/recipes-debian/libpcre/libpcre_debian.bb:do_fetch)
+NOTE: recipe ncurses-6.1+20181013-r0: task do_patch: Started
+NOTE: recipe libpcre-8.39-r0: task do_fetch: Started
+NOTE: recipe ncurses-6.1+20181013-r0: task do_patch: Succeeded
+NOTE: recipe nspr-4.20-r0: task do_unpack: Succeeded
+NOTE: Running task 567 of 1154 (/home/deby/poky/meta-debian/recipes-debian/file/file_debian.bb:do_fetch)
+NOTE: Running task 568 of 1154 (/home/deby/poky/meta-debian/recipes-debian/libyaml/libyaml_debian.bb:do_fetch)
+NOTE: recipe jansson-2.12-r0: task do_fetch: Succeeded
+NOTE: Running task 569 of 1154 (/home/deby/poky/meta-debian/recipes-debian/libcap-ng/libcap-ng_debian.bb:do_fetch)
+NOTE: recipe libnfnetlink-1.0.1-r0: task do_fetch: Succeeded
+NOTE: Running task 570 of 1154 (/home/deby/poky/meta-debian/recipes-debian/bash-completion/bash-completion_debian.bb:do_debian_unpack_extra)
+NOTE: recipe file-5.35-r0: task do_fetch: Started
+NOTE: recipe libyaml-0.2.1-r0: task do_fetch: Started
+NOTE: recipe bash-completion-2.8-r0: task do_debian_unpack_extra: Started
+NOTE: recipe bash-completion-2.8-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 571 of 1154 (/home/deby/poky/meta-debian/recipes-debian/bash-completion/bash-completion_debian.bb:do_debian_patch)
+NOTE: recipe libcap-ng-0.7.9-r0: task do_fetch: Started
+NOTE: recipe libnet-1.1.6-r0: task do_fetch: Started
+NOTE: recipe libhtp-0.5.30-r0: task do_fetch: Succeeded
+NOTE: Running task 595 of 1154 (/home/deby/poky/meta-debian/recipes-debian/gdbm/gdbm_debian.bb:do_debian_unpack_extra)
+NOTE: recipe bash-completion-2.8-r0: task do_debian_patch: Started
+NOTE: recipe libpcre-8.39-r0: task do_fetch: Succeeded
+NOTE: Running task 596 of 1154 (/home/deby/poky/meta-debian/recipes-debian/libffi/libffi_debian.bb:do_debian_unpack_extra)
+NOTE: recipe gdbm-1.18.1-r0: task do_debian_unpack_extra: Started
+NOTE: recipe file-5.35-r0: task do_fetch: Succeeded
+NOTE: Running task 597 of 1154 (/home/deby/poky/meta-debian/recipes-debian/readline/readline_debian.bb:do_debian_unpack_extra)
+NOTE: recipe libffi-3.2.1-r0: task do_debian_unpack_extra: Started
+NOTE: recipe gdbm-1.18.1-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 598 of 1154 (/home/deby/poky/meta-debian/recipes-debian/gdbm/gdbm_debian.bb:do_debian_patch)
+NOTE: recipe libffi-3.2.1-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 599 of 1154 (/home/deby/poky/meta-debian/recipes-debian/libffi/libffi_debian.bb:do_debian_patch)
+NOTE: recipe readline-7.0-r0: task do_debian_unpack_extra: Started
+NOTE: recipe readline-7.0-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 600 of 1154 (/home/deby/poky/meta-debian/recipes-debian/readline/readline_debian.bb:do_debian_patch)
+NOTE: recipe gdbm-1.18.1-r0: task do_debian_patch: Started
+NOTE: recipe libffi-3.2.1-r0: task do_debian_patch: Started
+NOTE: recipe libyaml-0.2.1-r0: task do_fetch: Succeeded
+NOTE: Running task 602 of 1154 (/home/deby/poky/meta-debian/recipes-debian/jansson/jansson_debian.bb:do_unpack)
+NOTE: recipe readline-7.0-r0: task do_debian_patch: Started
+NOTE: recipe jansson-2.12-r0: task do_unpack: Started
+NOTE: recipe readline-7.0-r0: task do_debian_patch: Succeeded
+NOTE: Running task 603 of 1154 (/home/deby/poky/meta-debian/recipes-debian/readline/readline_debian.bb:do_patch)
+NOTE: recipe readline-7.0-r0: task do_patch: Started
+NOTE: recipe gdbm-1.18.1-r0: task do_debian_patch: Succeeded
+NOTE: Running task 604 of 1154 (/home/deby/poky/meta-debian/recipes-debian/gdbm/gdbm_debian.bb:do_patch)
+NOTE: recipe libtool-cross-2.4.6-r0: task do_patch: Succeeded
+NOTE: Running task 605 of 1154 (/home/deby/poky/meta-debian/recipes-debian/libnfnetlink/libnfnetlink_debian.bb:do_unpack)
+NOTE: recipe readline-7.0-r0: task do_patch: Succeeded
+NOTE: Running task 606 of 1154 (/home/deby/poky/meta-debian/recipes-debian/nss/nss_debian.bb:do_unpack)
+NOTE: recipe gdbm-1.18.1-r0: task do_patch: Started
+NOTE: recipe libnfnetlink-1.0.1-r0: task do_unpack: Started
+NOTE: recipe nss-3.42.1-r0: task do_unpack: Started
+NOTE: recipe gdbm-1.18.1-r0: task do_patch: Succeeded
+NOTE: Running task 607 of 1154 (/home/deby/poky/meta-debian/recipes-debian/libhtp/libhtp_debian.bb:do_unpack)
+NOTE: recipe libcap-ng-0.7.9-r0: task do_fetch: Succeeded
+NOTE: Running task 608 of 1154 (/home/deby/poky/meta-debian/recipes-debian/libpcre/libpcre_debian.bb:do_unpack)
+NOTE: recipe libhtp-0.5.30-r0: task do_unpack: Started
+NOTE: recipe libnet-1.1.6-r0: task do_fetch: Succeeded
+NOTE: Running task 609 of 1154 (/home/deby/poky/meta-debian/recipes-debian/libnet/libnet_debian.bb:do_unpack)
+NOTE: recipe libnet-1.1.6-r0: task do_unpack: Started
+NOTE: recipe libpcre-8.39-r0: task do_unpack: Started
+NOTE: recipe libffi-3.2.1-r0: task do_debian_patch: Succeeded
+NOTE: Running task 610 of 1154 (/home/deby/poky/meta-debian/recipes-debian/libffi/libffi_debian.bb:do_patch)
+NOTE: recipe libffi-3.2.1-r0: task do_patch: Started
+NOTE: recipe libhtp-0.5.30-r0: task do_unpack: Succeeded
+NOTE: Running task 611 of 1154 (/home/deby/poky/meta-debian/recipes-debian/file/file_debian.bb:do_unpack)
+NOTE: recipe file-5.35-r0: task do_unpack: Started
+NOTE: recipe bash-completion-2.8-r0: task do_debian_patch: Succeeded
+NOTE: recipe libnet-1.1.6-r0: task do_unpack: Succeeded
+NOTE: recipe libffi-3.2.1-r0: task do_patch: Succeeded
+NOTE: Running task 612 of 1154 (/home/deby/poky/meta-debian/recipes-debian/bash-completion/bash-completion_debian.bb:do_patch)
+NOTE: Running task 613 of 1154 (/home/deby/poky/meta-debian/recipes-debian/libyaml/libyaml_debian.bb:do_unpack)
+NOTE: Running task 614 of 1154 (/home/deby/poky/meta-debian/recipes-debian/libcap-ng/libcap-ng_debian.bb:do_unpack)
+NOTE: recipe jansson-2.12-r0: task do_unpack: Succeeded
+NOTE: Running task 632 of 1154 (/home/deby/poky/meta-debian/recipes-debian/xz/xz_debian.bb:do_debian_unpack_extra)
+NOTE: recipe sqlite3-3_3.27.2-r0: task do_unpack: Succeeded
+NOTE: Running task 633 of 1154 (/home/deby/poky/meta-debian/recipes-debian/sqlite3/sqlite3_debian.bb:do_debian_unpack_extra)
+NOTE: recipe bash-completion-2.8-r0: task do_patch: Started
+NOTE: recipe bash-completion-2.8-r0: task do_patch: Succeeded
+NOTE: Running task 634 of 1154 (/home/deby/poky/meta/recipes-extended/libnsl/libnsl2_git.bb:do_unpack)
+NOTE: recipe xz-5.2.4-r0: task do_debian_unpack_extra: Started
+NOTE: recipe sqlite3-3_3.27.2-r0: task do_debian_unpack_extra: Started
+NOTE: recipe xz-5.2.4-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 635 of 1154 (/home/deby/poky/meta-debian/recipes-debian/xz/xz_debian.bb:do_debian_patch)
+NOTE: recipe sqlite3-3_3.27.2-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 636 of 1154 (/home/deby/poky/meta-debian/recipes-debian/sqlite3/sqlite3_debian.bb:do_debian_patch)
+NOTE: recipe libcap-ng-0.7.9-r0: task do_unpack: Started
+NOTE: recipe libnsl2-1.2.0+gitAUTOINC+37c5ffe303-r0: task do_unpack: Started
+NOTE: recipe xz-5.2.4-r0: task do_debian_patch: Started
+NOTE: recipe sqlite3-3_3.27.2-r0: task do_debian_patch: Started
+NOTE: recipe libyaml-0.2.1-r0: task do_unpack: Started
+NOTE: recipe xz-5.2.4-r0: task do_debian_patch: Succeeded
+NOTE: Running task 637 of 1154 (/home/deby/poky/meta-debian/recipes-debian/xz/xz_debian.bb:do_patch)
+NOTE: recipe xz-5.2.4-r0: task do_patch: Started
+NOTE: recipe xz-5.2.4-r0: task do_patch: Succeeded
+NOTE: Running task 638 of 1154 (/home/deby/poky/meta-debian/recipes-debian/db/db_debian.bb:do_fetch)
+NOTE: recipe util-linux-2.33.1-r0: task do_unpack: Succeeded
+NOTE: Running task 639 of 1154 (/home/deby/poky/meta-debian/recipes-debian/util-linux/util-linux_debian.bb:do_debian_unpack_extra)
+NOTE: recipe db-5.3.28-r0: task do_fetch: Started
+NOTE: recipe libnfnetlink-1.0.1-r0: task do_unpack: Succeeded
+NOTE: Running task 640 of 1154 (/home/deby/poky/meta-debian/recipes-debian/nspr/nspr_debian.bb:do_debian_unpack_extra)
+NOTE: recipe util-linux-2.33.1-r0: task do_debian_unpack_extra: Started
+NOTE: recipe nspr-4.20-r0: task do_debian_unpack_extra: Started
+NOTE: recipe util-linux-2.33.1-r0: task do_debian_unpack_extra: Succeeded
+NOTE: recipe nspr-4.20-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 641 of 1154 (/home/deby/poky/meta-debian/recipes-debian/util-linux/util-linux_debian.bb:do_debian_patch)
+NOTE: recipe openssl-1.1.1d-r0: task do_unpack: Succeeded
+NOTE: Running task 642 of 1154 (/home/deby/poky/meta-debian/recipes-debian/libpcap/libpcap_debian.bb:do_debian_unpack_extra)
+NOTE: Running task 643 of 1154 (/home/deby/poky/meta-debian/recipes-debian/openssl/openssl_debian.bb:do_debian_unpack_extra)
+NOTE: recipe libpcap-1.8.1-r0: task do_debian_unpack_extra: Started
+NOTE: recipe openssl-1.1.1d-r0: task do_debian_unpack_extra: Started
+NOTE: recipe util-linux-2.33.1-r0: task do_debian_patch: Started
+NOTE: recipe util-linux-2.33.1-r0: task do_debian_patch: Succeeded
+NOTE: Running task 644 of 1154 (/home/deby/poky/meta-debian/recipes-debian/util-linux/util-linux_debian.bb:do_patch)
+NOTE: recipe file-5.35-r0: task do_unpack: Succeeded
+NOTE: Running task 645 of 1154 (/home/deby/poky/meta-debian/recipes-debian/nspr/nspr_debian.bb:do_debian_patch)
+NOTE: recipe util-linux-2.33.1-r0: task do_patch: Started
+NOTE: recipe nspr-4.20-r0: task do_debian_patch: Started
+NOTE: recipe nspr-4.20-r0: task do_debian_patch: Succeeded
+NOTE: Running task 646 of 1154 (/home/deby/poky/meta-debian/recipes-debian/nspr/nspr_debian.bb:do_patch)
+NOTE: recipe libpcap-1.8.1-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 647 of 1154 (/home/deby/poky/meta-debian/recipes-debian/libpcap/libpcap_debian.bb:do_debian_patch)
+NOTE: recipe openssl-1.1.1d-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 648 of 1154 (/home/deby/poky/meta-debian/recipes-debian/openssl/openssl_debian.bb:do_debian_patch)
+NOTE: recipe nspr-4.20-r0: task do_patch: Started
+NOTE: recipe util-linux-2.33.1-r0: task do_patch: Succeeded
+NOTE: recipe sqlite3-3_3.27.2-r0: task do_debian_patch: Succeeded
+NOTE: Running task 650 of 1154 (/home/deby/poky/meta-debian/recipes-debian/suricata/suricata_debian.bb:do_fetch)
+NOTE: Running task 651 of 1154 (/home/deby/poky/meta-debian/recipes-debian/sqlite3/sqlite3_debian.bb:do_patch)
+NOTE: recipe libpcap-1.8.1-r0: task do_debian_patch: Started
+NOTE: recipe openssl-1.1.1d-r0: task do_debian_patch: Started
+NOTE: recipe sqlite3-3_3.27.2-r0: task do_patch: Started
+NOTE: recipe suricata-4.1.2-r0: task do_fetch: Started
+NOTE: recipe sqlite3-3_3.27.2-r0: task do_patch: Succeeded
+NOTE: Running task 693 of 1154 (/home/deby/poky/meta-debian/recipes-debian/perl/perl_debian.bb:do_fetch)
+NOTE: recipe db-5.3.28-r0: task do_fetch: Succeeded
+NOTE: Running task 694 of 1154 (/home/deby/poky/meta-debian/recipes-debian/db/db_debian.bb:do_unpack)
+NOTE: recipe nspr-4.20-r0: task do_patch: Succeeded
+NOTE: Running task 695 of 1154 (/home/deby/poky/meta-debian/recipes-debian/lsb/lsb_debian.bb:do_fetch)
+NOTE: recipe db-5.3.28-r0: task do_unpack: Started
+NOTE: recipe perl-5.28.1-r1: task do_fetch: Started
+NOTE: recipe lsb-10.2019051400-r0: task do_fetch: Started
+NOTE: recipe suricata-4.1.2-r0: task do_fetch: Succeeded
+NOTE: Running task 696 of 1154 (/home/deby/poky/meta-debian/recipes-debian/suricata/suricata_debian.bb:do_unpack)
+NOTE: recipe suricata-4.1.2-r0: task do_unpack: Started
+NOTE: recipe libyaml-0.2.1-r0: task do_unpack: Succeeded
+NOTE: Running task 700 of 1154 (/home/deby/poky/meta-debian/recipes-debian/base-files/base-files_debian.bb:do_fetch)
+NOTE: recipe base-files-10.3+deb10u2-r0: task do_fetch: Started
+NOTE: recipe base-files-10.3+deb10u2-r0: task do_fetch: Succeeded
+NOTE: Running task 701 of 1154 (/home/deby/poky/meta-debian/recipes-debian/bash/bash_debian.bb:do_fetch)
+NOTE: recipe perl-5.28.1-r1: task do_fetch: Succeeded
+NOTE: Running task 703 of 1154 (/home/deby/poky/meta-debian/recipes-debian/python/python_debian.bb:do_fetch)
+NOTE: recipe bash-5.0-r0: task do_fetch: Started
+NOTE: recipe python-2.7.16-r0: task do_fetch: Started
+NOTE: recipe libpcre-8.39-r0: task do_unpack: Succeeded
+NOTE: recipe lsb-10.2019051400-r0: task do_fetch: Succeeded
+NOTE: Running task 709 of 1154 (/home/deby/poky/meta-debian/recipes-debian/jansson/jansson_debian.bb:do_debian_unpack_extra)
+NOTE: Running task 710 of 1154 (/home/deby/poky/meta-debian/recipes-debian/libnfnetlink/libnfnetlink_debian.bb:do_debian_unpack_extra)
+NOTE: recipe openssl-1.1.1d-r0: task do_debian_patch: Succeeded
+NOTE: recipe libpcap-1.8.1-r0: task do_debian_patch: Succeeded
+NOTE: Running task 711 of 1154 (/home/deby/poky/meta-debian/recipes-debian/openssl/openssl_debian.bb:do_patch)
+NOTE: Running task 712 of 1154 (/home/deby/poky/meta-debian/recipes-debian/libpcap/libpcap_debian.bb:do_patch)
+NOTE: recipe jansson-2.12-r0: task do_debian_unpack_extra: Started
+NOTE: recipe libnfnetlink-1.0.1-r0: task do_debian_unpack_extra: Started
+NOTE: recipe jansson-2.12-r0: task do_debian_unpack_extra: Succeeded
+NOTE: recipe libnfnetlink-1.0.1-r0: task do_debian_unpack_extra: Succeeded
+NOTE: recipe openssl-1.1.1d-r0: task do_patch: Started
+NOTE: Running task 713 of 1154 (/home/deby/poky/meta-debian/recipes-debian/libnet/libnet_debian.bb:do_debian_unpack_extra)
+NOTE: Running task 714 of 1154 (/home/deby/poky/meta-debian/recipes-debian/libhtp/libhtp_debian.bb:do_debian_unpack_extra)
+NOTE: recipe libpcap-1.8.1-r0: task do_patch: Started
+NOTE: recipe libcap-ng-0.7.9-r0: task do_unpack: Succeeded
+NOTE: Running task 715 of 1154 (/home/deby/poky/meta-debian/recipes-debian/libpcre/libpcre_debian.bb:do_debian_unpack_extra)
+NOTE: recipe libnet-1.1.6-r0: task do_debian_unpack_extra: Started
+NOTE: recipe libhtp-0.5.30-r0: task do_debian_unpack_extra: Started
+NOTE: recipe libhtp-0.5.30-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 716 of 1154 (/home/deby/poky/meta-debian/recipes-debian/file/file_debian.bb:do_debian_unpack_extra)
+NOTE: recipe libpcre-8.39-r0: task do_debian_unpack_extra: Started
+NOTE: recipe file-5.35-r0: task do_debian_unpack_extra: Started
+NOTE: recipe python-2.7.16-r0: task do_fetch: Succeeded
+NOTE: Running task 717 of 1154 (/home/deby/poky/meta-debian/recipes-debian/libyaml/libyaml_debian.bb:do_debian_unpack_extra)
+NOTE: recipe libpcre-8.39-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 718 of 1154 (/home/deby/poky/meta-debian/recipes-debian/libcap-ng/libcap-ng_debian.bb:do_debian_unpack_extra)
+NOTE: recipe libyaml-0.2.1-r0: task do_debian_unpack_extra: Started
+NOTE: recipe libcap-ng-0.7.9-r0: task do_debian_unpack_extra: Started
+NOTE: recipe bash-5.0-r0: task do_fetch: Succeeded
+NOTE: recipe libnet-1.1.6-r0: task do_debian_unpack_extra: Succeeded
+NOTE: recipe file-5.35-r0: task do_debian_unpack_extra: Succeeded
+NOTE: recipe libyaml-0.2.1-r0: task do_debian_unpack_extra: Succeeded
+NOTE: recipe libcap-ng-0.7.9-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 720 of 1154 (/home/deby/poky/meta-debian/recipes-debian/jansson/jansson_debian.bb:do_debian_patch)
+NOTE: Running task 721 of 1154 (/home/deby/poky/meta-debian/recipes-debian/libnfnetlink/libnfnetlink_debian.bb:do_debian_patch)
+NOTE: Running task 722 of 1154 (/home/deby/poky/meta-debian/recipes-debian/libnet/libnet_debian.bb:do_debian_patch)
+NOTE: Running task 723 of 1154 (/home/deby/poky/meta-debian/recipes-debian/libhtp/libhtp_debian.bb:do_debian_patch)
+NOTE: Running task 724 of 1154 (/home/deby/poky/meta-debian/recipes-debian/libpcre/libpcre_debian.bb:do_debian_patch)
+NOTE: recipe libnsl2-1.2.0+gitAUTOINC+37c5ffe303-r0: task do_unpack: Succeeded
+NOTE: Running task 725 of 1154 (/home/deby/poky/meta/recipes-extended/libnsl/libnsl2_git.bb:do_patch)
+NOTE: recipe openssl-1.1.1d-r0: task do_patch: Succeeded
+NOTE: Running task 726 of 1154 (/home/deby/poky/meta-debian/recipes-debian/file/file_debian.bb:do_debian_patch)
+NOTE: recipe libpcap-1.8.1-r0: task do_patch: Succeeded
+NOTE: Running task 727 of 1154 (/home/deby/poky/meta-debian/recipes-debian/libyaml/libyaml_debian.bb:do_debian_patch)
+NOTE: recipe libnsl2-1.2.0+gitAUTOINC+37c5ffe303-r0: task do_patch: Started
+NOTE: recipe libhtp-0.5.30-r0: task do_debian_patch: Started
+NOTE: recipe jansson-2.12-r0: task do_debian_patch: Started
+NOTE: recipe libnet-1.1.6-r0: task do_debian_patch: Started
+NOTE: recipe libnfnetlink-1.0.1-r0: task do_debian_patch: Started
+NOTE: recipe file-5.35-r0: task do_debian_patch: Started
+NOTE: recipe libpcre-8.39-r0: task do_debian_patch: Started
+NOTE: recipe libyaml-0.2.1-r0: task do_debian_patch: Started
+NOTE: recipe jansson-2.12-r0: task do_debian_patch: Succeeded
+NOTE: recipe libnfnetlink-1.0.1-r0: task do_debian_patch: Succeeded
+NOTE: recipe libhtp-0.5.30-r0: task do_debian_patch: Succeeded
+NOTE: recipe libnsl2-1.2.0+gitAUTOINC+37c5ffe303-r0: task do_patch: Succeeded
+NOTE: recipe libyaml-0.2.1-r0: task do_debian_patch: Succeeded
+NOTE: Running task 728 of 1154 (/home/deby/poky/meta-debian/recipes-debian/libcap-ng/libcap-ng_debian.bb:do_debian_patch)
+NOTE: Running task 729 of 1154 (/home/deby/poky/meta-debian/recipes-debian/jansson/jansson_debian.bb:do_patch)
+NOTE: Running task 730 of 1154 (/home/deby/poky/meta-debian/recipes-debian/libnfnetlink/libnfnetlink_debian.bb:do_patch)
+NOTE: Running task 731 of 1154 (/home/deby/poky/meta-debian/recipes-debian/libhtp/libhtp_debian.bb:do_patch)
+NOTE: Running task 732 of 1154 (/home/deby/poky/meta-debian/recipes-debian/libyaml/libyaml_debian.bb:do_patch)
+NOTE: recipe jansson-2.12-r0: task do_patch: Started
+NOTE: recipe libnfnetlink-1.0.1-r0: task do_patch: Started
+NOTE: recipe libhtp-0.5.30-r0: task do_patch: Started
+NOTE: recipe jansson-2.12-r0: task do_patch: Succeeded
+NOTE: Running task 733 of 1154 (/home/deby/poky/meta-debian/recipes-debian/perl/perl_debian.bb:do_unpack)
+NOTE: recipe libhtp-0.5.30-r0: task do_patch: Succeeded
+NOTE: recipe libyaml-0.2.1-r0: task do_patch: Started
+NOTE: Running task 734 of 1154 (/home/deby/poky/meta-debian/recipes-debian/lsb/lsb_debian.bb:do_unpack)
+NOTE: recipe libcap-ng-0.7.9-r0: task do_debian_patch: Started
+NOTE: recipe lsb-10.2019051400-r0: task do_unpack: Started
+NOTE: recipe perl-5.28.1-r1: task do_unpack: Started
+NOTE: recipe libyaml-0.2.1-r0: task do_patch: Succeeded
+NOTE: Running task 736 of 1154 (/home/deby/poky/meta-debian/recipes-debian/base-files/base-files_debian.bb:do_unpack)
+NOTE: recipe base-files-10.3+deb10u2-r0: task do_unpack: Started
+NOTE: recipe lsb-10.2019051400-r0: task do_unpack: Succeeded
+NOTE: Running task 737 of 1154 (/home/deby/poky/meta-debian/recipes-debian/bash/bash_debian.bb:do_unpack)
+NOTE: recipe bash-5.0-r0: task do_unpack: Started
+NOTE: recipe base-files-10.3+deb10u2-r0: task do_unpack: Succeeded
+NOTE: Running task 739 of 1154 (/home/deby/poky/meta-debian/recipes-debian/python/python_debian.bb:do_unpack)
+NOTE: recipe libnet-1.1.6-r0: task do_debian_patch: Succeeded
+NOTE: Running task 740 of 1154 (/home/deby/poky/meta-debian/recipes-debian/libnet/libnet_debian.bb:do_patch)
+NOTE: recipe python-2.7.16-r0: task do_unpack: Started
+NOTE: recipe libnet-1.1.6-r0: task do_patch: Started
+NOTE: recipe libcap-ng-0.7.9-r0: task do_debian_patch: Succeeded
+NOTE: Running task 741 of 1154 (/home/deby/poky/meta-debian/recipes-debian/libcap-ng/libcap-ng_debian.bb:do_patch)
+NOTE: recipe libnfnetlink-1.0.1-r0: task do_patch: Succeeded
+NOTE: Running task 750 of 1154 (/home/deby/poky/meta-debian/recipes-debian/glibc/glibc-locale_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe libcap-ng-0.7.9-r0: task do_patch: Started
+NOTE: recipe glibc-locale-2.28-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe libnet-1.1.6-r0: task do_patch: Succeeded
+NOTE: Running task 753 of 1154 (/home/deby/poky/meta-debian/recipes-debian/lsb/lsb_debian.bb:do_debian_unpack_extra)
+NOTE: recipe lsb-10.2019051400-r0: task do_debian_unpack_extra: Started
+NOTE: recipe lsb-10.2019051400-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 754 of 1154 (/home/deby/poky/meta-debian/recipes-debian/lsb/lsb_debian.bb:do_debian_patch)
+NOTE: recipe libpcre-8.39-r0: task do_debian_patch: Succeeded
+NOTE: Running task 755 of 1154 (/home/deby/poky/meta-debian/recipes-debian/libpcre/libpcre_debian.bb:do_patch)
+NOTE: recipe libcap-ng-0.7.9-r0: task do_patch: Succeeded
+NOTE: Running task 762 of 1154 (/home/deby/poky/meta-debian/recipes-debian/base-files/base-files_debian.bb:do_debian_unpack_extra)
+NOTE: recipe lsb-10.2019051400-r0: task do_debian_patch: Started
+NOTE: recipe base-files-10.3+deb10u2-r0: task do_debian_unpack_extra: Started
+NOTE: recipe libpcre-8.39-r0: task do_patch: Started
+NOTE: recipe base-files-10.3+deb10u2-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 765 of 1154 (/home/deby/poky/meta-debian/recipes-debian/base-files/base-files_debian.bb:do_debian_patch)
+NOTE: recipe libpcre-8.39-r0: task do_patch: Succeeded
+NOTE: Running task 768 of 1154 (/home/deby/poky/meta-debian/recipes-debian/base-files/base-files_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe base-files-10.3+deb10u2-r0: task do_debian_patch: Started
+NOTE: recipe base-files-10.3+deb10u2-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe base-files-10.3+deb10u2-r0: task do_debian_patch: Succeeded
+NOTE: Running task 769 of 1154 (/home/deby/poky/meta-debian/recipes-debian/base-files/base-files_debian.bb:do_patch)
+NOTE: recipe base-files-10.3+deb10u2-r0: task do_patch: Started
+NOTE: recipe base-files-10.3+deb10u2-r0: task do_patch: Succeeded
+NOTE: recipe base-files-10.3+deb10u2-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 785 of 1154 (/home/deby/poky/meta-debian/recipes-debian/base-files/base-files_debian.bb:do_configure)
+NOTE: recipe base-files-10.3+deb10u2-r0: task do_configure: Started
+NOTE: recipe base-files-10.3+deb10u2-r0: task do_configure: Succeeded
+NOTE: Running task 786 of 1154 (/home/deby/poky/meta-debian/recipes-debian/base-files/base-files_debian.bb:do_compile)
+NOTE: recipe base-files-10.3+deb10u2-r0: task do_compile: Started
+NOTE: recipe base-files-10.3+deb10u2-r0: task do_compile: Succeeded
+NOTE: Running task 787 of 1154 (/home/deby/poky/meta-debian/recipes-debian/base-files/base-files_debian.bb:do_install)
+NOTE: recipe lsb-10.2019051400-r0: task do_debian_patch: Succeeded
+NOTE: Running task 788 of 1154 (/home/deby/poky/meta-debian/recipes-debian/lsb/lsb_debian.bb:do_patch)
+NOTE: recipe lsb-10.2019051400-r0: task do_patch: Started
+NOTE: recipe lsb-10.2019051400-r0: task do_patch: Succeeded
+NOTE: recipe base-files-10.3+deb10u2-r0: task do_install: Started
+NOTE: recipe glibc-locale-2.28-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running noexec task 789 of 1154 (/home/deby/poky/meta-debian/recipes-debian/glibc/glibc-locale_debian.bb:do_configure)
+NOTE: Running noexec task 790 of 1154 (/home/deby/poky/meta-debian/recipes-debian/glibc/glibc-locale_debian.bb:do_compile)
+NOTE: recipe base-files-10.3+deb10u2-r0: task do_install: Succeeded
+NOTE: Running task 791 of 1154 (/home/deby/poky/meta-debian/recipes-debian/base-files/base-files_debian.bb:do_package)
+NOTE: recipe base-files-10.3+deb10u2-r0: task do_package: Started
+NOTE: recipe file-5.35-r0: task do_debian_patch: Succeeded
+NOTE: Running task 792 of 1154 (/home/deby/poky/meta-debian/recipes-debian/file/file_debian.bb:do_patch)
+NOTE: recipe file-5.35-r0: task do_patch: Started
+NOTE: recipe suricata-4.1.2-r0: task do_unpack: Succeeded
+NOTE: Running task 793 of 1154 (/home/deby/poky/meta-debian/recipes-debian/suricata/suricata_debian.bb:do_debian_unpack_extra)
+NOTE: recipe file-5.35-r0: task do_patch: Succeeded
+NOTE: recipe suricata-4.1.2-r0: task do_debian_unpack_extra: Started
+NOTE: recipe suricata-4.1.2-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 794 of 1154 (/home/deby/poky/meta-debian/recipes-debian/suricata/suricata_debian.bb:do_debian_patch)
+NOTE: recipe suricata-4.1.2-r0: task do_debian_patch: Started
+NOTE: recipe base-files-10.3+deb10u2-r0: task do_package: Succeeded
+NOTE: Running task 795 of 1154 (/home/deby/poky/meta-debian/recipes-debian/base-files/base-files_debian.bb:do_packagedata)
+NOTE: recipe suricata-4.1.2-r0: task do_debian_patch: Succeeded
+NOTE: Running task 796 of 1154 (/home/deby/poky/meta-debian/recipes-debian/suricata/suricata_debian.bb:do_patch)
+NOTE: recipe base-files-10.3+deb10u2-r0: task do_packagedata: Started
+NOTE: recipe suricata-4.1.2-r0: task do_patch: Started
+NOTE: recipe suricata-4.1.2-r0: task do_patch: Succeeded
+NOTE: Running task 797 of 1154 (/home/deby/poky/meta-debian/recipes-debian/suricata/suricata_debian.bb:do_populate_lic)
+NOTE: recipe suricata-4.1.2-r0: task do_populate_lic: Started
+NOTE: recipe base-files-10.3+deb10u2-r0: task do_packagedata: Succeeded
+NOTE: Running task 798 of 1154 (/home/deby/poky/meta-debian/recipes-debian/base-files/base-files_debian.bb:do_package_write_deb)
+NOTE: recipe base-files-10.3+deb10u2-r0: task do_package_write_deb: Started
+NOTE: recipe bash-5.0-r0: task do_unpack: Succeeded
+NOTE: Running task 799 of 1154 (/home/deby/poky/meta-debian/recipes-debian/bash/bash_debian.bb:do_debian_unpack_extra)
+NOTE: recipe nss-3.42.1-r0: task do_unpack: Succeeded
+NOTE: Running task 800 of 1154 (/home/deby/poky/meta-debian/recipes-debian/nss/nss_debian.bb:do_debian_unpack_extra)
+NOTE: recipe bash-5.0-r0: task do_debian_unpack_extra: Started
+NOTE: recipe bash-5.0-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 801 of 1154 (/home/deby/poky/meta-debian/recipes-debian/bash/bash_debian.bb:do_debian_patch)
+NOTE: recipe nss-3.42.1-r0: task do_debian_unpack_extra: Started
+NOTE: recipe bash-5.0-r0: task do_debian_patch: Started
+NOTE: recipe suricata-4.1.2-r0: task do_populate_lic: Succeeded
+NOTE: recipe nss-3.42.1-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 802 of 1154 (/home/deby/poky/meta-debian/recipes-debian/nss/nss_debian.bb:do_debian_patch)
+NOTE: recipe nss-3.42.1-r0: task do_debian_patch: Started
+NOTE: recipe nss-3.42.1-r0: task do_debian_patch: Succeeded
+NOTE: Running task 803 of 1154 (/home/deby/poky/meta-debian/recipes-debian/nss/nss_debian.bb:do_patch)
+NOTE: recipe bash-5.0-r0: task do_debian_patch: Succeeded
+NOTE: Running task 804 of 1154 (/home/deby/poky/meta-debian/recipes-debian/bash/bash_debian.bb:do_patch)
+NOTE: recipe base-files-10.3+deb10u2-r0: task do_package_write_deb: Succeeded
+NOTE: recipe nss-3.42.1-r0: task do_patch: Started
+NOTE: recipe bash-5.0-r0: task do_patch: Started
+NOTE: recipe nss-3.42.1-r0: task do_patch: Succeeded
+NOTE: recipe python3-3.7.3-r0: task do_unpack: Succeeded
+NOTE: Running task 805 of 1154 (/home/deby/poky/meta-debian/recipes-debian/python/python3_debian.bb:do_debian_unpack_extra)
+NOTE: recipe bash-5.0-r0: task do_patch: Succeeded
+NOTE: recipe python3-3.7.3-r0: task do_debian_unpack_extra: Started
+NOTE: recipe python3-3.7.3-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 806 of 1154 (/home/deby/poky/meta-debian/recipes-debian/python/python3_debian.bb:do_debian_patch)
+NOTE: recipe python3-3.7.3-r0: task do_debian_patch: Started
+NOTE: recipe binutils-cross-aarch64-2.31.1-r0: task do_unpack: Succeeded
+NOTE: Running task 807 of 1154 (/home/deby/poky/meta-debian/recipes-debian/binutils/binutils-cross_debian.bb:do_debian_unpack_extra)
+NOTE: recipe binutils-cross-aarch64-2.31.1-r0: task do_debian_unpack_extra: Started
+NOTE: recipe python3-3.7.3-r0: task do_debian_patch: Succeeded
+NOTE: Running task 808 of 1154 (/home/deby/poky/meta-debian/recipes-debian/python/python3_debian.bb:do_patch)
+NOTE: recipe python3-3.7.3-r0: task do_patch: Started
+NOTE: recipe binutils-cross-aarch64-2.31.1-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 809 of 1154 (/home/deby/poky/meta-debian/recipes-debian/binutils/binutils-cross_debian.bb:do_debian_patch)
+NOTE: recipe binutils-cross-aarch64-2.31.1-r0: task do_debian_patch: Started
+NOTE: recipe python3-3.7.3-r0: task do_patch: Succeeded
+NOTE: recipe glibc-2.28-r0: task do_unpack: Succeeded
+NOTE: Running task 810 of 1154 (/home/deby/poky/meta-debian/recipes-debian/glibc/glibc_debian.bb:do_debian_unpack_extra)
+NOTE: recipe glibc-2.28-r0: task do_debian_unpack_extra: Started
+NOTE: recipe glibc-2.28-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 811 of 1154 (/home/deby/poky/meta-debian/recipes-debian/glibc/glibc_debian.bb:do_debian_patch)
+NOTE: recipe binutils-cross-aarch64-2.31.1-r0: task do_debian_patch: Succeeded
+NOTE: Running task 812 of 1154 (/home/deby/poky/meta-debian/recipes-debian/binutils/binutils-cross_debian.bb:do_patch)
+NOTE: recipe binutils-cross-aarch64-2.31.1-r0: task do_patch: Started
+NOTE: recipe glibc-2.28-r0: task do_debian_patch: Started
+NOTE: recipe binutils-cross-aarch64-2.31.1-r0: task do_patch: Succeeded
+NOTE: Running task 813 of 1154 (/home/deby/poky/meta-debian/recipes-debian/binutils/binutils-cross_debian.bb:do_configure)
+NOTE: recipe binutils-cross-aarch64-2.31.1-r0: task do_configure: Started
+NOTE: recipe db-5.3.28-r0: task do_unpack: Succeeded
+NOTE: Running task 814 of 1154 (/home/deby/poky/meta-debian/recipes-debian/db/db_debian.bb:do_debian_unpack_extra)
+NOTE: recipe db-5.3.28-r0: task do_debian_unpack_extra: Started
+NOTE: recipe db-5.3.28-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 815 of 1154 (/home/deby/poky/meta-debian/recipes-debian/db/db_debian.bb:do_debian_patch)
+NOTE: recipe db-5.3.28-r0: task do_debian_patch: Started
+NOTE: recipe db-5.3.28-r0: task do_debian_patch: Succeeded
+NOTE: Running task 816 of 1154 (/home/deby/poky/meta-debian/recipes-debian/db/db_debian.bb:do_patch)
+NOTE: recipe db-5.3.28-r0: task do_patch: Started
+NOTE: recipe db-5.3.28-r0: task do_patch: Succeeded
+NOTE: recipe glibc-2.28-r0: task do_debian_patch: Succeeded
+NOTE: Running task 817 of 1154 (/home/deby/poky/meta-debian/recipes-debian/glibc/glibc_debian.bb:do_patch)
+NOTE: recipe glibc-2.28-r0: task do_patch: Started
+NOTE: recipe perl-5.28.1-r1: task do_unpack: Succeeded
+NOTE: Running task 818 of 1154 (/home/deby/poky/meta-debian/recipes-debian/perl/perl_debian.bb:do_debian_unpack_extra)
+NOTE: recipe perl-5.28.1-r1: task do_debian_unpack_extra: Started
+NOTE: recipe perl-5.28.1-r1: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 819 of 1154 (/home/deby/poky/meta-debian/recipes-debian/perl/perl_debian.bb:do_debian_patch)
+NOTE: recipe perl-5.28.1-r1: task do_debian_patch: Started
+NOTE: recipe binutils-cross-aarch64-2.31.1-r0: task do_configure: Succeeded
+NOTE: Running task 820 of 1154 (/home/deby/poky/meta-debian/recipes-debian/binutils/binutils-cross_debian.bb:do_compile)
+NOTE: recipe binutils-cross-aarch64-2.31.1-r0: task do_compile: Started
+NOTE: recipe glibc-2.28-r0: task do_patch: Succeeded
+NOTE: recipe perl-5.28.1-r1: task do_debian_patch: Succeeded
+NOTE: Running task 821 of 1154 (/home/deby/poky/meta-debian/recipes-debian/perl/perl_debian.bb:do_patch)
+NOTE: recipe perl-5.28.1-r1: task do_patch: Started
+NOTE: recipe perl-5.28.1-r1: task do_patch: Succeeded
+NOTE: recipe python-2.7.16-r0: task do_unpack: Succeeded
+NOTE: Running task 822 of 1154 (/home/deby/poky/meta-debian/recipes-debian/python/python_debian.bb:do_debian_unpack_extra)
+NOTE: recipe python-2.7.16-r0: task do_debian_unpack_extra: Started
+NOTE: recipe python-2.7.16-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 823 of 1154 (/home/deby/poky/meta-debian/recipes-debian/python/python_debian.bb:do_debian_patch)
+NOTE: recipe python-2.7.16-r0: task do_debian_patch: Started
+NOTE: recipe python-2.7.16-r0: task do_debian_patch: Succeeded
+NOTE: Running task 824 of 1154 (/home/deby/poky/meta-debian/recipes-debian/python/python_debian.bb:do_patch)
+NOTE: recipe python-2.7.16-r0: task do_patch: Started
+NOTE: recipe python-2.7.16-r0: task do_patch: Succeeded
+NOTE: recipe gcc-source-8.3.0-8.3.0-r0: task do_unpack: Succeeded
+NOTE: Running task 825 of 1154 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-source_debian.bb:do_debian_unpack_extra)
+NOTE: recipe gcc-source-8.3.0-8.3.0-r0: task do_debian_unpack_extra: Started
+NOTE: recipe gcc-source-8.3.0-8.3.0-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 826 of 1154 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-source_debian.bb:do_debian_patch)
+NOTE: recipe gcc-source-8.3.0-8.3.0-r0: task do_debian_patch: Started
+NOTE: recipe gcc-source-8.3.0-8.3.0-r0: task do_debian_patch: Succeeded
+NOTE: Running task 827 of 1154 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-source_debian.bb:do_patch)
+NOTE: recipe gcc-source-8.3.0-8.3.0-r0: task do_patch: Started
+NOTE: recipe gcc-source-8.3.0-8.3.0-r0: task do_patch: Succeeded
+NOTE: Running task 828 of 1154 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-source_debian.bb:do_preconfigure)
+NOTE: recipe gcc-source-8.3.0-8.3.0-r0: task do_preconfigure: Started
+NOTE: recipe gcc-source-8.3.0-8.3.0-r0: task do_preconfigure: Succeeded
+NOTE: recipe linux-libc-headers-base-gitAUTOINC+e665510be1-r0: task do_unpack: Succeeded
+NOTE: Running task 829 of 1154 (/home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb:do_patch)
+NOTE: recipe linux-libc-headers-base-gitAUTOINC+e665510be1-r0: task do_patch: Started
+NOTE: recipe linux-libc-headers-base-gitAUTOINC+e665510be1-r0: task do_patch: Succeeded
+NOTE: Running noexec task 830 of 1154 (/home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb:do_configure)
+NOTE: Running noexec task 831 of 1154 (/home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb:do_compile)
+NOTE: Running task 832 of 1154 (/home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb:do_install)
+NOTE: recipe linux-libc-headers-base-gitAUTOINC+e665510be1-r0: task do_install: Started
+NOTE: recipe binutils-cross-aarch64-2.31.1-r0: task do_compile: Succeeded
+NOTE: Running task 833 of 1154 (/home/deby/poky/meta-debian/recipes-debian/binutils/binutils-cross_debian.bb:do_install)
+NOTE: recipe binutils-cross-aarch64-2.31.1-r0: task do_install: Started
+NOTE: recipe binutils-cross-aarch64-2.31.1-r0: task do_install: Succeeded
+NOTE: Running task 834 of 1154 (/home/deby/poky/meta-debian/recipes-debian/binutils/binutils-cross_debian.bb:do_populate_sysroot)
+NOTE: recipe binutils-cross-aarch64-2.31.1-r0: task do_populate_sysroot: Started
+NOTE: recipe linux-libc-headers-base-gitAUTOINC+e665510be1-r0: task do_install: Succeeded
+NOTE: Running task 835 of 1154 (/home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb:do_package)
+NOTE: recipe linux-libc-headers-base-gitAUTOINC+e665510be1-r0: task do_package: Started
+NOTE: recipe binutils-cross-aarch64-2.31.1-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 836 of 1154 (/home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb:do_populate_sysroot)
+NOTE: recipe linux-libc-headers-base-gitAUTOINC+e665510be1-r0: task do_populate_sysroot: Started
+NOTE: recipe linux-libc-headers-base-gitAUTOINC+e665510be1-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 837 of 1154 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-cross_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe gcc-cross-aarch64-8.3.0-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe gcc-cross-aarch64-8.3.0-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 838 of 1154 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-cross_debian.bb:do_configure)
+NOTE: recipe gcc-cross-aarch64-8.3.0-r0: task do_configure: Started
+NOTE: recipe linux-libc-headers-base-gitAUTOINC+e665510be1-r0: task do_package: Succeeded
+NOTE: Running task 839 of 1154 (/home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb:do_packagedata)
+NOTE: recipe linux-libc-headers-base-gitAUTOINC+e665510be1-r0: task do_packagedata: Started
+NOTE: recipe linux-libc-headers-base-gitAUTOINC+e665510be1-r0: task do_packagedata: Succeeded
+NOTE: Running task 840 of 1154 (/home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb:do_package_write_deb)
+NOTE: recipe linux-libc-headers-base-gitAUTOINC+e665510be1-r0: task do_package_write_deb: Started
+NOTE: recipe gcc-cross-aarch64-8.3.0-r0: task do_configure: Succeeded
+NOTE: Running task 841 of 1154 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-cross_debian.bb:do_compile)
+NOTE: recipe gcc-cross-aarch64-8.3.0-r0: task do_compile: Started
+NOTE: recipe linux-libc-headers-base-gitAUTOINC+e665510be1-r0: task do_package_write_deb: Succeeded
+NOTE: recipe gcc-cross-aarch64-8.3.0-r0: task do_compile: Succeeded
+NOTE: Running task 842 of 1154 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-cross_debian.bb:do_gcc_stash_builddir)
+NOTE: recipe gcc-cross-aarch64-8.3.0-r0: task do_gcc_stash_builddir: Started
+NOTE: recipe gcc-cross-aarch64-8.3.0-r0: task do_gcc_stash_builddir: Succeeded
+NOTE: Running task 843 of 1154 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-cross_debian.bb:do_install)
+NOTE: recipe gcc-cross-aarch64-8.3.0-r0: task do_install: Started
+NOTE: recipe gcc-cross-aarch64-8.3.0-r0: task do_install: Succeeded
+NOTE: Running task 844 of 1154 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-cross_debian.bb:do_populate_sysroot)
+NOTE: recipe gcc-cross-aarch64-8.3.0-r0: task do_populate_sysroot: Started
+NOTE: recipe gcc-cross-aarch64-8.3.0-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 845 of 1154 (/home/deby/poky/meta-debian/recipes-debian/gcc/libgcc-initial_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe libgcc-initial-8.3.0-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe libgcc-initial-8.3.0-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 846 of 1154 (/home/deby/poky/meta-debian/recipes-debian/gcc/libgcc-initial_debian.bb:do_configure)
+NOTE: recipe libgcc-initial-8.3.0-r0: task do_configure: Started
+NOTE: recipe libgcc-initial-8.3.0-r0: task do_configure: Succeeded
+NOTE: Running task 847 of 1154 (/home/deby/poky/meta-debian/recipes-debian/gcc/libgcc-initial_debian.bb:do_compile)
+NOTE: recipe libgcc-initial-8.3.0-r0: task do_compile: Started
+NOTE: recipe libgcc-initial-8.3.0-r0: task do_compile: Succeeded
+NOTE: Running task 848 of 1154 (/home/deby/poky/meta-debian/recipes-debian/gcc/libgcc-initial_debian.bb:do_install)
+NOTE: recipe libgcc-initial-8.3.0-r0: task do_install: Started
+NOTE: recipe libgcc-initial-8.3.0-r0: task do_install: Succeeded
+NOTE: Running task 849 of 1154 (/home/deby/poky/meta-debian/recipes-debian/gcc/libgcc-initial_debian.bb:do_multilib_install)
+NOTE: recipe libgcc-initial-8.3.0-r0: task do_multilib_install: Started
+NOTE: recipe libgcc-initial-8.3.0-r0: task do_multilib_install: Succeeded
+NOTE: Running task 850 of 1154 (/home/deby/poky/meta-debian/recipes-debian/gcc/libgcc-initial_debian.bb:do_extra_symlinks)
+NOTE: recipe libgcc-initial-8.3.0-r0: task do_extra_symlinks: Started
+NOTE: recipe libgcc-initial-8.3.0-r0: task do_extra_symlinks: Succeeded
+NOTE: Running task 851 of 1154 (/home/deby/poky/meta-debian/recipes-debian/gcc/libgcc-initial_debian.bb:do_populate_sysroot)
+NOTE: recipe libgcc-initial-8.3.0-r0: task do_populate_sysroot: Started
+NOTE: recipe libgcc-initial-8.3.0-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 852 of 1154 (/home/deby/poky/meta-debian/recipes-debian/glibc/glibc_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe glibc-2.28-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe glibc-2.28-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 853 of 1154 (/home/deby/poky/meta-debian/recipes-debian/glibc/glibc_debian.bb:do_configure)
+NOTE: recipe glibc-2.28-r0: task do_configure: Started
+NOTE: recipe glibc-2.28-r0: task do_configure: Succeeded
+NOTE: Running task 854 of 1154 (/home/deby/poky/meta-debian/recipes-debian/glibc/glibc_debian.bb:do_compile)
+NOTE: recipe glibc-2.28-r0: task do_compile: Started
+NOTE: recipe glibc-2.28-r0: task do_compile: Succeeded
+NOTE: Running task 855 of 1154 (/home/deby/poky/meta-debian/recipes-debian/glibc/glibc_debian.bb:do_install)
+NOTE: recipe glibc-2.28-r0: task do_install: Started
+NOTE: recipe glibc-2.28-r0: task do_install: Succeeded
+NOTE: Running task 856 of 1154 (/home/deby/poky/meta-debian/recipes-debian/glibc/glibc_debian.bb:do_stash_locale)
+NOTE: recipe glibc-2.28-r0: task do_stash_locale: Started
+NOTE: recipe glibc-2.28-r0: task do_stash_locale: Succeeded
+NOTE: Running task 857 of 1154 (/home/deby/poky/meta-debian/recipes-debian/glibc/glibc_debian.bb:do_populate_sysroot)
+NOTE: Running task 858 of 1154 (/home/deby/poky/meta-debian/recipes-debian/glibc/glibc_debian.bb:do_package)
+NOTE: Running task 859 of 1154 (/home/deby/poky/meta-debian/recipes-debian/glibc/glibc-locale_debian.bb:do_install)
+NOTE: recipe glibc-2.28-r0: task do_populate_sysroot: Started
+NOTE: recipe glibc-2.28-r0: task do_package: Started
+NOTE: recipe glibc-locale-2.28-r0: task do_install: Started
+NOTE: recipe glibc-2.28-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 860 of 1154 (/home/deby/poky/meta-debian/recipes-debian/gcc/libgcc_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe glibc-locale-2.28-r0: task do_install: Succeeded
+NOTE: Running task 861 of 1154 (/home/deby/poky/meta-debian/recipes-debian/glibc/glibc-locale_debian.bb:do_package)
+NOTE: Running task 862 of 1154 (/home/deby/poky/meta-debian/recipes-debian/glibc/glibc-locale_debian.bb:do_populate_sysroot)
+NOTE: recipe libgcc-8.3.0-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe glibc-locale-2.28-r0: task do_populate_sysroot: Started
+NOTE: recipe glibc-locale-2.28-r0: task do_package: Started
+NOTE: recipe libgcc-8.3.0-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 863 of 1154 (/home/deby/poky/meta-debian/recipes-debian/gcc/libgcc_debian.bb:do_configure)
+NOTE: recipe libgcc-8.3.0-r0: task do_configure: Started
+NOTE: recipe glibc-locale-2.28-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe libgcc-8.3.0-r0: task do_configure: Succeeded
+NOTE: Running task 864 of 1154 (/home/deby/poky/meta-debian/recipes-debian/gcc/libgcc_debian.bb:do_compile)
+NOTE: recipe libgcc-8.3.0-r0: task do_compile: Started
+NOTE: recipe libgcc-8.3.0-r0: task do_compile: Succeeded
+NOTE: Running task 865 of 1154 (/home/deby/poky/meta-debian/recipes-debian/gcc/libgcc_debian.bb:do_install)
+NOTE: recipe libgcc-8.3.0-r0: task do_install: Started
+NOTE: recipe libgcc-8.3.0-r0: task do_install: Succeeded
+NOTE: Running task 866 of 1154 (/home/deby/poky/meta-debian/recipes-debian/gcc/libgcc_debian.bb:do_multilib_install)
+NOTE: recipe libgcc-8.3.0-r0: task do_multilib_install: Started
+NOTE: recipe libgcc-8.3.0-r0: task do_multilib_install: Succeeded
+NOTE: Running task 867 of 1154 (/home/deby/poky/meta-debian/recipes-debian/gcc/libgcc_debian.bb:do_extra_symlinks)
+NOTE: recipe libgcc-8.3.0-r0: task do_extra_symlinks: Started
+NOTE: recipe libgcc-8.3.0-r0: task do_extra_symlinks: Succeeded
+NOTE: Running task 868 of 1154 (/home/deby/poky/meta-debian/recipes-debian/gcc/libgcc_debian.bb:do_populate_sysroot)
+NOTE: recipe libgcc-8.3.0-r0: task do_populate_sysroot: Started
+NOTE: recipe libgcc-8.3.0-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 869 of 1154 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-runtime_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe gcc-runtime-8.3.0-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe gcc-runtime-8.3.0-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 870 of 1154 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-runtime_debian.bb:do_configure)
+NOTE: recipe gcc-runtime-8.3.0-r0: task do_configure: Started
+NOTE: recipe glibc-2.28-r0: task do_package: Succeeded
+NOTE: Running task 871 of 1154 (/home/deby/poky/meta-debian/recipes-debian/glibc/glibc_debian.bb:do_packagedata)
+NOTE: recipe glibc-2.28-r0: task do_packagedata: Started
+NOTE: recipe glibc-2.28-r0: task do_packagedata: Succeeded
+NOTE: Running task 872 of 1154 (/home/deby/poky/meta-debian/recipes-debian/gcc/libgcc_debian.bb:do_package)
+NOTE: Running task 873 of 1154 (/home/deby/poky/meta-debian/recipes-debian/glibc/glibc_debian.bb:do_package_write_deb)
+NOTE: recipe libgcc-8.3.0-r0: task do_package: Started
+NOTE: recipe glibc-2.28-r0: task do_package_write_deb: Started
+NOTE: recipe glibc-2.28-r0: task do_package_write_deb: Succeeded
+NOTE: recipe libgcc-8.3.0-r0: task do_package: Succeeded
+NOTE: Running task 874 of 1154 (/home/deby/poky/meta-debian/recipes-debian/gcc/libgcc_debian.bb:do_packagedata)
+NOTE: recipe libgcc-8.3.0-r0: task do_packagedata: Started
+NOTE: recipe libgcc-8.3.0-r0: task do_packagedata: Succeeded
+NOTE: Running task 875 of 1154 (/home/deby/poky/meta-debian/recipes-debian/gcc/libgcc_debian.bb:do_package_write_deb)
+NOTE: recipe libgcc-8.3.0-r0: task do_package_write_deb: Started
+NOTE: recipe libgcc-8.3.0-r0: task do_package_write_deb: Succeeded
+NOTE: recipe gcc-runtime-8.3.0-r0: task do_configure: Succeeded
+NOTE: Running task 876 of 1154 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-runtime_debian.bb:do_compile)
+NOTE: recipe gcc-runtime-8.3.0-r0: task do_compile: Started
+NOTE: recipe gcc-runtime-8.3.0-r0: task do_compile: Succeeded
+NOTE: Running task 877 of 1154 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-runtime_debian.bb:do_install)
+NOTE: recipe gcc-runtime-8.3.0-r0: task do_install: Started
+NOTE: recipe gcc-runtime-8.3.0-r0: task do_install: Succeeded
+NOTE: Running task 878 of 1154 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-runtime_debian.bb:do_populate_sysroot)
+NOTE: Running task 879 of 1154 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-runtime_debian.bb:do_package)
+NOTE: recipe gcc-runtime-8.3.0-r0: task do_populate_sysroot: Started
+NOTE: recipe gcc-runtime-8.3.0-r0: task do_package: Started
+NOTE: recipe glibc-locale-2.28-r0: task do_package: Succeeded
+NOTE: Running task 880 of 1154 (/home/deby/poky/meta-debian/recipes-debian/glibc/glibc-locale_debian.bb:do_packagedata)
+NOTE: recipe gcc-runtime-8.3.0-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 881 of 1154 (/home/deby/poky/meta-debian/recipes-debian/libtool/libtool-cross_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe glibc-locale-2.28-r0: task do_packagedata: Started
+NOTE: Running task 882 of 1154 (/home/deby/poky/meta/recipes-devtools/opkg-utils/opkg-utils_0.4.0.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 883 of 1154 (/home/deby/poky/meta-debian/recipes-debian/zlib/zlib_debian.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 884 of 1154 (/home/deby/poky/meta-debian/recipes-debian/openssl/openssl_debian.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 885 of 1154 (/home/deby/poky/meta-debian/recipes-debian/perl/perl_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe opkg-utils-0.4.0-r0: task do_prepare_recipe_sysroot: Started
+NOTE: Running task 886 of 1154 (/home/deby/poky/meta-debian/recipes-debian/lsb/lsb_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe zlib-1.2.11-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe libtool-cross-2.4.6-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe openssl-1.1.1d-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe glibc-locale-2.28-r0: task do_packagedata: Succeeded
+NOTE: recipe perl-5.28.1-r1: task do_prepare_recipe_sysroot: Started
+NOTE: recipe lsb-10.2019051400-r0: task do_prepare_recipe_sysroot: Started
+NOTE: Running task 887 of 1154 (/home/deby/poky/meta-debian/recipes-debian/glibc/glibc-locale_debian.bb:do_package_write_deb)
+NOTE: recipe glibc-locale-2.28-r0: task do_package_write_deb: Started
+NOTE: recipe lsb-10.2019051400-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 888 of 1154 (/home/deby/poky/meta-debian/recipes-debian/lsb/lsb_debian.bb:do_configure)
+NOTE: recipe lsb-10.2019051400-r0: task do_configure: Started
+NOTE: recipe perl-5.28.1-r1: task do_prepare_recipe_sysroot: Succeeded
+NOTE: recipe lsb-10.2019051400-r0: task do_configure: Succeeded
+NOTE: Running task 889 of 1154 (/home/deby/poky/meta-debian/recipes-debian/perl/perl_debian.bb:do_configure)
+NOTE: Running task 890 of 1154 (/home/deby/poky/meta-debian/recipes-debian/lsb/lsb_debian.bb:do_compile)
+NOTE: recipe libtool-cross-2.4.6-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 891 of 1154 (/home/deby/poky/meta-debian/recipes-debian/libtool/libtool-cross_debian.bb:do_configure)
+NOTE: recipe perl-5.28.1-r1: task do_configure: Started
+NOTE: recipe lsb-10.2019051400-r0: task do_compile: Started
+NOTE: recipe libtool-cross-2.4.6-r0: task do_configure: Started
+NOTE: recipe lsb-10.2019051400-r0: task do_compile: Succeeded
+NOTE: Running task 892 of 1154 (/home/deby/poky/meta-debian/recipes-debian/lsb/lsb_debian.bb:do_install)
+NOTE: recipe lsb-10.2019051400-r0: task do_install: Started
+NOTE: recipe zlib-1.2.11-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 893 of 1154 (/home/deby/poky/meta-debian/recipes-debian/zlib/zlib_debian.bb:do_configure)
+NOTE: recipe opkg-utils-0.4.0-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: recipe openssl-1.1.1d-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 894 of 1154 (/home/deby/poky/meta/recipes-devtools/opkg-utils/opkg-utils_0.4.0.bb:do_configure)
+NOTE: Running task 895 of 1154 (/home/deby/poky/meta-debian/recipes-debian/openssl/openssl_debian.bb:do_configure)
+NOTE: recipe zlib-1.2.11-r0: task do_configure: Started
+NOTE: recipe opkg-utils-0.4.0-r0: task do_configure: Started
+NOTE: recipe openssl-1.1.1d-r0: task do_configure: Started
+NOTE: recipe opkg-utils-0.4.0-r0: task do_configure: Succeeded
+NOTE: Running task 896 of 1154 (/home/deby/poky/meta/recipes-devtools/opkg-utils/opkg-utils_0.4.0.bb:do_compile)
+NOTE: recipe lsb-10.2019051400-r0: task do_install: Succeeded
+NOTE: recipe opkg-utils-0.4.0-r0: task do_compile: Started
+NOTE: recipe opkg-utils-0.4.0-r0: task do_compile: Succeeded
+NOTE: Running task 897 of 1154 (/home/deby/poky/meta/recipes-devtools/opkg-utils/opkg-utils_0.4.0.bb:do_install)
+NOTE: recipe opkg-utils-0.4.0-r0: task do_install: Started
+NOTE: recipe opkg-utils-0.4.0-r0: task do_install: Succeeded
+NOTE: Running task 898 of 1154 (/home/deby/poky/meta/recipes-devtools/opkg-utils/opkg-utils_0.4.0.bb:do_populate_sysroot)
+NOTE: recipe opkg-utils-0.4.0-r0: task do_populate_sysroot: Started
+NOTE: recipe opkg-utils-0.4.0-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe zlib-1.2.11-r0: task do_configure: Succeeded
+NOTE: Running task 899 of 1154 (/home/deby/poky/meta-debian/recipes-debian/zlib/zlib_debian.bb:do_compile)
+NOTE: recipe zlib-1.2.11-r0: task do_compile: Started
+NOTE: recipe zlib-1.2.11-r0: task do_compile: Succeeded
+NOTE: Running task 900 of 1154 (/home/deby/poky/meta-debian/recipes-debian/zlib/zlib_debian.bb:do_install)
+NOTE: recipe zlib-1.2.11-r0: task do_install: Started
+NOTE: recipe zlib-1.2.11-r0: task do_install: Succeeded
+NOTE: Running task 901 of 1154 (/home/deby/poky/meta-debian/recipes-debian/zlib/zlib_debian.bb:do_populate_sysroot)
+NOTE: recipe zlib-1.2.11-r0: task do_populate_sysroot: Started
+NOTE: recipe gcc-runtime-8.3.0-r0: task do_package: Succeeded
+NOTE: Running task 902 of 1154 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-runtime_debian.bb:do_packagedata)
+NOTE: recipe gcc-runtime-8.3.0-r0: task do_packagedata: Started
+NOTE: recipe gcc-runtime-8.3.0-r0: task do_packagedata: Succeeded
+NOTE: Running task 903 of 1154 (/home/deby/poky/meta/recipes-devtools/opkg-utils/opkg-utils_0.4.0.bb:do_package)
+NOTE: Running task 904 of 1154 (/home/deby/poky/meta-debian/recipes-debian/zlib/zlib_debian.bb:do_package)
+NOTE: Running task 905 of 1154 (/home/deby/poky/meta-debian/recipes-debian/lsb/lsb_debian.bb:do_package)
+NOTE: Running task 906 of 1154 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-runtime_debian.bb:do_package_write_deb)
+NOTE: recipe opkg-utils-0.4.0-r0: task do_package: Started
+NOTE: recipe zlib-1.2.11-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe zlib-1.2.11-r0: task do_package: Started
+NOTE: recipe lsb-10.2019051400-r0: task do_package: Started
+NOTE: recipe gcc-runtime-8.3.0-r0: task do_package_write_deb: Started
+NOTE: recipe openssl-1.1.1d-r0: task do_configure: Succeeded
+NOTE: Running task 907 of 1154 (/home/deby/poky/meta-debian/recipes-debian/openssl/openssl_debian.bb:do_compile)
+NOTE: recipe openssl-1.1.1d-r0: task do_compile: Started
+NOTE: recipe gcc-runtime-8.3.0-r0: task do_package_write_deb: Succeeded
+NOTE: recipe libtool-cross-2.4.6-r0: task do_configure: Succeeded
+NOTE: Running task 908 of 1154 (/home/deby/poky/meta-debian/recipes-debian/libtool/libtool-cross_debian.bb:do_compile)
+NOTE: recipe libtool-cross-2.4.6-r0: task do_compile: Started
+NOTE: recipe libtool-cross-2.4.6-r0: task do_compile: Succeeded
+NOTE: Running task 909 of 1154 (/home/deby/poky/meta-debian/recipes-debian/libtool/libtool-cross_debian.bb:do_install)
+NOTE: recipe libtool-cross-2.4.6-r0: task do_install: Started
+NOTE: recipe libtool-cross-2.4.6-r0: task do_install: Succeeded
+NOTE: Running task 910 of 1154 (/home/deby/poky/meta-debian/recipes-debian/libtool/libtool-cross_debian.bb:do_populate_sysroot)
+NOTE: Running task 911 of 1154 (/home/deby/poky/meta-debian/recipes-debian/libtool/libtool-cross_debian.bb:do_package)
+NOTE: recipe libtool-cross-2.4.6-r0: task do_populate_sysroot: Started
+NOTE: recipe libtool-cross-2.4.6-r0: task do_package: Started
+NOTE: recipe libtool-cross-2.4.6-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 912 of 1154 (/home/deby/poky/meta-debian/recipes-debian/ncurses/ncurses_debian.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 913 of 1154 (/home/deby/poky/meta-debian/recipes-debian/libxcrypt/libxcrypt_debian.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 914 of 1154 (/home/deby/poky/meta-debian/recipes-debian/libtirpc/libtirpc_debian.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 915 of 1154 (/home/deby/poky/meta-debian/recipes-debian/sqlite3/sqlite3_debian.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 916 of 1154 (/home/deby/poky/meta-debian/recipes-debian/bzip2/bzip2_debian.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 917 of 1154 (/home/deby/poky/meta-debian/recipes-debian/bash-completion/bash-completion_debian.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 918 of 1154 (/home/deby/poky/meta-debian/recipes-debian/gdbm/gdbm_debian.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 919 of 1154 (/home/deby/poky/meta-debian/recipes-debian/libffi/libffi_debian.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 920 of 1154 (/home/deby/poky/meta-debian/recipes-debian/xz/xz_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe libxcrypt-4.1.1-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe ncurses-6.1+20181013-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe sqlite3-3_3.27.2-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe libtirpc-1.1.4-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe libffi-3.2.1-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe bash-completion-2.8-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe xz-5.2.4-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe gdbm-1.18.1-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe bzip2-1.0.6-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe libxcrypt-4.1.1-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: recipe libtirpc-1.1.4-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 921 of 1154 (/home/deby/poky/meta-debian/recipes-debian/libxcrypt/libxcrypt_debian.bb:do_configure)
+NOTE: Running task 922 of 1154 (/home/deby/poky/meta-debian/recipes-debian/libtirpc/libtirpc_debian.bb:do_configure)
+NOTE: recipe xz-5.2.4-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 923 of 1154 (/home/deby/poky/meta-debian/recipes-debian/xz/xz_debian.bb:do_configure)
+NOTE: recipe libxcrypt-4.1.1-r0: task do_configure: Started
+NOTE: recipe bash-completion-2.8-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 924 of 1154 (/home/deby/poky/meta-debian/recipes-debian/bash-completion/bash-completion_debian.bb:do_configure)
+NOTE: recipe libtirpc-1.1.4-r0: task do_configure: Started
+NOTE: recipe gdbm-1.18.1-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 925 of 1154 (/home/deby/poky/meta-debian/recipes-debian/gdbm/gdbm_debian.bb:do_configure)
+NOTE: recipe xz-5.2.4-r0: task do_configure: Started
+NOTE: recipe bash-completion-2.8-r0: task do_configure: Started
+NOTE: recipe gdbm-1.18.1-r0: task do_configure: Started
+NOTE: recipe libffi-3.2.1-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 926 of 1154 (/home/deby/poky/meta-debian/recipes-debian/libffi/libffi_debian.bb:do_configure)
+NOTE: recipe libffi-3.2.1-r0: task do_configure: Started
+NOTE: recipe bzip2-1.0.6-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 927 of 1154 (/home/deby/poky/meta-debian/recipes-debian/bzip2/bzip2_debian.bb:do_configure)
+NOTE: recipe bzip2-1.0.6-r0: task do_configure: Started
+NOTE: recipe libtool-cross-2.4.6-r0: task do_package: Succeeded
+NOTE: recipe sqlite3-3_3.27.2-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 928 of 1154 (/home/deby/poky/meta-debian/recipes-debian/sqlite3/sqlite3_debian.bb:do_configure)
+NOTE: Running task 929 of 1154 (/home/deby/poky/meta-debian/recipes-debian/libtool/libtool-cross_debian.bb:do_packagedata)
+NOTE: recipe sqlite3-3_3.27.2-r0: task do_configure: Started
+NOTE: recipe libtool-cross-2.4.6-r0: task do_packagedata: Started
+NOTE: recipe ncurses-6.1+20181013-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 930 of 1154 (/home/deby/poky/meta-debian/recipes-debian/ncurses/ncurses_debian.bb:do_configure)
+NOTE: recipe libtool-cross-2.4.6-r0: task do_packagedata: Succeeded
+NOTE: Running task 931 of 1154 (/home/deby/poky/meta-debian/recipes-debian/nspr/nspr_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe ncurses-6.1+20181013-r0: task do_configure: Started
+NOTE: recipe nspr-4.20-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe nspr-4.20-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 932 of 1154 (/home/deby/poky/meta-debian/recipes-debian/libpcap/libpcap_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe libpcap-1.8.1-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe libpcap-1.8.1-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 933 of 1154 (/home/deby/poky/meta-debian/recipes-debian/nspr/nspr_debian.bb:do_configure)
+NOTE: recipe nspr-4.20-r0: task do_configure: Started
+NOTE: recipe bash-completion-2.8-r0: task do_configure: Succeeded
+NOTE: Running task 934 of 1154 (/home/deby/poky/meta-debian/recipes-debian/bash-completion/bash-completion_debian.bb:do_compile)
+NOTE: recipe bash-completion-2.8-r0: task do_compile: Started
+NOTE: recipe bash-completion-2.8-r0: task do_compile: Succeeded
+NOTE: Running task 935 of 1154 (/home/deby/poky/meta-debian/recipes-debian/bash-completion/bash-completion_debian.bb:do_install)
+NOTE: recipe bash-completion-2.8-r0: task do_install: Started
+NOTE: recipe glibc-locale-2.28-r0: task do_package_write_deb: Succeeded
+NOTE: Running task 936 of 1154 (/home/deby/poky/meta-debian/recipes-debian/libpcap/libpcap_debian.bb:do_configure)
+NOTE: recipe libpcap-1.8.1-r0: task do_configure: Started
+ERROR: libpcap-1.8.1-r0 do_configure: Function failed: do_configure (log file is located at /home/deby/build/tmp/work/aarch64-deby-linux/libpcap/1.8.1-r0/temp/log.do_configure.13030)
+ERROR: Logfile of failure stored in: /home/deby/build/tmp/work/aarch64-deby-linux/libpcap/1.8.1-r0/temp/log.do_configure.13030
+Log data follows:
+| DEBUG: SITE files ['endian-little', 'bit-64', 'arm-common', 'arm-64', 'common-linux', 'common-glibc', 'aarch64-linux', 'common']
+| DEBUG: Executing shell function autotools_preconfigure
+| DEBUG: Shell function autotools_preconfigure finished
+| DEBUG: Executing python function autotools_aclocals
+| DEBUG: SITE files ['endian-little', 'bit-64', 'arm-common', 'arm-64', 'common-linux', 'common-glibc', 'aarch64-linux', 'common']
+| DEBUG: Python function autotools_aclocals finished
+| DEBUG: Executing shell function do_configure
+| /home/deby/build/tmp/work/aarch64-deby-linux/libpcap/1.8.1-r0/temp/run.do_configure.13030: 113: /home/deby/build/tmp/work/aarch64-deby-linux/libpcap/1.8.1-r0/temp/run.do_configure.13030: srcdir: not found
+| sed: can't read /Makefile.in: No such file or directory
+| WARNING: exit code 2 from a shell command.
+| ERROR: Function failed: do_configure (log file is located at /home/deby/build/tmp/work/aarch64-deby-linux/libpcap/1.8.1-r0/temp/log.do_configure.13030)
+NOTE: recipe libpcap-1.8.1-r0: task do_configure: Failed
+ERROR: Task (/home/deby/poky/meta-debian/recipes-debian/libpcap/libpcap_debian.bb:do_configure) failed with exit code '1'
+NOTE: Running task 937 of 1154 (/home/deby/poky/meta-debian/recipes-debian/jansson/jansson_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe jansson-2.12-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe bzip2-1.0.6-r0: task do_configure: Succeeded
+NOTE: recipe jansson-2.12-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: recipe nspr-4.20-r0: task do_configure: Succeeded
+NOTE: recipe libxcrypt-4.1.1-r0: task do_configure: Succeeded
+NOTE: recipe openssl-1.1.1d-r0: task do_compile: Succeeded
+NOTE: recipe bash-completion-2.8-r0: task do_install: Succeeded
+NOTE: recipe libtirpc-1.1.4-r0: task do_configure: Succeeded
+NOTE: recipe opkg-utils-0.4.0-r0: task do_package: Succeeded
+NOTE: recipe lsb-10.2019051400-r0: task do_package: Succeeded
+NOTE: recipe zlib-1.2.11-r0: task do_package: Succeeded
+NOTE: recipe sqlite3-3_3.27.2-r0: task do_configure: Succeeded
+NOTE: recipe gdbm-1.18.1-r0: task do_configure: Succeeded
+NOTE: recipe libffi-3.2.1-r0: task do_configure: Succeeded
+NOTE: recipe xz-5.2.4-r0: task do_configure: Succeeded
+NOTE: recipe ncurses-6.1+20181013-r0: task do_configure: Succeeded
+NOTE: recipe perl-5.28.1-r1: task do_configure: Succeeded
+NOTE: Tasks Summary: Attempted 937 tasks of which 621 didn't need to be rerun and 1 failed.
+
+Summary: 1 task failed:
+  /home/deby/poky/meta-debian/recipes-debian/libpcap/libpcap_debian.bb:do_configure
+Summary: There was 1 ERROR message shown, returning a non-zero exit code.

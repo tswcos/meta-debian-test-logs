@@ -1,0 +1,76 @@
+Loading cache...done.
+Loaded 2058 entries from dependency cache.
+Parsing recipes...done.
+Parsing of 1265 .bb files complete (1263 cached, 2 parsed). 2061 targets, 199 skipped, 0 masked, 0 errors.
+WARNING: No bb files matched BBFILE_PATTERN_dti '^/home/deby/poky/meta-debian/tests/../../meta-debian/bsp/meta-ti/'
+NOTE: Resolving any missing task queue dependencies
+
+Build Configuration:
+BB_VERSION           = "1.42.0"
+BUILD_SYS            = "x86_64-linux"
+NATIVELSBSTRING      = "universal"
+TARGET_SYS           = "arm-deby-linux-gnueabi"
+MACHINE              = "beaglebone"
+DISTRO               = "deby"
+DISTRO_VERSION       = "10.0"
+TUNE_FEATURES        = "arm armv7a vfp thumb neon callconvention-hard"
+TARGET_FPU           = "hard"
+meta                 
+meta-poky            = "warrior:023ff85a9ae94331926e923b346fd8a349881e63"
+meta-debian          = "warrior:8e157b1a7a3a3ae1224ea194f0fc9e25772d0e07"
+meta-ti              = "master:036668d1e30e6a344a362854c24b45cde169ddec"
+meta-ti              = "warrior:8e157b1a7a3a3ae1224ea194f0fc9e25772d0e07"
+
+Initialising tasks...done.
+Sstate summary: Wanted 6 Found 0 Missed 6 Current 75 (0% match, 92% complete)
+NOTE: Executing SetScene Tasks
+NOTE: Executing RunQueue Tasks
+NOTE: Running task 520 of 593 (/home/deby/poky/meta-debian/recipes-debian/json-c/json-c_debian.bb:do_fetch)
+NOTE: recipe json-c-0.12.1-r0: task do_fetch: Started
+NOTE: recipe json-c-0.12.1-r0: task do_fetch: Succeeded
+NOTE: Running task 579 of 593 (/home/deby/poky/meta-debian/recipes-debian/json-c/json-c_debian.bb:do_unpack)
+NOTE: Running task 580 of 593 (/home/deby/poky/meta-debian/recipes-debian/json-c/json-c_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe json-c-0.12.1-r0: task do_unpack: Started
+NOTE: recipe json-c-0.12.1-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe json-c-0.12.1-r0: task do_unpack: Succeeded
+NOTE: Running task 581 of 593 (/home/deby/poky/meta-debian/recipes-debian/json-c/json-c_debian.bb:do_debian_unpack_extra)
+NOTE: recipe json-c-0.12.1-r0: task do_debian_unpack_extra: Started
+NOTE: recipe json-c-0.12.1-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: recipe json-c-0.12.1-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 582 of 593 (/home/deby/poky/meta-debian/recipes-debian/json-c/json-c_debian.bb:do_debian_patch)
+NOTE: recipe json-c-0.12.1-r0: task do_debian_patch: Started
+NOTE: recipe json-c-0.12.1-r0: task do_debian_patch: Succeeded
+NOTE: Running task 583 of 593 (/home/deby/poky/meta-debian/recipes-debian/json-c/json-c_debian.bb:do_patch)
+NOTE: recipe json-c-0.12.1-r0: task do_patch: Started
+NOTE: recipe json-c-0.12.1-r0: task do_patch: Succeeded
+NOTE: Running task 584 of 593 (/home/deby/poky/meta-debian/recipes-debian/json-c/json-c_debian.bb:do_configure)
+NOTE: Running task 585 of 593 (/home/deby/poky/meta-debian/recipes-debian/json-c/json-c_debian.bb:do_populate_lic)
+NOTE: recipe json-c-0.12.1-r0: task do_configure: Started
+NOTE: recipe json-c-0.12.1-r0: task do_populate_lic: Started
+NOTE: recipe json-c-0.12.1-r0: task do_populate_lic: Succeeded
+NOTE: recipe json-c-0.12.1-r0: task do_configure: Succeeded
+NOTE: Running task 586 of 593 (/home/deby/poky/meta-debian/recipes-debian/json-c/json-c_debian.bb:do_compile)
+NOTE: recipe json-c-0.12.1-r0: task do_compile: Started
+NOTE: recipe json-c-0.12.1-r0: task do_compile: Succeeded
+NOTE: Running task 587 of 593 (/home/deby/poky/meta-debian/recipes-debian/json-c/json-c_debian.bb:do_install)
+NOTE: recipe json-c-0.12.1-r0: task do_install: Started
+NOTE: recipe json-c-0.12.1-r0: task do_install: Succeeded
+NOTE: Running task 588 of 593 (/home/deby/poky/meta-debian/recipes-debian/json-c/json-c_debian.bb:do_package)
+NOTE: Running task 589 of 593 (/home/deby/poky/meta-debian/recipes-debian/json-c/json-c_debian.bb:do_populate_sysroot)
+NOTE: recipe json-c-0.12.1-r0: task do_package: Started
+NOTE: recipe json-c-0.12.1-r0: task do_populate_sysroot: Started
+NOTE: recipe json-c-0.12.1-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe json-c-0.12.1-r0: task do_package: Succeeded
+NOTE: Running task 590 of 593 (/home/deby/poky/meta-debian/recipes-debian/json-c/json-c_debian.bb:do_packagedata)
+NOTE: recipe json-c-0.12.1-r0: task do_packagedata: Started
+NOTE: recipe json-c-0.12.1-r0: task do_packagedata: Succeeded
+NOTE: Running task 591 of 593 (/home/deby/poky/meta-debian/recipes-debian/json-c/json-c_debian.bb:do_package_write_deb)
+NOTE: Running task 592 of 593 (/home/deby/poky/meta-debian/recipes-debian/json-c/json-c_debian.bb:do_package_qa)
+NOTE: recipe json-c-0.12.1-r0: task do_package_write_deb: Started
+NOTE: recipe json-c-0.12.1-r0: task do_package_qa: Started
+NOTE: recipe json-c-0.12.1-r0: task do_package_qa: Succeeded
+NOTE: recipe json-c-0.12.1-r0: task do_package_write_deb: Succeeded
+NOTE: Running noexec task 593 of 593 (/home/deby/poky/meta-debian/recipes-debian/json-c/json-c_debian.bb:do_build)
+NOTE: Tasks Summary: Attempted 593 tasks of which 577 didn't need to be rerun and all succeeded.
+
+Summary: There was 1 WARNING message shown.

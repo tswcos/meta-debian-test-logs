@@ -1,0 +1,438 @@
+Parsing recipes...done.
+Parsing of 1030 .bb files complete (0 cached, 1030 parsed). 1806 targets, 225 skipped, 0 masked, 0 errors.
+NOTE: Resolving any missing task queue dependencies
+
+Build Configuration:
+BB_VERSION           = "1.42.0"
+BUILD_SYS            = "x86_64-linux"
+NATIVELSBSTRING      = "universal"
+TARGET_SYS           = "arm-deby-linux-gnueabi"
+MACHINE              = "qemuarm"
+DISTRO               = "deby-tiny"
+DISTRO_VERSION       = "10.0"
+TUNE_FEATURES        = "arm armv7ve vfp thumb neon callconvention-hard"
+TARGET_FPU           = "hard"
+meta                 
+meta-poky            = "warrior:023ff85a9ae94331926e923b346fd8a349881e63"
+meta-debian          = "warrior:8e157b1a7a3a3ae1224ea194f0fc9e25772d0e07"
+
+Initialising tasks...done.
+Sstate summary: Wanted 40 Found 0 Missed 40 Current 77 (0% match, 65% complete)
+NOTE: Executing SetScene Tasks
+NOTE: Executing RunQueue Tasks
+NOTE: Running task 538 of 746 (/home/deby/poky/meta-debian/recipes-debian/libmnl/libmnl_debian.bb:do_fetch)
+NOTE: Running task 540 of 746 (/home/deby/poky/meta-debian/recipes-debian/kmod/kmod-native_debian.bb:do_fetch)
+NOTE: Running task 541 of 746 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/ed/ed_debian.bb:do_fetch)
+NOTE: Running task 542 of 746 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/lzop/lzop_debian.bb:do_fetch)
+NOTE: Running task 543 of 746 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/bc/bc_debian.bb:do_fetch)
+NOTE: Running task 544 of 746 (/home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb:do_fetch)
+NOTE: Running task 555 of 746 (/home/deby/poky/meta-debian/recipes-debian/gmp/gmp_debian.bb:do_fetch)
+NOTE: Running task 556 of 746 (/home/deby/poky/meta-debian/recipes-debian/libnftnl/libnftnl_debian.bb:do_fetch)
+NOTE: Running task 578 of 746 (/home/deby/poky/meta-debian/recipes-debian/nftables/nftables_debian.bb:do_fetch)
+NOTE: Running task 586 of 746 (/home/deby/poky/meta-debian/recipes-debian/ncurses/ncurses_debian.bb:do_compile)
+NOTE: Running task 614 of 746 (/home/deby/poky/meta/recipes-devtools/opkg-utils/opkg-utils_0.4.0.bb:do_packagedata)
+NOTE: Running task 615 of 746 (/home/deby/poky/meta/recipes-kernel/kmod/depmodwrapper-cross_1.0.bb:do_fetch)
+NOTE: Running task 620 of 746 (/home/deby/poky/meta-debian/recipes-debian/libtool/libtool-cross_debian.bb:do_package_write_deb)
+NOTE: recipe kmod-native-26-r0: task do_fetch: Started
+NOTE: recipe libmnl-1.0.4-r0: task do_fetch: Started
+NOTE: recipe libnftnl-1.1.2-r0: task do_fetch: Started
+NOTE: recipe opkg-utils-0.4.0-r0: task do_packagedata: Started
+NOTE: recipe gmp-6.1.2-r0: task do_fetch: Started
+NOTE: recipe depmodwrapper-cross-1.0-r0: task do_fetch: Started
+NOTE: recipe depmodwrapper-cross-1.0-r0: task do_fetch: Succeeded
+NOTE: Running task 621 of 746 (/home/deby/poky/meta/recipes-kernel/kmod/depmodwrapper-cross_1.0.bb:do_unpack)
+NOTE: recipe ncurses-6.1+20181013-r0: task do_compile: Started
+NOTE: recipe ed-native-1.15-r0: task do_fetch: Started
+NOTE: recipe nftables-0.9.0-r0: task do_fetch: Started
+NOTE: recipe libtool-cross-2.4.6-r0: task do_package_write_deb: Started
+NOTE: recipe linux-base-gitAUTOINC+e665510be1-r0: task do_fetch: Started
+NOTE: recipe bc-native-1.07.1-r0: task do_fetch: Started
+NOTE: recipe depmodwrapper-cross-1.0-r0: task do_unpack: Started
+NOTE: recipe opkg-utils-0.4.0-r0: task do_packagedata: Succeeded
+NOTE: Running task 622 of 746 (/home/deby/poky/meta/recipes-devtools/opkg-utils/opkg-utils_0.4.0.bb:do_package_write_deb)
+NOTE: recipe lzop-native-1.03-r0: task do_fetch: Started
+NOTE: recipe ed-native-1.15-r0: task do_fetch: Succeeded
+NOTE: recipe depmodwrapper-cross-1.0-r0: task do_unpack: Succeeded
+NOTE: recipe gmp-6.1.2-r0: task do_fetch: Succeeded
+NOTE: recipe libtool-cross-2.4.6-r0: task do_package_write_deb: Succeeded
+NOTE: recipe kmod-native-26-r0: task do_fetch: Succeeded
+NOTE: recipe libmnl-1.0.4-r0: task do_fetch: Succeeded
+NOTE: recipe nftables-0.9.0-r0: task do_fetch: Succeeded
+NOTE: Running task 623 of 746 (/home/deby/poky/meta-debian/recipes-debian/libmnl/libmnl_debian.bb:do_unpack)
+NOTE: recipe lzop-native-1.03-r0: task do_fetch: Succeeded
+NOTE: recipe bc-native-1.07.1-r0: task do_fetch: Succeeded
+NOTE: recipe linux-base-gitAUTOINC+e665510be1-r0: task do_fetch: Succeeded
+NOTE: Running task 624 of 746 (/home/deby/poky/meta-debian/recipes-debian/kmod/kmod-native_debian.bb:do_unpack)
+NOTE: Running task 625 of 746 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/ed/ed_debian.bb:do_unpack)
+NOTE: Running task 626 of 746 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/lzop/lzop_debian.bb:do_unpack)
+NOTE: Running task 627 of 746 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/bc/bc_debian.bb:do_unpack)
+NOTE: Running task 628 of 746 (/home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb:do_unpack)
+NOTE: Running task 629 of 746 (/home/deby/poky/meta-debian/recipes-debian/gmp/gmp_debian.bb:do_unpack)
+NOTE: Running task 630 of 746 (/home/deby/poky/meta-debian/recipes-debian/libmnl/libmnl_debian.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 631 of 746 (/home/deby/poky/meta-debian/recipes-debian/kmod/kmod-native_debian.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 632 of 746 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/ed/ed_debian.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 633 of 746 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/lzop/lzop_debian.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 634 of 746 (/home/deby/poky/meta-debian/recipes-debian/nftables/nftables_debian.bb:do_unpack)
+NOTE: Running task 635 of 746 (/home/deby/poky/meta-debian/recipes-debian/gmp/gmp_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe kmod-native-26-r0: task do_unpack: Started
+NOTE: recipe libmnl-1.0.4-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe kmod-native-26-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe libmnl-1.0.4-r0: task do_unpack: Started
+NOTE: recipe gmp-6.1.2-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe ed-native-1.15-r0: task do_unpack: Started
+NOTE: recipe gmp-6.1.2-r0: task do_unpack: Started
+NOTE: recipe lzop-native-1.03-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe lzop-native-1.03-r0: task do_unpack: Started
+NOTE: recipe linux-base-gitAUTOINC+e665510be1-r0: task do_unpack: Started
+NOTE: recipe bc-native-1.07.1-r0: task do_unpack: Started
+NOTE: recipe nftables-0.9.0-r0: task do_unpack: Started
+NOTE: recipe opkg-utils-0.4.0-r0: task do_package_write_deb: Started
+NOTE: recipe ed-native-1.15-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe bc-native-1.07.1-r0: task do_unpack: Succeeded
+NOTE: recipe ed-native-1.15-r0: task do_unpack: Succeeded
+NOTE: recipe kmod-native-26-r0: task do_unpack: Succeeded
+NOTE: recipe lzop-native-1.03-r0: task do_unpack: Succeeded
+NOTE: Running task 636 of 746 (/home/deby/poky/meta-debian/recipes-debian/kmod/kmod-native_debian.bb:do_debian_unpack_extra)
+NOTE: Running task 637 of 746 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/ed/ed_debian.bb:do_debian_unpack_extra)
+NOTE: Running task 638 of 746 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/bc/bc_debian.bb:do_debian_unpack_extra)
+NOTE: Running task 639 of 746 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/lzop/lzop_debian.bb:do_debian_unpack_extra)
+NOTE: recipe kmod-native-26-r0: task do_debian_unpack_extra: Started
+NOTE: recipe ed-native-1.15-r0: task do_debian_unpack_extra: Started
+NOTE: recipe libmnl-1.0.4-r0: task do_unpack: Succeeded
+NOTE: Running task 640 of 746 (/home/deby/poky/meta-debian/recipes-debian/libmnl/libmnl_debian.bb:do_debian_unpack_extra)
+NOTE: recipe lzop-native-1.03-r0: task do_debian_unpack_extra: Started
+NOTE: recipe bc-native-1.07.1-r0: task do_debian_unpack_extra: Started
+NOTE: recipe libmnl-1.0.4-r0: task do_debian_unpack_extra: Started
+NOTE: recipe kmod-native-26-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 641 of 746 (/home/deby/poky/meta-debian/recipes-debian/kmod/kmod-native_debian.bb:do_debian_patch)
+NOTE: recipe nftables-0.9.0-r0: task do_unpack: Succeeded
+NOTE: Running task 642 of 746 (/home/deby/poky/meta-debian/recipes-debian/nftables/nftables_debian.bb:do_debian_unpack_extra)
+NOTE: recipe lzop-native-1.03-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: recipe ed-native-1.15-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: recipe ed-native-1.15-r0: task do_debian_unpack_extra: Succeeded
+NOTE: recipe bc-native-1.07.1-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 643 of 746 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/ed/ed_debian.bb:do_debian_patch)
+NOTE: Running task 644 of 746 (/home/deby/poky/meta/recipes-kernel/kmod/depmodwrapper-cross_1.0.bb:do_patch)
+NOTE: recipe libnftnl-1.1.2-r0: task do_fetch: Succeeded
+NOTE: Running task 645 of 746 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/bc/bc_debian.bb:do_debian_patch)
+NOTE: Running task 646 of 746 (/home/deby/poky/meta-debian/recipes-debian/libnftnl/libnftnl_debian.bb:do_unpack)
+NOTE: recipe libmnl-1.0.4-r0: task do_debian_unpack_extra: Succeeded
+NOTE: recipe lzop-native-1.03-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 647 of 746 (/home/deby/poky/meta-debian/recipes-debian/libmnl/libmnl_debian.bb:do_debian_patch)
+NOTE: Running task 648 of 746 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/lzop/lzop_debian.bb:do_debian_patch)
+NOTE: recipe kmod-native-26-r0: task do_debian_patch: Started
+NOTE: recipe depmodwrapper-cross-1.0-r0: task do_patch: Started
+NOTE: recipe nftables-0.9.0-r0: task do_debian_unpack_extra: Started
+NOTE: recipe libmnl-1.0.4-r0: task do_debian_patch: Started
+NOTE: recipe gmp-6.1.2-r0: task do_unpack: Succeeded
+NOTE: recipe ed-native-1.15-r0: task do_debian_patch: Started
+NOTE: Running task 649 of 746 (/home/deby/poky/meta-debian/recipes-debian/gmp/gmp_debian.bb:do_debian_unpack_extra)
+NOTE: recipe libnftnl-1.1.2-r0: task do_unpack: Started
+NOTE: recipe depmodwrapper-cross-1.0-r0: task do_patch: Succeeded
+NOTE: recipe bc-native-1.07.1-r0: task do_debian_patch: Started
+NOTE: recipe nftables-0.9.0-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 650 of 746 (/home/deby/poky/meta-debian/recipes-debian/nftables/nftables_debian.bb:do_debian_patch)
+NOTE: recipe lzop-native-1.03-r0: task do_debian_patch: Started
+NOTE: recipe ed-native-1.15-r0: task do_debian_patch: Succeeded
+NOTE: Running task 651 of 746 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/ed/ed_debian.bb:do_patch)
+NOTE: recipe gmp-6.1.2-r0: task do_debian_unpack_extra: Started
+NOTE: recipe nftables-0.9.0-r0: task do_debian_patch: Started
+NOTE: recipe gmp-6.1.2-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 652 of 746 (/home/deby/poky/meta-debian/recipes-debian/gmp/gmp_debian.bb:do_debian_patch)
+NOTE: recipe libnftnl-1.1.2-r0: task do_unpack: Succeeded
+NOTE: Running task 653 of 746 (/home/deby/poky/meta-debian/recipes-debian/libnftnl/libnftnl_debian.bb:do_debian_unpack_extra)
+NOTE: recipe ed-native-1.15-r0: task do_patch: Started
+NOTE: recipe gmp-6.1.2-r0: task do_debian_patch: Started
+NOTE: recipe ed-native-1.15-r0: task do_patch: Succeeded
+NOTE: Running task 654 of 746 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/ed/ed_debian.bb:do_configure)
+NOTE: recipe libnftnl-1.1.2-r0: task do_debian_unpack_extra: Started
+NOTE: recipe lzop-native-1.03-r0: task do_debian_patch: Succeeded
+NOTE: recipe libnftnl-1.1.2-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 655 of 746 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/lzop/lzop_debian.bb:do_patch)
+NOTE: Running task 656 of 746 (/home/deby/poky/meta-debian/recipes-debian/libnftnl/libnftnl_debian.bb:do_debian_patch)
+NOTE: recipe nftables-0.9.0-r0: task do_debian_patch: Succeeded
+NOTE: Running task 657 of 746 (/home/deby/poky/meta-debian/recipes-debian/nftables/nftables_debian.bb:do_patch)
+NOTE: recipe ed-native-1.15-r0: task do_configure: Started
+NOTE: recipe gmp-6.1.2-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: recipe libnftnl-1.1.2-r0: task do_debian_patch: Started
+NOTE: recipe ed-native-1.15-r0: task do_configure: Succeeded
+NOTE: recipe nftables-0.9.0-r0: task do_patch: Started
+NOTE: Running task 658 of 746 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/ed/ed_debian.bb:do_compile)
+NOTE: recipe lzop-native-1.03-r0: task do_patch: Started
+NOTE: recipe bc-native-1.07.1-r0: task do_debian_patch: Succeeded
+NOTE: Running task 659 of 746 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/bc/bc_debian.bb:do_patch)
+NOTE: recipe nftables-0.9.0-r0: task do_patch: Succeeded
+NOTE: Running task 660 of 746 (/home/deby/poky/meta-debian/recipes-debian/nftables/nftables_debian.bb:do_populate_lic)
+NOTE: recipe lzop-native-1.03-r0: task do_patch: Succeeded
+NOTE: recipe libmnl-1.0.4-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: recipe libnftnl-1.1.2-r0: task do_debian_patch: Succeeded
+NOTE: Running task 661 of 746 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/lzop/lzop_debian.bb:do_configure)
+NOTE: Running task 662 of 746 (/home/deby/poky/meta-debian/recipes-debian/libnftnl/libnftnl_debian.bb:do_patch)
+NOTE: recipe gmp-6.1.2-r0: task do_debian_patch: Succeeded
+NOTE: Running task 663 of 746 (/home/deby/poky/meta-debian/recipes-debian/gmp/gmp_debian.bb:do_patch)
+NOTE: recipe ed-native-1.15-r0: task do_compile: Started
+NOTE: recipe libmnl-1.0.4-r0: task do_debian_patch: Succeeded
+NOTE: Running task 664 of 746 (/home/deby/poky/meta-debian/recipes-debian/libmnl/libmnl_debian.bb:do_patch)
+NOTE: recipe nftables-0.9.0-r0: task do_populate_lic: Started
+NOTE: recipe lzop-native-1.03-r0: task do_configure: Started
+NOTE: recipe libnftnl-1.1.2-r0: task do_patch: Started
+NOTE: recipe bc-native-1.07.1-r0: task do_patch: Started
+NOTE: recipe libmnl-1.0.4-r0: task do_patch: Started
+NOTE: recipe gmp-6.1.2-r0: task do_patch: Started
+NOTE: recipe libmnl-1.0.4-r0: task do_patch: Succeeded
+NOTE: Running task 665 of 746 (/home/deby/poky/meta-debian/recipes-debian/libmnl/libmnl_debian.bb:do_configure)
+NOTE: recipe bc-native-1.07.1-r0: task do_patch: Succeeded
+NOTE: recipe libnftnl-1.1.2-r0: task do_patch: Succeeded
+NOTE: recipe libmnl-1.0.4-r0: task do_configure: Started
+NOTE: recipe nftables-0.9.0-r0: task do_populate_lic: Succeeded
+NOTE: recipe ed-native-1.15-r0: task do_compile: Succeeded
+NOTE: Running task 666 of 746 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/ed/ed_debian.bb:do_install)
+NOTE: recipe ed-native-1.15-r0: task do_install: Started
+NOTE: recipe gmp-6.1.2-r0: task do_patch: Succeeded
+NOTE: Running task 667 of 746 (/home/deby/poky/meta-debian/recipes-debian/gmp/gmp_debian.bb:do_configure)
+NOTE: recipe gmp-6.1.2-r0: task do_configure: Started
+NOTE: recipe ed-native-1.15-r0: task do_install: Succeeded
+NOTE: Running task 668 of 746 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/ed/ed_debian.bb:do_populate_sysroot)
+NOTE: recipe ed-native-1.15-r0: task do_populate_sysroot: Started
+NOTE: recipe kmod-native-26-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: recipe kmod-native-26-r0: task do_debian_patch: Succeeded
+NOTE: Running task 669 of 746 (/home/deby/poky/meta-debian/recipes-debian/kmod/kmod-native_debian.bb:do_patch)
+NOTE: recipe kmod-native-26-r0: task do_patch: Started
+NOTE: recipe ed-native-1.15-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 670 of 746 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/bc/bc_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe bc-native-1.07.1-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe kmod-native-26-r0: task do_patch: Succeeded
+NOTE: Running task 671 of 746 (/home/deby/poky/meta-debian/recipes-debian/kmod/kmod-native_debian.bb:do_configure)
+NOTE: recipe kmod-native-26-r0: task do_configure: Started
+NOTE: recipe bc-native-1.07.1-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 672 of 746 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/bc/bc_debian.bb:do_configure)
+NOTE: recipe bc-native-1.07.1-r0: task do_configure: Started
+NOTE: recipe opkg-utils-0.4.0-r0: task do_package_write_deb: Succeeded
+NOTE: recipe libmnl-1.0.4-r0: task do_configure: Succeeded
+NOTE: Running task 673 of 746 (/home/deby/poky/meta-debian/recipes-debian/libmnl/libmnl_debian.bb:do_compile)
+NOTE: recipe libmnl-1.0.4-r0: task do_compile: Started
+NOTE: recipe bc-native-1.07.1-r0: task do_configure: Succeeded
+NOTE: Running task 674 of 746 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/bc/bc_debian.bb:do_compile)
+NOTE: recipe bc-native-1.07.1-r0: task do_compile: Started
+NOTE: recipe libmnl-1.0.4-r0: task do_compile: Succeeded
+NOTE: Running task 675 of 746 (/home/deby/poky/meta-debian/recipes-debian/libmnl/libmnl_debian.bb:do_install)
+NOTE: recipe libmnl-1.0.4-r0: task do_install: Started
+NOTE: recipe bc-native-1.07.1-r0: task do_compile: Succeeded
+NOTE: Running task 676 of 746 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/bc/bc_debian.bb:do_install)
+NOTE: recipe bc-native-1.07.1-r0: task do_install: Started
+NOTE: recipe bc-native-1.07.1-r0: task do_install: Succeeded
+NOTE: Running task 677 of 746 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/bc/bc_debian.bb:do_populate_sysroot)
+NOTE: recipe bc-native-1.07.1-r0: task do_populate_sysroot: Started
+NOTE: recipe bc-native-1.07.1-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe libmnl-1.0.4-r0: task do_install: Succeeded
+NOTE: Running task 678 of 746 (/home/deby/poky/meta-debian/recipes-debian/libmnl/libmnl_debian.bb:do_populate_sysroot)
+NOTE: Running task 679 of 746 (/home/deby/poky/meta-debian/recipes-debian/libmnl/libmnl_debian.bb:do_package)
+NOTE: recipe libmnl-1.0.4-r0: task do_populate_sysroot: Started
+NOTE: recipe libmnl-1.0.4-r0: task do_package: Started
+NOTE: recipe libmnl-1.0.4-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 680 of 746 (/home/deby/poky/meta-debian/recipes-debian/libnftnl/libnftnl_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe libnftnl-1.1.2-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe libnftnl-1.1.2-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 681 of 746 (/home/deby/poky/meta-debian/recipes-debian/libnftnl/libnftnl_debian.bb:do_configure)
+NOTE: recipe libnftnl-1.1.2-r0: task do_configure: Started
+NOTE: recipe ncurses-6.1+20181013-r0: task do_compile: Succeeded
+NOTE: Running task 682 of 746 (/home/deby/poky/meta-debian/recipes-debian/ncurses/ncurses_debian.bb:do_install)
+NOTE: recipe ncurses-6.1+20181013-r0: task do_install: Started
+NOTE: recipe kmod-native-26-r0: task do_configure: Succeeded
+NOTE: Running task 683 of 746 (/home/deby/poky/meta-debian/recipes-debian/kmod/kmod-native_debian.bb:do_compile)
+NOTE: recipe kmod-native-26-r0: task do_compile: Started
+NOTE: recipe kmod-native-26-r0: task do_compile: Succeeded
+NOTE: Running task 684 of 746 (/home/deby/poky/meta-debian/recipes-debian/kmod/kmod-native_debian.bb:do_install)
+NOTE: recipe kmod-native-26-r0: task do_install: Started
+NOTE: recipe kmod-native-26-r0: task do_install: Succeeded
+NOTE: recipe lzop-native-1.03-r0: task do_configure: Succeeded
+NOTE: Running task 685 of 746 (/home/deby/poky/meta-debian/recipes-debian/kmod/kmod-native_debian.bb:do_populate_sysroot)
+NOTE: Running task 686 of 746 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/lzop/lzop_debian.bb:do_compile)
+NOTE: recipe kmod-native-26-r0: task do_populate_sysroot: Started
+NOTE: recipe lzop-native-1.03-r0: task do_compile: Started
+NOTE: recipe libmnl-1.0.4-r0: task do_package: Succeeded
+NOTE: Running task 687 of 746 (/home/deby/poky/meta-debian/recipes-debian/libmnl/libmnl_debian.bb:do_packagedata)
+NOTE: recipe libmnl-1.0.4-r0: task do_packagedata: Started
+NOTE: recipe kmod-native-26-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 688 of 746 (/home/deby/poky/meta/recipes-kernel/kmod/depmodwrapper-cross_1.0.bb:do_prepare_recipe_sysroot)
+NOTE: recipe depmodwrapper-cross-1.0-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe libmnl-1.0.4-r0: task do_packagedata: Succeeded
+NOTE: Running task 689 of 746 (/home/deby/poky/meta-debian/recipes-debian/libmnl/libmnl_debian.bb:do_package_write_deb)
+NOTE: recipe libmnl-1.0.4-r0: task do_package_write_deb: Started
+NOTE: recipe lzop-native-1.03-r0: task do_compile: Succeeded
+NOTE: Running task 690 of 746 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/lzop/lzop_debian.bb:do_install)
+NOTE: recipe lzop-native-1.03-r0: task do_install: Started
+NOTE: recipe lzop-native-1.03-r0: task do_install: Succeeded
+NOTE: Running task 691 of 746 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/lzop/lzop_debian.bb:do_populate_sysroot)
+NOTE: recipe libmnl-1.0.4-r0: task do_package_write_deb: Succeeded
+NOTE: recipe lzop-native-1.03-r0: task do_populate_sysroot: Started
+NOTE: recipe lzop-native-1.03-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 692 of 746 (/home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb:do_prepare_recipe_sysroot)
+NOTE: recipe linux-base-gitAUTOINC+e665510be1-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe depmodwrapper-cross-1.0-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 693 of 746 (/home/deby/poky/meta/recipes-kernel/kmod/depmodwrapper-cross_1.0.bb:do_configure)
+NOTE: recipe depmodwrapper-cross-1.0-r0: task do_configure: Started
+NOTE: recipe depmodwrapper-cross-1.0-r0: task do_configure: Succeeded
+NOTE: Running task 694 of 746 (/home/deby/poky/meta/recipes-kernel/kmod/depmodwrapper-cross_1.0.bb:do_compile)
+NOTE: recipe depmodwrapper-cross-1.0-r0: task do_compile: Started
+NOTE: recipe depmodwrapper-cross-1.0-r0: task do_compile: Succeeded
+NOTE: Running task 695 of 746 (/home/deby/poky/meta/recipes-kernel/kmod/depmodwrapper-cross_1.0.bb:do_install)
+NOTE: recipe depmodwrapper-cross-1.0-r0: task do_install: Started
+NOTE: recipe depmodwrapper-cross-1.0-r0: task do_install: Succeeded
+NOTE: Running task 696 of 746 (/home/deby/poky/meta/recipes-kernel/kmod/depmodwrapper-cross_1.0.bb:do_populate_sysroot)
+NOTE: recipe depmodwrapper-cross-1.0-r0: task do_populate_sysroot: Started
+NOTE: recipe linux-base-gitAUTOINC+e665510be1-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: recipe depmodwrapper-cross-1.0-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe libnftnl-1.1.2-r0: task do_configure: Succeeded
+NOTE: Running task 697 of 746 (/home/deby/poky/meta-debian/recipes-debian/libnftnl/libnftnl_debian.bb:do_compile)
+NOTE: recipe libnftnl-1.1.2-r0: task do_compile: Started
+NOTE: recipe linux-base-gitAUTOINC+e665510be1-r0: task do_unpack: Succeeded
+NOTE: Running task 698 of 746 (/home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb:do_symlink_kernsrc)
+NOTE: Running task 699 of 746 (/home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb:do_patch)
+NOTE: recipe linux-base-gitAUTOINC+e665510be1-r0: task do_symlink_kernsrc: Started
+NOTE: recipe linux-base-gitAUTOINC+e665510be1-r0: task do_patch: Started
+NOTE: recipe linux-base-gitAUTOINC+e665510be1-r0: task do_patch: Succeeded
+NOTE: recipe linux-base-gitAUTOINC+e665510be1-r0: task do_symlink_kernsrc: Succeeded
+NOTE: Running task 700 of 746 (/home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb:do_configure)
+NOTE: recipe linux-base-gitAUTOINC+e665510be1-r0: task do_configure: Started
+NOTE: recipe libnftnl-1.1.2-r0: task do_compile: Succeeded
+NOTE: Running task 701 of 746 (/home/deby/poky/meta-debian/recipes-debian/libnftnl/libnftnl_debian.bb:do_install)
+NOTE: recipe libnftnl-1.1.2-r0: task do_install: Started
+NOTE: recipe libnftnl-1.1.2-r0: task do_install: Succeeded
+NOTE: Running task 702 of 746 (/home/deby/poky/meta-debian/recipes-debian/libnftnl/libnftnl_debian.bb:do_package)
+NOTE: Running task 703 of 746 (/home/deby/poky/meta-debian/recipes-debian/libnftnl/libnftnl_debian.bb:do_populate_sysroot)
+NOTE: recipe libnftnl-1.1.2-r0: task do_populate_sysroot: Started
+NOTE: recipe libnftnl-1.1.2-r0: task do_package: Started
+NOTE: recipe libnftnl-1.1.2-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe linux-base-gitAUTOINC+e665510be1-r0: task do_configure: Succeeded
+NOTE: Running task 704 of 746 (/home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb:do_compile)
+NOTE: recipe linux-base-gitAUTOINC+e665510be1-r0: task do_compile: Started
+NOTE: recipe libnftnl-1.1.2-r0: task do_package: Succeeded
+NOTE: Running task 705 of 746 (/home/deby/poky/meta-debian/recipes-debian/libnftnl/libnftnl_debian.bb:do_packagedata)
+NOTE: recipe libnftnl-1.1.2-r0: task do_packagedata: Started
+NOTE: recipe libnftnl-1.1.2-r0: task do_packagedata: Succeeded
+NOTE: Running task 706 of 746 (/home/deby/poky/meta-debian/recipes-debian/libnftnl/libnftnl_debian.bb:do_package_write_deb)
+NOTE: recipe libnftnl-1.1.2-r0: task do_package_write_deb: Started
+NOTE: recipe libnftnl-1.1.2-r0: task do_package_write_deb: Succeeded
+NOTE: recipe ncurses-6.1+20181013-r0: task do_install: Succeeded
+NOTE: Running task 707 of 746 (/home/deby/poky/meta-debian/recipes-debian/ncurses/ncurses_debian.bb:do_populate_sysroot)
+NOTE: Running task 708 of 746 (/home/deby/poky/meta-debian/recipes-debian/ncurses/ncurses_debian.bb:do_package)
+NOTE: recipe ncurses-6.1+20181013-r0: task do_populate_sysroot: Started
+NOTE: recipe ncurses-6.1+20181013-r0: task do_package: Started
+NOTE: recipe gmp-6.1.2-r0: task do_configure: Succeeded
+NOTE: Running task 709 of 746 (/home/deby/poky/meta-debian/recipes-debian/gmp/gmp_debian.bb:do_compile)
+NOTE: recipe gmp-6.1.2-r0: task do_compile: Started
+NOTE: recipe ncurses-6.1+20181013-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 710 of 746 (/home/deby/poky/meta-debian/recipes-debian/readline/readline_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe readline-7.0-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe readline-7.0-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 711 of 746 (/home/deby/poky/meta-debian/recipes-debian/readline/readline_debian.bb:do_configure)
+NOTE: recipe readline-7.0-r0: task do_configure: Started
+NOTE: recipe gmp-6.1.2-r0: task do_compile: Succeeded
+NOTE: Running task 712 of 746 (/home/deby/poky/meta-debian/recipes-debian/gmp/gmp_debian.bb:do_install)
+NOTE: recipe gmp-6.1.2-r0: task do_install: Started
+NOTE: recipe gmp-6.1.2-r0: task do_install: Succeeded
+NOTE: Running task 713 of 746 (/home/deby/poky/meta-debian/recipes-debian/gmp/gmp_debian.bb:do_package)
+NOTE: Running task 714 of 746 (/home/deby/poky/meta-debian/recipes-debian/gmp/gmp_debian.bb:do_populate_sysroot)
+NOTE: recipe gmp-6.1.2-r0: task do_populate_sysroot: Started
+NOTE: recipe gmp-6.1.2-r0: task do_package: Started
+NOTE: recipe gmp-6.1.2-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe readline-7.0-r0: task do_configure: Succeeded
+NOTE: Running task 715 of 746 (/home/deby/poky/meta-debian/recipes-debian/readline/readline_debian.bb:do_compile)
+NOTE: recipe readline-7.0-r0: task do_compile: Started
+NOTE: recipe readline-7.0-r0: task do_compile: Succeeded
+NOTE: Running task 716 of 746 (/home/deby/poky/meta-debian/recipes-debian/readline/readline_debian.bb:do_install)
+NOTE: recipe readline-7.0-r0: task do_install: Started
+NOTE: recipe readline-7.0-r0: task do_install: Succeeded
+NOTE: Running task 717 of 746 (/home/deby/poky/meta-debian/recipes-debian/readline/readline_debian.bb:do_populate_sysroot)
+NOTE: recipe readline-7.0-r0: task do_populate_sysroot: Started
+NOTE: recipe readline-7.0-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 718 of 746 (/home/deby/poky/meta-debian/recipes-debian/nftables/nftables_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe nftables-0.9.0-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe nftables-0.9.0-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 719 of 746 (/home/deby/poky/meta-debian/recipes-debian/nftables/nftables_debian.bb:do_configure)
+NOTE: recipe nftables-0.9.0-r0: task do_configure: Started
+NOTE: recipe gmp-6.1.2-r0: task do_package: Succeeded
+NOTE: Running task 720 of 746 (/home/deby/poky/meta-debian/recipes-debian/gmp/gmp_debian.bb:do_packagedata)
+NOTE: recipe gmp-6.1.2-r0: task do_packagedata: Started
+NOTE: recipe gmp-6.1.2-r0: task do_packagedata: Succeeded
+NOTE: Running task 721 of 746 (/home/deby/poky/meta-debian/recipes-debian/gmp/gmp_debian.bb:do_package_write_deb)
+NOTE: recipe gmp-6.1.2-r0: task do_package_write_deb: Started
+NOTE: recipe gmp-6.1.2-r0: task do_package_write_deb: Succeeded
+NOTE: recipe ncurses-6.1+20181013-r0: task do_package: Succeeded
+NOTE: Running task 722 of 746 (/home/deby/poky/meta-debian/recipes-debian/ncurses/ncurses_debian.bb:do_packagedata)
+NOTE: recipe ncurses-6.1+20181013-r0: task do_packagedata: Started
+NOTE: recipe ncurses-6.1+20181013-r0: task do_packagedata: Succeeded
+NOTE: Running task 723 of 746 (/home/deby/poky/meta-debian/recipes-debian/readline/readline_debian.bb:do_package)
+NOTE: Running task 724 of 746 (/home/deby/poky/meta-debian/recipes-debian/ncurses/ncurses_debian.bb:do_package_write_deb)
+NOTE: recipe readline-7.0-r0: task do_package: Started
+NOTE: recipe ncurses-6.1+20181013-r0: task do_package_write_deb: Started
+NOTE: recipe ncurses-6.1+20181013-r0: task do_package_write_deb: Succeeded
+NOTE: recipe linux-base-gitAUTOINC+e665510be1-r0: task do_compile: Succeeded
+NOTE: Running task 725 of 746 (/home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb:do_shared_workdir)
+NOTE: Running task 726 of 746 (/home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb:do_kernel_link_images)
+NOTE: recipe linux-base-gitAUTOINC+e665510be1-r0: task do_kernel_link_images: Started
+NOTE: recipe linux-base-gitAUTOINC+e665510be1-r0: task do_shared_workdir: Started
+NOTE: recipe linux-base-gitAUTOINC+e665510be1-r0: task do_kernel_link_images: Succeeded
+NOTE: recipe linux-base-gitAUTOINC+e665510be1-r0: task do_shared_workdir: Succeeded
+NOTE: Running task 727 of 746 (/home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb:do_compile_kernelmodules)
+NOTE: recipe linux-base-gitAUTOINC+e665510be1-r0: task do_compile_kernelmodules: Started
+NOTE: recipe nftables-0.9.0-r0: task do_configure: Succeeded
+NOTE: Running task 728 of 746 (/home/deby/poky/meta-debian/recipes-debian/nftables/nftables_debian.bb:do_compile)
+NOTE: recipe nftables-0.9.0-r0: task do_compile: Started
+NOTE: recipe nftables-0.9.0-r0: task do_compile: Succeeded
+NOTE: Running task 729 of 746 (/home/deby/poky/meta-debian/recipes-debian/nftables/nftables_debian.bb:do_install)
+NOTE: recipe nftables-0.9.0-r0: task do_install: Started
+NOTE: recipe readline-7.0-r0: task do_package: Succeeded
+NOTE: Running task 730 of 746 (/home/deby/poky/meta-debian/recipes-debian/readline/readline_debian.bb:do_packagedata)
+NOTE: recipe nftables-0.9.0-r0: task do_install: Succeeded
+NOTE: recipe readline-7.0-r0: task do_packagedata: Started
+NOTE: Running task 731 of 746 (/home/deby/poky/meta-debian/recipes-debian/nftables/nftables_debian.bb:do_populate_sysroot)
+NOTE: recipe nftables-0.9.0-r0: task do_populate_sysroot: Started
+NOTE: recipe readline-7.0-r0: task do_packagedata: Succeeded
+NOTE: Running task 732 of 746 (/home/deby/poky/meta-debian/recipes-debian/nftables/nftables_debian.bb:do_package)
+NOTE: Running task 733 of 746 (/home/deby/poky/meta-debian/recipes-debian/readline/readline_debian.bb:do_package_write_deb)
+NOTE: recipe nftables-0.9.0-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe nftables-0.9.0-r0: task do_package: Started
+NOTE: recipe readline-7.0-r0: task do_package_write_deb: Started
+NOTE: recipe readline-7.0-r0: task do_package_write_deb: Succeeded
+NOTE: recipe nftables-0.9.0-r0: task do_package: Succeeded
+NOTE: Running task 734 of 746 (/home/deby/poky/meta-debian/recipes-debian/nftables/nftables_debian.bb:do_packagedata)
+NOTE: recipe nftables-0.9.0-r0: task do_packagedata: Started
+NOTE: recipe nftables-0.9.0-r0: task do_packagedata: Succeeded
+NOTE: recipe linux-base-gitAUTOINC+e665510be1-r0: task do_compile_kernelmodules: Succeeded
+NOTE: Running task 735 of 746 (/home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb:do_strip)
+NOTE: recipe linux-base-gitAUTOINC+e665510be1-r0: task do_strip: Started
+NOTE: recipe linux-base-gitAUTOINC+e665510be1-r0: task do_strip: Succeeded
+NOTE: Running task 736 of 746 (/home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb:do_sizecheck)
+NOTE: recipe linux-base-gitAUTOINC+e665510be1-r0: task do_sizecheck: Started
+NOTE: recipe linux-base-gitAUTOINC+e665510be1-r0: task do_sizecheck: Succeeded
+NOTE: Running task 737 of 746 (/home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb:do_install)
+NOTE: recipe linux-base-gitAUTOINC+e665510be1-r0: task do_install: Started
+NOTE: recipe linux-base-gitAUTOINC+e665510be1-r0: task do_install: Succeeded
+NOTE: Running task 738 of 746 (/home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb:do_package)
+NOTE: Running task 739 of 746 (/home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb:do_bundle_initramfs)
+NOTE: Running task 740 of 746 (/home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb:do_populate_sysroot)
+NOTE: recipe linux-base-gitAUTOINC+e665510be1-r0: task do_bundle_initramfs: Started
+NOTE: recipe linux-base-gitAUTOINC+e665510be1-r0: task do_populate_sysroot: Started
+NOTE: recipe linux-base-gitAUTOINC+e665510be1-r0: task do_package: Started
+NOTE: recipe linux-base-gitAUTOINC+e665510be1-r0: task do_bundle_initramfs: Succeeded
+NOTE: recipe linux-base-gitAUTOINC+e665510be1-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe linux-base-gitAUTOINC+e665510be1-r0: task do_package: Succeeded
+NOTE: Running task 741 of 746 (/home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb:do_packagedata)
+NOTE: recipe linux-base-gitAUTOINC+e665510be1-r0: task do_packagedata: Started
+NOTE: recipe linux-base-gitAUTOINC+e665510be1-r0: task do_packagedata: Succeeded
+NOTE: Running task 742 of 746 (/home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb:do_deploy)
+NOTE: Running task 743 of 746 (/home/deby/poky/meta-debian/recipes-kernel/linux/linux-base_git.bb:do_package_write_deb)
+NOTE: Running task 744 of 746 (/home/deby/poky/meta-debian/recipes-debian/nftables/nftables_debian.bb:do_package_write_deb)
+NOTE: Running task 745 of 746 (/home/deby/poky/meta-debian/recipes-debian/nftables/nftables_debian.bb:do_package_qa)
+NOTE: recipe nftables-0.9.0-r0: task do_package_write_deb: Started
+NOTE: recipe linux-base-gitAUTOINC+e665510be1-r0: task do_package_write_deb: Started
+NOTE: recipe linux-base-gitAUTOINC+e665510be1-r0: task do_deploy: Started
+NOTE: recipe nftables-0.9.0-r0: task do_package_qa: Started
+NOTE: recipe nftables-0.9.0-r0: task do_package_qa: Succeeded
+NOTE: recipe nftables-0.9.0-r0: task do_package_write_deb: Succeeded
+NOTE: recipe linux-base-gitAUTOINC+e665510be1-r0: task do_deploy: Succeeded
+NOTE: recipe linux-base-gitAUTOINC+e665510be1-r0: task do_package_write_deb: Succeeded
+NOTE: Running noexec task 746 of 746 (/home/deby/poky/meta-debian/recipes-debian/nftables/nftables_debian.bb:do_build)
+NOTE: Tasks Summary: Attempted 746 tasks of which 607 didn't need to be rerun and all succeeded.

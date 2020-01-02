@@ -1,70 +1,14 @@
-acl PASS NA
-adduser PASS NA
-aide PASS NA
-audit PASS NA
-bjam-native PASS NA
-boost PASS NA
-cracklib PASS NA
-duplicity PASS NA
-enum34 PASS NA
-gnupg PASS NA
-gnutls PASS NA
-google-authenticator PASS NA
-icu PASS NA
-iptables PASS NA
-libassuan PASS NA
-libcap-ng PASS NA
-libgcrypt PASS NA
-libgpg-error PASS NA
-libidn2 PASS NA
-libidn FAIL NA
-libksba PASS NA
-liblinux-usermod-perl PASS NA
-libpam PASS NA
-libprelude PASS NA
-libunistring PASS NA
-logrotate PASS NA
-lsb PASS NA
-mtools PASS NA
-nettle PASS NA
-npth PASS NA
-ntpsec PASS NA
-openssh PASS NA
-openssl PASS NA
-pam-pkcs11 PASS NA
-pam-shield PASS NA
-pinentry PASS NA
-prelude-manager PASS NA
-python3-asn1crypto PASS NA
-python3-bcrypt PASS NA
-python3-cffi PASS NA
-python3-cryptography FAIL NA
-python3-nacl PASS NA
-python3-paramiko FAIL NA
-python3-ply PASS NA
-python3-pyasn1 PASS NA
-python3-pycparser PASS NA
-python-asn1crypto PASS NA
-python-bcrypt PASS NA
-python-cffi PASS NA
-python-cryptography PASS NA
-python-ipaddress PASS NA
-python-nacl PASS NA
-python-native PASS NA
-python-paramiko PASS NA
-python PASS NA
-python-ply PASS NA
-python-pyasn1 PASS NA
-python-pycparser PASS NA
-python-setuptools PASS NA
-rng-tools PASS NA
-rsyslog PASS NA
-shadow PASS NA
-sudo PASS NA
-swig PASS NA
-tcl PASS NA
-tpm2-abrmd PASS NA
-tpm2-tools PASS NA
-tpm2-tss PASS NA
-util-linux PASS NA
-valgrind PASS NA
+chrony PASS NA meta:023ff85,meta-debian:8e157b1 NA
+ivykis PASS NA meta:023ff85,meta-debian:8e157b1 NA
+jansson PASS NA meta:023ff85,meta-debian:8e157b1 NA
+json-c PASS NA meta:023ff85,meta-debian:8e157b1 NA
+libedit PASS NA meta:023ff85,meta-debian:8e157b1 NA
+libhtp PASS NA meta:023ff85,meta-debian:8e157b1 NA
+libnet FAIL NA meta:023ff85,meta-debian:8e157b1 NA
+libnfnetlink PASS NA meta:023ff85,meta-debian:8e157b1 NA
+libnftnl PASS NA meta:023ff85,meta-debian:8e157b1 NA
+libpcap FAIL NA meta:023ff85,meta-debian:8e157b1 NA
+libyaml PASS NA meta:023ff85,meta-debian:8e157b1 NA
+nftables PASS NA meta:023ff85,meta-debian:8e157b1 NA
+suricata FAIL NA meta:023ff85,meta-debian:8e157b1 NA
+syslog-ng PASS NA meta:023ff85,meta-debian:8e157b1 NA

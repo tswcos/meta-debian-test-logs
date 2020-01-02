@@ -1,0 +1,372 @@
+Parsing recipes...done.
+Parsing of 1030 .bb files complete (0 cached, 1030 parsed). 1806 targets, 69 skipped, 0 masked, 0 errors.
+NOTE: Resolving any missing task queue dependencies
+
+Build Configuration:
+BB_VERSION           = "1.42.0"
+BUILD_SYS            = "x86_64-linux"
+NATIVELSBSTRING      = "universal"
+TARGET_SYS           = "arm-deby-linux-gnueabi"
+MACHINE              = "qemuarm"
+DISTRO               = "deby"
+DISTRO_VERSION       = "10.0"
+TUNE_FEATURES        = "arm armv7ve vfp thumb neon callconvention-hard"
+TARGET_FPU           = "hard"
+meta                 
+meta-poky            = "warrior:023ff85a9ae94331926e923b346fd8a349881e63"
+meta-debian          = "warrior:8e157b1a7a3a3ae1224ea194f0fc9e25772d0e07"
+
+Initialising tasks...done.
+Sstate summary: Wanted 83 Found 0 Missed 83 Current 337 (0% match, 80% complete)
+NOTE: Executing SetScene Tasks
+NOTE: Executing RunQueue Tasks
+NOTE: Running task 1189 of 1945 (/home/deby/poky/meta-debian/recipes-debian/libnftnl/libnftnl_debian.bb:do_fetch)
+NOTE: Running task 1286 of 1945 (/home/deby/poky/meta-debian/recipes-debian/nftables/nftables_debian.bb:do_fetch)
+NOTE: Running task 1294 of 1945 (/home/deby/poky/meta-debian/recipes-debian/python/python3_debian.bb:do_install_ptest_base)
+NOTE: recipe libnftnl-1.1.2-r0: task do_fetch: Started
+NOTE: recipe nftables-0.9.0-r0: task do_fetch: Started
+NOTE: recipe libnftnl-1.1.2-r0: task do_fetch: Succeeded
+NOTE: recipe nftables-0.9.0-r0: task do_fetch: Succeeded
+NOTE: Running task 1295 of 1945 (/home/deby/poky/meta-debian/recipes-debian/libnftnl/libnftnl_debian.bb:do_unpack)
+NOTE: Running task 1339 of 1945 (/home/deby/poky/meta-debian/recipes-debian/nftables/nftables_debian.bb:do_unpack)
+NOTE: Running task 1447 of 1945 (/home/deby/poky/meta-debian/recipes-debian/libnftnl/libnftnl_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe libnftnl-1.1.2-r0: task do_unpack: Started
+NOTE: Running task 1652 of 1945 (/home/deby/poky/meta-debian/recipes-debian/perl/perl_debian.bb:do_packagedata)
+NOTE: recipe nftables-0.9.0-r0: task do_unpack: Started
+NOTE: recipe libnftnl-1.1.2-r0: task do_prepare_recipe_sysroot: Started
+NOTE: Running task 1759 of 1945 (/home/deby/poky/meta-debian/recipes-debian/binutils/binutils_debian.bb:do_install)
+NOTE: Running task 1760 of 1945 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc_debian.bb:do_install)
+NOTE: Running task 1788 of 1945 (/home/deby/poky/meta-debian/recipes-debian/grep/grep_debian.bb:do_packagedata)
+NOTE: Running task 1817 of 1945 (/home/deby/poky/meta-debian/recipes-debian/xorg-lib/libsm_debian.bb:do_package_write_deb)
+NOTE: Running task 1818 of 1945 (/home/deby/poky/meta-debian/recipes-debian/expat/expat_debian.bb:do_package_write_deb)
+NOTE: Running task 1827 of 1945 (/home/deby/poky/meta-debian/recipes-debian/gawk/gawk_debian.bb:do_package_write_deb)
+NOTE: Running task 1828 of 1945 (/home/deby/poky/meta-debian/recipes-debian/m4/m4_debian.bb:do_package_write_deb)
+NOTE: Running task 1829 of 1945 (/home/deby/poky/meta-debian/recipes-debian/gnome-desktop-testing/gnome-desktop-testing_debian.bb:do_package_write_deb)
+NOTE: Running task 1830 of 1945 (/home/deby/poky/meta-debian/recipes-debian/dbus/dbus_debian.bb:do_package_write_deb)
+NOTE: Running task 1832 of 1945 (/home/deby/poky/meta-debian/recipes-debian/libpcre/libpcre_debian.bb:do_package_write_deb)
+NOTE: Running task 1835 of 1945 (/home/deby/poky/meta/recipes-core/udev/eudev_3.2.7.bb:do_package_write_deb)
+NOTE: recipe python3-3.7.3-r0: task do_install_ptest_base: Started
+NOTE: recipe binutils-2.31.1-r0: task do_install: Started
+NOTE: recipe gcc-8.3.0-r0: task do_install: Started
+NOTE: recipe perl-5.28.1-r1: task do_packagedata: Started
+NOTE: recipe grep-3.3-r0: task do_packagedata: Started
+NOTE: recipe libnftnl-1.1.2-r0: task do_unpack: Succeeded
+NOTE: Running task 1836 of 1945 (/home/deby/poky/meta-debian/recipes-debian/libnftnl/libnftnl_debian.bb:do_debian_unpack_extra)
+NOTE: recipe libnftnl-1.1.2-r0: task do_debian_unpack_extra: Started
+NOTE: recipe eudev-3.2.7-r0: task do_package_write_deb: Started
+NOTE: recipe python3-3.7.3-r0: task do_install_ptest_base: Succeeded
+NOTE: Running task 1837 of 1945 (/home/deby/poky/meta-debian/recipes-debian/python/python3_debian.bb:do_package)
+NOTE: recipe libnftnl-1.1.2-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 1838 of 1945 (/home/deby/poky/meta-debian/recipes-debian/libnftnl/libnftnl_debian.bb:do_debian_patch)
+NOTE: recipe libnftnl-1.1.2-r0: task do_debian_patch: Started
+NOTE: recipe python3-3.7.3-r0: task do_package: Started
+NOTE: recipe perl-5.28.1-r1: task do_packagedata: Succeeded
+NOTE: Running task 1839 of 1945 (/home/deby/poky/meta-debian/recipes-debian/python/python3_debian.bb:do_populate_sysroot)
+NOTE: recipe grep-3.3-r0: task do_packagedata: Succeeded
+NOTE: Running task 1842 of 1945 (/home/deby/poky/meta-debian/recipes-debian/bison/bison_debian.bb:do_package_write_deb)
+NOTE: recipe python3-3.7.3-r0: task do_populate_sysroot: Started
+NOTE: recipe m4-1.4.18-r0: task do_package_write_deb: Started
+NOTE: recipe gnome-desktop-testing-2018.1-r0: task do_package_write_deb: Started
+NOTE: recipe nftables-0.9.0-r0: task do_unpack: Succeeded
+NOTE: Running task 1843 of 1945 (/home/deby/poky/meta-debian/recipes-debian/nftables/nftables_debian.bb:do_debian_unpack_extra)
+NOTE: recipe nftables-0.9.0-r0: task do_debian_unpack_extra: Started
+NOTE: recipe nftables-0.9.0-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 1844 of 1945 (/home/deby/poky/meta-debian/recipes-debian/nftables/nftables_debian.bb:do_debian_patch)
+NOTE: recipe nftables-0.9.0-r0: task do_debian_patch: Started
+NOTE: recipe expat-2.2.6-r0: task do_package_write_deb: Started
+NOTE: recipe dbus-1.12.16-r0: task do_package_write_deb: Started
+NOTE: recipe libnftnl-1.1.2-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 1845 of 1945 (/home/deby/poky/meta-debian/recipes-debian/flex/flex_debian.bb:do_package_write_deb)
+NOTE: recipe libnftnl-1.1.2-r0: task do_debian_patch: Succeeded
+NOTE: Running task 1846 of 1945 (/home/deby/poky/meta-debian/recipes-debian/libnftnl/libnftnl_debian.bb:do_patch)
+NOTE: recipe nftables-0.9.0-r0: task do_debian_patch: Succeeded
+NOTE: Running task 1847 of 1945 (/home/deby/poky/meta-debian/recipes-debian/nftables/nftables_debian.bb:do_patch)
+NOTE: recipe nftables-0.9.0-r0: task do_patch: Started
+NOTE: recipe libsm-1.2.3-r0: task do_package_write_deb: Started
+NOTE: recipe bison-3.3.2-r0: task do_package_write_deb: Started
+NOTE: recipe libpcre-8.39-r0: task do_package_write_deb: Started
+NOTE: recipe gawk-4.2.1-r0: task do_package_write_deb: Started
+NOTE: recipe libnftnl-1.1.2-r0: task do_patch: Started
+NOTE: recipe nftables-0.9.0-r0: task do_patch: Succeeded
+NOTE: Running task 1848 of 1945 (/home/deby/poky/meta-debian/recipes-debian/libmpc/libmpc_debian.bb:do_package_write_deb)
+NOTE: recipe libnftnl-1.1.2-r0: task do_patch: Succeeded
+NOTE: Running task 1849 of 1945 (/home/deby/poky/meta-debian/recipes-debian/libnftnl/libnftnl_debian.bb:do_configure)
+NOTE: recipe libnftnl-1.1.2-r0: task do_configure: Started
+NOTE: recipe eudev-3.2.7-r0: task do_package_write_deb: Succeeded
+NOTE: Running task 1850 of 1945 (/home/deby/poky/meta-debian/recipes-debian/mpfr/mpfr_debian.bb:do_package_write_deb)
+NOTE: recipe gnome-desktop-testing-2018.1-r0: task do_package_write_deb: Succeeded
+NOTE: Running task 1851 of 1945 (/home/deby/poky/meta-debian/recipes-debian/libcap/libcap_debian.bb:do_package_write_deb)
+NOTE: recipe flex-2.6.4-r0: task do_package_write_deb: Started
+NOTE: recipe m4-1.4.18-r0: task do_package_write_deb: Succeeded
+NOTE: Running task 1852 of 1945 (/home/deby/poky/meta-debian/recipes-debian/attr/acl_debian.bb:do_package_write_deb)
+NOTE: recipe libcap-2.25-r0: task do_package_write_deb: Started
+NOTE: recipe libmpc-1.1.0-r0: task do_package_write_deb: Started
+NOTE: recipe acl-2.2.53-r0: task do_package_write_deb: Started
+NOTE: recipe mpfr-4.0.2-r0: task do_package_write_deb: Started
+NOTE: recipe expat-2.2.6-r0: task do_package_write_deb: Succeeded
+NOTE: Running task 1853 of 1945 (/home/deby/poky/meta-debian/recipes-debian/attr/attr_debian.bb:do_package_write_deb)
+NOTE: recipe libsm-1.2.3-r0: task do_package_write_deb: Succeeded
+NOTE: Running task 1854 of 1945 (/home/deby/poky/meta-debian/recipes-debian/diffutils/diffutils_debian.bb:do_package_write_deb)
+NOTE: recipe gcc-8.3.0-r0: task do_install: Succeeded
+NOTE: Running task 1855 of 1945 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc_debian.bb:do_package)
+NOTE: recipe gcc-8.3.0-r0: task do_package: Started
+NOTE: recipe bison-3.3.2-r0: task do_package_write_deb: Succeeded
+NOTE: Running task 1856 of 1945 (/home/deby/poky/meta-debian/recipes-debian/grep/grep_debian.bb:do_package_write_deb)
+NOTE: recipe diffutils-3.7-r0: task do_package_write_deb: Started
+NOTE: recipe flex-2.6.4-r0: task do_package_write_deb: Succeeded
+NOTE: Running task 1857 of 1945 (/home/deby/poky/meta-debian/recipes-debian/bc/bc_debian.bb:do_package_write_deb)
+NOTE: recipe libmpc-1.1.0-r0: task do_package_write_deb: Succeeded
+NOTE: Running task 1858 of 1945 (/home/deby/poky/meta-debian/recipes-debian/iproute2/iproute2_debian.bb:do_package_write_deb)
+NOTE: recipe gawk-4.2.1-r0: task do_package_write_deb: Succeeded
+NOTE: Running task 1859 of 1945 (/home/deby/poky/meta-debian/recipes-debian/procps/procps_debian.bb:do_package_write_deb)
+NOTE: recipe dbus-1.12.16-r0: task do_package_write_deb: Succeeded
+NOTE: Running task 1860 of 1945 (/home/deby/poky/meta-debian/recipes-debian/debianutils/which_debian.bb:do_package_write_deb)
+NOTE: recipe attr-2.4.48-r0: task do_package_write_deb: Started
+NOTE: recipe libpcre-8.39-r0: task do_package_write_deb: Succeeded
+NOTE: Running task 1861 of 1945 (/home/deby/poky/meta-debian/recipes-debian/bash/bash_debian.bb:do_package_write_deb)
+NOTE: recipe libcap-2.25-r0: task do_package_write_deb: Succeeded
+NOTE: Running task 1862 of 1945 (/home/deby/poky/meta-debian/recipes-debian/socat/socat_debian.bb:do_package_write_deb)
+NOTE: recipe grep-3.3-r0: task do_package_write_deb: Started
+NOTE: recipe mpfr-4.0.2-r0: task do_package_write_deb: Succeeded
+NOTE: Running task 1863 of 1945 (/home/deby/poky/meta-debian/recipes-debian/bash-completion/bash-completion_debian.bb:do_package_write_deb)
+NOTE: recipe diffutils-3.7-r0: task do_package_write_deb: Succeeded
+NOTE: Running task 1864 of 1945 (/home/deby/poky/meta-debian/recipes-debian/mdadm/mdadm_debian.bb:do_package_write_deb)
+NOTE: recipe bc-1.07.1-r0: task do_package_write_deb: Started
+NOTE: recipe binutils-2.31.1-r0: task do_install: Succeeded
+NOTE: Running task 1865 of 1945 (/home/deby/poky/meta-debian/recipes-debian/binutils/binutils_debian.bb:do_package)
+NOTE: recipe binutils-2.31.1-r0: task do_package: Started
+NOTE: recipe attr-2.4.48-r0: task do_package_write_deb: Succeeded
+NOTE: Running task 1866 of 1945 (/home/deby/poky/meta-debian/recipes-debian/kmod/kmod_debian.bb:do_package_write_deb)
+NOTE: recipe acl-2.2.53-r0: task do_package_write_deb: Succeeded
+NOTE: Running task 1867 of 1945 (/home/deby/poky/meta-debian/recipes-debian/e2fsprogs/e2fsprogs_debian.bb:do_package_write_deb)
+NOTE: recipe iproute2-4.20.0-r0: task do_package_write_deb: Started
+NOTE: recipe procps-3.3.15-r0: task do_package_write_deb: Started
+NOTE: recipe kmod-26-r0: task do_package_write_deb: Started
+NOTE: recipe mdadm-4.1-r0: task do_package_write_deb: Started
+NOTE: recipe which-4.8.6.1-r0: task do_package_write_deb: Started
+NOTE: recipe socat-1.7.3.2-r0: task do_package_write_deb: Started
+NOTE: recipe bash-5.0-r0: task do_package_write_deb: Started
+NOTE: recipe bash-completion-2.8-r0: task do_package_write_deb: Started
+NOTE: recipe e2fsprogs-1.44.5-r0: task do_package_write_deb: Started
+NOTE: recipe bc-1.07.1-r0: task do_package_write_deb: Succeeded
+NOTE: Running task 1868 of 1945 (/home/deby/poky/meta-debian/recipes-debian/make/make_debian.bb:do_package_write_deb)
+NOTE: recipe libnftnl-1.1.2-r0: task do_configure: Succeeded
+NOTE: Running task 1869 of 1945 (/home/deby/poky/meta-debian/recipes-debian/libnftnl/libnftnl_debian.bb:do_compile)
+NOTE: recipe libnftnl-1.1.2-r0: task do_compile: Started
+NOTE: recipe grep-3.3-r0: task do_package_write_deb: Succeeded
+NOTE: Running task 1871 of 1945 (/home/deby/poky/meta-debian/recipes-debian/coreutils/coreutils_debian.bb:do_package_write_deb)
+NOTE: recipe which-4.8.6.1-r0: task do_package_write_deb: Succeeded
+NOTE: Running task 1872 of 1945 (/home/deby/poky/meta-debian/recipes-debian/unzip/unzip_debian.bb:do_package_write_deb)
+NOTE: recipe unzip-6.0-r0: task do_package_write_deb: Started
+NOTE: recipe make-4.2.1-r0: task do_package_write_deb: Started
+NOTE: recipe coreutils-8.30-r0: task do_package_write_deb: Started
+NOTE: recipe procps-3.3.15-r0: task do_package_write_deb: Succeeded
+NOTE: Running task 1873 of 1945 (/home/deby/poky/meta-debian/recipes-debian/sed/sed_debian.bb:do_package_write_deb)
+NOTE: recipe socat-1.7.3.2-r0: task do_package_write_deb: Succeeded
+NOTE: Running task 1875 of 1945 (/home/deby/poky/meta/recipes-support/ptest-runner/ptest-runner_2.3.1.bb:do_package_write_deb)
+NOTE: recipe mdadm-4.1-r0: task do_package_write_deb: Succeeded
+NOTE: Running task 1876 of 1945 (/home/deby/poky/meta-debian/recipes-debian/ca-certificates/ca-certificates_debian.bb:do_package_write_deb)
+NOTE: recipe libnftnl-1.1.2-r0: task do_compile: Succeeded
+NOTE: Running task 1877 of 1945 (/home/deby/poky/meta-debian/recipes-debian/libnftnl/libnftnl_debian.bb:do_install)
+NOTE: recipe iproute2-4.20.0-r0: task do_package_write_deb: Succeeded
+NOTE: Running task 1878 of 1945 (/home/deby/poky/meta-debian/recipes-debian/sqlite3/sqlite3_debian.bb:do_package_write_deb)
+NOTE: recipe libnftnl-1.1.2-r0: task do_install: Started
+NOTE: recipe libnftnl-1.1.2-r0: task do_install: Succeeded
+NOTE: Running task 1879 of 1945 (/home/deby/poky/meta-debian/recipes-debian/libnftnl/libnftnl_debian.bb:do_package)
+NOTE: recipe libnftnl-1.1.2-r0: task do_package: Started
+NOTE: recipe kmod-26-r0: task do_package_write_deb: Succeeded
+NOTE: Running task 1880 of 1945 (/home/deby/poky/meta-debian/recipes-debian/libnftnl/libnftnl_debian.bb:do_populate_sysroot)
+NOTE: recipe libnftnl-1.1.2-r0: task do_populate_sysroot: Started
+NOTE: recipe unzip-6.0-r0: task do_package_write_deb: Succeeded
+NOTE: Running task 1881 of 1945 (/home/deby/poky/meta-debian/recipes-debian/libxcrypt/libxcrypt_debian.bb:do_package_write_deb)
+NOTE: recipe sed-4.7-r0: task do_package_write_deb: Started
+NOTE: recipe ca-certificates-20190110-r0: task do_package_write_deb: Started
+NOTE: recipe e2fsprogs-1.44.5-r0: task do_package_write_deb: Succeeded
+NOTE: recipe sqlite3-3_3.27.2-r0: task do_package_write_deb: Started
+NOTE: Running task 1882 of 1945 (/home/deby/poky/meta-debian/recipes-debian/openssl/openssl_debian.bb:do_package_write_deb)
+NOTE: recipe coreutils-8.30-r0: task do_package_write_deb: Succeeded
+NOTE: Running task 1883 of 1945 (/home/deby/poky/meta/recipes-extended/libnsl/libnsl2_git.bb:do_package_write_deb)
+NOTE: recipe ptest-runner-2.3.1+gitAUTOINC+63d097cc46-r0: task do_package_write_deb: Started
+NOTE: recipe make-4.2.1-r0: task do_package_write_deb: Succeeded
+NOTE: Running task 1884 of 1945 (/home/deby/poky/meta-debian/recipes-debian/gdbm/gdbm_debian.bb:do_package_write_deb)
+NOTE: recipe libnsl2-1.2.0+gitAUTOINC+37c5ffe303-r0: task do_package_write_deb: Started
+NOTE: recipe libxcrypt-4.1.1-r0: task do_package_write_deb: Started
+NOTE: recipe gdbm-1.18.1-r0: task do_package_write_deb: Started
+NOTE: recipe ca-certificates-20190110-r0: task do_package_write_deb: Succeeded
+NOTE: Running task 1885 of 1945 (/home/deby/poky/meta-debian/recipes-debian/libffi/libffi_debian.bb:do_package_write_deb)
+NOTE: recipe sed-4.7-r0: task do_package_write_deb: Succeeded
+NOTE: Running task 1886 of 1945 (/home/deby/poky/meta-debian/recipes-debian/libtirpc/libtirpc_debian.bb:do_package_write_deb)
+NOTE: recipe ptest-runner-2.3.1+gitAUTOINC+63d097cc46-r0: task do_package_write_deb: Succeeded
+NOTE: Running task 1887 of 1945 (/home/deby/poky/meta-debian/recipes-debian/zlib/zlib_debian.bb:do_package_write_deb)
+NOTE: recipe libnftnl-1.1.2-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 1888 of 1945 (/home/deby/poky/meta-debian/recipes-debian/nftables/nftables_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe nftables-0.9.0-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe zlib-1.2.11-r0: task do_package_write_deb: Started
+NOTE: recipe libnsl2-1.2.0+gitAUTOINC+37c5ffe303-r0: task do_package_write_deb: Succeeded
+NOTE: Running task 1889 of 1945 (/home/deby/poky/meta-debian/recipes-debian/bzip2/bzip2_debian.bb:do_package_write_deb)
+NOTE: recipe libxcrypt-4.1.1-r0: task do_package_write_deb: Succeeded
+NOTE: Running task 1890 of 1945 (/home/deby/poky/meta-debian/recipes-debian/xz/xz_debian.bb:do_package_write_deb)
+NOTE: recipe gdbm-1.18.1-r0: task do_package_write_deb: Succeeded
+NOTE: Running task 1891 of 1945 (/home/deby/poky/meta-debian/recipes-debian/ncurses/ncurses_debian.bb:do_package_write_deb)
+NOTE: recipe bash-5.0-r0: task do_package_write_deb: Succeeded
+NOTE: Running task 1896 of 1945 (/home/deby/poky/meta-debian/recipes-debian/libtool/libtool-cross_debian.bb:do_package_write_deb)
+NOTE: recipe libffi-3.2.1-r0: task do_package_write_deb: Started
+NOTE: recipe libtirpc-1.1.4-r0: task do_package_write_deb: Started
+NOTE: recipe libtool-cross-2.4.6-r0: task do_package_write_deb: Started
+NOTE: recipe sqlite3-3_3.27.2-r0: task do_package_write_deb: Succeeded
+NOTE: Running task 1899 of 1945 (/home/deby/poky/meta-debian/recipes-debian/gmp/gmp_debian.bb:do_package_write_deb)
+NOTE: recipe bash-completion-2.8-r0: task do_package_write_deb: Succeeded
+NOTE: Running task 1900 of 1945 (/home/deby/poky/meta-debian/recipes-debian/readline/readline_debian.bb:do_package_write_deb)
+NOTE: recipe libtool-cross-2.4.6-r0: task do_package_write_deb: Succeeded
+NOTE: Running task 1902 of 1945 (/home/deby/poky/meta-debian/recipes-debian/nftables/nftables_debian.bb:do_populate_lic)
+NOTE: recipe nftables-0.9.0-r0: task do_populate_lic: Started
+NOTE: recipe openssl-1.1.1d-r0: task do_package_write_deb: Started
+NOTE: recipe nftables-0.9.0-r0: task do_populate_lic: Succeeded
+NOTE: recipe nftables-0.9.0-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 1903 of 1945 (/home/deby/poky/meta-debian/recipes-debian/nftables/nftables_debian.bb:do_configure)
+NOTE: recipe nftables-0.9.0-r0: task do_configure: Started
+NOTE: recipe gmp-6.1.2-r0: task do_package_write_deb: Started
+NOTE: recipe bzip2-1.0.6-r0: task do_package_write_deb: Started
+NOTE: recipe xz-5.2.4-r0: task do_package_write_deb: Started
+NOTE: recipe libffi-3.2.1-r0: task do_package_write_deb: Succeeded
+NOTE: recipe zlib-1.2.11-r0: task do_package_write_deb: Succeeded
+NOTE: recipe ncurses-6.1+20181013-r0: task do_package_write_deb: Started
+NOTE: recipe readline-7.0-r0: task do_package_write_deb: Started
+NOTE: recipe libtirpc-1.1.4-r0: task do_package_write_deb: Succeeded
+NOTE: recipe bzip2-1.0.6-r0: task do_package_write_deb: Succeeded
+NOTE: recipe libnftnl-1.1.2-r0: task do_package: Succeeded
+NOTE: Running task 1904 of 1945 (/home/deby/poky/meta-debian/recipes-debian/libnftnl/libnftnl_debian.bb:do_packagedata)
+NOTE: recipe libnftnl-1.1.2-r0: task do_packagedata: Started
+NOTE: recipe libnftnl-1.1.2-r0: task do_packagedata: Succeeded
+NOTE: Running task 1905 of 1945 (/home/deby/poky/meta-debian/recipes-debian/libnftnl/libnftnl_debian.bb:do_package_write_deb)
+NOTE: recipe libnftnl-1.1.2-r0: task do_package_write_deb: Started
+NOTE: recipe xz-5.2.4-r0: task do_package_write_deb: Succeeded
+NOTE: recipe readline-7.0-r0: task do_package_write_deb: Succeeded
+NOTE: recipe libnftnl-1.1.2-r0: task do_package_write_deb: Succeeded
+NOTE: recipe gmp-6.1.2-r0: task do_package_write_deb: Succeeded
+NOTE: recipe python3-3.7.3-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 1906 of 1945 (/home/deby/poky/meta-debian/recipes-debian/libxml/libxml2_debian.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 1907 of 1945 (/home/deby/poky/meta-debian/recipes-debian/btrfs-tools/btrfs-tools_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe libxml2-2.9.4-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe btrfs-tools-4.20.1-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe libxml2-2.9.4-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 1908 of 1945 (/home/deby/poky/meta-debian/recipes-debian/libxml/libxml2_debian.bb:do_configure)
+NOTE: recipe libxml2-2.9.4-r0: task do_configure: Started
+NOTE: recipe nftables-0.9.0-r0: task do_configure: Succeeded
+NOTE: Running task 1909 of 1945 (/home/deby/poky/meta-debian/recipes-debian/nftables/nftables_debian.bb:do_compile)
+NOTE: recipe nftables-0.9.0-r0: task do_compile: Started
+NOTE: recipe btrfs-tools-4.20.1-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 1910 of 1945 (/home/deby/poky/meta-debian/recipes-debian/btrfs-tools/btrfs-tools_debian.bb:do_configure)
+NOTE: recipe binutils-2.31.1-r0: task do_package: Succeeded
+NOTE: Running task 1911 of 1945 (/home/deby/poky/meta-debian/recipes-debian/binutils/binutils_debian.bb:do_packagedata)
+NOTE: recipe btrfs-tools-4.20.1-r0: task do_configure: Started
+NOTE: recipe binutils-2.31.1-r0: task do_packagedata: Started
+NOTE: recipe binutils-2.31.1-r0: task do_packagedata: Succeeded
+NOTE: Running task 1912 of 1945 (/home/deby/poky/meta-debian/recipes-debian/binutils/binutils_debian.bb:do_package_write_deb)
+NOTE: recipe binutils-2.31.1-r0: task do_package_write_deb: Started
+NOTE: recipe ncurses-6.1+20181013-r0: task do_package_write_deb: Succeeded
+NOTE: recipe nftables-0.9.0-r0: task do_compile: Succeeded
+NOTE: Running task 1913 of 1945 (/home/deby/poky/meta-debian/recipes-debian/nftables/nftables_debian.bb:do_install)
+NOTE: recipe nftables-0.9.0-r0: task do_install: Started
+NOTE: recipe nftables-0.9.0-r0: task do_install: Succeeded
+NOTE: Running task 1914 of 1945 (/home/deby/poky/meta-debian/recipes-debian/nftables/nftables_debian.bb:do_package)
+NOTE: Running task 1915 of 1945 (/home/deby/poky/meta-debian/recipes-debian/nftables/nftables_debian.bb:do_populate_sysroot)
+NOTE: recipe nftables-0.9.0-r0: task do_populate_sysroot: Started
+NOTE: recipe nftables-0.9.0-r0: task do_package: Started
+NOTE: recipe nftables-0.9.0-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe openssl-1.1.1d-r0: task do_package_write_deb: Succeeded
+NOTE: recipe btrfs-tools-4.20.1-r0: task do_configure: Succeeded
+NOTE: Running task 1916 of 1945 (/home/deby/poky/meta-debian/recipes-debian/btrfs-tools/btrfs-tools_debian.bb:do_compile)
+NOTE: recipe btrfs-tools-4.20.1-r0: task do_compile: Started
+NOTE: recipe binutils-2.31.1-r0: task do_package_write_deb: Succeeded
+NOTE: recipe gcc-8.3.0-r0: task do_package: Succeeded
+NOTE: Running task 1917 of 1945 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc_debian.bb:do_packagedata)
+NOTE: recipe gcc-8.3.0-r0: task do_packagedata: Started
+NOTE: recipe gcc-8.3.0-r0: task do_packagedata: Succeeded
+NOTE: Running task 1918 of 1945 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc_debian.bb:do_package_write_deb)
+NOTE: Running task 1919 of 1945 (/home/deby/poky/meta-debian/recipes-debian/perl/perl_debian.bb:do_package_write_deb)
+NOTE: recipe gcc-8.3.0-r0: task do_package_write_deb: Started
+NOTE: recipe perl-5.28.1-r1: task do_package_write_deb: Started
+NOTE: recipe btrfs-tools-4.20.1-r0: task do_compile: Succeeded
+NOTE: Running task 1920 of 1945 (/home/deby/poky/meta-debian/recipes-debian/btrfs-tools/btrfs-tools_debian.bb:do_install)
+NOTE: recipe btrfs-tools-4.20.1-r0: task do_install: Started
+NOTE: recipe gcc-8.3.0-r0: task do_package_write_deb: Succeeded
+NOTE: recipe btrfs-tools-4.20.1-r0: task do_install: Succeeded
+NOTE: recipe nftables-0.9.0-r0: task do_package: Succeeded
+NOTE: Running task 1921 of 1945 (/home/deby/poky/meta-debian/recipes-debian/nftables/nftables_debian.bb:do_packagedata)
+NOTE: recipe nftables-0.9.0-r0: task do_packagedata: Started
+NOTE: recipe nftables-0.9.0-r0: task do_packagedata: Succeeded
+NOTE: Running task 1922 of 1945 (/home/deby/poky/meta-debian/recipes-debian/nftables/nftables_debian.bb:do_package_write_deb)
+NOTE: Running task 1923 of 1945 (/home/deby/poky/meta-debian/recipes-debian/nftables/nftables_debian.bb:do_package_qa)
+NOTE: recipe nftables-0.9.0-r0: task do_package_qa: Started
+NOTE: recipe nftables-0.9.0-r0: task do_package_write_deb: Started
+NOTE: recipe libxml2-2.9.4-r0: task do_configure: Succeeded
+NOTE: Running task 1924 of 1945 (/home/deby/poky/meta-debian/recipes-debian/libxml/libxml2_debian.bb:do_compile)
+NOTE: recipe libxml2-2.9.4-r0: task do_compile: Started
+NOTE: recipe nftables-0.9.0-r0: task do_package_qa: Succeeded
+NOTE: recipe nftables-0.9.0-r0: task do_package_write_deb: Succeeded
+NOTE: recipe python3-3.7.3-r0: task do_package: Succeeded
+NOTE: Running task 1925 of 1945 (/home/deby/poky/meta-debian/recipes-debian/python/python3_debian.bb:do_packagedata)
+NOTE: recipe python3-3.7.3-r0: task do_packagedata: Started
+NOTE: recipe python3-3.7.3-r0: task do_packagedata: Succeeded
+NOTE: Running task 1926 of 1945 (/home/deby/poky/meta-debian/recipes-debian/btrfs-tools/btrfs-tools_debian.bb:do_package)
+NOTE: Running task 1927 of 1945 (/home/deby/poky/meta-debian/recipes-debian/python/python3_debian.bb:do_package_write_deb)
+NOTE: Running task 1928 of 1945 (/home/deby/poky/meta/recipes-devtools/opkg-utils/opkg-utils_0.4.0.bb:do_package_write_deb)
+NOTE: recipe btrfs-tools-4.20.1-r0: task do_package: Started
+NOTE: recipe python3-3.7.3-r0: task do_package_write_deb: Started
+NOTE: recipe opkg-utils-0.4.0-r0: task do_package_write_deb: Started
+NOTE: recipe opkg-utils-0.4.0-r0: task do_package_write_deb: Succeeded
+NOTE: recipe perl-5.28.1-r1: task do_package_write_deb: Succeeded
+NOTE: recipe libxml2-2.9.4-r0: task do_compile: Succeeded
+NOTE: Running task 1929 of 1945 (/home/deby/poky/meta-debian/recipes-debian/libxml/libxml2_debian.bb:do_install)
+NOTE: recipe btrfs-tools-4.20.1-r0: task do_package: Succeeded
+NOTE: Running task 1930 of 1945 (/home/deby/poky/meta-debian/recipes-debian/btrfs-tools/btrfs-tools_debian.bb:do_packagedata)
+NOTE: recipe libxml2-2.9.4-r0: task do_install: Started
+NOTE: recipe btrfs-tools-4.20.1-r0: task do_packagedata: Started
+NOTE: recipe btrfs-tools-4.20.1-r0: task do_packagedata: Succeeded
+NOTE: Running task 1931 of 1945 (/home/deby/poky/meta-debian/recipes-debian/btrfs-tools/btrfs-tools_debian.bb:do_package_write_deb)
+NOTE: Running task 1932 of 1945 (/home/deby/poky/meta-debian/recipes-debian/util-linux/util-linux_debian.bb:do_package_write_deb)
+NOTE: recipe btrfs-tools-4.20.1-r0: task do_package_write_deb: Started
+NOTE: recipe util-linux-2.33.1-r0: task do_package_write_deb: Started
+NOTE: recipe libxml2-2.9.4-r0: task do_install: Succeeded
+NOTE: Running task 1933 of 1945 (/home/deby/poky/meta-debian/recipes-debian/libxml/libxml2_debian.bb:do_package)
+NOTE: Running task 1934 of 1945 (/home/deby/poky/meta-debian/recipes-debian/libxml/libxml2_debian.bb:do_populate_sysroot)
+NOTE: recipe libxml2-2.9.4-r0: task do_populate_sysroot: Started
+NOTE: recipe libxml2-2.9.4-r0: task do_package: Started
+NOTE: recipe python3-3.7.3-r0: task do_package_write_deb: Succeeded
+NOTE: recipe libxml2-2.9.4-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 1935 of 1945 (/home/deby/poky/meta-debian/recipes-debian/shared-mime-info/shared-mime-info_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe shared-mime-info-1.10-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe btrfs-tools-4.20.1-r0: task do_package_write_deb: Succeeded
+NOTE: recipe libxml2-2.9.4-r0: task do_package: Succeeded
+NOTE: Running task 1936 of 1945 (/home/deby/poky/meta-debian/recipes-debian/libxml/libxml2_debian.bb:do_packagedata)
+NOTE: recipe libxml2-2.9.4-r0: task do_packagedata: Started
+NOTE: recipe libxml2-2.9.4-r0: task do_packagedata: Succeeded
+NOTE: Running task 1937 of 1945 (/home/deby/poky/meta-debian/recipes-debian/libxml/libxml2_debian.bb:do_package_write_deb)
+NOTE: recipe libxml2-2.9.4-r0: task do_package_write_deb: Started
+NOTE: recipe shared-mime-info-1.10-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 1938 of 1945 (/home/deby/poky/meta-debian/recipes-debian/shared-mime-info/shared-mime-info_debian.bb:do_configure)
+NOTE: recipe shared-mime-info-1.10-r0: task do_configure: Started
+NOTE: recipe libxml2-2.9.4-r0: task do_package_write_deb: Succeeded
+NOTE: recipe util-linux-2.33.1-r0: task do_package_write_deb: Succeeded
+NOTE: recipe shared-mime-info-1.10-r0: task do_configure: Succeeded
+NOTE: Running task 1939 of 1945 (/home/deby/poky/meta-debian/recipes-debian/shared-mime-info/shared-mime-info_debian.bb:do_compile)
+NOTE: recipe shared-mime-info-1.10-r0: task do_compile: Started
+NOTE: recipe shared-mime-info-1.10-r0: task do_compile: Succeeded
+NOTE: Running task 1940 of 1945 (/home/deby/poky/meta-debian/recipes-debian/shared-mime-info/shared-mime-info_debian.bb:do_install)
+NOTE: recipe shared-mime-info-1.10-r0: task do_install: Started
+NOTE: recipe shared-mime-info-1.10-r0: task do_install: Succeeded
+NOTE: Running task 1941 of 1945 (/home/deby/poky/meta-debian/recipes-debian/shared-mime-info/shared-mime-info_debian.bb:do_package)
+NOTE: recipe shared-mime-info-1.10-r0: task do_package: Started
+NOTE: recipe shared-mime-info-1.10-r0: task do_package: Succeeded
+NOTE: Running task 1942 of 1945 (/home/deby/poky/meta-debian/recipes-debian/shared-mime-info/shared-mime-info_debian.bb:do_packagedata)
+NOTE: recipe shared-mime-info-1.10-r0: task do_packagedata: Started
+NOTE: recipe shared-mime-info-1.10-r0: task do_packagedata: Succeeded
+NOTE: Running task 1943 of 1945 (/home/deby/poky/meta-debian/recipes-debian/shared-mime-info/shared-mime-info_debian.bb:do_package_write_deb)
+NOTE: Running task 1944 of 1945 (/home/deby/poky/meta-debian/recipes-debian/glib-2.0/glib-2.0_debian.bb:do_package_write_deb)
+NOTE: recipe shared-mime-info-1.10-r0: task do_package_write_deb: Started
+NOTE: recipe glib-2.0-2.58.3-r0: task do_package_write_deb: Started
+NOTE: recipe shared-mime-info-1.10-r0: task do_package_write_deb: Succeeded
+NOTE: recipe glib-2.0-2.58.3-r0: task do_package_write_deb: Succeeded
+NOTE: Running noexec task 1945 of 1945 (/home/deby/poky/meta-debian/recipes-debian/nftables/nftables_debian.bb:do_build)
+NOTE: Tasks Summary: Attempted 1945 tasks of which 1828 didn't need to be rerun and all succeeded.

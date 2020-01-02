@@ -1,0 +1,69 @@
+Loading cache...done.
+Loaded 2058 entries from dependency cache.
+Parsing recipes...done.
+Parsing of 1265 .bb files complete (1263 cached, 2 parsed). 2061 targets, 199 skipped, 0 masked, 0 errors.
+WARNING: No bb files matched BBFILE_PATTERN_dti '^/home/deby/poky/meta-debian/tests/../../meta-debian/bsp/meta-ti/'
+NOTE: Resolving any missing task queue dependencies
+
+Build Configuration:
+BB_VERSION           = "1.42.0"
+BUILD_SYS            = "x86_64-linux"
+NATIVELSBSTRING      = "universal"
+TARGET_SYS           = "arm-deby-linux-gnueabi"
+MACHINE              = "beaglebone"
+DISTRO               = "deby"
+DISTRO_VERSION       = "10.0"
+TUNE_FEATURES        = "arm armv7a vfp thumb neon callconvention-hard"
+TARGET_FPU           = "hard"
+meta                 
+meta-poky            = "warrior:023ff85a9ae94331926e923b346fd8a349881e63"
+meta-debian          = "warrior:8e157b1a7a3a3ae1224ea194f0fc9e25772d0e07"
+meta-ti              = "master:036668d1e30e6a344a362854c24b45cde169ddec"
+meta-ti              = "warrior:8e157b1a7a3a3ae1224ea194f0fc9e25772d0e07"
+
+Initialising tasks...done.
+Sstate summary: Wanted 37 Found 0 Missed 37 Current 494 (0% match, 93% complete)
+NOTE: Executing SetScene Tasks
+NOTE: Executing RunQueue Tasks
+NOTE: Running task 1464 of 2331 (/home/deby/poky/meta/recipes-graphics/wayland/wayland_1.17.0.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 1846 of 2331 (/home/deby/poky/meta/recipes-gnome/gobject-introspection/gobject-introspection_1.58.3.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 1918 of 2331 (/home/deby/poky/meta-debian/recipes-debian/libpcap/libpcap_debian.bb:do_configure)
+NOTE: recipe wayland-1.17.0-r0: task do_prepare_recipe_sysroot: Started
+NOTE: Running task 1923 of 2331 (/home/deby/poky/meta/recipes-connectivity/bluez5/bluez5_5.50.bb:do_packagedata)
+NOTE: Running task 2053 of 2331 (/home/deby/poky/meta-debian/recipes-debian/python/python3-setuptools_debian.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 2060 of 2331 (/home/deby/poky/meta/recipes-devtools/python/python3-dbus_1.2.8.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 2265 of 2331 (/home/deby/poky/meta-debian/recipes-debian/libpcap/libpcap_debian.bb:do_populate_lic)
+NOTE: recipe libpcap-1.8.1-r0: task do_populate_lic: Started
+NOTE: recipe libpcap-1.8.1-r0: task do_configure: Started
+NOTE: recipe bluez5-5.50-r0: task do_packagedata: Started
+NOTE: recipe python3-setuptools-40.8.0-r0: task do_prepare_recipe_sysroot: Started
+ERROR: libpcap-1.8.1-r0 do_configure: Function failed: do_configure (log file is located at /home/deby/build/tmp/work/armv7at2hf-neon-deby-linux-gnueabi/libpcap/1.8.1-r0/temp/log.do_configure.20471)
+ERROR: Logfile of failure stored in: /home/deby/build/tmp/work/armv7at2hf-neon-deby-linux-gnueabi/libpcap/1.8.1-r0/temp/log.do_configure.20471
+Log data follows:
+| DEBUG: SITE files ['endian-little', 'bit-32', 'arm-common', 'arm-32', 'common-linux', 'common-glibc', 'arm-linux', 'arm-linux-gnueabi', 'common']
+| DEBUG: Executing shell function autotools_preconfigure
+| DEBUG: Shell function autotools_preconfigure finished
+| DEBUG: Executing python function autotools_aclocals
+| DEBUG: SITE files ['endian-little', 'bit-32', 'arm-common', 'arm-32', 'common-linux', 'common-glibc', 'arm-linux', 'arm-linux-gnueabi', 'common']
+| DEBUG: Python function autotools_aclocals finished
+| DEBUG: Executing shell function do_configure
+| /home/deby/build/tmp/work/armv7at2hf-neon-deby-linux-gnueabi/libpcap/1.8.1-r0/temp/run.do_configure.20471: 113: /home/deby/build/tmp/work/armv7at2hf-neon-deby-linux-gnueabi/libpcap/1.8.1-r0/temp/run.do_configure.20471: srcdir: not found
+| sed: can't read /Makefile.in: No such file or directory
+| WARNING: exit code 2 from a shell command.
+| ERROR: Function failed: do_configure (log file is located at /home/deby/build/tmp/work/armv7at2hf-neon-deby-linux-gnueabi/libpcap/1.8.1-r0/temp/log.do_configure.20471)
+NOTE: recipe libpcap-1.8.1-r0: task do_configure: Failed
+ERROR: Task (/home/deby/poky/meta-debian/recipes-debian/libpcap/libpcap_debian.bb:do_configure) failed with exit code '1'
+NOTE: recipe bluez5-5.50-r0: task do_packagedata: Succeeded
+NOTE: recipe python3-dbus-1.2.8-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe gobject-introspection-1.58.3-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe libpcap-1.8.1-r0: task do_populate_lic: Succeeded
+NOTE: recipe python3-setuptools-40.8.0-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: recipe wayland-1.17.0-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: recipe python3-dbus-1.2.8-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: recipe gobject-introspection-1.58.3-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Tasks Summary: Attempted 2265 tasks of which 2258 didn't need to be rerun and 1 failed.
+
+Summary: 1 task failed:
+  /home/deby/poky/meta-debian/recipes-debian/libpcap/libpcap_debian.bb:do_configure
+Summary: There was 1 WARNING message shown.
+Summary: There was 1 ERROR message shown, returning a non-zero exit code.

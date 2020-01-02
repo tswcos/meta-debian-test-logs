@@ -1,0 +1,50 @@
+Loading cache...done.
+Loaded 1803 entries from dependency cache.
+Parsing recipes...done.
+Parsing of 1030 .bb files complete (1028 cached, 2 parsed). 1806 targets, 231 skipped, 0 masked, 0 errors.
+NOTE: Resolving any missing task queue dependencies
+
+Build Configuration:
+BB_VERSION           = "1.42.0"
+BUILD_SYS            = "x86_64-linux"
+NATIVELSBSTRING      = "universal"
+TARGET_SYS           = "mips-deby-linux"
+MACHINE              = "qemumips"
+DISTRO               = "deby-tiny"
+DISTRO_VERSION       = "10.0"
+TUNE_FEATURES        = "o32 bigendian fpu-hard mips32r2"
+TARGET_FPU           = ""
+meta                 
+meta-poky            = "warrior:023ff85a9ae94331926e923b346fd8a349881e63"
+meta-debian          = "warrior:8e157b1a7a3a3ae1224ea194f0fc9e25772d0e07"
+
+Initialising tasks...done.
+Sstate summary: Wanted 10 Found 0 Missed 10 Current 75 (0% match, 88% complete)
+NOTE: Executing SetScene Tasks
+NOTE: Executing RunQueue Tasks
+NOTE: Running task 555 of 606 (/home/deby/poky/meta-debian/recipes-debian/libpcap/libpcap_debian.bb:do_configure)
+NOTE: Running task 590 of 606 (/home/deby/poky/meta-debian/recipes-debian/libnet/libnet_debian.bb:do_populate_lic)
+NOTE: recipe libpcap-1.8.1-r0: task do_configure: Started
+NOTE: recipe libnet-1.1.6-r0: task do_populate_lic: Started
+ERROR: libpcap-1.8.1-r0 do_configure: Function failed: do_configure (log file is located at /home/deby/build/tmp/work/mips32r2-deby-linux/libpcap/1.8.1-r0/temp/log.do_configure.28416)
+ERROR: Logfile of failure stored in: /home/deby/build/tmp/work/mips32r2-deby-linux/libpcap/1.8.1-r0/temp/log.do_configure.28416
+Log data follows:
+| DEBUG: SITE files ['endian-big', 'bit-32', 'mips-common', 'common-linux', 'common-glibc', 'mips-linux', 'common']
+| DEBUG: Executing shell function autotools_preconfigure
+| DEBUG: Shell function autotools_preconfigure finished
+| DEBUG: Executing python function autotools_aclocals
+| DEBUG: SITE files ['endian-big', 'bit-32', 'mips-common', 'common-linux', 'common-glibc', 'mips-linux', 'common']
+| DEBUG: Python function autotools_aclocals finished
+| DEBUG: Executing shell function do_configure
+| /home/deby/build/tmp/work/mips32r2-deby-linux/libpcap/1.8.1-r0/temp/run.do_configure.28416: 113: /home/deby/build/tmp/work/mips32r2-deby-linux/libpcap/1.8.1-r0/temp/run.do_configure.28416: srcdir: not found
+| sed: can't read /Makefile.in: No such file or directory
+| WARNING: exit code 2 from a shell command.
+| ERROR: Function failed: do_configure (log file is located at /home/deby/build/tmp/work/mips32r2-deby-linux/libpcap/1.8.1-r0/temp/log.do_configure.28416)
+NOTE: recipe libpcap-1.8.1-r0: task do_configure: Failed
+ERROR: Task (/home/deby/poky/meta-debian/recipes-debian/libpcap/libpcap_debian.bb:do_configure) failed with exit code '1'
+NOTE: recipe libnet-1.1.6-r0: task do_populate_lic: Succeeded
+NOTE: Tasks Summary: Attempted 590 tasks of which 588 didn't need to be rerun and 1 failed.
+
+Summary: 1 task failed:
+  /home/deby/poky/meta-debian/recipes-debian/libpcap/libpcap_debian.bb:do_configure
+Summary: There was 1 ERROR message shown, returning a non-zero exit code.

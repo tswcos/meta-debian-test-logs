@@ -1,0 +1,32 @@
+Loading cache...done.
+Loaded 1803 entries from dependency cache.
+Parsing recipes...done.
+Parsing of 1030 .bb files complete (1028 cached, 2 parsed). 1806 targets, 64 skipped, 0 masked, 0 errors.
+NOTE: Resolving any missing task queue dependencies
+
+Build Configuration:
+BB_VERSION           = "1.42.0"
+BUILD_SYS            = "x86_64-linux"
+NATIVELSBSTRING      = "universal"
+TARGET_SYS           = "aarch64-deby-linux"
+MACHINE              = "qemuarm64"
+DISTRO               = "deby"
+DISTRO_VERSION       = "10.0"
+TUNE_FEATURES        = "aarch64 armv8a crc"
+TARGET_FPU           = ""
+meta                 
+meta-poky            = "warrior:023ff85a9ae94331926e923b346fd8a349881e63"
+meta-debian          = "warrior:8e157b1a7a3a3ae1224ea194f0fc9e25772d0e07"
+
+Initialising tasks...done.
+Sstate summary: Wanted 2 Found 0 Missed 2 Current 83 (0% match, 97% complete)
+NOTE: Executing SetScene Tasks
+NOTE: Executing RunQueue Tasks
+NOTE: Running task 602 of 606 (/home/deby/poky/meta-debian/recipes-debian/libnftnl/libnftnl_debian.bb:do_populate_lic)
+NOTE: Running task 604 of 606 (/home/deby/poky/meta-debian/recipes-debian/libnftnl/libnftnl_debian.bb:do_package_qa)
+NOTE: recipe libnftnl-1.1.2-r0: task do_populate_lic: Started
+NOTE: recipe libnftnl-1.1.2-r0: task do_populate_lic: Succeeded
+NOTE: recipe libnftnl-1.1.2-r0: task do_package_qa: Started
+NOTE: recipe libnftnl-1.1.2-r0: task do_package_qa: Succeeded
+NOTE: Running noexec task 606 of 606 (/home/deby/poky/meta-debian/recipes-debian/libnftnl/libnftnl_debian.bb:do_build)
+NOTE: Tasks Summary: Attempted 606 tasks of which 603 didn't need to be rerun and all succeeded.
