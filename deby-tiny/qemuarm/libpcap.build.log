@@ -1,13 +1,11 @@
-Loading cache...done.
-Loaded 1803 entries from dependency cache.
 Parsing recipes...done.
-Parsing of 1030 .bb files complete (1028 cached, 2 parsed). 1806 targets, 225 skipped, 0 masked, 0 errors.
+Parsing of 1030 .bb files complete (0 cached, 1030 parsed). 1806 targets, 225 skipped, 0 masked, 0 errors.
 NOTE: Resolving any missing task queue dependencies
 
 Build Configuration:
 BB_VERSION           = "1.42.0"
 BUILD_SYS            = "x86_64-linux"
-NATIVELSBSTRING      = "universal"
+NATIVELSBSTRING      = "debian-10"
 TARGET_SYS           = "arm-deby-linux-gnueabi"
 MACHINE              = "qemuarm"
 DISTRO               = "deby-tiny"
@@ -16,35 +14,1774 @@ TUNE_FEATURES        = "arm armv7ve vfp thumb neon callconvention-hard"
 TARGET_FPU           = "hard"
 meta                 
 meta-poky            = "warrior:023ff85a9ae94331926e923b346fd8a349881e63"
-meta-debian          = "warrior:8e157b1a7a3a3ae1224ea194f0fc9e25772d0e07"
+meta-debian          = "warrior:0fba4d92162a85a330d2d88ebd73ee0819f920fc"
 
+NOTE: Fetching uninative binary shim from http://downloads.yoctoproject.org/releases/uninative/2.7/x86_64-nativesdk-libc.tar.xz;sha256sum=9498d8bba047499999a7310ac2576d0796461184965351a56f6d32c888a1f216
 Initialising tasks...done.
-Sstate summary: Wanted 6 Found 0 Missed 6 Current 75 (0% match, 92% complete)
+Sstate summary: Wanted 81 Found 0 Missed 81 Current 0 (0% match, 0% complete)
 NOTE: Executing SetScene Tasks
 NOTE: Executing RunQueue Tasks
-NOTE: Running task 554 of 593 (/home/deby/poky/meta-debian/recipes-debian/libpcap/libpcap_debian.bb:do_configure)
-NOTE: Running task 585 of 593 (/home/deby/poky/meta-debian/recipes-debian/libpcap/libpcap_debian.bb:do_populate_lic)
+NOTE: Running task 1 of 593 (/home/deby/poky/meta-debian/recipes-debian/quilt/quilt-native_debian.bb:do_fetch)
+NOTE: Running task 2 of 593 (virtual:native:/home/deby/poky/meta/recipes-devtools/gnu-config/gnu-config_git.bb:do_fetch)
+NOTE: Running task 3 of 593 (/home/deby/poky/meta-debian/recipes-debian/m4/m4-native_debian.bb:do_fetch)
+NOTE: Running task 4 of 593 (/home/deby/poky/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy-native.bb:do_fetch)
+NOTE: Running task 5 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/autoconf/autoconf_debian.bb:do_fetch)
+NOTE: Running task 6 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/automake/automake_debian.bb:do_fetch)
+NOTE: Running task 7 of 593 (/home/deby/poky/meta-debian/recipes-debian/libtool/libtool-native_debian.bb:do_fetch)
+NOTE: Running task 8 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/flex/flex_debian.bb:do_fetch)
+NOTE: Running task 9 of 593 (/home/deby/poky/meta/recipes-core/gettext/gettext-minimal-native_0.19.8.1.bb:do_fetch)
+NOTE: Running task 10 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/zlib/zlib_debian.bb:do_fetch)
+NOTE: Running task 11 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/pkgconfig/pkgconfig_debian.bb:do_fetch)
+NOTE: Running task 12 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/gmp/gmp_debian.bb:do_fetch)
+NOTE: Running task 13 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/bison/bison_debian.bb:do_fetch)
+NOTE: Running task 14 of 593 (/home/deby/poky/meta-debian/recipes-debian/binutils/binutils-cross_debian.bb:do_fetch)
+NOTE: Running task 15 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/autoconf-archive/autoconf-archive_debian.bb:do_fetch)
+NOTE: Running task 16 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/mpfr/mpfr_debian.bb:do_fetch)
+NOTE: recipe m4-native-1.4.18-r0: task do_fetch: Started
+NOTE: recipe libtool-native-2.4.6-r0: task do_fetch: Started
+NOTE: recipe gettext-minimal-native-0.19.8.1-r0: task do_fetch: Started
+NOTE: recipe texinfo-dummy-native-1.0-r0: task do_fetch: Started
+NOTE: recipe gnu-config-native-20181128+gitAUTOINC+058639be22-r0: task do_fetch: Started
+NOTE: recipe quilt-native-0.65-r0: task do_fetch: Started
+NOTE: recipe m4-native-1.4.18-r0: task do_fetch: Succeeded
+NOTE: recipe texinfo-dummy-native-1.0-r0: task do_fetch: Succeeded
+NOTE: recipe automake-native-1.16.1-r0: task do_fetch: Started
+NOTE: recipe flex-native-2.6.4-r0: task do_fetch: Started
+NOTE: recipe pkgconfig-native-0.29-r0: task do_fetch: Started
+NOTE: recipe gmp-native-6.1.2-r0: task do_fetch: Started
+NOTE: recipe autoconf-archive-native-20180313-r0: task do_fetch: Started
+NOTE: recipe autoconf-native-2.69-r0: task do_fetch: Started
+NOTE: recipe zlib-native-1.2.11-r0: task do_fetch: Started
+NOTE: Running task 17 of 593 (/home/deby/poky/meta-debian/recipes-debian/m4/m4-native_debian.bb:do_unpack)
+NOTE: Running task 18 of 593 (/home/deby/poky/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy-native.bb:do_unpack)
+NOTE: recipe bison-native-3.3.2-r0: task do_fetch: Started
+NOTE: recipe mpfr-native-4.0.2-r0: task do_fetch: Started
+NOTE: recipe libtool-native-2.4.6-r0: task do_fetch: Succeeded
+NOTE: recipe gettext-minimal-native-0.19.8.1-r0: task do_fetch: Succeeded
+NOTE: recipe binutils-cross-arm-2.31.1-r0: task do_fetch: Started
+NOTE: Running task 19 of 593 (/home/deby/poky/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy-native.bb:do_prepare_recipe_sysroot)
+NOTE: recipe m4-native-1.4.18-r0: task do_unpack: Started
+NOTE: recipe texinfo-dummy-native-1.0-r0: task do_unpack: Started
+NOTE: Running task 20 of 593 (/home/deby/poky/meta-debian/recipes-debian/libtool/libtool-native_debian.bb:do_unpack)
+NOTE: recipe libtool-native-2.4.6-r0: task do_unpack: Started
+NOTE: recipe texinfo-dummy-native-1.0-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe gmp-native-6.1.2-r0: task do_fetch: Succeeded
+NOTE: recipe zlib-native-1.2.11-r0: task do_fetch: Succeeded
+NOTE: Running task 21 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/zlib/zlib_debian.bb:do_unpack)
+NOTE: Running task 22 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/gmp/gmp_debian.bb:do_unpack)
+NOTE: recipe flex-native-2.6.4-r0: task do_fetch: Succeeded
+NOTE: recipe pkgconfig-native-0.29-r0: task do_fetch: Succeeded
+NOTE: recipe autoconf-archive-native-20180313-r0: task do_fetch: Succeeded
+NOTE: Running task 23 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/flex/flex_debian.bb:do_unpack)
+NOTE: Running task 24 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/pkgconfig/pkgconfig_debian.bb:do_unpack)
+NOTE: Running task 25 of 593 (/home/deby/poky/meta/recipes-core/gettext/gettext-minimal-native_0.19.8.1.bb:do_unpack)
+NOTE: recipe zlib-native-1.2.11-r0: task do_unpack: Started
+NOTE: recipe gettext-minimal-native-0.19.8.1-r0: task do_unpack: Started
+NOTE: recipe gmp-native-6.1.2-r0: task do_unpack: Started
+NOTE: recipe pkgconfig-native-0.29-r0: task do_unpack: Started
+NOTE: recipe flex-native-2.6.4-r0: task do_unpack: Started
+NOTE: recipe quilt-native-0.65-r0: task do_fetch: Succeeded
+NOTE: recipe autoconf-native-2.69-r0: task do_fetch: Succeeded
+NOTE: recipe mpfr-native-4.0.2-r0: task do_fetch: Succeeded
+NOTE: Running task 26 of 593 (/home/deby/poky/meta/recipes-core/gettext/gettext-minimal-native_0.19.8.1.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 27 of 593 (/home/deby/poky/meta-debian/recipes-debian/quilt/quilt-native_debian.bb:do_unpack)
+NOTE: Running task 28 of 593 (/home/deby/poky/meta-debian/recipes-debian/quilt/quilt-native_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe quilt-native-0.65-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe gettext-minimal-native-0.19.8.1-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe quilt-native-0.65-r0: task do_unpack: Started
+NOTE: recipe gettext-minimal-native-0.19.8.1-r0: task do_unpack: Succeeded
+NOTE: Running task 29 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/autoconf/autoconf_debian.bb:do_unpack)
+NOTE: recipe texinfo-dummy-native-1.0-r0: task do_unpack: Succeeded
+NOTE: recipe automake-native-1.16.1-r0: task do_fetch: Succeeded
+NOTE: recipe bison-native-3.3.2-r0: task do_fetch: Succeeded
+NOTE: Running task 30 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/automake/automake_debian.bb:do_unpack)
+NOTE: Running task 31 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/bison/bison_debian.bb:do_unpack)
+NOTE: Running task 32 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/tcltk/tcl_debian.bb:do_fetch)
+NOTE: recipe quilt-native-0.65-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: recipe texinfo-dummy-native-1.0-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 33 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/sqlite3/sqlite3_debian.bb:do_fetch)
+NOTE: Running task 34 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/autoconf-archive/autoconf-archive_debian.bb:do_unpack)
+NOTE: recipe gettext-minimal-native-0.19.8.1-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 35 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/mpfr/mpfr_debian.bb:do_unpack)
+NOTE: recipe autoconf-native-2.69-r0: task do_unpack: Started
+NOTE: recipe bison-native-3.3.2-r0: task do_unpack: Started
+NOTE: recipe autoconf-archive-native-20180313-r0: task do_unpack: Started
+NOTE: recipe automake-native-1.16.1-r0: task do_unpack: Started
+NOTE: recipe mpfr-native-4.0.2-r0: task do_unpack: Started
+NOTE: recipe tcl-native-8.6.9-r0: task do_fetch: Started
+NOTE: recipe sqlite3-native-3_3.27.2-r0: task do_fetch: Started
+NOTE: recipe gnu-config-native-20181128+gitAUTOINC+058639be22-r0: task do_fetch: Succeeded
+NOTE: Running task 36 of 593 (virtual:native:/home/deby/poky/meta/recipes-devtools/gnu-config/gnu-config_git.bb:do_unpack)
+NOTE: recipe gnu-config-native-20181128+gitAUTOINC+058639be22-r0: task do_unpack: Started
+NOTE: recipe zlib-native-1.2.11-r0: task do_unpack: Succeeded
+NOTE: Running task 37 of 593 (virtual:native:/home/deby/poky/meta/recipes-devtools/gnu-config/gnu-config_git.bb:do_prepare_recipe_sysroot)
+NOTE: recipe gnu-config-native-20181128+gitAUTOINC+058639be22-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe binutils-cross-arm-2.31.1-r0: task do_fetch: Succeeded
+NOTE: recipe tcl-native-8.6.9-r0: task do_fetch: Succeeded
+NOTE: recipe gnu-config-native-20181128+gitAUTOINC+058639be22-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 38 of 593 (/home/deby/poky/meta-debian/recipes-debian/binutils/binutils-cross_debian.bb:do_unpack)
+NOTE: Running task 39 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/attr/attr_debian.bb:do_fetch)
+NOTE: Running task 40 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/pseudo/pseudo_debian.bb:do_fetch)
+NOTE: recipe binutils-cross-arm-2.31.1-r0: task do_unpack: Started
+NOTE: recipe sqlite3-native-3_3.27.2-r0: task do_fetch: Succeeded
+NOTE: recipe quilt-native-0.65-r0: task do_unpack: Succeeded
+NOTE: recipe pseudo-native-1.9.0+git20180920-r0: task do_fetch: Started
+NOTE: Running task 41 of 593 (/home/deby/poky/meta-debian/recipes-debian/quilt/quilt-native_debian.bb:do_debian_unpack_extra)
+NOTE: Running task 42 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/zlib/zlib_debian.bb:do_debian_unpack_extra)
+NOTE: recipe attr-native-2.4.48-r0: task do_fetch: Started
+NOTE: recipe quilt-native-0.65-r0: task do_debian_unpack_extra: Started
+NOTE: recipe zlib-native-1.2.11-r0: task do_debian_unpack_extra: Started
+NOTE: recipe quilt-native-0.65-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 43 of 593 (/home/deby/poky/meta-debian/recipes-debian/quilt/quilt-native_debian.bb:do_debian_patch)
+NOTE: recipe zlib-native-1.2.11-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 44 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/zlib/zlib_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe quilt-native-0.65-r0: task do_debian_patch: Started
+NOTE: recipe zlib-native-1.2.11-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe pseudo-native-1.9.0+git20180920-r0: task do_fetch: Succeeded
+NOTE: recipe attr-native-2.4.48-r0: task do_fetch: Succeeded
+NOTE: Running task 45 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/tcltk/tcl_debian.bb:do_unpack)
+NOTE: Running task 46 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/sqlite3/sqlite3_debian.bb:do_unpack)
+NOTE: recipe quilt-native-0.65-r0: task do_debian_patch: Succeeded
+NOTE: Running task 47 of 593 (/home/deby/poky/meta-debian/recipes-debian/quilt/quilt-native_debian.bb:do_patch)
+NOTE: recipe quilt-native-0.65-r0: task do_patch: Started
+NOTE: recipe zlib-native-1.2.11-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: recipe sqlite3-native-3_3.27.2-r0: task do_unpack: Started
+NOTE: Running task 48 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/attr/attr_debian.bb:do_unpack)
+NOTE: recipe libtool-native-2.4.6-r0: task do_unpack: Succeeded
+NOTE: recipe tcl-native-8.6.9-r0: task do_unpack: Started
+NOTE: Running task 49 of 593 (/home/deby/poky/meta-debian/recipes-debian/libtool/libtool-native_debian.bb:do_debian_unpack_extra)
+NOTE: recipe libtool-native-2.4.6-r0: task do_debian_unpack_extra: Started
+NOTE: recipe gnu-config-native-20181128+gitAUTOINC+058639be22-r0: task do_unpack: Succeeded
+NOTE: Running task 50 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/pseudo/pseudo_debian.bb:do_unpack)
+NOTE: recipe flex-native-2.6.4-r0: task do_unpack: Succeeded
+NOTE: Running task 51 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/flex/flex_debian.bb:do_debian_unpack_extra)
+NOTE: recipe attr-native-2.4.48-r0: task do_unpack: Started
+NOTE: recipe libtool-native-2.4.6-r0: task do_debian_unpack_extra: Succeeded
+NOTE: recipe pseudo-native-1.9.0+git20180920-r0: task do_unpack: Started
+NOTE: Running task 52 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/unifdef/unifdef_debian.bb:do_fetch)
+NOTE: recipe autoconf-native-2.69-r0: task do_unpack: Succeeded
+NOTE: Running task 53 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/autoconf/autoconf_debian.bb:do_debian_unpack_extra)
+NOTE: recipe quilt-native-0.65-r0: task do_patch: Succeeded
+NOTE: Running task 54 of 593 (/home/deby/poky/meta-debian/recipes-debian/quilt/quilt-native_debian.bb:do_configure)
+NOTE: recipe flex-native-2.6.4-r0: task do_debian_unpack_extra: Started
+NOTE: recipe pkgconfig-native-0.29-r0: task do_unpack: Succeeded
+NOTE: Running task 55 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/pkgconfig/pkgconfig_debian.bb:do_debian_unpack_extra)
+NOTE: recipe quilt-native-0.65-r0: task do_configure: Started
+NOTE: recipe autoconf-native-2.69-r0: task do_debian_unpack_extra: Started
+NOTE: recipe unifdef-native-2.10-r0: task do_fetch: Started
+NOTE: recipe pkgconfig-native-0.29-r0: task do_debian_unpack_extra: Started
+NOTE: recipe autoconf-native-2.69-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 56 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/libmpc/libmpc_debian.bb:do_fetch)
+NOTE: recipe pkgconfig-native-0.29-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 57 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-source_debian.bb:do_fetch)
+NOTE: recipe flex-native-2.6.4-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 58 of 593 (/home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb:do_fetch)
+NOTE: recipe unifdef-native-2.10-r0: task do_fetch: Succeeded
+NOTE: Running task 59 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/unifdef/unifdef_debian.bb:do_unpack)
+NOTE: recipe gcc-source-8.3.0-8.3.0-r0: task do_fetch: Started
+NOTE: recipe attr-native-2.4.48-r0: task do_unpack: Succeeded
+NOTE: recipe libmpc-native-1.1.0-r0: task do_fetch: Started
+NOTE: recipe linux-libc-headers-base-gitAUTOINC+e665510be1-r0: task do_fetch: Started
+NOTE: Running task 60 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/attr/attr_debian.bb:do_debian_unpack_extra)
+NOTE: recipe mpfr-native-4.0.2-r0: task do_unpack: Succeeded
+NOTE: Running task 61 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/mpfr/mpfr_debian.bb:do_debian_unpack_extra)
+NOTE: recipe unifdef-native-2.10-r0: task do_unpack: Started
+NOTE: recipe attr-native-2.4.48-r0: task do_debian_unpack_extra: Started
+NOTE: recipe pseudo-native-1.9.0+git20180920-r0: task do_unpack: Succeeded
+NOTE: Running task 62 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/pseudo/pseudo_debian.bb:do_debian_unpack_extra)
+NOTE: recipe mpfr-native-4.0.2-r0: task do_debian_unpack_extra: Started
+NOTE: recipe pseudo-native-1.9.0+git20180920-r0: task do_debian_unpack_extra: Started
+NOTE: recipe autoconf-archive-native-20180313-r0: task do_unpack: Succeeded
+NOTE: recipe attr-native-2.4.48-r0: task do_debian_unpack_extra: Succeeded
+NOTE: recipe libmpc-native-1.1.0-r0: task do_fetch: Succeeded
+NOTE: Running task 63 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/unifdef/unifdef_debian.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 64 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/libmpc/libmpc_debian.bb:do_unpack)
+NOTE: Running task 65 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/autoconf-archive/autoconf-archive_debian.bb:do_debian_unpack_extra)
+NOTE: recipe autoconf-archive-native-20180313-r0: task do_debian_unpack_extra: Started
+NOTE: recipe mpfr-native-4.0.2-r0: task do_debian_unpack_extra: Succeeded
+NOTE: recipe m4-native-1.4.18-r0: task do_unpack: Succeeded
+NOTE: Running noexec task 66 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-cross_debian.bb:do_fetch)
+NOTE: Running task 67 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/gperf/gperf_debian.bb:do_fetch)
+NOTE: Running task 68 of 593 (/home/deby/poky/meta-debian/recipes-debian/m4/m4-native_debian.bb:do_debian_unpack_extra)
+NOTE: recipe m4-native-1.4.18-r0: task do_debian_unpack_extra: Started
+NOTE: recipe pseudo-native-1.9.0+git20180920-r0: task do_debian_unpack_extra: Succeeded
+NOTE: recipe autoconf-archive-native-20180313-r0: task do_debian_unpack_extra: Succeeded
+NOTE: recipe libmpc-native-1.1.0-r0: task do_unpack: Started
+NOTE: Running task 69 of 593 (/home/deby/poky/meta-debian/recipes-debian/glibc/glibc_debian.bb:do_fetch)
+NOTE: Running task 70 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/ncurses/ncurses_debian.bb:do_fetch)
+NOTE: recipe m4-native-1.4.18-r0: task do_debian_unpack_extra: Succeeded
+NOTE: recipe gperf-native-3.1-r0: task do_fetch: Started
+NOTE: recipe unifdef-native-2.10-r0: task do_unpack: Succeeded
+NOTE: recipe unifdef-native-2.10-r0: task do_prepare_recipe_sysroot: Started
+NOTE: Running task 71 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/bzip2/bzip2_debian.bb:do_fetch)
+NOTE: Running task 72 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/unifdef/unifdef_debian.bb:do_debian_unpack_extra)
+NOTE: recipe unifdef-native-2.10-r0: task do_debian_unpack_extra: Started
+NOTE: recipe unifdef-native-2.10-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 73 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/xz/xz_debian.bb:do_fetch)
+NOTE: recipe ncurses-native-6.1+20181013-r0: task do_fetch: Started
+NOTE: recipe glibc-2.28-r0: task do_fetch: Started
+NOTE: recipe bzip2-native-1.0.6-r0: task do_fetch: Started
+NOTE: recipe unifdef-native-2.10-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 74 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/libtirpc/libtirpc_debian.bb:do_fetch)
+NOTE: recipe xz-native-5.2.4-r0: task do_fetch: Started
+NOTE: recipe automake-native-1.16.1-r0: task do_unpack: Succeeded
+NOTE: recipe libmpc-native-1.1.0-r0: task do_unpack: Succeeded
+NOTE: recipe gperf-native-3.1-r0: task do_fetch: Succeeded
+NOTE: recipe ncurses-native-6.1+20181013-r0: task do_fetch: Succeeded
+NOTE: Running noexec task 75 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/libgcc-initial_debian.bb:do_fetch)
+NOTE: Running task 76 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/ncurses/ncurses_debian.bb:do_unpack)
+NOTE: recipe libtirpc-native-1.1.4-r0: task do_fetch: Started
+NOTE: Running task 77 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/automake/automake_debian.bb:do_debian_unpack_extra)
+NOTE: Running task 78 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/libmpc/libmpc_debian.bb:do_debian_unpack_extra)
+NOTE: Running task 79 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/gperf/gperf_debian.bb:do_unpack)
+NOTE: recipe bison-native-3.3.2-r0: task do_unpack: Succeeded
+NOTE: Running task 80 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/bison/bison_debian.bb:do_debian_unpack_extra)
+NOTE: recipe bzip2-native-1.0.6-r0: task do_fetch: Succeeded
+NOTE: Running task 81 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/bzip2/bzip2_debian.bb:do_unpack)
+NOTE: recipe xz-native-5.2.4-r0: task do_fetch: Succeeded
+NOTE: Running task 82 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/xz/xz_debian.bb:do_unpack)
+NOTE: recipe libtirpc-native-1.1.4-r0: task do_fetch: Succeeded
+NOTE: recipe gmp-native-6.1.2-r0: task do_unpack: Succeeded
+NOTE: Running task 83 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/gmp/gmp_debian.bb:do_debian_unpack_extra)
+NOTE: Running task 84 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/util-linux/util-linux_debian.bb:do_fetch)
+NOTE: recipe automake-native-1.16.1-r0: task do_debian_unpack_extra: Started
+NOTE: recipe ncurses-native-6.1+20181013-r0: task do_unpack: Started
+NOTE: recipe bison-native-3.3.2-r0: task do_debian_unpack_extra: Started
+NOTE: recipe gperf-native-3.1-r0: task do_unpack: Started
+NOTE: recipe libmpc-native-1.1.0-r0: task do_debian_unpack_extra: Started
+NOTE: recipe automake-native-1.16.1-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 85 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/libtirpc/libtirpc_debian.bb:do_unpack)
+NOTE: recipe bison-native-3.3.2-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 86 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/readline/readline_debian.bb:do_fetch)
+NOTE: recipe gmp-native-6.1.2-r0: task do_debian_unpack_extra: Started
+NOTE: recipe gmp-native-6.1.2-r0: task do_debian_unpack_extra: Succeeded
+NOTE: recipe glibc-2.28-r0: task do_fetch: Succeeded
+NOTE: recipe xz-native-5.2.4-r0: task do_unpack: Started
+NOTE: recipe bzip2-native-1.0.6-r0: task do_unpack: Started
+NOTE: Running task 87 of 593 (/home/deby/poky/meta-debian/recipes-debian/glibc/glibc_debian.bb:do_unpack)
+NOTE: Running task 88 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/gdbm/gdbm_debian.bb:do_fetch)
+NOTE: recipe libmpc-native-1.1.0-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 89 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/libffi/libffi_debian.bb:do_fetch)
+NOTE: recipe libtirpc-native-1.1.4-r0: task do_unpack: Started
+NOTE: recipe gdbm-native-1.18.1-r0: task do_fetch: Started
+NOTE: recipe util-linux-native-2.33.1-r0: task do_fetch: Started
+NOTE: recipe glibc-2.28-r0: task do_unpack: Started
+NOTE: recipe readline-native-7.0-r0: task do_fetch: Started
+NOTE: recipe libffi-native-3.2.1-r0: task do_fetch: Started
+NOTE: recipe gdbm-native-1.18.1-r0: task do_fetch: Succeeded
+NOTE: Running task 90 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/openssl/openssl_debian.bb:do_fetch)
+NOTE: recipe libffi-native-3.2.1-r0: task do_fetch: Succeeded
+NOTE: Running task 91 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/elfutils/elfutils_debian.bb:do_fetch)
+NOTE: recipe util-linux-native-2.33.1-r0: task do_fetch: Succeeded
+NOTE: recipe quilt-native-0.65-r0: task do_configure: Succeeded
+NOTE: recipe readline-native-7.0-r0: task do_fetch: Succeeded
+NOTE: Running task 92 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/util-linux/util-linux_debian.bb:do_unpack)
+NOTE: Running task 93 of 593 (/home/deby/poky/meta-debian/recipes-debian/quilt/quilt-native_debian.bb:do_compile)
+NOTE: Running task 94 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/python/python3_debian.bb:do_fetch)
+NOTE: recipe gperf-native-3.1-r0: task do_unpack: Succeeded
+NOTE: Running task 95 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/readline/readline_debian.bb:do_unpack)
+NOTE: recipe quilt-native-0.65-r0: task do_compile: Started
+NOTE: recipe tcl-native-8.6.9-r0: task do_unpack: Succeeded
+NOTE: Running task 96 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/tcltk/tcl_debian.bb:do_debian_unpack_extra)
+NOTE: recipe elfutils-native-0.176-r0: task do_fetch: Started
+NOTE: recipe util-linux-native-2.33.1-r0: task do_unpack: Started
+NOTE: recipe openssl-native-1.1.1d-r0: task do_fetch: Started
+NOTE: recipe python3-native-3.7.3-r0: task do_fetch: Started
+NOTE: recipe readline-native-7.0-r0: task do_unpack: Started
+NOTE: recipe tcl-native-8.6.9-r0: task do_debian_unpack_extra: Started
+NOTE: recipe tcl-native-8.6.9-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 97 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/gdbm/gdbm_debian.bb:do_unpack)
+NOTE: recipe libtirpc-native-1.1.4-r0: task do_unpack: Succeeded
+NOTE: recipe bzip2-native-1.0.6-r0: task do_unpack: Succeeded
+NOTE: Running task 98 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/libffi/libffi_debian.bb:do_unpack)
+NOTE: Running task 99 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/gperf/gperf_debian.bb:do_debian_unpack_extra)
+NOTE: recipe elfutils-native-0.176-r0: task do_fetch: Succeeded
+NOTE: Running task 100 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/elfutils/elfutils_debian.bb:do_unpack)
+NOTE: recipe gperf-native-3.1-r0: task do_debian_unpack_extra: Started
+NOTE: recipe openssl-native-1.1.1d-r0: task do_fetch: Succeeded
+NOTE: Running task 101 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/openssl/openssl_debian.bb:do_unpack)
+NOTE: recipe gperf-native-3.1-r0: task do_debian_unpack_extra: Succeeded
+NOTE: recipe quilt-native-0.65-r0: task do_compile: Succeeded
+NOTE: Running task 102 of 593 (/home/deby/poky/meta-debian/recipes-debian/quilt/quilt-native_debian.bb:do_install)
+NOTE: Running task 103 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/perl/perl_debian.bb:do_fetch)
+NOTE: recipe gdbm-native-1.18.1-r0: task do_unpack: Started
+NOTE: recipe libffi-native-3.2.1-r0: task do_unpack: Started
+NOTE: recipe elfutils-native-0.176-r0: task do_unpack: Started
+NOTE: recipe openssl-native-1.1.1d-r0: task do_unpack: Started
+NOTE: recipe xz-native-5.2.4-r0: task do_unpack: Succeeded
+NOTE: Running task 104 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/bzip2/bzip2_debian.bb:do_debian_unpack_extra)
+NOTE: recipe quilt-native-0.65-r0: task do_install: Started
+NOTE: recipe bzip2-native-1.0.6-r0: task do_debian_unpack_extra: Started
+NOTE: recipe python3-native-3.7.3-r0: task do_fetch: Succeeded
+NOTE: Running task 105 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/python/python3_debian.bb:do_unpack)
+NOTE: recipe perl-native-5.28.1-r1: task do_fetch: Started
+NOTE: recipe bzip2-native-1.0.6-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 106 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/xz/xz_debian.bb:do_debian_unpack_extra)
+NOTE: recipe xz-native-5.2.4-r0: task do_debian_unpack_extra: Started
+NOTE: recipe xz-native-5.2.4-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 107 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/expat/expat_debian.bb:do_fetch)
+NOTE: recipe python3-native-3.7.3-r0: task do_unpack: Started
+NOTE: recipe expat-native-2.2.6-r0: task do_fetch: Started
+NOTE: recipe readline-native-7.0-r0: task do_unpack: Succeeded
+NOTE: Running task 108 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/lzo/lzo_debian.bb:do_fetch)
+NOTE: recipe gdbm-native-1.18.1-r0: task do_unpack: Succeeded
+NOTE: recipe ncurses-native-6.1+20181013-r0: task do_unpack: Succeeded
+NOTE: Running task 109 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/e2fsprogs/e2fsprogs_debian.bb:do_fetch)
+NOTE: Running task 110 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/ncurses/ncurses_debian.bb:do_debian_unpack_extra)
+NOTE: recipe libffi-native-3.2.1-r0: task do_unpack: Succeeded
+NOTE: Running task 111 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/nspr/nspr_debian.bb:do_fetch)
+NOTE: recipe lzo-native-2.10-r0: task do_fetch: Started
+NOTE: recipe nspr-native-4.20-r0: task do_fetch: Started
+NOTE: recipe ncurses-native-6.1+20181013-r0: task do_debian_unpack_extra: Started
+NOTE: recipe expat-native-2.2.6-r0: task do_fetch: Succeeded
+NOTE: Running task 112 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/file/file_debian.bb:do_fetch)
+NOTE: recipe e2fsprogs-native-1.44.5-r0: task do_fetch: Started
+NOTE: recipe ncurses-native-6.1+20181013-r0: task do_debian_unpack_extra: Succeeded
+NOTE: recipe quilt-native-0.65-r0: task do_install: Succeeded
+NOTE: recipe lzo-native-2.10-r0: task do_fetch: Succeeded
+NOTE: Running task 113 of 593 (/home/deby/poky/meta-debian/recipes-debian/quilt/quilt-native_debian.bb:do_populate_sysroot)
+NOTE: Running task 114 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/dbus/dbus_debian.bb:do_fetch)
+NOTE: Running task 115 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/popt/popt_debian.bb:do_fetch)
+NOTE: recipe nspr-native-4.20-r0: task do_fetch: Succeeded
+NOTE: Running task 116 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/db/db_debian.bb:do_fetch)
+NOTE: recipe file-native-5.35-r0: task do_fetch: Started
+NOTE: recipe quilt-native-0.65-r0: task do_populate_sysroot: Started
+NOTE: recipe file-native-5.35-r0: task do_fetch: Succeeded
+NOTE: recipe db-native-5.3.28-r0: task do_fetch: Started
+NOTE: Running task 117 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/libarchive/libarchive_debian.bb:do_fetch)
+NOTE: recipe popt-native-1.16-r0: task do_fetch: Started
+NOTE: recipe e2fsprogs-native-1.44.5-r0: task do_fetch: Succeeded
+NOTE: recipe dbus-native-1.12.16-r0: task do_fetch: Started
+NOTE: Running task 118 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/nss/nss_debian.bb:do_fetch)
+NOTE: recipe nss-native-3.42.1-r0: task do_fetch: Started
+NOTE: recipe libarchive-native-3.3.3-r0: task do_fetch: Started
+NOTE: recipe perl-native-5.28.1-r1: task do_fetch: Succeeded
+NOTE: Running task 119 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/libtirpc/libtirpc_debian.bb:do_debian_unpack_extra)
+NOTE: recipe db-native-5.3.28-r0: task do_fetch: Succeeded
+NOTE: Running task 120 of 593 (virtual:native:/home/deby/poky/meta/recipes-extended/libnsl/libnsl2_git.bb:do_fetch)
+NOTE: recipe popt-native-1.16-r0: task do_fetch: Succeeded
+NOTE: Running task 121 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/rpm/rpm_debian.bb:do_fetch)
+NOTE: recipe dbus-native-1.12.16-r0: task do_fetch: Succeeded
+NOTE: Running task 122 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/perl/perl_debian.bb:do_unpack)
+NOTE: recipe libnsl2-native-1.2.0+gitAUTOINC+37c5ffe303-r0: task do_fetch: Started
+NOTE: recipe libtirpc-native-1.1.4-r0: task do_debian_unpack_extra: Started
+NOTE: recipe rpm-native-4.14.2.1-r0: task do_fetch: Started
+NOTE: recipe libtirpc-native-1.1.4-r0: task do_debian_unpack_extra: Succeeded
+NOTE: recipe perl-native-5.28.1-r1: task do_unpack: Started
+NOTE: Running task 123 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/expat/expat_debian.bb:do_unpack)
+NOTE: recipe expat-native-2.2.6-r0: task do_unpack: Started
+NOTE: recipe rpm-native-4.14.2.1-r0: task do_fetch: Succeeded
+NOTE: Running task 124 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/lzo/lzo_debian.bb:do_unpack)
+NOTE: recipe libnsl2-native-1.2.0+gitAUTOINC+37c5ffe303-r0: task do_fetch: Succeeded
+NOTE: recipe libarchive-native-3.3.3-r0: task do_fetch: Succeeded
+NOTE: Running task 125 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/e2fsprogs/e2fsprogs_debian.bb:do_unpack)
+NOTE: Running task 126 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/nspr/nspr_debian.bb:do_unpack)
+NOTE: recipe lzo-native-2.10-r0: task do_unpack: Started
+NOTE: recipe quilt-native-0.65-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 127 of 593 (virtual:native:/home/deby/poky/meta/recipes-devtools/gnu-config/gnu-config_git.bb:do_patch)
+NOTE: recipe gnu-config-native-20181128+gitAUTOINC+058639be22-r0: task do_patch: Started
+NOTE: recipe e2fsprogs-native-1.44.5-r0: task do_unpack: Started
+NOTE: recipe nspr-native-4.20-r0: task do_unpack: Started
+NOTE: recipe gnu-config-native-20181128+gitAUTOINC+058639be22-r0: task do_patch: Succeeded
+NOTE: Running task 128 of 593 (virtual:native:/home/deby/poky/meta/recipes-devtools/gnu-config/gnu-config_git.bb:do_configure)
+NOTE: recipe gnu-config-native-20181128+gitAUTOINC+058639be22-r0: task do_configure: Started
+NOTE: recipe gnu-config-native-20181128+gitAUTOINC+058639be22-r0: task do_configure: Succeeded
+NOTE: Running noexec task 129 of 593 (virtual:native:/home/deby/poky/meta/recipes-devtools/gnu-config/gnu-config_git.bb:do_compile)
+NOTE: Running task 130 of 593 (virtual:native:/home/deby/poky/meta/recipes-devtools/gnu-config/gnu-config_git.bb:do_install)
+NOTE: recipe expat-native-2.2.6-r0: task do_unpack: Succeeded
+NOTE: Running task 131 of 593 (/home/deby/poky/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy-native.bb:do_patch)
+NOTE: recipe gnu-config-native-20181128+gitAUTOINC+058639be22-r0: task do_install: Started
+NOTE: recipe texinfo-dummy-native-1.0-r0: task do_patch: Started
+NOTE: recipe gcc-source-8.3.0-8.3.0-r0: task do_fetch: Succeeded
+NOTE: Running task 132 of 593 (/home/deby/poky/meta-debian/recipes-debian/m4/m4-native_debian.bb:do_debian_patch)
+NOTE: recipe m4-native-1.4.18-r0: task do_debian_patch: Started
+NOTE: recipe lzo-native-2.10-r0: task do_unpack: Succeeded
+NOTE: Running task 133 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/autoconf/autoconf_debian.bb:do_debian_patch)
+NOTE: recipe autoconf-native-2.69-r0: task do_debian_patch: Started
+NOTE: recipe texinfo-dummy-native-1.0-r0: task do_patch: Succeeded
+NOTE: recipe nspr-native-4.20-r0: task do_unpack: Succeeded
+NOTE: Running task 134 of 593 (/home/deby/poky/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy-native.bb:do_configure)
+NOTE: recipe gnu-config-native-20181128+gitAUTOINC+058639be22-r0: task do_install: Succeeded
+NOTE: Running task 135 of 593 (virtual:native:/home/deby/poky/meta/recipes-devtools/gnu-config/gnu-config_git.bb:do_populate_sysroot)
+NOTE: Running task 136 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/automake/automake_debian.bb:do_debian_patch)
+NOTE: recipe texinfo-dummy-native-1.0-r0: task do_configure: Started
+NOTE: recipe gnu-config-native-20181128+gitAUTOINC+058639be22-r0: task do_populate_sysroot: Started
+NOTE: recipe automake-native-1.16.1-r0: task do_debian_patch: Started
+NOTE: recipe nss-native-3.42.1-r0: task do_fetch: Succeeded
+NOTE: Running task 137 of 593 (/home/deby/poky/meta-debian/recipes-debian/libtool/libtool-native_debian.bb:do_debian_patch)
+NOTE: recipe libtool-native-2.4.6-r0: task do_debian_patch: Started
+NOTE: recipe openssl-native-1.1.1d-r0: task do_unpack: Succeeded
+NOTE: Running task 138 of 593 (/home/deby/poky/meta/recipes-core/gettext/gettext-minimal-native_0.19.8.1.bb:do_patch)
+NOTE: recipe m4-native-1.4.18-r0: task do_debian_patch: Succeeded
+NOTE: Running task 139 of 593 (/home/deby/poky/meta-debian/recipes-debian/m4/m4-native_debian.bb:do_patch)
+NOTE: recipe texinfo-dummy-native-1.0-r0: task do_configure: Succeeded
+NOTE: recipe sqlite3-native-3_3.27.2-r0: task do_unpack: Succeeded
+NOTE: Running task 140 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/flex/flex_debian.bb:do_debian_patch)
+NOTE: Running task 141 of 593 (/home/deby/poky/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy-native.bb:do_compile)
+NOTE: recipe gettext-minimal-native-0.19.8.1-r0: task do_patch: Started
+NOTE: recipe texinfo-dummy-native-1.0-r0: task do_compile: Started
+NOTE: recipe m4-native-1.4.18-r0: task do_patch: Started
+NOTE: recipe util-linux-native-2.33.1-r0: task do_unpack: Succeeded
+NOTE: recipe texinfo-dummy-native-1.0-r0: task do_compile: Succeeded
+NOTE: Running task 142 of 593 (/home/deby/poky/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy-native.bb:do_install)
+NOTE: Running task 143 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/zlib/zlib_debian.bb:do_debian_patch)
+NOTE: recipe flex-native-2.6.4-r0: task do_debian_patch: Started
+NOTE: recipe m4-native-1.4.18-r0: task do_patch: Succeeded
+NOTE: recipe elfutils-native-0.176-r0: task do_unpack: Succeeded
+NOTE: Running task 144 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/pkgconfig/pkgconfig_debian.bb:do_debian_patch)
+NOTE: Running task 145 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/gmp/gmp_debian.bb:do_debian_patch)
+NOTE: recipe automake-native-1.16.1-r0: task do_debian_patch: Succeeded
+NOTE: Running task 146 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/automake/automake_debian.bb:do_patch)
+NOTE: recipe texinfo-dummy-native-1.0-r0: task do_install: Started
+NOTE: recipe gettext-minimal-native-0.19.8.1-r0: task do_patch: Succeeded
+NOTE: Running task 147 of 593 (/home/deby/poky/meta/recipes-core/gettext/gettext-minimal-native_0.19.8.1.bb:do_configure)
+NOTE: recipe flex-native-2.6.4-r0: task do_debian_patch: Succeeded
+NOTE: Running task 148 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/flex/flex_debian.bb:do_patch)
+NOTE: recipe pkgconfig-native-0.29-r0: task do_debian_patch: Started
+NOTE: recipe autoconf-native-2.69-r0: task do_debian_patch: Succeeded
+NOTE: Running task 149 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/autoconf/autoconf_debian.bb:do_patch)
+NOTE: recipe gnu-config-native-20181128+gitAUTOINC+058639be22-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe zlib-native-1.2.11-r0: task do_debian_patch: Started
+NOTE: Running task 150 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-source_debian.bb:do_unpack)
+NOTE: recipe gmp-native-6.1.2-r0: task do_debian_patch: Started
+NOTE: recipe gettext-minimal-native-0.19.8.1-r0: task do_configure: Started
+NOTE: recipe automake-native-1.16.1-r0: task do_patch: Started
+NOTE: recipe gcc-source-8.3.0-8.3.0-r0: task do_unpack: Started
+NOTE: recipe autoconf-native-2.69-r0: task do_patch: Started
+NOTE: recipe flex-native-2.6.4-r0: task do_patch: Started
+NOTE: recipe pkgconfig-native-0.29-r0: task do_debian_patch: Succeeded
+NOTE: Running task 151 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/pkgconfig/pkgconfig_debian.bb:do_patch)
+NOTE: recipe e2fsprogs-native-1.44.5-r0: task do_unpack: Succeeded
+NOTE: Running task 152 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/bison/bison_debian.bb:do_debian_patch)
+NOTE: recipe texinfo-dummy-native-1.0-r0: task do_install: Succeeded
+NOTE: Running task 153 of 593 (/home/deby/poky/meta/recipes-extended/texinfo-dummy-native/texinfo-dummy-native.bb:do_populate_sysroot)
+NOTE: recipe gmp-native-6.1.2-r0: task do_debian_patch: Succeeded
+NOTE: Running task 154 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/gmp/gmp_debian.bb:do_patch)
+NOTE: recipe zlib-native-1.2.11-r0: task do_debian_patch: Succeeded
+NOTE: Running task 155 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/zlib/zlib_debian.bb:do_patch)
+NOTE: recipe gettext-minimal-native-0.19.8.1-r0: task do_configure: Succeeded
+NOTE: Running task 156 of 593 (/home/deby/poky/meta/recipes-core/gettext/gettext-minimal-native_0.19.8.1.bb:do_compile)
+NOTE: recipe texinfo-dummy-native-1.0-r0: task do_populate_sysroot: Started
+NOTE: recipe bison-native-3.3.2-r0: task do_debian_patch: Started
+NOTE: recipe gettext-minimal-native-0.19.8.1-r0: task do_compile: Started
+NOTE: recipe pkgconfig-native-0.29-r0: task do_patch: Started
+NOTE: recipe libtool-native-2.4.6-r0: task do_debian_patch: Succeeded
+NOTE: Running task 157 of 593 (/home/deby/poky/meta-debian/recipes-debian/libtool/libtool-native_debian.bb:do_patch)
+NOTE: recipe flex-native-2.6.4-r0: task do_patch: Succeeded
+NOTE: Running task 158 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/autoconf-archive/autoconf-archive_debian.bb:do_debian_patch)
+NOTE: recipe automake-native-1.16.1-r0: task do_patch: Succeeded
+NOTE: Running task 159 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/mpfr/mpfr_debian.bb:do_debian_patch)
+NOTE: recipe gettext-minimal-native-0.19.8.1-r0: task do_compile: Succeeded
+NOTE: Running task 160 of 593 (/home/deby/poky/meta/recipes-core/gettext/gettext-minimal-native_0.19.8.1.bb:do_install)
+NOTE: recipe gmp-native-6.1.2-r0: task do_patch: Started
+NOTE: recipe gettext-minimal-native-0.19.8.1-r0: task do_install: Started
+NOTE: recipe zlib-native-1.2.11-r0: task do_patch: Started
+NOTE: recipe libtool-native-2.4.6-r0: task do_patch: Started
+NOTE: recipe autoconf-archive-native-20180313-r0: task do_debian_patch: Started
+NOTE: recipe bison-native-3.3.2-r0: task do_debian_patch: Succeeded
+NOTE: Running task 161 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/bison/bison_debian.bb:do_patch)
+NOTE: recipe mpfr-native-4.0.2-r0: task do_debian_patch: Started
+NOTE: recipe gettext-minimal-native-0.19.8.1-r0: task do_install: Succeeded
+NOTE: Running task 162 of 593 (/home/deby/poky/meta/recipes-core/gettext/gettext-minimal-native_0.19.8.1.bb:do_populate_sysroot)
+NOTE: recipe mpfr-native-4.0.2-r0: task do_debian_patch: Succeeded
+NOTE: Running task 163 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/mpfr/mpfr_debian.bb:do_patch)
+NOTE: recipe gettext-minimal-native-0.19.8.1-r0: task do_populate_sysroot: Started
+NOTE: recipe bison-native-3.3.2-r0: task do_patch: Started
+NOTE: recipe mpfr-native-4.0.2-r0: task do_patch: Started
+NOTE: recipe mpfr-native-4.0.2-r0: task do_patch: Succeeded
+NOTE: Running task 164 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/tcltk/tcl_debian.bb:do_debian_patch)
+NOTE: recipe autoconf-archive-native-20180313-r0: task do_debian_patch: Succeeded
+NOTE: recipe zlib-native-1.2.11-r0: task do_patch: Succeeded
+NOTE: recipe bison-native-3.3.2-r0: task do_patch: Succeeded
+NOTE: Running task 165 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/zlib/zlib_debian.bb:do_configure)
+NOTE: Running task 166 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/autoconf-archive/autoconf-archive_debian.bb:do_patch)
+NOTE: Running task 167 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/sqlite3/sqlite3_debian.bb:do_debian_unpack_extra)
+NOTE: recipe tcl-native-8.6.9-r0: task do_debian_patch: Started
+NOTE: recipe autoconf-archive-native-20180313-r0: task do_patch: Started
+NOTE: recipe sqlite3-native-3_3.27.2-r0: task do_debian_unpack_extra: Started
+NOTE: recipe zlib-native-1.2.11-r0: task do_configure: Started
+NOTE: recipe autoconf-archive-native-20180313-r0: task do_patch: Succeeded
+NOTE: recipe pkgconfig-native-0.29-r0: task do_patch: Succeeded
+NOTE: recipe sqlite3-native-3_3.27.2-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 168 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/sqlite3/sqlite3_debian.bb:do_debian_patch)
+NOTE: Running task 169 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/attr/attr_debian.bb:do_debian_patch)
+NOTE: Running task 170 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/pseudo/pseudo_debian.bb:do_debian_patch)
+NOTE: recipe gmp-native-6.1.2-r0: task do_patch: Succeeded
+NOTE: Running task 171 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/unifdef/unifdef_debian.bb:do_debian_patch)
+NOTE: recipe sqlite3-native-3_3.27.2-r0: task do_debian_patch: Started
+NOTE: recipe pseudo-native-1.9.0+git20180920-r0: task do_debian_patch: Started
+NOTE: recipe attr-native-2.4.48-r0: task do_debian_patch: Started
+NOTE: recipe unifdef-native-2.10-r0: task do_debian_patch: Started
+NOTE: recipe texinfo-dummy-native-1.0-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe gettext-minimal-native-0.19.8.1-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 172 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/libmpc/libmpc_debian.bb:do_debian_patch)
+NOTE: Running task 173 of 593 (/home/deby/poky/meta-debian/recipes-debian/m4/m4-native_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe m4-native-1.4.18-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe libmpc-native-1.1.0-r0: task do_debian_patch: Started
+NOTE: recipe m4-native-1.4.18-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 174 of 593 (/home/deby/poky/meta-debian/recipes-debian/m4/m4-native_debian.bb:do_configure)
+NOTE: recipe m4-native-1.4.18-r0: task do_configure: Started
+NOTE: recipe unifdef-native-2.10-r0: task do_debian_patch: Succeeded
+NOTE: Running task 175 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/unifdef/unifdef_debian.bb:do_patch)
+NOTE: recipe libmpc-native-1.1.0-r0: task do_debian_patch: Succeeded
+NOTE: Running task 176 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/libmpc/libmpc_debian.bb:do_patch)
+NOTE: recipe autoconf-native-2.69-r0: task do_patch: Succeeded
+NOTE: Running task 177 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/gperf/gperf_debian.bb:do_debian_patch)
+NOTE: recipe tcl-native-8.6.9-r0: task do_debian_patch: Succeeded
+NOTE: Running task 178 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/tcltk/tcl_debian.bb:do_patch)
+NOTE: recipe unifdef-native-2.10-r0: task do_patch: Started
+NOTE: recipe libmpc-native-1.1.0-r0: task do_patch: Started
+NOTE: recipe pseudo-native-1.9.0+git20180920-r0: task do_debian_patch: Succeeded
+NOTE: recipe gperf-native-3.1-r0: task do_debian_patch: Started
+NOTE: Running task 179 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/pseudo/pseudo_debian.bb:do_patch)
+NOTE: recipe unifdef-native-2.10-r0: task do_patch: Succeeded
+NOTE: recipe libmpc-native-1.1.0-r0: task do_patch: Succeeded
+NOTE: Running task 180 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/unifdef/unifdef_debian.bb:do_configure)
+NOTE: Running task 181 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/ncurses/ncurses_debian.bb:do_debian_patch)
+NOTE: recipe tcl-native-8.6.9-r0: task do_patch: Started
+NOTE: recipe unifdef-native-2.10-r0: task do_configure: Started
+NOTE: recipe pseudo-native-1.9.0+git20180920-r0: task do_patch: Started
+NOTE: recipe ncurses-native-6.1+20181013-r0: task do_debian_patch: Started
+NOTE: recipe unifdef-native-2.10-r0: task do_configure: Succeeded
+NOTE: Running task 182 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/unifdef/unifdef_debian.bb:do_compile)
+NOTE: recipe tcl-native-8.6.9-r0: task do_patch: Succeeded
+NOTE: Running task 183 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/bzip2/bzip2_debian.bb:do_debian_patch)
+NOTE: recipe gperf-native-3.1-r0: task do_debian_patch: Succeeded
+NOTE: Running task 184 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/gperf/gperf_debian.bb:do_patch)
+NOTE: recipe unifdef-native-2.10-r0: task do_compile: Started
+NOTE: recipe gperf-native-3.1-r0: task do_patch: Started
+NOTE: recipe bzip2-native-1.0.6-r0: task do_debian_patch: Started
+NOTE: recipe gperf-native-3.1-r0: task do_patch: Succeeded
+NOTE: Running task 185 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/xz/xz_debian.bb:do_debian_patch)
+NOTE: recipe xz-native-5.2.4-r0: task do_debian_patch: Started
+NOTE: recipe libtool-native-2.4.6-r0: task do_patch: Succeeded
+NOTE: recipe attr-native-2.4.48-r0: task do_debian_patch: Succeeded
+NOTE: Running task 186 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/attr/attr_debian.bb:do_patch)
+NOTE: Running task 187 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/libtirpc/libtirpc_debian.bb:do_debian_patch)
+NOTE: recipe xz-native-5.2.4-r0: task do_debian_patch: Succeeded
+NOTE: Running task 188 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/xz/xz_debian.bb:do_patch)
+NOTE: recipe unifdef-native-2.10-r0: task do_compile: Succeeded
+NOTE: Running task 189 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/unifdef/unifdef_debian.bb:do_install)
+NOTE: recipe attr-native-2.4.48-r0: task do_patch: Started
+NOTE: recipe libtirpc-native-1.1.4-r0: task do_debian_patch: Started
+NOTE: recipe ncurses-native-6.1+20181013-r0: task do_debian_patch: Succeeded
+NOTE: recipe attr-native-2.4.48-r0: task do_patch: Succeeded
+NOTE: Running task 190 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/file/file_debian.bb:do_unpack)
+NOTE: Running task 191 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/ncurses/ncurses_debian.bb:do_patch)
+NOTE: recipe ncurses-native-6.1+20181013-r0: task do_patch: Started
+NOTE: recipe xz-native-5.2.4-r0: task do_patch: Started
+NOTE: recipe unifdef-native-2.10-r0: task do_install: Started
+NOTE: recipe file-native-5.35-r0: task do_unpack: Started
+NOTE: recipe xz-native-5.2.4-r0: task do_patch: Succeeded
+NOTE: recipe ncurses-native-6.1+20181013-r0: task do_patch: Succeeded
+NOTE: Running task 192 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/dbus/dbus_debian.bb:do_unpack)
+NOTE: Running task 193 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/popt/popt_debian.bb:do_unpack)
+NOTE: recipe pseudo-native-1.9.0+git20180920-r0: task do_patch: Succeeded
+NOTE: Running task 194 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/db/db_debian.bb:do_unpack)
+NOTE: recipe zlib-native-1.2.11-r0: task do_configure: Succeeded
+NOTE: Running task 195 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/zlib/zlib_debian.bb:do_compile)
+NOTE: recipe sqlite3-native-3_3.27.2-r0: task do_debian_patch: Succeeded
+NOTE: Running task 196 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/sqlite3/sqlite3_debian.bb:do_patch)
+NOTE: recipe popt-native-1.16-r0: task do_unpack: Started
+NOTE: recipe dbus-native-1.12.16-r0: task do_unpack: Started
+NOTE: recipe db-native-5.3.28-r0: task do_unpack: Started
+NOTE: recipe zlib-native-1.2.11-r0: task do_compile: Started
+NOTE: recipe unifdef-native-2.10-r0: task do_install: Succeeded
+NOTE: recipe file-native-5.35-r0: task do_unpack: Succeeded
+NOTE: Running task 197 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/unifdef/unifdef_debian.bb:do_populate_sysroot)
+NOTE: Running task 198 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/libarchive/libarchive_debian.bb:do_unpack)
+NOTE: recipe sqlite3-native-3_3.27.2-r0: task do_patch: Started
+NOTE: recipe popt-native-1.16-r0: task do_unpack: Succeeded
+NOTE: Running task 199 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/nss/nss_debian.bb:do_unpack)
+NOTE: recipe libarchive-native-3.3.3-r0: task do_unpack: Started
+NOTE: recipe nss-native-3.42.1-r0: task do_unpack: Started
+NOTE: recipe unifdef-native-2.10-r0: task do_populate_sysroot: Started
+NOTE: recipe bzip2-native-1.0.6-r0: task do_debian_patch: Succeeded
+NOTE: recipe libtirpc-native-1.1.4-r0: task do_debian_patch: Succeeded
+NOTE: Running task 200 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/bzip2/bzip2_debian.bb:do_patch)
+NOTE: Running task 201 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/libtirpc/libtirpc_debian.bb:do_patch)
+NOTE: recipe libtirpc-native-1.1.4-r0: task do_patch: Started
+NOTE: recipe dbus-native-1.12.16-r0: task do_unpack: Succeeded
+NOTE: Running task 202 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/util-linux/util-linux_debian.bb:do_debian_unpack_extra)
+NOTE: recipe sqlite3-native-3_3.27.2-r0: task do_patch: Succeeded
+NOTE: recipe bzip2-native-1.0.6-r0: task do_patch: Started
+NOTE: Running task 203 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/rpm/rpm_debian.bb:do_unpack)
+NOTE: recipe bzip2-native-1.0.6-r0: task do_patch: Succeeded
+NOTE: Running task 204 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/readline/readline_debian.bb:do_debian_unpack_extra)
+NOTE: recipe perl-native-5.28.1-r1: task do_unpack: Succeeded
+NOTE: Running task 205 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/gdbm/gdbm_debian.bb:do_debian_unpack_extra)
+NOTE: recipe readline-native-7.0-r0: task do_debian_unpack_extra: Started
+NOTE: recipe rpm-native-4.14.2.1-r0: task do_unpack: Started
+NOTE: recipe libtirpc-native-1.1.4-r0: task do_patch: Succeeded
+NOTE: Running task 206 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/libffi/libffi_debian.bb:do_debian_unpack_extra)
+NOTE: recipe util-linux-native-2.33.1-r0: task do_debian_unpack_extra: Started
+NOTE: recipe python3-native-3.7.3-r0: task do_unpack: Succeeded
+NOTE: Running task 207 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/openssl/openssl_debian.bb:do_debian_unpack_extra)
+NOTE: recipe readline-native-7.0-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 208 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/readline/readline_debian.bb:do_debian_patch)
+NOTE: recipe gdbm-native-1.18.1-r0: task do_debian_unpack_extra: Started
+NOTE: recipe util-linux-native-2.33.1-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 209 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/util-linux/util-linux_debian.bb:do_debian_patch)
+NOTE: recipe gdbm-native-1.18.1-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 210 of 593 (virtual:native:/home/deby/poky/meta/recipes-extended/libnsl/libnsl2_git.bb:do_unpack)
+NOTE: recipe libffi-native-3.2.1-r0: task do_debian_unpack_extra: Started
+NOTE: recipe util-linux-native-2.33.1-r0: task do_debian_patch: Started
+NOTE: recipe libnsl2-native-1.2.0+gitAUTOINC+37c5ffe303-r0: task do_unpack: Started
+NOTE: recipe openssl-native-1.1.1d-r0: task do_debian_unpack_extra: Started
+NOTE: recipe readline-native-7.0-r0: task do_debian_patch: Started
+NOTE: recipe openssl-native-1.1.1d-r0: task do_debian_unpack_extra: Succeeded
+NOTE: recipe libffi-native-3.2.1-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 211 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/gdbm/gdbm_debian.bb:do_debian_patch)
+NOTE: Running task 212 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/libffi/libffi_debian.bb:do_debian_patch)
+NOTE: recipe libarchive-native-3.3.3-r0: task do_unpack: Succeeded
+NOTE: Running task 213 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/openssl/openssl_debian.bb:do_debian_patch)
+NOTE: recipe util-linux-native-2.33.1-r0: task do_debian_patch: Succeeded
+NOTE: recipe zlib-native-1.2.11-r0: task do_compile: Succeeded
+NOTE: Running task 214 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/util-linux/util-linux_debian.bb:do_patch)
+NOTE: Running task 215 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/zlib/zlib_debian.bb:do_install)
+NOTE: recipe libffi-native-3.2.1-r0: task do_debian_patch: Started
+NOTE: recipe gdbm-native-1.18.1-r0: task do_debian_patch: Started
+NOTE: recipe openssl-native-1.1.1d-r0: task do_debian_patch: Started
+NOTE: recipe zlib-native-1.2.11-r0: task do_install: Started
+NOTE: recipe util-linux-native-2.33.1-r0: task do_patch: Started
+NOTE: recipe unifdef-native-2.10-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 216 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/elfutils/elfutils_debian.bb:do_debian_unpack_extra)
+NOTE: recipe elfutils-native-0.176-r0: task do_debian_unpack_extra: Started
+NOTE: recipe elfutils-native-0.176-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 217 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/openssl/openssl_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe gdbm-native-1.18.1-r0: task do_debian_patch: Succeeded
+NOTE: Running task 218 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/gdbm/gdbm_debian.bb:do_patch)
+NOTE: recipe openssl-native-1.1.1d-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe openssl-native-1.1.1d-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 219 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/elfutils/elfutils_debian.bb:do_debian_patch)
+NOTE: recipe gdbm-native-1.18.1-r0: task do_patch: Started
+NOTE: recipe elfutils-native-0.176-r0: task do_debian_patch: Started
+NOTE: recipe zlib-native-1.2.11-r0: task do_install: Succeeded
+NOTE: Running task 220 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/zlib/zlib_debian.bb:do_populate_sysroot)
+NOTE: recipe rpm-native-4.14.2.1-r0: task do_unpack: Succeeded
+NOTE: Running task 221 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/python/python3_debian.bb:do_debian_unpack_extra)
+NOTE: recipe zlib-native-1.2.11-r0: task do_populate_sysroot: Started
+NOTE: recipe gdbm-native-1.18.1-r0: task do_patch: Succeeded
+NOTE: Running task 222 of 593 (virtual:native:/home/deby/poky/meta/recipes-devtools/dwarfsrcfiles/dwarfsrcfiles.bb:do_fetch)
+NOTE: recipe readline-native-7.0-r0: task do_debian_patch: Succeeded
+NOTE: Running task 223 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/readline/readline_debian.bb:do_patch)
+NOTE: recipe openssl-native-1.1.1d-r0: task do_debian_patch: Succeeded
+NOTE: Running task 224 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/openssl/openssl_debian.bb:do_patch)
+NOTE: recipe dwarfsrcfiles-native-1.0-r0: task do_fetch: Started
+NOTE: recipe nss-native-3.42.1-r0: task do_unpack: Succeeded
+NOTE: recipe libffi-native-3.2.1-r0: task do_debian_patch: Succeeded
+NOTE: recipe python3-native-3.7.3-r0: task do_debian_unpack_extra: Started
+NOTE: recipe readline-native-7.0-r0: task do_patch: Started
+NOTE: recipe openssl-native-1.1.1d-r0: task do_patch: Started
+NOTE: Running task 225 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/libffi/libffi_debian.bb:do_patch)
+NOTE: Running noexec task 226 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/libgcc_debian.bb:do_fetch)
+NOTE: Running task 227 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/perl/perl_debian.bb:do_debian_unpack_extra)
+NOTE: recipe python3-native-3.7.3-r0: task do_debian_unpack_extra: Succeeded
+NOTE: recipe binutils-cross-arm-2.31.1-r0: task do_unpack: Succeeded
+NOTE: Running task 228 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/python/python3_debian.bb:do_debian_patch)
+NOTE: Running task 229 of 593 (/home/deby/poky/meta-debian/recipes-debian/binutils/binutils-cross_debian.bb:do_debian_unpack_extra)
+NOTE: recipe dwarfsrcfiles-native-1.0-r0: task do_fetch: Succeeded
+NOTE: Running task 230 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/perl/perl_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe perl-native-5.28.1-r1: task do_debian_unpack_extra: Started
+NOTE: recipe libffi-native-3.2.1-r0: task do_patch: Started
+NOTE: recipe perl-native-5.28.1-r1: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 231 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/perl/perl_debian.bb:do_debian_patch)
+NOTE: recipe binutils-cross-arm-2.31.1-r0: task do_debian_unpack_extra: Started
+NOTE: recipe perl-native-5.28.1-r1: task do_prepare_recipe_sysroot: Started
+NOTE: recipe python3-native-3.7.3-r0: task do_debian_patch: Started
+NOTE: recipe binutils-cross-arm-2.31.1-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 232 of 593 (/home/deby/poky/meta-debian/recipes-debian/binutils/binutils-cross_debian.bb:do_debian_patch)
+NOTE: recipe perl-native-5.28.1-r1: task do_debian_patch: Started
+NOTE: recipe perl-native-5.28.1-r1: task do_prepare_recipe_sysroot: Succeeded
+NOTE: recipe libnsl2-native-1.2.0+gitAUTOINC+37c5ffe303-r0: task do_unpack: Succeeded
+NOTE: Running task 233 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/expat/expat_debian.bb:do_debian_unpack_extra)
+NOTE: Running task 234 of 593 (virtual:native:/home/deby/poky/meta/recipes-extended/libnsl/libnsl2_git.bb:do_patch)
+NOTE: recipe binutils-cross-arm-2.31.1-r0: task do_debian_patch: Started
+NOTE: recipe expat-native-2.2.6-r0: task do_debian_unpack_extra: Started
+NOTE: recipe libnsl2-native-1.2.0+gitAUTOINC+37c5ffe303-r0: task do_patch: Started
+NOTE: recipe expat-native-2.2.6-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 235 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/lzo/lzo_debian.bb:do_debian_unpack_extra)
+NOTE: recipe util-linux-native-2.33.1-r0: task do_patch: Succeeded
+NOTE: Running task 236 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/e2fsprogs/e2fsprogs_debian.bb:do_debian_unpack_extra)
+NOTE: recipe lzo-native-2.10-r0: task do_debian_unpack_extra: Started
+NOTE: recipe e2fsprogs-native-1.44.5-r0: task do_debian_unpack_extra: Started
+NOTE: recipe libnsl2-native-1.2.0+gitAUTOINC+37c5ffe303-r0: task do_patch: Succeeded
+NOTE: recipe readline-native-7.0-r0: task do_patch: Succeeded
+NOTE: recipe glibc-2.28-r0: task do_unpack: Succeeded
+NOTE: recipe lzo-native-2.10-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 237 of 593 (/home/deby/poky/meta-debian/recipes-debian/glibc/glibc_debian.bb:do_debian_unpack_extra)
+NOTE: Running task 238 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/nspr/nspr_debian.bb:do_debian_unpack_extra)
+NOTE: Running task 239 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/expat/expat_debian.bb:do_debian_patch)
+NOTE: Running task 240 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/lzo/lzo_debian.bb:do_debian_patch)
+NOTE: recipe e2fsprogs-native-1.44.5-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 241 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/e2fsprogs/e2fsprogs_debian.bb:do_debian_patch)
+NOTE: recipe nspr-native-4.20-r0: task do_debian_unpack_extra: Started
+NOTE: recipe glibc-2.28-r0: task do_debian_unpack_extra: Started
+NOTE: recipe expat-native-2.2.6-r0: task do_debian_patch: Started
+NOTE: recipe lzo-native-2.10-r0: task do_debian_patch: Started
+NOTE: recipe nspr-native-4.20-r0: task do_debian_unpack_extra: Succeeded
+NOTE: recipe glibc-2.28-r0: task do_debian_unpack_extra: Succeeded
+NOTE: recipe openssl-native-1.1.1d-r0: task do_patch: Succeeded
+NOTE: Running task 242 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/nspr/nspr_debian.bb:do_debian_patch)
+NOTE: Running task 243 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/openssl/openssl_debian.bb:do_configure)
+NOTE: Running task 244 of 593 (/home/deby/poky/meta-debian/recipes-debian/glibc/glibc_debian.bb:do_debian_patch)
+NOTE: recipe e2fsprogs-native-1.44.5-r0: task do_debian_patch: Started
+NOTE: recipe nspr-native-4.20-r0: task do_debian_patch: Started
+NOTE: recipe openssl-native-1.1.1d-r0: task do_configure: Started
+NOTE: recipe zlib-native-1.2.11-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 245 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/file/file_debian.bb:do_debian_unpack_extra)
+NOTE: recipe file-native-5.35-r0: task do_debian_unpack_extra: Started
+NOTE: recipe glibc-2.28-r0: task do_debian_patch: Started
+NOTE: recipe file-native-5.35-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 246 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/dbus/dbus_debian.bb:do_debian_unpack_extra)
+NOTE: recipe nspr-native-4.20-r0: task do_debian_patch: Succeeded
+NOTE: Running task 247 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/nspr/nspr_debian.bb:do_patch)
+NOTE: recipe lzo-native-2.10-r0: task do_debian_patch: Succeeded
+NOTE: Running task 248 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/lzo/lzo_debian.bb:do_patch)
+NOTE: recipe elfutils-native-0.176-r0: task do_debian_patch: Succeeded
+NOTE: Running task 249 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/elfutils/elfutils_debian.bb:do_patch)
+NOTE: recipe dbus-native-1.12.16-r0: task do_debian_unpack_extra: Started
+NOTE: recipe nspr-native-4.20-r0: task do_patch: Started
+NOTE: recipe lzo-native-2.10-r0: task do_patch: Started
+NOTE: recipe elfutils-native-0.176-r0: task do_patch: Started
+NOTE: recipe dbus-native-1.12.16-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 250 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/popt/popt_debian.bb:do_debian_unpack_extra)
+NOTE: recipe expat-native-2.2.6-r0: task do_debian_patch: Succeeded
+NOTE: recipe popt-native-1.16-r0: task do_debian_unpack_extra: Started
+NOTE: Running task 251 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/expat/expat_debian.bb:do_patch)
+NOTE: recipe libffi-native-3.2.1-r0: task do_patch: Succeeded
+NOTE: recipe e2fsprogs-native-1.44.5-r0: task do_debian_patch: Succeeded
+NOTE: Running task 252 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/libarchive/libarchive_debian.bb:do_debian_unpack_extra)
+NOTE: Running task 253 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/e2fsprogs/e2fsprogs_debian.bb:do_patch)
+NOTE: recipe popt-native-1.16-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 254 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/nss/nss_debian.bb:do_debian_unpack_extra)
+NOTE: recipe expat-native-2.2.6-r0: task do_patch: Started
+NOTE: recipe nss-native-3.42.1-r0: task do_debian_unpack_extra: Started
+NOTE: recipe libarchive-native-3.3.3-r0: task do_debian_unpack_extra: Started
+NOTE: recipe nss-native-3.42.1-r0: task do_debian_unpack_extra: Succeeded
+NOTE: recipe e2fsprogs-native-1.44.5-r0: task do_patch: Started
+NOTE: Running task 255 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/file/file_debian.bb:do_debian_patch)
+NOTE: recipe lzo-native-2.10-r0: task do_patch: Succeeded
+NOTE: Running task 256 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/dbus/dbus_debian.bb:do_debian_patch)
+NOTE: recipe libarchive-native-3.3.3-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 257 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/popt/popt_debian.bb:do_debian_patch)
+NOTE: recipe file-native-5.35-r0: task do_debian_patch: Started
+NOTE: recipe dbus-native-1.12.16-r0: task do_debian_patch: Started
+NOTE: recipe popt-native-1.16-r0: task do_debian_patch: Started
+NOTE: recipe expat-native-2.2.6-r0: task do_patch: Succeeded
+NOTE: Running task 258 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/libarchive/libarchive_debian.bb:do_debian_patch)
+NOTE: recipe libarchive-native-3.3.3-r0: task do_debian_patch: Started
+NOTE: recipe nspr-native-4.20-r0: task do_patch: Succeeded
+NOTE: Running task 259 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/nss/nss_debian.bb:do_debian_patch)
+NOTE: recipe elfutils-native-0.176-r0: task do_patch: Succeeded
+NOTE: Running task 260 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/rpm/rpm_debian.bb:do_debian_unpack_extra)
+NOTE: recipe nss-native-3.42.1-r0: task do_debian_patch: Started
+NOTE: recipe rpm-native-4.14.2.1-r0: task do_debian_unpack_extra: Started
+NOTE: recipe rpm-native-4.14.2.1-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 261 of 593 (virtual:native:/home/deby/poky/meta/recipes-devtools/dwarfsrcfiles/dwarfsrcfiles.bb:do_unpack)
+NOTE: recipe dbus-native-1.12.16-r0: task do_debian_patch: Succeeded
+NOTE: Running task 262 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/dbus/dbus_debian.bb:do_patch)
+NOTE: recipe dwarfsrcfiles-native-1.0-r0: task do_unpack: Started
+NOTE: recipe dbus-native-1.12.16-r0: task do_patch: Started
+NOTE: recipe dwarfsrcfiles-native-1.0-r0: task do_unpack: Succeeded
+NOTE: Running task 263 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/rpm/rpm_debian.bb:do_debian_patch)
+NOTE: recipe e2fsprogs-native-1.44.5-r0: task do_patch: Succeeded
+NOTE: Running task 264 of 593 (virtual:native:/home/deby/poky/meta/recipes-devtools/dwarfsrcfiles/dwarfsrcfiles.bb:do_patch)
+NOTE: recipe dwarfsrcfiles-native-1.0-r0: task do_patch: Started
+NOTE: recipe rpm-native-4.14.2.1-r0: task do_debian_patch: Started
+NOTE: recipe dwarfsrcfiles-native-1.0-r0: task do_patch: Succeeded
+NOTE: recipe dbus-native-1.12.16-r0: task do_patch: Succeeded
+NOTE: Running task 265 of 593 (/home/deby/poky/meta-debian/recipes-debian/libtool/libtool-cross_debian.bb:do_fetch)
+NOTE: Running task 266 of 593 (/home/deby/poky/meta-debian/recipes-debian/libpcap/libpcap_debian.bb:do_fetch)
+NOTE: recipe libarchive-native-3.3.3-r0: task do_debian_patch: Succeeded
+NOTE: Running task 267 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/libarchive/libarchive_debian.bb:do_patch)
+NOTE: recipe libarchive-native-3.3.3-r0: task do_patch: Started
+NOTE: recipe libtool-cross-2.4.6-r0: task do_fetch: Started
+NOTE: recipe libpcap-1.8.1-r0: task do_fetch: Started
+NOTE: recipe rpm-native-4.14.2.1-r0: task do_debian_patch: Succeeded
+NOTE: Running task 268 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/rpm/rpm_debian.bb:do_patch)
+NOTE: recipe libtool-cross-2.4.6-r0: task do_fetch: Succeeded
+NOTE: Running task 269 of 593 (/home/deby/poky/meta-debian/recipes-debian/libtool/libtool-cross_debian.bb:do_unpack)
+NOTE: recipe rpm-native-4.14.2.1-r0: task do_patch: Started
+NOTE: recipe libtool-cross-2.4.6-r0: task do_unpack: Started
+NOTE: recipe nss-native-3.42.1-r0: task do_debian_patch: Succeeded
+NOTE: recipe libarchive-native-3.3.3-r0: task do_patch: Succeeded
+NOTE: recipe binutils-cross-arm-2.31.1-r0: task do_debian_patch: Succeeded
+NOTE: Running task 270 of 593 (/home/deby/poky/meta-debian/recipes-debian/binutils/binutils-cross_debian.bb:do_patch)
+NOTE: Running noexec task 271 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-runtime_debian.bb:do_fetch)
+NOTE: Running task 272 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/gettext/gettext_debian.bb:do_fetch)
+NOTE: Running task 273 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/nss/nss_debian.bb:do_patch)
+NOTE: recipe binutils-cross-arm-2.31.1-r0: task do_patch: Started
+NOTE: recipe nss-native-3.42.1-r0: task do_patch: Started
+NOTE: recipe python3-native-3.7.3-r0: task do_debian_patch: Succeeded
+NOTE: recipe gettext-native-0.19.8.1-r0: task do_fetch: Started
+NOTE: Running task 274 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/python/python3_debian.bb:do_patch)
+NOTE: recipe popt-native-1.16-r0: task do_debian_patch: Succeeded
+NOTE: Running task 275 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/popt/popt_debian.bb:do_patch)
+NOTE: recipe python3-native-3.7.3-r0: task do_patch: Started
+NOTE: recipe popt-native-1.16-r0: task do_patch: Started
+NOTE: recipe libpcap-1.8.1-r0: task do_fetch: Succeeded
+NOTE: Running task 276 of 593 (/home/deby/poky/meta-debian/recipes-debian/libpcap/libpcap_debian.bb:do_unpack)
+NOTE: recipe libpcap-1.8.1-r0: task do_unpack: Started
+NOTE: recipe popt-native-1.16-r0: task do_patch: Succeeded
+NOTE: Running task 277 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/dpkg/dpkg_debian.bb:do_fetch)
+NOTE: recipe dpkg-native-1.19.7-r0: task do_fetch: Started
+NOTE: recipe file-native-5.35-r0: task do_debian_patch: Succeeded
+NOTE: Running task 278 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/file/file_debian.bb:do_patch)
+NOTE: recipe nss-native-3.42.1-r0: task do_patch: Succeeded
+NOTE: Running task 279 of 593 (virtual:native:/home/deby/poky/meta/recipes-devtools/opkg-utils/opkg-utils_0.4.0.bb:do_fetch)
+NOTE: recipe file-native-5.35-r0: task do_patch: Started
+NOTE: recipe opkg-utils-native-0.4.0-r0: task do_fetch: Started
+NOTE: recipe file-native-5.35-r0: task do_patch: Succeeded
+NOTE: recipe opkg-utils-native-0.4.0-r0: task do_fetch: Succeeded
+NOTE: Running task 280 of 593 (virtual:native:/home/deby/poky/meta/recipes-devtools/opkg-utils/opkg-utils_0.4.0.bb:do_unpack)
+NOTE: Running task 281 of 593 (virtual:native:/home/deby/poky/meta/recipes-devtools/opkg-utils/opkg-utils_0.4.0.bb:do_prepare_recipe_sysroot)
+NOTE: recipe opkg-utils-native-0.4.0-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe opkg-utils-native-0.4.0-r0: task do_unpack: Started
+NOTE: recipe opkg-utils-native-0.4.0-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: recipe opkg-utils-native-0.4.0-r0: task do_unpack: Succeeded
+NOTE: Running task 282 of 593 (virtual:native:/home/deby/poky/meta/recipes-devtools/opkg-utils/opkg-utils_0.4.0.bb:do_patch)
+NOTE: recipe rpm-native-4.14.2.1-r0: task do_patch: Succeeded
+NOTE: recipe opkg-utils-native-0.4.0-r0: task do_patch: Started
+NOTE: recipe opkg-utils-native-0.4.0-r0: task do_patch: Succeeded
+NOTE: Running task 283 of 593 (virtual:native:/home/deby/poky/meta/recipes-devtools/opkg-utils/opkg-utils_0.4.0.bb:do_configure)
+NOTE: recipe openssl-native-1.1.1d-r0: task do_configure: Succeeded
+NOTE: Running task 284 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/openssl/openssl_debian.bb:do_compile)
+NOTE: recipe opkg-utils-native-0.4.0-r0: task do_configure: Started
+NOTE: recipe opkg-utils-native-0.4.0-r0: task do_configure: Succeeded
+NOTE: Running task 285 of 593 (virtual:native:/home/deby/poky/meta/recipes-devtools/opkg-utils/opkg-utils_0.4.0.bb:do_compile)
+NOTE: recipe openssl-native-1.1.1d-r0: task do_compile: Started
+NOTE: recipe opkg-utils-native-0.4.0-r0: task do_compile: Started
+NOTE: recipe opkg-utils-native-0.4.0-r0: task do_compile: Succeeded
+NOTE: recipe python3-native-3.7.3-r0: task do_patch: Succeeded
+NOTE: Running task 286 of 593 (virtual:native:/home/deby/poky/meta/recipes-devtools/opkg-utils/opkg-utils_0.4.0.bb:do_install)
+NOTE: recipe opkg-utils-native-0.4.0-r0: task do_install: Started
+NOTE: recipe opkg-utils-native-0.4.0-r0: task do_install: Succeeded
+NOTE: Running task 287 of 593 (virtual:native:/home/deby/poky/meta/recipes-devtools/opkg-utils/opkg-utils_0.4.0.bb:do_populate_sysroot)
+NOTE: recipe opkg-utils-native-0.4.0-r0: task do_populate_sysroot: Started
+NOTE: recipe opkg-utils-native-0.4.0-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe perl-native-5.28.1-r1: task do_debian_patch: Succeeded
+NOTE: Running task 288 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/perl/perl_debian.bb:do_patch)
+NOTE: recipe perl-native-5.28.1-r1: task do_patch: Started
+NOTE: recipe perl-native-5.28.1-r1: task do_patch: Succeeded
+NOTE: Running task 289 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/perl/perl_debian.bb:do_configure)
+NOTE: recipe perl-native-5.28.1-r1: task do_configure: Started
+NOTE: recipe libpcap-1.8.1-r0: task do_unpack: Succeeded
+NOTE: Running task 290 of 593 (/home/deby/poky/meta-debian/recipes-debian/libpcap/libpcap_debian.bb:do_debian_unpack_extra)
+NOTE: recipe libpcap-1.8.1-r0: task do_debian_unpack_extra: Started
+NOTE: recipe libpcap-1.8.1-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 291 of 593 (/home/deby/poky/meta-debian/recipes-debian/libpcap/libpcap_debian.bb:do_debian_patch)
+NOTE: recipe libpcap-1.8.1-r0: task do_debian_patch: Started
+NOTE: recipe libpcap-1.8.1-r0: task do_debian_patch: Succeeded
+NOTE: Running task 292 of 593 (/home/deby/poky/meta-debian/recipes-debian/libpcap/libpcap_debian.bb:do_patch)
+NOTE: recipe libpcap-1.8.1-r0: task do_patch: Started
+NOTE: recipe libpcap-1.8.1-r0: task do_patch: Succeeded
+NOTE: Running task 293 of 593 (/home/deby/poky/meta-debian/recipes-debian/libpcap/libpcap_debian.bb:do_populate_lic)
 NOTE: recipe libpcap-1.8.1-r0: task do_populate_lic: Started
-NOTE: recipe libpcap-1.8.1-r0: task do_configure: Started
-ERROR: libpcap-1.8.1-r0 do_configure: Function failed: do_configure (log file is located at /home/deby/build/tmp/work/armv7vet2hf-neon-deby-linux-gnueabi/libpcap/1.8.1-r0/temp/log.do_configure.22448)
-ERROR: Logfile of failure stored in: /home/deby/build/tmp/work/armv7vet2hf-neon-deby-linux-gnueabi/libpcap/1.8.1-r0/temp/log.do_configure.22448
-Log data follows:
-| DEBUG: SITE files ['endian-little', 'bit-32', 'arm-common', 'arm-32', 'common-linux', 'common-glibc', 'arm-linux', 'arm-linux-gnueabi', 'common']
-| DEBUG: Executing shell function autotools_preconfigure
-| DEBUG: Shell function autotools_preconfigure finished
-| DEBUG: Executing python function autotools_aclocals
-| DEBUG: SITE files ['endian-little', 'bit-32', 'arm-common', 'arm-32', 'common-linux', 'common-glibc', 'arm-linux', 'arm-linux-gnueabi', 'common']
-| DEBUG: Python function autotools_aclocals finished
-| DEBUG: Executing shell function do_configure
-| /home/deby/build/tmp/work/armv7vet2hf-neon-deby-linux-gnueabi/libpcap/1.8.1-r0/temp/run.do_configure.22448: 113: /home/deby/build/tmp/work/armv7vet2hf-neon-deby-linux-gnueabi/libpcap/1.8.1-r0/temp/run.do_configure.22448: srcdir: not found
-| sed: can't read /Makefile.in: No such file or directory
-| WARNING: exit code 2 from a shell command.
-| ERROR: Function failed: do_configure (log file is located at /home/deby/build/tmp/work/armv7vet2hf-neon-deby-linux-gnueabi/libpcap/1.8.1-r0/temp/log.do_configure.22448)
-NOTE: recipe libpcap-1.8.1-r0: task do_configure: Failed
-ERROR: Task (/home/deby/poky/meta-debian/recipes-debian/libpcap/libpcap_debian.bb:do_configure) failed with exit code '1'
 NOTE: recipe libpcap-1.8.1-r0: task do_populate_lic: Succeeded
-NOTE: Tasks Summary: Attempted 585 tasks of which 583 didn't need to be rerun and 1 failed.
-
-Summary: 1 task failed:
-  /home/deby/poky/meta-debian/recipes-debian/libpcap/libpcap_debian.bb:do_configure
-Summary: There was 1 ERROR message shown, returning a non-zero exit code.
+NOTE: recipe dpkg-native-1.19.7-r0: task do_fetch: Succeeded
+NOTE: Running task 294 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/dpkg/dpkg_debian.bb:do_unpack)
+NOTE: recipe dpkg-native-1.19.7-r0: task do_unpack: Started
+NOTE: recipe gettext-native-0.19.8.1-r0: task do_fetch: Succeeded
+NOTE: Running task 295 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/gettext/gettext_debian.bb:do_unpack)
+NOTE: recipe gettext-native-0.19.8.1-r0: task do_unpack: Started
+NOTE: recipe libtool-cross-2.4.6-r0: task do_unpack: Succeeded
+NOTE: Running task 296 of 593 (/home/deby/poky/meta-debian/recipes-debian/libtool/libtool-cross_debian.bb:do_debian_unpack_extra)
+NOTE: recipe libtool-cross-2.4.6-r0: task do_debian_unpack_extra: Started
+NOTE: recipe libtool-cross-2.4.6-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 297 of 593 (/home/deby/poky/meta-debian/recipes-debian/libtool/libtool-cross_debian.bb:do_debian_patch)
+NOTE: recipe libtool-cross-2.4.6-r0: task do_debian_patch: Started
+NOTE: recipe binutils-cross-arm-2.31.1-r0: task do_patch: Succeeded
+NOTE: recipe libtool-cross-2.4.6-r0: task do_debian_patch: Succeeded
+NOTE: Running task 298 of 593 (/home/deby/poky/meta-debian/recipes-debian/libtool/libtool-cross_debian.bb:do_patch)
+NOTE: recipe libtool-cross-2.4.6-r0: task do_patch: Started
+NOTE: recipe glibc-2.28-r0: task do_debian_patch: Succeeded
+NOTE: Running task 299 of 593 (/home/deby/poky/meta-debian/recipes-debian/glibc/glibc_debian.bb:do_patch)
+NOTE: recipe glibc-2.28-r0: task do_patch: Started
+NOTE: recipe libtool-cross-2.4.6-r0: task do_patch: Succeeded
+NOTE: recipe glibc-2.28-r0: task do_patch: Succeeded
+NOTE: recipe dpkg-native-1.19.7-r0: task do_unpack: Succeeded
+NOTE: Running task 300 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/dpkg/dpkg_debian.bb:do_debian_unpack_extra)
+NOTE: recipe dpkg-native-1.19.7-r0: task do_debian_unpack_extra: Started
+NOTE: recipe dpkg-native-1.19.7-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 301 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/dpkg/dpkg_debian.bb:do_debian_patch)
+NOTE: recipe dpkg-native-1.19.7-r0: task do_debian_patch: Started
+NOTE: recipe dpkg-native-1.19.7-r0: task do_debian_patch: Succeeded
+NOTE: Running task 302 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/dpkg/dpkg_debian.bb:do_patch)
+NOTE: recipe dpkg-native-1.19.7-r0: task do_patch: Started
+NOTE: recipe dpkg-native-1.19.7-r0: task do_patch: Succeeded
+NOTE: recipe db-native-5.3.28-r0: task do_unpack: Succeeded
+NOTE: Running task 303 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/db/db_debian.bb:do_debian_unpack_extra)
+NOTE: recipe db-native-5.3.28-r0: task do_debian_unpack_extra: Started
+NOTE: recipe db-native-5.3.28-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 304 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/db/db_debian.bb:do_debian_patch)
+NOTE: recipe db-native-5.3.28-r0: task do_debian_patch: Started
+NOTE: recipe db-native-5.3.28-r0: task do_debian_patch: Succeeded
+NOTE: Running task 305 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/db/db_debian.bb:do_patch)
+NOTE: recipe db-native-5.3.28-r0: task do_patch: Started
+NOTE: recipe db-native-5.3.28-r0: task do_patch: Succeeded
+NOTE: recipe openssl-native-1.1.1d-r0: task do_compile: Succeeded
+NOTE: Running task 306 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/openssl/openssl_debian.bb:do_install)
+NOTE: recipe openssl-native-1.1.1d-r0: task do_install: Started
+NOTE: recipe gettext-native-0.19.8.1-r0: task do_unpack: Succeeded
+NOTE: Running task 307 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/gettext/gettext_debian.bb:do_debian_unpack_extra)
+NOTE: recipe gettext-native-0.19.8.1-r0: task do_debian_unpack_extra: Started
+NOTE: recipe gettext-native-0.19.8.1-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 308 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/gettext/gettext_debian.bb:do_debian_patch)
+NOTE: recipe gettext-native-0.19.8.1-r0: task do_debian_patch: Started
+NOTE: recipe gettext-native-0.19.8.1-r0: task do_debian_patch: Succeeded
+NOTE: Running task 309 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/gettext/gettext_debian.bb:do_patch)
+NOTE: recipe gettext-native-0.19.8.1-r0: task do_patch: Started
+NOTE: recipe gettext-native-0.19.8.1-r0: task do_patch: Succeeded
+NOTE: recipe openssl-native-1.1.1d-r0: task do_install: Succeeded
+NOTE: Running task 310 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/openssl/openssl_debian.bb:do_populate_sysroot)
+NOTE: recipe openssl-native-1.1.1d-r0: task do_populate_sysroot: Started
+NOTE: recipe openssl-native-1.1.1d-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe m4-native-1.4.18-r0: task do_configure: Succeeded
+NOTE: Running task 311 of 593 (/home/deby/poky/meta-debian/recipes-debian/m4/m4-native_debian.bb:do_compile)
+NOTE: recipe m4-native-1.4.18-r0: task do_compile: Started
+NOTE: recipe m4-native-1.4.18-r0: task do_compile: Succeeded
+NOTE: Running task 312 of 593 (/home/deby/poky/meta-debian/recipes-debian/m4/m4-native_debian.bb:do_install)
+NOTE: recipe m4-native-1.4.18-r0: task do_install: Started
+NOTE: recipe m4-native-1.4.18-r0: task do_install: Succeeded
+NOTE: Running task 313 of 593 (/home/deby/poky/meta-debian/recipes-debian/m4/m4-native_debian.bb:do_populate_sysroot)
+NOTE: recipe m4-native-1.4.18-r0: task do_populate_sysroot: Started
+NOTE: recipe m4-native-1.4.18-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 314 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/autoconf/autoconf_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe autoconf-native-2.69-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe autoconf-native-2.69-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 315 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/autoconf/autoconf_debian.bb:do_configure)
+NOTE: recipe autoconf-native-2.69-r0: task do_configure: Started
+NOTE: recipe autoconf-native-2.69-r0: task do_configure: Succeeded
+NOTE: Running task 316 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/autoconf/autoconf_debian.bb:do_compile)
+NOTE: recipe autoconf-native-2.69-r0: task do_compile: Started
+NOTE: recipe autoconf-native-2.69-r0: task do_compile: Succeeded
+NOTE: Running task 317 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/autoconf/autoconf_debian.bb:do_install)
+NOTE: recipe autoconf-native-2.69-r0: task do_install: Started
+NOTE: recipe autoconf-native-2.69-r0: task do_install: Succeeded
+NOTE: Running task 318 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/autoconf/autoconf_debian.bb:do_populate_sysroot)
+NOTE: recipe autoconf-native-2.69-r0: task do_populate_sysroot: Started
+NOTE: recipe autoconf-native-2.69-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 319 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/automake/automake_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe automake-native-1.16.1-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe automake-native-1.16.1-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 320 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/automake/automake_debian.bb:do_configure)
+NOTE: recipe automake-native-1.16.1-r0: task do_configure: Started
+NOTE: recipe automake-native-1.16.1-r0: task do_configure: Succeeded
+NOTE: Running task 321 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/automake/automake_debian.bb:do_compile)
+NOTE: recipe automake-native-1.16.1-r0: task do_compile: Started
+NOTE: recipe automake-native-1.16.1-r0: task do_compile: Succeeded
+NOTE: Running task 322 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/automake/automake_debian.bb:do_install)
+NOTE: recipe automake-native-1.16.1-r0: task do_install: Started
+NOTE: recipe automake-native-1.16.1-r0: task do_install: Succeeded
+NOTE: Running task 323 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/automake/automake_debian.bb:do_populate_sysroot)
+NOTE: recipe automake-native-1.16.1-r0: task do_populate_sysroot: Started
+NOTE: recipe automake-native-1.16.1-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 324 of 593 (/home/deby/poky/meta-debian/recipes-debian/libtool/libtool-native_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe libtool-native-2.4.6-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe libtool-native-2.4.6-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 325 of 593 (/home/deby/poky/meta-debian/recipes-debian/libtool/libtool-native_debian.bb:do_configure)
+NOTE: recipe libtool-native-2.4.6-r0: task do_configure: Started
+NOTE: recipe perl-native-5.28.1-r1: task do_configure: Succeeded
+NOTE: Running task 326 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/perl/perl_debian.bb:do_compile)
+NOTE: recipe perl-native-5.28.1-r1: task do_compile: Started
+NOTE: recipe libtool-native-2.4.6-r0: task do_configure: Succeeded
+NOTE: Running task 327 of 593 (/home/deby/poky/meta-debian/recipes-debian/libtool/libtool-native_debian.bb:do_compile)
+NOTE: recipe libtool-native-2.4.6-r0: task do_compile: Started
+NOTE: recipe libtool-native-2.4.6-r0: task do_compile: Succeeded
+NOTE: Running task 328 of 593 (/home/deby/poky/meta-debian/recipes-debian/libtool/libtool-native_debian.bb:do_install)
+NOTE: recipe libtool-native-2.4.6-r0: task do_install: Started
+NOTE: recipe libtool-native-2.4.6-r0: task do_install: Succeeded
+NOTE: Running task 329 of 593 (/home/deby/poky/meta-debian/recipes-debian/libtool/libtool-native_debian.bb:do_populate_sysroot)
+NOTE: recipe libtool-native-2.4.6-r0: task do_populate_sysroot: Started
+NOTE: recipe libtool-native-2.4.6-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 330 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/flex/flex_debian.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 331 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/pkgconfig/pkgconfig_debian.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 332 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/gmp/gmp_debian.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 333 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/autoconf-archive/autoconf-archive_debian.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 334 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/tcltk/tcl_debian.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 335 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/attr/attr_debian.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 336 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/gperf/gperf_debian.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 337 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/bzip2/bzip2_debian.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 338 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/xz/xz_debian.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 339 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/gdbm/gdbm_debian.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 340 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/libffi/libffi_debian.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 341 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/elfutils/elfutils_debian.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 342 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/expat/expat_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe gmp-native-6.1.2-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe expat-native-2.2.6-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe gdbm-native-1.18.1-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe gperf-native-3.1-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe bzip2-native-1.0.6-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe xz-native-5.2.4-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe flex-native-2.6.4-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe autoconf-archive-native-20180313-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe pkgconfig-native-0.29-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe attr-native-2.4.48-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe libffi-native-3.2.1-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe gmp-native-6.1.2-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 343 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/gmp/gmp_debian.bb:do_configure)
+NOTE: recipe expat-native-2.2.6-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 344 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/lzo/lzo_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe gperf-native-3.1-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 345 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/gperf/gperf_debian.bb:do_configure)
+NOTE: recipe bzip2-native-1.0.6-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 346 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/bzip2/bzip2_debian.bb:do_configure)
+NOTE: recipe gmp-native-6.1.2-r0: task do_configure: Started
+NOTE: recipe gperf-native-3.1-r0: task do_configure: Started
+NOTE: recipe tcl-native-8.6.9-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe elfutils-native-0.176-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe lzo-native-2.10-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe flex-native-2.6.4-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 347 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/flex/flex_debian.bb:do_configure)
+NOTE: recipe libffi-native-3.2.1-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: recipe pkgconfig-native-0.29-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 348 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/libffi/libffi_debian.bb:do_configure)
+NOTE: Running task 349 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/pkgconfig/pkgconfig_debian.bb:do_configure)
+NOTE: recipe xz-native-5.2.4-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: recipe autoconf-archive-native-20180313-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 350 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/autoconf-archive/autoconf-archive_debian.bb:do_configure)
+NOTE: recipe gdbm-native-1.18.1-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 351 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/xz/xz_debian.bb:do_configure)
+NOTE: Running task 352 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/gdbm/gdbm_debian.bb:do_configure)
+NOTE: recipe attr-native-2.4.48-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 353 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/attr/attr_debian.bb:do_configure)
+NOTE: recipe bzip2-native-1.0.6-r0: task do_configure: Started
+NOTE: recipe libffi-native-3.2.1-r0: task do_configure: Started
+NOTE: recipe xz-native-5.2.4-r0: task do_configure: Started
+NOTE: recipe gdbm-native-1.18.1-r0: task do_configure: Started
+NOTE: recipe flex-native-2.6.4-r0: task do_configure: Started
+NOTE: recipe pkgconfig-native-0.29-r0: task do_configure: Started
+NOTE: recipe autoconf-archive-native-20180313-r0: task do_configure: Started
+NOTE: recipe attr-native-2.4.48-r0: task do_configure: Started
+NOTE: recipe tcl-native-8.6.9-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: recipe lzo-native-2.10-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 354 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/tcltk/tcl_debian.bb:do_configure)
+NOTE: Running task 355 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/nspr/nspr_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe elfutils-native-0.176-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 356 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/elfutils/elfutils_debian.bb:do_configure)
+NOTE: recipe tcl-native-8.6.9-r0: task do_configure: Started
+NOTE: recipe elfutils-native-0.176-r0: task do_configure: Started
+NOTE: recipe nspr-native-4.20-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe nspr-native-4.20-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 357 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/expat/expat_debian.bb:do_configure)
+NOTE: recipe expat-native-2.2.6-r0: task do_configure: Started
+NOTE: recipe gcc-source-8.3.0-8.3.0-r0: task do_unpack: Succeeded
+NOTE: Running task 358 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-source_debian.bb:do_debian_unpack_extra)
+NOTE: recipe gcc-source-8.3.0-8.3.0-r0: task do_debian_unpack_extra: Started
+NOTE: recipe bzip2-native-1.0.6-r0: task do_configure: Succeeded
+NOTE: Running task 359 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/bzip2/bzip2_debian.bb:do_compile)
+NOTE: recipe bzip2-native-1.0.6-r0: task do_compile: Started
+NOTE: recipe gcc-source-8.3.0-8.3.0-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 360 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-source_debian.bb:do_debian_patch)
+NOTE: recipe gcc-source-8.3.0-8.3.0-r0: task do_debian_patch: Started
+NOTE: recipe bzip2-native-1.0.6-r0: task do_compile: Succeeded
+NOTE: Running task 361 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/bzip2/bzip2_debian.bb:do_install)
+NOTE: recipe bzip2-native-1.0.6-r0: task do_install: Started
+NOTE: recipe bzip2-native-1.0.6-r0: task do_install: Succeeded
+NOTE: Running task 362 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/bzip2/bzip2_debian.bb:do_populate_sysroot)
+NOTE: recipe bzip2-native-1.0.6-r0: task do_populate_sysroot: Started
+NOTE: recipe bzip2-native-1.0.6-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 363 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/lzo/lzo_debian.bb:do_configure)
+NOTE: recipe lzo-native-2.10-r0: task do_configure: Started
+NOTE: recipe elfutils-native-0.176-r0: task do_configure: Succeeded
+NOTE: Running task 364 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/elfutils/elfutils_debian.bb:do_compile)
+NOTE: recipe elfutils-native-0.176-r0: task do_compile: Started
+NOTE: recipe gperf-native-3.1-r0: task do_configure: Succeeded
+NOTE: Running task 365 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/gperf/gperf_debian.bb:do_compile)
+NOTE: recipe gperf-native-3.1-r0: task do_compile: Started
+NOTE: recipe attr-native-2.4.48-r0: task do_configure: Succeeded
+NOTE: Running task 366 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/attr/attr_debian.bb:do_compile)
+NOTE: recipe attr-native-2.4.48-r0: task do_compile: Started
+NOTE: recipe gperf-native-3.1-r0: task do_compile: Succeeded
+NOTE: Running task 367 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/gperf/gperf_debian.bb:do_install)
+NOTE: recipe gperf-native-3.1-r0: task do_install: Started
+NOTE: recipe autoconf-archive-native-20180313-r0: task do_configure: Succeeded
+NOTE: Running task 368 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/autoconf-archive/autoconf-archive_debian.bb:do_compile)
+NOTE: recipe autoconf-archive-native-20180313-r0: task do_compile: Started
+NOTE: recipe attr-native-2.4.48-r0: task do_compile: Succeeded
+NOTE: Running task 369 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/attr/attr_debian.bb:do_install)
+NOTE: recipe attr-native-2.4.48-r0: task do_install: Started
+NOTE: recipe gperf-native-3.1-r0: task do_install: Succeeded
+NOTE: Running task 370 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/gperf/gperf_debian.bb:do_populate_sysroot)
+NOTE: recipe autoconf-archive-native-20180313-r0: task do_compile: Succeeded
+NOTE: Running task 371 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/autoconf-archive/autoconf-archive_debian.bb:do_install)
+NOTE: recipe gperf-native-3.1-r0: task do_populate_sysroot: Started
+NOTE: recipe autoconf-archive-native-20180313-r0: task do_install: Started
+NOTE: recipe attr-native-2.4.48-r0: task do_install: Succeeded
+NOTE: Running task 372 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/attr/attr_debian.bb:do_populate_sysroot)
+NOTE: recipe attr-native-2.4.48-r0: task do_populate_sysroot: Started
+NOTE: recipe gperf-native-3.1-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 373 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/nspr/nspr_debian.bb:do_configure)
+NOTE: recipe nspr-native-4.20-r0: task do_configure: Started
+NOTE: recipe attr-native-2.4.48-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 374 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/file/file_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe file-native-5.35-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe file-native-5.35-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 375 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/popt/popt_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe libffi-native-3.2.1-r0: task do_configure: Succeeded
+NOTE: Running task 376 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/libffi/libffi_debian.bb:do_compile)
+NOTE: recipe popt-native-1.16-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe libffi-native-3.2.1-r0: task do_compile: Started
+NOTE: recipe popt-native-1.16-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 377 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/db/db_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe db-native-5.3.28-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe db-native-5.3.28-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 378 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/file/file_debian.bb:do_configure)
+NOTE: recipe file-native-5.35-r0: task do_configure: Started
+NOTE: recipe gcc-source-8.3.0-8.3.0-r0: task do_debian_patch: Succeeded
+NOTE: Running task 379 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-source_debian.bb:do_patch)
+NOTE: recipe expat-native-2.2.6-r0: task do_configure: Succeeded
+NOTE: Running task 380 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/expat/expat_debian.bb:do_compile)
+NOTE: recipe gcc-source-8.3.0-8.3.0-r0: task do_patch: Started
+NOTE: recipe expat-native-2.2.6-r0: task do_compile: Started
+NOTE: recipe gdbm-native-1.18.1-r0: task do_configure: Succeeded
+NOTE: Running task 381 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/gdbm/gdbm_debian.bb:do_compile)
+NOTE: recipe gdbm-native-1.18.1-r0: task do_compile: Started
+NOTE: recipe libffi-native-3.2.1-r0: task do_compile: Succeeded
+NOTE: Running task 382 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/libffi/libffi_debian.bb:do_install)
+NOTE: recipe libffi-native-3.2.1-r0: task do_install: Started
+NOTE: recipe libffi-native-3.2.1-r0: task do_install: Succeeded
+NOTE: Running task 383 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/libffi/libffi_debian.bb:do_populate_sysroot)
+NOTE: recipe libffi-native-3.2.1-r0: task do_populate_sysroot: Started
+NOTE: recipe libffi-native-3.2.1-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 384 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/popt/popt_debian.bb:do_configure)
+NOTE: recipe popt-native-1.16-r0: task do_configure: Started
+NOTE: recipe gdbm-native-1.18.1-r0: task do_compile: Succeeded
+NOTE: Running task 385 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/gdbm/gdbm_debian.bb:do_install)
+NOTE: recipe gdbm-native-1.18.1-r0: task do_install: Started
+NOTE: recipe perl-native-5.28.1-r1: task do_compile: Succeeded
+NOTE: Running task 386 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/perl/perl_debian.bb:do_install)
+NOTE: recipe perl-native-5.28.1-r1: task do_install: Started
+NOTE: recipe gdbm-native-1.18.1-r0: task do_install: Succeeded
+NOTE: Running task 387 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/gdbm/gdbm_debian.bb:do_populate_sysroot)
+NOTE: recipe gdbm-native-1.18.1-r0: task do_populate_sysroot: Started
+NOTE: recipe expat-native-2.2.6-r0: task do_compile: Succeeded
+NOTE: Running task 388 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/expat/expat_debian.bb:do_install)
+NOTE: recipe expat-native-2.2.6-r0: task do_install: Started
+NOTE: recipe expat-native-2.2.6-r0: task do_install: Succeeded
+NOTE: Running task 389 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/expat/expat_debian.bb:do_populate_sysroot)
+NOTE: recipe expat-native-2.2.6-r0: task do_populate_sysroot: Started
+NOTE: recipe gdbm-native-1.18.1-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 390 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/db/db_debian.bb:do_configure)
+NOTE: recipe db-native-5.3.28-r0: task do_configure: Started
+NOTE: recipe expat-native-2.2.6-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe gcc-source-8.3.0-8.3.0-r0: task do_patch: Succeeded
+NOTE: Running task 391 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-source_debian.bb:do_preconfigure)
+NOTE: recipe gcc-source-8.3.0-8.3.0-r0: task do_preconfigure: Started
+NOTE: recipe gcc-source-8.3.0-8.3.0-r0: task do_preconfigure: Succeeded
+NOTE: recipe nspr-native-4.20-r0: task do_configure: Succeeded
+NOTE: Running task 392 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/nspr/nspr_debian.bb:do_compile)
+NOTE: recipe nspr-native-4.20-r0: task do_compile: Started
+NOTE: recipe flex-native-2.6.4-r0: task do_configure: Succeeded
+NOTE: Running task 393 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/flex/flex_debian.bb:do_compile)
+NOTE: recipe flex-native-2.6.4-r0: task do_compile: Started
+NOTE: recipe xz-native-5.2.4-r0: task do_configure: Succeeded
+NOTE: Running task 394 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/xz/xz_debian.bb:do_compile)
+NOTE: recipe flex-native-2.6.4-r0: task do_compile: Succeeded
+NOTE: Running task 395 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/flex/flex_debian.bb:do_install)
+NOTE: recipe xz-native-5.2.4-r0: task do_compile: Started
+NOTE: recipe flex-native-2.6.4-r0: task do_install: Started
+NOTE: recipe tcl-native-8.6.9-r0: task do_configure: Succeeded
+NOTE: Running task 396 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/tcltk/tcl_debian.bb:do_compile)
+NOTE: recipe tcl-native-8.6.9-r0: task do_compile: Started
+NOTE: recipe flex-native-2.6.4-r0: task do_install: Succeeded
+NOTE: Running task 397 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/flex/flex_debian.bb:do_populate_sysroot)
+NOTE: recipe flex-native-2.6.4-r0: task do_populate_sysroot: Started
+NOTE: recipe perl-native-5.28.1-r1: task do_install: Succeeded
+NOTE: Running task 398 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/perl/perl_debian.bb:do_populate_sysroot)
+NOTE: recipe perl-native-5.28.1-r1: task do_populate_sysroot: Started
+NOTE: recipe flex-native-2.6.4-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 399 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/bison/bison_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe bison-native-3.3.2-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe bison-native-3.3.2-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 400 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/bison/bison_debian.bb:do_configure)
+NOTE: recipe bison-native-3.3.2-r0: task do_configure: Started
+NOTE: recipe popt-native-1.16-r0: task do_configure: Succeeded
+NOTE: Running task 401 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/popt/popt_debian.bb:do_compile)
+NOTE: recipe popt-native-1.16-r0: task do_compile: Started
+NOTE: recipe popt-native-1.16-r0: task do_compile: Succeeded
+NOTE: Running task 402 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/popt/popt_debian.bb:do_install)
+NOTE: recipe popt-native-1.16-r0: task do_install: Started
+NOTE: recipe popt-native-1.16-r0: task do_install: Succeeded
+NOTE: Running task 403 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/popt/popt_debian.bb:do_populate_sysroot)
+NOTE: recipe popt-native-1.16-r0: task do_populate_sysroot: Started
+NOTE: recipe popt-native-1.16-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe autoconf-archive-native-20180313-r0: task do_install: Succeeded
+NOTE: Running task 404 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/autoconf-archive/autoconf-archive_debian.bb:do_populate_sysroot)
+NOTE: recipe autoconf-archive-native-20180313-r0: task do_populate_sysroot: Started
+NOTE: recipe autoconf-archive-native-20180313-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe xz-native-5.2.4-r0: task do_compile: Succeeded
+NOTE: Running task 405 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/xz/xz_debian.bb:do_install)
+NOTE: recipe xz-native-5.2.4-r0: task do_install: Started
+NOTE: recipe perl-native-5.28.1-r1: task do_populate_sysroot: Succeeded
+NOTE: recipe elfutils-native-0.176-r0: task do_compile: Succeeded
+NOTE: Running task 406 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/elfutils/elfutils_debian.bb:do_install)
+NOTE: recipe elfutils-native-0.176-r0: task do_install: Started
+NOTE: recipe elfutils-native-0.176-r0: task do_install: Succeeded
+NOTE: Running task 407 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/elfutils/elfutils_debian.bb:do_populate_sysroot)
+NOTE: recipe elfutils-native-0.176-r0: task do_populate_sysroot: Started
+NOTE: recipe xz-native-5.2.4-r0: task do_install: Succeeded
+NOTE: Running task 408 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/xz/xz_debian.bb:do_populate_sysroot)
+NOTE: recipe xz-native-5.2.4-r0: task do_populate_sysroot: Started
+NOTE: recipe tcl-native-8.6.9-r0: task do_compile: Succeeded
+NOTE: Running task 409 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/tcltk/tcl_debian.bb:do_install)
+NOTE: recipe tcl-native-8.6.9-r0: task do_install: Started
+NOTE: recipe elfutils-native-0.176-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 410 of 593 (virtual:native:/home/deby/poky/meta/recipes-devtools/dwarfsrcfiles/dwarfsrcfiles.bb:do_prepare_recipe_sysroot)
+NOTE: recipe xz-native-5.2.4-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe dwarfsrcfiles-native-1.0-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe dwarfsrcfiles-native-1.0-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 411 of 593 (virtual:native:/home/deby/poky/meta/recipes-devtools/dwarfsrcfiles/dwarfsrcfiles.bb:do_configure)
+NOTE: recipe dwarfsrcfiles-native-1.0-r0: task do_configure: Started
+NOTE: recipe dwarfsrcfiles-native-1.0-r0: task do_configure: Succeeded
+NOTE: Running task 412 of 593 (virtual:native:/home/deby/poky/meta/recipes-devtools/dwarfsrcfiles/dwarfsrcfiles.bb:do_compile)
+NOTE: recipe dwarfsrcfiles-native-1.0-r0: task do_compile: Started
+NOTE: recipe dwarfsrcfiles-native-1.0-r0: task do_compile: Succeeded
+NOTE: Running task 413 of 593 (virtual:native:/home/deby/poky/meta/recipes-devtools/dwarfsrcfiles/dwarfsrcfiles.bb:do_install)
+NOTE: recipe dwarfsrcfiles-native-1.0-r0: task do_install: Started
+NOTE: recipe dwarfsrcfiles-native-1.0-r0: task do_install: Succeeded
+NOTE: Running task 414 of 593 (virtual:native:/home/deby/poky/meta/recipes-devtools/dwarfsrcfiles/dwarfsrcfiles.bb:do_populate_sysroot)
+NOTE: recipe dwarfsrcfiles-native-1.0-r0: task do_populate_sysroot: Started
+NOTE: recipe dwarfsrcfiles-native-1.0-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe lzo-native-2.10-r0: task do_configure: Succeeded
+NOTE: Running task 415 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/lzo/lzo_debian.bb:do_compile)
+NOTE: recipe lzo-native-2.10-r0: task do_compile: Started
+NOTE: recipe lzo-native-2.10-r0: task do_compile: Succeeded
+NOTE: Running task 416 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/lzo/lzo_debian.bb:do_install)
+NOTE: recipe lzo-native-2.10-r0: task do_install: Started
+NOTE: recipe lzo-native-2.10-r0: task do_install: Succeeded
+NOTE: Running task 417 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/lzo/lzo_debian.bb:do_populate_sysroot)
+NOTE: recipe lzo-native-2.10-r0: task do_populate_sysroot: Started
+NOTE: recipe lzo-native-2.10-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe file-native-5.35-r0: task do_configure: Succeeded
+NOTE: Running task 418 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/file/file_debian.bb:do_compile)
+NOTE: recipe file-native-5.35-r0: task do_compile: Started
+NOTE: recipe file-native-5.35-r0: task do_compile: Succeeded
+NOTE: Running task 419 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/file/file_debian.bb:do_install)
+NOTE: recipe file-native-5.35-r0: task do_install: Started
+NOTE: recipe file-native-5.35-r0: task do_install: Succeeded
+NOTE: Running task 420 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/file/file_debian.bb:do_populate_sysroot)
+NOTE: recipe file-native-5.35-r0: task do_populate_sysroot: Started
+NOTE: recipe file-native-5.35-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe tcl-native-8.6.9-r0: task do_install: Succeeded
+NOTE: Running task 421 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/tcltk/tcl_debian.bb:do_populate_sysroot)
+NOTE: recipe tcl-native-8.6.9-r0: task do_populate_sysroot: Started
+NOTE: recipe gmp-native-6.1.2-r0: task do_configure: Succeeded
+NOTE: Running task 422 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/gmp/gmp_debian.bb:do_compile)
+NOTE: recipe gmp-native-6.1.2-r0: task do_compile: Started
+NOTE: recipe tcl-native-8.6.9-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe nspr-native-4.20-r0: task do_compile: Succeeded
+NOTE: Running task 423 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/nspr/nspr_debian.bb:do_install)
+NOTE: recipe nspr-native-4.20-r0: task do_install: Started
+NOTE: recipe nspr-native-4.20-r0: task do_install: Succeeded
+NOTE: Running task 424 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/nspr/nspr_debian.bb:do_populate_sysroot)
+NOTE: recipe nspr-native-4.20-r0: task do_populate_sysroot: Started
+NOTE: recipe nspr-native-4.20-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe gmp-native-6.1.2-r0: task do_compile: Succeeded
+NOTE: Running task 425 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/gmp/gmp_debian.bb:do_install)
+NOTE: recipe gmp-native-6.1.2-r0: task do_install: Started
+NOTE: recipe gmp-native-6.1.2-r0: task do_install: Succeeded
+NOTE: Running task 426 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/gmp/gmp_debian.bb:do_populate_sysroot)
+NOTE: recipe gmp-native-6.1.2-r0: task do_populate_sysroot: Started
+NOTE: recipe gmp-native-6.1.2-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 427 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/mpfr/mpfr_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe mpfr-native-4.0.2-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe mpfr-native-4.0.2-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 428 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/mpfr/mpfr_debian.bb:do_configure)
+NOTE: recipe mpfr-native-4.0.2-r0: task do_configure: Started
+NOTE: recipe db-native-5.3.28-r0: task do_configure: Succeeded
+NOTE: Running task 429 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/db/db_debian.bb:do_compile)
+NOTE: recipe db-native-5.3.28-r0: task do_compile: Started
+NOTE: recipe pkgconfig-native-0.29-r0: task do_configure: Succeeded
+NOTE: Running task 430 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/pkgconfig/pkgconfig_debian.bb:do_compile)
+NOTE: recipe pkgconfig-native-0.29-r0: task do_compile: Started
+NOTE: recipe pkgconfig-native-0.29-r0: task do_compile: Succeeded
+NOTE: Running task 431 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/pkgconfig/pkgconfig_debian.bb:do_install)
+NOTE: recipe pkgconfig-native-0.29-r0: task do_install: Started
+NOTE: recipe pkgconfig-native-0.29-r0: task do_install: Succeeded
+NOTE: Running task 432 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/pkgconfig/pkgconfig_debian.bb:do_populate_sysroot)
+NOTE: recipe pkgconfig-native-0.29-r0: task do_populate_sysroot: Started
+NOTE: recipe pkgconfig-native-0.29-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 433 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/sqlite3/sqlite3_debian.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 434 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/ncurses/ncurses_debian.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 435 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/libtirpc/libtirpc_debian.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 436 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/dbus/dbus_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe libtirpc-native-1.1.4-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe sqlite3-native-3_3.27.2-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe ncurses-native-6.1+20181013-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe dbus-native-1.12.16-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe ncurses-native-6.1+20181013-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 437 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/ncurses/ncurses_debian.bb:do_configure)
+NOTE: recipe libtirpc-native-1.1.4-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: recipe dbus-native-1.12.16-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 438 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/dbus/dbus_debian.bb:do_configure)
+NOTE: Running task 439 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/libtirpc/libtirpc_debian.bb:do_configure)
+NOTE: recipe sqlite3-native-3_3.27.2-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 440 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/sqlite3/sqlite3_debian.bb:do_configure)
+NOTE: recipe ncurses-native-6.1+20181013-r0: task do_configure: Started
+NOTE: recipe sqlite3-native-3_3.27.2-r0: task do_configure: Started
+NOTE: recipe libtirpc-native-1.1.4-r0: task do_configure: Started
+NOTE: recipe dbus-native-1.12.16-r0: task do_configure: Started
+NOTE: recipe db-native-5.3.28-r0: task do_compile: Succeeded
+NOTE: Running task 441 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/db/db_debian.bb:do_install)
+NOTE: recipe db-native-5.3.28-r0: task do_install: Started
+NOTE: recipe mpfr-native-4.0.2-r0: task do_configure: Succeeded
+NOTE: Running task 442 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/mpfr/mpfr_debian.bb:do_compile)
+NOTE: recipe mpfr-native-4.0.2-r0: task do_compile: Started
+NOTE: recipe libtirpc-native-1.1.4-r0: task do_configure: Succeeded
+NOTE: Running task 443 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/libtirpc/libtirpc_debian.bb:do_compile)
+NOTE: recipe libtirpc-native-1.1.4-r0: task do_compile: Started
+NOTE: recipe mpfr-native-4.0.2-r0: task do_compile: Succeeded
+NOTE: Running task 444 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/mpfr/mpfr_debian.bb:do_install)
+NOTE: recipe mpfr-native-4.0.2-r0: task do_install: Started
+NOTE: recipe mpfr-native-4.0.2-r0: task do_install: Succeeded
+NOTE: Running task 445 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/mpfr/mpfr_debian.bb:do_populate_sysroot)
+NOTE: recipe mpfr-native-4.0.2-r0: task do_populate_sysroot: Started
+NOTE: recipe mpfr-native-4.0.2-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 446 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/libmpc/libmpc_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe libmpc-native-1.1.0-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe libtirpc-native-1.1.4-r0: task do_compile: Succeeded
+NOTE: Running task 447 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/libtirpc/libtirpc_debian.bb:do_install)
+NOTE: recipe libtirpc-native-1.1.4-r0: task do_install: Started
+NOTE: recipe libmpc-native-1.1.0-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 448 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/libmpc/libmpc_debian.bb:do_configure)
+NOTE: recipe libmpc-native-1.1.0-r0: task do_configure: Started
+NOTE: recipe sqlite3-native-3_3.27.2-r0: task do_configure: Succeeded
+NOTE: Running task 449 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/sqlite3/sqlite3_debian.bb:do_compile)
+NOTE: recipe sqlite3-native-3_3.27.2-r0: task do_compile: Started
+NOTE: recipe libtirpc-native-1.1.4-r0: task do_install: Succeeded
+NOTE: Running task 450 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/libtirpc/libtirpc_debian.bb:do_populate_sysroot)
+NOTE: recipe libtirpc-native-1.1.4-r0: task do_populate_sysroot: Started
+NOTE: recipe libtirpc-native-1.1.4-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 451 of 593 (virtual:native:/home/deby/poky/meta/recipes-extended/libnsl/libnsl2_git.bb:do_prepare_recipe_sysroot)
+NOTE: recipe libnsl2-native-1.2.0+gitAUTOINC+37c5ffe303-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe libnsl2-native-1.2.0+gitAUTOINC+37c5ffe303-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 452 of 593 (virtual:native:/home/deby/poky/meta/recipes-extended/libnsl/libnsl2_git.bb:do_configure)
+NOTE: recipe libnsl2-native-1.2.0+gitAUTOINC+37c5ffe303-r0: task do_configure: Started
+NOTE: recipe bison-native-3.3.2-r0: task do_configure: Succeeded
+NOTE: Running task 453 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/bison/bison_debian.bb:do_compile)
+NOTE: recipe bison-native-3.3.2-r0: task do_compile: Started
+NOTE: recipe libmpc-native-1.1.0-r0: task do_configure: Succeeded
+NOTE: Running task 454 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/libmpc/libmpc_debian.bb:do_compile)
+NOTE: recipe libmpc-native-1.1.0-r0: task do_compile: Started
+NOTE: recipe bison-native-3.3.2-r0: task do_compile: Succeeded
+NOTE: Running task 455 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/bison/bison_debian.bb:do_install)
+NOTE: recipe bison-native-3.3.2-r0: task do_install: Started
+NOTE: recipe bison-native-3.3.2-r0: task do_install: Succeeded
+NOTE: Running task 456 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/bison/bison_debian.bb:do_populate_sysroot)
+NOTE: recipe bison-native-3.3.2-r0: task do_populate_sysroot: Started
+NOTE: recipe libnsl2-native-1.2.0+gitAUTOINC+37c5ffe303-r0: task do_configure: Succeeded
+NOTE: Running task 457 of 593 (virtual:native:/home/deby/poky/meta/recipes-extended/libnsl/libnsl2_git.bb:do_compile)
+NOTE: recipe libnsl2-native-1.2.0+gitAUTOINC+37c5ffe303-r0: task do_compile: Started
+NOTE: recipe bison-native-3.3.2-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 458 of 593 (/home/deby/poky/meta-debian/recipes-debian/binutils/binutils-cross_debian.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 459 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/gettext/gettext_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe libmpc-native-1.1.0-r0: task do_compile: Succeeded
+NOTE: Running task 460 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/libmpc/libmpc_debian.bb:do_install)
+NOTE: recipe binutils-cross-arm-2.31.1-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe libmpc-native-1.1.0-r0: task do_install: Started
+NOTE: recipe gettext-native-0.19.8.1-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe binutils-cross-arm-2.31.1-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 461 of 593 (/home/deby/poky/meta-debian/recipes-debian/binutils/binutils-cross_debian.bb:do_configure)
+NOTE: recipe libmpc-native-1.1.0-r0: task do_install: Succeeded
+NOTE: Running task 462 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/libmpc/libmpc_debian.bb:do_populate_sysroot)
+NOTE: recipe binutils-cross-arm-2.31.1-r0: task do_configure: Started
+NOTE: recipe libmpc-native-1.1.0-r0: task do_populate_sysroot: Started
+NOTE: recipe gettext-native-0.19.8.1-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: recipe libnsl2-native-1.2.0+gitAUTOINC+37c5ffe303-r0: task do_compile: Succeeded
+NOTE: Running task 463 of 593 (virtual:native:/home/deby/poky/meta/recipes-extended/libnsl/libnsl2_git.bb:do_install)
+NOTE: Running task 464 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/gettext/gettext_debian.bb:do_configure)
+NOTE: recipe libmpc-native-1.1.0-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe gettext-native-0.19.8.1-r0: task do_configure: Started
+NOTE: recipe libnsl2-native-1.2.0+gitAUTOINC+37c5ffe303-r0: task do_install: Started
+NOTE: recipe libnsl2-native-1.2.0+gitAUTOINC+37c5ffe303-r0: task do_install: Succeeded
+NOTE: Running task 465 of 593 (virtual:native:/home/deby/poky/meta/recipes-extended/libnsl/libnsl2_git.bb:do_populate_sysroot)
+NOTE: recipe libnsl2-native-1.2.0+gitAUTOINC+37c5ffe303-r0: task do_populate_sysroot: Started
+NOTE: recipe libnsl2-native-1.2.0+gitAUTOINC+37c5ffe303-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe dbus-native-1.12.16-r0: task do_configure: Succeeded
+NOTE: Running task 466 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/dbus/dbus_debian.bb:do_compile)
+NOTE: recipe dbus-native-1.12.16-r0: task do_compile: Started
+NOTE: recipe binutils-cross-arm-2.31.1-r0: task do_configure: Succeeded
+NOTE: Running task 467 of 593 (/home/deby/poky/meta-debian/recipes-debian/binutils/binutils-cross_debian.bb:do_compile)
+NOTE: recipe binutils-cross-arm-2.31.1-r0: task do_compile: Started
+NOTE: recipe ncurses-native-6.1+20181013-r0: task do_configure: Succeeded
+NOTE: Running task 468 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/ncurses/ncurses_debian.bb:do_compile)
+NOTE: recipe ncurses-native-6.1+20181013-r0: task do_compile: Started
+NOTE: recipe db-native-5.3.28-r0: task do_install: Succeeded
+NOTE: Running task 469 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/db/db_debian.bb:do_populate_sysroot)
+NOTE: recipe db-native-5.3.28-r0: task do_populate_sysroot: Started
+NOTE: recipe dbus-native-1.12.16-r0: task do_compile: Succeeded
+NOTE: Running task 470 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/dbus/dbus_debian.bb:do_install)
+NOTE: recipe db-native-5.3.28-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe dbus-native-1.12.16-r0: task do_install: Started
+NOTE: recipe dbus-native-1.12.16-r0: task do_install: Succeeded
+NOTE: Running task 471 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/dbus/dbus_debian.bb:do_populate_sysroot)
+NOTE: recipe dbus-native-1.12.16-r0: task do_populate_sysroot: Started
+NOTE: recipe dbus-native-1.12.16-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe sqlite3-native-3_3.27.2-r0: task do_compile: Succeeded
+NOTE: Running task 472 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/sqlite3/sqlite3_debian.bb:do_install)
+NOTE: recipe sqlite3-native-3_3.27.2-r0: task do_install: Started
+NOTE: recipe sqlite3-native-3_3.27.2-r0: task do_install: Succeeded
+NOTE: Running task 473 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/sqlite3/sqlite3_debian.bb:do_populate_sysroot)
+NOTE: recipe sqlite3-native-3_3.27.2-r0: task do_populate_sysroot: Started
+NOTE: recipe sqlite3-native-3_3.27.2-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 474 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/pseudo/pseudo_debian.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 475 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/nss/nss_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe pseudo-native-1.9.0+git20180920-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe nss-native-3.42.1-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe pseudo-native-1.9.0+git20180920-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: recipe nss-native-3.42.1-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 476 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/pseudo/pseudo_debian.bb:do_configure)
+NOTE: Running task 477 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/nss/nss_debian.bb:do_configure)
+NOTE: recipe nss-native-3.42.1-r0: task do_configure: Started
+NOTE: recipe pseudo-native-1.9.0+git20180920-r0: task do_configure: Started
+NOTE: recipe nss-native-3.42.1-r0: task do_configure: Succeeded
+NOTE: recipe pseudo-native-1.9.0+git20180920-r0: task do_configure: Succeeded
+NOTE: Running task 478 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/nss/nss_debian.bb:do_compile)
+NOTE: Running task 479 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/pseudo/pseudo_debian.bb:do_compile)
+NOTE: recipe nss-native-3.42.1-r0: task do_compile: Started
+NOTE: recipe pseudo-native-1.9.0+git20180920-r0: task do_compile: Started
+NOTE: recipe ncurses-native-6.1+20181013-r0: task do_compile: Succeeded
+NOTE: Running task 480 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/ncurses/ncurses_debian.bb:do_install)
+NOTE: recipe ncurses-native-6.1+20181013-r0: task do_install: Started
+NOTE: recipe pseudo-native-1.9.0+git20180920-r0: task do_compile: Succeeded
+NOTE: Running task 481 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/pseudo/pseudo_debian.bb:do_install)
+NOTE: recipe pseudo-native-1.9.0+git20180920-r0: task do_install: Started
+NOTE: recipe pseudo-native-1.9.0+git20180920-r0: task do_install: Succeeded
+NOTE: Running task 482 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/pseudo/pseudo_debian.bb:do_populate_sysroot)
+NOTE: recipe pseudo-native-1.9.0+git20180920-r0: task do_populate_sysroot: Started
+NOTE: recipe pseudo-native-1.9.0+git20180920-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe ncurses-native-6.1+20181013-r0: task do_install: Succeeded
+NOTE: Running task 483 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/ncurses/ncurses_debian.bb:do_populate_sysroot)
+NOTE: recipe ncurses-native-6.1+20181013-r0: task do_populate_sysroot: Started
+NOTE: recipe ncurses-native-6.1+20181013-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 484 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/util-linux/util-linux_debian.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 485 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/readline/readline_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe readline-native-7.0-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe util-linux-native-2.33.1-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe util-linux-native-2.33.1-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 486 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/util-linux/util-linux_debian.bb:do_configure)
+NOTE: recipe readline-native-7.0-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 487 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/readline/readline_debian.bb:do_configure)
+NOTE: recipe readline-native-7.0-r0: task do_configure: Started
+NOTE: recipe util-linux-native-2.33.1-r0: task do_configure: Started
+NOTE: recipe binutils-cross-arm-2.31.1-r0: task do_compile: Succeeded
+NOTE: Running task 488 of 593 (/home/deby/poky/meta-debian/recipes-debian/binutils/binutils-cross_debian.bb:do_install)
+NOTE: recipe binutils-cross-arm-2.31.1-r0: task do_install: Started
+NOTE: recipe binutils-cross-arm-2.31.1-r0: task do_install: Succeeded
+NOTE: Running task 489 of 593 (/home/deby/poky/meta-debian/recipes-debian/binutils/binutils-cross_debian.bb:do_populate_sysroot)
+NOTE: recipe binutils-cross-arm-2.31.1-r0: task do_populate_sysroot: Started
+NOTE: recipe binutils-cross-arm-2.31.1-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe readline-native-7.0-r0: task do_configure: Succeeded
+NOTE: Running task 490 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/readline/readline_debian.bb:do_compile)
+NOTE: recipe readline-native-7.0-r0: task do_compile: Started
+NOTE: recipe readline-native-7.0-r0: task do_compile: Succeeded
+NOTE: Running task 491 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/readline/readline_debian.bb:do_install)
+NOTE: recipe readline-native-7.0-r0: task do_install: Started
+NOTE: recipe readline-native-7.0-r0: task do_install: Succeeded
+NOTE: Running task 492 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/readline/readline_debian.bb:do_populate_sysroot)
+NOTE: recipe readline-native-7.0-r0: task do_populate_sysroot: Started
+NOTE: recipe readline-native-7.0-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe util-linux-native-2.33.1-r0: task do_configure: Succeeded
+NOTE: Running task 493 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/util-linux/util-linux_debian.bb:do_compile)
+NOTE: recipe util-linux-native-2.33.1-r0: task do_compile: Started
+NOTE: recipe util-linux-native-2.33.1-r0: task do_compile: Succeeded
+NOTE: Running task 494 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/util-linux/util-linux_debian.bb:do_install)
+NOTE: recipe util-linux-native-2.33.1-r0: task do_install: Started
+NOTE: recipe util-linux-native-2.33.1-r0: task do_install: Succeeded
+NOTE: Running task 495 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/util-linux/util-linux_debian.bb:do_populate_sysroot)
+NOTE: recipe util-linux-native-2.33.1-r0: task do_populate_sysroot: Started
+NOTE: recipe util-linux-native-2.33.1-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 496 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/python/python3_debian.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 497 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/e2fsprogs/e2fsprogs_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe e2fsprogs-native-1.44.5-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe python3-native-3.7.3-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe e2fsprogs-native-1.44.5-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 498 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/e2fsprogs/e2fsprogs_debian.bb:do_configure)
+NOTE: recipe e2fsprogs-native-1.44.5-r0: task do_configure: Started
+NOTE: recipe python3-native-3.7.3-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 499 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/python/python3_debian.bb:do_configure)
+NOTE: recipe python3-native-3.7.3-r0: task do_configure: Started
+NOTE: recipe linux-libc-headers-base-gitAUTOINC+e665510be1-r0: task do_fetch: Succeeded
+NOTE: Running task 500 of 593 (/home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb:do_unpack)
+NOTE: Running task 501 of 593 (/home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb:do_prepare_recipe_sysroot)
+NOTE: recipe linux-libc-headers-base-gitAUTOINC+e665510be1-r0: task do_unpack: Started
+NOTE: recipe linux-libc-headers-base-gitAUTOINC+e665510be1-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe linux-libc-headers-base-gitAUTOINC+e665510be1-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: recipe linux-libc-headers-base-gitAUTOINC+e665510be1-r0: task do_unpack: Succeeded
+NOTE: Running task 502 of 593 (/home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb:do_patch)
+NOTE: recipe linux-libc-headers-base-gitAUTOINC+e665510be1-r0: task do_patch: Started
+NOTE: recipe linux-libc-headers-base-gitAUTOINC+e665510be1-r0: task do_patch: Succeeded
+NOTE: Running noexec task 503 of 593 (/home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb:do_configure)
+NOTE: Running noexec task 504 of 593 (/home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb:do_compile)
+NOTE: Running task 505 of 593 (/home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb:do_install)
+NOTE: recipe nss-native-3.42.1-r0: task do_compile: Succeeded
+NOTE: Running task 506 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/nss/nss_debian.bb:do_install)
+NOTE: recipe nss-native-3.42.1-r0: task do_install: Started
+NOTE: recipe linux-libc-headers-base-gitAUTOINC+e665510be1-r0: task do_install: Started
+NOTE: recipe e2fsprogs-native-1.44.5-r0: task do_configure: Succeeded
+NOTE: Running task 507 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/e2fsprogs/e2fsprogs_debian.bb:do_compile)
+NOTE: recipe e2fsprogs-native-1.44.5-r0: task do_compile: Started
+NOTE: recipe nss-native-3.42.1-r0: task do_install: Succeeded
+NOTE: Running task 508 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/nss/nss_debian.bb:do_populate_sysroot)
+NOTE: recipe nss-native-3.42.1-r0: task do_populate_sysroot: Started
+NOTE: recipe nss-native-3.42.1-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe e2fsprogs-native-1.44.5-r0: task do_compile: Succeeded
+NOTE: Running task 509 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/e2fsprogs/e2fsprogs_debian.bb:do_install)
+NOTE: recipe e2fsprogs-native-1.44.5-r0: task do_install: Started
+NOTE: recipe linux-libc-headers-base-gitAUTOINC+e665510be1-r0: task do_install: Succeeded
+NOTE: Running task 510 of 593 (/home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb:do_populate_sysroot)
+NOTE: recipe linux-libc-headers-base-gitAUTOINC+e665510be1-r0: task do_populate_sysroot: Started
+NOTE: recipe e2fsprogs-native-1.44.5-r0: task do_install: Succeeded
+NOTE: Running task 511 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/e2fsprogs/e2fsprogs_debian.bb:do_populate_sysroot)
+NOTE: recipe e2fsprogs-native-1.44.5-r0: task do_populate_sysroot: Started
+NOTE: recipe linux-libc-headers-base-gitAUTOINC+e665510be1-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 512 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-cross_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe gcc-cross-arm-8.3.0-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe gcc-cross-arm-8.3.0-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 513 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-cross_debian.bb:do_configure)
+NOTE: recipe gcc-cross-arm-8.3.0-r0: task do_configure: Started
+NOTE: recipe e2fsprogs-native-1.44.5-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 514 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/libarchive/libarchive_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe libarchive-native-3.3.3-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe libarchive-native-3.3.3-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 515 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/libarchive/libarchive_debian.bb:do_configure)
+NOTE: recipe libarchive-native-3.3.3-r0: task do_configure: Started
+NOTE: recipe gcc-cross-arm-8.3.0-r0: task do_configure: Succeeded
+NOTE: Running task 516 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-cross_debian.bb:do_compile)
+NOTE: recipe gcc-cross-arm-8.3.0-r0: task do_compile: Started
+NOTE: recipe gettext-native-0.19.8.1-r0: task do_configure: Succeeded
+NOTE: Running task 517 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/gettext/gettext_debian.bb:do_compile)
+NOTE: recipe gettext-native-0.19.8.1-r0: task do_compile: Started
+NOTE: recipe python3-native-3.7.3-r0: task do_configure: Succeeded
+NOTE: Running task 518 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/python/python3_debian.bb:do_compile)
+NOTE: recipe python3-native-3.7.3-r0: task do_compile: Started
+NOTE: recipe gettext-native-0.19.8.1-r0: task do_compile: Succeeded
+NOTE: Running task 519 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/gettext/gettext_debian.bb:do_install)
+NOTE: recipe gettext-native-0.19.8.1-r0: task do_install: Started
+NOTE: recipe libarchive-native-3.3.3-r0: task do_configure: Succeeded
+NOTE: Running task 520 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/libarchive/libarchive_debian.bb:do_compile)
+NOTE: recipe libarchive-native-3.3.3-r0: task do_compile: Started
+NOTE: recipe libarchive-native-3.3.3-r0: task do_compile: Succeeded
+NOTE: Running task 521 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/libarchive/libarchive_debian.bb:do_install)
+NOTE: recipe libarchive-native-3.3.3-r0: task do_install: Started
+NOTE: recipe libarchive-native-3.3.3-r0: task do_install: Succeeded
+NOTE: Running task 522 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/libarchive/libarchive_debian.bb:do_populate_sysroot)
+NOTE: recipe libarchive-native-3.3.3-r0: task do_populate_sysroot: Started
+NOTE: recipe libarchive-native-3.3.3-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe gettext-native-0.19.8.1-r0: task do_install: Succeeded
+NOTE: Running task 523 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/gettext/gettext_debian.bb:do_populate_sysroot)
+NOTE: recipe gettext-native-0.19.8.1-r0: task do_populate_sysroot: Started
+NOTE: recipe python3-native-3.7.3-r0: task do_compile: Succeeded
+NOTE: Running task 524 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/python/python3_debian.bb:do_install)
+NOTE: recipe python3-native-3.7.3-r0: task do_install: Started
+NOTE: recipe gettext-native-0.19.8.1-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 525 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/dpkg/dpkg_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe dpkg-native-1.19.7-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe dpkg-native-1.19.7-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 526 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/dpkg/dpkg_debian.bb:do_configure)
+NOTE: recipe dpkg-native-1.19.7-r0: task do_configure: Started
+NOTE: recipe python3-native-3.7.3-r0: task do_install: Succeeded
+NOTE: Running task 527 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/python/python3_debian.bb:do_populate_sysroot)
+NOTE: recipe python3-native-3.7.3-r0: task do_populate_sysroot: Started
+NOTE: recipe gcc-cross-arm-8.3.0-r0: task do_compile: Succeeded
+NOTE: Running task 528 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-cross_debian.bb:do_gcc_stash_builddir)
+NOTE: recipe gcc-cross-arm-8.3.0-r0: task do_gcc_stash_builddir: Started
+NOTE: recipe dpkg-native-1.19.7-r0: task do_configure: Succeeded
+NOTE: Running task 529 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/dpkg/dpkg_debian.bb:do_compile)
+NOTE: recipe dpkg-native-1.19.7-r0: task do_compile: Started
+NOTE: recipe gcc-cross-arm-8.3.0-r0: task do_gcc_stash_builddir: Succeeded
+NOTE: Running task 530 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-cross_debian.bb:do_install)
+NOTE: recipe gcc-cross-arm-8.3.0-r0: task do_install: Started
+NOTE: recipe dpkg-native-1.19.7-r0: task do_compile: Succeeded
+NOTE: Running task 531 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/dpkg/dpkg_debian.bb:do_install)
+NOTE: recipe dpkg-native-1.19.7-r0: task do_install: Started
+NOTE: recipe dpkg-native-1.19.7-r0: task do_install: Succeeded
+NOTE: Running task 532 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/dpkg/dpkg_debian.bb:do_populate_sysroot)
+NOTE: recipe dpkg-native-1.19.7-r0: task do_populate_sysroot: Started
+NOTE: recipe dpkg-native-1.19.7-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe gcc-cross-arm-8.3.0-r0: task do_install: Succeeded
+NOTE: Running task 533 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-cross_debian.bb:do_populate_sysroot)
+NOTE: recipe gcc-cross-arm-8.3.0-r0: task do_populate_sysroot: Started
+NOTE: recipe gcc-cross-arm-8.3.0-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 534 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/libgcc-initial_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe libgcc-initial-8.3.0-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe libgcc-initial-8.3.0-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 535 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/libgcc-initial_debian.bb:do_configure)
+NOTE: recipe libgcc-initial-8.3.0-r0: task do_configure: Started
+NOTE: recipe libgcc-initial-8.3.0-r0: task do_configure: Succeeded
+NOTE: Running task 536 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/libgcc-initial_debian.bb:do_compile)
+NOTE: recipe libgcc-initial-8.3.0-r0: task do_compile: Started
+NOTE: recipe libgcc-initial-8.3.0-r0: task do_compile: Succeeded
+NOTE: Running task 537 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/libgcc-initial_debian.bb:do_install)
+NOTE: recipe libgcc-initial-8.3.0-r0: task do_install: Started
+NOTE: recipe python3-native-3.7.3-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 538 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/rpm/rpm_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe rpm-native-4.14.2.1-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe libgcc-initial-8.3.0-r0: task do_install: Succeeded
+NOTE: Running task 539 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/libgcc-initial_debian.bb:do_multilib_install)
+NOTE: recipe libgcc-initial-8.3.0-r0: task do_multilib_install: Started
+NOTE: recipe libgcc-initial-8.3.0-r0: task do_multilib_install: Succeeded
+NOTE: Running task 540 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/libgcc-initial_debian.bb:do_extra_symlinks)
+NOTE: recipe libgcc-initial-8.3.0-r0: task do_extra_symlinks: Started
+NOTE: recipe libgcc-initial-8.3.0-r0: task do_extra_symlinks: Succeeded
+NOTE: Running task 541 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/libgcc-initial_debian.bb:do_populate_sysroot)
+NOTE: recipe libgcc-initial-8.3.0-r0: task do_populate_sysroot: Started
+NOTE: recipe libgcc-initial-8.3.0-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 542 of 593 (/home/deby/poky/meta-debian/recipes-debian/glibc/glibc_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe glibc-2.28-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe glibc-2.28-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 543 of 593 (/home/deby/poky/meta-debian/recipes-debian/glibc/glibc_debian.bb:do_configure)
+NOTE: recipe glibc-2.28-r0: task do_configure: Started
+NOTE: recipe rpm-native-4.14.2.1-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 544 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/rpm/rpm_debian.bb:do_configure)
+NOTE: recipe rpm-native-4.14.2.1-r0: task do_configure: Started
+NOTE: recipe glibc-2.28-r0: task do_configure: Succeeded
+NOTE: Running task 545 of 593 (/home/deby/poky/meta-debian/recipes-debian/glibc/glibc_debian.bb:do_compile)
+NOTE: recipe glibc-2.28-r0: task do_compile: Started
+NOTE: recipe rpm-native-4.14.2.1-r0: task do_configure: Succeeded
+NOTE: Running task 546 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/rpm/rpm_debian.bb:do_compile)
+NOTE: recipe rpm-native-4.14.2.1-r0: task do_compile: Started
+NOTE: recipe rpm-native-4.14.2.1-r0: task do_compile: Succeeded
+NOTE: Running task 547 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/rpm/rpm_debian.bb:do_install)
+NOTE: recipe rpm-native-4.14.2.1-r0: task do_install: Started
+NOTE: recipe rpm-native-4.14.2.1-r0: task do_install: Succeeded
+NOTE: Running task 548 of 593 (virtual:native:/home/deby/poky/meta-debian/recipes-debian/rpm/rpm_debian.bb:do_populate_sysroot)
+NOTE: recipe rpm-native-4.14.2.1-r0: task do_populate_sysroot: Started
+NOTE: recipe rpm-native-4.14.2.1-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 549 of 593 (/home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb:do_package)
+NOTE: recipe linux-libc-headers-base-gitAUTOINC+e665510be1-r0: task do_package: Started
+NOTE: recipe linux-libc-headers-base-gitAUTOINC+e665510be1-r0: task do_package: Succeeded
+NOTE: Running task 550 of 593 (/home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb:do_packagedata)
+NOTE: recipe linux-libc-headers-base-gitAUTOINC+e665510be1-r0: task do_packagedata: Started
+NOTE: recipe linux-libc-headers-base-gitAUTOINC+e665510be1-r0: task do_packagedata: Succeeded
+NOTE: Running task 551 of 593 (/home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb:do_package_write_deb)
+NOTE: recipe linux-libc-headers-base-gitAUTOINC+e665510be1-r0: task do_package_write_deb: Started
+NOTE: recipe glibc-2.28-r0: task do_compile: Succeeded
+NOTE: Running task 552 of 593 (/home/deby/poky/meta-debian/recipes-debian/glibc/glibc_debian.bb:do_install)
+NOTE: recipe glibc-2.28-r0: task do_install: Started
+NOTE: recipe linux-libc-headers-base-gitAUTOINC+e665510be1-r0: task do_package_write_deb: Succeeded
+NOTE: recipe glibc-2.28-r0: task do_install: Succeeded
+NOTE: Running task 553 of 593 (/home/deby/poky/meta-debian/recipes-debian/glibc/glibc_debian.bb:do_stash_locale)
+NOTE: recipe glibc-2.28-r0: task do_stash_locale: Started
+NOTE: recipe glibc-2.28-r0: task do_stash_locale: Succeeded
+NOTE: Running task 554 of 593 (/home/deby/poky/meta-debian/recipes-debian/glibc/glibc_debian.bb:do_populate_sysroot)
+NOTE: Running task 555 of 593 (/home/deby/poky/meta-debian/recipes-debian/glibc/glibc_debian.bb:do_package)
+NOTE: recipe glibc-2.28-r0: task do_populate_sysroot: Started
+NOTE: recipe glibc-2.28-r0: task do_package: Started
+NOTE: recipe glibc-2.28-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 556 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/libgcc_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe libgcc-8.3.0-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe libgcc-8.3.0-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 557 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/libgcc_debian.bb:do_configure)
+NOTE: recipe libgcc-8.3.0-r0: task do_configure: Started
+NOTE: recipe libgcc-8.3.0-r0: task do_configure: Succeeded
+NOTE: Running task 558 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/libgcc_debian.bb:do_compile)
+NOTE: recipe libgcc-8.3.0-r0: task do_compile: Started
+NOTE: recipe libgcc-8.3.0-r0: task do_compile: Succeeded
+NOTE: Running task 559 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/libgcc_debian.bb:do_install)
+NOTE: recipe libgcc-8.3.0-r0: task do_install: Started
+NOTE: recipe libgcc-8.3.0-r0: task do_install: Succeeded
+NOTE: Running task 560 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/libgcc_debian.bb:do_multilib_install)
+NOTE: recipe libgcc-8.3.0-r0: task do_multilib_install: Started
+NOTE: recipe libgcc-8.3.0-r0: task do_multilib_install: Succeeded
+NOTE: Running task 561 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/libgcc_debian.bb:do_extra_symlinks)
+NOTE: recipe libgcc-8.3.0-r0: task do_extra_symlinks: Started
+NOTE: recipe libgcc-8.3.0-r0: task do_extra_symlinks: Succeeded
+NOTE: Running task 562 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/libgcc_debian.bb:do_populate_sysroot)
+NOTE: recipe libgcc-8.3.0-r0: task do_populate_sysroot: Started
+NOTE: recipe glibc-2.28-r0: task do_package: Succeeded
+NOTE: Running task 563 of 593 (/home/deby/poky/meta-debian/recipes-debian/glibc/glibc_debian.bb:do_packagedata)
+NOTE: recipe glibc-2.28-r0: task do_packagedata: Started
+NOTE: recipe glibc-2.28-r0: task do_packagedata: Succeeded
+NOTE: Running task 564 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/libgcc_debian.bb:do_package)
+NOTE: Running task 565 of 593 (/home/deby/poky/meta-debian/recipes-debian/glibc/glibc_debian.bb:do_package_write_deb)
+NOTE: recipe libgcc-8.3.0-r0: task do_package: Started
+NOTE: recipe libgcc-8.3.0-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 566 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-runtime_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe glibc-2.28-r0: task do_package_write_deb: Started
+NOTE: recipe gcc-runtime-8.3.0-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe gcc-runtime-8.3.0-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 567 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-runtime_debian.bb:do_configure)
+NOTE: recipe gcc-runtime-8.3.0-r0: task do_configure: Started
+NOTE: recipe libgcc-8.3.0-r0: task do_package: Succeeded
+NOTE: Running task 568 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/libgcc_debian.bb:do_packagedata)
+NOTE: recipe libgcc-8.3.0-r0: task do_packagedata: Started
+NOTE: recipe libgcc-8.3.0-r0: task do_packagedata: Succeeded
+NOTE: Running task 569 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/libgcc_debian.bb:do_package_write_deb)
+NOTE: recipe libgcc-8.3.0-r0: task do_package_write_deb: Started
+NOTE: recipe glibc-2.28-r0: task do_package_write_deb: Succeeded
+NOTE: recipe libgcc-8.3.0-r0: task do_package_write_deb: Succeeded
+NOTE: recipe gcc-runtime-8.3.0-r0: task do_configure: Succeeded
+NOTE: Running task 570 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-runtime_debian.bb:do_compile)
+NOTE: recipe gcc-runtime-8.3.0-r0: task do_compile: Started
+NOTE: recipe gcc-runtime-8.3.0-r0: task do_compile: Succeeded
+NOTE: Running task 571 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-runtime_debian.bb:do_install)
+NOTE: recipe gcc-runtime-8.3.0-r0: task do_install: Started
+NOTE: recipe gcc-runtime-8.3.0-r0: task do_install: Succeeded
+NOTE: Running task 572 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-runtime_debian.bb:do_populate_sysroot)
+NOTE: Running task 573 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-runtime_debian.bb:do_package)
+NOTE: recipe gcc-runtime-8.3.0-r0: task do_populate_sysroot: Started
+NOTE: recipe gcc-runtime-8.3.0-r0: task do_package: Started
+NOTE: recipe gcc-runtime-8.3.0-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 574 of 593 (/home/deby/poky/meta-debian/recipes-debian/libtool/libtool-cross_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe libtool-cross-2.4.6-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe libtool-cross-2.4.6-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 575 of 593 (/home/deby/poky/meta-debian/recipes-debian/libtool/libtool-cross_debian.bb:do_configure)
+NOTE: recipe libtool-cross-2.4.6-r0: task do_configure: Started
+NOTE: recipe libtool-cross-2.4.6-r0: task do_configure: Succeeded
+NOTE: Running task 576 of 593 (/home/deby/poky/meta-debian/recipes-debian/libtool/libtool-cross_debian.bb:do_compile)
+NOTE: recipe libtool-cross-2.4.6-r0: task do_compile: Started
+NOTE: recipe libtool-cross-2.4.6-r0: task do_compile: Succeeded
+NOTE: Running task 577 of 593 (/home/deby/poky/meta-debian/recipes-debian/libtool/libtool-cross_debian.bb:do_install)
+NOTE: recipe libtool-cross-2.4.6-r0: task do_install: Started
+NOTE: recipe libtool-cross-2.4.6-r0: task do_install: Succeeded
+NOTE: Running task 578 of 593 (/home/deby/poky/meta-debian/recipes-debian/libtool/libtool-cross_debian.bb:do_package)
+NOTE: Running task 579 of 593 (/home/deby/poky/meta-debian/recipes-debian/libtool/libtool-cross_debian.bb:do_populate_sysroot)
+NOTE: recipe libtool-cross-2.4.6-r0: task do_populate_sysroot: Started
+NOTE: recipe libtool-cross-2.4.6-r0: task do_package: Started
+NOTE: recipe libtool-cross-2.4.6-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 580 of 593 (/home/deby/poky/meta-debian/recipes-debian/libpcap/libpcap_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe libpcap-1.8.1-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe libtool-cross-2.4.6-r0: task do_package: Succeeded
+NOTE: Running task 581 of 593 (/home/deby/poky/meta-debian/recipes-debian/libtool/libtool-cross_debian.bb:do_packagedata)
+NOTE: recipe libtool-cross-2.4.6-r0: task do_packagedata: Started
+NOTE: recipe libtool-cross-2.4.6-r0: task do_packagedata: Succeeded
+NOTE: Running task 582 of 593 (/home/deby/poky/meta-debian/recipes-debian/libtool/libtool-cross_debian.bb:do_package_write_deb)
+NOTE: recipe libtool-cross-2.4.6-r0: task do_package_write_deb: Started
+NOTE: recipe libtool-cross-2.4.6-r0: task do_package_write_deb: Succeeded
+NOTE: recipe libpcap-1.8.1-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 583 of 593 (/home/deby/poky/meta-debian/recipes-debian/libpcap/libpcap_debian.bb:do_configure)
+NOTE: recipe libpcap-1.8.1-r0: task do_configure: Started
+NOTE: recipe gcc-runtime-8.3.0-r0: task do_package: Succeeded
+NOTE: Running task 584 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-runtime_debian.bb:do_packagedata)
+NOTE: recipe gcc-runtime-8.3.0-r0: task do_packagedata: Started
+NOTE: recipe gcc-runtime-8.3.0-r0: task do_packagedata: Succeeded
+NOTE: Running task 585 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-runtime_debian.bb:do_package_write_deb)
+NOTE: recipe gcc-runtime-8.3.0-r0: task do_package_write_deb: Started
+NOTE: recipe libpcap-1.8.1-r0: task do_configure: Succeeded
+NOTE: Running task 586 of 593 (/home/deby/poky/meta-debian/recipes-debian/libpcap/libpcap_debian.bb:do_compile)
+NOTE: recipe libpcap-1.8.1-r0: task do_compile: Started
+NOTE: recipe gcc-runtime-8.3.0-r0: task do_package_write_deb: Succeeded
+NOTE: recipe libpcap-1.8.1-r0: task do_compile: Succeeded
+NOTE: Running task 587 of 593 (/home/deby/poky/meta-debian/recipes-debian/libpcap/libpcap_debian.bb:do_install)
+NOTE: recipe libpcap-1.8.1-r0: task do_install: Started
+NOTE: recipe libpcap-1.8.1-r0: task do_install: Succeeded
+NOTE: Running task 588 of 593 (/home/deby/poky/meta-debian/recipes-debian/libpcap/libpcap_debian.bb:do_package)
+NOTE: Running task 589 of 593 (/home/deby/poky/meta-debian/recipes-debian/libpcap/libpcap_debian.bb:do_populate_sysroot)
+NOTE: recipe libpcap-1.8.1-r0: task do_populate_sysroot: Started
+NOTE: recipe libpcap-1.8.1-r0: task do_package: Started
+NOTE: recipe libpcap-1.8.1-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe libpcap-1.8.1-r0: task do_package: Succeeded
+NOTE: Running task 590 of 593 (/home/deby/poky/meta-debian/recipes-debian/libpcap/libpcap_debian.bb:do_packagedata)
+NOTE: recipe libpcap-1.8.1-r0: task do_packagedata: Started
+NOTE: recipe libpcap-1.8.1-r0: task do_packagedata: Succeeded
+NOTE: Running task 591 of 593 (/home/deby/poky/meta-debian/recipes-debian/libpcap/libpcap_debian.bb:do_package_write_deb)
+NOTE: Running task 592 of 593 (/home/deby/poky/meta-debian/recipes-debian/libpcap/libpcap_debian.bb:do_package_qa)
+NOTE: recipe libpcap-1.8.1-r0: task do_package_write_deb: Started
+NOTE: recipe libpcap-1.8.1-r0: task do_package_qa: Started
+NOTE: recipe libpcap-1.8.1-r0: task do_package_qa: Succeeded
+NOTE: recipe libpcap-1.8.1-r0: task do_package_write_deb: Succeeded
+NOTE: Running noexec task 593 of 593 (/home/deby/poky/meta-debian/recipes-debian/libpcap/libpcap_debian.bb:do_build)
+NOTE: Tasks Summary: Attempted 593 tasks of which 0 didn't need to be rerun and all succeeded.

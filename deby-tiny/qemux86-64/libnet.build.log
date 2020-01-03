@@ -1,3 +1,4 @@
+NOTE: Bitbake server didn't start within 5 seconds, waiting for 90
 Loading cache...done.
 Loaded 1803 entries from dependency cache.
 Parsing recipes...done.
@@ -16,35 +17,60 @@ TUNE_FEATURES        = "m64 core2"
 TARGET_FPU           = ""
 meta                 
 meta-poky            = "warrior:023ff85a9ae94331926e923b346fd8a349881e63"
-meta-debian          = "warrior:8e157b1a7a3a3ae1224ea194f0fc9e25772d0e07"
+meta-debian          = "warrior:0fba4d92162a85a330d2d88ebd73ee0819f920fc"
 
 Initialising tasks...done.
 Sstate summary: Wanted 10 Found 0 Missed 10 Current 75 (0% match, 88% complete)
 NOTE: Executing SetScene Tasks
 NOTE: Executing RunQueue Tasks
-NOTE: Running task 555 of 606 (/home/deby/poky/meta-debian/recipes-debian/libpcap/libpcap_debian.bb:do_configure)
-NOTE: Running task 590 of 606 (/home/deby/poky/meta-debian/recipes-debian/libnet/libnet_debian.bb:do_populate_lic)
-NOTE: recipe libpcap-1.8.1-r0: task do_configure: Started
-ERROR: libpcap-1.8.1-r0 do_configure: Function failed: do_configure (log file is located at /home/deby/build/tmp/work/core2-64-deby-linux/libpcap/1.8.1-r0/temp/log.do_configure.2491)
-ERROR: Logfile of failure stored in: /home/deby/build/tmp/work/core2-64-deby-linux/libpcap/1.8.1-r0/temp/log.do_configure.2491
+NOTE: Running task 540 of 606 (/home/deby/poky/meta-debian/recipes-debian/libnet/libnet_debian.bb:do_fetch)
+NOTE: Running task 557 of 606 (/home/deby/poky/meta-debian/recipes-debian/libpcap/libpcap_debian.bb:do_install)
+NOTE: recipe libnet-1.1.6-r0: task do_fetch: Started
+NOTE: recipe libpcap-1.8.1-r0: task do_install: Started
+NOTE: recipe libnet-1.1.6-r0: task do_fetch: Succeeded
+NOTE: Running task 588 of 606 (/home/deby/poky/meta-debian/recipes-debian/libnet/libnet_debian.bb:do_unpack)
+NOTE: recipe libnet-1.1.6-r0: task do_unpack: Started
+ERROR: libpcap-1.8.1-r0 do_install: oe_runmake failed
+ERROR: libpcap-1.8.1-r0 do_install: Function failed: do_install (log file is located at /home/deby/build-tiny/tmp/work/core2-64-deby-linux/libpcap/1.8.1-r0/temp/log.do_install.24712)
+ERROR: Logfile of failure stored in: /home/deby/build-tiny/tmp/work/core2-64-deby-linux/libpcap/1.8.1-r0/temp/log.do_install.24712
 Log data follows:
+| DEBUG: Executing python function extend_recipe_sysroot
+| NOTE: Direct dependencies are ['/home/deby/poky/meta-debian/recipes-debian/quilt/quilt-native_debian.bb:do_populate_sysroot', '/home/deby/poky/meta-debian/recipes-debian/glibc/glibc_debian.bb:do_populate_sysroot', 'virtual:native:/home/deby/poky/meta-debian/recipes-debian/autoconf/autoconf_debian.bb:do_populate_sysroot', 'virtual:native:/home/deby/poky/meta-debian/recipes-debian/pseudo/pseudo_debian.bb:do_populate_sysroot', '/home/deby/poky/meta-debian/recipes-debian/libtool/libtool-cross_debian.bb:do_populate_sysroot', '/home/deby/poky/meta-debian/recipes-debian/libtool/libtool-native_debian.bb:do_populate_sysroot', 'virtual:native:/home/deby/poky/meta-debian/recipes-debian/flex/flex_debian.bb:do_populate_sysroot', '/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-cross_debian.bb:do_populate_sysroot', 'virtual:native:/home/deby/poky/meta-debian/recipes-debian/bison/bison_debian.bb:do_populate_sysroot', 'virtual:native:/home/deby/poky/meta-debian/recipes-debian/automake/automake_debian.bb:do_populate_sysroot', 'virtual:native:/home/deby/poky/meta/recipes-devtools/gnu-config/gnu-config_git.bb:do_populate_sysroot', '/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-runtime_debian.bb:do_populate_sysroot', 'virtual:native:/home/deby/poky/meta-debian/recipes-debian/pkgconfig/pkgconfig_debian.bb:do_populate_sysroot']
+| NOTE: Installed into sysroot: []
+| NOTE: Skipping as already exists in sysroot: ['quilt-native', 'glibc', 'autoconf-native', 'pseudo-native', 'libtool-cross', 'libtool-native', 'flex-native', 'gcc-cross-x86_64', 'bison-native', 'automake-native', 'gnu-config-native', 'gcc-runtime', 'pkgconfig-native', 'texinfo-dummy-native', 'gettext-minimal-native', 'm4-native', 'mpfr-native', 'gmp-native', 'binutils-cross-x86_64', 'libmpc-native', 'zlib-native', 'linux-libc-headers-base', 'libgcc']
+| DEBUG: Python function extend_recipe_sysroot finished
 | DEBUG: SITE files ['endian-little', 'common-linux', 'common-glibc', 'bit-64', 'x86_64-linux', 'common']
-| DEBUG: Executing shell function autotools_preconfigure
-| DEBUG: Shell function autotools_preconfigure finished
-| DEBUG: Executing python function autotools_aclocals
-| DEBUG: SITE files ['endian-little', 'common-linux', 'common-glibc', 'bit-64', 'x86_64-linux', 'common']
-| DEBUG: Python function autotools_aclocals finished
-| DEBUG: Executing shell function do_configure
-| /home/deby/build/tmp/work/core2-64-deby-linux/libpcap/1.8.1-r0/temp/run.do_configure.2491: 113: /home/deby/build/tmp/work/core2-64-deby-linux/libpcap/1.8.1-r0/temp/run.do_configure.2491: srcdir: not found
-| sed: can't read /Makefile.in: No such file or directory
-| WARNING: exit code 2 from a shell command.
-| ERROR: Function failed: do_configure (log file is located at /home/deby/build/tmp/work/core2-64-deby-linux/libpcap/1.8.1-r0/temp/log.do_configure.2491)
-NOTE: recipe libpcap-1.8.1-r0: task do_configure: Failed
-ERROR: Task (/home/deby/poky/meta-debian/recipes-debian/libpcap/libpcap_debian.bb:do_configure) failed with exit code '1'
-NOTE: recipe libnet-1.1.6-r0: task do_populate_lic: Started
-NOTE: recipe libnet-1.1.6-r0: task do_populate_lic: Succeeded
-NOTE: Tasks Summary: Attempted 590 tasks of which 588 didn't need to be rerun and 1 failed.
+| DEBUG: Executing shell function do_install
+| NOTE: make -j 16 DESTDIR=/home/deby/build-tiny/tmp/work/core2-64-deby-linux/libpcap/1.8.1-r0/image install
+| #
+| VER=`cat ../libpcap-1.8.1/VERSION`; \
+| MAJOR_VER=`sed 's/\([0-9][0-9]*\)\..*/\1/' ../libpcap-1.8.1/VERSION`; \
+| x86_64-deby-linux-gcc  -m64 -march=core2 -mtune=core2 -msse3 -mfpmath=sse -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/deby/build-tiny/tmp/work/core2-64-deby-linux/libpcap/1.8.1-r0/recipe-sysroot -shared -Wl,-soname,libpcap.so.$MAJOR_VER -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed -fstack-protector-strong -Wl,-z,relro,-z,now  \
+|     -o libpcap.so.$VER pcap-linux.o pcap-usb-linux.o pcap-netfilter-linux.o fad-getad.o pcap.o inet.o fad-helpers.o gencode.o optimize.o nametoaddr.o etherent.o savefile.o sf-pcap.o sf-pcap-ng.o pcap-common.o bpf_image.o bpf_dump.o  scanner.o grammar.o bpf_filter.o version.o
+| # Most platforms have separate suffixes for shared and
+| # archive libraries, so we install both.
+| #
+| [ -d /home/deby/build-tiny/tmp/work/core2-64-deby-linux/libpcap/1.8.1-r0/image/usr/lib ] || \
+|     (mkdir -p /home/deby/build-tiny/tmp/work/core2-64-deby-linux/libpcap/1.8.1-r0/image/usr/lib; chmod 755 /home/deby/build-tiny/tmp/work/core2-64-deby-linux/libpcap/1.8.1-r0/image/usr/lib)
+| /home/deby/build-tiny/tmp/hosttools/install -c -m 644 libpcap.a /home/deby/build-tiny/tmp/work/core2-64-deby-linux/libpcap/1.8.1-r0/image/usr/lib/libpcap.a
+| x86_64-deby-linux-gcc-ranlib /home/deby/build-tiny/tmp/work/core2-64-deby-linux/libpcap/1.8.1-r0/image/usr/lib/libpcap.a
+| /home/deby/build-tiny/tmp/work/core2-64-deby-linux/libpcap/1.8.1-r0/recipe-sysroot-native/usr/bin/x86_64-deby-linux/../../libexec/x86_64-deby-linux/gcc/x86_64-deby-linux/8.3.0/ld: pcap-linux.o: relocation R_X86_64_PC32 against symbol `stderr@@GLIBC_2.2.5' can not be used when making a shared object; recompile with -fPIC
+| /home/deby/build-tiny/tmp/work/core2-64-deby-linux/libpcap/1.8.1-r0/recipe-sysroot-native/usr/bin/x86_64-deby-linux/../../libexec/x86_64-deby-linux/gcc/x86_64-deby-linux/8.3.0/ld: pcap.o: relocation R_X86_64_PC32 against symbol `stderr@@GLIBC_2.2.5' can not be used when making a shared object; recompile with -fPIC
+| /home/deby/build-tiny/tmp/work/core2-64-deby-linux/libpcap/1.8.1-r0/recipe-sysroot-native/usr/bin/x86_64-deby-linux/../../libexec/x86_64-deby-linux/gcc/x86_64-deby-linux/8.3.0/ld: nametoaddr.o: relocation R_X86_64_PC32 against symbol `eproto_db' can not be used when making a shared object; recompile with -fPIC
+| /home/deby/build-tiny/tmp/work/core2-64-deby-linux/libpcap/1.8.1-r0/recipe-sysroot-native/usr/bin/x86_64-deby-linux/../../libexec/x86_64-deby-linux/gcc/x86_64-deby-linux/8.3.0/ld: savefile.o: relocation R_X86_64_PC32 against symbol `stdin@@GLIBC_2.2.5' can not be used when making a shared object; recompile with -fPIC
+| /home/deby/build-tiny/tmp/work/core2-64-deby-linux/libpcap/1.8.1-r0/recipe-sysroot-native/usr/bin/x86_64-deby-linux/../../libexec/x86_64-deby-linux/gcc/x86_64-deby-linux/8.3.0/ld: sf-pcap.o: relocation R_X86_64_PC32 against symbol `stdout@@GLIBC_2.2.5' can not be used when making a shared object; recompile with -fPIC
+| /home/deby/build-tiny/tmp/work/core2-64-deby-linux/libpcap/1.8.1-r0/recipe-sysroot-native/usr/bin/x86_64-deby-linux/../../libexec/x86_64-deby-linux/gcc/x86_64-deby-linux/8.3.0/ld: scanner.o: relocation R_X86_64_PC32 against symbol `stderr@@GLIBC_2.2.5' can not be used when making a shared object; recompile with -fPIC
+| /home/deby/build-tiny/tmp/work/core2-64-deby-linux/libpcap/1.8.1-r0/recipe-sysroot-native/usr/bin/x86_64-deby-linux/../../libexec/x86_64-deby-linux/gcc/x86_64-deby-linux/8.3.0/ld: final link failed: nonrepresentable section on output
+| collect2: error: ld returned 1 exit status
+| make: *** [Makefile:386: libpcap.so] Error 1
+| ERROR: oe_runmake failed
+| WARNING: exit code 1 from a shell command.
+| ERROR: Function failed: do_install (log file is located at /home/deby/build-tiny/tmp/work/core2-64-deby-linux/libpcap/1.8.1-r0/temp/log.do_install.24712)
+NOTE: recipe libpcap-1.8.1-r0: task do_install: Failed
+ERROR: Task (/home/deby/poky/meta-debian/recipes-debian/libpcap/libpcap_debian.bb:do_install) failed with exit code '1'
+NOTE: recipe libnet-1.1.6-r0: task do_unpack: Succeeded
+NOTE: Tasks Summary: Attempted 588 tasks of which 585 didn't need to be rerun and 1 failed.
 
 Summary: 1 task failed:
-  /home/deby/poky/meta-debian/recipes-debian/libpcap/libpcap_debian.bb:do_configure
-Summary: There was 1 ERROR message shown, returning a non-zero exit code.
+  /home/deby/poky/meta-debian/recipes-debian/libpcap/libpcap_debian.bb:do_install
+Summary: There were 2 ERROR messages shown, returning a non-zero exit code.

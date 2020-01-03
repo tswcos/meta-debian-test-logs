@@ -1,0 +1,6 @@
+
+Keyboard Interrupt, closing down...
+
+Parsing recipes...done.
+Parsing of 1061 .bb files complete (0 cached, 1 parsed). 3 targets, 1 skipped, 0 masked, 0 errors.
+Execution was interrupted, returning a non-zero exit code.

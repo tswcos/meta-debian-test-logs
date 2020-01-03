@@ -4,11 +4,11 @@ jansson PASS NA meta:023ff85,meta-debian:8e157b1,meta-ti:036668d NA
 json-c PASS NA meta:023ff85,meta-debian:8e157b1,meta-ti:036668d NA
 libedit PASS NA meta:023ff85,meta-debian:8e157b1,meta-ti:036668d NA
 libhtp PASS NA meta:023ff85,meta-debian:8e157b1,meta-ti:036668d NA
-libnet FAIL NA meta:023ff85,meta-debian:8e157b1,meta-ti:036668d NA
+libnet PASS NA meta:023ff85,meta-debian:0fba4d9,meta-ti:036668d NA
 libnfnetlink PASS NA meta:023ff85,meta-debian:8e157b1,meta-ti:036668d NA
 libnftnl PASS NA meta:023ff85,meta-debian:8e157b1,meta-ti:036668d NA
-libpcap FAIL NA meta:023ff85,meta-debian:8e157b1,meta-ti:036668d NA
+libpcap PASS NA meta:023ff85,meta-debian:0fba4d9,meta-ti:036668d NA
 libyaml PASS NA meta:023ff85,meta-debian:8e157b1,meta-ti:036668d NA
 nftables PASS NA meta:023ff85,meta-debian:8e157b1,meta-ti:036668d NA
-suricata FAIL NA meta:023ff85,meta-debian:8e157b1,meta-ti:036668d NA
+suricata PASS NA meta:023ff85,meta-debian:0fba4d9,meta-ti:036668d NA
 syslog-ng PASS NA meta:023ff85,meta-debian:8e157b1,meta-ti:036668d NA

@@ -1,7 +1,5 @@
-Loading cache...done.
-Loaded 1833 entries from dependency cache.
 Parsing recipes...done.
-Parsing of 1060 .bb files complete (1058 cached, 2 parsed). 1836 targets, 231 skipped, 0 masked, 0 errors.
+Parsing of 1060 .bb files complete (0 cached, 1060 parsed). 1836 targets, 231 skipped, 0 masked, 0 errors.
 WARNING: No bb files matched BBFILE_PATTERN_debian-raspberrypi '^/home/deby/poky/meta-debian/tests/../../meta-debian/bsp/meta-raspberrypi/'
 NOTE: Resolving any missing task queue dependencies
 
@@ -17,38 +15,281 @@ TUNE_FEATURES        = "arm vfp cortexa7 neon vfpv4 thumb callconvention-hard"
 TARGET_FPU           = "hard"
 meta                 
 meta-poky            = "warrior:023ff85a9ae94331926e923b346fd8a349881e63"
-meta-debian          = "warrior:8e157b1a7a3a3ae1224ea194f0fc9e25772d0e07"
+meta-debian          = "warrior:0fba4d92162a85a330d2d88ebd73ee0819f920fc"
 meta-raspberrypi     = "warrior:2f0fa9a087b9ded28797d3087ccfa8f48bf5dd13"
-meta-raspberrypi     = "warrior:8e157b1a7a3a3ae1224ea194f0fc9e25772d0e07"
+meta-raspberrypi     = "warrior:0fba4d92162a85a330d2d88ebd73ee0819f920fc"
 
 Initialising tasks...done.
-Sstate summary: Wanted 6 Found 0 Missed 6 Current 75 (0% match, 92% complete)
+Sstate summary: Wanted 30 Found 0 Missed 30 Current 51 (0% match, 62% complete)
 NOTE: Executing SetScene Tasks
 NOTE: Executing RunQueue Tasks
-NOTE: Running task 554 of 593 (/home/deby/poky/meta-debian/recipes-debian/libpcap/libpcap_debian.bb:do_configure)
-NOTE: Running task 585 of 593 (/home/deby/poky/meta-debian/recipes-debian/libpcap/libpcap_debian.bb:do_populate_lic)
-NOTE: recipe libpcap-1.8.1-r0: task do_configure: Started
+NOTE: Running task 134 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-source_debian.bb:do_unpack)
+NOTE: Running task 153 of 593 (/home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb:do_fetch)
+NOTE: Running task 220 of 593 (/home/deby/poky/meta-debian/recipes-debian/glibc/glibc_debian.bb:do_fetch)
+NOTE: Running noexec task 226 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/libgcc-initial_debian.bb:do_fetch)
+NOTE: Running noexec task 374 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/libgcc_debian.bb:do_fetch)
+NOTE: Running task 478 of 593 (/home/deby/poky/meta-debian/recipes-debian/libtool/libtool-cross_debian.bb:do_fetch)
+NOTE: Running task 479 of 593 (/home/deby/poky/meta-debian/recipes-debian/libpcap/libpcap_debian.bb:do_fetch)
+NOTE: Running noexec task 480 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-runtime_debian.bb:do_fetch)
+NOTE: recipe linux-libc-headers-base-gitAUTOINC+e665510be1-r0: task do_fetch: Started
+NOTE: recipe libtool-cross-2.4.6-r0: task do_fetch: Started
+NOTE: recipe glibc-2.28-r0: task do_fetch: Started
+NOTE: recipe libpcap-1.8.1-r0: task do_fetch: Started
+NOTE: recipe libpcap-1.8.1-r0: task do_fetch: Succeeded
+NOTE: Running task 509 of 593 (/home/deby/poky/meta-debian/recipes-debian/libpcap/libpcap_debian.bb:do_unpack)
+NOTE: recipe gcc-source-8.3.0-8.3.0-r0: task do_unpack: Started
+NOTE: recipe libpcap-1.8.1-r0: task do_unpack: Started
+NOTE: recipe libtool-cross-2.4.6-r0: task do_fetch: Succeeded
+NOTE: recipe glibc-2.28-r0: task do_fetch: Succeeded
+NOTE: Running task 510 of 593 (/home/deby/poky/meta-debian/recipes-debian/libtool/libtool-cross_debian.bb:do_unpack)
+NOTE: Running task 511 of 593 (/home/deby/poky/meta-debian/recipes-debian/glibc/glibc_debian.bb:do_unpack)
+NOTE: recipe libtool-cross-2.4.6-r0: task do_unpack: Started
+NOTE: recipe glibc-2.28-r0: task do_unpack: Started
+NOTE: recipe linux-libc-headers-base-gitAUTOINC+e665510be1-r0: task do_fetch: Succeeded
+NOTE: Running task 512 of 593 (/home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb:do_unpack)
+NOTE: Running task 513 of 593 (/home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb:do_prepare_recipe_sysroot)
+NOTE: recipe libpcap-1.8.1-r0: task do_unpack: Succeeded
+NOTE: Running task 514 of 593 (/home/deby/poky/meta-debian/recipes-debian/libpcap/libpcap_debian.bb:do_debian_unpack_extra)
+NOTE: recipe linux-libc-headers-base-gitAUTOINC+e665510be1-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe linux-libc-headers-base-gitAUTOINC+e665510be1-r0: task do_unpack: Started
+NOTE: recipe libpcap-1.8.1-r0: task do_debian_unpack_extra: Started
+NOTE: recipe libpcap-1.8.1-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 515 of 593 (/home/deby/poky/meta-debian/recipes-debian/libpcap/libpcap_debian.bb:do_debian_patch)
+NOTE: recipe libpcap-1.8.1-r0: task do_debian_patch: Started
+NOTE: recipe linux-libc-headers-base-gitAUTOINC+e665510be1-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: recipe libtool-cross-2.4.6-r0: task do_unpack: Succeeded
+NOTE: Running task 516 of 593 (/home/deby/poky/meta-debian/recipes-debian/libtool/libtool-cross_debian.bb:do_debian_unpack_extra)
+NOTE: recipe libtool-cross-2.4.6-r0: task do_debian_unpack_extra: Started
+NOTE: recipe libtool-cross-2.4.6-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 517 of 593 (/home/deby/poky/meta-debian/recipes-debian/libtool/libtool-cross_debian.bb:do_debian_patch)
+NOTE: recipe libtool-cross-2.4.6-r0: task do_debian_patch: Started
+NOTE: recipe libpcap-1.8.1-r0: task do_debian_patch: Succeeded
+NOTE: Running task 518 of 593 (/home/deby/poky/meta-debian/recipes-debian/libpcap/libpcap_debian.bb:do_patch)
+NOTE: recipe libpcap-1.8.1-r0: task do_patch: Started
+NOTE: recipe libtool-cross-2.4.6-r0: task do_debian_patch: Succeeded
+NOTE: Running task 519 of 593 (/home/deby/poky/meta-debian/recipes-debian/libtool/libtool-cross_debian.bb:do_patch)
+NOTE: recipe libtool-cross-2.4.6-r0: task do_patch: Started
+NOTE: recipe libpcap-1.8.1-r0: task do_patch: Succeeded
+NOTE: Running task 520 of 593 (/home/deby/poky/meta-debian/recipes-debian/libpcap/libpcap_debian.bb:do_populate_lic)
 NOTE: recipe libpcap-1.8.1-r0: task do_populate_lic: Started
-ERROR: libpcap-1.8.1-r0 do_configure: Function failed: do_configure (log file is located at /home/deby/build/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpcap/1.8.1-r0/temp/log.do_configure.22176)
-ERROR: Logfile of failure stored in: /home/deby/build/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpcap/1.8.1-r0/temp/log.do_configure.22176
-Log data follows:
-| DEBUG: SITE files ['endian-little', 'bit-32', 'arm-common', 'arm-32', 'common-linux', 'common-glibc', 'arm-linux', 'arm-linux-gnueabi', 'common']
-| DEBUG: Executing shell function autotools_preconfigure
-| DEBUG: Shell function autotools_preconfigure finished
-| DEBUG: Executing python function autotools_aclocals
-| DEBUG: SITE files ['endian-little', 'bit-32', 'arm-common', 'arm-32', 'common-linux', 'common-glibc', 'arm-linux', 'arm-linux-gnueabi', 'common']
-| DEBUG: Python function autotools_aclocals finished
-| DEBUG: Executing shell function do_configure
-| /home/deby/build/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpcap/1.8.1-r0/temp/run.do_configure.22176: 113: /home/deby/build/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpcap/1.8.1-r0/temp/run.do_configure.22176: srcdir: not found
-| sed: can't read /Makefile.in: No such file or directory
-| WARNING: exit code 2 from a shell command.
-| ERROR: Function failed: do_configure (log file is located at /home/deby/build/tmp/work/cortexa7t2hf-neon-vfpv4-deby-linux-gnueabi/libpcap/1.8.1-r0/temp/log.do_configure.22176)
-NOTE: recipe libpcap-1.8.1-r0: task do_configure: Failed
-ERROR: Task (/home/deby/poky/meta-debian/recipes-debian/libpcap/libpcap_debian.bb:do_configure) failed with exit code '1'
 NOTE: recipe libpcap-1.8.1-r0: task do_populate_lic: Succeeded
-NOTE: Tasks Summary: Attempted 585 tasks of which 583 didn't need to be rerun and 1 failed.
+NOTE: recipe libtool-cross-2.4.6-r0: task do_patch: Succeeded
+NOTE: recipe glibc-2.28-r0: task do_unpack: Succeeded
+NOTE: Running task 521 of 593 (/home/deby/poky/meta-debian/recipes-debian/glibc/glibc_debian.bb:do_debian_unpack_extra)
+NOTE: recipe glibc-2.28-r0: task do_debian_unpack_extra: Started
+NOTE: recipe glibc-2.28-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 522 of 593 (/home/deby/poky/meta-debian/recipes-debian/glibc/glibc_debian.bb:do_debian_patch)
+NOTE: recipe glibc-2.28-r0: task do_debian_patch: Started
+NOTE: recipe glibc-2.28-r0: task do_debian_patch: Succeeded
+NOTE: Running task 523 of 593 (/home/deby/poky/meta-debian/recipes-debian/glibc/glibc_debian.bb:do_patch)
+NOTE: recipe glibc-2.28-r0: task do_patch: Started
+NOTE: recipe glibc-2.28-r0: task do_patch: Succeeded
+NOTE: recipe gcc-source-8.3.0-8.3.0-r0: task do_unpack: Succeeded
+NOTE: Running task 524 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-source_debian.bb:do_debian_unpack_extra)
+NOTE: recipe gcc-source-8.3.0-8.3.0-r0: task do_debian_unpack_extra: Started
+NOTE: recipe gcc-source-8.3.0-8.3.0-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 525 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-source_debian.bb:do_debian_patch)
+NOTE: recipe gcc-source-8.3.0-8.3.0-r0: task do_debian_patch: Started
+NOTE: recipe gcc-source-8.3.0-8.3.0-r0: task do_debian_patch: Succeeded
+NOTE: Running task 526 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-source_debian.bb:do_patch)
+NOTE: recipe gcc-source-8.3.0-8.3.0-r0: task do_patch: Started
+NOTE: recipe gcc-source-8.3.0-8.3.0-r0: task do_patch: Succeeded
+NOTE: Running task 527 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-source_debian.bb:do_preconfigure)
+NOTE: recipe gcc-source-8.3.0-8.3.0-r0: task do_preconfigure: Started
+NOTE: recipe gcc-source-8.3.0-8.3.0-r0: task do_preconfigure: Succeeded
+NOTE: recipe linux-libc-headers-base-gitAUTOINC+e665510be1-r0: task do_unpack: Succeeded
+NOTE: Running task 528 of 593 (/home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb:do_patch)
+NOTE: recipe linux-libc-headers-base-gitAUTOINC+e665510be1-r0: task do_patch: Started
+NOTE: recipe linux-libc-headers-base-gitAUTOINC+e665510be1-r0: task do_patch: Succeeded
+NOTE: Running noexec task 529 of 593 (/home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb:do_configure)
+NOTE: Running noexec task 530 of 593 (/home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb:do_compile)
+NOTE: Running task 531 of 593 (/home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb:do_install)
+NOTE: recipe linux-libc-headers-base-gitAUTOINC+e665510be1-r0: task do_install: Started
+NOTE: recipe linux-libc-headers-base-gitAUTOINC+e665510be1-r0: task do_install: Succeeded
+NOTE: Running task 532 of 593 (/home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb:do_populate_sysroot)
+NOTE: Running task 533 of 593 (/home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb:do_package)
+NOTE: recipe linux-libc-headers-base-gitAUTOINC+e665510be1-r0: task do_populate_sysroot: Started
+NOTE: recipe linux-libc-headers-base-gitAUTOINC+e665510be1-r0: task do_package: Started
+NOTE: recipe linux-libc-headers-base-gitAUTOINC+e665510be1-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 534 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-cross_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe gcc-cross-arm-8.3.0-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe gcc-cross-arm-8.3.0-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 535 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-cross_debian.bb:do_configure)
+NOTE: recipe gcc-cross-arm-8.3.0-r0: task do_configure: Started
+NOTE: recipe linux-libc-headers-base-gitAUTOINC+e665510be1-r0: task do_package: Succeeded
+NOTE: Running task 536 of 593 (/home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb:do_packagedata)
+NOTE: recipe linux-libc-headers-base-gitAUTOINC+e665510be1-r0: task do_packagedata: Started
+NOTE: recipe linux-libc-headers-base-gitAUTOINC+e665510be1-r0: task do_packagedata: Succeeded
+NOTE: Running task 537 of 593 (/home/deby/poky/meta-debian/recipes-kernel/linux-libc-headers/linux-libc-headers-base_git.bb:do_package_write_deb)
+NOTE: recipe linux-libc-headers-base-gitAUTOINC+e665510be1-r0: task do_package_write_deb: Started
+NOTE: recipe linux-libc-headers-base-gitAUTOINC+e665510be1-r0: task do_package_write_deb: Succeeded
+NOTE: recipe gcc-cross-arm-8.3.0-r0: task do_configure: Succeeded
+NOTE: Running task 538 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-cross_debian.bb:do_compile)
+NOTE: recipe gcc-cross-arm-8.3.0-r0: task do_compile: Started
+NOTE: recipe gcc-cross-arm-8.3.0-r0: task do_compile: Succeeded
+NOTE: Running task 539 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-cross_debian.bb:do_gcc_stash_builddir)
+NOTE: recipe gcc-cross-arm-8.3.0-r0: task do_gcc_stash_builddir: Started
+NOTE: recipe gcc-cross-arm-8.3.0-r0: task do_gcc_stash_builddir: Succeeded
+NOTE: Running task 540 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-cross_debian.bb:do_install)
+NOTE: recipe gcc-cross-arm-8.3.0-r0: task do_install: Started
+NOTE: recipe gcc-cross-arm-8.3.0-r0: task do_install: Succeeded
+NOTE: Running task 541 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-cross_debian.bb:do_populate_sysroot)
+NOTE: recipe gcc-cross-arm-8.3.0-r0: task do_populate_sysroot: Started
+NOTE: recipe gcc-cross-arm-8.3.0-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 542 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/libgcc-initial_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe libgcc-initial-8.3.0-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe libgcc-initial-8.3.0-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 543 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/libgcc-initial_debian.bb:do_configure)
+NOTE: recipe libgcc-initial-8.3.0-r0: task do_configure: Started
+NOTE: recipe libgcc-initial-8.3.0-r0: task do_configure: Succeeded
+NOTE: Running task 544 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/libgcc-initial_debian.bb:do_compile)
+NOTE: recipe libgcc-initial-8.3.0-r0: task do_compile: Started
+NOTE: recipe libgcc-initial-8.3.0-r0: task do_compile: Succeeded
+NOTE: Running task 545 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/libgcc-initial_debian.bb:do_install)
+NOTE: recipe libgcc-initial-8.3.0-r0: task do_install: Started
+NOTE: recipe libgcc-initial-8.3.0-r0: task do_install: Succeeded
+NOTE: Running task 546 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/libgcc-initial_debian.bb:do_multilib_install)
+NOTE: recipe libgcc-initial-8.3.0-r0: task do_multilib_install: Started
+NOTE: recipe libgcc-initial-8.3.0-r0: task do_multilib_install: Succeeded
+NOTE: Running task 547 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/libgcc-initial_debian.bb:do_extra_symlinks)
+NOTE: recipe libgcc-initial-8.3.0-r0: task do_extra_symlinks: Started
+NOTE: recipe libgcc-initial-8.3.0-r0: task do_extra_symlinks: Succeeded
+NOTE: Running task 548 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/libgcc-initial_debian.bb:do_populate_sysroot)
+NOTE: recipe libgcc-initial-8.3.0-r0: task do_populate_sysroot: Started
+NOTE: recipe libgcc-initial-8.3.0-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 549 of 593 (/home/deby/poky/meta-debian/recipes-debian/glibc/glibc_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe glibc-2.28-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe glibc-2.28-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 550 of 593 (/home/deby/poky/meta-debian/recipes-debian/glibc/glibc_debian.bb:do_configure)
+NOTE: recipe glibc-2.28-r0: task do_configure: Started
+NOTE: recipe glibc-2.28-r0: task do_configure: Succeeded
+NOTE: Running task 551 of 593 (/home/deby/poky/meta-debian/recipes-debian/glibc/glibc_debian.bb:do_compile)
+NOTE: recipe glibc-2.28-r0: task do_compile: Started
+NOTE: recipe glibc-2.28-r0: task do_compile: Succeeded
+NOTE: Running task 552 of 593 (/home/deby/poky/meta-debian/recipes-debian/glibc/glibc_debian.bb:do_install)
+NOTE: recipe glibc-2.28-r0: task do_install: Started
+NOTE: recipe glibc-2.28-r0: task do_install: Succeeded
+NOTE: Running task 553 of 593 (/home/deby/poky/meta-debian/recipes-debian/glibc/glibc_debian.bb:do_stash_locale)
+NOTE: recipe glibc-2.28-r0: task do_stash_locale: Started
+NOTE: recipe glibc-2.28-r0: task do_stash_locale: Succeeded
+NOTE: Running task 554 of 593 (/home/deby/poky/meta-debian/recipes-debian/glibc/glibc_debian.bb:do_populate_sysroot)
+NOTE: Running task 555 of 593 (/home/deby/poky/meta-debian/recipes-debian/glibc/glibc_debian.bb:do_package)
+NOTE: recipe glibc-2.28-r0: task do_populate_sysroot: Started
+NOTE: recipe glibc-2.28-r0: task do_package: Started
+NOTE: recipe glibc-2.28-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 556 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/libgcc_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe libgcc-8.3.0-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe libgcc-8.3.0-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 557 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/libgcc_debian.bb:do_configure)
+NOTE: recipe libgcc-8.3.0-r0: task do_configure: Started
+NOTE: recipe libgcc-8.3.0-r0: task do_configure: Succeeded
+NOTE: Running task 558 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/libgcc_debian.bb:do_compile)
+NOTE: recipe libgcc-8.3.0-r0: task do_compile: Started
+NOTE: recipe glibc-2.28-r0: task do_package: Succeeded
+NOTE: Running task 559 of 593 (/home/deby/poky/meta-debian/recipes-debian/glibc/glibc_debian.bb:do_packagedata)
+NOTE: recipe glibc-2.28-r0: task do_packagedata: Started
+NOTE: recipe glibc-2.28-r0: task do_packagedata: Succeeded
+NOTE: Running task 560 of 593 (/home/deby/poky/meta-debian/recipes-debian/glibc/glibc_debian.bb:do_package_write_deb)
+NOTE: recipe glibc-2.28-r0: task do_package_write_deb: Started
+NOTE: recipe libgcc-8.3.0-r0: task do_compile: Succeeded
+NOTE: Running task 561 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/libgcc_debian.bb:do_install)
+NOTE: recipe libgcc-8.3.0-r0: task do_install: Started
+NOTE: recipe glibc-2.28-r0: task do_package_write_deb: Succeeded
+NOTE: recipe libgcc-8.3.0-r0: task do_install: Succeeded
+NOTE: Running task 562 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/libgcc_debian.bb:do_multilib_install)
+NOTE: recipe libgcc-8.3.0-r0: task do_multilib_install: Started
+NOTE: recipe libgcc-8.3.0-r0: task do_multilib_install: Succeeded
+NOTE: Running task 563 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/libgcc_debian.bb:do_extra_symlinks)
+NOTE: recipe libgcc-8.3.0-r0: task do_extra_symlinks: Started
+NOTE: recipe libgcc-8.3.0-r0: task do_extra_symlinks: Succeeded
+NOTE: Running task 564 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/libgcc_debian.bb:do_populate_sysroot)
+NOTE: Running task 565 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/libgcc_debian.bb:do_package)
+NOTE: recipe libgcc-8.3.0-r0: task do_populate_sysroot: Started
+NOTE: recipe libgcc-8.3.0-r0: task do_package: Started
+NOTE: recipe libgcc-8.3.0-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 566 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-runtime_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe gcc-runtime-8.3.0-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe gcc-runtime-8.3.0-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 567 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-runtime_debian.bb:do_configure)
+NOTE: recipe gcc-runtime-8.3.0-r0: task do_configure: Started
+NOTE: recipe libgcc-8.3.0-r0: task do_package: Succeeded
+NOTE: Running task 568 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/libgcc_debian.bb:do_packagedata)
+NOTE: recipe libgcc-8.3.0-r0: task do_packagedata: Started
+NOTE: recipe libgcc-8.3.0-r0: task do_packagedata: Succeeded
+NOTE: Running task 569 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/libgcc_debian.bb:do_package_write_deb)
+NOTE: recipe libgcc-8.3.0-r0: task do_package_write_deb: Started
+NOTE: recipe libgcc-8.3.0-r0: task do_package_write_deb: Succeeded
+NOTE: recipe gcc-runtime-8.3.0-r0: task do_configure: Succeeded
+NOTE: Running task 570 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-runtime_debian.bb:do_compile)
+NOTE: recipe gcc-runtime-8.3.0-r0: task do_compile: Started
+NOTE: recipe gcc-runtime-8.3.0-r0: task do_compile: Succeeded
+NOTE: Running task 571 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-runtime_debian.bb:do_install)
+NOTE: recipe gcc-runtime-8.3.0-r0: task do_install: Started
+NOTE: recipe gcc-runtime-8.3.0-r0: task do_install: Succeeded
+NOTE: Running task 572 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-runtime_debian.bb:do_populate_sysroot)
+NOTE: Running task 573 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-runtime_debian.bb:do_package)
+NOTE: recipe gcc-runtime-8.3.0-r0: task do_populate_sysroot: Started
+NOTE: recipe gcc-runtime-8.3.0-r0: task do_package: Started
+NOTE: recipe gcc-runtime-8.3.0-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 574 of 593 (/home/deby/poky/meta-debian/recipes-debian/libtool/libtool-cross_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe libtool-cross-2.4.6-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe libtool-cross-2.4.6-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 575 of 593 (/home/deby/poky/meta-debian/recipes-debian/libtool/libtool-cross_debian.bb:do_configure)
+NOTE: recipe libtool-cross-2.4.6-r0: task do_configure: Started
+NOTE: recipe gcc-runtime-8.3.0-r0: task do_package: Succeeded
+NOTE: Running task 576 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-runtime_debian.bb:do_packagedata)
+NOTE: recipe gcc-runtime-8.3.0-r0: task do_packagedata: Started
+NOTE: recipe gcc-runtime-8.3.0-r0: task do_packagedata: Succeeded
+NOTE: Running task 577 of 593 (/home/deby/poky/meta-debian/recipes-debian/gcc/gcc-runtime_debian.bb:do_package_write_deb)
+NOTE: recipe gcc-runtime-8.3.0-r0: task do_package_write_deb: Started
+NOTE: recipe libtool-cross-2.4.6-r0: task do_configure: Succeeded
+NOTE: Running task 578 of 593 (/home/deby/poky/meta-debian/recipes-debian/libtool/libtool-cross_debian.bb:do_compile)
+NOTE: recipe libtool-cross-2.4.6-r0: task do_compile: Started
+NOTE: recipe libtool-cross-2.4.6-r0: task do_compile: Succeeded
+NOTE: Running task 579 of 593 (/home/deby/poky/meta-debian/recipes-debian/libtool/libtool-cross_debian.bb:do_install)
+NOTE: recipe libtool-cross-2.4.6-r0: task do_install: Started
+NOTE: recipe libtool-cross-2.4.6-r0: task do_install: Succeeded
+NOTE: Running task 580 of 593 (/home/deby/poky/meta-debian/recipes-debian/libtool/libtool-cross_debian.bb:do_package)
+NOTE: Running task 581 of 593 (/home/deby/poky/meta-debian/recipes-debian/libtool/libtool-cross_debian.bb:do_populate_sysroot)
+NOTE: recipe libtool-cross-2.4.6-r0: task do_populate_sysroot: Started
+NOTE: recipe libtool-cross-2.4.6-r0: task do_package: Started
+NOTE: recipe libtool-cross-2.4.6-r0: task do_package: Succeeded
+NOTE: Running task 582 of 593 (/home/deby/poky/meta-debian/recipes-debian/libtool/libtool-cross_debian.bb:do_packagedata)
+NOTE: recipe libtool-cross-2.4.6-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 583 of 593 (/home/deby/poky/meta-debian/recipes-debian/libpcap/libpcap_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe libtool-cross-2.4.6-r0: task do_packagedata: Started
+NOTE: recipe libpcap-1.8.1-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe libtool-cross-2.4.6-r0: task do_packagedata: Succeeded
+NOTE: Running task 584 of 593 (/home/deby/poky/meta-debian/recipes-debian/libtool/libtool-cross_debian.bb:do_package_write_deb)
+NOTE: recipe libtool-cross-2.4.6-r0: task do_package_write_deb: Started
+NOTE: recipe libtool-cross-2.4.6-r0: task do_package_write_deb: Succeeded
+NOTE: recipe libpcap-1.8.1-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 585 of 593 (/home/deby/poky/meta-debian/recipes-debian/libpcap/libpcap_debian.bb:do_configure)
+NOTE: recipe libpcap-1.8.1-r0: task do_configure: Started
+NOTE: recipe gcc-runtime-8.3.0-r0: task do_package_write_deb: Succeeded
+NOTE: recipe libpcap-1.8.1-r0: task do_configure: Succeeded
+NOTE: Running task 586 of 593 (/home/deby/poky/meta-debian/recipes-debian/libpcap/libpcap_debian.bb:do_compile)
+NOTE: recipe libpcap-1.8.1-r0: task do_compile: Started
+NOTE: recipe libpcap-1.8.1-r0: task do_compile: Succeeded
+NOTE: Running task 587 of 593 (/home/deby/poky/meta-debian/recipes-debian/libpcap/libpcap_debian.bb:do_install)
+NOTE: recipe libpcap-1.8.1-r0: task do_install: Started
+NOTE: recipe libpcap-1.8.1-r0: task do_install: Succeeded
+NOTE: Running task 588 of 593 (/home/deby/poky/meta-debian/recipes-debian/libpcap/libpcap_debian.bb:do_package)
+NOTE: Running task 589 of 593 (/home/deby/poky/meta-debian/recipes-debian/libpcap/libpcap_debian.bb:do_populate_sysroot)
+NOTE: recipe libpcap-1.8.1-r0: task do_populate_sysroot: Started
+NOTE: recipe libpcap-1.8.1-r0: task do_package: Started
+NOTE: recipe libpcap-1.8.1-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe libpcap-1.8.1-r0: task do_package: Succeeded
+NOTE: Running task 590 of 593 (/home/deby/poky/meta-debian/recipes-debian/libpcap/libpcap_debian.bb:do_packagedata)
+NOTE: recipe libpcap-1.8.1-r0: task do_packagedata: Started
+NOTE: recipe libpcap-1.8.1-r0: task do_packagedata: Succeeded
+NOTE: Running task 591 of 593 (/home/deby/poky/meta-debian/recipes-debian/libpcap/libpcap_debian.bb:do_package_write_deb)
+NOTE: Running task 592 of 593 (/home/deby/poky/meta-debian/recipes-debian/libpcap/libpcap_debian.bb:do_package_qa)
+NOTE: recipe libpcap-1.8.1-r0: task do_package_qa: Started
+NOTE: recipe libpcap-1.8.1-r0: task do_package_write_deb: Started
+NOTE: recipe libpcap-1.8.1-r0: task do_package_qa: Succeeded
+NOTE: recipe libpcap-1.8.1-r0: task do_package_write_deb: Succeeded
+NOTE: Running noexec task 593 of 593 (/home/deby/poky/meta-debian/recipes-debian/libpcap/libpcap_debian.bb:do_build)
+NOTE: Tasks Summary: Attempted 593 tasks of which 500 didn't need to be rerun and all succeeded.
 
-Summary: 1 task failed:
-  /home/deby/poky/meta-debian/recipes-debian/libpcap/libpcap_debian.bb:do_configure
 Summary: There was 1 WARNING message shown.
-Summary: There was 1 ERROR message shown, returning a non-zero exit code.

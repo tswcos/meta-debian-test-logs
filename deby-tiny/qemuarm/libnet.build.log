@@ -1,7 +1,5 @@
-Loading cache...done.
-Loaded 1803 entries from dependency cache.
 Parsing recipes...done.
-Parsing of 1030 .bb files complete (1028 cached, 2 parsed). 1806 targets, 225 skipped, 0 masked, 0 errors.
+Parsing of 1030 .bb files complete (0 cached, 1030 parsed). 1806 targets, 225 skipped, 0 masked, 0 errors.
 NOTE: Resolving any missing task queue dependencies
 
 Build Configuration:
@@ -16,35 +14,56 @@ TUNE_FEATURES        = "arm armv7ve vfp thumb neon callconvention-hard"
 TARGET_FPU           = "hard"
 meta                 
 meta-poky            = "warrior:023ff85a9ae94331926e923b346fd8a349881e63"
-meta-debian          = "warrior:8e157b1a7a3a3ae1224ea194f0fc9e25772d0e07"
+meta-debian          = "warrior:0fba4d92162a85a330d2d88ebd73ee0819f920fc"
 
 Initialising tasks...done.
-Sstate summary: Wanted 10 Found 0 Missed 10 Current 75 (0% match, 88% complete)
+Sstate summary: Wanted 6 Found 0 Missed 6 Current 79 (0% match, 92% complete)
 NOTE: Executing SetScene Tasks
 NOTE: Executing RunQueue Tasks
-NOTE: Running task 555 of 606 (/home/deby/poky/meta-debian/recipes-debian/libpcap/libpcap_debian.bb:do_configure)
-NOTE: Running task 590 of 606 (/home/deby/poky/meta-debian/recipes-debian/libnet/libnet_debian.bb:do_populate_lic)
-NOTE: recipe libpcap-1.8.1-r0: task do_configure: Started
+NOTE: Running task 540 of 606 (/home/deby/poky/meta-debian/recipes-debian/libnet/libnet_debian.bb:do_fetch)
+NOTE: recipe libnet-1.1.6-r0: task do_fetch: Started
+NOTE: recipe libnet-1.1.6-r0: task do_fetch: Succeeded
+NOTE: Running task 592 of 606 (/home/deby/poky/meta-debian/recipes-debian/libnet/libnet_debian.bb:do_unpack)
+NOTE: Running task 593 of 606 (/home/deby/poky/meta-debian/recipes-debian/libnet/libnet_debian.bb:do_prepare_recipe_sysroot)
+NOTE: recipe libnet-1.1.6-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe libnet-1.1.6-r0: task do_unpack: Started
+NOTE: recipe libnet-1.1.6-r0: task do_unpack: Succeeded
+NOTE: Running task 594 of 606 (/home/deby/poky/meta-debian/recipes-debian/libnet/libnet_debian.bb:do_debian_unpack_extra)
+NOTE: recipe libnet-1.1.6-r0: task do_debian_unpack_extra: Started
+NOTE: recipe libnet-1.1.6-r0: task do_debian_unpack_extra: Succeeded
+NOTE: Running task 595 of 606 (/home/deby/poky/meta-debian/recipes-debian/libnet/libnet_debian.bb:do_debian_patch)
+NOTE: recipe libnet-1.1.6-r0: task do_debian_patch: Started
+NOTE: recipe libnet-1.1.6-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: recipe libnet-1.1.6-r0: task do_debian_patch: Succeeded
+NOTE: Running task 596 of 606 (/home/deby/poky/meta-debian/recipes-debian/libnet/libnet_debian.bb:do_patch)
+NOTE: recipe libnet-1.1.6-r0: task do_patch: Started
+NOTE: recipe libnet-1.1.6-r0: task do_patch: Succeeded
+NOTE: Running task 597 of 606 (/home/deby/poky/meta-debian/recipes-debian/libnet/libnet_debian.bb:do_configure)
+NOTE: Running task 598 of 606 (/home/deby/poky/meta-debian/recipes-debian/libnet/libnet_debian.bb:do_populate_lic)
+NOTE: recipe libnet-1.1.6-r0: task do_configure: Started
 NOTE: recipe libnet-1.1.6-r0: task do_populate_lic: Started
-ERROR: libpcap-1.8.1-r0 do_configure: Function failed: do_configure (log file is located at /home/deby/build/tmp/work/armv7vet2hf-neon-deby-linux-gnueabi/libpcap/1.8.1-r0/temp/log.do_configure.26029)
-ERROR: Logfile of failure stored in: /home/deby/build/tmp/work/armv7vet2hf-neon-deby-linux-gnueabi/libpcap/1.8.1-r0/temp/log.do_configure.26029
-Log data follows:
-| DEBUG: SITE files ['endian-little', 'bit-32', 'arm-common', 'arm-32', 'common-linux', 'common-glibc', 'arm-linux', 'arm-linux-gnueabi', 'common']
-| DEBUG: Executing shell function autotools_preconfigure
-| DEBUG: Shell function autotools_preconfigure finished
-| DEBUG: Executing python function autotools_aclocals
-| DEBUG: SITE files ['endian-little', 'bit-32', 'arm-common', 'arm-32', 'common-linux', 'common-glibc', 'arm-linux', 'arm-linux-gnueabi', 'common']
-| DEBUG: Python function autotools_aclocals finished
-| DEBUG: Executing shell function do_configure
-| /home/deby/build/tmp/work/armv7vet2hf-neon-deby-linux-gnueabi/libpcap/1.8.1-r0/temp/run.do_configure.26029: 113: /home/deby/build/tmp/work/armv7vet2hf-neon-deby-linux-gnueabi/libpcap/1.8.1-r0/temp/run.do_configure.26029: srcdir: not found
-| sed: can't read /Makefile.in: No such file or directory
-| WARNING: exit code 2 from a shell command.
-| ERROR: Function failed: do_configure (log file is located at /home/deby/build/tmp/work/armv7vet2hf-neon-deby-linux-gnueabi/libpcap/1.8.1-r0/temp/log.do_configure.26029)
-NOTE: recipe libpcap-1.8.1-r0: task do_configure: Failed
-ERROR: Task (/home/deby/poky/meta-debian/recipes-debian/libpcap/libpcap_debian.bb:do_configure) failed with exit code '1'
 NOTE: recipe libnet-1.1.6-r0: task do_populate_lic: Succeeded
-NOTE: Tasks Summary: Attempted 590 tasks of which 588 didn't need to be rerun and 1 failed.
-
-Summary: 1 task failed:
-  /home/deby/poky/meta-debian/recipes-debian/libpcap/libpcap_debian.bb:do_configure
-Summary: There was 1 ERROR message shown, returning a non-zero exit code.
+NOTE: recipe libnet-1.1.6-r0: task do_configure: Succeeded
+NOTE: Running task 599 of 606 (/home/deby/poky/meta-debian/recipes-debian/libnet/libnet_debian.bb:do_compile)
+NOTE: recipe libnet-1.1.6-r0: task do_compile: Started
+NOTE: recipe libnet-1.1.6-r0: task do_compile: Succeeded
+NOTE: Running task 600 of 606 (/home/deby/poky/meta-debian/recipes-debian/libnet/libnet_debian.bb:do_install)
+NOTE: recipe libnet-1.1.6-r0: task do_install: Started
+NOTE: recipe libnet-1.1.6-r0: task do_install: Succeeded
+NOTE: Running task 601 of 606 (/home/deby/poky/meta-debian/recipes-debian/libnet/libnet_debian.bb:do_package)
+NOTE: Running task 602 of 606 (/home/deby/poky/meta-debian/recipes-debian/libnet/libnet_debian.bb:do_populate_sysroot)
+NOTE: recipe libnet-1.1.6-r0: task do_populate_sysroot: Started
+NOTE: recipe libnet-1.1.6-r0: task do_package: Started
+NOTE: recipe libnet-1.1.6-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe libnet-1.1.6-r0: task do_package: Succeeded
+NOTE: Running task 603 of 606 (/home/deby/poky/meta-debian/recipes-debian/libnet/libnet_debian.bb:do_packagedata)
+NOTE: recipe libnet-1.1.6-r0: task do_packagedata: Started
+NOTE: recipe libnet-1.1.6-r0: task do_packagedata: Succeeded
+NOTE: Running task 604 of 606 (/home/deby/poky/meta-debian/recipes-debian/libnet/libnet_debian.bb:do_package_write_deb)
+NOTE: Running task 605 of 606 (/home/deby/poky/meta-debian/recipes-debian/libnet/libnet_debian.bb:do_package_qa)
+NOTE: recipe libnet-1.1.6-r0: task do_package_write_deb: Started
+NOTE: recipe libnet-1.1.6-r0: task do_package_qa: Started
+NOTE: recipe libnet-1.1.6-r0: task do_package_write_deb: Succeeded
+NOTE: recipe libnet-1.1.6-r0: task do_package_qa: Succeeded
+NOTE: Running noexec task 606 of 606 (/home/deby/poky/meta-debian/recipes-debian/libnet/libnet_debian.bb:do_build)
+NOTE: Tasks Summary: Attempted 606 tasks of which 590 didn't need to be rerun and all succeeded.
